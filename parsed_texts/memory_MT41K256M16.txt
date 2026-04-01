@@ -1,0 +1,4594 @@
+
+================ [Page 1] ================
+1.35V DDR3L SDRAM
+MT41K1G4 – 128 Meg x 4 x 8 banks
+MT41K512M8 – 64 Meg x 8 x 8 banks
+MT41K256M16 – 32 Meg x 16 x 8 banks
+Description
+DDR3L SDRAM (1.35V) is a low voltage version of the
+DDR3 SDRAM (1.5V).
+Features
+• VDD = VDDQ = 1.35V (1.283–1.45V)
+• Backward compatible to VDD = VDDQ = 1.5V ±0.075V
+– Supports DDR3L devices to be backward com-
+patible in 1.5V applications
+• Differential bidirectional data strobe
+• 8n-bit prefetch architecture
+• Differential clock inputs (CK, CK#)
+• 8 internal banks
+• Nominal and dynamic on-die termination (ODT)
+for data, strobe, and mask signals
+• Programmable CAS (READ) latency (CL)
+• Programmable posted CAS additive latency (AL)
+• Programmable CAS (WRITE) latency (CWL)
+• Fixed burst length (BL) of 8 and burst chop (BC) of 4
+(via the mode register set [MRS])
+• Selectable BC4 or BL8 on-the-fly (OTF)
+• Self refresh mode
+• TC of 0°C to +95°C
+– 64ms, 8192-cycle refresh at 0°C to +85°C
+– 32ms at +85°C to +95°C
+• Self refresh temperature (SRT)
+• Automatic self refresh (ASR)
+• Write leveling
+• Multipurpose register
+• Output driver calibration
+Options
+Marking
+• Configuration
+ 
+– 1 Gig x 4
+1G4
+– 512 Meg x 8
+512M8
+– 256 Meg x 16
+256M16
+• FBGA package (Pb-free) – x4, x8
+ 
+– 78-ball (10.5mm x 12mm) Rev. D
+RA
+– 78-ball (9mm x 10.5mm) Rev. E, J
+RH
+• FBGA package (Pb-free) – x16
+ 
+– 96-ball (10mm x 14mm) Rev. D
+RE
+– 96-ball (9mm x 14mm) Rev. E
+HA
+• Timing – cycle time
+ 
+– 1.071ns @ CL = 13 (DDR3-1866)
+-107
+– 1.25ns @ CL = 11 (DDR3-1600)
+-125
+– 1.5ns @ CL = 9 (DDR3-1333)
+-15E
+– 1.87ns @ CL = 7 (DDR3-1066)
+-187E
+• Operating temperature
+ 
+– Commercial (0°C ≤ TC ≤ +95°C)
+None
+– Industrial (–40°C ≤ TC ≤ +95°C)
+IT
+• Revision
+:D/:E/:J
+Table 1: Key Timing Parameters
+Speed Grade
+Data Rate (MT/s)
+Target tRCD-tRP-CL
+tRCD (ns)
+tRP (ns)
+CL (ns)
+-1071, 2, 3
+1866
+13-13-13
+13.91
+13.91
+13.91
+-1251, 2
+1600
+11-11-11
+13.75
+13.75
+13.75
+-15E1
+1333
+9-9-9
+13.5
+13.5
+13.5
+-187E
+1066
+7-7-7
+13.1
+13.1
+13.1
+Notes:
+1. Backward compatible to 1066, CL = 7 (-187E).
+2. Backward compatible to 1333, CL = 9 (-15E).
+3. Backward compatible to 1600, CL = 11 (-107).
+4Gb: x4, x8, x16 DDR3L SDRAM
+Description
+PDF: 09005aef84780270
+4Gb_DDR3L_SDRAM.pdf - Rev. H 4/13 EN
+1
+Micron Technology, Inc. reserves the right to change products or specifications without notice.
+© 2011 Micron Technology, Inc. All rights reserved.
+Products and specifications discussed herein are subject to change by Micron without notice.
+
+
+================ [Page 2] ================
+Table 2: Addressing
+Parameter
+1 Gig x 4
+512 Meg x 8
+256 Meg x 16
+Configuration
+128 Meg x 4 x 8 banks
+64 Meg x 8 x 8 banks
+32 Meg x 16 x 8 banks
+Refresh count
+8K
+8K
+8K
+Row address
+64K (A[15:0])
+64K (A[15:0])
+32K (A[14:0])
+Bank address
+8 (BA[2:0])
+8 (BA[2:0])
+8 (BA[2:0])
+Column address
+2K (A[11, 9:0])
+1K (A[9:0])
+1K (A[9:0])
+Page size
+1KB
+1KB
+2KB
+Figure 1: DDR3L Part Numbers
+ 
+Example Part Number:   
+MT41K512M8RH-125:E
+Configuration
+1 Gig x 4
+512 Meg x 8
+256 Meg x 16
+1G4
+512M8
+256M16
+-
+Configuration
+MT41K
+Package
+Speed
+Revision
+Revision
+:D/:E/:J
+:
+Temperatu re
+Commercial
+Industrial temperature
+{
+None
+IT
+Package
+96-ball 9mm x 14mm FBGA
+96-ball 10.0mm x 14mm FBGA
+ Mark
+HA
+RE
+ Rev.
+E
+D
+78-ball 9mm x 10.5mm FBGA
+RH
+E, J
+78-ball 10.5mm x 12mm FBGA
+RA
+D
+Speed Grade
+tCK = 1.071ns, CL = 13
+tCK = 1.25ns, CL = 11
+tCK = 1.5ns, CL = 9
+tCK = 1.87ns, CL = E
+-107
+-125
+-15E
+-187E
+Note:
+1. Not all options listed can be combined to define an offered product. Use the part catalog search on
+http://www.micron.com for available offerings.
+FBGA Part Marking Decoder
+Due to space limitations, FBGA-packaged components have an abbreviated part marking that is different from the
+part number. Micron’s FBGA part marking decoder is available at www.micron.com/decoder.
+4Gb: x4, x8, x16 DDR3L SDRAM
+Description
+PDF: 09005aef84780270
+4Gb_DDR3L_SDRAM.pdf - Rev. H 4/13 EN
+2
+Micron Technology, Inc. reserves the right to change products or specifications without notice.
+© 2011 Micron Technology, Inc. All rights reserved.
+
+
+================ [Page 3] ================
+Ball Assignments and Descriptions
+Figure 2: 78-Ball FBGA – x4, x8 (Top View)
+ 
+1
+2
+3
+4
+6
+7
+8
+9
+5
+VSS
+VSS
+VDDQ
+VSSQ
+VREFDQ
+NC
+ODT
+NC
+VSS
+VDD
+VSS
+VDD
+VSS
+VDD
+VSSQ
+DQ2
+NF, DQ6
+VDDQ
+VSS
+VDD
+CS#
+BA0
+A3
+A5
+A7
+RESET#
+NC
+DQ0
+DQS
+DQS#
+NF, DQ4
+RAS#
+CAS#
+WE#
+BA2
+A0
+A2
+A9
+A13
+NF, NF/TDQS#
+DM, DM/TDQS
+DQ1
+VDD
+NF, DQ7
+CK
+CK#
+A10/AP
+A15
+A12/BC#
+A1
+A11
+A14
+VDD
+VDDQ
+VSSQ
+VSSQ
+VDDQ
+NC
+CKE
+NC
+VSS
+VDD
+VSS
+VDD
+VSS
+VSS
+VSSQ
+DQ3
+VSS
+NF, DQ5
+VSS
+VDD
+ZQ
+VREFCA
+BA1
+A4
+A6
+A8
+A
+B
+C
+D
+E
+F
+G
+H
+J
+K
+L
+M
+N
+Notes:
+1. Ball descriptions listed in Table 3 (page 5) are listed as “x4, x8” if unique; otherwise,
+x4 and x8 are the same.
+2. A comma separates the configuration; a slash defines a selectable function.
+Example D7 = NF, NF/TDQS#. NF applies to the x4 configuration only. NF/TDQS# applies
+to the x8 configuration only—selectable between NF or TDQS# via MRS (symbols are de-
+fined in Table 3).
+4Gb: x4, x8, x16 DDR3L SDRAM
+Ball Assignments and Descriptions
+PDF: 09005aef84780270
+4Gb_DDR3L_SDRAM.pdf - Rev. H 4/13 EN
+3
+Micron Technology, Inc. reserves the right to change products or specifications without notice.
+© 2011 Micron Technology, Inc. All rights reserved.
+
+
+================ [Page 4] ================
+Figure 3: 96-Ball FBGA – x16 (Top View)
+ 
+1
+2
+3
+4
+6
+7
+8
+9
+5
+A
+B
+C
+D
+E
+F
+G
+H
+J
+K
+L
+M
+N
+P
+R
+T
+VDDQ
+VSSQ
+VDDQ
+VSSQ
+VSS
+VDDQ
+VSSQ
+VREFDQ
+NC
+ODT
+NC
+VSS
+VDD
+VSS
+VDD
+VSS
+DQ13
+VDD
+DQ11
+VDDQ
+VSSQ
+DQ2
+DQ6
+VDDQ
+VSS
+VDD
+CS#
+BA0
+A3
+A5
+A7
+RESET#
+DQ15
+VSS
+DQ9
+UDM
+DQ0
+LDQS
+LDQS#
+DQ4
+RAS#
+CAS#
+WE#
+BA2
+A0
+A2
+A9
+A13
+DQ12
+UDQS#
+UDQS
+DQ8
+LDM
+DQ1
+VDD
+DQ7
+CK
+CK#
+A10/AP
+NC
+A12/BC#
+A1
+A11
+A14
+VDDQ
+DQ14
+DQ10
+VSSQ
+VSSQ
+DQ3
+VSS
+DQ5
+VSS
+VDD
+ZQ
+VREFCA
+BA1
+A4
+A6
+A8
+VSS
+VSSQ
+VDDQ
+VDD
+VDDQ
+VSSQ
+VSSQ
+VDDQ
+NC
+CKE
+NC
+VSS
+VDD
+VSS
+VDD
+VSS
+Note:
+1. A slash defines a selectable function.
+4Gb: x4, x8, x16 DDR3L SDRAM
+Ball Assignments and Descriptions
+PDF: 09005aef84780270
+4Gb_DDR3L_SDRAM.pdf - Rev. H 4/13 EN
+4
+Micron Technology, Inc. reserves the right to change products or specifications without notice.
+© 2011 Micron Technology, Inc. All rights reserved.
+
+
+================ [Page 5] ================
+Table 3: 78-Ball FBGA – x4, x8 Ball Descriptions
+Symbol
+Type
+Description
+[15:13], A12/BC#,
+A11, A10/AP, A[9:0]
+Input
+Address inputs: Provide the row address for ACTIVATE commands, and the column
+address and auto precharge bit (A10) for READ/WRITE commands, to select one
+location out of the memory array in the respective bank. A10 sampled during a
+PRECHARGE command determines whether the PRECHARGE applies to one bank
+(A10 LOW, bank selected by BA[2:0]) or all banks (A10 HIGH). The address inputs also
+provide the op-code during a LOAD MODE command. Address inputs are referenced
+to VREFCA. A12/BC#: When enabled in the mode register (MR), A12 is sampled during
+READ and WRITE commands to determine whether burst chop (on-the-fly) will be
+performed (HIGH = BL8 or no burst chop, LOW = BC4). See Truth Table - Command in
+the DDR3 SDRAM data sheet.
+BA[2:0]
+Input
+Bank address inputs: BA[2:0] define the bank to which an ACTIVATE, READ,
+WRITE, or PRECHARGE command is being applied. BA[2:0] define which mode
+register (MR0, MR1, MR2, or MR3) is loaded during the LOAD MODE command.
+BA[2:0] are referenced to VREFCA.
+CK, CK#
+Input
+Clock: CK and CK# are differential clock inputs. All control and address input signals
+are sampled on the crossing of the positive edge of CK and the negative edge of
+CK#. Output data strobe (DQS, DQS#) is referenced to the crossings of CK and CK#.
+CKE
+Input
+Clock enable: CKE enables (registered HIGH) and disables (registered LOW)
+internal circuitry and clocks on the DRAM. The specific circuitry that is enabled/
+disabled is dependent upon the DDR3 SDRAM configuration and operating mode.
+Taking CKE LOW provides PRECHARGE POWER-DOWN and SELF REFRESH operations
+(all banks idle), or active power-down (row active in any bank). CKE is synchronous
+for power-down entry and exit and for self refresh entry. CKE is asynchronous for
+self refresh exit. Input buffers (excluding CK, CK#, CKE, RESET#, and ODT) are
+disabled during POWER-DOWN. Input buffers (excluding CKE and RESET#) are disa-
+bled during SELF REFRESH. CKE is referenced to VREFCA.
+CS#
+Input
+Chip select: CS# enables (registered LOW) and disables (registered HIGH) the
+command decoder. All commands are masked when CS# is registered HIGH. CS#
+provides for external rank selection on systems with multiple ranks. CS# is considered
+part of the command code. CS# is referenced to VREFCA.
+DM
+Input
+Input data mask: DM is an input mask signal for write data. Input data is masked
+when DM is sampled HIGH along with the input data during a write access.
+Although the DM ball is input-only, the DM loading is designed to match that of the
+DQ and DQS balls. DM is referenced to VREFDQ. DM has an optional use as TDQS on
+the x8.
+ODT
+Input
+On-die termination: ODT enables (registered HIGH) and disables (registered LOW)
+termination resistance internal to the DDR3 SDRAM. When enabled in normal
+operation, ODT is only applied to each of the following balls: DQ[7:0], DQS, DQS#,
+and DM for the x8; DQ[3:0], DQS, DQS#, and DM for the x4. The ODT input is
+ignored if disabled via the LOAD MODE command. ODT is referenced to REFCA.
+RAS#, CAS#, WE#
+Input
+Command inputs: RAS#, CAS#, and WE# (along with CS#) define the command
+being entered and are referenced to VREFCA.
+RESET#
+Input
+Reset: RESET# is an active LOW CMOS input referenced to VSS. The RESET# input re-
+ceiver is a CMOS input defined as a rail-to-rail signal with DC HIGH ≥ 0.8 × VDD and
+DC LOW ≤ 0.2 × VDDQ. RESET# assertion and desertion are asynchronous.
+4Gb: x4, x8, x16 DDR3L SDRAM
+Ball Assignments and Descriptions
+PDF: 09005aef84780270
+4Gb_DDR3L_SDRAM.pdf - Rev. H 4/13 EN
+5
+Micron Technology, Inc. reserves the right to change products or specifications without notice.
+© 2011 Micron Technology, Inc. All rights reserved.
+
+
+================ [Page 6] ================
+Table 3: 78-Ball FBGA – x4, x8 Ball Descriptions (Continued)
+Symbol
+Type
+Description
+DQ[3:0]
+I/O
+Data input/output: Bidirectional data bus for the x4 configuration. DQ[3:0] are
+referenced to REFDQ.
+DQ[7:0]
+I/O
+Data input/output: Bidirectional data bus for the x8 configuration. DQ[7:0] are
+referenced to VREFDQ.
+DQS, DQS#
+I/O
+Data strobe: Output with read data. Edge-aligned with read data. Input with write
+data. Center-aligned to write data.
+TDQS, TDQS#
+Output
+Termination data strobe: Applies to the x8 configuration only. When TDQS is
+enabled, DM is disabled, and the TDQS and TDQS# balls provide termination
+resistance.
+VDD
+Supply
+Power supply: 1.35V, 1.283–1.45V operational; compatible to 1.5V operation.
+VDDQ
+Supply
+DQ power supply: 1.35V, 1.283–1.45V operational; compatible to 1.5V operation.
+VREFCA
+Supply
+Reference voltage for control, command, and address: VREFCA must be
+maintained at all times (including self refresh) for proper device operation.
+VREFDQ
+Supply
+Reference voltage for data:REFDQ must be maintained at all times (excluding self
+refresh) for proper device operation.
+VSS
+Supply
+Ground.
+VSSQ
+Supply
+DQ ground: Isolated on the device for improved noise immunity.
+ZQ
+Reference
+External reference ball for output drive calibration: This ball is tied to an
+external 240Ω resistor (RZQ), which is tied to VSSQ.
+NC
+–
+No connect: These balls should be left unconnected (the ball has no connection to
+the DRAM or to other balls).
+NF
+–
+No function: When configured as a x4 device, these balls are NF. When configured
+as a x8 device, these balls are defined as TDQS#, DQ[7:4].
+4Gb: x4, x8, x16 DDR3L SDRAM
+Ball Assignments and Descriptions
+PDF: 09005aef84780270
+4Gb_DDR3L_SDRAM.pdf - Rev. H 4/13 EN
+6
+Micron Technology, Inc. reserves the right to change products or specifications without notice.
+© 2011 Micron Technology, Inc. All rights reserved.
+
+
+================ [Page 7] ================
+Table 4: 96-Ball FBGA – x16 Ball Descriptions
+Symbol
+Type
+Description
+[14:13], A12/BC#,
+A11, A10/AP, A[9:0]
+Input
+Address inputs: Provide the row address for ACTIVATE commands, and the column
+address and auto precharge bit (A10) for READ/WRITE commands, to select one
+location out of the memory array in the respective bank. A10 sampled during a
+PRECHARGE command determines whether the PRECHARGE applies to one bank
+(A10 LOW, bank selected by BA[2:0]) or all banks (A10 HIGH). The address inputs also
+provide the op-code during a LOAD MODE command. Address inputs are referenced
+to VREFCA. A12/BC#: When enabled in the mode register (MR), A12 is sampled during
+READ and WRITE commands to determine whether burst chop (on-the-fly) will be
+performed (HIGH = BL8 or no burst chop, LOW = BC4). See Truth Table - Command in
+the DDR3 SDRAM data sheet.
+BA[2:0]
+Input
+Bank address inputs: BA[2:0] define the bank to which an ACTIVATE, READ,
+WRITE, or PRECHARGE command is being applied. BA[2:0] define which mode
+register (MR0, MR1, MR2, or MR3) is loaded during the LOAD MODE command.
+BA[2:0] are referenced to VREFCA.
+CK, CK#
+Input
+Clock: CK and CK# are differential clock inputs. All control and address input signals
+are sampled on the crossing of the positive edge of CK and the negative edge of
+CK#. Output data strobe (DQS, DQS#) is referenced to the crossings of CK and CK#.
+CKE
+Input
+Clock enable: CKE enables (registered HIGH) and disables (registered LOW) internal
+circuitry and clocks on the DRAM. The specific circuitry that is enabled/disabled is de-
+pendent upon the DDR3 SDRAM configuration and operating mode. Taking CKE
+LOW provides PRECHARGE POWER-DOWN and SELF REFRESH operations (all banks
+idle),or active power-down (row active in any bank). CKE is synchronous for power-
+down entry and exit and for self refresh entry. CKE is asynchronous for self refresh
+exit. Input buffers (excluding CK, CK#, CKE, RESET#, and ODT) are disabled during
+POWER-DOWN. Input buffers (excluding CKE and RESET#) are disabled during SELF
+REFRESH. CKE is referenced to VREFCA.
+CS#
+Input
+Chip select: CS# enables (registered LOW) and disables (registered HIGH) the
+command decoder. All commands are masked when CS# is registered HIGH. CS# pro-
+vides for external rank selection on systems with multiple ranks. CS# is considered
+part of the command code. CS# is referenced to VREFCA.
+LDM
+Input
+Input data mask: LDM is a lower-byte, input mask signal for write data. Lower-byte
+input data is masked when LDM is sampled HIGH along with the input data during a
+write access. Although the LDM ball is input-only, the LDM loading is
+designed to match that of the DQ and DQS balls. LDM is referenced to VREFDQ.
+ODT
+Input
+On-die termination: ODT enables (registered HIGH) and disables (registered LOW)
+termination resistance internal to the DDR3 SDRAM. When enabled in normal
+operation, ODT is only applied to each of the following balls: DQ[15:0], LDQS,
+LDQS#, UDQS, UDQS#, LDM, and UDM for the x16; DQ0[7:0], DQS, DQS#, DM/TDQS,
+and NF/TDQS# (when TDQS is enabled) for the x8; DQ[3:0], DQS, DQS#, and DM for
+the x4. The ODT input is ignored if disabled via the LOAD MODE command. ODT is
+referenced to VREFCA.
+RAS#, CAS#, WE#
+Input
+Command inputs: RAS#, CAS#, and WE# (along with CS#) define the command
+being entered and are referenced to VREFCA.
+4Gb: x4, x8, x16 DDR3L SDRAM
+Ball Assignments and Descriptions
+PDF: 09005aef84780270
+4Gb_DDR3L_SDRAM.pdf - Rev. H 4/13 EN
+7
+Micron Technology, Inc. reserves the right to change products or specifications without notice.
+© 2011 Micron Technology, Inc. All rights reserved.
+
+
+================ [Page 8] ================
+Table 4: 96-Ball FBGA – x16 Ball Descriptions (Continued)
+Symbol
+Type
+Description
+RESET#
+Input
+Reset: RESET# is an active LOW CMOS input referenced to VSS. The RESET# input re-
+ceiver is a CMOS input defined as a rail-to-rail signal with DC HIGH ≥ 0.8 × VDD and
+DC LOW ≤ 0.2 × VDDQ. RESET# assertion and desertion are asynchronous.
+UDM
+Input
+Input data mask: UDM is an upper-byte, input mask signal for write data. Upper-
+byte input data is masked when UDM is sampled HIGH along with that input data
+during a WRITE access. Although the UDM ball is input-only, the UDM loading is
+designed to match that of the DQ and DQS balls. UDM is referenced to VREFDQ.
+DQ[7:0]
+I/O
+Data input/output: Lower byte of bidirectional data bus for the x16 configuration.
+DQ[7:0] are referenced to VREFDQ.
+DQ[15:8]
+I/O
+Data input/output: Upper byte of bidirectional data bus for the x16 configuration.
+DQ[15:8] are referenced to VREFDQ.
+LDQS, LDQS#
+I/O
+Lower byte data strobe: Output with read data. Edge-aligned with read data.
+Input with write data. Center-aligned to write data.
+UDQS, UDQS#
+I/O
+Upper byte data strobe: Output with read data. Edge-aligned with read data.
+Input with write data. DQS is center-aligned to write data.
+VDD
+Supply
+Power supply: 1.35V, 1.283–1.45V operational; compatible to 1.5V operation.
+VDDQ
+Supply
+DQ power supply: 1.35V, 1.283–1.45V operational; compatible to 1.5V operation.
+VREFCA
+Supply
+Reference voltage for control, command, and address: VREFCA must be
+maintained at all times (including self refresh) for proper device operation.
+VREFDQ
+Supply
+Reference voltage for data: VREFDQ must be maintained at all times (excluding self
+refresh) for proper device operation.
+VSS
+Supply
+Ground.
+VSSQ
+Supply
+DQ ground: Isolated on the device for improved noise immunity.
+ZQ
+Reference
+External reference ball for output drive calibration: This ball is tied to an
+external 240Ω resistor (RZQ), which is tied to VSSQ.
+NC
+–
+No connect: These balls should be left unconnected (the ball has no connection to
+the DRAM or to other balls).
+4Gb: x4, x8, x16 DDR3L SDRAM
+Ball Assignments and Descriptions
+PDF: 09005aef84780270
+4Gb_DDR3L_SDRAM.pdf - Rev. H 4/13 EN
+8
+Micron Technology, Inc. reserves the right to change products or specifications without notice.
+© 2011 Micron Technology, Inc. All rights reserved.
+
+
+================ [Page 9] ================
+Package Dimensions
+Figure 4: 78-Ball FBGA – x4, x8 (RA)
+ 
+1.8 CTR
+Nonconductive
+overmold
+0.155
+Seating plane
+0.12
+A
+1
+2
+3
+7
+8
+9
+Ball A1 ID
+Ball A1 ID
+A
+0.25 MIN
+1.1 ±0.1
+6.4 CTR
+10.5 ±0.1
+0.8 TYP
+9.6 CTR
+12 ±0.1
+78X Ø0.45
+Dimensions apply
+to solder balls post-
+reflow on Ø0.35 SMD
+ball pads.
+0.8 TYP
+A
+B
+C
+D
+E
+F
+G
+H
+J
+K
+L
+M
+N
+Notes:
+1. All dimensions are in millimeters.
+2. Solder ball material: SAC305 (96.5% Sn, 3% Ag, 0.5% Cu)
+4Gb: x4, x8, x16 DDR3L SDRAM
+Package Dimensions
+PDF: 09005aef84780270
+4Gb_DDR3L_SDRAM.pdf - Rev. H 4/13 EN
+9
+Micron Technology, Inc. reserves the right to change products or specifications without notice.
+© 2011 Micron Technology, Inc. All rights reserved.
+
+
+================ [Page 10] ================
+Figure 5: 78-Ball FBGA – x4, x8 (RH)
+ 
+6.4 CTR
+9 ±0.1
+0.8 TYP
+10.5 ±0.1
+9.6 CTR
+0.8 TYP
+1.1 ±0.1
+0.25 MIN
+1
+A
+2
+3
+7
+8
+9
+B
+C
+D
+E
+F
+G
+H
+J
+K
+L
+M
+N
+0.12
+A
+A
+0.155
+78X Ø0.45
+Dimensions apply
+to solder balls post-
+reflow on Ø0.35 SMD
+ball pads.
+Seating plane
+Ball A1 ID
+(covered by SR)
+Ball A1 ID
+1.8 CTR
+Nonconductive
+overmold
+Notes:
+1. All dimensions are in millimeters.
+2. Solder ball material: SAC305 (96.5% Sn, 3% Ag, 0.5% Cu)
+4Gb: x4, x8, x16 DDR3L SDRAM
+Package Dimensions
+PDF: 09005aef84780270
+4Gb_DDR3L_SDRAM.pdf - Rev. H 4/13 EN
+10
+Micron Technology, Inc. reserves the right to change products or specifications without notice.
+© 2011 Micron Technology, Inc. All rights reserved.
+
+
+================ [Page 11] ================
+Figure 6: 96-Ball FBGA – x16 (RE)
+ 
+1.8 CTR
+Nonconductive
+overmold
+0.155
+Seating plane
+0.12 A
+1
+2
+3
+7
+8
+9
+Ball A1 ID
+Ball A1 ID
+A
+0.25 MIN
+1.1 ±0.1
+6.4 CTR
+10 ±0.1
+0.8 TYP
+12 CTR
+14 ±0.1
+96X Ø0.45
+Dimensions apply
+to solder balls
+post-reflow on
+Ø0.35 SMD ball pads
+0.8 TYP
+A
+B
+C
+D
+E
+F
+G
+H
+J
+K
+L
+M
+N
+P
+R
+T
+Notes:
+1. All dimensions are in millimeters.
+2. Solder ball material: SAC305 (96.5% Sn, 3% Ag, 0.5% Cu)
+4Gb: x4, x8, x16 DDR3L SDRAM
+Package Dimensions
+PDF: 09005aef84780270
+4Gb_DDR3L_SDRAM.pdf - Rev. H 4/13 EN
+11
+Micron Technology, Inc. reserves the right to change products or specifications without notice.
+© 2011 Micron Technology, Inc. All rights reserved.
+
+
+================ [Page 12] ================
+Figure 7: 96-Ball FBGA – x16 (HA)
+ 
+Ball A1 Index
+Dimensions
+apply to solder
+balls post-reflow
+on Ø0.35 SMD
+ball pads.
+14 ±0.1
+0.8 TYP
+1.1 ±0.1
+12 CTR
+Ball A1 Index
+(covered by SR)
+0.8 TYP
+9 ±0.1
+0.25 MIN
+6.4 CTR
+96X Ø0.45
+9 8 7 
+3 2 1
+A
+B
+C
+D
+E
+F
+G
+H
+J
+K
+L
+M
+N
+P
+R
+T
+A
+0.12
+A
+Seating plane
+1.8 CTR
+Nonconductive
+overmold
+0.155
+Notes:
+1. All dimensions are in millimeters.
+2. Solder ball material: SAC305 (96.5% Sn, 3% Ag, 0.5% Cu)
+4Gb: x4, x8, x16 DDR3L SDRAM
+Package Dimensions
+PDF: 09005aef84780270
+4Gb_DDR3L_SDRAM.pdf - Rev. H 4/13 EN
+12
+Micron Technology, Inc. reserves the right to change products or specifications without notice.
+© 2011 Micron Technology, Inc. All rights reserved.
+
+
+================ [Page 13] ================
+Electrical Characteristics – 1.35V operating IDD Specifications
+Table 5: IDD Maximum Limits - Die Rev. D
+Speed Bin
+DDR3L-1066
+DDR3L-1333
+DDR3L-1600
+Units
+Parameter
+Symbol
+Width
+Operating current 0: One bank
+ACTIVATE-to-PRECHARGE
+IDD0
+x4, x8
+60
+65
+75
+mA
+x16
+75
+80
+90
+mA
+Operating current 1: One bank
+ACTIVATE-to-READ-to-PRE-
+CHARGE
+IDD1
+x4
+70
+75
+80
+mA
+x8
+77
+82
+87
+mA
+x16
+105
+110
+115
+mA
+Precharge power-down current:
+Slow exit
+IDD2P0
+All
+20
+20
+20
+mA
+Precharge power-down current:
+Fast exit
+IDD2P1
+All
+30
+32
+37
+mA
+Precharge quiet standby current
+IDD2Q
+All
+39
+44
+47
+mA
+Precharge standby current
+IDD2N
+All
+42
+45
+50
+mA
+Precharge standby ODT current
+IDD2NT
+x4, x8
+40
+45
+50
+mA
+x16
+45
+50
+55
+mA
+Active power-down current
+IDD3P
+All
+53
+58
+63
+mA
+Active standby current
+IDD3N
+x4, x8
+52
+57
+62
+mA
+x16
+68
+73
+77
+mA
+Burst read operating current
+IDD4R
+x4
+135
+155
+175
+mA
+x8
+147
+164
+187
+mA
+x16
+220
+240
+280
+mA
+Burst write operating current
+IDD4W
+x4
+115
+135
+155
+mA
+x8
+125
+145
+165
+mA
+x16
+180
+200
+225
+mA
+Burst refresh current
+IDD5B
+All
+205
+210
+220
+mA
+Room temperature self refresh
+IDD6
+All
+22
+22
+22
+mA
+Extended temperature self re-
+fresh
+IDD6ET
+All
+28
+28
+28
+mA
+All banks interleaved read cur-
+rent
+IDD7
+x4, x8
+210
+250
+290
+mA
+x16
+260
+285
+320
+mA
+Reset current
+IDD8
+All
+IDD2P + 2mA
+IDD2P + 2mA
+IDD2P + 2mA
+mA
+4Gb: x4, x8, x16 DDR3L SDRAM
+Electrical Characteristics – 1.35V operating IDD Specifications
+PDF: 09005aef84780270
+4Gb_DDR3L_SDRAM.pdf - Rev. H 4/13 EN
+13
+Micron Technology, Inc. reserves the right to change products or specifications without notice.
+© 2011 Micron Technology, Inc. All rights reserved.
+
+
+================ [Page 14] ================
+Table 6: IDD Maximum Limits Die Rev. E, J
+Speed Bin
+DDR3L-1066
+DDR3L-1333
+DDR3L-1600
+DDR3L-1866
+Units
+Parameter
+Symbol
+Width
+Operating current 0: One
+bank 
+ACTIVATE-to-PRE-
+CHARGE
+IDD0
+x4, x8
+44
+47
+55
+62
+mA
+x16
+55
+58
+66
+73
+mA
+Operating current 1: One
+bank ACTIVATE-to-READ-to-
+PRECHARGE
+IDD1
+x4
+53
+57
+61
+65
+mA
+x8
+59
+62
+66
+70
+mA
+x16
+80
+84
+87
+91
+mA
+Precharge power-down cur-
+rent: Slow exit
+IDD2P0
+All
+18
+18
+18
+18
+mA
+Precharge power-down cur-
+rent: Fast exit
+IDD2P1
+All
+26
+28
+32
+37
+mA
+Precharge quiet standby cur-
+rent
+IDD2Q
+All
+27
+28
+32
+35
+mA
+Precharge standby current
+IDD2N
+All
+28
+29
+32
+35
+mA
+Precharge standby ODT cur-
+rent
+IDD2NT
+x4, x8
+32
+35
+39
+42
+mA
+x16
+35
+39
+42
+45
+mA
+Active power-down current
+IDD3P
+All
+32
+35
+38
+41
+mA
+Active standby current
+IDD3N
+x4, x8
+32
+35
+38
+41
+mA
+x16
+41
+45
+47
+49
+mA
+Burst read operating current
+IDD4R
+x4
+113
+130
+147
+164
+mA
+x8
+123
+140
+157
+174
+mA
+x16
+185
+202
+235
+252
+mA
+Burst write operating current
+IDD4W
+x4
+87
+103
+118
+133
+mA
+x8
+95
+110
+125
+141
+mA
+x16
+137
+152
+171
+190
+mA
+Burst refresh current
+IDD5B
+All
+224
+228
+235
+242
+mA
+Room temperature self re-
+fresh
+IDD6
+All
+20
+20
+20
+20
+mA
+Extended temperature self
+refresh
+IDD6ET
+All
+25
+25
+25
+25
+mA
+All banks interleaved read
+current
+IDD7
+x4, x8
+160
+190
+220
+251
+mA
+x16
+198
+217
+243
+274
+mA
+Reset current
+IDD8
+All
+IDD2P + 2mA
+IDD2P + 2mA
+IDD2P + 2mA
+IDD2P + 2mA
+mA
+4Gb: x4, x8, x16 DDR3L SDRAM
+Electrical Characteristics – 1.35V operating IDD Specifications
+PDF: 09005aef84780270
+4Gb_DDR3L_SDRAM.pdf - Rev. H 4/13 EN
+14
+Micron Technology, Inc. reserves the right to change products or specifications without notice.
+© 2011 Micron Technology, Inc. All rights reserved.
+
+
+================ [Page 15] ================
+Electrical Specifications
+Table 7: Input/Output Capacitance
+Gray-shaded cells have the same values as those in the 1.5V DDR3 data sheet
+Capacitance
+Parameters
+Symbol
+DDR3L-800
+DDR3L-1066
+DDR3L-1333
+DDR3L-1600
+DDR3L-1866
+Units
+Min
+Max
+Min
+Max
+Min
+Max
+Min
+Max
+Min
+Max
+Single-end I/O: DQ, DM
+CIO
+1.5
+2.5
+1.5
+2.5
+1.5
+2.3
+1.5
+2.2
+1.5
+2.1
+pF
+Differential I/O: DQS,
+DQS#, TDQS, TDQS#
+CIO
+1.5
+2.5
+1.5
+2.5
+1.5
+2.3
+1.5
+2.2
+1.5
+2.1
+pF
+Inputs (CTRL,
+CMD,ADDR)
+CI
+0.75
+1.3
+0.75
+1.3
+0.75
+1.3
+0.75
+1.2
+0.75
+1.2
+pF
+Table 8: DC Electrical Characteristics and Operating Conditions – 1.35V Operation
+All voltages are referenced to VSS
+Parameter/Condition
+Symbol
+Min
+Nom
+Max
+Units
+Notes
+Supply voltage
+VDD
+1.283
+1.35
+1.45
+V
+1, 2, 3, 4
+I/O supply voltage
+VDDQ
+1.283
+1.35
+1.45
+V
+1, 2, 3, 4
+Notes:
+1. Maximum DC value may not be greater than 1.425V. The DC value is the linear average
+of VDD/VDDQ(t) over a very long period of time (for example, 1 sec).
+2. If the maximum limit is exceeded, input levels shall be governed by DDR3 specifications.
+3. Under these supply voltages, the device operates to this DDR3L specification.
+4. Once initialized for DDR3L operation, DDR3 operation may only be used if the device is
+in reset while VDD and VDDQ are changed for DDR3 operation (see Figure 8 (page 27)).
+Table 9: DC Electrical Characteristics and Operating Conditions – 1.5V Operation
+All voltages are referenced to VSS
+Parameter/Condition
+Symbol
+Min
+Nom
+Max
+Units
+Notes
+Supply voltage
+VDD
+1.425
+1.5
+1.575
+V
+1, 2, 3
+I/O supply voltage
+VDDQ
+1.425
+1.5
+1.575
+V
+1, 2, 3
+Notes:
+1. If the minimum limit is exceeded, input levels shall be governed by DDR3L specifications.
+2. Under 1.5V operation, this DDR3L device operates in accordance with the DDR3 specifi-
+cations under the same speed timings as defined for this device.
+3. Once initialized for DDR3 operation, DDR3L operation may only be used if the device is
+in reset while VDD and VDDQ are changed for DDR3L operation (see Figure 8 (page 27)).
+4Gb: x4, x8, x16 DDR3L SDRAM
+Electrical Specifications
+PDF: 09005aef84780270
+4Gb_DDR3L_SDRAM.pdf - Rev. H 4/13 EN
+15
+Micron Technology, Inc. reserves the right to change products or specifications without notice.
+© 2011 Micron Technology, Inc. All rights reserved.
+
+
+================ [Page 16] ================
+Table 10: Input Switching Conditions – Command and Address
+Parameter/Condition
+Symbol
+DDR3L-800/1066
+DDR3L-1333/1600
+DDR3L-1866
+Units
+Input high AC voltage: Logic 1
+VIH(AC160)min1
+160
+160
+–
+mV
+Input high AC voltage: Logic 1
+VIH(AC135)min1
+135
+135
+135
+mV
+Input high AC voltage: Logic 1
+VIH(AC125)min1
+–
+–
+125
+mV
+Input high DC voltage: Logic 1
+VIH(DC90)min
+90
+90
+90
+mV
+Input low DC voltage: Logic 0
+VIL(DC90)min
+–90
+–90
+–90
+mV
+Input low AC voltage: Logic 0
+VIL(AC125)min1
+–
+–
+–125
+mV
+Input low AC voltage: Logic 0
+VIL(AC135)min1
+–135
+–135
+–135
+mV
+Input low AC voltage: Logic 0
+VIL(AC160)min1
+–160
+–160
+–
+mV
+Note:
+1. When two VIH(AC) values (and two corresponding VIL(AC) values) are listed for a specific
+speed bin, the user may choose either value for the input AC level. Whichever value is
+used, the associated setup time for that AC level must also be used. Additionally, one
+VIH(AC) value may be used for address/command inputs and the other VIH(AC) value may
+be used for data inputs.
+For example, for DDR3L-800, two input AC levels are defined: VIH(AC160),min and
+VIH(AC135),min (corresponding VIL(AC160),min and VIL(AC135),min). For DDRL-800, the address/
+command inputs must use either VIH(AC160),min with tIS(AC160) of 215ps or VIH(AC135),min
+with tIS(AC135) of 365ps; independently, the data inputs may use either VIH(AC160),min or
+VIH(AC135),min.
+Table 11: Input Switching Conditions – DQ and DM
+Parameter/Condition
+Symbol
+DDR3L-800/1066
+DDR3L-1333/1600
+DDR3L-1866
+Units
+Input high AC voltage: Logic 1
+VIH(AC160)min1
+160
+160
+–
+mV
+Input high AC voltage: Logic 1
+VIH(AC135)min1
+135
+135
+135
+mV
+Input high AC voltage: Logic 1
+VIH(AC130)min1
+–
+–
+130
+mV
+Input high DC voltage: Logic 1
+VIH(DC90)min
+90
+90
+90
+mV
+Input low DC voltage: Logic 0
+VIL(DC90)min
+–90
+–90
+–90
+mV
+Input low AC voltage: Logic 0
+VIL(AC130)min1
+–
+–
+–130
+mV
+Input low AC voltage: Logic 0
+VIL(AC135)min1
+–135
+–135
+–135
+mV
+Input low AC voltage: Logic 0
+VIL(AC160)min1
+–160
+–160
+–
+mV
+Note:
+1. When two VIH(AC) values (and two corresponding VIL(AC) values) are listed for a specific
+speed bin, the user may choose either value for the input AC level. Whichever value is
+used, the associated setup time for that AC level must also be used. Additionally, one
+VIH(AC) value may be used for address/command inputs and the other VIH(AC) value may
+be used for data inputs.
+For example, for DDR3L-800, two input AC levels are defined: VIH(AC160),min and
+VIH(AC135),min (corresponding VIL(AC160),min and VIL(AC135),min). For DDRL-800, the data in-
+puts must use either VIH(AC160),min with tIS(AC160) of 90ps or VIH(AC135),min with tIS(AC135)
+of 140ps; independently, the address/command inputs may use either VIH(AC160),min or
+VIH(AC135),min.
+4Gb: x4, x8, x16 DDR3L SDRAM
+Electrical Specifications
+PDF: 09005aef84780270
+4Gb_DDR3L_SDRAM.pdf - Rev. H 4/13 EN
+16
+Micron Technology, Inc. reserves the right to change products or specifications without notice.
+© 2011 Micron Technology, Inc. All rights reserved.
+
+
+================ [Page 17] ================
+Table 12: Differential Input Operating Conditions (CK, CK# and DQS, DQS#)
+Parameter/Condition
+Symbol
+Min
+Max
+Units
+Differential input logic high – slew
+VIH,diff(AC)slew
+180
+N/A
+mV
+Differential input logic low – slew
+VIL,diff(AC)slew
+N/A
+–180
+mV
+Differential input logic high
+VIH,diff(AC)
+2 × (VIH(AC) - VREF)
+VDD/VDDQ
+mV
+Differential input logic low
+VIL,diff(AC)
+VSS/VSSQ
+2 × (VIL(AC) - VREF)
+mV
+Single-ended high level for strobes
+VSEH
+VDDQ/2 + 160
+VDDQ
+mV
+Single-ended high level for CK, CK#
+VDD/2 + 160
+VDD
+mV
+Single-ended low level for strobes
+VSEL
+VSSQ
+VDDQ/2 - 160
+mV
+Single-ended low level for CK, CK#
+VSS
+VDD/2 - 160
+mV
+Table 13: Minimum Required Time tDVAC for CK/CK#, DQS/DQS# Differential for AC Ringback
+Slew Rate (V/ns)
+DDR3L-800/1066/1333/1600
+DDR3L-1866
+tDVAC at
+320mV (ps)
+tDVAC at
+270mV (ps)
+tDVAC at
+270mV (ps)
+tDVAC at
+250mV (ps)
+tDVAC at
+260mV (ps)
+>4.0
+189
+201
+163
+168
+176
+4.0
+189
+201
+163
+168
+176
+3.0
+162
+179
+140
+147
+154
+2.0
+109
+134
+95
+105
+111
+1.8
+91
+119
+80
+91
+97
+1.6
+69
+100
+62
+74
+78
+1.4
+40
+76
+37
+52
+55
+1.2
+Note1
+44
+5
+22
+24
+1.0
+Note1
+Note1
+Note1
+Note1
+Note1
+<1.0
+Note1
+Note1
+Note1
+Note1
+Note1
+Note:
+1. Rising input signal shall become equal to or greater than VIH(ac) level and Falling input
+signal shall become equal to or less than VIL(ac) level.
+4Gb: x4, x8, x16 DDR3L SDRAM
+Electrical Specifications
+PDF: 09005aef84780270
+4Gb_DDR3L_SDRAM.pdf - Rev. H 4/13 EN
+17
+Micron Technology, Inc. reserves the right to change products or specifications without notice.
+© 2011 Micron Technology, Inc. All rights reserved.
+
+
+================ [Page 18] ================
+Table 14: RTT Effective Impedance
+Gray-shaded cells have the same values as those in the 1.5V DDR3 data sheet
+MR1
+[9, 6, 2]
+RTT
+Resistor
+VOUT
+Min
+Nom
+Max
+Units
+0, 1, 0
+120Ω
+RTT,120PD240
+0.2 × VDDQ
+0.6
+1.0
+1.15
+RZQ/1
+0.5 × VDDQ
+0.9
+1.0
+1.15
+RZQ/1
+0.8 × VDDQ
+0.9
+1.0
+1.45
+RZQ/1
+RTT,120PU240
+0.2 × VDDQ
+0.9
+1.0
+1.45
+RZQ/1
+0.5 × VDDQ
+0.9
+1.0
+1.15
+RZQ/1
+0.8 × VDDQ
+0.6
+1.0
+1.15
+RZQ/1
+120Ω
+VIL(AC) to VIH(AC)
+0.9
+1.0
+1.65
+RZQ/2
+0, 0, 1
+60Ω
+RTT,60PD120
+0.2 × VDDQ
+0.6
+1.0
+1.15
+RZQ/2
+0.5 × VDDQ
+0.9
+1.0
+1.15
+RZQ/2
+0.8 × VDDQ
+0.9
+1.0
+1.45
+RZQ/2
+RTT,60PU120
+0.2 × VDDQ
+0.9
+1.0
+1.45
+RZQ/2
+0.5 × VDDQ
+0.9
+1.0
+1.15
+RZQ/2
+0.8 × VDDQ
+0.6
+1.0
+1.15
+RZQ/2
+60Ω
+VIL(AC) to VIH(AC)
+0.9
+1.0
+1.65
+RZQ/4
+0, 1, 1
+40Ω
+RTT,40PD80
+0.2 × VDDQ
+0.6
+1.0
+1.15
+RZQ/3
+0.5 × VDDQ
+0.9
+1.0
+1.15
+RZQ/3
+0.8 × VDDQ
+0.9
+1.0
+1.45
+RZQ/3
+RTT,40PU80
+0.2 × VDDQ
+0.9
+1.0
+1.45
+RZQ/3
+0.5 × VDDQ
+0.9
+1.0
+1.15
+RZQ/3
+0.8 × VDDQ
+0.6
+1.0
+1.15
+RZQ/3
+40Ω
+VIL(AC) to VIH(AC)
+0.9
+1.0
+1.65
+RZQ/6
+1, 0, 1
+30Ω
+RTT,30PD60
+0.2 × VDDQ
+0.6
+1.0
+1.15
+RZQ/4
+0.5 × VDDQ
+0.9
+1.0
+1.15
+RZQ/4
+0.8 × VDDQ
+0.9
+1.0
+1.45
+RZQ/4
+RTT,30PU60
+0.2 × VDDQ
+0.9
+1.0
+1.45
+RZQ/4
+0.5 × VDDQ
+0.9
+1.0
+1.15
+RZQ/4
+0.8 × VDDQ
+0.6
+1.0
+1.15
+RZQ/4
+30Ω
+VIL(AC) to VIH(AC)
+0.9
+1.0
+1.65
+RZQ/8
+1, 0, 0
+20Ω
+RTT,20PD40
+0.2 × VDDQ
+0.6
+1.0
+1.15
+RZQ/6
+0.5 × VDDQ
+0.9
+1.0
+1.15
+RZQ/6
+0.8 × VDDQ
+0.9
+1.0
+1.45
+RZQ/6
+RTT,20PU40
+0.2 × VDDQ
+0.9
+1.0
+1.45
+RZQ/6
+0.5 × VDDQ
+0.9
+1.0
+1.15
+RZQ/6
+0.8 × VDDQ
+0.6
+1.0
+1.15
+RZQ/6
+20Ω
+VIL(AC) to VIH(AC)
+0.9
+1.0
+1.65
+RZQ/12
+4Gb: x4, x8, x16 DDR3L SDRAM
+Electrical Specifications
+PDF: 09005aef84780270
+4Gb_DDR3L_SDRAM.pdf - Rev. H 4/13 EN
+18
+Micron Technology, Inc. reserves the right to change products or specifications without notice.
+© 2011 Micron Technology, Inc. All rights reserved.
+
+
+================ [Page 19] ================
+Table 15: Reference Settings for ODT Timing Measurements
+Gray-shaded cells have the same values as those in the 1.5V DDR3 data sheet
+Measured
+Parameter
+RTT,nom Setting
+RTT(WR) Setting
+VSW1
+VSW2
+tAON
+RZQ/4 (60Ω)
+N/A
+50mV
+100mv
+RZQ/12 (20Ω)
+N/A
+100mV
+200mV
+tAOF
+RZQ/4 (60Ω)
+N/A
+50mV
+100mv
+RZQ/12 (20Ω)
+N/A
+100mV
+200mV
+tAONPD
+RZQ/4 (60Ω)
+N/A
+50mV
+100mv
+RZQ/12 (20Ω)
+N/A
+100mV
+200mV
+tAOFPD
+RZQ/4 (60Ω)
+N/A
+50mV
+100mv
+RZQ/12 (20Ω)
+N/A
+100mV
+200mV
+tADC
+RZQ/12 (20Ω)
+RZQ/2 (20Ω)
+200mV
+250mV
+Table 16: 34Ω Driver Impedance Characteristics
+Gray-shaded cells have the same values as those in the 1.5V DDR3 data sheet
+MR1
+[5, 1]
+RON
+Resistor
+VOUT
+Min
+Nom
+Max1
+Units
+0, 1
+34.3Ω
+RON,34PD
+0.2 × VDDQ
+0.6
+1.0
+1.15
+RZQ/7
+0.5 × VDDQ
+0.9
+1.0
+1.15
+RZQ/7
+0.8 × VDDQ
+0.9
+1.0
+1.45
+RZQ/7
+RON,34PU
+0.2 × VDDQ
+0.9
+1.0
+1.45
+RZQ/7
+0.5 × VDDQ
+0.9
+1.0
+1.15
+RZQ/7
+0.8 × VDDQ
+0.6
+1.0
+1.15
+RZQ/7
+Pull-up/pull-down mismatch (MMPUPD)
+VIL(AC) to VIH(AC)
+–10
+N/A
+10
+%
+Note:
+1. A larger maximum limit will result in slightly lower minimum currents.
+Table 17: 40Ω Driver Impedance Characteristics
+Gray-shaded cells have the same values as those in the 1.5V DDR3 data sheet
+MR1
+[5, 1]
+RON
+Resistor
+VOUT
+Min
+Nom
+Max1
+Units
+0, 0
+40Ω
+RON,40PD
+0.2 × VDDQ
+0.6
+1.0
+1.15
+RZQ/6
+0.5 × VDDQ
+0.9
+1.0
+1.15
+RZQ/6
+0.8 × VDDQ
+0.9
+1.0
+1.45
+RZQ/6
+RON,40PU
+0.2 × VDDQ
+0.9
+1.0
+1.45
+RZQ/6
+0.5 × VDDQ
+0.9
+1.0
+1.15
+RZQ/6
+0.8 × VDDQ
+0.6
+1.0
+1.15
+RZQ/6
+Pull-up/pull-down mismatch (MMPUPD)
+VIL(AC) to VIH(AC)
+–10
+N/A
+10
+%
+Note:
+1. A larger maximum limit will result in slightly lower minimum currents.
+4Gb: x4, x8, x16 DDR3L SDRAM
+Electrical Specifications
+PDF: 09005aef84780270
+4Gb_DDR3L_SDRAM.pdf - Rev. H 4/13 EN
+19
+Micron Technology, Inc. reserves the right to change products or specifications without notice.
+© 2011 Micron Technology, Inc. All rights reserved.
+
+
+================ [Page 20] ================
+Table 18: Single-Ended Output Driver Characteristics
+Gray-shaded cells have the same values as those in the 1.5V DDR3 data sheet
+Parameter/Condition
+Symbol
+Min
+Max
+Units
+Output slew rate: Single-ended; For rising and falling
+edges, measure between VOL(AC) = VREF - 0.09 × VDDQ
+and VOH(AC) = VREF + 0.09 × VDDQ
+SRQse
+1.75
+6
+V/ns
+Table 19: Differential Output Driver Characteristics
+Gray-shaded cells have the same values as those in the 1.5V DDR3 data sheet
+Parameter/Condition
+Symbol
+Min
+Max
+Units
+Output slew rate: Differential; For rising and falling
+edges, measure between VOL,diff(AC) = –0.18 × VDDQ and
+VOH,diff(AC) = 0.18 × VDDQ
+SRQdiff
+3.5
+12
+V/ns
+Output differential crosspoint voltage
+VOX(AC)
+VREF - 135
+VREF + 135
+mV
+Table 20: Electrical Characteristics and AC Operating Conditions
+Note 1 applies to base timing specifications
+Parameter
+Symbol
+DDR3L-800
+DDR3L-1066 DDR3L-1333 DDR3L-1600 DDR3L-1866
+Units
+Min
+Max
+Min
+Max
+Min
+Max
+Min
+Max
+Min
+Max
+DQ Input Timing
+Data setup
+time to DQS,
+DQS#
+Base
+(specification)
+tDS
+(AC160)
+90
+–
+40
+–
+N/A
+–
+N/A
+–
+N/A
+–
+ps
+VREF @ 1 V/ns
+ 
+250
+–
+200
+–
+N/A
+–
+N/A
+–
+N/A
+–
+ps
+Data setup
+time to DQS,
+DQS#
+Base
+(specification)
+tDS
+(AC135)
+140
+–
+90
+–
+45
+–
+25
+–
+N/A
+–
+ps
+VREF @ 1 V/ns
+ 
+275
+–
+225
+–
+180
+–
+160
+–
+N/A
+–
+ps
+Data hold
+time from
+DQS, DQS#
+Base
+(specification)
+tDH
+(DC90)
+160
+–
+110
+–
+75
+–
+55
+–
+N/A
+–
+ps
+VREF @ 1 V/ns
+ 
+250
+–
+200
+–
+165
+–
+145
+–
+N/A
+–
+ps
+Data setup
+time to DQS,
+DQS#
+Base
+(specification)
+tDS
+(AC130)
+N/A
+–
+N/A
+–
+N/A
+–
+N/A
+–
+70
+–
+ps
+VREF @ 2 V/ns
+ 
+N/A
+–
+N/A
+–
+N/A
+–
+N/A
+–
+135
+–
+ps
+Data hold
+time from
+DQS, DQS#
+Base
+(specification)
+tDH
+(DC90)
+N/A
+–
+N/A
+–
+N/A
+–
+N/A
+–
+75
+–
+ps
+VREF @ 2 V/ns
+ 
+N/A
+–
+N/A
+–
+N/A
+–
+N/A
+–
+110
+–
+ps
+Command and Address Timing
+CTRL, CMD,
+ADDR setup
+to CK, CK#
+Base
+(specification)
+tIS
+(AC160)
+215
+–
+140
+–
+80
+–
+60
+–
+N/A
+–
+ps
+VREF @ 1 V/ns
+ 
+375
+–
+300
+–
+240
+–
+220
+–
+N/A
+–
+ps
+CTRL, CMD,
+ADDR setup
+to CK, CK#
+Base
+(specification)
+tIS
+(AC135)
+365
+–
+290
+–
+205
+–
+185
+–
+65
+–
+ps
+VREF @ 1 V/ns
+ 
+500
+–
+425
+–
+340
+–
+320
+–
+200
+–
+ps
+4Gb: x4, x8, x16 DDR3L SDRAM
+Electrical Specifications
+PDF: 09005aef84780270
+4Gb_DDR3L_SDRAM.pdf - Rev. H 4/13 EN
+20
+Micron Technology, Inc. reserves the right to change products or specifications without notice.
+© 2011 Micron Technology, Inc. All rights reserved.
+
+
+================ [Page 21] ================
+Table 20: Electrical Characteristics and AC Operating Conditions (Continued)
+Note 1 applies to base timing specifications
+Parameter
+Symbol
+DDR3L-800
+DDR3L-1066 DDR3L-1333 DDR3L-1600 DDR3L-1866
+Units
+Min
+Max
+Min
+Max
+Min
+Max
+Min
+Max
+Min
+Max
+CTRL, CMD,
+ADDR setup
+to CK, CK#
+Base
+(specification)
+tIS
+(AC125)
+N/A
+–
+N/A
+–
+N/A
+–
+N/A
+–
+150
+–
+ps
+VREF @ 1 V/ns
+ 
+N/A
+–
+N/A
+–
+N/A
+–
+N/A
+–
+275
+–
+ps
+CTRL, CMD,
+ADDR hold
+from CK, CK#
+Base
+(specification)
+tIH
+(DC90)
+285
+–
+210
+–
+150
+–
+130
+–
+110
+–
+ps
+VREF @ 1 V/ns
+ 
+375
+–
+300
+–
+240
+–
+220
+–
+200
+–
+ps
+Notes:
+1. When two VIH(AC) values (and two corresponding VIL(AC) values) are listed for a specific
+speed bin, the user may choose either value for the input AC level. Whichever value is
+used, the associated setup time for that AC level must also be used. Additionally, one
+VIH(AC) value may be used for address/command inputs and the other VIH(AC) value may
+be used for data inputs.
+For example, for DDR3-800, two input AC levels are defined: VIH(AC160),min and
+VIH(AC135),min (corresponding VIL(AC160),min and VIL(AC135),min). For DDR3-800, the address/
+command inputs must use either VIH(AC160),min with tIS(AC160) of 215ps or VIH(AC135),min
+with tIS(AC135) of 365ps; independently, the data inputs must use either VIH(AC160),min
+with tDS(AC160) of 90ps or VIH(AC135),min with tDS(AC135) of 140ps.
+2. When DQ single-ended slew rate is 1V/ns, the DQS differential slew rate is 2V/ns; when
+DQ single-ended slew rate is 2V/ns, the DQS differential slew rate is 4V/ns;
+Table 21: Derating Values for tIS/tIH – AC160/DC90-Based
+ΔtIS, ΔtIH Derating (ps) – AC/DC-Based
+CMD/ADDR
+Slew Rate
+V/ns
+CK, CK# Differential Slew Rate
+4.0 V/ns
+3.0 V/ns
+2.0 V/ns
+1.8 V/ns
+1.6 V/ns
+1.4 V/ns
+1.2 V/ns
+1.0 V/ns
+ΔtIS
+ΔtIH
+ΔtIS
+ΔtIH
+ΔtIS
+ΔtIH
+ΔtIS
+ΔtIH
+ΔtIS
+ΔtIH
+ΔtIS
+ΔtIH
+ΔtIS
+ΔtIH
+ΔtIS
+ΔtIH
+2.0
+80
+45
+80
+45
+80
+45
+88
+53
+96
+61
+104
+69
+112
+79
+120
+95
+1.5
+53
+30
+53
+30
+53
+30
+61
+38
+69
+46
+77
+54
+85
+64
+93
+80
+1.0
+0
+0
+0
+0
+0
+0
+8
+8
+16
+16
+24
+24
+32
+34
+40
+50
+0.9
+–1
+–3
+–1
+–3
+–1
+–3
+7
+5
+15
+13
+23
+21
+31
+31
+39
+47
+0.8
+–3
+–8
+–3
+–8
+–3
+–8
+5
+1
+13
+9
+21
+17
+29
+27
+37
+43
+0.7
+–5
+–13
+–5
+–13
+–5
+–13
+3
+–5
+11
+3
+19
+11
+27
+21
+35
+37
+0.6
+–8
+–20
+–8
+–20
+–8
+–20
+0
+–12
+8
+–4
+16
+4
+24
+14
+32
+30
+0.5
+–20
+–30
+–20
+–30
+–20
+–30
+–12
+–22
+–4
+–14
+4
+–6
+12
+4
+20
+20
+0.4
+–40
+–45
+–40
+–45
+–40
+–45
+–32
+–37
+–24
+–29
+–16
+–21
+–8
+–11
+0
+5
+4Gb: x4, x8, x16 DDR3L SDRAM
+Electrical Specifications
+PDF: 09005aef84780270
+4Gb_DDR3L_SDRAM.pdf - Rev. H 4/13 EN
+21
+Micron Technology, Inc. reserves the right to change products or specifications without notice.
+© 2011 Micron Technology, Inc. All rights reserved.
+
+
+================ [Page 22] ================
+Table 22: Derating Values for tIS/tIH – AC135/DC90-Based
+ΔtIS, ΔtIH Derating (ps) – AC/DC-Based
+CMD/ADDR
+Slew Rate
+V/ns
+CK, CK# Differential Slew Rate
+4.0 V/ns
+3.0 V/ns
+2.0 V/ns
+1.8 V/ns
+1.6 V/ns
+1.4 V/ns
+1.2 V/ns
+1.0 V/ns
+ΔtIS
+ΔtIH
+ΔtIS
+ΔtIH
+ΔtIS
+ΔtIH
+ΔtIS
+ΔtIH
+ΔtIS
+ΔtIH
+ΔtIS
+ΔtIH
+ΔtIS
+ΔtIH
+ΔtIS
+ΔtIH
+2.0
+68
+45
+68
+45
+68
+45
+76
+53
+84
+61
+92
+69
+100
+79
+108
+95
+1.5
+45
+30
+45
+30
+45
+30
+53
+38
+61
+46
+69
+54
+77
+64
+85
+80
+1.0
+0
+0
+0
+0
+0
+0
+8
+8
+16
+16
+24
+24
+32
+34
+40
+50
+0.9
+2
+–3
+2
+–3
+2
+–3
+10
+5
+18
+13
+26
+21
+34
+31
+42
+47
+0.8
+3
+–8
+3
+–8
+3
+–8
+11
+1
+19
+9
+27
+17
+35
+27
+43
+43
+0.7
+6
+–13
+6
+–13
+6
+–13
+14
+–5
+22
+3
+30
+11
+38
+21
+46
+37
+0.6
+9
+–20
+9
+–20
+9
+–20
+17
+–12
+25
+–4
+33
+4
+41
+14
+49
+30
+0.5
+5
+–30
+5
+–30
+5
+–30
+13
+–22
+21
+–14
+29
+–6
+37
+4
+45
+20
+0.4
+–3
+–45
+–3
+–45
+–3
+–45
+6
+–37
+14
+–29
+22
+–21
+30
+–11
+38
+5
+Table 23: Derating Values for tIS/tIH – AC125/DC90-Based
+ΔtIS, ΔtIH Derating (ps) – AC/DC-Based
+CMD/ADDR
+Slew Rate
+V/ns
+CK, CK# Differential Slew Rate
+4.0 V/ns
+3.0 V/ns
+2.0 V/ns
+1.8 V/ns
+1.6 V/ns
+1.4 V/ns
+1.2 V/ns
+1.0 V/ns
+ΔtIS
+ΔtIH
+ΔtIS
+ΔtIH
+ΔtIS
+ΔtIH
+ΔtIS
+ΔtIH
+ΔtIS
+ΔtIH
+ΔtIS
+ΔtIH
+ΔtIS
+ΔtIH
+ΔtIS
+ΔtIH
+2.0
+63
+45
+63
+45
+63
+45
+71
+53
+79
+61
+87
+69
+95
+79
+103
+95
+1.5
+42
+30
+42
+30
+42
+30
+50
+38
+58
+46
+66
+54
+74
+64
+82
+80
+1.0
+0
+0
+0
+0
+0
+0
+8
+8
+16
+16
+24
+24
+32
+34
+40
+50
+0.9
+3
+–3
+3
+–3
+3
+–3
+11
+5
+19
+13
+27
+21
+35
+31
+43
+47
+0.8
+6
+–8
+6
+–8
+6
+–8
+14
+1
+22
+9
+30
+17
+38
+27
+46
+43
+0.7
+10
+–13
+10
+–13
+10
+–13
+18
+–5
+26
+3
+34
+11
+42
+21
+50
+37
+0.6
+16
+–20
+16
+–20
+16
+–20
+24
+–12
+32
+–4
+40
+4
+48
+14
+56
+30
+0.5
+15
+–30
+15
+–30
+15
+–30
+23
+–22
+31
+–14
+39
+–6
+47
+4
+55
+20
+0.4
+13
+–45
+13
+–45
+13
+–45
+21
+–37
+29
+–29
+37
+–21
+45
+–11
+53
+5
+4Gb: x4, x8, x16 DDR3L SDRAM
+Electrical Specifications
+PDF: 09005aef84780270
+4Gb_DDR3L_SDRAM.pdf - Rev. H 4/13 EN
+22
+Micron Technology, Inc. reserves the right to change products or specifications without notice.
+© 2011 Micron Technology, Inc. All rights reserved.
+
+
+================ [Page 23] ================
+Table 24: Minimum Required Time tVAC Above VIH(AC) (Below VIL[AC]) for Valid ADD/CMD Transition
+Slew Rate (V/ns)
+DDR3L-800/1066/1333/1600
+DDR3L-1866
+tVAC at 160mV (ps) tVAC at 135mV (ps) tVAC at 135mV (ps) tVAC at 125mV (ps)
+>2.0
+70
+209
+200
+205
+2.0
+53
+198
+200
+205
+1.5
+47
+194
+178
+184
+1.0
+35
+186
+133
+143
+0.9
+31
+184
+118
+129
+0.8
+26
+181
+99
+111
+0.7
+20
+177
+75
+89
+0.6
+12
+171
+43
+59
+0.5
+Note 1
+164
+Note 1
+18
+<0.5
+Note 1
+164
+Note 1
+18
+Note:
+1. Rising input signal shall become equal to or greater than VIH(AC) level and Falling input
+signal shall become equal to or less than VIL(AC) level.
+Table 25: Derating Values for tDS/tDH – AC160/DC90-Based
+ΔtDS, ΔtDH Derating (ps) – AC/DC-Based
+DQ Slew
+Rate V/ns
+DQS, DQS# Differential Slew Rate
+4.0 V/ns
+3.0 V/ns
+2.0 V/ns
+1.8 V/ns
+1.6 V/ns
+1.4 V/ns
+1.2 V/ns
+1.0 V/ns
+ΔtDS ΔtDH ΔtDS ΔtDH ΔtDS ΔtDH ΔtDS ΔtDH ΔtDS ΔtDH ΔtDS ΔtDH ΔtDS ΔtDH ΔtDS ΔtDH
+2.0
+80
+45
+80
+45
+80
+45
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1.5
+53
+30
+53
+30
+53
+30
+61
+38
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1.0
+0
+0
+0
+0
+0
+0
+8
+8
+16
+16
+ 
+ 
+ 
+ 
+ 
+ 
+0.9
+ 
+ 
+–1
+–3
+–1
+–3
+7
+5
+15
+13
+23
+21
+ 
+ 
+ 
+ 
+0.8
+ 
+ 
+ 
+ 
+–3
+–8
+5
+1
+13
+9
+21
+17
+29
+27
+ 
+ 
+0.7
+ 
+ 
+ 
+ 
+ 
+ 
+–3
+–5
+11
+3
+19
+11
+27
+21
+35
+37
+0.6
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+8
+–4
+16
+4
+24
+14
+32
+30
+0.5
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+4
+6
+12
+4
+20
+20
+0.4
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+–8
+–11
+0
+5
+4Gb: x4, x8, x16 DDR3L SDRAM
+Electrical Specifications
+PDF: 09005aef84780270
+4Gb_DDR3L_SDRAM.pdf - Rev. H 4/13 EN
+23
+Micron Technology, Inc. reserves the right to change products or specifications without notice.
+© 2011 Micron Technology, Inc. All rights reserved.
+
+
+================ [Page 24] ================
+Table 26: Derating Values for tDS/tDH – AC135/DC90-Based
+ΔtDS, ΔtDH Derating (ps) – AC/DC-Based
+DQ Slew
+Rate V/ns
+DQS, DQS# Differential Slew Rate
+4.0 V/ns
+3.0 V/ns
+2.0 V/ns
+1.8 V/ns
+1.6 V/ns
+1.4 V/ns
+1.2 V/ns
+1.0 V/ns
+ΔtDS ΔtDH ΔtDS ΔtDH ΔtDS ΔtDH ΔtDS ΔtDH ΔtDS ΔtDH ΔtDS ΔtDH ΔtDS ΔtDH ΔtDS ΔtDH
+2.0
+68
+45
+68
+45
+68
+45
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1.5
+45
+30
+45
+30
+45
+30
+53
+38
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1.0
+0
+0
+0
+0
+0
+0
+8
+8
+16
+16
+ 
+ 
+ 
+ 
+ 
+ 
+0.9
+ 
+ 
+2
+–3
+2
+–3
+10
+5
+18
+13
+26
+21
+ 
+ 
+ 
+ 
+0.8
+ 
+ 
+ 
+ 
+3
+–8
+11
+1
+19
+9
+27
+17
+35
+27
+ 
+ 
+0.7
+ 
+ 
+ 
+ 
+ 
+ 
+14
+–5
+22
+3
+30
+11
+38
+21
+46
+37
+0.6
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+25
+–4
+33
+4
+41
+14
+49
+30
+0.5
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+39
+–6
+37
+4
+45
+20
+0.4
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+30
+–11
+38
+5
+4Gb: x4, x8, x16 DDR3L SDRAM
+Electrical Specifications
+PDF: 09005aef84780270
+4Gb_DDR3L_SDRAM.pdf - Rev. H 4/13 EN
+24
+Micron Technology, Inc. reserves the right to change products or specifications without notice.
+© 2011 Micron Technology, Inc. All rights reserved.
+
+
+================ [Page 25] ================
+Table 27: Derating Values for tDS/tDH – AC130/DC100-Based at 2V/ns
+Shaded cells indicate slew rate combinations not supported
+ΔtDS, ΔtDH Derating (ps) – AC/DC-Based
+DQ Slew Rate V/ns
+DQS, DQS# Differential Slew Rate
+8.0 V/ns
+7.0 V/ns
+6.0 V/ns
+5.0 V/ns
+4.0 V/ns
+3.0 V/ns
+2.0 V/ns
+1.8 V/ns
+1.6 V/ns
+1.4 V/ns
+1.2 V/ns
+1.0 V/ns
+Δ
+tDS
+Δ
+tDH
+Δ
+tDS
+Δ
+tDH
+Δ
+tDS
+Δ
+tDH
+Δ
+tDS
+Δ
+tDH
+Δ
+tDS
+Δ
+tDH
+Δ
+tDS
+Δ
+tDH
+Δ
+tDS
+Δ
+tDH
+Δ
+tDS
+Δ
+tDH
+Δ
+tDS
+Δ
+tDH
+Δ
+tDS
+Δ
+tDH
+Δ
+tDS
+Δ
+tDH
+Δ
+tDS
+Δ
+tDH
+4.0
+33
+23
+33
+23
+33
+23
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3.5
+28
+19
+28
+19
+28
+19
+28
+19
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3.0
+22
+15
+22
+15
+22
+15
+22
+15
+22
+15
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+2.5
+ 
+ 
+13
+9
+13
+9
+13
+9
+13
+9
+13
+9
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+2.0
+ 
+ 
+ 
+ 
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1.5
+ 
+ 
+ 
+ 
+ 
+ 
+–22
+–15
+–22
+–15
+–22
+–15
+–22
+–15
+–14
+–7
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1.0
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+–65
+–45
+–65
+–45
+–65
+–45
+–57
+–37
+–49
+–29
+ 
+ 
+ 
+ 
+ 
+ 
+0.9
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+–62
+–48
+–62
+–48
+–54
+–40
+–46
+–32
+–38
+–24
+ 
+ 
+ 
+ 
+0.8
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+–61
+–53
+–53
+–45
+–45
+–37
+–37
+–29
+–29
+–19
+ 
+ 
+0.7
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+–49
+–50
+–41
+-42
+–33
+–34
+–25
+–24
+–17
+–8
+0.6
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+–37
+-49
+–29
+–41
+–21
+–31
+–13
+–15
+0.5
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+–31
+–51
+–23
+–41
+–15
+–25
+0.4
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+–28
+–56
+–20
+–40
+4Gb: x4, x8, x16 DDR3L SDRAM
+Electrical Specifications
+PDF: 09005aef84780270
+4Gb_DDR3L_SDRAM.pdf - Rev. H 4/13 EN
+25
+Micron Technology, Inc. reserves the right to change products or specifications without notice.
+© 2011 Micron Technology, Inc. All rights reserved.
+
+
+================ [Page 26] ================
+Table 28: Minimum Required Time tVAC Above VIH(AC) (Below VIL(AC)) for Valid DQ Transition
+Slew Rate (V/ns)
+tVAC at 160mV (ps)
+tVAC at 135mV (ps)
+tVAC at 130mV (ps)
+>2.0
+165
+113
+95
+2.0
+165
+113
+95
+1.5
+138
+90
+73
+1.0
+85
+45
+30
+0.9
+67
+30
+16
+0.8
+45
+11
+Note1
+0.7
+16
+Note1
+–
+0.6
+Note1
+Note1
+–
+0.5
+Note1
+Note1
+–
+<0.5
+Note1
+Note1
+–
+Note:
+1. Rising input signal shall become equal to or greater than VIH(AC) level and Falling input
+signal shall become equal to or less than VIL(AC) level.
+Voltage Initialization / Change
+If the SDRAM is powered up and initialized for the 1.35V operating voltage range, volt-
+age can be increased to the 1.5V operating range provided that:
+• Just prior to increasing the 1.35V operating voltages, no further commands are issued,
+other than NOPs or COMMAND INHIBITs, and all banks are in the precharge state.
+• The 1.5V operating voltages are stable prior to issuing new commands, other than
+NOPs or COMMAND INHIBITs.
+• The DLL is reset and relocked after the 1.5V operating voltages are stable and prior to
+any READ command.
+• The ZQ calibration is performed. tZQinit must be satisfied after the 1.5V operating
+voltages are stable and prior to any READ command.
+If the SDRAM is powered up and initialized for the 1.5V operating voltage range, voltage
+can be reduced to the 1.35V operation range provided that:
+• Just prior to reducing the 1.5V operating voltages, no further commands are issued,
+other than NOPs or COMMAND INHIBITs, and all banks are in the precharge state.
+• The 1.35V operating voltages are stable prior to issuing new commands, other than
+NOPs or COMMAND INHIBITs.
+• The DLL is reset and relocked after the 1.35V operating voltages are stable and prior to
+any READ command.
+• The ZQ calibration is performed. tZQinit must be satisfied after the 1.35V operating
+voltages are stable and prior to any READ command.
+4Gb: x4, x8, x16 DDR3L SDRAM
+Voltage Initialization / Change
+PDF: 09005aef84780270
+4Gb_DDR3L_SDRAM.pdf - Rev. H 4/13 EN
+26
+Micron Technology, Inc. reserves the right to change products or specifications without notice.
+© 2011 Micron Technology, Inc. All rights reserved.
+
+
+================ [Page 27] ================
+VDD Voltage Switching
+After the DDR3L DRAM is powered up and initialized, the power supply can be altered
+between the DDR3L and DDR3 levels, provided the sequence in Figure 8 is maintained.
+Figure 8: VDD Voltage Switching
+ 
+(
+)
+(
+)
+(
+)
+(
+)
+CKE
+RTT
+BA
+(
+)
+(
+)
+(
+)
+(
+)
+CK, CK#
+Command
+Note 1 
+Note 1 
+(
+)
+(
+)
+(
+)
+(
+)
+Td
+Tc
+Tg
+Don’t Care
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+tIS
+ODT
+(
+)
+(
+)
+(
+)
+(
+)
+Th
+tMRD
+tMOD
+(
+)
+(
+)
+(
+)
+(
+)
+MRS
+MRS
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+tMRD
+tMRD
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+MRS
+MR0
+MR1
+MR3
+MRS
+MR2
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+Ti
+Tj
+Tk
+(
+)
+(
+)
+(
+)
+(
+)
+RESET#
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+T = 500µs
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+Te
+Ta
+Tb
+Tf
+(
+)
+(
+)
+(
+)
+(
+)
+ZQCL
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+tIS
+Static LOW in case RTT,nom is enabled at time Tg, otherwise static HIGH or LOW 
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+tIS
+tIS
+tXPR
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+()()
+()()
+Time break
+TMIN = 10ns
+TMIN = 10ns
+TMIN = 10ns
+TMIN = 200µs 
+tCKSRX
+VDD, VDDQ (DDR3)
+(
+)
+(
+)
+(
+)
+(
+)
+tDLLK
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+tZQinit
+()()
+()()
+()()
+()()
+()()
+()()
+()()
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+VDD, VDDQ (DDR3L)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+Valid
+Valid
+Valid
+Valid
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+(
+)
+Note:
+1. From time point Td until Tk, NOP or DES commands must be applied between MRS and
+ZQCL commands.
+8000 S. Federal Way, P.O. Box 6, Boise, ID 83707-0006, Tel: 208-368-3900
+www.micron.com/productsupport Customer Comment Line: 800-932-4992
+Micron and the Micron logo are trademarks of Micron Technology, Inc.
+All other trademarks are the property of their respective owners.
+This data sheet contains minimum and maximum limits specified over the power supply and temperature range set forth herein.
+Although considered final, these specifications are subject to change, as further product development and data characterization some-
+times occur.
+4Gb: x4, x8, x16 DDR3L SDRAM
+Voltage Initialization / Change
+PDF: 09005aef84780270
+4Gb_DDR3L_SDRAM.pdf - Rev. H 4/13 EN
+27
+Micron Technology, Inc. reserves the right to change products or specifications without notice.
+© 2011 Micron Technology, Inc. All rights reserved.
+

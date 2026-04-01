@@ -1,0 +1,1509 @@
+
+================ [Page 1] ================
+ 
+MP2307 
+ 
+3A, 23V, 340KHz Synchronous Rectified 
+Step-Down Converter 
+ 
+ 
+MP2307 Rev. 1.7 
+www.MonolithicPower.com 
+1 
+3/14/2006 
+MPS Proprietary Information. Unauthorized Photocopy and Duplication Prohibited. 
+ 
+© 2006 MPS. All Rights Reserved. 
+The Future of Analog IC Technology
+TM
+TM
+DESCRIPTION 
+The MP2307 is a monolithic synchronous buck 
+regulator. 
+The 
+device 
+integrates 
+100mΩ 
+MOSFETS that provide 3A of continuous load 
+current over a wide operating input voltage of 
+4.75V to 23V. Current mode control provides 
+fast transient response and cycle-by-cycle 
+current limit. 
+An adjustable soft-start prevents inrush current 
+at turn-on and in shutdown mode, the supply 
+current drops below 1µA. 
+This device, available in an 8-pin SOIC 
+package, provides a very compact system 
+solution with minimal reliance on external 
+components. 
+EVALUATION BOARD REFERENCE 
+Board Number 
+Dimensions 
+EV2307DN-00A 
+2.0”X x 1.5”Y x 0.5”Z 
+FEATURES 
+• 
+3A Continuous Output Current, 
+4A Peak Output Current 
+• 
+Wide 4.75V to 23V Operating Input Range 
+• 
+Integrated 100mΩ Power MOSFET Switches 
+• 
+Output Adjustable from 0.925V to 20V 
+• 
+Up to 95% Efficiency 
+• 
+Programmable Soft-Start 
+• 
+Stable with Low ESR Ceramic Output Capacitors 
+• 
+Fixed 340KHz Frequency 
+• 
+Cycle-by-Cycle Over Current Protection 
+• 
+Input Under Voltage Lockout 
+• 
+Thermally Enhanced 8-Pin SOIC Package 
+APPLICATIONS 
+• 
+Distributed Power Systems 
+• 
+Networking Systems 
+• 
+FPGA, DSP, ASIC Power Supplies 
+• 
+Green Electronics/Appliances 
+• 
+Notebook Computers 
+“MPS” and “The Future of Analog IC Technology” are Trademarks of Monolithic 
+Power Systems, Inc. 
+ 
+ 
+ 
+TYPICAL APPLICATION 
+INPUT
+4.75V to 23V
+OUTPUT
+3.3V
+3A
+C3
+3.9nF
+C5
+10nF
+MP2307
+BS
+IN
+FB
+SW
+SS
+GND
+COMP
+EN
+1
+2
+3
+5
+6
+4
+8
+7
+MP2307_TAC01
+ 
+100
+95
+90
+85
+80
+75
+70
+65
+60
+55
+50
+EFFICIENCY (%)
+0.1
+1.0
+10
+LOAD CURRENT (A)
+MP2307_EC01
+Efficiency vs
+Load Current
+VIN = 5V
+VIN = 23V
+VIN = 12V
+
+
+================ [Page 2] ================
+MP2307 – 3A, 23V, 340KHz SYNCHRONOUS RECTIFIED STEP-DOWN CONVERTER 
+ 
+MP2307 Rev. 1.7 
+www.MonolithicPower.com 
+2 
+3/14/2006 
+MPS Proprietary Information. Unauthorized Photocopy and Duplication Prohibited. 
+ 
+© 2006 MPS. All Rights Reserved. 
+TM
+PACKAGE REFERENCE 
+BS
+IN
+SW
+GND
+SS
+EN
+COMP
+FB
+1
+2
+3
+4
+8
+7
+6
+5
+TOP VIEW
+MP2307_PD01_SOIC8N
+EXPOSED PAD
+ON BACKSIDE
+ 
+Part Number* 
+Package 
+Temperature 
+MP2307DN 
+SOIC8N 
+(Exposed Pad) 
+–40° to +85°C 
+* For Tape & Reel, add suffix –Z (eg. MP2307DN–Z) 
+For Lead Free, add suffix –LF (eg. MP2307DN–LF–Z) 
+ABSOLUTE MAXIMUM RATINGS (1) 
+Supply Voltage VIN.......................–0.3V to +26V 
+Switch Voltage VSW................. –1V to VIN + 0.3V 
+Boost Voltage VBS..........VSW – 0.3V to VSW + 6V 
+All Other Pins.................................–0.3V to +6V 
+Junction Temperature...............................150°C 
+Lead Temperature ....................................260°C 
+Storage Temperature .............–65°C to +150°C 
+Recommended Operating Conditions (2) 
+Input Voltage VIN............................ 4.75V to 23V 
+Output Voltage VOUT .................... 0.925V to 20V 
+Ambient Operating Temp .............. –40°C to +85°C 
+Thermal Resistance (3) 
+θJA 
+θJC 
+SOIC8N ..................................50...... 10... °C/W 
+Notes: 
+1) Exceeding these ratings may damage the device. 
+2) The device is not guaranteed to function outside of its 
+operating conditions. 
+3) Measured on approximately 1” square of 1 oz copper. 
+ 
+ELECTRICAL CHARACTERISTICS 
+VIN = 12V, TA = +25°C, unless otherwise noted. 
+Parameter 
+Symbol Condition 
+Min 
+Typ 
+Max 
+Units 
+Shutdown Supply Current 
+ 
+VEN = 0V 
+ 
+0.3 
+3.0 
+µA 
+Supply Current 
+ 
+VEN = 2.0V, VFB = 1.0V 
+ 
+1.3 
+1.5 
+mA 
+Feedback Voltage 
+VFB 
+4.75V ≤ VIN ≤ 23V 
+0.900 
+0.925 
+0.950 
+V 
+Feedback Overvoltage Threshold 
+ 
+ 
+ 
+1.1 
+ 
+V 
+Error Amplifier Voltage Gain (4) 
+AEA 
+ 
+ 
+400 
+ 
+V/V 
+Error Amplifier Transconductance 
+GEA 
+∆IC = ±10µA 
+ 
+820 
+ 
+µA/V 
+High-Side Switch On-Resistance (4) 
+RDS(ON)1
+ 
+ 
+100 
+ 
+mΩ 
+Low-Side Switch On-Resistance (4) 
+RDS(ON)2
+ 
+ 
+100 
+ 
+mΩ 
+High-Side Switch Leakage Current 
+ 
+VEN = 0V, VSW = 0V 
+ 
+0 
+10 
+µA 
+Upper Switch Current Limit 
+ 
+Minimum Duty Cycle 
+4.0 
+5.8 
+ 
+A 
+Lower Switch Current Limit 
+ 
+From Drain to Source 
+ 
+0.9 
+ 
+A 
+COMP to Current Sense 
+Transconductance  
+GCS 
+ 
+ 
+5.2 
+ 
+A/V 
+Oscillation Frequency 
+Fosc1 
+ 
+300 
+340 
+380 
+KHz 
+Short Circuit Oscillation Frequency 
+Fosc2 
+VFB = 0V 
+ 
+110 
+ 
+KHz 
+Maximum Duty Cycle 
+DMAX 
+VFB = 1.0V 
+ 
+90 
+ 
+% 
+Minimum On Time (4) 
+TON 
+ 
+ 
+220 
+ 
+ns 
+EN Shutdown Threshold Voltage 
+ 
+VEN Rising 
+1.1 
+1.5 
+2.0 
+V 
+EN Shutdown Threshold Voltage 
+Hysterisis 
+ 
+ 
+ 
+220 
+ 
+mV 
+
+
+================ [Page 3] ================
+MP2307 – 3A, 23V, 340KHz SYNCHRONOUS RECTIFIED STEP-DOWN CONVERTER 
+ 
+MP2307 Rev. 1.7 
+www.MonolithicPower.com 
+3 
+3/14/2006 
+MPS Proprietary Information. Unauthorized Photocopy and Duplication Prohibited. 
+ 
+© 2006 MPS. All Rights Reserved. 
+TM
+ELECTRICAL CHARACTERISTICS (continued) 
+VIN = 12V, TA = +25°C, unless otherwise noted. 
+Parameter 
+Symbol Condition 
+Min 
+Typ 
+Max 
+Units 
+EN Lockout Threshold Voltage 
+ 
+ 
+2.2 
+2.5 
+2.7 
+V 
+EN Lockout Hysterisis 
+ 
+ 
+ 
+210 
+ 
+mV 
+Input Under Voltage Lockout 
+Threshold 
+ 
+VIN Rising 
+3.80 
+4.05 
+4.40 
+V 
+Input Under Voltage Lockout 
+Threshold Hysteresis 
+ 
+ 
+ 
+210 
+ 
+mV 
+Soft-Start Current 
+ 
+VSS = 0V 
+ 
+6 
+ 
+µA 
+Soft-Start Period 
+ 
+CSS = 0.1µF 
+ 
+15 
+ 
+ms 
+Thermal Shutdown (4) 
+ 
+ 
+ 
+160 
+ 
+°C 
+Note: 
+4) Guaranteed by design, not tested. 
+
+
+================ [Page 4] ================
+MP2307 – 3A, 23V, 340KHz SYNCHRONOUS RECTIFIED STEP-DOWN CONVERTER 
+ 
+MP2307 Rev. 1.7 
+www.MonolithicPower.com 
+4 
+3/14/2006 
+MPS Proprietary Information. Unauthorized Photocopy and Duplication Prohibited. 
+ 
+© 2006 MPS. All Rights Reserved. 
+TM
+TYPICAL PERFORMANCE CHARACTERISTICS 
+C1 = 2 x 10µF, C2 = 2 x 22µF, L= 10µH, CSS= 0.1µF, TA = +25°C, unless otherwise noted.  
+ 
+VIN
+20mV/div.
+VOUT
+20mV/div.
+VSW
+10V/div.
+IL
+1A/div.
+MP2307-TPC01
+Steady State Test
+Waveforms
+VIN = 12V, VOUT = 3.3V, IOUT = 0A
+VIN
+200mV/div.
+VOUT
+20MV/div.
+VSW
+V/div.
+IL
+2A/div.
+MP2307-TPC02
+Steady State Test
+Waveforms
+VIN = 12V, VOUT = 3.3V, IOUT = 3A
+VEN
+5V/div.
+VOUT
+2V/div.
+VSW
+10V/div.
+IL
+1A/div.
+2ms/div.
+MP2307-TPC03
+Startup through 
+Enable  Waveforms
+VIN = 12V,  VOUT = 3.3V, No Load
+VEN
+5V/div.
+VOUT
+2V/div.
+VSW
+10V/div.
+IL
+2A/div.
+2ms/div.
+MP2307-TP04
+Startup Through 
+Enable Waveforms
+VIN = 12V, VOUT = 3.3V,
+IOUT = 3A (Resistance Load)
+VEN
+5V/div.
+VOUT
+2V/div.
+VSW
+10V/div.
+IL
+1A/div.
+2ms/div.
+MP2307-TPC05
+Shutdown Through 
+Enable Waveforms
+VIN = 12V, VOUT = 3.3V, No Load
+VOUT
+2V/div.
+VSW
+10V/div.
+VEN
+5V/div.
+IL
+2A/div.
+MP2307-TPC06
+Shutdown Through 
+Enable Waveforms
+VIN = 12V, VOUT = 3.3V,
+ IOUT = 3A (Resistance Load)
+VOUT
+200mV/div.
+IL
+1A/div.
+ILOAD
+1A/div.
+                     MP2307 -TPC07
+Load Transient Test
+Waveforms
+VIN = 12V, VOUT = 3.3V, 
+IOUT = 1A to 2A step
+VOUT
+2V/div.
+IL
+2A/div.
+MP2307-TPC08
+Short Circuit Test
+Waveforms
+VIN = 12V, VOUT = 3.3V
+VOUT
+2V/div.
+IL
+2A/div.
+MP2307-TPC09
+Short Circuit Recovery
+Waveforms
+VIN = 12V, VOUT = 3.3V
+ 
+
+
+================ [Page 5] ================
+MP2307 – 3A, 23V, 340KHz SYNCHRONOUS RECTIFIED STEP-DOWN CONVERTER 
+ 
+MP2307 Rev. 1.7 
+www.MonolithicPower.com 
+5 
+3/14/2006 
+MPS Proprietary Information. Unauthorized Photocopy and Duplication Prohibited. 
+ 
+© 2006 MPS. All Rights Reserved. 
+TM
+PIN FUNCTIONS 
+Pin # 
+Name 
+Description 
+1 
+BS 
+High-Side Gate Drive Boost Input. BS supplies the drive for the high-side N-Channel MOSFET 
+switch. Connect a 0.01µF or greater capacitor from SW to BS to power the high side switch. 
+2 
+IN 
+Power Input. IN supplies the power to the IC, as well as the step-down converter switches. 
+Drive IN with a 4.75V to 23V power source. Bypass IN to GND with a suitably large capacitor 
+to eliminate noise on the input to the IC. See Input Capacitor. 
+3 
+SW 
+Power Switching Output. SW is the switching node that supplies power to the output. Connect 
+the output LC filter from SW to the output load. Note that a capacitor is required from SW to 
+BS to power the high-side switch. 
+4 
+GND 
+Ground (Connect the exposed pad to Pin 4). 
+5 
+FB 
+Feedback Input. FB senses the output voltage and regulates it. Drive FB with a resistive 
+voltage divider connected to it from the output voltage. The feedback threshold is 0.925V. See 
+Setting the Output Voltage. 
+6 
+COMP 
+Compensation Node. COMP is used to compensate the regulation control loop. Connect a 
+series RC network from COMP to GND. In some cases, an additional capacitor from COMP to 
+GND is required. See Compensation Components. 
+7 
+EN 
+Enable Input. EN is a digital input that turns the regulator on or off. Drive EN high to turn on 
+the regulator; low to turn it off. Attach to IN with a 100kΩ pull up resistor for automatic startup. 
+8 
+SS 
+Soft-Start Control Input. SS controls the soft-start period. Connect a capacitor from SS to GND 
+to set the soft-start period. A 0.1µF capacitor sets the soft-start period to 15ms. To disable the 
+soft-start feature, leave SS unconnected. 
+
+
+================ [Page 6] ================
+MP2307 – 3A, 23V, 340KHz SYNCHRONOUS RECTIFIED STEP-DOWN CONVERTER 
+ 
+MP2307 Rev. 1.7 
+www.MonolithicPower.com 
+6 
+3/14/2006 
+MPS Proprietary Information. Unauthorized Photocopy and Duplication Prohibited. 
+ 
+© 2006 MPS. All Rights Reserved. 
+TM
+OPERATION 
+FUNCTIONAL DESCRIPTION 
+The MP2307 regulates input voltages from 
+4.75V to 23V down to an output voltage as low 
+as 0.925V, and supplies up to 3A of load 
+current. 
+The MP2307 uses current-mode control to 
+regulate the output voltage. The output voltage 
+is measured at FB through a resistive voltage 
+divider and amplified through the internal 
+transconductance error amplifier. The voltage at 
+the COMP pin is compared to the switch current 
+(measured internally) to control the output 
+voltage. 
+The 
+converter 
+uses 
+internal 
+N-Channel 
+MOSFET switches to step-down the input 
+voltage to the regulated output voltage. Since 
+the high side MOSFET requires a gate voltage 
+greater than the input voltage, a boost capacitor 
+connected between SW and BS is needed to 
+drive the high side gate. The boost capacitor is 
+charged from the internal 5V rail when SW is low. 
+When the FB pin voltage exceeds 20% of the 
+nominal regulation value of 0.925V, the over 
+voltage comparator is tripped and the COMP 
+pin and the SS pin are discharged to GND, 
+forcing the high-side switch off. 
+MP2307_BD01
+LOCKOUT
+COMPARATOR
+INTERNAL
+REGULATORS
+IN
+EN
++
+ERROR
+AMPLIFIER
+1.2V
+OVP
+RAMP
+CLK
+0.925V
+7V
+0.3V
+CURRENT
+COMPARATOR
+CURRENT
+SENSE
+AMPLIFIER
+1.1V
+SHUTDOWN
+COMPARATOR
+7
+COMP
+6
+SS
+8
+FB
+5
+GND
+4
+OSCILLATOR
+110/340KHz
+S
+R
+Q
+SW
+3
+BS
+1
+IN
+5V
+2
+OVP
+IN < 4.10V
+EN OK
+Zener
++
+Q
++
++
+1.5V
++
++
+2.5V
++
++
+--
+--
+--
+--
+--
+--
+--
+ 
+Figure 1—Functional Block Diagram 
+
+
+================ [Page 7] ================
+MP2307 – 3A, 23V, 340KHz SYNCHRONOUS RECTIFIED STEP-DOWN CONVERTER 
+ 
+MP2307 Rev. 1.7 
+www.MonolithicPower.com 
+7 
+3/14/2006 
+MPS Proprietary Information. Unauthorized Photocopy and Duplication Prohibited. 
+ 
+© 2006 MPS. All Rights Reserved. 
+TM
+APPLICATIONS INFORMATION 
+COMPONENT SELECTION 
+Setting the Output Voltage 
+The output voltage is set using a resistive 
+voltage divider connected from the output 
+voltage to FB. The voltage divider divides the 
+output voltage down to the feedback voltage by 
+the ratio: 
+2
+R
+1
+R
+2
+R
+V
+V
+OUT
+FB
++
+=
+ 
+Thus the output voltage is: 
+2
+R
+2
+R
+1
+R
+925
+.
+0
+VOUT
++
+×
+=
+ 
+R2 can be as high as 100kΩ, but a typical value 
+is 10kΩ. Using the typical value for R2, R1 is 
+determined by: 
+)
+925
+.
+0
+V
+(
+81
+.
+10
+1
+R
+OUT −
+×
+=
+ (kΩ) 
+For example, for a 3.3V output voltage, R2 is 
+10kΩ, and R1 is 26.1kΩ. Table 1 lists 
+recommended resistance values of R1 and R2 
+for standard output voltages. 
+Table 1—Recommended Resistance Values 
+VOUT 
+R1 
+R2 
+1.8V 
+9.53kΩ 
+10kΩ 
+2.5V 
+16.9kΩ 
+10kΩ 
+3.3V 
+26.1kΩ 
+10kΩ 
+5V 
+44.2kΩ 
+10kΩ 
+12V 
+121kΩ 
+10kΩ 
+Inductor 
+The inductor is required to supply constant 
+current to the load while being driven by the 
+switched input voltage. A larger value inductor 
+will result in less ripple current that will in turn 
+result in lower output ripple voltage. However, 
+the larger value inductor will have a larger 
+physical size, higher series resistance, and/or 
+lower saturation current. A good rule for 
+determining inductance is to allow the peak-to-
+peak ripple current to be approximately 30% of 
+the maximum switch current limit. Also, make 
+sure that the peak inductor current is below the 
+maximum switch current limit.  
+The inductance value can be calculated by:  
+⎟⎟
+⎠
+⎞
+⎜⎜
+⎝
+⎛−
+×
+∆
+×
+=
+IN
+OUT
+L
+S
+OUT
+V
+V
+1
+I
+f
+V
+L
+ 
+Where VOUT is the output voltage, VIN is the 
+input voltage, fS is the switching frequency, and 
+∆IL is the peak-to-peak inductor ripple current. 
+Choose an inductor that will not saturate under 
+the maximum inductor peak current, calculated 
+by: 
+⎟⎟
+⎠
+⎞
+⎜⎜
+⎝
+⎛−
+×
+×
+×
++
+=
+IN
+OUT
+S
+OUT
+LOAD
+LP
+V
+V
+1
+L
+f
+2
+V
+I
+I
+ 
+Where ILOAD is the load current. 
+The choice of which style inductor to use mainly 
+depends on the price vs. size requirements and 
+any EMI constraints. 
+Optional Schottky Diode 
+During the transition between the high-side 
+switch and low-side switch, the body diode of 
+the low-side power MOSFET conducts the 
+inductor current. The forward voltage of this 
+body diode is high. An optional Schottky diode 
+may be paralleled between the SW pin and 
+GND pin to improve overall efficiency. Table 2 
+lists example Schottky diodes and their 
+Manufacturers. 
+Table 2—Diode Selection Guide 
+Part Number 
+Voltage/Current 
+Rating 
+Vendor 
+B130 
+30V, 1A 
+Diodes, Inc. 
+SK13 
+30V, 1A 
+Diodes, Inc. 
+MBRS130 
+30V, 1A 
+International 
+Rectifier 
+Input Capacitor 
+The input current to the step-down converter is 
+discontinuous, therefore a capacitor is required 
+to supply the AC current while maintaining the 
+DC input voltage. Use low ESR capacitors for 
+the best performance. Ceramic capacitors are 
+preferred, but tantalum or low-ESR electrolytic 
+capacitors will also suffice. Choose X5R or 
+X7R dielectrics when using ceramic capacitors. 
+
+
+================ [Page 8] ================
+MP2307 – 3A, 23V, 340KHz SYNCHRONOUS RECTIFIED STEP-DOWN CONVERTER 
+ 
+MP2307 Rev. 1.7 
+www.MonolithicPower.com 
+8 
+3/14/2006 
+MPS Proprietary Information. Unauthorized Photocopy and Duplication Prohibited. 
+ 
+© 2006 MPS. All Rights Reserved. 
+TM
+Since the input capacitor (C1) absorbs the input 
+switching current, it requires an adequate ripple 
+current rating. The RMS current in the input 
+capacitor can be estimated by: 
+⎟
+⎟
+⎠
+⎞
+⎜
+⎜
+⎝
+⎛
+× −
+×
+=
+IN
+OUT
+IN
+OUT
+LOAD
+1
+C
+V
+V
+1
+V
+V
+I
+I
+ 
+The worst-case condition occurs at VIN = 2VOUT, 
+where IC1 = ILOAD/2. For simplification, use an 
+input capacitor with a RMS current rating 
+greater than half of the maximum load current.  
+The input capacitor can be electrolytic, tantalum 
+or ceramic. When using electrolytic or tantalum 
+capacitors, a small, high quality ceramic 
+capacitor, i.e. 0.1µF, should be placed as close 
+to the IC as possible. When using ceramic 
+capacitors, make sure that they have enough 
+capacitance to provide sufficient charge to 
+prevent excessive voltage ripple at input. The 
+input voltage ripple for low ESR capacitors can 
+be estimated by: 
+⎟⎟
+⎠
+⎞
+⎜⎜
+⎝
+⎛−
+×
+×
+×
+=
+∆
+IN
+OUT
+IN
+OUT
+S
+LOAD
+IN
+V
+V
+1
+V
+V
+f
+1
+C
+I
+V
+ 
+Where C1 is the input capacitance value. 
+Output Capacitor 
+The output capacitor (C2) is required to 
+maintain the DC output voltage. Ceramic, 
+tantalum, or low ESR electrolytic capacitors are 
+recommended. 
+Low 
+ESR 
+capacitors 
+are 
+preferred to keep the output voltage ripple low. 
+The output voltage ripple can be estimated by: 
+⎟⎟
+⎠
+⎞
+⎜⎜
+⎝
+⎛
+×
+×
++
+×
+⎟⎟
+⎠
+⎞
+⎜⎜
+⎝
+⎛−
+×
+×
+=
+∆
+2
+C
+f
+8
+1
+R
+V
+V
+1
+L
+f
+V
+V
+S
+ESR
+IN
+OUT
+S
+OUT
+OUT
+ 
+Where C2 is the output capacitance value and 
+RESR is the equivalent series resistance (ESR) 
+value of the output capacitor. 
+When using ceramic capacitors, the impedance 
+at the switching frequency is dominated by the 
+capacitance which is the main cause for the 
+output voltage ripple. For simplification, the 
+output voltage ripple can be estimated by: 
+⎟⎟
+⎠
+⎞
+⎜⎜
+⎝
+⎛−
+×
+×
+×
+×
+=
+IN
+OUT
+2
+S
+OUT
+OUT
+V
+V
+1
+2
+C
+L
+f
+8
+V
+∆V
+ 
+When using tantalum or electrolytic capacitors, 
+the ESR dominates the impedance at the 
+switching frequency. For simplification, the 
+output ripple can be approximated to: 
+ESR
+IN
+OUT
+S
+OUT
+OUT
+R
+V
+V
+1
+L
+f
+V
+∆V
+×
+⎟⎟
+⎠
+⎞
+⎜⎜
+⎝
+⎛−
+×
+×
+=
+ 
+The characteristics of the output capacitor also 
+affect the stability of the regulation system. The 
+MP2307 can be optimized for a wide range of 
+capacitance and ESR values. 
+Compensation Components 
+MP2307 employs current mode control for easy 
+compensation and fast transient response. The 
+system stability and transient response are 
+controlled through the COMP pin. COMP is the 
+output of the internal transconductance error 
+amplifier. 
+A 
+series 
+capacitor-resistor 
+combination sets a pole-zero combination to 
+govern the characteristics of the control system. 
+The DC gain of the voltage feedback loop is 
+given by: 
+OUT
+FB
+EA
+CS
+LOAD
+VDC
+V
+V
+A
+G
+R
+A
+×
+×
+×
+=
+ 
+Where VFB is the feedback voltage (0.925V), 
+AVEA is the error amplifier voltage gain, GCS is 
+the current sense transconductance and RLOAD 
+is the load resistor value. 
+The system has two poles of importance. One 
+is due to the compensation capacitor (C3) and 
+the output resistor of the error amplifier, and the 
+other is due to the output capacitor and the load 
+resistor. These poles are located at: 
+VEA
+EA
+1
+P
+A
+3
+C
+2
+G
+f
+×
+×
+π
+=
+ 
+LOAD
+2
+P
+R
+2
+C
+2
+1
+f
+×
+×
+π
+=
+ 
+Where 
+GEA 
+is 
+the 
+error 
+amplifier 
+transconductance. 
+
+
+================ [Page 9] ================
+MP2307 – 3A, 23V, 340KHz SYNCHRONOUS RECTIFIED STEP-DOWN CONVERTER 
+ 
+MP2307 Rev. 1.7 
+www.MonolithicPower.com 
+9 
+3/14/2006 
+MPS Proprietary Information. Unauthorized Photocopy and Duplication Prohibited. 
+ 
+© 2006 MPS. All Rights Reserved. 
+TM
+The system has one zero of importance, due to the 
+compensation capacitor (C3) and the compensation 
+resistor (R3). This zero is located at: 
+3
+R
+3
+C
+2
+1
+f 1
+Z
+×
+×
+π
+=
+ 
+The system may have another zero of 
+importance, if the output capacitor has a large 
+capacitance and/or a high ESR value. The zero, 
+due to the ESR and capacitance of the output 
+capacitor, is located at: 
+ESR
+ESR
+R
+2
+C
+2
+1
+f
+×
+×
+π
+=
+ 
+In this case, a third pole set by the 
+compensation 
+capacitor 
+(C6) 
+and 
+the 
+compensation 
+resistor 
+(R3) 
+is 
+used 
+to 
+compensate the effect of the ESR zero on the 
+loop gain. This pole is located at: 
+3
+R
+6
+C
+2
+1
+f 3
+P
+×
+×
+π
+=
+ 
+The goal of compensation design is to shape 
+the converter transfer function to get a desired 
+loop gain. The system crossover frequency 
+where the feedback loop has the unity gain is 
+important. Lower crossover frequencies result 
+in slower line and load transient responses, 
+while higher crossover frequencies could cause 
+system instability. A good standard is to set the 
+crossover frequency below one-tenth of the 
+switching frequency. 
+To optimize the compensation components, the 
+following procedure can be used. 
+1. Choose the compensation resistor (R3) to set 
+the desired crossover frequency. 
+Determine R3 by the following equation: 
+FB
+OUT
+CS
+EA
+S
+FB
+OUT
+CS
+EA
+C
+V
+V
+G
+G
+f
+1
+.
+0
+2
+C
+2
+V
+V
+G
+G
+f
+2
+C
+2
+3
+R
+×
+×
+×
+×
+×
+π
+<
+×
+×
+×
+×
+π
+=
+Where fC is the desired crossover frequency 
+which is typically below one tenth of the 
+switching frequency. 
+2. Choose the compensation capacitor (C3) to 
+achieve 
+the 
+desired 
+phase 
+margin. 
+For 
+applications with typical inductor values, setting 
+the compensation zero (fZ1) below one-forth of 
+the crossover frequency provides sufficient 
+phase margin. 
+Determine C3 by the following equation: 
+C
+f
+3
+R
+2
+4
+3
+C
+×
+×
+π
+>
+ 
+Where R3 is the compensation resistor. 
+3. Determine if the second compensation 
+capacitor (C6) is required. It is required if the 
+ESR zero of the output capacitor is located at 
+less than half of the switching frequency, or the 
+following relationship is valid: 
+2
+f
+R
+2
+C
+2
+1
+S
+ESR
+<
+×
+×
+π
+ 
+If this is the case, then add the second 
+compensation capacitor (C6) to set the pole fP3 
+at the location of the ESR zero. Determine C6 
+by the equation: 
+3
+R
+R
+2
+C
+6
+C
+ESR
+×
+=
+ 
+External Bootstrap Diode 
+It is recommended that an external bootstrap 
+diode be added when the system has a 5V 
+fixed input or the power supply generates a 5V 
+output. This helps improve the efficiency of the 
+regulator. The bootstrap diode can be a low 
+cost one such as IN4148 or BAT54. 
+MP2307
+SW
+BS
+10nF
+5V
+MP2307_F02 
+Figure 2—External Bootstrap Diode 
+This diode is also recommended for high duty 
+cycle operation (when 
+IN
+OUT
+V
+V
+>65%) and high 
+output voltage (VOUT>12V) applications. 
+
+
+================ [Page 10] ================
+MP2307 – 3A, 23V, 340KHz SYNCHRONOUS RECTIFIED STEP-DOWN CONVERTER 
+ 
+MP2307 Rev. 1.7 
+www.MonolithicPower.com 
+10 
+3/14/2006 
+MPS Proprietary Information. Unauthorized Photocopy and Duplication Prohibited. 
+ 
+© 2006 MPS. All Rights Reserved. 
+TM
+TYPICAL APPLICATION CIRCUIT 
+INPUT
+4.75V to 23V
+OUTPUT
+3.3V
+3A
+C3
+3.9nF
+D1
+B130
+(optional)
+C5
+10nF
+MP2307
+BS
+IN
+FB
+SW
+SS
+GND
+COMP
+EN
+1
+2
+3
+5
+6
+4
+8
+7
+C6
+(optional)
+MP2307_F03
+ 
+Figure 3—MP2307 with 3.3V Output, 22uF/6.3V Ceramic Output Capacitor 
+
+
+================ [Page 11] ================
+MP2307 – 3A, 23V, 340KHz SYNCHRONOUS RECTIFIED STEP-DOWN CONVERTER 
+ 
+NOTICE: The information in this document is subject to change without notice. Please contact MPS for current specifications. 
+Users should warrant and guarantee that third party Intellectual Property rights are not infringed upon when integrating MPS 
+products into any application. MPS will not assume any legal responsibility for any said applications. 
+MP2307 Rev. 1.7 
+www.MonolithicPower.com 
+11 
+3/14/2006 
+MPS Proprietary Information. Unauthorized Photocopy and Duplication Prohibited. 
+ 
+© 2006 MPS. All Rights Reserved. 
+TM
+PACKAGE INFORMATION 
+SOIC8N (EXPOSED PAD) 
+NOTE:
+  1) Control dimension is in inches.  Dimension in bracket is millimeters.
+  2) Exposed Pad Option (N-Package) ; 2.31mm -2.79mm  x  2.79mm - 3.81mm.
+      Recommend Solder Board Area: 2.80mm  x 3.82mm = 10.7mm2 (16.6 mil2)
+  3) The length of the package does not include mold flash.  Mold flash shall not exceed 0.006in. (0.15mm) per side.
+      With the mold flash included, over-all length of the package is 0.2087in. (5.3mm) max.
+  4) The width of the package does not include mold flash. Mold flash shall not exceed 0.10in. (0.25mm) per side.
+      With the mold flash included, over-all width of the package is 0.177in. (4.5mm) max.
+0.016(0.410)
+0.050(1.270)
+0o-8o
+DETAIL "A"
+0.011(0.280)
+0.020(0.508) x 45o
+SEE DETAIL "A"
+0.0075(0.191)
+0.0098(0.249)
+0.229(5.820)
+0.244(6.200)
+Land Pattern
+.028
+.050
+0.140 (3.55mm)
+0.200 (5.07 mm)
+0.060
+0.150(3.810)
+0.157(4.000)
+PIN 1 IDENT.
+0.050(1.270)BSC
+0.013(0.330)
+0.020(0.508)
+NOTE 2
+NOTE 4
+SEATING PLANE
+0.001(0.030)
+0.004(0.101)
+0.189(4.800)
+0.197(5.000)
+0.053(1.350)
+0.068(1.730)
+0.049(1.250)
+0.060(1.524)
+NOTE 3
+ 
+

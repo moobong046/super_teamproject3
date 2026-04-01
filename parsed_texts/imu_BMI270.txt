@@ -1,0 +1,214 @@
+
+================ [Page 1] ================
+ 
+GENERAL DESCRIPTION 
+BMI270 is an ultra-low power IMU optimized for wearable 
+applications. The IMU combines precise acceleration and 
+angular rate measurement with intelligent on-chip motion-
+triggered interrupt features. The 6-axis sensor combines a 16-bit 
+triaxial gyroscope and a 16-bit triaxial accelerometer in a 
+compact 2.5 x 3.0 x 0.8 mm3 LGA package. 
+SENSOR FEATURES 
+BMI270 is a member of Bosch Sensortec’s BMI260 family of 
+IMUs, targeting fast and accurate inertial sensing in wearable 
+applications. BMI270 features Bosch’s automotive-proven 
+gyroscope technology with an improved accelerometer. 
+Significant improvements in BMI270 include, but are not 
+restricted to, the overall accelerometer performance, i.e. an 
+extremely low zero-g offset and sensitivity error, low temperature 
+drifts, robustness over PCB strain and a low noise density. 
+ 
+BMI270 features the industry’s first self-calibrating gyroscope 
+using motionless CRT (Component Re-Trimming) functionality to 
+compensate MEMS typical soldering drifts, ensuring post-
+soldering sensitivity errors down to ± 0.4%. 
+ 
+BMI270 includes intuitive gesture, context and activity 
+recognition with an integrated plug-and-play step 
+counter/detector, which is optimized for accurate step counting in 
+wrist-worn devices. The IMU is also well suited for other types of 
+wearable devices, such as hearables, smart clothes, smart 
+shoes, smart glasses and ankle bands. 
+ 
+TECHNICAL SPECIFICATIONS (TYP) 
+BMI270 data                 Accelerometer (A)  Gyroscope (G) 
+Digital resolution 
+(A): 16-bit or 0.06 mg/LSB 
+(G): 16-bit or 0.004 dps/LSB 
+   Programmable  
+   measurement range  
+   and       
+   sensitivity 
+(A): ±2 g: 16384 LSB/g 
+to 
+(A): ±16 g: 2048 LSB/g 
+ 
+(G): ±125 dps: 262.1 LSB/dps 
+to 
+(G): ±2000 dps: 16.4 LSB/dps 
+Zero-g/Zero-rate offset  
+(A): ±20 mg 
+(G): ±0.5 dps 
+Sensitivity Error 
+(A): ± 0.4% 
+(G): ± 0.4% (with CRT) 
+Temperature range 
+-40 … +85 °C 
+   Temperature behaviour 
+(TCO; TCS) 
+(A): ±0.25 mg/K; ±0.004 %/K 
+(G): ±0.02 dps/K; ±0.02 %/K 
+Noise density 
+(A): 160 µg/√Hz 
+(G): 0.008 dps/√Hz 
+Offset vs PCB strain 
+(A): ±0.01 mg/µε 
+(G): ±1.5 mdps/µε 
+Filter BW 
+(programmable) 
+(A): 5 Hz … 684 Hz 
+(G): 11 Hz … 751 Hz 
+Output Data Rate 
+(ODR) 
+(A): 12.5 Hz … 1.6 kHz 
+(G): 25 Hz … 6.4 kHz  
+Digital inputs/outputs 
+2x SPI; 2x I2C; AUX I/F; OIS I/F 
+2x digital interrupts 
+Supply voltage 
+1.7 … 3.6 VDD 
+1.2 … 3.6 VDDIO 
+Current consumption 
+ 
+685 µA at full ODR 
+(aliasing-free) 
+Package size 
+2.5 x 3.0 x 0.8 mm³ 
+14 pin LGA 
+ 
+ 
+Bosch Sensortec 
+BMI270 
+Smart ultra-low power Inertial Measurement Unit (IMU) 
+BMI270 TARGET APPLICATIONS 
+ Wearables 
+ Hearables 
+ Smart clothing 
+ Augmented / virtual reality (AR/VR) 
+ 
+BMI270 TARGET DEVICES 
+ Fitness trackers, wristbands, smart watches 
+ Earbuds, ankle bands, neck bands 
+ Smart clothes 
+ Augmented and virtual reality glasses and controllers 
+
+
+================ [Page 2] ================
+ 
+ 
+Bosch Sensortec | BMI270 
+Data & Specification are preliminary and subject to change without notice | | Bosch Sensortec GmbH reserves al l  
+ri ghts in the event of i ndustrial property ri ghts. We reserve al l  rights of disposal  such as copyi ng and passing on to third 
+parti es. BOSCH and the symbol s are registered trademarks of Robert Bosch GmbH, Germany. 
+2 | 2 
+Doc.-Number: BST-BMI270-FL000-00 / Versi on_1.1_022019
+ 
+Pin description 
+Pin No. 
+Name 
+1 
+SDO, Serial data output in SPI 4W 
+2 
+ASDx, Aux interface / OIS interface 
+3 
+ASCx, Aux interface / OIS interface 
+4 
+INT1, Interrupt Pin 1 
+5 
+VDDIO, Digital I/O supply voltage (1.2 … 3.6V) 
+6 
+GNDIO, Ground for I/O  
+7 
+GND, Ground for digital and analog 
+8 
+VDD, Power supply analog and digital (1.71 … 3.6V) 
+9 
+INT2, Interrupt Pin 2 
+10 
+OCSB, OIS interface 
+11 
+OSDO, OIS interface 
+12 
+CSB, Chip select for SPI mode 
+13 
+SCx, SPI/I2C serial clock (SCK/SCL)  
+14 
+SDx, Serial data I/O 
+ 
+BMI270 is pin-to-pin compatible with BMI160 and BMI260. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                                                             
+1 Wear OS by Google is a trademark of Google LLC. 
+SYSTEM COMPATIBILITY 
+BMI270 is designed for best fit into modern embedded CE 
+wearable/hearable devices and provides a primary digital 
+interface (I2C and SPI) and a freely configurable secondary 
+digital interface (I2C and SPI). 
+ 
+The smart IMU has a wide range for VDD and VDDIO supply 
+voltages. The performance and current consumption are stable 
+over the entire supply range. Typical current draw for BMI270’s 
+accelerometer and gyroscope at full ODR of 6.4 kHz is under 
+700 μA. By enabling high output data rates with low current 
+consumption, wearable manufacturers can avoid an unpleasant 
+aliasing effect – an effect that causes different signals to become 
+indistinguishable when sampled at lower ODRs. 
+ 
+BMI270 is available in two application-specific versions: gesture 
+and context & activity. The 'gesture' version includes flick in/out, 
+arm up/down, and wrist tilt features. This version is designed for 
+Wear OS by Google™1 thus ensuring a user-friendly and 
+feature-rich experience for end-users. The 'context and activity' 
+version has advanced features for recognizing context activity 
+and activity change, for example standing, walking and being in 
+a vehicle (e.g. parking). 
+ 
+Bosch Sensortec’s ultra-low power IMU BMI270 provides an 
+intelligent power management system enabling motion-triggered 
+always-on features to run inside the ultra-low power domain of 
+the IMU. BMI270 significantly extends system battery life by 
+handling multiple activity tracking, step counting and gesture 
+recognition functions independently of the main system 
+processor, without having to wake it up. These processor-
+independent functions include tasks such as sending an interrupt 
+when a certain number of steps is reached, or geofencing to 
+activate GPS when the user stands up and starts walking.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Headquarters  
+Bosch Sensortec GmbH 
+Gerhard-Ki ndler-Straße 9  
+72770 Reutl i ngen · Germany  
+Tel ephone +49 7121 3535 900  
+Fax +49 7121 3535 909  
+ 
+www.bosch-sensortec.com 
+ 
+Pin configuration 
+

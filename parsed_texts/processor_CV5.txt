@@ -1,0 +1,232 @@
+
+================ [Page 1] ================
+Security Features 
+Secure boot with TrustZone, TRNG, 
+OTP, DRAM scrambling 
+and virtualization
+Computer Vision Processor 
+MIPI CSI-2
+MIPI DSI
+HDMI
+Analog
+LCD
+64-bit
+Sensor 1
+Sensor 14
+WiFi / BLE
+Video Input
+MIPI D-PHY 
+MIPI C-PHY
+Image Signal 
+Processor (ISP) 
+Video Output
+SLVS
+SLVS-EC
+I2C
+SPI
+PCIe
+GPIO
+Timers
+WDT
+UART
+JTAG
+Ethernet
+Video Codec
+H.264
+H.265
+MJPEG
+Ambarella Memory System
+Audio Input
+(I2S)
+DDR
+Interface
+SD / SDIO / 
+SDXC 
+NAND / NOR
+Audio Output
+(I²S)
+USB 3.1 
+Host / Device
+USB 2.0 
+Device
+Dual Core
+Arm® Cortex®-A76
+  LPDDR4x /
+LPDDR5 /
+LPDDR5x  
+SD Card /
+eMMC
+PRODUCT
+BRIEF
+High-Efficiency Video Encoding
+•	H.265 and H.264 video compression 
+•	Flexible multi-streaming capability
+•	8KP60 video performance 
+•	Multiple CBR and VBR bit rate control modes
+•	Smart H.264 and H.265 encoder algorithms
+Computer Vision Engine
+•	CNN / DNN-based processing: detection, 
+classification, and more 
+•	Accelerators for conventional CV operations 
+•	CNN toolkit for easy porting of neural networks 
+implemented in Caffe, TensorFlow, PyTorch, or 
+ONNX frameworks 
+Advanced Image Processing  
+•	Multi-exposure line-interleaved HDR
+•	Hardware dewarping engine
+•	Electronic image stabilization (EIS)
+•	Multiple camera support 
+Overview
+•	LED flicker mitigation
+•	3D motion-compensated temporal filtering (MCTF)
+•	Superior low-light processing
+•	RGGB / RCCB / RCCC / RGB-IR / monochrome 
+sensor support 
+Target Applications
+•	Sports cameras
+•	Robotic cameras
+•	Drones
+•	VR cameras
+•	Multi-channel drive recorders / data loggers
+•	Multi-camera aftermarket ADAS systems 
+8K AI Vision Processor
+CV5 Block Diagram
+Ambarella’s CV5 provides 8K image processing, video encoding / decoding, and CVflow® computer 
+vision processing in a single, low-power design.  Fabricated in advanced 5 nm process technology, 
+it achieves power consumption below 2W for 8K video recording at 30 fps, and below 5W for 8K 
+video recording at 60 fps.  The CV5’s CVflow architecture provides the deep neural network (DNN) 
+processing required for the next generation of intelligent cameras for various applications.
+The CV5’s next-generation image signal processor (ISP) provides outstanding imaging in low-light 
+conditions, while high dynamic range (HDR) processing extracts maximum image detail in high 
+contrast scenes, further enhancing the computer vision capabilities of the chip.  CV5 includes eﬃcient 
+8K encoding in both AVC and HEVC video formats, delivering high-resolution video recording and 
+streaming with very low bitrates.  The CV5’s CVﬂow architecture provides computer vision processing 
+at full 8K, enabling image recognition over long distances, with high accuracy.    
+ 
+The exceptionally low power consumption of the CV5 SoC makes it an ideal solution for the next 
+generation of high resolution and high frame-rate action / sports cameras, robotic cameras, and 
+VR cameras; when combined with CVflow AI architecture, CV5 is uniquely suitable to power high 
+performance consumer and industrial drones. In the video telematics space, CV5 provides image 
+processing and both AVC and HEVC recording for video feeds from multiple cameras, employing 
+CVflow ADAS algorithms to provide lane departure warning, forward collision warning, driver 
+monitoring, and more.  To help customers easily port their own neural networks onto the CV5 SoC, 
+Ambarella’s software development kit oﬀers a complete set of tools for software and AI implementation.
+®
+Key Features
+CV5
+
+
+================ [Page 2] ================
+The CV5 camera development platform contains the necessary tools, software, hardware, and documentation to develop a camera utilizing the 
+powerful CVflow processor while supporting the development of customized features. 
+Evaluation Kit
+•	 CV5 main board with connectors for sensor / lens board 
+and peripherals
+•	 Sensor board: Sony, ON Semi, Omnivision, and others
+•	 Datasheet, BOM, schematics, and layout
+•	 SDK and reference application with C source code
+Software Development Kit  
+•	 Royalty-free libraries for ISP, dewarp, and 
+video recording
+•	 Image tuning and manufacturing calibration tools
+•	 Detailed documentation, including a programmer’s 	
+	
+guide and more
+•	 CNN / DNN model preparation, porting, and profiling tools
+Processor Cores
+•	 Dual-core Arm® Cortex®-A76 up to 1.6 GHz
+•	 64 KB / 64 KB L1 cache, 256 KB L2 cache, and 
+1024 KB L3 cache
+•	 NEON™ SIMD and FPU acceleration 
+•	 AES / 3DES / SHA-1 / MD5 crypto acceleration
+Computer Vision Processor 
+•	 	
+ processor with parallel architecture to 
+boost performance of the low-level portion of 
+perception algorithms
+Video Input
+•	 12 lane SLVS-EC (1-8 lane single link, 
+1-6 lane * 2 dual link)
+•	 2x MIPI DC-PHY 
+	◦
+Each DC-PHY supports C-PHY mode (1-3 
+lanes) or D-PHY mode (1-4 lanes)
+•	 2x MIPI D-PHY (1-4 lanes each)
+•	 Up to 14 cameras using MIPI virtual channels
+Video Output
+•	 HDMI® 2.0 including PHY with CEC support
+•	 PAL / NTSC composite SD video
+•	 2x MIPI DSI / CSI-2
+CMOS Sensor / Image Processing
+•	 8KP60 ISP throughput
+•	 Lens shading, fixed-pattern noise correction 
+•	 Multi-exposure HDR (line-interleavened 
+sensors)
+•	 3D motion-compensated temporal 
+filtering (MCTF)
+•	 RGGB / RCCB / RCCC / RGB-IR / monochrome 
+sensor support 
+•	 Adjustable AE / AWB 
+•	 LED flicker compensation for LED sources
+•	 Advanced dynamic range (WDR and 
+HDR) engine 
+•	 Chromatic aberration correction
+•	 180° and 360° fisheye lens and geometric 
+distortion correction
+•	 OSD engine and overlays 
+•	 Gamma compensation and color enhancement
+•	 Vignetting compensation 
+•	 3-axis electronic image stabilization (EIS)
+•	 Crop, mirror, flip, and 90° / 270° rotation 
+Video Encoding / Decoding
+•	 H.265 (HEVC) MP L6.1, H.264 (AVC) MP / HP 
+L6.1, and MJPEG 
+•	 8KP60 maximum encoding / decoding 
+performance
+•	 Flexible GOP configuration with I, P, and 	
+B frames
+•	 Multiple CBR and VBR rate control modules
+Security Features
+•	 Secure boot with TrustZone®  and secure 
+memory, TRNG, OTP, DRAM scrambling 
+and virtualization
+Tools for Development
+•	 CNN toolkit to ease the porting of CNNs trained 
+using frameworks such as Caffe, TensorFlow, or 
+ONNX
+•	 Compiler, debugger, and profiler for both Arm 
+and microcode development
+Memory Interfaces
+•	 LPDDR4x up to 4.2 Gbits/s / LPDDR5(x) up to 
+7 Gbits/s, 64-bit data bus, up to 32 GB capacity
+•	 Three SD controllers
+•	 Single- / dual- / quad- / octal-SPI NOR and 
+SPI NAND
+•	 Boot from SPI NAND / SPI NOR / USB / eMMC
+Peripheral Interfaces
+•	 4-lane PCIe
+•	 1x USB 3.1 host / device and 1x USB 2.0 
+device only with PHY
+•	 2x I2S input and output interfaces, 1x DMIC
+•	 2x CAN FD interface
+•	 5x UART, 6 I/F of SSI / IDC mixed together
+•	 Multiple GPIO ports, PWM, IR, and ADC
+•	 Watchdog timer, general purpose timers, 
+and JTAG
+Physical
+•	 5 nm low-power CMOS technology
+•	 16 mm x 16 mm FC TFBGA with 0.5 mm 
+ball pitch
+•	 Operating temperature -20°C to +85°C 
+(additional operational temperature options 
+available)
+www.ambarella.com/contact-us/
+Copyright Ambarella International LP. All rights reserved. Ambarella and the Ambarella logo are trademarks of Ambarella International LP. All other brands, product names, and company names 
+are trademarks of their respective owners. The information in this document is believed to be reliable, but may project preliminary functionality not yet available. Ambarella makes no guarantee 
+or warranty concerning the accuracy and availability of said information and shall not be responsible for any loss or damage whatever nature resulting from the use of, or reliance upon it. 
+Ambarella does not guarantee that the use of any information contained herein will not infringe upon patent, trademark, copyright, or other rights of third parties. Ambarella reserves the right to 
+make changes in the product and / or its specifications presented in this publication at any time without notice.
+1/2021
+CV5 Camera Development Platform
+General Specifications
+

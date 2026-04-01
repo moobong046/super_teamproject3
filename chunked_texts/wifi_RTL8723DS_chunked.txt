@@ -1,0 +1,2681 @@
+📦 [Chunk 1]
+[부품명: RTL8723DS]
+RTL8723DS-CG 
+ 
+ 
+ 
+SINGLE-CHIP 802.11b/g/n 1T1R WLAN and 
+BLUETOOTH 2.1/4.2 with SDIO INTERFACE, and 
+HS-UART MIXED INTERFACE 
+ 
+ 
+DATASHEET 
+(CONFIDENTIAL: Development Partners Only) 
+ 
+Rev. 0.92 
+24 Jul. 2017 
+Track ID:  
+ 
+
+RTL8723DS-CG 
+Datasheet 
+Single-Chip 802.11b/g/n 1T1R WLAN and Bluetooth 4.2 Controller 
+ii 
+Track ID: JATR-
+ 
+ 
+ 
+ 
+ 
+Realtek Semiconductor Corp. 
+No. 2, Innovation Road II, Hsinchu Science Park, Hsinchu 300, Taiwan 
+Tel.: +886-3-578-0211. Fax: +886-3-577-6047 
+www.realtek.com
+--------------------------------------------------
+
+📦 [Chunk 2]
+[부품명: RTL8723DS]
+RTL8723DS-CG 
+Datasheet 
+Single-Chip 802.11b/g/n 1T1R WLAN and Bluetooth 4.2 Controller 
+iii 
+Track ID: JATR-
+ 
+ 
+COPYRIGHT 
+©2012 Realtek Semiconductor Corp. All rights reserved. No part of this document may be reproduced, 
+transmitted, transcribed, stored in a retrieval system, or translated into any language in any form or by any 
+means without the written permission of Realtek Semiconductor Corp. 
+ 
+DISCLAIMER 
+Realtek provides this document ‘as is’, without warranty of any kind. Realtek may make improvements 
+and/or changes in this document or in the product described in this document at any time. This document 
+could include technical inaccuracies or typographical errors. 
+ 
+TRADEMARKS
+--------------------------------------------------
+
+📦 [Chunk 3]
+[부품명: RTL8723DS]
+could include technical inaccuracies or typographical errors. 
+ 
+TRADEMARKS 
+Realtek is a trademark of Realtek Semiconductor Corporation. Other names mentioned in this document are 
+trademarks/registered trademarks of their respective owners. 
+ 
+USING THIS DOCUMENT 
+This document is intended for the software engineer’s reference and provides detailed programming 
+information. 
+Though every effort has been made to ensure that this document is current and accurate, more information 
+may have become available subsequent to the production of this guide. 
+ 
+REVISION HISTORY 
+Revision 
+Release Date 
+Summary 
+0.80 
+2016/3/30 
+Preliminary release. 
+0.90 
+2016/3/30 
+Fix BT description 
+0.91 
+2017/3/23 
+Modify mark  on pin 1， rename pin VBAT_OUT, VBAT_IN, VBAT_EN to 
+VD33D, VD33D, GND 
+0.92
+--------------------------------------------------
+
+📦 [Chunk 4]
+[부품명: RTL8723DS]
+0.90 
+2016/3/30 
+Fix BT description 
+0.91 
+2017/3/23 
+Modify mark  on pin 1， rename pin VBAT_OUT, VBAT_IN, VBAT_EN to 
+VD33D, VD33D, GND 
+0.92 
+2017/7/24 
+Modify SDIO/GSPI/UART interface power on sequence, modify description of  
+pin 41 and pin 28 for GPIO IO power reference
+--------------------------------------------------
+
+📦 [Chunk 5]
+[부품명: RTL8723DS]
+RTL8723DS-CG 
+Datasheet 
+Single-Chip 802.11b/g/n 1T1R WLAN and Bluetooth 4.2 Controller 
+iv 
+Track ID: JATR-
+ 
+ 
+Table of Contents 
+1. 
+GENERAL DESCRIPTION ................................................................................................................................................ 1 
+2. 
+FEATURES ........................................................................................................................................................................... 3 
+3. 
+APPLICATION DIAGRAM ............................................................................................................................................... 5 
+3.1. 
+INTEGRATED SINGLE-BAND 11N (1X1)   AND BLUETOOTH CONTROLLER WITH ANTENNA DIVERSITY ............................. 5 
+3.2.
+--------------------------------------------------
+
+📦 [Chunk 6]
+[부품명: RTL8723DS]
+3.1. 
+INTEGRATED SINGLE-BAND 11N (1X1)   AND BLUETOOTH CONTROLLER WITH ANTENNA DIVERSITY ............................. 5 
+3.2. 
+INTEGRATED SINGLE-BAND 11N (1X1) AND BLUETOOTH CONTROLLER WITH WL/BT SHARED ANTENNA ...................... 6 
+4. 
+PIN ASSIGNMENTS ........................................................................................................................................................... 7 
+5. 
+PACKAGE IDENTIFICATION .................................................................................................................................................. 7 
+6. 
+PIN DESCRIPTIONS .......................................................................................................................................................... 7 
+6.1.
+--------------------------------------------------
+
+📦 [Chunk 7]
+[부품명: RTL8723DS]
+6.1. 
+POWER-ON TRAP PINS .................................................................................................................................................... 8 
+6.2. 
+SDIO INTERFACE ............................................................................................................................................................ 8 
+6.3. 
+GSPI INTERFACE ............................................................................................................................................................. 8 
+6.4. 
+HS-UART TRANSCEIVER INTERFACE ............................................................................................................................. 8 
+6.5.
+--------------------------------------------------
+
+📦 [Chunk 8]
+[부품명: RTL8723DS]
+6.5. 
+PCM INTERFACE ............................................................................................................................................................. 9 
+6.6. 
+RF INTERFACE ................................................................................................................................................................ 9 
+6.7. 
+LED INTERFACE .............................................................................................................................................................. 9 
+6.8. 
+POWER MANAGEMENT HANDSHAKE INTERFACE .......................................................................................................... 10 
+6.9.
+--------------------------------------------------
+
+📦 [Chunk 9]
+[부품명: RTL8723DS]
+6.9. 
+CLOCK AND OTHER PINS ............................................................................................................................................... 10 
+6.10. 
+POWER PINS .............................................................................................................................................................. 11 
+7. 
+ELECTRICAL AND THERMAL CHARACTERISTICS ............................................................................................. 12 
+7.1. 
+TEMPERATURE LIMIT RATINGS ..................................................................................................................................... 12 
+7.2.
+--------------------------------------------------
+
+📦 [Chunk 10]
+[부품명: RTL8723DS]
+7.2. 
+POWER SUPPLY DC CHARACTERISTICS ......................................................................................................................... 12 
+7.3. 
+DIGITAL IO PIN DC CHARACTERISTICS ......................................................................................................................... 13 
+7.4. 
+SDIO/GSPI INTERFACE AC CHARACTERISTICS ............................................................................................................ 14 
+7.4.1. 
+SDIO/GSPI Interface Signal Levels ..................................................................................................................... 15 
+7.4.2.
+--------------------------------------------------
+
+📦 [Chunk 11]
+[부품명: RTL8723DS]
+7.4.2. 
+SDIO Interface Power-On Sequence .................................................................................................................... 15 
+7.4.3. 
+GSPI Interface Power-On Sequence .................................................................................................................... 16 
+7.5. 
+UART INTERFACE CHARACTERISTICS ........................................................................................................................... 18 
+7.5.1. 
+UART Interface Signal Levels .............................................................................................................................. 19 
+7.5.2.
+--------------------------------------------------
+
+📦 [Chunk 12]
+[부품명: RTL8723DS]
+7.5.2. 
+UART Interface Power-On Sequence ................................................................................................................... 19 
+7.6. 
+PCM INTERFACE CHARACTERISTICS ............................................................................................................................. 22 
+7.6.1. 
+PCM Format ......................................................................................................................................................... 22 
+7.6.2. 
+Sign Extension and Zero Padding for 8-Bit and 13-Bit Samples ......................................................................... 22 
+7.6.3.
+--------------------------------------------------
+
+📦 [Chunk 13]
+[부품명: RTL8723DS]
+Sign Extension and Zero Padding for 8-Bit and 13-Bit Samples ......................................................................... 22 
+7.6.3. 
+PCM Interface Timing .......................................................................................................................................... 23 
+7.6.4. 
+PCM Interface Signal Levels ................................................................................................................................ 24 
+8. 
+MECHANICAL DIMENSIONS ....................................................................................................................................... 25 
+9.
+--------------------------------------------------
+
+📦 [Chunk 14]
+[부품명: RTL8723DS]
+9. 
+ORDERING INFORMATION ......................................................................................................................................... 27
+--------------------------------------------------
+
+📦 [Chunk 15]
+[부품명: RTL8723DS]
+RTL8723DS-CG 
+Datasheet 
+Single-Chip 802.11b/g/n 1T1R WLAN and Bluetooth 4.2 Controller 
+v 
+Track ID: JATR-
+ 
+ 
+List of Tables 
+TABLE 1.   POWER ON TRAP PINS .................................................................................................................................................... 8 
+TABLE 2.   SDIO INTERFACE ........................................................................................................................................................... 8 
+TABLE 3.   GSPI INTERFACE ............................................................................................................................................................ 8
+--------------------------------------------------
+
+📦 [Chunk 16]
+[부품명: RTL8723DS]
+TABLE 4.   HS-UART INTERFACE ................................................................................................................................................... 8 
+TABLE 5.   PCM INTERFACE ............................................................................................................................................................ 8 
+TABLE 6.   RF INTERFACE ............................................................................................................................................................... 8 
+TABLE 7.   LED INTERFACE ............................................................................................................................................................. 8
+--------------------------------------------------
+
+📦 [Chunk 17]
+[부품명: RTL8723DS]
+TABLE 8.  POWER MANAGEMENT HANDSHAKE INTERFACE .......................................................................................................... 10 
+TABLE 9. CLOCK AND OTHER PINS ................................................................................................................................................ 10 
+TABLE 10. POWER PINS ................................................................................................................................................................. 11 
+TABLE 11. TEMPERATURE LIMIT RATINGS .................................................................................................................................... 11
+--------------------------------------------------
+
+📦 [Chunk 18]
+[부품명: RTL8723DS]
+TABLE 12. POWER SUPPLY DC CHARACTERISTICS ........................................................................................................................ 12 
+TABLE 13. 3.3V IO DC CHARACTERISTICS ................................................................................................................................... 13 
+TABLE 14. 2.8V IO DC CHARACTERISTICS ................................................................................................................................... 13 
+TABLE 15. 1.8V IO DC CHARACTERISTICS ................................................................................................................................... 13
+--------------------------------------------------
+
+📦 [Chunk 19]
+[부품명: RTL8723DS]
+TABLE 16. SDIO INTERFACE TIMING PARAMETERS ...................................................................................................................... 14 
+TABLE 17. SDIO INTERFACE POWER-ON SEQUENCE .................................................................................................................... 15 
+TABLE 18. SDIO INTERFACE POWER-ON TIMING PARAMETERS ................................................................................................... 16 
+TABLE 19. GSPI INTERFACE POWER-ON SEQUENCE ..................................................................................................................... 16
+--------------------------------------------------
+
+📦 [Chunk 20]
+[부품명: RTL8723DS]
+TABLE 20. SPI INTERFACE POWER-ON TIMING PARAMETERS ...................................................................................................... 17 
+TABLE 22. UART INTERFACE POWER-ON SEQUENCE .................................................................................................................. 20 
+TABLE 23. UART INTERFACE POWER ON TIMING PARAMETERS .................................................................................................. 20 
+TABLE 24. PCM INTERFACE CLOCK SPECIFICATIONS ................................................................................................................... 24
+--------------------------------------------------
+
+📦 [Chunk 21]
+[부품명: RTL8723DS]
+TABLE 25. PCM INTERFACE TIMING ............................................................................................................................................. 24 
+TABLE 26. ORDERING INFORMATION ............................................................................................................................................ 27
+--------------------------------------------------
+
+📦 [Chunk 22]
+[부품명: RTL8723DS]
+RTL8723DS-CG 
+Datasheet 
+Single-Chip 802.11b/g/n 1T1R WLAN and Bluetooth 4.2 Controller 
+vi 
+Track ID: JATR-
+ 
+ 
+List of Figures 
+FIGURE 1.   RTL8723DS WITH ANTENNA DIVERSITY ....................................................................................................................... 5 
+FIGURE 2.   RTL8723DS WITH SHARED ANTENNA BETWEEN WLAN AND BLUETOOTH .................................................................. 6 
+FIGURE 3.   PIN ASSIGNMENTS ......................................................................................................................................................... 7
+--------------------------------------------------
+
+📦 [Chunk 23]
+[부품명: RTL8723DS]
+FIGURE 4.   SDIO INTERFACE TIMING ........................................................................................................................................... 14 
+FIGURE 5.   SDIO INTERFACE POWER-ON SEQUENCE ................................................................................................................... 15 
+FIGURE 6.   GSPI INTERFACE POWER-ON SEQUENCE .................................................................................................................... 16 
+FIGURE 7. UART INTERFACE WAVEFORM .................................................................................................................................... 19
+--------------------------------------------------
+
+📦 [Chunk 24]
+[부품명: RTL8723DS]
+FIGURE 8. UART POWER-ON SEQUENCE WITH HARDWARE FLOW CONTROL .............................................................................. 19 
+FIGURE 9. UART POWER-ON SEQUENCE WITHOUT HARDWARE FLOW CONTROL ........................................................................ 20 
+FIGURE 10. LONG FRAMESYNC ..................................................................................................................................................... 22 
+FIGURE 11. SHORT FRAMESYNC ................................................................................................................................................... 22 
+FIGURE 12. 16-BIT OUTPUT DATA WITH 8-BIT PCM SAMPLE DATA AND SIGN EXTENSION .......................................................... 23
+--------------------------------------------------
+
+📦 [Chunk 25]
+[부품명: RTL8723DS]
+FIGURE 12. 16-BIT OUTPUT DATA WITH 8-BIT PCM SAMPLE DATA AND SIGN EXTENSION .......................................................... 23 
+FIGURE 13. 16-BIT OUTPUT DATA WITH 8-BIT PCM SAMPLE DATA AND ZERO PADDING ............................................................. 23 
+FIGURE 14. 16-BIT OUTPUT DATA WITH 13-BIT PCM SAMPLE DATA AND SIGN EXTENSION ........................................................ 23 
+FIGURE 15. 16-BIT OUTPUT DATA WITH 13-BIT PCM SAMPLE DATA AND AUDIO GAIN ............................................................... 23 
+FIGURE 16. PCM INTERFACE (LONG FRAMESYNC) ....................................................................................................................... 23
+--------------------------------------------------
+
+📦 [Chunk 26]
+[부품명: RTL8723DS]
+FIGURE 17. PCM INTERFACE (SHORT FRAMESYNC) ..................................................................................................................... 24
+--------------------------------------------------
+
+📦 [Chunk 27]
+[부품명: RTL8723DS]
+RTL8723DS-CG 
+Datasheet 
+Single-Chip 802.11b/g/n 1T1R WLAN and  Bluetooth 4.2 Controller 1 
+Track ID: JATR-
+ 
+ 
+1. 
+General Description 
+The Realtek RTL8723DS is a highly integrated 802.11b/g/n 1T1R WLAN and Bluetooth 2.1/4.2 single 
+chip  . It combines a WLAN MAC, a 1T1R capable WLAN baseband, BT Protocol Stack (LM, LL, and LE), 
+BT Baseband, modem, and WLAN/BT RF in a single chip. The RTL8723DS provides a complete solution 
+for a high throughput performance integrated wireless LAN, and Bluetooth. 
+ 
+The RTL8723DS WLAN baseband implements Orthogonal Frequency Division Multiplexing (OFDM) 
+with 1 transmit and 1 receive path and is compatible with the 802.11n specification. Features include one
+--------------------------------------------------
+
+📦 [Chunk 28]
+[부품명: RTL8723DS]
+with 1 transmit and 1 receive path and is compatible with the 802.11n specification. Features include one 
+spatial stream transmission, short guard interval (GI) of 400ns, spatial spreading, and transmission over 
+20MHz and 40MHz bandwidth. 
+ 
+For legacy compatibility, Direct Sequence Spread Spectrum (DSSS), Complementary Code Keying (CCK) 
+and OFDM baseband processing are included to support all 802.11b and 802.11g data rates. Differential 
+phase shift keying modulation schemes, DBPSK and DQPSK with data scrambling capability, are available, 
+and CCK provides support for legacy data rates, with long or short preamble. The high-speed FFT/IFFT 
+paths, combined with BPSK, QPSK, 16QAM, and 64QAM modulation of the individual subcarriers and
+--------------------------------------------------
+
+📦 [Chunk 29]
+[부품명: RTL8723DS]
+paths, combined with BPSK, QPSK, 16QAM, and 64QAM modulation of the individual subcarriers and 
+rate compatible punctured convolutional coding with coding rate of 1/2, 2/3, 3/4, and 5/6, provide higher 
+data rates of 54Mbps and 150Mbps for 802.11g and 802.11n OFDM respectively. 
+ 
+A built-in enhanced signal detector, adaptive frequency domain equalizer, and a soft-decision Viterbi 
+decoder help to alleviate multi-path effects and mutual interference in the reception of multiple streams. 
+Robust interference detection and suppression are provided to protect against Bluetooth, cordless phone, 
+and microwave oven interference. 
+ 
+Efficient IQ-imbalance, DC offset, phase noise, frequency offset, and timing offset compensations are
+--------------------------------------------------
+
+📦 [Chunk 30]
+[부품명: RTL8723DS]
+and microwave oven interference. 
+ 
+Efficient IQ-imbalance, DC offset, phase noise, frequency offset, and timing offset compensations are 
+provided for the radio frequency front-end. Selectable digital transmit and receive FIR filters are provided 
+to meet transmit spectrum mask requirements and to reject adjacent channel interference, respectively. 
+ 
+The RTL8723DS WLAN Controller supports fast receiver Automatic Gain Control (AGC) with 
+synchronous and asynchronous control loops among antennas, antenna diversity functions, and adaptive 
+transmit power control function to obtain better performance in the analog portions of the transceiver.
+--------------------------------------------------
+
+📦 [Chunk 31]
+[부품명: RTL8723DS]
+RTL8723DS-CG 
+Datasheet 
+Single-Chip 802.11b/g/n 1T1R WLAN and  Bluetooth 4.2 Controller 2 
+Track ID: JATR-
+ 
+ 
+The RTL8723DS WLAN MAC supports 802.11e for multimedia applications, 802.11i for security, and 
+802.11n for enhanced MAC protocol efficiency. Using packet aggregation techniques such as A-MPDU 
+with BA and A-MSDU, protocol efficiency is significantly improved. Power saving mechanisms such as 
+Legacy Power Save, and U-APSD, reduce the power wasted during idle time, and compensate for the extra 
+power required to transmit OFDM. The RTL8723DS provides simple legacy and 20MHz/40MHz 
+co-existence mechanisms to ensure backward and network compatibility. 
+ 
+The RTL8723DS Bluetooth controller complies with Bluetooth core specification v4.2, and supports dual
+--------------------------------------------------
+
+📦 [Chunk 32]
+[부품명: RTL8723DS]
+The RTL8723DS Bluetooth controller complies with Bluetooth core specification v4.2, and supports dual 
+mode (BR/EDR  + Low Energy Controllers). It is compatible with previous versions, including v2.1 + EDR. 
+For BR/EDR, it supports scatternet topology and allows active links in slave mode, and active links in 
+master mode. For Low Energy, it supports multiple states and allows active links in master mode. The links 
+in BR/EDR and LE can be active simultaneously. 
+.
+--------------------------------------------------
+
+📦 [Chunk 33]
+[부품명: RTL8723DS]
+RTL8723DS-CG 
+Datasheet 
+Single-Chip 802.11b/g/n 1T1R WLAN and  Bluetooth 4.2 Controller 3 
+Track ID: JATR-
+ 
+ 
+2. 
+Features 
+General 
+ QFN48 6 x 6 mm 
+ 802.11b/g/n 1T1R WLAN, and  Bluetooth 
+single chip 
+Host Interface 
+ Complies with SDIO 1.1/2.0 for WLAN 
+with clock rate up to 100MHz (SDR50 and 
+DDR50) 
+ GSPI interface for configurable endian for 
+WLAN 
+ Complies with HS-UART with 
+configurable baud rate for Bluetooth 
+WLAN Controller 
+ CMOS MAC, Baseband PHY, and RF in a 
+single chip for 802.11b/g/n compatible 
+WLAN 
+ Complete 802.11n solution for 2.4GHz 
+band 
+ 72.2Mbps receive PHY rate and 72.2Mbps 
+transmit PHY rate using 20MHz bandwidth 
+ 150Mbps receive PHY rate and 150Mbps 
+transmit PHY rate using 40MHz bandwidth 
+ Compatible with 802.11n specification
+--------------------------------------------------
+
+📦 [Chunk 34]
+[부품명: RTL8723DS]
+ 150Mbps receive PHY rate and 150Mbps 
+transmit PHY rate using 40MHz bandwidth 
+ Compatible with 802.11n specification 
+ Backward compatible with 802.11b/g 
+devices while operating in 802.11n mode 
+ 802.11b/g/n compatible WLAN 
+ 802.11e QoS Enhancement (WMM) 
+ 802.11i (WPA, WPA2). Open, shared key, 
+and pair-wise key authentication services 
+WLAN MAC Features 
+ Frame aggregation for increased MAC 
+efficiency (A-MSDU, A-MPDU) 
+ Low latency immediate High-Throughput 
+Block Acknowledgement (HT-BA) 
+ PHY-level spoofing to enhance legacy 
+compatibility 
+ Power saving mechanism 
+ Channel management and co-existence 
+ Transmit Opportunity (TXOP) Short 
+Inter-Frame Space (SIFS) bursting for 
+higher multimedia bandwidth 
+WLAN PHY Features 
+ 802.11n OFDM
+--------------------------------------------------
+
+📦 [Chunk 35]
+[부품명: RTL8723DS]
+ Transmit Opportunity (TXOP) Short 
+Inter-Frame Space (SIFS) bursting for 
+higher multimedia bandwidth 
+WLAN PHY Features 
+ 802.11n OFDM 
+ One Transmit and one Receive path (1T1R) 
+ 20MHz and 40MHz bandwidth 
+transmission 
+ Short Guard Interval (400ns) 
+ DSSS with DBPSK and DQPSK, CCK 
+modulation with long and short preamble 
+ OFDM with BPSK, QPSK, 16QAM, and 
+64QAM modulation.  
+Convolutional Coding Rate: 1/2, 2/3, 3/4, 
+and 5/6 
+ Maximum data rate 54Mbps in 802.11g; 
+and 150Mbps in 802.11n 
+ Switch diversity for DSSS/CCK 
+ Packet based hardware antenna diversity
+--------------------------------------------------
+
+📦 [Chunk 36]
+[부품명: RTL8723DS]
+RTL8723DS-CG 
+Datasheet 
+Single-Chip 802.11b/g/n 1T1R WLAN and  Bluetooth 4.2 Controller 4 
+Track ID: JATR-
+ 
+ 
+ Selectable receiver FIR filters 
+ Programmable scaling in transmitter and 
+receiver to trade quantization noise against 
+increased probability of clipping 
+ Fast receiver Automatic Gain Control 
+(AGC) 
+ On-chip ADC and DAC 
+Bluetooth Controller 
+ Compatible with Bluetooth v2.1+EDR  and 
+v4.2 Systems 
+ Supports Bluetooth 4.0 Low Energy(BLE) 
+ HS-UART interface for Bluetooth data 
+transmission compliant with H5 
+specification 
+ PCM interface for audio data transmission 
+via Bluetooth controller 
+ Integrated MCU to execute Bluetooth 
+protocol stack 
+ Supports all packet types in basic rate and 
+enhanced data rate 
+ Supports SCO/eSCO link (allows one link
+--------------------------------------------------
+
+📦 [Chunk 37]
+[부품명: RTL8723DS]
+protocol stack 
+ Supports all packet types in basic rate and 
+enhanced data rate 
+ Supports SCO/eSCO link (allows one link 
+for PCM interface and three links for 
+HS-UART) 
+ Supports piconets in a scatternet 
+ Supports Secure Simple Pairing 
+ Supports Low Power Mode (Sniff/Sniff 
+Sub-rating) 
+ Enhanced BT/WIFI Coexistence Control to 
+improve transmission quality in different 
+profiles 
+ Bluetooth 4.0 Dual Mode support: 
+Simultaneous LE and BR/EDR 
+ Supports multiple Low Energy states 
+Bluetooth Transceiver 
+ Fast AGC control to improve receiving 
+dynamic range 
+ Supports AFH to dynamically detect 
+channel quality to improve transmission 
+quality 
+ Integrated internal Class 1, Class 2, and 
+Class 3 PA 
+ Supports Power Control/Enhanced Power 
+Control
+--------------------------------------------------
+
+📦 [Chunk 38]
+[부품명: RTL8723DS]
+quality 
+ Integrated internal Class 1, Class 2, and 
+Class 3 PA 
+ Supports Power Control/Enhanced Power 
+Control 
+ Bluetooth Low Energy Support 
+ Integrated 32K oscillator for power 
+management 
+Peripheral Interfaces 
+ General Purpose Input/Output (14 pins) 
+ Two configurable LED pins
+--------------------------------------------------
+
+📦 [Chunk 39]
+[부품명: RTL8723DS]
+RTL8723DS-CG 
+Datasheet 
+Single-Chip 802.11b/g/n 1T1R WLAN and  Bluetooth 4.2 Controller 5 
+Track ID: JATR-
+ 
+ 
+ 
+3. 
+Application Diagram 
+3.1. Integrated Single-Band 11n (1x1)   and Bluetooth Controller 
+with Antenna Diversity 
+GHz 
+2.4 GHz
+Transceiver
+TX I/Q
+Ext 
+Interface
+SDIO
+Host Interface
+RX I/Q
+Selectalbe 
+Crystal
+NV Memory
+3.3V
+SPS / LDO
+Regulators
+ADC
+DAC
+MAC
+Configuration
+Control and
+Memory
+Baseband
+(PHY)
+HCI
+HS-UART
+Interface
+BT
+MCU
+WLAN
+MCU
+PTA
+BT BB
+Controller
+WLAN
+RAM
+Modem
+BT LE
+Controller
+BT 
+Transceiver
+2.4
+PA
+2.4
+PA
+GHz 
+Internal 
+Balun
+Internal 
+Balun
+Antenna 
+Antenna 
+DPDT
+RTL8723DS
+52, 48, 40, 38.4, 27, 26, 25, 24, 
+20, 19.2, 17.664, 16, 14.318, 13 
+and 12MHz selectable
+ 
+Figure 1.   RTL8723DS with antenna diversity
+--------------------------------------------------
+
+📦 [Chunk 40]
+[부품명: RTL8723DS]
+RTL8723DS-CG 
+Datasheet 
+Single-Chip 802.11b/g/n 1T1R WLAN and  Bluetooth 4.2 Controller 6 
+Track ID: JATR-
+ 
+ 
+3.2. Integrated Single-Band 11n (1x1) and Bluetooth Controller 
+with WL/BT Shared antenna 
+ 
+GHz 
+2.4 GHz
+Transceiver
+TX I/Q
+Ext 
+Interface
+SDIO
+Host Interface
+RX I/Q
+Selectalbe 
+Crystal
+NV Memory
+3.3V
+SPS / LDO
+Regulators
+ADC
+DAC
+MAC
+Configuration
+Control and
+Memory
+Baseband
+(PHY)
+HCI
+HS-UART
+Interface
+BT
+MCU
+WLAN
+MCU
+PTA
+BT BB
+Controller
+WLAN
+RAM
+Modem
+BT LE
+Controller
+BT 
+Transceiver
+2.4
+PA
+2.4
+PA
+GHz 
+Internal 
+Balun
+Internal 
+Balun
+Antenna 
+SPDT
+RTL8723DS
+52, 48, 40, 38.4, 27, 26, 25, 24, 
+20, 19.2, 17.664, 16, 14.318, 13 
+and 12MHz selectable
+ 
+Figure 2.   RTL8723DS with shared antenna between WLAN and Bluetooth
+--------------------------------------------------
+
+📦 [Chunk 41]
+[부품명: RTL8723DS]
+RTL8723DS-CG 
+Datasheet 
+Single-Chip 802.11b/g/n 1T1R WLAN and  Bluetooth 4.2 Controller 7 
+Track ID: JATR-
+ 
+ 
+4. 
+Pin Assignments 
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+13
+14
+15
+36
+35
+34
+33
+32
+31
+29
+30
+28
+27
+26
+25
+VA33_PAD_S0
+VA33_PAD_S1
+VA1P25_BT_SYN
+VA1P25_WL_SYN
+VA1P25_RTX_S1
+UART_CTS
+SW_LX
+UART_OUT
+WL_DIS#/GPIO9
+VA33_WL_SYN
+VA33_PA_S1
+VA33_AFE
+VA33_PA_S0
+EEPROM_SEL/GPIO12
+UART_IN
+SW_GND
+LLLLLLL      TXXXV
+RTL8723DS
+SD_D1/GSPI_INT
+VD33D
+XI
+XO
+GPIO13
+TEST_MOD_SEL/GPIO14
+GPIO3
+RFIO_BTG_S1
+49 GND (Exposed Pad)
+16
+VDD_IO
+VA1P25_AFE
+GPIO6
+GPIO0
+SPS_LDO_SEL/GPIO1
+GPIO2
+SD_D0/GSPI_DO
+SD_CLK/GSPI_CLK
+SD_D3/GSPI_CS#
+SD_D2
+SD_CMD/GSPI_DI
+VA1P25_RTX_S0
+17
+18
+19
+20
+21
+22
+23
+12
+24
+VA33_BT_SYN
+RFIO_BTG_S0
+48
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+GPIO15
+GPIO4
+GPIO5
+GPIO8/WL_LED
+BT_DIS#/GPIO11
+GPIO7/BT_LED
+VD33D
+--------------------------------------------------
+
+📦 [Chunk 42]
+[부품명: RTL8723DS]
+18
+19
+20
+21
+22
+23
+12
+24
+VA33_BT_SYN
+RFIO_BTG_S0
+48
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+GPIO15
+GPIO4
+GPIO5
+GPIO8/WL_LED
+BT_DIS#/GPIO11
+GPIO7/BT_LED
+VD33D
+VD1P25
+GND
+VD33D
+ 
+Figure 3.   Pin Assignments 
+5. 
+Package Identification 
+‘Green’ package is indicated by a ‘G’ in the location marked ‘T’ in Figure 3. The version is shown in the 
+location marked ‘V’, e.g., Q=Version Q. 
+6. 
+Pin Descriptions 
+The following signal type codes are used in the tables:  
+I: Input 
+O: Output
+--------------------------------------------------
+
+📦 [Chunk 43]
+[부품명: RTL8723DS]
+RTL8723DS-CG 
+Datasheet 
+Single-Chip 802.11b/g/n 1T1R WLAN and  Bluetooth 4.2 Controller 8 
+Track ID: JATR-
+ 
+ 
+6.1. Power-On Trap Pins 
+Table 1.   Power On Trap Pins 
+Symbol 
+Type 
+Pin  No 
+Description 
+TEST_MODE_SEL 
+I 
+19 
+Shared with GPIO14 
+0: Normal operation mode 
+1: Enter into test/debug mode 
+SPS_LDO_SEL 
+I 
+22 
+Shared with GPIO1 
+0: Internal switching regulator select 
+1: Internal LDO select 
+EEPROM_SEL 
+I 
+17 
+Shared with GPIO12 pin 
+0: Internal NV memory select 
+1: External EEPROM select 
+ 
+6.2. SDIO Interface 
+Table 2.   SDIO Interface 
+Symbol 
+Type 
+Pin No 
+Description 
+SD_CLK 
+I 
+31 
+SDIO Clock Input 
+SD_CMD 
+IO 
+32 
+SDIO Command Input 
+SD_D0 
+IO 
+30 
+SDIO Data Line 0 
+SD_D1 
+IO 
+29 
+SDIO Data Line 1 
+SD_D2 
+IO 
+34 
+SDIO Data Line 2 
+SD_D3 
+IO 
+33 
+SDIO Data Line 3
+--------------------------------------------------
+
+📦 [Chunk 44]
+[부품명: RTL8723DS]
+SD_D0 
+IO 
+30 
+SDIO Data Line 0 
+SD_D1 
+IO 
+29 
+SDIO Data Line 1 
+SD_D2 
+IO 
+34 
+SDIO Data Line 2 
+SD_D3 
+IO 
+33 
+SDIO Data Line 3 
+Note: Refer to section 7.4.1, page 15 for SDIO signal level selection. 
+ 
+6.3. GSPI Interface 
+Table 3.   GSPI Interface 
+Symbol 
+Type 
+Pin No 
+Description 
+GSPI_CLK 
+I 
+31 
+GSPI Clock Input 
+GSPI_DI 
+I 
+32 
+GSPI Data Input 
+GSPI_DO 
+O 
+30 
+GSPI Data Out 
+GSPI_INT 
+O 
+29 
+GSPI Interrupt 
+GSPI_CS# 
+I 
+33 
+GSPI Chip Select  
+Note 1: GSPI and SDIO are shared pins. 
+Note 2: Refer to section 7.4.1, page 15 for GSPI signal level selection. 
+6.4. HS-UART Transceiver Interface 
+Table 4.   HS-UART Interface 
+Symbol 
+Type 
+Pin No 
+Description 
+UART_OUT 
+O 
+27 
+High-Speed UART Data Out
+--------------------------------------------------
+
+📦 [Chunk 45]
+[부품명: RTL8723DS]
+RTL8723DS-CG 
+Datasheet 
+Single-Chip 802.11b/g/n 1T1R WLAN and  Bluetooth 4.2 Controller 9 
+Track ID: JATR-
+ 
+ 
+Symbol 
+Type 
+Pin No 
+Description 
+UART_CTS 
+I 
+26 
+High-Speed UART CTS 
+UART_IN 
+I 
+25 
+High-Speed UART Data In 
+Note: Refer to section 7.5.1, page 19 for UART signal level selection. 
+ 
+6.5. PCM Interface 
+ 
+Table 5.   PCM Interface 
+Symbol 
+Type 
+Pin No 
+Description 
+PCM_IN 
+I 
+21 
+PCM data Input, shared with GPIO0 
+PCM_OUT 
+O 
+22 
+PCM data Out, shared with GPIO1 
+PCM_SYNC 
+O 
+23 
+PCM Synchronization control, shared with GPIO2 
+PCM_CLK 
+IO 
+24 
+PCM Clock, shared with GPIO3 
+Note: Refer to section 7.5.1, page 19 for PCM signal level selection. 
+ 
+6.6. RF Interface 
+ 
+Table 6  RF Interface 
+Symbol 
+Type 
+Pin No 
+Description 
+RFIO_BTG_S0 
+IO 
+48 
+WLAN/BT RF TX/RX signal port 0
+--------------------------------------------------
+
+📦 [Chunk 46]
+[부품명: RTL8723DS]
+6.6. RF Interface 
+ 
+Table 6  RF Interface 
+Symbol 
+Type 
+Pin No 
+Description 
+RFIO_BTG_S0 
+IO 
+48 
+WLAN/BT RF TX/RX signal port 0 
+RFIO_BTG_S1 
+IO 
+11 
+WLAN/BT RF TX/RX signal port 1 
+ 
+6.7. LED Interface 
+ 
+Table 7  LED Interface 
+Symbol 
+Type 
+Pin No 
+Description 
+BT_LED 
+O 
+42 
+LED Pin (Active Low) 
+WL_LED 
+O 
+44 
+LED Pin (Active Low) 
+Note: These IO pins refer to the IO level from pin 41 (VD33D)
+--------------------------------------------------
+
+📦 [Chunk 47]
+[부품명: RTL8723DS]
+RTL8723DS-CG 
+Datasheet 
+Single-Chip 802.11b/g/n 1T1R WLAN and  Bluetooth 4.2 Controller 10 
+Track ID: JATR-
+ 
+ 
+6.8. Power Management Handshake Interface 
+ 
+Table 8  Power Management Handshake Interface 
+Symbol 
+Type 
+Pin No 
+Description 
+WL_DIS# 
+I 
+4 
+Shared with GPIO9. This pin can externally shut down the RTL8723DS 
+WLAN function when WL_DIS# is pulled low. When this pin is pulled low, 
+SDIO interface will be disabled. 
+This pin can also be configured as the WLAN Radio-off function with host 
+interface remaining connected. 
+BT_DIS# 
+I 
+43 
+Shared with GPIO11. This pin can externally shut down the RTL8723DS  
+BT function when BT_DIS# is pulled Low. When this pin is pulled low, uart 
+interface will be also disabled.
+--------------------------------------------------
+
+📦 [Chunk 48]
+[부품명: RTL8723DS]
+BT function when BT_DIS# is pulled Low. When this pin is pulled low, uart 
+interface will be also disabled. 
+This pin can be also defined as the BT Radio-off function with host interface 
+remaining connected. 
+DEV_WAKE_HOST_
+WL 
+O 
+20 
+Shared with GPIO6 This pin is used by WIFI  to wake up the host when the 
+remote wake function is enabled. The polarity can be defined by the 
+customer. This Wakeup pin can be configured as wakeup pin by WL when 
+WL function issue the wake signal to the host. 
+DEV_WAKE_HOST_
+BT 
+O 
+19 
+Shared with GPIO14 This pin is used by BT functions to wake up the host 
+when the remote wake function is enabled. The polarity can be defined by 
+the customer. This Wakeup pin can be configured as wakeup pin by BT 
+when BT function issue the wake signal to the host.
+--------------------------------------------------
+
+📦 [Chunk 49]
+[부품명: RTL8723DS]
+the customer. This Wakeup pin can be configured as wakeup pin by BT 
+when BT function issue the wake signal to the host. 
+HOST_WAKE_DEV 
+I 
+18 
+Shared with GPIO13 This pin can be configured as  the host wakes up the 
+WLAN or Bluetooth controller or both of them in Remote Wakeup Mode.  
+CLKREQ 
+O 
+47 
+Shared with GPIO15. When RTL8723D XTAL clock is fed from host 
+chipset, it will assert CLKREQ to request XTAL clock. Otherwise, 
+RTL8723DS will de-assert  CLKREQ to indicate host chipset that there is 
+no need to output the XTAL clock to RTL8723DS. This signal is used for 
+power saving control with host chipset. 
+ 
+6.9. Clock and Other Pins 
+ 
+Table 9. Clock and Other Pins 
+Symbol 
+Type 
+Pin No 
+Description 
+XI 
+I 
+15 
+OSC Input
+--------------------------------------------------
+
+📦 [Chunk 50]
+[부품명: RTL8723DS]
+6.9. Clock and Other Pins 
+ 
+Table 9. Clock and Other Pins 
+Symbol 
+Type 
+Pin No 
+Description 
+XI 
+I 
+15 
+OSC Input 
+Input of  Crystal Clock Reference,  the frequency of Crystal can be: 
+ 40MHz, 25MHz, 13MHz, 19.2MHz, 20MHz, 26MHz, 38.4MHz, 
+17.664MHz, 16MHz, 14.318MHz, 12MHz, 52MHz, 48MHz, 27MHz, 
+24MHz 
+XO 
+O 
+16 
+Output of 26MHz/40MHz Crystal Clock Reference 
+SUS_CLK/ 
+SPS_LDO_SEL  
+I 
+22 
+Shared with GPIO1. External 32K or RTC clock input. 
+GPIO0 
+IO 
+21 
+General Purpose Input/Output Pin 
+GPIO1 
+IO 
+22 
+General Purpose Input/Output Pin 
+GPIO2 
+IO 
+23 
+General Purpose Input/Output Pin 
+GPIO3 
+IO 
+24 
+General Purpose Input/Output Pin
+--------------------------------------------------
+
+📦 [Chunk 51]
+[부품명: RTL8723DS]
+RTL8723DS-CG 
+Datasheet 
+Single-Chip 802.11b/g/n 1T1R WLAN and  Bluetooth 4.2 Controller 11 
+Track ID: JATR-
+ 
+ 
+Symbol 
+Type 
+Pin No 
+Description 
+GPIO4 
+IO 
+46 
+General Purpose Input/Output Pin 
+GPIO5 
+IO 
+45 
+General Purpose Input/Output Pin 
+GPIO6 
+IO 
+20 
+General Purpose Input/Output Pin 
+GPIO7 
+IO 
+42 
+General Purpose Input/Output Pin 
+GPIO8 
+IO 
+44 
+General Purpose Input/Output Pin 
+GPIO9 
+IO 
+4 
+General Purpose Input/Output Pin 
+GPIO11 
+IO 
+43 
+General Purpose Input/Output Pin 
+GPIO12 
+IO 
+17 
+General Purpose Input/Output Pin 
+GPIO13 
+IO 
+18 
+General Purpose Input/Output Pin 
+GPIO14 
+IO 
+19 
+General Purpose Input/Output Pin 
+GPIO15 
+IO 
+47 
+General Purpose Input/Output Pin 
+6.10. Power Pins 
+ 
+Table 10. Power Pins 
+Symbol 
+Type 
+Pin No 
+Description 
+VD33D 
+P 
+37,38
+--------------------------------------------------
+
+📦 [Chunk 52]
+[부품명: RTL8723DS]
+GPIO15 
+IO 
+47 
+General Purpose Input/Output Pin 
+6.10. Power Pins 
+ 
+Table 10. Power Pins 
+Symbol 
+Type 
+Pin No 
+Description 
+VD33D 
+P 
+37,38 
+3.3V for digital Circuit 
+VD33D 
+P 
+41 
+3.3V for digital Circuit and GPIO 7/8/9/11 
+SW_LX 
+P 
+36 
+Switching Regulator Output 
+VA33_PA_S0 
+VA33_PAD_S0 
+VA33_BT_SYN 
+VA33_PAD_S1 
+VA33_PA_S1 
+VA33_WL_SYN 
+VA33_AFE 
+P 
+1 
+2, 
+6 
+10,  
+12,  
+8,  
+14 
+3.3V for RF Analog Circuit 
+VDD_IO 
+P 
+28 
+VDD for GPIO 0 ~ GPIO6, GPIO10, GPIO12~GPIO15 
+VD1P25 
+P 
+40 
+VDD 1.25V Digital Circuit 
+VA1P25_RTX_S0 
+VA1P25_BT_SYN 
+VA1P25_WL_SYN 
+VA1P25_RTX_S1 
+VA1P25_AFE 
+P 
+3, 
+5 
+8 
+9 
+13 
+1.25V for RF analog circuit 
+SW_GND 
+P 
+35 
+Switching Regulator Ground
+--------------------------------------------------
+
+📦 [Chunk 53]
+[부품명: RTL8723DS]
+RTL8723DS-CG 
+Datasheet 
+Single-Chip 802.11b/g/n 1T1R WLAN and  Bluetooth 4.2 Controller 12 
+Track ID: JATR-
+ 
+ 
+7. 
+Electrical and Thermal Characteristics 
+7.1. Temperature Limit Ratings 
+ 
+Table 11. Temperature Limit Ratings 
+Parameter 
+Minimum 
+Maximum 
+Units 
+Storage Temperature 
+-55 
++125 
+C 
+Ambient Operating Temperature 
+0 
+70 
+C 
+Junction Temperature 
+0 
+125 
+C 
+ 
+7.2. Power Supply DC Characteristics 
+ 
+Table 12. Power Supply DC Characteristics 
+Symbol 
+Parameter 
+Minimum 
+Typical 
+Maximum 
+Units 
+VA33, VD33D 
+3.3V Supply Voltage 
+3.0 
+3.3 
+3.6 
+V 
+VDD_IO,   
+Digital IO Supply Voltage 
+1.62 
+1.8~3.3 
+3.6 
+V 
+VA1P25_RTX_S0 
+VA1P25_BT_SY
+N 
+VA1P25_WL_SY
+N 
+VA1P25_RTX_S1 
+VA1P25_AFE, 
+VD1P25 
+1.25V Core Supply Voltage 
+1.15 
+1.25 
+1.37 
+V 
+IDD33 
+3.3V Rating Current 
+- 
+- 
+600
+--------------------------------------------------
+
+📦 [Chunk 54]
+[부품명: RTL8723DS]
+N 
+VA1P25_WL_SY
+N 
+VA1P25_RTX_S1 
+VA1P25_AFE, 
+VD1P25 
+1.25V Core Supply Voltage 
+1.15 
+1.25 
+1.37 
+V 
+IDD33 
+3.3V Rating Current 
+- 
+- 
+600 
+mA
+--------------------------------------------------
+
+📦 [Chunk 55]
+[부품명: RTL8723DS]
+RTL8723DS-CG 
+Datasheet 
+Single-Chip 802.11b/g/n 1T1R WLAN and  Bluetooth 4.2 Controller 13 
+Track ID: JATR-
+ 
+ 
+7.3. Digital IO Pin DC Characteristics 
+ 
+Table 13. 3.3V IO DC Characteristics 
+Symbol 
+Parameter 
+Minimum 
+Normal 
+Maximum 
+Units 
+VIH 
+Input high voltage 
+2.0 
+3.3 
+3.6 
+V 
+VIL 
+Input low voltage 
+- 
+0 
+0.9 
+V 
+VOH 
+Output high voltage 
+2.97 
+- 
+3.3 
+V 
+VOL 
+Output low voltage 
+0 
+- 
+0.33 
+V 
+ 
+ 
+Table 14. 2.8V IO DC Characteristics 
+Symbol 
+Parameter 
+Minimum 
+Normal 
+Maximum 
+Units 
+VIH 
+Input high voltage 
+1.8 
+2.8 
+3.1 
+V 
+VIL 
+Input low voltage 
+- 
+0 
+0.8 
+V 
+VOH 
+Output high voltage 
+2.5 
+- 
+3.1 
+V 
+VOL 
+Output low voltage 
+0 
+- 
+0.28 
+V 
+ 
+Table 15. 1.8V IO DC Characteristics 
+Symbol 
+Parameter 
+Minimum 
+Normal 
+Maximum 
+Units 
+VIH 
+Input high voltage 
+1.3 
+1.8 
+2.0
+--------------------------------------------------
+
+📦 [Chunk 56]
+[부품명: RTL8723DS]
+0 
+- 
+0.28 
+V 
+ 
+Table 15. 1.8V IO DC Characteristics 
+Symbol 
+Parameter 
+Minimum 
+Normal 
+Maximum 
+Units 
+VIH 
+Input high voltage 
+1.3 
+1.8 
+2.0 
+V 
+VIL 
+Input low voltage 
+- 
+0 
+0.8 
+V 
+VOH 
+Output high voltage 
+1.62 
+- 
+1.8 
+V 
+VOL 
+Output low voltage 
+0 
+- 
+0.18 
+V
+--------------------------------------------------
+
+📦 [Chunk 57]
+[부품명: RTL8723DS]
+RTL8723DS-CG 
+Datasheet 
+Single-Chip 802.11b/g/n 1T1R WLAN and  Bluetooth 4.2 Controller 14 
+Track ID: JATR-
+ 
+ 
+7.4. SDIO/GSPI Interface AC Characteristics 
+TWL
+TWH
+fPP
+TISU
+TIH
+TODLY
+Clock
+Input
+Output
+ 
+Figure 4.   SDIO Interface Timing 
+ 
+Table 16. SDIO Interface Timing Parameters 
+NO 
+Parameter 
+Mode 
+MIN 
+MAX 
+Unit 
+fPP 
+Clock Frequency 
+Default 
+0 
+25 
+MHz 
+HS 
+0 
+50 
+MHz 
+TWL 
+Clock Low Time 
+DEF 
+10 
+- 
+ns 
+HS 
+7 
+- 
+ns 
+TWH 
+Clock High Time 
+DEF 
+10 
+- 
+ns 
+HS 
+7 
+- 
+ns 
+TISU 
+Input Setup Time 
+DEF 
+5 
+- 
+ns 
+HS 
+6 
+- 
+ns 
+TIH 
+Input Hold Time 
+DEF 
+5 
+- 
+ns 
+HS 
+2 
+- 
+ns 
+TODLY 
+Output Delay Time 
+DEF 
+- 
+14 
+ns 
+HS 
+- 
+14 
+ns
+--------------------------------------------------
+
+📦 [Chunk 58]
+[부품명: RTL8723DS]
+RTL8723DS-CG 
+Datasheet 
+Single-Chip 802.11b/g/n 1T1R WLAN and  Bluetooth 4.2 Controller 15 
+Track ID: JATR-
+ 
+ 
+7.4.1. 
+SDIO/GSPI Interface Signal Levels 
+The SDIO and GSPI signal level ranges from 1.8V to 3.3V. The host provides the power source with the 
+target power level to the RTL8723DS SDIO and GSPI interfaces via the VDIO_SDIO pin. 
+The 3.3V, 2.8V, and 1.8V DC characteristics of typical signal levels are shown in section 1.1 Digital IO Pin 
+DC Characteristics, page 13. 
+7.4.2. 
+SDIO Interface Power-On Sequence  
+After power-on, the SDIO interface is selected by the RTL8723DS automatically when a valid SDIO 
+command is received. To attain better SDIO host compatibility, the following power-on sequence is 
+recommended. 
+T18Ramp formal power up
+1.8V
+1.4V
+T33Ramp
+formal power up
+3.3V
+--------------------------------------------------
+
+📦 [Chunk 59]
+[부품명: RTL8723DS]
+recommended. 
+T18Ramp formal power up
+1.8V
+1.4V
+T33Ramp
+formal power up
+3.3V
+2.7V
+Host Send Card Init CMD
+SD_CMD
+CMD5/5/3/7 ready
+CMD52/ 53
+Tnon_rdy
+ 
+Figure 5.   SDIO Interface Power-On Sequence 
+ 
+Table 17. SDIO Interface Power-On Sequence 
+Symbol 
+Description 
+T33ramp 
+The 3.3V main power ramp up duration. 
+T18ramp 
+The 1.8V main power ramp up duration. 
+Tnon_rdy 
+SDIO Not Ready Duration.  
+In this state, the RTL8723DS may respond to commands without the ready bit being set. After the ready bit 
+is set, the host will initiate complete card detection procedure. 
+ 
+ We recommend that the card detection procedures are divided into two phases: A 3.3V power pre-charge 
+phase and a formal power-up phase.
+--------------------------------------------------
+
+📦 [Chunk 60]
+[부품명: RTL8723DS]
+We recommend that the card detection procedures are divided into two phases: A 3.3V power pre-charge 
+phase and a formal power-up phase. 
+After main 3.3V ramp up and 1.8V ramp up, the power management unit is enabled by the power ready 
+detection circuit. The power management unit enables the SDIO block. eFUSE is then autoloaded to SDIO 
+circuits during the Tnon_rdy duration. After CMD5/5/3/7 procedures, card detection is executed. When the 
+driver has loaded, normal CMD52 and CMD53 are used.
+--------------------------------------------------
+
+📦 [Chunk 61]
+[부품명: RTL8723DS]
+RTL8723DS-CG 
+Datasheet 
+Single-Chip 802.11b/g/n 1T1R WLAN and  Bluetooth 4.2 Controller 16 
+Track ID: JATR-
+ 
+ 
+ 
+Table 18. SDIO Interface Power-On Timing Parameters 
+ 
+Min 
+Typical 
+Max 
+Unit 
+T33ramp 
+0.2 
+0.5 
+2.5 
+ms 
+T18ramp 
+0.2 
+0.5 
+2.5 
+ms 
+Tnon-rdy 
+1 
+2 
+10 
+ms 
+ 
+7.4.3. 
+GSPI Interface Power-On Sequence  
+The GSPI (Generic Serial Peripheral Interface) interface is enabled automatically when the first valid GSPI 
+command is received. 
+T33Ramp'
+Toff
+T33Ramp
+formal power up
+3.3V
+pre-charge
+2.7V
+SPI_CLK
+write register SPI_CFG
+SPI_OUT
+write cmd+data
+read cmd
+write cmd+data
+SPI_IN
+status
+status+data
+status
+SPI_CS
+T12RampTnon_rdy
+VDDON
+ 
+Figure 6. GSPI Interface Power-On Sequence 
+ 
+Table 19. GSPI Interface Power-On Sequence 
+Symbol 
+Description 
+T33ramp
+--------------------------------------------------
+
+📦 [Chunk 62]
+[부품명: RTL8723DS]
+T12RampTnon_rdy
+VDDON
+ 
+Figure 6. GSPI Interface Power-On Sequence 
+ 
+Table 19. GSPI Interface Power-On Sequence 
+Symbol 
+Description 
+T33ramp 
+3.3V Power Pre-Charge Ramp Up Duration Before Formal Power Up.  
+We recommend that a 3.3V power-on sequence and then a following power-off sequence is executed by the 
+host controller before the formal power on sequence. This procedure can avoid host card detection failure 
+issues when power ramp up duration is too long, or when a system warm reboot fails. 
+Toff 
+The duration from 3.3V cut off time to the beginning of next formal power up. 
+T33ramp 
+The 3.3V main power ramp-up duration. 
+T12ramp 
+The internal 1.2V ramp-up duration. 
+Tnon_rdy 
+SPI Not Ready Duration.
+--------------------------------------------------
+
+📦 [Chunk 63]
+[부품명: RTL8723DS]
+T33ramp 
+The 3.3V main power ramp-up duration. 
+T12ramp 
+The internal 1.2V ramp-up duration. 
+Tnon_rdy 
+SPI Not Ready Duration. 
+After Tnon_rdy, SPI host can then send commands to write SPI_CFG register. SPI_CFG register is used for 
+SPI endian and word length control. 
+ 
+We recommend that the card detection procedures are divided into two phases: A 3.3V power pre-charge 
+phase and a formal power-up phase.
+--------------------------------------------------
+
+📦 [Chunk 64]
+[부품명: RTL8723DS]
+RTL8723DS-CG 
+Datasheet 
+Single-Chip 802.11b/g/n 1T1R WLAN and  Bluetooth 4.2 Controller 17 
+Track ID: JATR-
+ 
+ 
+During the 3.3V power pre-charge phase, the power ramp up duration is not limited. The 3.3V power is cut 
+off and is turned on after the Toff period. The ramp up time is specified in the T33ramp duration. 
+After main 3.3V ramp up and 1.2V ramp up, the power management unit is enabled by the power ready 
+detection circuit. The power management unit enables the SPI block. eFUSE is then autoloaded to SPI 
+circuits during the Tnon_rdy duration.  
+ 
+Table 20. SPI Interface Power-On Timing Parameters 
+ 
+Min 
+Typical 
+Max 
+Unit 
+T33ramp 
+0.2 
+- 
+No Limit 
+ms 
+Toff 
+250 
+500 
+1000 
+ms 
+T33ramp 
+0.2 
+0.5 
+2.5 
+ms 
+T12ramp 
+0.1 
+0.5 
+1.5 
+ms 
+Tnon-rdy 
+3 
+4 
+18 
+ms
+--------------------------------------------------
+
+📦 [Chunk 65]
+[부품명: RTL8723DS]
+RTL8723DS-CG 
+Datasheet 
+Single-Chip 802.11b/g/n 1T1R WLAN and  Bluetooth 4.2 Controller 18 
+Track ID: JATR-
+ 
+ 
+7.5. UART Interface Characteristics 
+The RTL8723DS UART interface is a standard 4-wire interface with RX, TX, CTS, and RTS. The interface 
+supports the Bluetooth 2.0 UART HCI H4 and H5 specifications. The default baud rate is 115.2k baud. In 
+order to support high and low speed baud rate, the RTL8723DS provides multiple UART clocks. 
+ 
+ 
+Table 21. UART Interface Power-On Timing 
+Parameters 
+Desired Baud Rate Actual Baud Rate 
+Error (%) 
+300 
+300 
+0.00% 
+600 
+600 
+0.00% 
+900 
+900 
+0.00% 
+1200 
+1200 
+0.00% 
+1800 
+1800 
+0.00% 
+2400 
+2400 
+0.00% 
+3600 
+3601 
+0.03% 
+4800 
+4798 
+-0.04% 
+7200 
+7198 
+-0.03% 
+9600 
+9603 
+0.03% 
+14400 
+14395 
+-0.03% 
+19200 
+19182 
+-0.09% 
+28800 
+28846
+--------------------------------------------------
+
+📦 [Chunk 66]
+[부품명: RTL8723DS]
+2400 
+0.00% 
+3600 
+3601 
+0.03% 
+4800 
+4798 
+-0.04% 
+7200 
+7198 
+-0.03% 
+9600 
+9603 
+0.03% 
+14400 
+14395 
+-0.03% 
+19200 
+19182 
+-0.09% 
+28800 
+28846 
+0.16% 
+38400 
+38462 
+0.16% 
+56000 
+55970 
+-0.05% 
+57600 
+57692 
+0.16% 
+76800 
+76531 
+-0.35% 
+115200 
+115385 
+0.16% 
+Desired Baud Rate Actual Baud Rate 
+Error (%) 
+128000 
+127119 
+-0.69% 
+153600 
+153061 
+-0.35% 
+230400 
+229167 
+-0.54% 
+460800 
+458333 
+-0.54% 
+500000 
+500000 
+0.00% 
+921600 
+916667 
+-0.54% 
+1000000 
+1000000 
+0.00% 
+1382400 
+1375000 
+-0.54% 
+1444444 
+1437500 
+-0.48% 
+1500000 
+1500000 
+0.00% 
+1843200 
+1833333 
+-0.54% 
+2000000 
+2000000 
+0.00% 
+2100000 
+2083333 
+-0.79% 
+2764800 
+2777778 
+0.47% 
+3000000 
+3000000 
+0.00% 
+3250000 
+3250000 
+0.00% 
+3692300 
+3703704 
+0.31% 
+3750000 
+3750000 
+0.00% 
+4000000 
+4000000 
+0.00%
+--------------------------------------------------
+
+📦 [Chunk 67]
+[부품명: RTL8723DS]
+RTL8723DS-CG 
+Datasheet 
+Single-Chip 802.11b/g/n 1T1R WLAN and  Bluetooth 4.2 Controller 19 
+Track ID: JATR-
+ 
+ 
+ 
+Figure 7. UART Interface Waveform 
+7.5.1. 
+UART Interface Signal Levels 
+The UART signal level ranges from 1.8V to 3.3V. The host provides the power source with the targeted 
+power level to the RTL8723DS UART interface via the VDIO_SDIO pin. 
+The 3.3V, 2.8V, and 1.8V DC characteristics of typical signal levels are shown in section 1.1 Digital IO Pin 
+DC Characteristics, page 13. 
+ 
+7.5.2. 
+UART Interface Power-On Sequence 
+The UART interface power-on sequence differs depending on whether or not host flow control is supported.  
+UART Hardware Flow Control Not Supported  
+T33Ramp'
+Toff
+T33Ramp
+formal power up
+3.3V
+pre-charge
+2.7V
+SI
+RTS
+UART_RDY
+T12Ramp
+Tnon_rdy
+VDDON
+--------------------------------------------------
+
+📦 [Chunk 68]
+[부품명: RTL8723DS]
+UART Hardware Flow Control Not Supported  
+T33Ramp'
+Toff
+T33Ramp
+formal power up
+3.3V
+pre-charge
+2.7V
+SI
+RTS
+UART_RDY
+T12Ramp
+Tnon_rdy
+VDDON
+ 
+Figure 8. UART Power-On Sequence With Hardware Flow Control
+--------------------------------------------------
+
+📦 [Chunk 69]
+[부품명: RTL8723DS]
+RTL8723DS-CG 
+Datasheet 
+Single-Chip 802.11b/g/n 1T1R WLAN and  Bluetooth 4.2 Controller 20 
+Track ID: JATR-
+ 
+ 
+ 
+UART Hardware Flow Control Supported  
+3.3V
+pre-charge
+2.7V
+SI
+RTS
+UART_RDY
+T12Ramp
+Tnon_rdy
+VDDON
+ 
+Figure 9. UART Power-On Sequence Without Hardware Flow Control 
+ 
+ 
+Table 22. UART Interface Power-On Sequence 
+Symbol 
+Description 
+T33ramp 
+3.3V Power Pre-Charge Ramp Up Duration Before Formal Power Up.  
+We recommend that a 3.3V power-on and then power-off sequence is executed by the host controller 
+before the formal power on sequence. This procedure can eliminate host card detection issues when power 
+ramp up duration is too long, or when a system warm reboot fails. 
+Toff 
+The duration 3.3V is cut off before formal power up. 
+T33ramp
+--------------------------------------------------
+
+📦 [Chunk 70]
+[부품명: RTL8723DS]
+ramp up duration is too long, or when a system warm reboot fails. 
+Toff 
+The duration 3.3V is cut off before formal power up. 
+T33ramp 
+The 3.3V main power ramp up duration. 
+T12ramp 
+The internal 1.2V ramp up duration. 
+Tnon_rdy 
+UART Not Ready Duration.  
+In this state, the RTL8723DS will not respond to any commands. 
+ 
+We recommend that the card detection procedures are divided into two phases: A 3.3V power pre-charge 
+phase and a formal power-up phase. 
+During the 3.3V power pre-charge phase, the power ramp up duration is not limited. The 3.3V power is cut 
+off and is turned on after the Toff period. The ramp up time is specified in the T33ramp duration. 
+After main 3.3V ramp up and 1.2V ramp up, the power management unit is enabled by the power ready
+--------------------------------------------------
+
+📦 [Chunk 71]
+[부품명: RTL8723DS]
+After main 3.3V ramp up and 1.2V ramp up, the power management unit is enabled by the power ready 
+detection circuit. The power management unit enables the Bluetooth block. The Bluetooth firmware then 
+initializes all circuits, included the UART. In addition to wait the Tnon_rdy time, if the host supports UART 
+hardware flow control it can detect RTS signals and follow the formal UART flow control handshake. 
+ 
+Table 23. UART Interface Power On Timing Parameters 
+ 
+Min 
+Typical 
+Max 
+Unit 
+T33ramp 
+0.2 
+- 
+No Limit 
+ms 
+Toff 
+250 
+500 
+1000 
+ms 
+T33ramp 
+0.2 
+0.5 
+2.5 
+ms 
+T12ramp 
+0.1 
+0.5 
+1.5 
+ms
+--------------------------------------------------
+
+📦 [Chunk 72]
+[부품명: RTL8723DS]
+RTL8723DS-CG 
+Datasheet 
+Single-Chip 802.11b/g/n 1T1R WLAN and  Bluetooth 4.2 Controller 21 
+Track ID: JATR-
+ 
+ 
+ 
+Min 
+Typical 
+Max 
+Unit 
+Tnon-rdy 
+1 
+2 
+10 
+ms
+--------------------------------------------------
+
+📦 [Chunk 73]
+[부품명: RTL8723DS]
+RTL8723DS-CG 
+Datasheet 
+Single-Chip 802.11b/g/n 1T1R WLAN and  Bluetooth 4.2 Controller 22 
+Track ID: JATR-
+ 
+ 
+7.6. PCM Interface Characteristics 
+The RTL8723 supports a PCM digital audio interface that is used for transmitting digital audio/voice data 
+to/from the Audio Codec. Features are supported as below: 
+ Supports Master and Slave mode 
+ Programmable long/short Frame Sync 
+ Supports 8-bit A-law/µ-law, and 13/16-bit linear PCM formats 
+ Supports sign-extension and zero-padding for 8-bit and 13-bit samples 
+ Supports padding of Audio Gain to 13-bit samples 
+ PCM Master Clock Output: 64, 128, 256, or 512kHz 
+ Supports SCO/ESCO link 
+7.6.1. 
+PCM Format 
+FrameSync is the synchronizing function used to control the transfer of DAC_Data and ADC_Data. A Long
+--------------------------------------------------
+
+📦 [Chunk 74]
+[부품명: RTL8723DS]
+ Supports SCO/ESCO link 
+7.6.1. 
+PCM Format 
+FrameSync is the synchronizing function used to control the transfer of DAC_Data and ADC_Data. A Long 
+FrameSync indicates the start of ADC_Data at the rising edge of FrameSync (错误!未找到引用源。), and 
+a Short FrameSync indicates the start of ADC_Data at the falling edge of FrameSync (错误!未找到引用
+源。). 
+BCLK
+FrameSync
+DAC_Data
+ADC_Data
+ 
+Figure 10. Long FrameSync 
+BCLK
+FrameSync
+DAC_Data
+ADC_Data
+ 
+Figure 11. Short FrameSync 
+7.6.2. 
+Sign Extension and Zero Padding for 8-Bit and 13-Bit Samples 
+For 16-bit linear PCM output, 3 or 8 unused bits may be sign extended/zero padded.
+--------------------------------------------------
+
+📦 [Chunk 75]
+[부품명: RTL8723DS]
+RTL8723DS-CG 
+Datasheet 
+Single-Chip 802.11b/g/n 1T1R WLAN and  Bluetooth 4.2 Controller 23 
+Track ID: JATR-
+ 
+ 
+2
+1
+4
+3
+6
+5
+8
+7
+10
+9
+12
+11
+14
+13
+16
+15
+DAC_Data
+Sign Extension
+8-bit PCM sample data
+ 
+Figure 12. 16-Bit Output Data with 8-Bit PCM Sample Data and Sign Extension 
+2
+1
+4
+3
+6
+5
+8
+7
+10
+9
+12
+11
+14
+13
+16
+15
+DAC_Data
+Zero Padding
+8-bit PCM sample data
+ 
+Figure 13. 16-Bit Output Data with 8-Bit PCM Sample Data and Zero Padding 
+2
+1
+4
+3
+6
+5
+8
+7
+10
+9
+12
+11
+14
+13
+16
+15
+DAC_Data
+13-bit PCM sample data
+Sign Extension
+ 
+Figure 14. 16-Bit Output Data with 13-Bit PCM Sample Data and Sign Extension 
+For 16-bit linear PCM output, 3-bit programmable audio gain value can be padded to 13-bit sample data. 
+2
+1
+4
+3
+6
+5
+8
+7
+10
+9
+12
+11
+14
+13
+16
+15
+DAC_Data
+Audio Gain
+13-bit PCM sample data
+--------------------------------------------------
+
+📦 [Chunk 76]
+[부품명: RTL8723DS]
+2
+1
+4
+3
+6
+5
+8
+7
+10
+9
+12
+11
+14
+13
+16
+15
+DAC_Data
+Audio Gain
+13-bit PCM sample data
+ 
+Figure 15. 16-Bit Output Data with 13-Bit PCM Sample Data and Audio Gain 
+7.6.3. 
+PCM Interface Timing 
+FrameSync
+BCLK
+DAC_Data
+FBCLK
+TBCLKH
+TBCLKL
+TFrameSync_Delay
+TBCLKD_OUT
+DAC_Data
+TSETUPIN THOLDIN
+MSB(LSB)
+LSB(MSB)
+MSB(LSB)
+LSB(MSB)
+ 
+Figure 16. PCM Interface (Long FrameSync)
+--------------------------------------------------
+
+📦 [Chunk 77]
+[부품명: RTL8723DS]
+RTL8723DS-CG 
+Datasheet 
+Single-Chip 802.11b/g/n 1T1R WLAN and  Bluetooth 4.2 Controller 24 
+Track ID: JATR-
+ 
+ 
+FrameSync
+BCLK
+DAC_Data
+FBCLK
+TBCLKH
+TBCLKL
+TFrameSync_Delay
+TBCLKD_OUT
+DAC_Data
+TSETUPIN THOLDIN
+MSB(LSB)
+LSB(MSB)
+MSB(LSB)
+LSB(MSB)
+ 
+Figure 17. PCM Interface (Short FrameSync) 
+ 
+Table 24. PCM Interface Clock Specifications 
+Symbol 
+Description 
+Min. 
+Typ. 
+Max. 
+Unit 
+FBCLK 
+Frequency of BCLK (Master) 
+64 
+- 
+512 
+kHz 
+FFrameSync 
+Frequency of Frame Sync (Master) 
+- 
+8 
+- 
+kHz 
+FBCLK 
+Frequency of BCLK (Slave) 
+64 
+- 
+512 
+kHz 
+FFrameSync 
+Frequency of Frame Sync (Slave) 
+- 
+8 
+- 
+kHz 
+D 
+Data Size 
+8 
+8 
+16 
+bits 
+N 
+Number of Slots Per Frame 
+1 
+1 
+1 
+Slots 
+ 
+ 
+Table 25. PCM Interface Timing 
+Symbol 
+Description 
+Min. 
+Typ. 
+Max. 
+Unit 
+TBCLKH 
+High Period of BCLK 
+980
+--------------------------------------------------
+
+📦 [Chunk 78]
+[부품명: RTL8723DS]
+1 
+1 
+1 
+Slots 
+ 
+ 
+Table 25. PCM Interface Timing 
+Symbol 
+Description 
+Min. 
+Typ. 
+Max. 
+Unit 
+TBCLKH 
+High Period of BCLK 
+980 
+- 
+- 
+ns 
+TBCLKL 
+Low Period of BCLK 
+970 
+- 
+- 
+ns 
+TFrameSync_Delay Delay Time from BCLK High to Frame Sync High 
+- 
+- 
+75 
+ns 
+TBCLKD_OUT 
+Delay Time from BCLK High to Valid DAC_Data 
+- 
+- 
+125 
+ns 
+TSETUPIN 
+Set-up Time for ADC_Data Valid to BCLK Low 
+10 
+- 
+- 
+ns 
+THOLDIN 
+Hold Time for BCLK Low to ADC_Data Invalid 
+125 
+- 
+- 
+ns 
+ 
+7.6.4. 
+PCM Interface Signal Levels 
+The PCM signal level ranges from 1.8V to 3.3V. The host provides the power source with the targeted 
+power level to the RTL8723DS PCM interface via the VDD_IO pin .
+--------------------------------------------------
+
+📦 [Chunk 79]
+[부품명: RTL8723DS]
+RTL8723DS-CG 
+Datasheet 
+Single-Chip 802.11b/g/n 1T1R WLAN and  Bluetooth 4.2 Controller 25 
+Track ID: JATR-
+ 
+ 
+The 3.3V, 2.8V, and 1.8V DC characteristics of typical signal levels are shown in section 1.1 Digital IO Pin 
+DC Characteristics, page 13. 
+ 
+8. Mechanical Dimensions 
+ 
+Symbol 
+Dimension in mm 
+Dimension in inch 
+Min 
+Nom 
+Max 
+Min 
+Nom 
+Max 
+A 
+0.75 
+0.85 
+1.00 
+0.030 
+0.034 
+0.039  
+A1 
+0.00 
+0.02 
+0.05 
+0.000  
+0.001 
+0.002 
+A3 
+0.20 REF 
+0.008 REF 
+b 
+0.15 
+0.20 
+0.25 
+0.006 
+0.008 
+0.010 
+D/E 
+6.00BSC 
+0.236BSC
+--------------------------------------------------
+
+📦 [Chunk 80]
+[부품명: RTL8723DS]
+RTL8723DS-CG 
+Datasheet 
+Single-Chip 802.11b/g/n 1T1R WLAN and  Bluetooth 4.2 Controller 26 
+Track ID: JATR-
+ 
+ 
+D2/E2 
+4.15 
+4.4 
+4.65 
+0.163 
+0.173 
+0.183 
+e 
+0.40BSC 
+0.016BSC 
+L 
+0.30  
+0.40  
+0.50  
+0.012  
+0.016  
+0.020  
+Note1: CONTROLLING DIMENSION：MILLIMETER(mm) 
+Note2: REFERENCE DOCUMENTL：JEDEC MO-220
+--------------------------------------------------
+
+📦 [Chunk 81]
+[부품명: RTL8723DS]
+RTL8723DS-CG 
+Datasheet 
+Single-Chip 802.11b/g/n 1T1R WLAN and  Bluetooth 4.2 Controller 27 
+Track ID: JATR-
+ 
+ 
+9. 
+Ordering Information 
+ 
+Table 26. Ordering Information 
+Part Number 
+Package 
+Status 
+RTL8723DS-CG 
+QFN-48, ‘Green’ Package 
+Engineering Samples 
+Note: See page 7 for package identification. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Realtek Semiconductor Corp. 
+Headquarters 
+No. 2, Innovation Road II, Hsinchu Science Park, 
+Hsinchu 300, Taiwan, R.O.C. 
+Tel: 886-3-5780211  Fax: 886-3-5776047 
+www.realtek.com
+--------------------------------------------------
+

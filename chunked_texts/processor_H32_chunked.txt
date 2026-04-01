@@ -1,0 +1,289 @@
+📦 [Chunk 1]
+[부품명: H32]
+Parallel
+WiFi / BLE
+Sensor 1
+Sensor 3
+HDMI
+Analog
+Parallel
+LCD
+16-bit 
+Security Features 
+Secure boot with TrustZone®, TRNG, OTP, DRAM scrambling 
+and virtualization
+Image Signal 
+Processor (ISP) 
+Video Codec
+H.264
+H.265
+MJPEG
+Ambarella Memory System
+Quad Core
+Arm® Cortex®-A53
+Video Input
+MIPI CSI-2® 
+SLVS
+Video Output
+LVDS
+HiSPi™
+I2C
+SPI
+GPIO
+Timers
+WDT
+Ethernet
+USB 2.0
+Host / Device
+Audio Input
+(I2S / PDM)
+DDR
+Interface
+SD / SDIO
+NAND / NOR
+JTAG
+UART
+Audio Output
+(I²S)
+LPDDR4 /
+LPDDR4x /
+DDR4 
+SD Card /
+eMMC
+PRODUCT
+BRIEF
+Flexible Low-Power Platform                    
+•	Quad-core Arm® Cortex®-A53 CPU up to 1 GHz
+•	Multiple operating system (OS) support: ThreadX, 
+Linux, ThreadX + Linux
+Advanced Image Processing 
+•	Multi-sensor support
+•	Multi-exposure line-interleaved high dynamic
+--------------------------------------------------
+
+📦 [Chunk 2]
+[부품명: H32]
+Linux, ThreadX + Linux
+Advanced Image Processing 
+•	Multi-sensor support
+•	Multi-exposure line-interleaved high dynamic 	
+	
+range (HDR) sensors with a dynamic range greater 
+than 120 dB
+•	Hardware dewarping engine
+•	Electronic image stabilization (EIS)
+•	Superior low-light processing
+•	3D motion-compensated temporal filtering (MCTF)
+•	RGGB / RCCB / RCCC / RGB-IR / 
+monochrome sensor support
+High-Efficiency Video Encoding
+•	H.265 and H.264 video compression 
+•	Flexible multi-streaming capability
+•	8MP30 video performance 
+•	Multiple constant bit rate (CBR) and variable bit rate 
+(VBR) control modes
+•	Smart H.264 and H.265 encoder algorithms
+Target Applications
+•	Multi-channel drive recorders
+•	Aftermarket advanced driver assistance system (ADAS)
+•	Wearable cameras
+•	Action / sports cameras
+--------------------------------------------------
+
+📦 [Chunk 3]
+[부품명: H32]
+•	Multi-channel drive recorders
+•	Aftermarket advanced driver assistance system (ADAS)
+•	Wearable cameras
+•	Action / sports cameras
+•	Driver monitoring systems (driver distraction / 
+drowsiness detection)
+Overview
+Video SoC for Consumer Cameras
+H32 Block Diagram
+Ambarella’s H32 system on chip (SoC) combines image and video processing, 8MP30 video 	
+encoding / decoding, and a quad-core processor in a single, low-power design, making it an ideal 
+choice for aftermarket dash cameras, wearable products, and action cameras. Fabricated in a 10 nm 
+process technology, H32 achieves an industry-leading combination of low power and high performance 
+in image and video processing applications.
+H32 uses a next-generation image signal processor (ISP) to deliver outstanding imaging in low-light
+--------------------------------------------------
+
+📦 [Chunk 4]
+[부품명: H32]
+in image and video processing applications.
+H32 uses a next-generation image signal processor (ISP) to deliver outstanding imaging in low-light 
+conditions, while its high dynamic range (HDR) processing extracts maximum image detail in 
+high-contrast scenes. H32 also implements a highly-efficient distortion correction block which allows 
+support of ultra-wide angle and fisheye lenses. Its flexible hardware architecture allows processing of 
+videos from multiple sensors simultaneously, enabling a lower overall system billing of materials (BOM) 
+costs. H32 supports applications that require multiple encoded streams that are optimized for storage 
+and streaming (WiFi / BLE).
+H32 provides ample host CPU performance to implement application code and other lightweight
+--------------------------------------------------
+
+📦 [Chunk 5]
+[부품명: H32]
+and streaming (WiFi / BLE).
+H32 provides ample host CPU performance to implement application code and other lightweight 
+computer vision algorithms such as localization and map building (SLAM) or neural networks (NNs).  
+Key Features
+H32
+Downloaded from Arrow.com.
+--------------------------------------------------
+
+📦 [Chunk 6]
+[부품명: H32]
+The H32 consumer applications development platform contains the necessary tools, software, hardware, and documentation to develop a small form 
+factor camera. 
+Evaluation Kit
+•	 H32 main board with connectors for sensor / lens board 
+and peripherals
+•	 Sensor board: Sony, onsemi, OmniVision, and others
+•	 Datasheet, BOM, schematics, and layout
+•	 Reference application with C source code available
+with additional licensing
+Software Development Kit  
+•	 ThreadX / Linux / ThreadX +  Linux with patches,
+drivers, tools, and application source code
+•	 Royalty-free libraries for ISP, 3A, dewarp, and codecs
+•	 Image tuning and manufacturing calibration tools
+•	 Detailed documentation, including a programmer’s 	
+	
+guide and more
+•	
+Processor Cores
+•	 Quad-core Arm® Cortex®-A53 up to 1 GHz
+--------------------------------------------------
+
+📦 [Chunk 7]
+[부품명: H32]
+•	 Detailed documentation, including a programmer’s 	
+	
+guide and more
+•	
+Processor Cores
+•	 Quad-core Arm® Cortex®-A53 up to 1 GHz
+•	 32KB / 32KB I/D and 1 MB L2 Cache 
+•	 NEONTM SIMD and FPU acceleration  
+•	 Ambarella image signal processor
+•	 AVC / HEVC video codec
+Video Input 
+•	 Single, dual, or triple sensor inputs with 
+independent ISP configuration
+•	 Sub-LVDS / MIPI CSI-2® / SLVS / HiSPi™
+•	 16-bit parallel LVCMOS (BT.601 / 656) 
+Video Output
+•	 HDMI® 2.0 including PHY with CEC support 
+•	 PAL / NTSC composite SD video out
+•	 16-bit parallel LVCMOS (BT.601) 
+CMOS Sensor Processing / Image Processing
+•	 Lens shading correction 
+•	 Multi-exposure HDR (line-interleaved sensors)
+•	 3D motion-compensated temporal 
+filtering (MCTF) 
+•	 RGGB / RCCB / RCCC / RGB-IR /
+--------------------------------------------------
+
+📦 [Chunk 8]
+[부품명: H32]
+•	 Multi-exposure HDR (line-interleaved sensors)
+•	 3D motion-compensated temporal 
+filtering (MCTF) 
+•	 RGGB / RCCB / RCCC / RGB-IR / 
+monochrome sensor support 
+•	 3-axis electronic image stabilization (EIS) 
+•	 Adjustable auto exposure (AE) / auto white 
+balance (AWB)
+•	 Lens distortion correction (LDC) for 
+wide angle lenses
+•	 Gamma compensation and color enhancement
+•	 Vignetting compensation  
+•	 Dynamic range (WDR and HDR) engine 
+•	 On-screen display (OSD) engine, overlays, 
+privacy mask
+•	 Crop, mirror, flip, 90° / 270° rotation
+•	 Defective pixel correction
+•	 Chromatic aberration correction
+Computer Vision Applications
+•	 User authentication (face detection / recognition)
+•	 Driver monitoring system (driver distraction / 
+drowsiness detection)
+--------------------------------------------------
+
+📦 [Chunk 9]
+[부품명: H32]
+•	 User authentication (face detection / recognition)
+•	 Driver monitoring system (driver distraction / 
+drowsiness detection)
+•	 License plate detection / recognition
+•	 Lane departure warning / lane keeping
+•	 Forward collision warning
+Video Encoding / Decoding 
+•	 H.265 MP L5.0, H.264 MP / HP L5.1 
+and MJPEG 
+•	 8MP30 maximum encoding / decoding 
+performance
+•	 Simultaneous encoding and streaming
+•	 Multi-stream and multi-channel encoding 
+•	 Still capture or picture in video (PIV)
+•	 Flexible group of pictures (GOP) configuration 
+with I, P, and B frames
+•	 Multiple CBR and VBR rate control modules
+Security Features
+•	 Secure boot with TrustZone® and secure 
+memory, TRNG, OTP, DRAM scrambling and 
+virtualization
+Memory Interfaces 
+•	 LPDDR4 / LPDDR4x / DDR4 up to 1.6 GHz,
+--------------------------------------------------
+
+📦 [Chunk 10]
+[부품명: H32]
+memory, TRNG, OTP, DRAM scrambling and 
+virtualization
+Memory Interfaces 
+•	 LPDDR4 / LPDDR4x / DDR4 up to 1.6 GHz,
+16-bit data bus, and up to 1 GB capacity
+•	 Three SD controllers
+•	 Boot from SPI SLC NAND with BCH / SPI 
+NOR / USB / eMMC
+•	 Single- / dual- / quad-SPI NOR and SPI NAND
+Peripheral Interfaces 
+•	 10 / 100 / 1000 Ethernet with RMII / RGMII
+•	 USB 2.0 port configurable for host / device 
+•	 Multiple I2S / PDM, SSI / SPI, I2C, and UART
+•	 Multiple GPIO ports, PWM, IR, and ADC
+•	 Watchdog timer, multiple general purpose 
+timers, and JTAG
+Physical
+•	 10 nm low-power complimentary metal-oxide 
+semiconductor (CMOS)
+•	 Operating temperature -20°C to +85°C
+•	 FC VFBGA package (288 balls, 11x12 mm, 
+0.65 mm pitch)
+www.ambarella.com/contact-us/
+--------------------------------------------------
+
+📦 [Chunk 11]
+[부품명: H32]
+semiconductor (CMOS)
+•	 Operating temperature -20°C to +85°C
+•	 FC VFBGA package (288 balls, 11x12 mm, 
+0.65 mm pitch)
+www.ambarella.com/contact-us/
+Copyright Ambarella International LP. All rights reserved. Ambarella and the Ambarella logo are trademarks of Ambarella International LP. All other brands, product names, and company names 
+are trademarks of their respective owners. The information in this document is believed to be reliable, but may project preliminary functionality not yet available. Ambarella makes no guarantee 
+or warranty concerning the accuracy and availability of said information and shall not be responsible for any loss or damage whatever nature resulting from the use of, or reliance upon it.
+--------------------------------------------------
+
+📦 [Chunk 12]
+[부품명: H32]
+Ambarella does not guarantee that the use of any information contained herein will not infringe upon patent, trademark, copyright, or other rights of third parties. Ambarella reserves the right to 
+make changes in the product and / or its specifications presented in this publication at any time without notice.
+November 2022
+H32 Consumer Applications Development Platform
+General Specifications
+Downloaded from Arrow.com.
+--------------------------------------------------
+

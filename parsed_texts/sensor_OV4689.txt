@@ -1,0 +1,157 @@
+
+================ [Page 1] ================
+OV4689
+4-megapixel product brief
+The OV4689 is a high performance 4-megapixel
+CameraChip™ sensor in a native 16:9 format designed for 
+next-generation surveillance and security systems. The 
+sensor utilizes an advanced 2-micron OmniBSI™-2 pixel to 
+provide best-in-class low-light sensitivity and high dynamic 
+range (HDR).
+The 1/3-inch OV4689 can capture full-resolution
+4-megapixel high definition (HD) video at 90 frames per 
+second (fps), 1080p HD at 120 fps, and binned 720p HD at 
+180 fps. The sensor's high frame rates enable crisp, clean 
+image and video capture of fast moving objects.
+The OV4689 provides timing to capture full-resolution
+HDR using frame-based "sequential HDR" or line-based 
+"staggered HDR", and quarter resolution HDR using 
+"alternate row HDR". The benefits of using "staggered HDR" 
+compared to "sequential HDR" are significant reduction in 
+motion artifacts and lower memory requirement for host 
+processing. These modes produce high quality full-resolution 
+4-megapixel HDR video under extreme variations of bright 
+and dark conditions, ensuring high contrast and excellent 
+scene reproduction.
+The OV4689 features a high-speed 4-lane MIPI serial output 
+interface to facilitate the required high data transfer rate. The 
+OV4689 is available in a chip scale package (CSP).
+Find out more at www.ovt.com.
+High Frame Rate 4-Megapixel CameraChip™ Sensor with
+Excellent Low-Light Sensitivity and High Dynamic Range
+for Security Applications
+
+
+================ [Page 2] ================
+OV4689
+Applications
+• IP cameras
+• sports cameras
+• active array size: 2688 x 1520
+• maximum image transfer rate:
+ - 2688 x 1520: 90 fps
+ - 1920 x 1080: 120 fps
+ - 1280 x 720: 180 fps
+ - 672 x 380: 330 fps
+• power supply:
+ - core: 1.1 ~ 1.3V
+ - analog: 2.6 ~ 3.0V
+ - I/O: 1.7 ~ 3.0V
+• power requirements:
+ - active: 163 mA (261 mW)
+ - standby: 1 mA
+ - XSHUTDOWN: <10 µA
+• temperature range:
+ - operating: -30°C to +85°C
+  junction temperature
+ - stable image: 0°C to +60°C
+  junction temperature
+• output formats: 10-bit RAW RGB
+• lens size: 1/3"
+• lens chief ray angle: 0°
+• scan mode: progressive
+• pixel size: 2 µm x 2 µm
+• image area: 5440 µm x 3072 µm
+• automatic black level calibration
+ (ABLC)
+• programmable controls for:
+ - frame rate
+ - mirror and flip
+ - cropping
+ - windowing
+• static defective pixel canceling
+• supports output formats:
+ 10-bit RAW RGB (MIPI)
+• supports horizontal and
+ vertical subsampling
+• supports image sizes:
+ - 4MP
+ - 3MP
+ - EIS1080p
+ - 1080p
+ - EIS720p
+• OV04689-H67A
+ (color, lead-free) 67-pin CSP
+• fast mode switching
+• support 2x2 binning, 4x4 binning,
+ re-sampling filter
+• standard serial SCCB interface
+• up to 4-lane MIPI serial output
+ interface
+• embedded 4K bits one-time
+ programmable (OTP) memory for
+ part identification, etc.
+• two on-chip phase lock loops (PLLs)
+• programmable I/O drive capability
+• built-in temperature sensor
+• home monitoring
+• security cameras
+Technical Specifications
+Functional Block Diagram
+Product Features
+Ordering Information
+Version 1.8, August 2023
+4275 Burton Drive
+Santa Clara, CA 95054
+USA
+Tel: + 1 408 567 3000
+Fax: + 1 408 567 3001
+www.ovt.com
+OMNIVISION reserves the right to make changes to their products or to discontinue
+any product or service without further notice. OMNIVISION and the OMNIVISION logo
+are registered trademarks of OmniVision Technologies, Inc. CameraChip and OmniBSI
+are trademarks of OmniVision Technologies, Inc. All other trademarks are the property
+of their respective owners.
+OV4689
+image sensor core
+image
+sensor
+processor
+image output
+interface
+column
+sample/hold
+row select
+PLL
+PLLs
+control register bank
+SCCB interface
+timing generator and system control logic
+gain
+control
+FSIN
+TM
+XSHUTDOWN
+PWDNB
+EXTCLK
+VSYNC
+FREX
+STROBE
+SIOC
+SID
+SIOD
+GPIO
+HREF
+MCP/N
+MDP/N[3:0]
+temperature
+sensor
+image
+array
+AMP
+OTP_DPC
+10-bit
+ADC
+FIFO
+MIPI
+

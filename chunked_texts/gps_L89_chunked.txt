@@ -1,0 +1,160 @@
+📦 [Chunk 1]
+[부품명: L89]
+Quectel L89 
+Compact IRNSS-enabled  
+GNSS Module  
+ 
+ 
+Support IRNSS L5 band  
+Embedded patch antenna and chip antenna 
+Multi-GNSS engines for GPS, IRNSS, GLONASS, BeiDou, Galileo and QZSS 
+Support DGPS, SBAS (WAAS/EGNOS/MSAS/GAGAN) 
+Integrated LNAs for better sensitivity  
+Great anti-jamming performance due to multi-tone active interference 
+canceller  
+Support SDK commands* developed by Quectel 
+         IRNSS Signal  
+         Reception 
+Low Power 
+Consumption 
+Multi-GNSS System 
+EMAIL US: info@quectel.com 
+VISIT US: www.quectel.com 
+Extended  
+Operating Temperature:  
+-40°C to +85°C 
+Compact Size 
+Anti-Jamming 
+ 
+L89 is a high performance IRNSS-enabled GNSS module, capable of acquiring and tracking GPS, IRNSS, GLONASS, BeiDou,
+--------------------------------------------------
+
+📦 [Chunk 2]
+[부품명: L89]
+Compact Size 
+Anti-Jamming 
+ 
+L89 is a high performance IRNSS-enabled GNSS module, capable of acquiring and tracking GPS, IRNSS, GLONASS, BeiDou,    
+Galileo and QZSS signals. With 2 embedded antennas, the module can work at L1 and L5 bands simultaneously.  
+ 
+Compared with the GNSS module working at L1 band only, L89 can make use of GPS, Galileo and IRNSS signals to increase 
+the number of visible satellites, reduce TTFF and enhance positioning accuracy, especially when it is used in rough urban            
+environments.  
+ 
+L89 can achieve exceptional performance both in acquisition and tracking, and fully meet the industrial standard. With         
+two embedded LNAs, dual antennas and antenna switch function, it is an ideal product for automotive, consumer and
+--------------------------------------------------
+
+📦 [Chunk 3]
+[부품명: L89]
+two embedded LNAs, dual antennas and antenna switch function, it is an ideal product for automotive, consumer and       
+industrial tracking applications.   
+RoHS Compliant 
+Key  
+Benefits   
+Rev.: V1.1 | Status: Released 
+26.4  mm 
+18.4 mm 
+6.8 mm
+--------------------------------------------------
+
+📦 [Chunk 4]
+[부품명: L89]
+Compact IRNSS-enabled  
+GNSS Module  
+Quectel L89 
+GNSS Features  
+Receiving Bands①: 
+GPS L1/Galileo E1 C/A:  1575.42 MHz 
+IRNSS L5 C/A: 1176.45 MHz 
+GLONASS L1 C/A: 1602.5625 MHz 
+BD2 B1 C/A: 1561.098 MHz 
+SBAS:  
+WAAS, EGNOS, MSAS, GAGAN 
+Horizontal Position Accuracy: 
+Autonomous: < 1.8 m CEP 
+Velocity Accuracy: 
+Without Aid: < 0.1 m/s 
+Acceleration Accuracy: 
+Without Aid: < 0.1 m/s² 
+Timing Accuracy: 
+1PPS: 3.9 ns 
+Reacquisition Time: < 1.5 s 
+TTFF @-130dBm with AGPS:  
+Cold Start: < 13 s 
+Warm Start: < 5 s 
+Hot Start: < 2 s 
+ 
+ 
+ 
+TTFF @-130dBm without AGPS: 
+Cold Start: < 32 s 
+Warm Start: < 25 s 
+Hot Start: < 2 s  
+Sensitivity: 
+Acquisition: -147 dBm 
+Tracking: -163 dBm 
+Reacquisition: -156 dBm 
+Dynamic Performance: 
+Maximum Altitude: Max. 18000 m 
+Maximum Velocity: Max. 515 m/s
+--------------------------------------------------
+
+📦 [Chunk 5]
+[부품명: L89]
+Tracking: -163 dBm 
+Reacquisition: -156 dBm 
+Dynamic Performance: 
+Maximum Altitude: Max. 18000 m 
+Maximum Velocity: Max. 515 m/s 
+Maximum Acceleration: 4G  
+ 
+Interfaces 
+I2C Interface:  
+Max. bit rate up to 400 kbps 
+UART Interface:  
+Adjustable: 4800 bps to 921600 bps 
+Default: 9600 bps 
+Update Rate: 1 Hz (Default), up to 10 Hz* 
+I/O Port Power Domain:  
+3.0 V 
+ 
+ 
+External Antenna Interface: 
+Antenna Type: Active 
+Antenna Power Supply: External 
+ 
+Power Management 
+Power Supply: 
+3.1 V to 4.3 V, Typical 3.3 V 
+Power Consumption (GPS+Galileo+IRNSS): 
+Acquisition: 99 mA @3.3 V 
+Tracking: 95 mA @3.3 V  
+Backup: 7 μA @3.3 V  
+ 
+General Features 
+Temperature Range: -40°C to +85°C  
+Dimensions: 26.4 mm × 18.4 mm × 6.8 mm  
+Weight: Approx. 8.2 g 
+Protocols: NMEA 0183
+--------------------------------------------------
+
+📦 [Chunk 6]
+[부품명: L89]
+General Features 
+Temperature Range: -40°C to +85°C  
+Dimensions: 26.4 mm × 18.4 mm × 6.8 mm  
+Weight: Approx. 8.2 g 
+Protocols: NMEA 0183 
+ 
+ 
+① Default Configuration: GPS+Galileo+IRNSS 
+* Under Development 
+ 
+ 
+ 
+Copyright © 2019 Quectel Wireless Solutions Co., Ltd. All Rights Reserved http://www.quectel.com 
+HQ address: Building 5, Shanghai Business Park Phase III (Area B), No.1016 Tianlin Road, Minhang District, Shanghai 200233, China 
+Tel: +86 21 51086236              Email: info@quectel.com
+--------------------------------------------------
+

@@ -1,0 +1,125 @@
+
+================ [Page 1] ================
+1 
+Copyright 2024 Sony Semiconductor Solutions Corporation 
+Ver.1.0
+IMX678-AAQR/AAQR1
+Diagonal 8.86 mm (Type 1/1.8) CMOS Solid-state Image Sensor with Square Pixel for 
+Color Cameras 
+Description 
+The IMX678-AAQR/AAQR1 is a diagonal 8.86 mm (Type 1/1.8) CMOS active pixel type solid-state image sensor 
+with a square pixel array and 8.40 M effective pixels. This chip operates with analog 3.3 V, digital 1.1 V, and interface 
+1.8 V triple power supply, and has low power consumption. High sensitivity, low dark current and no smear are 
+achieved through the adoption of R, G and B primary color mosaic filters. This chip features an electronic shutter with 
+variable charge-integration time. 
+(Applications: Security cameras) 
+Features 
+◆ CMOS active pixel type dots
+◆ Built-in timing adjustment circuit, H/V driver and serial communication circuit
+◆ Input frequency: 13.5MHz / 18MHz / 24MHz / 27MHz / 36MHz / 37.125 MHz / 72 MHz / 74.25 MHz
+◆ Number of recommended recording pixels: 3840 (H) × 2160 (V) approx. 8.29M pixel
+◆ Readout mode
+All-pixel scan mode 
+Horizontal / Vertical 2/2-line binning mode 
+Window cropping mode 
+Horizontal / Vertical direction - Normal / Inverted readout mode 
+◆ Readout rate
+Maximum frame rate in All-pixel scan mode: 12 bit: 60 frame/s, 10 bit: 72 frame/s 
+◆ High dynamic range (HDR) function
+Digital overlap HDR
+Clear HDR
+◆ Synchronizing sensors function
+◆ Variable-speed shutter function (resolution 1H units)
+◆ CDS / PGA function 
+0 dB to 30 dB: Analog Gain 30 dB (step pitch 0.3 dB)
+30.3 dB to 72 dB: Analog Gain 30 dB + Digital Gain 0.3 dB to 42 dB (step pitch 0.3 dB) 
+◆ Supports I/O
+CSI-2 serial data output (2 Lane / 4 Lane / 8Lane / 4Lane × 2ch)
+RAW10 / RAW12 output
+◆ Anti-reflective coating glass on both sides (IMX678-AAQR1)
+Non anti-reflective coating glass (IMX678-AAQR)
+Sony reserves the right to change products and specifications without prior notice.  
+"Sony", "SONY" logo are registered trademarks or trademarks of Sony Group Corporation or its affiliates. 
+* STARVIS 2 and its logo are registered trademarks or trademarks of Sony Group Corporation or its affiliates. The STARVIS 2 is 
+back-illuminated pixel technology used in CMOS image sensors for security camera applications. It features a sensitivity of 2000 m V
+or more per 1 µm2 (color product, when imaging with a 706 cd/m2 light source, F5.6 in 1 s accumulation equivalent). It also has a
+wide dynamic range (AD 12 bit) of more than 8 dB compared to STARVIS for the same pixel size in a single exposure, and achieves 
+high picture quality in the visible-light and near infrared light regions. 
+
+
+================ [Page 2] ================
+IMX678-AAQR/AAQR1 
+2 
+Device Structure 
+◆ CMOS image sensor
+◆ Image size
+ Diagonal 8.86 mm (Type 1/1.8) approx. 8.40 M pixels, All pixels 
+◆ Total number of pixels
+  3856 (H) × 2200 (V) approx. 8.48 M pixels 
+◆ Number of effective pixels
+ 3856 (H) × 2180 (V) approx. 8.40 M pixels 
+◆ Number of active pixels
+ 3856 (H) × 2176 (V) approx. 8.39 M pixels 
+◆ Number of recommended recording pixels 3840 (H) × 2160 (V) approx. 8.29 M pixels
+◆ Unit cell size
+ 2.0 μm (H) × 2.0 μm (V) 
+◆ Optical black
+  Horizontal (H) direction: Front 0 pixels, rear 0 pixels 
+Vertical (V) direction: Front 20 pixels, rear 0 pixels 
+◆ Package
+132 pin LGA 
+Image Sensor Characteristics 
+(Tj = 60 °C) 
+Item 
+Value 
+Remarks 
+Sensitivity 
+Typ. 
+14815 Digit/lx/s (IMX678-AAQR) 
+16309 Digit/lx/s (IMX678-AAQR1) 
+12 bit converted value 
+Saturation signal 
+Min. 
+3895 Digit 
+12 bit converted value 
+Basic Drive Mode 
+Drive mode 
+Recommended number 
+of recording pixels 
+Maximum frame rate 
+[frame/s] 
+Output interface 
+ADC [bit] 
+All-pixel 
+3840 (H) × 2160 (V) 
+approx. 8.29 M pixels 
+72 
+CSI-2 
+10 
+Horizontal/ 
+Vertical 2/2-line 
+binning 
+1920 (H) × 1080 (V) 
+approx. 2.07 M pixels 
+72 
+CSI-2 
+10 
+
+
+================ [Page 3] ================
+IMX678-AAQR/AAQR1 
+3 
+Comparison Image under 0.2 lux 
+Gain setting of IMX334 is 4times of IMX678, however they can get same output brightness. 
+    IMX334    
+IMX678-AAQR1 
+Condition: F1.6, exposure time 33.3 ms, gain 60 dB 
+Condition: F1.6, exposure time 33.3 ms, gain 48 dB 
+Comparison Image under NIR at 850 nm 
+    IMX334    
+IMX678-AAQR1 
+Condition: F1.6, exposure time 33.3 ms, gain 0 dB 
+  Condition: F1.6, exposure time 33.3 ms, gain 0 dB 
+Image Sensors for Security Cameras: 
+https://www.sony.net/cis-security/
+

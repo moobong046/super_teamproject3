@@ -1,0 +1,231 @@
+
+================ [Page 1] ================
+32-bit
+Parallel
+Sensor 1
+Sensor 3
+4G / LTE
+Security Features
+Secure Boot with TrustZone®, TRNG, 
+OTP, DRAM Scrambling and 
+Virtualization
+Computer Vision Processor 
+MIPI CSI-2
+MIPI DSI
+HDMI
+Analog
+Parallel
+LCD
+BT
+Video Input
+MIPI CSI-2 
+SLVS
+Image Signal 
+Processor (ISP) 
+Video Output
+LVDS
+HiSPi™
+I2C
+SPI
+GPIO
+Timers
+WDT
+UART
+JTAG
+Ethernet
+Video Codec
+H.264
+H.265
+MJPEG
+Ambarella Memory System
+Audio IO
+(I2S / PDM)
+DDR
+Interface
+SD / SDIO / 
+SDXC
+NAND / NOR
+USB 2.0 
+Host / Device
+Audio Output
+(I²S)
+Quad Core
+Arm® Cortex®-A53
+LPDDR4 /
+LPDDR4x /
+DDR4
+SD Card /
+eMMC / WiFi
+PRODUCT
+BRIEF
+Flexible Low-Power Platform                 
+•	CVflow® computer vision engine 
+•	64-bit quad-core Arm® Cortex®-A53 CPU up to 1 GHz
+•	Linux kernel version 4.14 or later (64-bit)
+•	Linux SDK for standards-based development
+•	Secure boot with TrustZone® and secure memory, 
+TRNG, OTP, DRAM scrambling and virtualization
+•	Industry-leading image sensor support 
+•	10 nm low-power CMOS process 
+CVflow Computer Vision Engine
+•	CNN / DNN inference acceleration for detection, 
+classification, and more 
+•	CNN toolkit for easy porting with Caffe, TensorFlow, 
+and ONNX 
+•	Tools for high- and low-level algorithm development
+•	Open SDK
+Advanced Image Processing 
+•	Up to 504 MPixel/s input rate 
+•	Multi-exposure line-interleaved HDR
+•	Superior low-light processing
+•	3D motion-compensated temporal filtering (MCTF)
+•	Hardware dewarping engine
+•	Electronic image stabilization (EIS)
+•	Up to three independent sensor inputs
+High-Efficiency Video Encoding
+•	H.265 and H.264 video compression 
+•	Flexible multi-streaming capability
+•	4KP30+ video performance 
+•	Multiple constant bit rate (CBR) and variable bit rate 
+(VBR) control modes
+•	Smart H.264 and H.265 encoder algorithms 
+Overview
+Computer Vision SoC for IP Cameras
+CV25S Block Diagram
+Ambarella’s CV25S system on chip (SoC) combines state-of-the-art computer vision (CV) technology 
+with image processing in a single, low-power design. Fabricated using advanced 10 nm process 
+technology, CV25S achieves an industry-leading combination of low power and high performance in 
+both human and computer vision applications.  
+Meeting the demands of the next generation of intelligent IP cameras, CV25S’s CVflow® architecture 
+provides deep neural network (DNN) computer vision processing and 4KP30+ video encoding, 
+enabling a multitude of computer vision applications on the edge. Efficiently encoding in both AVC and 
+HEVC video formats, CV25S minimizes cloud storage costs by streaming high-resolution video at 
+low bit rates.
+To further enhance its computer vision capabilities, CV25S uses a next-generation image signal 
+processor (ISP) to deliver outstanding imaging in low-light conditions, while its high dynamic range 
+(HDR) processing extracts maximum image detail in high-contrast scenes. 
+CV25S includes a suite of advanced cybersecurity features such as secure boot with TrustZone® and 
+secure memory, true random number generator (TRNG), one-time programmable memory (OTP), 
+DRAM scrambling and virtualization, and a programmable secure level for each peripheral interface. 
+To help customers easily port their own neural networks onto the CV25S SoC, Ambarella’s software 
+development kit (SDK) offers a complete set of tools.
+Key Features
+CV25S
+
+
+================ [Page 2] ================
+The CV25S camera development platform contains the necessary tools, software, hardware, and documentation to develop a camera utilizing 
+the powerful CVflow processor while supporting the development of customized features. 
+Evaluation Kit
+•	 CV25S main board with connectors for sensor / lens 
+board and peripherals
+•	 Sensor board: Sony, onsemi, Omnivision, and others
+•	 Datasheet, BOM, schematics, and layout
+•	 SDK and reference application with C source code
+available with additional licensing
+Software Development Kit  
+•	 Royalty-free libraries for ISP, dewarp, and 
+video recording
+•	 Image tuning and manufacturing calibration tools
+•	 Detailed documentation, including a programmer’s 	
+	
+guide and more
+•	 CNN / DNN model preparation, porting, and profiling tools
+Processor Cores
+•	 Quad-core Arm® Cortex®-A53 up to 1 GHz
+•	 32 KB / 32 KB I/D and 1 MB L2 cache
+•	 NEON™ SIMD and FPU acceleration 
+•	 AES / SHA1 / SHA2-256 crypto acceleration 
+•	 Ambarella image signal processor and 
+video codec
+Sensor and Video I/O
+•	 Single, dual, or triple sensor input with 
+independent ISP configuration
+•	 Sub-LVDS / MIPI CSI-2 / SLVS / HiSPi™ input
+•	 16-bit parallel LVCMOS (BT.601 / 656)
+•	 BT.601 / 656 16-bit video in and 16-bit 
+BT.601 out
+•	 HDMI® 2.0 including PHY with consumer 
+electronic control (CEC) support
+•	 PAL / NTSC composite SD video
+•	 4-lane MIPI DSI / CSI-2 and FPD (VESA / 
+JEIDA) out 
+Sensor Processing 
+•	 504 MPixel/s maximum pixel rate
+•	 Lens shading correction
+•	 Multi-exposure HDR (line-interleaved sensors)
+•	 WDR with local tone mapping
+Image Processing
+•	 3D motion-compensated temporal 
+filtering (MCTF) 
+•	 3-axis electronic image stabilization (EIS)
+•	 Adjustable auto exposure (AE) / auto white 
+balance (AWB) / auto focus (AF)
+•	 180° and 360° fisheye lens distortion 	
+correction (LDC)
+•	 High quality polyphase scalers
+•	 Digital pan / tilt / zoom (DPTZ) and virtual 
+cameras  
+•	 On-screen display (OSD) engine, overlays, and 
+privacy mask 
+•	 Crop, mirror, flip, 90° / 270° rotation
+•	 DC-iris and P-iris
+•	 Defective pixel correction 
+•	 Geometric LDC
+•	 Chromatic aberration correction
+•	 Gamma compensation and color enhancement
+•	 Backlight compensation 
+Intelligent Video Analytics
+•	 CVflow® vision processor for CNN / DNN 
+edge analytics
+•	 People counting and tracking 
+•	 Face detection and recognition 
+•	 Human / pet / vehicle classification 
+•	 Object classification, recognition, and more 
+•	 License plate recognition 
+
+Video Encoding 
+•	 H.265 MP L5.1, H.264 MP / HP L5.1, 
+and MJPEG 
+•	 4KP30+ maximum encoding performance
+•	 Up to eight simultaneous stream encodes
+•	 Flexible group of pictures (GOP) configuration 
+with I, P, and B frames 
+•	 Temporal scalable video codec (SVC-T) 
+with four layers 
+•	 Dynamic region of interest (ROI)
+•	 Multiple CBR and VBR rate control modules 
+Security Features
+•	 Secure boot with TrustZone® and secure 
+memory, TRNG, OTP, DRAM scrambling
+and virtualization
+Memory Interfaces 
+•	 LPDDR4 / LPDDR4x / DDR4 up to 1.6 GHz, 
+32-bit data bus
+•	 Three SD controllers: SD / SDIO / SDXC
+•	 Boot from SPI or parallel SLC NAND with 
+BCH / SPI NOR / USB / eMMC 
+Peripheral Interfaces 
+•	 10 / 100 / 1000 Ethernet with RMII / RGMII
+•	 One USB 2.0 port configurable as host / device 
+•	 Audio interface including I2S and DMIC
+•	 Multiple SSI / SPI, I2C, and UART
+•	 Multiple GPIO ports, PWM, IR, and ADC
+•	 Watchdog timer, multiple general purpose 
+timers, and JTAG
+Physical
+•	 10 nm low-power complimentary metal-oxide 
+semiconductor (CMOS)
+•	 Operating temperature -25°C to +85°C
+•	 FC TFBGA package (361 balls, 13x13 mm, 	
+0.65 mm pitch)
+www.ambarella.com/contact-us/
+Copyright Ambarella International LP. All rights reserved. Ambarella and the Ambarella logo are trademarks of Ambarella International LP. All other brands, product names, and company names 
+are trademarks of their respective owners. The information in this document is believed to be reliable, but may project preliminary functionality not yet available. Ambarella makes no guarantee 
+or warranty concerning the accuracy and availability of said information and shall not be responsible for any loss or damage whatever nature resulting from the use of, or reliance upon it. 
+Ambarella does not guarantee that the use of any information contained herein will not infringe upon patent, trademark, copyright, or other rights of third parties. Ambarella reserves the right to 
+make changes in the product and / or its specifications presented in this publication at any time without notice.
+November 2022
+CV25S Camera Development Platform
+General Specifications
+

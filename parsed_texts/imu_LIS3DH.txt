@@ -1,0 +1,2879 @@
+
+================ [Page 1] ================
+May 2010
+Doc ID 17530 Rev 1
+1/42
+42
+LIS3DH
+MEMS digital output motion sensor
+ultra low-power high performance 3-axes “nano” accelerometer
+Features
+■
+Wide supply voltage, 1.71 V to 3.6 V
+■
+Independent IOs supply (1.8 V) and supply 
+voltage compatible
+■
+Ultra low-power mode consumption
+down to 2 µA
+■
+±2g/±4g/±8g/±16g dynamically selectable full-
+scale
+■
+I2C/SPI digital output interface
+■
+16 bit data output
+■
+2 independent programmable interrupt 
+generators for free-fall and motion detection
+■
+6D/4D orientation detection
+■
+Free-fall detection
+■
+Motion detection
+■
+Embedded temperature sensor
+■
+Embedded self-test
+■
+Embedded 96 levels of 16 bit data output FIFO
+■
+10000 g high shock survivability
+■
+ECOPACK® RoHS and “Green” compliant 
+Applications
+■
+Motion activated functions
+■
+Free-fall detection
+■
+Click/double click recognition
+■
+Intelligent power saving for handheld devices
+■
+Pedometer
+■
+Display orientation
+■
+Gaming and virtual reality input devices
+■
+Impact recognition and logging
+■
+Vibration monitoring and compensation
+Description
+The LIS3DH is an ultra low-power high 
+performance three axes linear accelerometer 
+belonging to the “nano” family, with digital I2C/SPI 
+serial interface standard output. The device 
+features ultra low-power operational modes that 
+allow advanced power saving and smart 
+embedded functions. 
+The LIS3DH has dynamically user selectable full 
+scales of ±2g/±4g/±8g/±16g and it is capable of 
+measuring accelerations with output data rates 
+from 1 Hz to 5 kHz. The self-test capability allows 
+the user to check the functioning of the sensor in 
+the final application. The device may be 
+configured to generate interrupt signals by two 
+independent inertial wake-up/free-fall events as 
+well as by the position of the device itself. 
+Thresholds and timing of interrupt generators are 
+programmable by the end user on the fly. The 
+LIS3DH has an integrated 32-level first in, first out 
+(FIFO) buffer allowing the user to store data for 
+host processor intervention reduction. The 
+LIS3DH is available in small thin plastic land grid 
+array package (LGA) and it is guaranteed to 
+operate over an extended temperature range from 
+-40 °C to +85 °C.
+         Table 1.
+Device summary
+Order codes
+Temp. 
+range [°C]
+Package
+Packaging
+LIS3DH
+-40 to +85
+LGA-16
+Tray
+LIS3DHTR
+-40 to +85
+LGA-16
+Tape and reel
+LGA-16 (3x3x1 mm) 
+www.st.com
+
+
+================ [Page 2] ================
+Contents
+LIS3DH
+2/42
+Doc ID 17530 Rev 1
+Contents
+1
+Block diagram and pin description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+1.1
+Block diagram . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+1.2
+Pin description  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+2
+Mechanical and electrical specifications  . . . . . . . . . . . . . . . . . . . . . . . 10
+2.1
+Mechanical characteristics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+2.2
+Temperature sensor characteristics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+2.3
+Electrical characteristics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+2.4
+Communication interface characteristics  . . . . . . . . . . . . . . . . . . . . . . . . . 12
+2.4.1
+SPI - serial peripheral interface . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+2.4.2
+I2C - Inter IC control interface  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+2.5
+Absolute maximum ratings . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+3
+Terminology and functionality . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+3.1
+Terminology  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+3.1.1
+Sensitivity . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+3.1.2
+Zero-g level  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+3.2
+Functionality . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+3.2.1
+Normal mode, low power mode . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+3.2.2
+Self-test  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+3.2.3
+6D / 4D orientation detection . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+3.3
+Sensing element . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+3.4
+IC interface . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+3.5
+Factory calibration  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+3.6
+FIFO . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+3.7
+Auxiliary ADC . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+4
+Application hints . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+4.1
+Soldering information . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+5
+Digital main blocks  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+5.1
+FIFO . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+5.1.1
+Bypass mode . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+
+
+================ [Page 3] ================
+LIS3DH
+Contents
+Doc ID 17530 Rev 1
+3/42
+5.1.2
+FIFO mode . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+5.1.3
+Stream mode . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+5.1.4
+Stream-to-FIFO mode  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+5.1.5
+Retrieve data from FIFO  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+6
+Digital interfaces . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+6.1
+I2C serial interface . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+6.1.1
+I2C operation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+6.2
+SPI bus interface  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+6.2.1
+SPI read . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+6.2.2
+SPI write  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+6.2.3
+SPI read in 3-wires mode  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+7
+Register mapping  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26
+8
+Registers description  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28
+8.1
+STATUS_AUX (07h) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28
+8.2
+OUT_1_L (08h), OUT_1_H (09h) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28
+8.3
+OUT_2_L (0Ah), OUT_2_H (0Bh)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28
+8.4
+OUT_3_L (0Ch), OUT_3_H (0Dh)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28
+8.5
+INT_COUNTER (0Eh)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+8.6
+WHO_AM_I (0Fh) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+8.7
+TEMP_CFG_REG (1Fh)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+8.8
+CTRL_REG1 (20h) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+8.9
+CTRL_REG2 (21h) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
+8.10
+CTRL_REG3 (22h) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31
+8.11
+CTRL_REG4 (23h) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31
+8.12
+CTRL_REG5 (24h) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32
+8.13
+CTRL_REG6 (25h) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32
+8.14
+REFERENCE/DATACAPTURE (26h) . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32
+8.15
+STATUS_REG (27h) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 33
+8.16
+OUT_X_L (28h), OUT_X_H (29h)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 33
+8.17
+OUT_Y_L (2Ah), OUT_Y_H (2Bh) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 33
+8.18
+OUT_Z_L (2Ch), OUT_Z_H (2Dh) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 33
+8.19
+FIFO_CTRL_REG (2Eh)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34
+
+
+================ [Page 4] ================
+Contents
+LIS3DH
+4/42
+Doc ID 17530 Rev 1
+8.20
+FIFO_SRC_REG (2Fh)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34
+8.21
+INT1_CFG (30h) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34
+8.22
+INT1_SRC (31h) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35
+8.23
+INT1_THS (32h) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 36
+8.24
+INT1_DURATION (33h)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 36
+8.25
+CLICK_CFG (38h)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 36
+8.26
+CLICK_SRC (39h)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37
+8.27
+CLICK_THS (3Ah)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38
+8.28
+TIME_LIMIT (3Bh)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38
+8.29
+TIME_LATENCY (3Ch) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38
+8.30
+TIME WINDOW(3Dh) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38
+9
+Package information . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 39
+10
+Revision history  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 41
+
+
+================ [Page 5] ================
+LIS3DH
+List of figures
+Doc ID 17530 Rev 1
+5/42
+List of figures
+Figure 1.
+Block diagram . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+Figure 2.
+Pin connection  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+Figure 3.
+SPI slave timing diagram . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+Figure 4.
+I2C Slave timing diagram . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+Figure 5.
+LIS3DH electrical connection . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+Figure 6.
+Read and write protocol . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+Figure 7.
+SPI read protocol  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+Figure 8.
+Multiple bytes SPI read protocol (2 bytes example) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+Figure 9.
+SPI write protocol . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+Figure 10.
+Multiple bytes SPI write protocol (2 bytes example) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+Figure 11.
+SPI read protocol in 3-wires mode . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+Figure 12.
+LGA-16: Mechanical data and package dimensions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 40
+
+
+================ [Page 6] ================
+List of tables
+LIS3DH
+6/42
+Doc ID 17530 Rev 1
+List of tables
+Table 1.
+Device summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+Table 2.
+Pin description  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+Table 3.
+Mechanical characteristics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+Table 4.
+Temperature sensor characteristics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+Table 5.
+Electrical characteristics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+Table 6.
+SPI slave timing values. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+Table 7.
+I2C slave timing values. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+Table 8.
+Absolute maximum ratings . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+Table 9.
+Operating mode selection. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+Table 10.
+Serial interface pin description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+Table 11.
+Serial interface pin description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+Table 12.
+SAD+Read/Write patterns  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+Table 13.
+Transfer when master is writing one byte to slave . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+Table 14.
+Transfer when master is writing multiple bytes to slave:. . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+Table 15.
+Transfer when master is receiving (reading) one byte of data from slave: . . . . . . . . . . . . . 22
+Table 16.
+Transfer when master is receiving (reading) multiple bytes of data from slave . . . . . . . . . 22
+Table 17.
+Register address map. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26
+Table 18.
+STATUS_REG_AUX register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28
+Table 19.
+STATUS_REG_AUX description  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28
+Table 20.
+INT_COUNTER register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+Table 21.
+WHO_AM_I register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+Table 22.
+TEMP_CFG_REG register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+Table 23.
+TEMP_CFG_REG description  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+Table 24.
+CTRL_REG1 register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+Table 25.
+CTRL_REG1 description  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+Table 26.
+Data rate configuration . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
+Table 27.
+CTRL_REG2 register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
+Table 28.
+CTRL_REG2 description  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
+Table 29.
+High pass filter mode configuration  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31
+Table 30.
+CTRL_REG3 register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31
+Table 31.
+CTRL_REG3 description  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31
+Table 32.
+CTRL_REG4 register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31
+Table 33.
+CTRL_REG4 description  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31
+Table 34.
+Self test mode configuration . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32
+Table 35.
+CTRL_REG5 register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32
+Table 36.
+CTRL_REG5 description  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32
+Table 37.
+CTRL_REG6 register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32
+Table 38.
+REFERENCE register. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32
+Table 39.
+REFERENCE register description  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 33
+Table 40.
+STATUS register. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 33
+Table 41.
+STATUS register description  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 33
+Table 42.
+REFERENCE register. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34
+Table 43.
+REFERENCE register description  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34
+Table 44.
+FIFO mode configuration  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34
+Table 45.
+FIFO_SRC register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34
+Table 46.
+INT1_CFG register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34
+Table 47.
+INT1_CFG description  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34
+Table 48.
+Interrupt mode  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35
+
+
+================ [Page 7] ================
+LIS3DH
+List of tables
+Doc ID 17530 Rev 1
+7/42
+Table 49.
+INT1_SRC register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35
+Table 50.
+INT1_SRC description  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35
+Table 51.
+INT1_THS register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 36
+Table 52.
+INT1_THS description  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 36
+Table 53.
+INT1_DURATION register  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 36
+Table 54.
+INT1_DURATION description. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 36
+Table 55.
+CLICK_CFG register. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 36
+Table 56.
+CLICK_CFG description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37
+Table 57.
+CLICK_SRC register. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37
+Table 58.
+CLICK_SRC description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37
+Table 59.
+CLICK_THS register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38
+Table 60.
+CLICK_SRC description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38
+Table 61.
+TIME_LIMIT register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38
+Table 62.
+TIME_LIMIT description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38
+Table 63.
+TIME_LATENCY register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38
+Table 64.
+TIME_LATENCY description  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38
+Table 65.
+TIME_WINDOW register  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38
+Table 66.
+TIME_WINDOW description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38
+Table 67.
+LGA-16: Mechanical data . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 40
+Table 68.
+Document revision history  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 41
+
+
+================ [Page 8] ================
+Block diagram and pin description
+LIS3DH
+8/42
+Doc ID 17530 Rev 1
+1 
+Block diagram and pin description 
+1.1 
+Block diagram
+Figure 1.
+Block diagram
+1.2 
+Pin description
+Figure 2.
+Pin connection
+CHARGE
+AMPLIFIER
+Y+
+Z+
+Y-
+Z-
+a
+X+
+X-
+I2C
+SPI
+CS
+SCL/SPC
+SDA/SDO/SDI
+SDO/SA0
+CONTROL LOGIC
+&
+INTERRUPT GEN.
+INT 1 
+CLOCK
+TRIMMING
+CIRCUITS
+REFERENCE
+SELF TEST
+CONTROL 
+A/D 
+CONVERTER 1
+INT 2 
+MUX
+96 Level 
+FIFO
+ADC1 - ADC Input1
+ADC2 - ADC Input2
+ADC3 - ADC Input3
+A/D 
+CONVERTER 2
+LOGIC
+TEMPERATURE 
+SENSOR
+(TOP VIEW)
+DIRECTION OF THE 
+DETECTABLE 
+ACCELERATIONS
+1
+5
+9
+13
+(BOTTOM VIEW)
+Y
+1
+X
+Z
+Pin 1 indicator
+Vdd_IO 
+NC 
+NC 
+SCL/SPC 
+GND
+SDA/SDI/SDO
+CS
+SDO/SA0
+ADC3
+GND
+INT1
+RES
+INT2
+ADC1
+Vdd
+ADC2
+
+
+================ [Page 9] ================
+LIS3DH
+Block diagram and pin description
+Doc ID 17530 Rev 1
+9/42
+         Table 2.
+Pin description 
+Pin#
+Name
+Function
+1
+Vdd_IO
+Power supply for I/O pins
+2
+NC
+Not connected
+3
+NC
+Not connected
+4
+SCL
+SPC
+I2C serial clock (SCL)
+SPI serial port clock (SPC)
+5
+GND
+0V supply
+6
+SDA
+SDI
+SDO
+I2C serial data (SDA)
+SPI serial data input (SDI)
+3-wire interface serial data output (SDO)
+7
+SDO
+SA0
+SPI serial data output (SDO)
+I2C less significant bit of the device address (SA0)
+8
+CS
+SPI enable
+I2C/SPI mode selection (1: I2C mode; 0: SPI enabled)
+9
+INT2
+Inertial interrupt 2
+10
+RES
+Connect to GND
+11
+INT1
+Inertial interrupt 1
+12
+GND
+0 V supply
+13
+ADC3
+Analog to digital converter input 3
+14
+Vdd
+Power supply
+15
+ADC2
+Analog to digital converter input 2
+16
+ADC1
+Analog to digital converter input 1
+
+
+================ [Page 10] ================
+Mechanical and electrical specifications
+LIS3DH
+10/42
+Doc ID 17530 Rev 1
+2 
+Mechanical and electrical specifications
+2.1 
+Mechanical characteristics
+Vdd = 2.5 V, T = 25 °C unless otherwise noted (a)
+a.
+The product is factory calibrated at 2.5 V. The operational power supply range is from 1.71V to 3.6 V. 
+Table 3.
+Mechanical characteristics
+Symbol
+Parameter
+Test conditions
+Min.
+Typ.(1)
+Max.
+Unit
+FS
+Measurement range(2)
+FS bit set to 00
+±2.0
+FS bit set to 01
+±4.0
+FS bit set to 10
+±8.0
+FS bit set to 11
+±16.0
+g
+So
+Sensitivity 
+FS bit set to 00
+1
+mg/digit
+FS bit set to 01
+2
+mg/digit
+FS bit set to 10
+4
+mg/digit
+FS bit set to 11
+12
+mg/digit
+TCSo
+Sensitivity change vs 
+temperature
+FS bit set to 00
+0.01
+%/°C
+TyOff
+Typical zero-g level 
+offset accuracy(3),(4)
+FS bit set to 00
+±40
+mg
+TCOff
+Zero-g level change 
+vs temperature
+Max delta from 25 °C
+±0.5
+mg/°C
+An
+Acceleration noise 
+density
+FS bit set to 00, Normal Mode 
+(Table 9), ODR = 100Hz
+220
+ug/sqrt(H
+z)
+Vst
+Self-test 
+output change(5),(6),(7)
+FS bit set to 00
+X axis
+276
+LSb
+FS bit set to 00
+Y axis
+276
+LSb
+FS bit set to 00
+Z axis
+984
+LSb
+Top
+Operating 
+temperature range
+-40
++85
+°C
+1.
+Typical specifications are not guaranteed.
+2.
+Verified by wafer level test and measurement of initial offset and sensitivity.
+3.
+Typical zero-g level offset value after MSL3 preconditioning.
+4.
+Offset can be eliminated by enabling the built-in high pass filter.
+5.
+The sign of “Self-test output change” is defined by CTRL_REG4 STsign bit, for all axes.
+6.
+Self-test output changes with the power supply. “Self-test output change” is defined as
+OUTPUT[LSb](CTRL_REG4 ST bit=1) - OUTPUT[LSb](CTRL_REG4 ST bit=0). 1LSb=1mg, ±2 g Full-scale.
+7.
+Output data reach 99% of final value after 1 ms when enabling self-test mode, due to device filtering.
+
+
+================ [Page 11] ================
+LIS3DH
+Mechanical and electrical specifications
+Doc ID 17530 Rev 1
+11/42
+2.2 
+Temperature sensor characteristics
+Vdd =2.5 V, T=25 °C unless otherwise noted (b)
+         
+2.3 
+Electrical characteristics
+Vdd = 2.5 V, T = 25 °C unless otherwise noted (c) 
+         
+b.
+The product is factory calibrated at 2.5 V.
+Table 4.
+Temperature sensor characteristics
+Symbol
+Parameter
+Test condition
+Min.
+Typ.(1)
+Max.
+Unit
+TSDr
+Temperature sensor output change vs 
+temperature
+1
+digit/°C(2)
+TODR
+Temperature refresh rate
+ODR
+Hz
+Top 
+Operating temperature range
+-40
++85
+°C
+1.
+Typical specifications are not guaranteed.
+2.
+8-bit resolution.
+c.
+The product is factory calibrated at 2.5 V. The operational power supply range is from 1.71 V to 3.6 V.
+Table 5.
+Electrical characteristics
+Symbol
+Parameter
+Test conditions
+Min.
+Typ.(1)
+Max.
+Unit
+Vdd
+Supply voltage
+1.71
+2.5
+3.6
+V
+Vdd_IO
+I/O pins supply voltage(2)
+1.71
+Vdd+0.1
+V
+Idd
+Current consumption in normal mode
+50 Hz ODR
+11
+µA
+Idd
+Current consumption in normal mode
+1 Hz ODR
+2
+µA
+IddLP
+Current consumption in low-power mode
+50 Hz ODR
+6
+µA
+IddPdn
+Current consumption in power-down 
+mode
+0.5
+µA
+VIH
+Digital high level input voltage
+0.8*Vdd_IO
+V
+VIL
+Digital low level input voltage
+0.2*Vdd_IO
+V
+VOH
+High level output voltage
+0.9*Vdd_IO
+V
+VOL
+Low level output voltage
+0.1*Vdd_IO
+V
+BW
+System bandwidth(3)
+ODR/2
+Hz
+Ton
+Turn-on time(4)
+ODR = 100 Hz
+1
+ms
+Top
+Operating temperature range
+-40
++85
+°C
+1.
+Typical specification are not guaranteed.
+2.
+It is possible to remove Vdd maintaining Vdd_IO without blocking the communication busses, in this condition the 
+measurement chain is powered off.
+3.
+Referred to Table 25 for the ODR value and configuration.
+4.
+Time to obtain valid data after exiting power-down mode.
+
+
+================ [Page 12] ================
+Mechanical and electrical specifications
+LIS3DH
+12/42
+Doc ID 17530 Rev 1
+2.4 
+Communication interface characteristics
+2.4.1 
+SPI - serial peripheral interface
+Subject to general operating conditions for Vdd and Top.
+         
+Figure 3.
+SPI slave timing diagram 
+Note:
+1
+Values are guaranteed at 10 MHz clock frequency for SPI with both 4 and 3 wires, based on 
+characterization results, not tested in production.
+2
+Measurement points are done at 0.2·Vdd_IO and 0.8·Vdd_IO, for both Input and output port.
+3
+When no communication is on-going, data on CS, SPC, SDI and SDO are driven by internal 
+pull-up resistors.
+Table 6.
+SPI slave timing values
+Symbol
+Parameter
+Value (1)
+Unit
+Min
+Max
+tc(SPC)
+SPI clock cycle
+100
+ns
+fc(SPC)
+SPI clock frequency
+10
+MHz
+tsu(CS)
+CS setup time
+6
+ns
+th(CS)
+CS hold time
+8
+tsu(SI)
+SDI input setup time
+5
+th(SI)
+SDI input hold time
+15
+tv(SO)
+SDO valid output time
+50
+th(SO)
+SDO output hold time
+9
+tdis(SO)
+SDO output disable time
+50
+SPC 
+CS 
+SDI 
+SDO 
+tsu(CS) 
+tv(SO)
+th(SO)
+th(SI) 
+tsu(SI) 
+th(CS) 
+tdis(SO)
+tc(SPC)
+MSB IN 
+MSB OUT 
+LSB OUT 
+LSB IN 
+(3) 
+(3) 
+(3) 
+(3) 
+(3)
+(3)
+(3)
+(3)
+
+
+================ [Page 13] ================
+LIS3DH
+Mechanical and electrical specifications
+Doc ID 17530 Rev 1
+13/42
+2.4.2 
+I2C - Inter IC control interface
+Subject to general operating conditions for Vdd and top.
+Figure 4.
+I2C Slave timing diagram 
+Note:
+Measurement points are done at 0.2·Vdd_IO and 0.8·Vdd_IO, for both port.
+Table 7.
+I2C slave timing values
+Symbol
+Parameter
+I2C standard mode (1)
+I2C fast mode (1)
+Unit
+Min
+Max
+Min
+Max
+f(SCL)
+SCL clock frequency
+0
+100
+0
+400
+kHz
+tw(SCLL)
+SCL clock low time
+4.7
+1.3
+µs
+tw(SCLH)
+SCL clock high time
+4.0
+0.6
+tsu(SDA)
+SDA setup time
+250
+100
+ns
+th(SDA)
+SDA data hold time
+0.01
+3.45
+0.01
+0.9
+µs
+tr(SDA) tr(SCL)
+SDA and SCL rise time
+1000
+20 + 0.1Cb
+ (2)
+300
+ns
+tf(SDA) tf(SCL)
+SDA and SCL fall time
+300
+20 + 0.1Cb
+ (2)
+300
+th(ST)
+START condition hold time
+4
+0.6
+µs
+tsu(SR)
+Repeated START condition 
+setup time
+4.7
+0.6
+tsu(SP)
+STOP condition setup time
+4
+0.6
+tw(SP:SR)
+Bus free time between STOP 
+and START condition
+4.7
+1.3
+1.
+Data based on standard I2C protocol requirement, not tested in production.
+2.
+Cb = total capacitance of one bus line, in pF.
+SDA 
+SCL 
+tf(SDA) 
+tsu(SP) 
+tw(SCLL) 
+tsu(SDA)
+tr(SDA)
+tsu(SR) 
+th(ST) 
+tw(SCLH) 
+th(SDA)
+tr(SCL)
+tf(SCL)
+tw(SP:SR) 
+START 
+REPEATED
+START 
+STOP
+START
+
+
+================ [Page 14] ================
+Mechanical and electrical specifications
+LIS3DH
+14/42
+Doc ID 17530 Rev 1
+2.5 
+Absolute maximum ratings
+Stresses above those listed as “absolute maximum ratings” may cause permanent damage 
+to the device. This is a stress rating only and functional operation of the device under these 
+conditions is not implied. Exposure to maximum rating conditions for extended periods may 
+affect device reliability.
+         
+Note:
+Supply voltage on any pin should never exceed 4.8 V 
+Table 8.
+Absolute maximum ratings
+Symbol
+Ratings
+Maximum value
+Unit
+Vdd
+Supply voltage
+-0.3 to 4.8
+V
+Vdd_IO
+I/O pins Supply voltage
+-0.3 to 4.8
+V
+Vin
+Input voltage on any control pin 
+(CS, SCL/SPC, SDA/SDI/SDO, SDO/SA0)
+ -0.3 to Vdd_IO +0.3
+V
+APOW
+Acceleration (any axis, powered, Vdd = 2.5 V)
+3000 for 0.5 ms
+g
+10000 for 0.1 ms
+g
+AUNP
+Acceleration (any axis, unpowered)
+3000 for 0.5 ms
+g
+10000 for 0.1 ms
+g
+TOP
+Operating temperature range
+-40 to +85
+°C
+TSTG
+Storage temperature range
+-40 to +125
+°C
+ESD
+Electrostatic discharge protection
+ 2 (HBM)
+kV
+This is a mechanical shock sensitive device, improper handling can cause permanent 
+damages to the part.
+This is an ESD sensitive device, improper handling can cause permanent damages to 
+the part.
+
+
+================ [Page 15] ================
+LIS3DH
+Terminology and functionality
+Doc ID 17530 Rev 1
+15/42
+3 
+Terminology and functionality
+3.1 
+Terminology
+3.1.1 
+Sensitivity
+Sensitivity describes the gain of the sensor and can be determined e.g. by applying 1 g 
+acceleration to it. As the sensor can measure DC accelerations this can be done easily by 
+pointing the axis of interest towards the center of the earth, noting the output value, rotating 
+the sensor by 180 degrees (pointing to the sky) and noting the output value again. By doing 
+so, ±1 g acceleration is applied to the sensor. Subtracting the larger output value from the 
+smaller one, and dividing the result by 2, leads to the actual sensitivity of the sensor. This 
+value changes very little over temperature and also time. The sensitivity tolerance describes 
+the range of Sensitivities of a large population of sensors.
+3.1.2 
+Zero-g level
+Zero-g level offset (TyOff) describes the deviation of an actual output signal from the ideal 
+output signal if no acceleration is present. A sensor in a steady state on a horizontal surface 
+measure 0 g in X axis and 0 g in Y axis whereas the Z axis measure 1 g. The output is 
+ideally in the middle of the dynamic range of the sensor (content of OUT registers 00h, data 
+expressed as 2’s complement number). A deviation from ideal value in this case is called 
+Zero-g offset. Offset is to some extent a result of stress to MEMS sensor and therefore the 
+offset can slightly change after mounting the sensor onto a printed circuit board or exposing 
+it to extensive mechanical stress. Offset changes little over temperature, see “Zero-g level 
+change vs. temperature”. The Zero-g level tolerance (TyOff) describes the standard 
+deviation of the range of Zero-g levels of a population of sensors. 
+3.2 
+Functionality
+3.2.1 
+Normal mode, low power mode
+LIS3DH provides two different operating modes respectively reported as normal mode and 
+low power mode. While normal mode guarantees high resolution, low power mode reduces 
+further the current consumption.
+The table below reported summarizes how to select the operating mode.
+Table 9.
+Operating mode selection
+CTRL_REG1[3]
+(LPen bit)
+CTRL_REG4[3]
+(HR bit)
+Operating mode
+1
+0
+Low power mode
+0
+1
+Normal mode
+
+
+================ [Page 16] ================
+Terminology and functionality
+LIS3DH
+16/42
+Doc ID 17530 Rev 1
+3.2.2 
+Self-test
+Self-test allows to check the sensor functionality without moving it. The self-test function is 
+off when the self-test bit (ST) is programmed to ‘0‘. When the self-test bit is programmed to 
+‘1‘ an actuation force is applied to the sensor, simulating a definite input acceleration. In this 
+case the sensor outputs exhibit a change in their DC levels which are related to the selected 
+full scale through the device sensitivity. When self-test is activated, the device output level is 
+given by the algebraic sum of the signals produced by the acceleration acting on the sensor 
+and by the electrostatic test-force. If the output signals change within the amplitude 
+specified inside Table 3, then the sensor is working properly and the parameters of the 
+interface chip are within the defined specifications.
+3.2.3 
+6D / 4D orientation detection
+The LIS3DH include 6D / 4D orientation detection.
+6D / 4D orientation recognition: In this configuration the interrupt is generated when the 
+device is stable in a known direction. In 4D configuration Z axis position detection is disable.
+3.3 
+Sensing element 
+A proprietary process is used to create a surface micro-machined accelerometer. The 
+technology allows carrying out suspended silicon structures which are attached to the 
+substrate in a few points called anchors and are free to move in the direction of the sensed 
+acceleration. To be compatible with the traditional packaging techniques a cap is placed on 
+top of the sensing element to avoid blocking the moving parts during the moulding phase of 
+the plastic encapsulation.
+When an acceleration is applied to the sensor the proof mass displaces from its nominal 
+position, causing an imbalance in the capacitive half-bridge. This imbalance is measured 
+using charge integration in response to a voltage pulse applied to the capacitor.
+At steady state the nominal value of the capacitors are few pF and when an acceleration is 
+applied the maximum variation of the capacitive load is in the fF range. 
+3.4 
+IC interface
+The complete measurement chain is composed by a low-noise capacitive amplifier which 
+converts the capacitive unbalancing of the MEMS sensor into an analog voltage that is 
+finally available to the user by an analog-to-digital converter.
+The acceleration data may be accessed through an I2C/SPI interface thus making the 
+device particularly suitable for direct interfacing with a microcontroller.
+The LIS3DH features a Data-Ready signal (RDY) which indicates when a new set of 
+measured acceleration data is available thus simplifying data synchronization in the digital 
+system that uses the device.
+The LIS3DH may also be configured to generate an inertial Wake-Up and Free-Fall interrupt 
+signal accordingly to a programmed acceleration event along the enabled axes. Both Free-
+Fall and Wake-Up can be available simultaneously on two different pins.
+
+
+================ [Page 17] ================
+LIS3DH
+Terminology and functionality
+Doc ID 17530 Rev 1
+17/42
+3.5 
+Factory calibration
+The IC interface is factory calibrated for sensitivity (So) and Zero-g level (TyOff). 
+The trimming values are stored inside the device in a non volatile memory. Any time the 
+device is turned on, the trimming parameters are downloaded into the registers to be used 
+during the active operation. This allows to use the device without further calibration.
+3.6 
+FIFO
+The LIS3DH contains a 10 bit, 32-level FIFO. Buffered output allows 4 operation modes: 
+FIFO, stream, trigger and FIFO ByPass. Where FIFO bypass mode is activated FIFO is not 
+operating and remains empty. In FIFO mode, data from acceleration detection on x, y, and z-
+axes measurements are stored in FIFO.
+3.7 
+Auxiliary ADC
+The LIS3DH contains an auxiliary 10 bit ADC with 3 separate dedicated inputs.
+
+
+================ [Page 18] ================
+Application hints
+LIS3DH
+18/42
+Doc ID 17530 Rev 1
+4 
+Application hints
+Figure 5.
+LIS3DH electrical connection
+The device core is supplied through Vdd line while the I/O pads are supplied through 
+Vdd_IO line. Power supply decoupling capacitors (100 nF ceramic, 10 µF aluminum) should 
+be placed as near as possible to the pin 14 of the device (common design practice). 
+All the voltage and ground supplies must be present at the same time to have proper 
+behavior of the IC (refer to Figure 5). It is possible to remove Vdd maintaining Vdd_IO 
+without blocking the communication bus, in this condition the measurement chain is 
+powered off.
+The functionality of the device and the measured acceleration data is selectable and 
+accessible through the I2C or SPI interfaces.When using the I2C, CS must be tied high.
+The ADC1, ADC2 & ADC3 if not used can be left floating or keep connected to Vdd or GND.
+The functions, the threshold and the timing of the two interrupt pins (INT1 and INT2) can be 
+completely programmed by the user through the I2C/SPI interface.
+4.1 
+Soldering information
+The LGA package is compliant with the ECOPACK®, RoHS and “Green” standard.
+It is qualified for soldering heat resistance according to JEDEC J-STD-020.
+Leave “Pin 1 Indicator” unconnected during soldering.
+Land pattern and soldering recommendations are available at www.st.com. 
+CS
+10µF
+Vdd
+100nF
+GND
+Vdd_IO
+SDO/SA0
+SDA/SDI/SDO
+INT1
+SCL/SPC
+Digital signal from/to signal controller.Signal’s levels are defined by proper selection of Vdd_IO
+1
+5
+8
+13
+TOP VIEW
+6
+9
+14
+16
+9
+5
+INT2
+ADC2
+ADC1
+ADC3
+Vdd_IO
+Rpu 
+Rpu
+Pull-up to be added
+when I2C interface is used
+
+
+================ [Page 19] ================
+LIS3DH
+Digital main blocks
+Doc ID 17530 Rev 1
+19/42
+5 
+Digital main blocks
+5.1 
+FIFO
+LIS3DH embeds a 32-slot of 10bit data FIFO for each of the three output channels, X, Y and 
+Z. This allows a consistent power saving for the system, since the host processor does not 
+need to continuously poll data from the sensor, but it can wakeup only when needed and 
+burst the significant data out from the FIFO. This buffer can work accordingly to four different 
+modes: Bypass mode, FIFO mode, Stream mode and Stream-to-FIFO mode. Each mode is 
+selected by the FIFO_MODE bits into the FIFO_CTRL_REG (2E). Programmable 
+Watermark level, FIFO_empty or FIFO_Full events can be enabled to generate dedicated 
+interrupts on INT1/2 pin (configuration through FIFO_CFG_REG).
+5.1.1 
+Bypass mode
+In Bypass mode, the FIFO is not operational and for this reason it remains empty. As 
+described in the next figure, for each channel only the first address is used. The remaining 
+FIFO slots are empty.
+5.1.2 
+FIFO mode
+In FIFO mode, data from X, Y and Z channels are stored into the FIFO. A watermark 
+interrupt can be enabled (FIFO_WTMK_EN bit into FIFO_CTRL_REG in order to be raised 
+when the FIFO is filled to the level specified into the FIFO_WTMK_LEVEL bits of 
+FIFO_CTRL_REG. The FIFO continues filling until it is full (32 slots of 10data for X, Y and 
+Z). When full, the FIFO stops collecting data from the input channels.
+5.1.3 
+Stream mode
+In the stream mode, data from X, Y and Z measurement are stored into the FIFO. A 
+watermark interrupt can be enabled and set as in the FIFO mode.The FIFO continues filling 
+until it’s full (32 slots of 10data for X, Y and Z). When full, the FIFO discards the older data 
+as the new arrive.
+5.1.4 
+Stream-to-FIFO mode
+In Stream-to_FIFO mode, data from X, Y and Z measurement are stored into the FIFO. A 
+watermark interrupt can be enabled (FIFO_WTMK_EN bit into FIFO_CTRL_REG) in order 
+to be raised when the FIFO is filled to the level specified into the FIFO_WTMK_LEVEL bits 
+of FIFO_CTRL_REG. The FIFO continues filling until it’s full (32 slots of 10 data for X, Y and 
+Z). When full, the FIFO discards the older data as the new arrive. Once trigger event occurs, 
+the FIFO starts operating in FIFO mode. 
+5.1.5 
+Retrieve data from FIFO
+FIFO data is read through OUT_X (Addr reg 28h,29h), OUT_Y (Addr reg 2Ah,2Bh) and 
+OUT_Z (Addr reg 2Ch,2Dh). When the FIFO is in stream, Trigger or FIFO mode, a read 
+operation to the OUT_X, OUT_Y or OUT_Z registers provides the data stored into the FIFO. 
+Each time data is read from the FIFO, the oldest X, Y and Z data are placed into the OUT_X, 
+OUT_Y and OUT_Z registers and both single read and read_burst operations can be used.
+
+
+================ [Page 20] ================
+Digital interfaces
+LIS3DH
+20/42
+Doc ID 17530 Rev 1
+6 
+Digital interfaces
+The registers embedded inside the LIS3DH may be accessed through both the I2C and SPI 
+serial interfaces. The latter may be SW configured to operate either in 3-wire or 4-wire 
+interface mode.
+The serial interfaces are mapped onto the same pads. To select/exploit the I2C interface, CS 
+line must be tied high (i.e. connected to Vdd_IO).
+         
+6.1 
+I2C serial interface
+The LIS3DH I2C is a bus slave. The I2C is employed to write data into registers whose 
+content can also be read back.
+The relevant I2C terminology is given in the table below.
+         
+There are two signals associated with the I2C bus: the serial clock line (SCL) and the Serial 
+DAta line (SDA). The latter is a bidirectional line used for sending and receiving the data 
+to/from the interface. Both the lines must be connected to Vdd_IO through external pull-up 
+resistor. When the bus is free both the lines are high.
+The I2C interface is compliant with fast mode (400 kHz) I2C standards as well as with the 
+normal mode.
+Table 10.
+Serial interface pin description
+Pin name
+Pin description
+CS
+SPI enable
+I2C/SPI mode selection (1: I2C mode; 0: SPI enabled)
+SCL
+SPC
+I2C serial clock (SCL)
+SPI serial port clock (SPC)
+SDA
+SDI
+SDO
+I2C serial data (SDA)
+SPI serial data input (SDI)
+3-wire interface serial data output (SDO)
+SA0
+SDO
+I2C less significant bit of the device address (SA0)
+SPI serial data output (SDO)
+Table 11.
+Serial interface pin description
+Term
+Description
+Transmitter
+The device which sends data to the bus
+Receiver
+The device which receives data from the bus
+Master
+The device which initiates a transfer, generates clock signals and terminates a 
+transfer
+Slave
+The device addressed by the master
+
+
+================ [Page 21] ================
+LIS3DH
+Digital interfaces
+Doc ID 17530 Rev 1
+21/42
+6.1.1 
+I2C operation
+The transaction on the bus is started through a START (ST) signal. A START condition is 
+defined as a HIGH to LOW transition on the data line while the SCL line is held HIGH. After 
+this has been transmitted by the Master, the bus is considered busy. The next byte of data 
+transmitted after the start condition contains the address of the slave in the first 7 bits and 
+the eighth bit tells whether the Master is receiving data from the slave or transmitting data to 
+the slave. When an address is sent, each device in the system compares the first seven bits 
+after a start condition with its address. If they match, the device considers itself addressed 
+by the Master. 
+The Slave ADdress (SAD) associated to the LIS3DH is 001100xb. SDO/SA0 pad can be 
+used to modify less significant bit of the device address. If SA0 pad is connected to voltage 
+supply, LSb is ‘1’ (address 0011001b) else if SA0 pad is connected to ground, LSb value is 
+‘0’ (address 0011000b). This solution permits to connect and address two different 
+accelerometers to the same I2C lines.
+Data transfer with acknowledge is mandatory. The transmitter must release the SDA line 
+during the acknowledge pulse. The receiver must then pull the data line LOW so that it 
+remains stable low during the HIGH period of the acknowledge clock pulse. A receiver which 
+has been addressed is obliged to generate an acknowledge after each byte of data 
+received.
+The I2C embedded inside the LIS3DH behaves like a slave device and the following protocol 
+must be adhered to. After the start condition (ST) a slave address is sent, once a slave 
+acknowledge (SAK) has been returned, a 8-bit sub-address (SUB) is transmitted: the 7 LSb 
+represent the actual register address while the MSB enables address auto increment. If the 
+MSb of the SUB field is ‘1’, the SUB (register address) is automatically increased to allow 
+multiple data read/write.
+The slave address is completed with a Read/Write bit. If the bit was ‘1’ (Read), a repeated 
+START (SR) condition must be issued after the two sub-address bytes; if the bit is ‘0’ (Write) 
+the Master transmit to the slave with direction unchanged. Table 12 explains how the 
+SAD+Read/Write bit pattern is composed, listing all the possible configurations.
+Table 12.
+SAD+Read/Write patterns
+         
+Command
+SAD[6:1]
+SAD[0] = SA0
+R/W
+SAD+R/W
+Read
+001100
+0
+1
+00110001 (31h)
+Write
+001100
+0
+0
+00110000 (30h)
+Read
+001100
+1
+1
+00110011 (33h)
+Write
+001100
+1
+0
+00110010 (32h)
+Table 13.
+Transfer when master is writing one byte to slave
+Master
+ST
+SAD + W
+SUB
+DATA
+SP
+Slave
+SAK
+SAK
+SAK
+Table 14.
+Transfer when master is writing multiple bytes to slave:
+Master
+ST
+SAD + W
+SUB
+DATA
+DATA
+SP
+Slave
+SAK
+SAK
+SAK
+SAK
+
+
+================ [Page 22] ================
+Digital interfaces
+LIS3DH
+22/42
+Doc ID 17530 Rev 1
+Data are transmitted in byte format (DATA). Each data transfer contains 8 bits. The number 
+of bytes transferred per transfer is unlimited. Data is transferred with the Most Significant bit 
+(MSb) first. If a receiver can’t receive another complete byte of data until it has performed 
+some other function, it can hold the clock line, SCL LOW to force the transmitter into a wait 
+state. Data transfer only continues when the receiver is ready for another byte and releases 
+the data line. If a slave receiver doesn’t acknowledge the slave address (i.e. it is not able to 
+receive because it is performing some real time function) the data line must be left HIGH by 
+the slave. The Master can then abort the transfer. A LOW to HIGH transition on the SDA line 
+while the SCL line is HIGH is defined as a STOP condition. Each data transfer must be 
+terminated by the generation of a STOP (SP) condition.
+In order to read multiple bytes, it is necessary to assert the most significant bit of the sub-
+address field. In other words, SUB(7) must be equal to 1 while SUB(6-0) represents the 
+address of first register to be read.
+In the presented communication format MAK is Master acknowledge and NMAK is No 
+Master Acknowledge.
+6.2 
+SPI bus interface
+The LIS3DH SPI is a bus slave. The SPI allows to write and read the registers of the device.
+The Serial Interface interacts with the outside world with 4 wires: CS, SPC, SDI and SDO.
+Figure 6.
+Read and write protocol
+CS is the serial port enable and it is controlled by the SPI master. It goes low at the start of 
+the transmission and goes back high at the end. SPC is the serial port clock and it is 
+controlled by the SPI master. It is stopped high when CS is high (no transmission). SDI and 
+Table 15.
+Transfer when master is receiving (reading) one byte of data from slave:
+Master
+ST
+SAD + W
+SUB
+SR
+SAD + R
+NMAK
+SP
+Slave
+SAK
+SAK
+SAK
+DATA
+Table 16.
+Transfer when master is receiving (reading) multiple bytes of data from slave
+Master
+ST
+SAD+W
+SUB
+SR
+SAD+R
+MAK
+MAK
+NMAK
+SP
+Slave
+SAK
+SAK
+SAK
+DATA
+DATA
+DATA
+CS
+SPC
+SDI
+SDO
+RW
+AD5 AD4 AD3 AD2 AD1 AD0
+DI7 DI6 DI5 DI4 DI3 DI2 DI1 DI0
+DO7 DO6 DO5 DO4 DO3 DO2 DO1 DO0
+MS
+
+
+================ [Page 23] ================
+LIS3DH
+Digital interfaces
+Doc ID 17530 Rev 1
+23/42
+SDO are respectively the serial port data input and output. Those lines are driven at the 
+falling edge of SPC and should be captured at the rising edge of SPC.
+Both the read register and write register commands are completed in 16 clock pulses or in 
+multiple of 8 in case of multiple bytes read/write. Bit duration is the time between two falling 
+edges of SPC. The first bit (bit 0) starts at the first falling edge of SPC after the falling edge 
+of CS while the last bit (bit 15, bit 23, ...) starts at the last falling edge of SPC just before the 
+rising edge of CS.
+bit 0: RW bit. When 0, the data DI(7:0) is written into the device. When 1, the data DO(7:0) 
+from the device is read. In latter case, the chip drives SDO at the start of bit 8.
+bit 1: MS bit. When 0, the address remains unchanged in multiple read/write commands. 
+When 1, the address is auto incremented in multiple read/write commands.
+bit 2-7: address AD(5:0). This is the address field of the indexed register.
+bit 8-15: data DI(7:0) (write mode). This is the data that is written into the device (MSb first).
+bit 8-15: data DO(7:0) (read mode). This is the data that is read from the device (MSb first).
+In multiple read/write commands further blocks of 8 clock periods is added. When MS bit is 
+‘0’ the address used to read/write data remains the same for every block. When MS bit is ‘1’ 
+the address used to read/write data is increased at every block.
+The function and the behavior of SDI and SDO remain unchanged.
+6.2.1 
+SPI read
+Figure 7.
+SPI read protocol
+The SPI Read command is performed with 16 clock pulses. Multiple byte read command is 
+performed adding blocks of 8 clock pulses at the previous one.
+bit 0: READ bit. The value is 1.
+bit 1: MS bit. When 0 do not increment address, when 1 increment address in multiple 
+reading.
+bit 2-7: address AD(5:0). This is the address field of the indexed register. 
+bit 8-15: data DO(7:0) (read mode). This is the data that is read from the device (MSb first).
+bit 16-... : data DO(...-8). Further data in multiple byte reading.
+CS
+SPC
+SDI
+SDO
+RW
+DO7 DO6 DO5 DO4 DO3 DO2 DO1 DO0
+AD5 AD4 AD3 AD2 AD1 AD0
+MS
+
+
+================ [Page 24] ================
+Digital interfaces
+LIS3DH
+24/42
+Doc ID 17530 Rev 1
+Figure 8.
+Multiple bytes SPI read protocol (2 bytes example)
+6.2.2 
+SPI write
+Figure 9.
+SPI write protocol
+The SPI Write command is performed with 16 clock pulses. Multiple byte write command is 
+performed adding blocks of 8 clock pulses at the previous one.
+bit 0: WRITE bit. The value is 0.
+bit 1: MS bit. When 0 do not increment address, when 1 increment address in multiple 
+writing.
+bit 2 -7: address AD(5:0). This is the address field of the indexed register. 
+bit 8-15: data DI(7:0) (write mode). This is the data that is written inside the device (MSb 
+first).
+bit 16-... : data DI(...-8). Further data in multiple byte writing.
+Figure 10.
+Multiple bytes SPI write protocol (2 bytes example)
+CS
+SPC
+SDI
+SDO
+RW
+DO7 DO6 DO5 DO4 DO3 DO2 DO1 DO0
+AD5 AD4 AD3 AD2 AD1 AD0
+DO15 DO14 DO13 DO12 DO11 DO10 DO9 DO8
+MS
+CS
+SPC
+SDI
+RW
+DI7
+DI6
+DI5
+DI4
+DI3
+DI2
+DI1
+DI0
+AD5 AD4 AD3 AD2 AD1 AD0
+MS
+CS
+SPC
+SDI
+RW
+AD5 AD4 AD3 AD2 AD1 AD0
+DI7 DI6 DI5 DI4 DI3 DI2 DI1 DI0 DI15 DI14 DI13 DI12 DI11 DI10 DI9 DI8
+MS
+
+
+================ [Page 25] ================
+LIS3DH
+Digital interfaces
+Doc ID 17530 Rev 1
+25/42
+6.2.3 
+SPI read in 3-wires mode
+3-wires mode is entered by setting to ‘1’ bit SIM (SPI serial interface mode selection) in 
+CTRL_REG4.
+Figure 11.
+SPI read protocol in 3-wires mode
+The SPI read command is performed with 16 clock pulses:
+bit 0: READ bit. The value is 1.
+bit 1: MS bit. When 0 do not increment address, when 1 increment address in multiple 
+reading.
+bit 2-7: address AD(5:0). This is the address field of the indexed register. 
+bit 8-15: data DO(7:0) (read mode). This is the data that is read from the device (MSb first).
+Multiple read command is also available in 3-wires mode.
+CS
+SPC
+SDI/O
+RW
+DO7 DO6 DO5 DO4 DO3 DO2 DO1 DO0
+AD5
+AD4 AD3 AD2 AD1 AD0
+MS
+
+
+================ [Page 26] ================
+Register mapping
+LIS3DH
+26/42
+Doc ID 17530 Rev 1
+7 
+Register mapping
+The table given below provides a listing of the 8 bit registers embedded in the device and 
+the related addresses:
+         Table 17.
+Register address map
+Name
+Type
+Register address
+Default
+Comment
+Hex
+Binary
+Reserved (do not modify)
+00 - 06
+Reserved
+STATUS_REG_AUX
+r
+07
+000 0111
+OUT_ADC1_L
+r
+08
+000 1000
+output
+OUT_ADC1_H
+r
+09
+000 1001
+output
+OUT_ADC2_L
+r
+0A
+000 1010
+output
+OUT_ADC2_H
+r
+0B
+000 1011
+output
+OUT_ADC3_L
+r
+0C
+000 1100
+output
+OUT_ADC3_H
+r
+0D
+000 1101
+output
+INT_COUNTER_REG
+r
+0E
+000 1110
+WHO_AM_I
+r
+0F
+000 1111 00110011 Dummy register
+Reserved (do not modify)
+10 - 1E
+Reserved
+TEMP_CFG_REG
+rw
+1F
+001 1111
+CTRL_REG1
+rw
+20
+010 0000 00000111
+CTRL_REG2
+rw
+21
+010 0001 00000000
+CTRL_REG3
+rw
+22
+010 0010 00000000
+CTRL_REG4
+rw
+23
+010 0011 00000000
+CTRL_REG5
+rw
+24
+010 0100 00000000
+CTRL_REG6
+rw
+25
+010 0101 00000000
+REFERENCE
+rw
+26
+010 0110 00000000
+STATUS_REG2
+r
+27
+010 0111 00000000
+OUT_X_L
+r
+28
+010 1000
+output
+OUT_X_H
+r
+29
+010 1001
+output
+OUT_Y_L
+r
+2A
+010 1010
+output
+OUT_Y_H
+r
+2B
+010 1011
+output
+OUT_Z_L
+r
+2C
+010 1100
+output
+OUT_Z_H
+r
+2D
+010 1101
+output
+FIFO_CTRL_REG
+rw
+2E
+010 1110 00000000
+FIFO_SRC_REG
+r
+2F
+010 1111
+INT1_CFG
+rw
+30
+011 0000 00000000
+
+
+================ [Page 27] ================
+LIS3DH
+Register mapping
+Doc ID 17530 Rev 1
+27/42
+Registers marked as Reserved must not be changed. The writing to those registers may 
+cause permanent damages to the device.
+The content of the registers that are loaded at boot should not be changed. They contain the 
+factory calibration values. Their content is automatically restored when the device is 
+powered-up.
+INT1_SOURCE
+r
+31
+011 0001 00000000
+INT1_THS
+rw
+32
+011 0010 00000000
+INT1_DURATION
+rw
+33
+011 0011 00000000
+Reserved
+rw
+34-37
+00000000
+CLICK_CFG
+rw
+38
+011 1000 00000000
+CLICK_SRC
+r
+39
+011 1001 00000000
+CLICK_THS
+rw
+3A
+011 1010 00000000
+TIME_LIMIT
+rw
+3B
+011 1011 00000000
+TIME_LATENCY
+rw
+3C
+011 1100 00000000
+TIME_WINDOW
+rw
+3D
+011 1101 00000000
+Table 17.
+Register address map
+Name
+Type
+Register address
+Default
+Comment
+Hex
+Binary
+
+
+================ [Page 28] ================
+Registers description
+LIS3DH
+28/42
+Doc ID 17530 Rev 1
+8 
+Registers description
+8.1 
+STATUS_AUX (07h)
+8.2 
+OUT_1_L (08h), OUT_1_H (09h)
+1-axis acceleration data. The value is expressed in two’s complement.
+8.3 
+OUT_2_L (0Ah), OUT_2_H (0Bh)
+2-axis acceleration data. The value is expressed in two’s complement.
+8.4 
+OUT_3_L (0Ch), OUT_3_H (0Dh)
+3-axis acceleration data. The value is expressed in two’s complement.
+Table 18.
+STATUS_REG_AUX register
+321OR
+3OR
+2OR
+1OR
+321DA
+3DA
+2DA
+1DA
+Table 19.
+STATUS_REG_AUX description
+321OR
+1, 2 and 3 axis data overrun. Default value: 0
+(0: no overrun has occurred; 1: a new set of data has overwritten the previous ones)
+3OR
+3 axis data overrun. Default value: 0
+(0: no overrun has occurred; 
+1: a new data for the 3-axis has overwritten the previous one)
+2OR
+2 axis data overrun. Default value: 0
+(0: no overrun has occurred; 
+1: a new data for the 4-axis has overwritten the previous one)
+1OR
+1 axis data overrun. Default value: 0
+(0: no overrun has occurred;
+1: a new data for the 1-axis has overwritten the previous one)
+321DA
+1, 2 and 3 axis new data available. Default value: 0
+(0: a new set of data is not yet available; 1: a new set of data is available)
+3DA
+3 axis new data available. Default value: 0
+(0: a new data for the 3-axis is not yet available;
+1: a new data for the 3-axis is available)
+2DA
+2 axis new data available. Default value: 0
+(0: a new data for the 2-axis is not yet available;
+1: a new data for the 2-axis is available)
+1DA
+1 axis new data available. Default value: 0
+(0: a new data for the 1-axis is not yet available;
+1: a new data for the 1-axis is available)
+
+
+================ [Page 29] ================
+LIS3DH
+Registers description
+Doc ID 17530 Rev 1
+29/42
+8.5 
+INT_COUNTER (0Eh)
+8.6 
+WHO_AM_I (0Fh)
+Device identification register.
+8.7 
+TEMP_CFG_REG (1Fh)
+8.8 
+CTRL_REG1 (20h)
+Table 20.
+INT_COUNTER register
+IC7
+IC6
+IC5
+IC4
+IC3
+IC2
+IC1
+IC0
+Table 21.
+WHO_AM_I register
+0
+0
+1
+1
+0
+0
+1
+1
+Table 22.
+TEMP_CFG_REG register
+ADC_PD
+TEMP_EN
+0
+0
+0
+0
+0
+0
+Table 23.
+TEMP_CFG_REG description
+ADC_PD
+ADC enable. Default value: 0
+(0: ADC disabled; 1: ADC enabled)
+TEMP_EN
+Temperature sensor (T) enable. Default value: 0
+(0: T disabled; 1: T enabled)
+Table 24.
+CTRL_REG1 register
+ODR3
+ODR2
+ODR1
+ODR0
+LPen
+Zen
+Yen
+Xen
+Table 25.
+CTRL_REG1 description
+ODR3-0
+Data rate selection. Default value: 00
+(0000:50 Hz; Others: Refer to Table 25, “Data rate configuration”)
+LPen
+Low power mode enable. Default value: 0
+(0: normal mode, 1: low power mode)
+Zen
+Z axis enable. Default value: 1
+(0: Z axis disabled; 1: Z axis enabled)
+Yen
+Y axis enable. Default value: 1
+(0: Y axis disabled; 1: Y axis enabled)
+Xen
+X axis enable. Default value: 1
+(0: X axis disabled; 1: X axis enabled)
+
+
+================ [Page 30] ================
+Registers description
+LIS3DH
+30/42
+Doc ID 17530 Rev 1
+ODR<3:0> is used to set power mode and ODR selection. In the following table are reported 
+all frequency resulting in combination of ODR<3:0>
+8.9 
+CTRL_REG2 (21h)
+Table 26.
+Data rate configuration
+ODR3
+ODR2
+ODR1
+ODR0
+Power mode selection
+0
+0
+0
+0
+Power down mode
+0
+0
+0
+1
+Normal / low power mode (1 Hz)
+0
+0
+1
+0
+Normal / low power mode (10 Hz)
+0
+0
+1
+1
+Normal / low power mode (25 Hz)
+0
+1
+0
+0
+Normal / low power mode (50 Hz)
+0
+1
+0
+1
+Normal / low power mode (100 Hz)
+0
+1
+1
+0
+Normal / low power mode (200 Hz)
+0
+1
+1
+1
+Normal / low power mode (400 Hz)
+1
+0
+0
+0
+Low power mode (1.6 KHz)
+1
+0
+0
+1
+Normal (1.25 kHz) / low power mode (5 KHz)
+Table 27.
+CTRL_REG2 register
+HPM1
+HPM0
+HPCF2
+HPCF1
+FDS
+HPCLICK
+HPIS2
+HPIS1
+Table 28.
+CTRL_REG2 description
+HPM1 -HPM0
+High pass filter mode selection. Default value: 00
+Refer to Table 29, "High pass filter mode configuration"
+HPCF2 -
+HPCF1
+High pass filter cut off frequency selection
+FDS
+Filtered data selection. Default value: 0
+(0: internal filter bypassed; 1: data from internal filter sent to output register and 
+FIFO)
+HPCLICK
+High pass filter enabled for CLICK function.
+(0: filter bypassed; 1: filter enabled)
+HPIS2
+High pass filter enabled for AOI function on interrupt 2, 
+(0: filter bypassed; 1: filter enabled)
+HPIS1
+High pass filter enabled for AOI function on interrupt 1, 
+(0: filter bypassed; 1: filter enabled)
+
+
+================ [Page 31] ================
+LIS3DH
+Registers description
+Doc ID 17530 Rev 1
+31/42
+8.10 
+CTRL_REG3 (22h) 
+8.11 
+CTRL_REG4 (23h)
+Table 29.
+High pass filter mode configuration
+HPM1
+HPM0
+High pass filter mode
+0
+0
+Normal mode (reset reading HP_RESET_FILTER)
+0
+1
+Reference signal for filtering
+1
+0
+Normal mode
+1
+1
+Autoreset on interrupt event
+Table 30.
+CTRL_REG3 register
+I1_CLICK
+I1_AOI1
+I1_AOI2
+I1_DRDY1
+I1_DRDY2
+I1_WTM
+I1_OVERRUN
+--
+Table 31.
+CTRL_REG3 description
+I1_CLICK 
+CLICK interrupt on INT1. Default value 0.
+(0: Disable; 1: Enable)
+I1_AOI1
+AOI1 interrupt on INT1. Default value 0.
+(0: Disable; 1: Enable)
+I1_AOI2
+AOI2 interrupt on INT1. Default value 0.
+(0: Disable; 1: Enable)
+I1_DRDY1
+DRDY1 interrupt on INT1. Default value 0.
+(0: Disable; 1: Enable)
+I1_DRDY2
+DRDY2 interrupt on INT1. Default value 0.
+(0: Disable; 1: Enable)
+I1_WTM
+FIFO Watermark interrupt on INT1. Default value 0.
+(0: Disable; 1: Enable)
+I1_OVERRUN
+FIFO Overrun interrupt on INT1. Default value 0.
+(0: Disable; 1: Enable)
+Table 32.
+CTRL_REG4 register
+BDU
+BLE
+FS1
+FS0
+HR
+ST1
+ST0
+SIM
+Table 33.
+CTRL_REG4 description
+BDU
+Block data update. Default value: 0
+(0: continuos update; 1: output registers not updated until MSB and LSB 
+reading)
+BLE 
+Big/little endian data selection. Default value 0.
+(0: Data LSB @ lower address; 1: Data MSB @ lower address)
+FS1-FS0
+Full scale selection. default value: 00
+(00: +/- 2G; 01: +/- 4G; 10: +/- 8G; 11: +/- 16G)
+
+
+================ [Page 32] ================
+Registers description
+LIS3DH
+32/42
+Doc ID 17530 Rev 1
+         
+8.12 
+CTRL_REG5 (24h)
+         
+8.13 
+CTRL_REG6 (25h)
+         
+8.14 
+REFERENCE/DATACAPTURE (26h)
+         
+HR
+High resolution output mode: Default value: 0
+(0: High resolution disable; 1: High resolution Enable)
+ST1-ST0
+Self test enable. Default value: 00
+(00: Self test disabled; Other: See Table 34)
+SIM
+SPI serial interface mode selection. Default value: 0
+(0: 4-wire interface; 1: 3-wire interface).
+Table 34.
+Self test mode configuration
+ST1
+ST0
+Self test mode
+0
+0
+Normal mode
+0
+1
+Self test 0
+1
+0
+Self test 1
+1
+1
+--
+Table 33.
+CTRL_REG4 description (continued)
+Table 35.
+CTRL_REG5 register
+BOOT
+FIFO_EN
+--
+--
+LIR_INT1
+D4D_INT1
+0
+0
+Table 36.
+CTRL_REG5 description
+BOOT
+Reboot memory content. Default value: 0
+(0: normal mode; 1: reboot memory content)
+FIFO_EN
+FIFO enable. Default value: 0
+(0: FIFO disable; 1: FIFO Enable)
+LIR_INT1
+Latch interrupt request on INT1_SRC register, with INT1_SRC register 
+cleared by reading INT1_SRC itself. Default value: 0.
+(0: interrupt request not latched; 1: interrupt request latched)
+D4D_INT1
+4D enable: 4D detection is enabled on INT1 when 6D bit on INT1_CFG is set 
+to 1.
+Table 37.
+CTRL_REG6 register
+I2_CLICKen
+I2_INT1
+0
+BOOT_I1
+0
+- -
+H_LACTIVE
+-
+Table 38.
+REFERENCE register
+Ref7
+Ref6
+Ref5
+Ref4
+Ref3
+Ref2
+Ref1
+Ref0
+
+
+================ [Page 33] ================
+LIS3DH
+Registers description
+Doc ID 17530 Rev 1
+33/42
+8.15 
+STATUS_REG (27h)
+8.16 
+OUT_X_L (28h), OUT_X_H (29h)
+X-axis acceleration data. The value is expressed in two’s complement.
+8.17 
+OUT_Y_L (2Ah), OUT_Y_H (2Bh)
+Y-axis acceleration data. The value is expressed in two’s complement.
+8.18 
+OUT_Z_L (2Ch), OUT_Z_H (2Dh)
+Z-axis acceleration data. The value is expressed in two’s complement.
+Table 39.
+REFERENCE register description
+Ref 7-Ref0
+Reference value for Interrupt generation. Default value: 0
+Table 40.
+STATUS register
+ZYXOR
+ZOR
+YOR
+XOR
+ZYXDA
+ZDA
+YDA
+XDA
+Table 41.
+STATUS register description
+ZYXOR
+X, Y and Z axis data overrun. Default value: 0
+(0: no overrun has occurred; 1: a new set of data has overwritten the previous ones)
+ZOR
+Z axis data overrun. Default value: 0
+(0: no overrun has occurred; 1: a new data for the Z-axis has overwritten the previous 
+one)
+YOR
+Y axis data overrun. Default value: 0
+(0: no overrun has occurred; 
+1: a new data for the Y-axis has overwritten the previous one)
+XOR
+X axis data overrun. Default value: 0
+(0: no overrun has occurred; 
+1: a new data for the X-axis has overwritten the previous one)
+ZYXDA
+X, Y and Z axis new data available. Default value: 0
+(0: a new set of data is not yet available; 1: a new set of data is available)
+ZDA
+Z axis new data available. Default value: 0
+(0: a new data for the Z-axis is not yet available; 
+1: a new data for the Z-axis is available)
+YDA
+Y axis new data available. Default value: 0
+(0: a new data for the Y-axis is not yet available; 
+1: a new data for the Y-axis is available)
+
+
+================ [Page 34] ================
+Registers description
+LIS3DH
+34/42
+Doc ID 17530 Rev 1
+8.19 
+FIFO_CTRL_REG (2Eh)
+8.20 
+FIFO_SRC_REG (2Fh)
+8.21 
+INT1_CFG (30h)
+Table 42.
+REFERENCE register
+FM1
+FM0
+TR
+FTH4
+FTH3
+FTH2
+FTH1
+FTH0
+Table 43.
+REFERENCE register description
+FM1-FM0
+FIFO mode selection. Default value: 00 (see Table 44)
+TR
+Trigger selection. Default value: 0
+0: Trigger event liked to trigger signal on INT1 
+1: Trigger event liked to trigger signal on INT2
+FTH4:0
+Default value: 0
+Table 44.
+FIFO mode configuration
+FM1
+FM0
+Self test mode
+0
+0
+Bypass mode
+0
+1
+FIFO mode
+1
+0
+Stream mode
+1
+1
+Trigger mode
+Table 45.
+FIFO_SRC register
+WTM
+OVRN_FIFO
+EMPTY
+FSS4
+FSS3
+FSS2
+FSS1
+FSS0
+Table 46.
+INT1_CFG register
+AOI
+6D
+ZHIE/
+ZUPE
+ZLIE/
+ZDOWNE
+YHIE/
+YUPE
+YLIE/
+YDOWNE
+XHIE/
+XUPE
+XLIE/
+XDOWNE
+Table 47.
+INT1_CFG description
+AOI
+And/Or combination of Interrupt events. Default value: 0. Refer to Table 48, "Inter-
+rupt mode"
+6D
+6 direction detection function enabled. Default value: 0. Refer to Table 48, "Interrupt 
+mode"
+ZHIE/
+ZUPE
+Enable interrupt generation on Z high event or on Direction recognition. Default 
+value: 0 (0: disable interrupt request;1: enable interrupt request)
+
+
+================ [Page 35] ================
+LIS3DH
+Registers description
+Doc ID 17530 Rev 1
+35/42
+Content of this register is loaded at boot.
+Write operation at this address is possible only after system boot.
+Difference between AOI-6D = ‘01’ and AOI-6D = ‘11’.
+AOI-6D = ‘01’ is movement recognition. An interrupt is generate when orientation move from
+unknown zone to known zone. The interrupt signal stay for a duration ODR.
+AOI-6D = ‘11’ is direction recognition. An interrupt is generate when orientation is inside a
+known zone. The interrupt signal stay until orientation is inside the zone.
+8.22 
+INT1_SRC (31h)
+ZLIE/
+ZDOWNE
+Enable interrupt generation on Z low event or on Direction recognition. Default 
+value: 0 (0: disable interrupt request;1: enable interrupt request)
+YHIE/
+YUPE
+Enable interrupt generation on Y high event or on Direction recognition. Default 
+value: 0 (0: disable interrupt request; 1: enable interrupt request.)
+YLIE/
+YDOWNE
+Enable interrupt generation on Y low event or on Direction recognition. Default 
+value: 0 (0: disable interrupt request; 1: enable interrupt request.)
+XHIE/
+XUPE
+Enable interrupt generation on X high event or on Direction recognition. Default 
+value: 0 (0: disable interrupt request; 1: enable interrupt request.)
+XLIE/XDOWNE Enable interrupt generation on X low event or on Direction recognition. Default 
+value: 0 (0: disable interrupt request; 1: enable interrupt request.)
+Table 48.
+Interrupt mode
+AOI
+6D
+Interrupt mode
+0
+0
+OR combination of interrupt events
+0
+1
+6 direction movement recognition
+1
+0
+AND combination of interrupt events
+1
+1
+6 direction position recognition
+Table 47.
+INT1_CFG description
+Table 49.
+INT1_SRC register
+0
+IA
+ZH
+ZL
+YH
+YL
+XH
+XL
+Table 50.
+INT1_SRC description
+IA
+Interrupt active. Default value: 0
+(0: no interrupt has been generated; 1: one or more interrupts have been generated)
+ZH
+Z high. Default value: 0
+(0: no interrupt, 1: Z High event has occurred)
+ZL
+Z low. Default value: 0
+(0: no interrupt; 1: Z Low event has occurred)
+YH
+Y high. Default value: 0
+(0: no interrupt, 1: Y High event has occurred)
+
+
+================ [Page 36] ================
+Registers description
+LIS3DH
+36/42
+Doc ID 17530 Rev 1
+Interrupt 1 source register. Read only register. 
+Reading at this address clears INT1_SRC IA bit (and the interrupt signal on INT 1 pin) and 
+allows the refreshment of data in the INT1_SRC register if the latched option was chosen.
+8.23 
+INT1_THS (32h)
+8.24 
+INT1_DURATION (33h)
+D6 - D0 bits set the minimum duration of the Interrupt 1 event to be recognized. Duration
+steps and maximum values depend on the ODR chosen. 
+8.25 
+CLICK_CFG (38h)
+YL
+Y low. Default value: 0
+(0: no interrupt, 1: Y Low event has occurred)
+XH
+X high. Default value: 0
+(0: no interrupt, 1: X High event has occurred)
+XL
+X low. Default value: 0
+(0: no interrupt, 1: X Low event has occurred)
+Table 50.
+INT1_SRC description
+Table 51.
+INT1_THS register
+0
+THS6
+THS5
+THS4
+THS3
+THS2
+THS1
+THS0
+Table 52.
+INT1_THS description
+THS6 - THS0
+Interrupt 1 threshold. Default value: 000 0000
+Table 53.
+INT1_DURATION register
+0
+D6
+D5
+D4
+D3
+D2
+D1
+D0
+Table 54.
+INT1_DURATION description
+D6 - D0
+Duration value. Default value: 000 0000
+Table 55.
+CLICK_CFG register
+--
+--
+ZD
+ZS
+YD
+YS
+XD
+XS
+
+
+================ [Page 37] ================
+LIS3DH
+Registers description
+Doc ID 17530 Rev 1
+37/42
+8.26 
+CLICK_SRC (39h)
+Table 56.
+CLICK_CFG description
+ZD
+Enable interrupt double CLICK-CLICK on Z axis. Default value: 0
+(0: disable interrupt request; 1: enable interrupt request on measured accel. value 
+higher than preset threshold)
+ZS
+Enable interrupt single CLICK-CLICK on Z axis. Default value: 0
+(0: disable interrupt request; 1: enable interrupt request on measured accel. value 
+higher than preset threshold)
+YD
+Enable interrupt double CLICK-CLICK on Y axis. Default value: 0
+(0: disable interrupt request; 1: enable interrupt request on measured accel. value 
+higher than preset threshold)
+YS
+Enable interrupt single CLICK-CLICK on Y axis. Default value: 0
+(0: disable interrupt request; 1: enable interrupt request on measured accel. value 
+higher than preset threshold)
+XD
+Enable interrupt double CLICK-CLICK on X axis. Default value: 0
+(0: disable interrupt request; 1: enable interrupt request on measured accel. value 
+higher than preset threshold)
+XS
+Enable interrupt single CLICK-CLICK on X axis. Default value: 0
+(0: disable interrupt request; 1: enable interrupt request on measured accel. value 
+higher than preset threshold)
+Table 57.
+CLICK_SRC register
+IA
+DCLICK
+SCLICK
+Sign
+Z
+Y
+X
+Table 58.
+CLICK_SRC description
+-
+-
+IA
+Interrupt active. Default value: 0
+(0: no interrupt has been generated; 1: one or more interrupts have been generated)
+DCLICK
+Double CLICK-CLICK enable. Default value: 0 (0:double CLICK-CLICK detection dis-
+able, 1: double CLICK-CLICK detection enable)
+SCLICK
+Single CLICK-CLICK enable. Default value: 0 (0:Single CLICK-CLICK detection dis-
+able, 1: single CLICK-CLICK detection enable)
+Sign
+CLICK-CLICK Sign. 0: positive detection, 1: negative detection
+Z
+Z CLICK-CLICK detection. Default value: 0
+(0: no interrupt, 1: Z High event has occurred)
+Y
+Y CLICK-CLICK detection. Default value: 0
+(0: no interrupt, 1: Y High event has occurred)
+X
+X CLICK-CLICK detection. Default value: 0
+(0: no interrupt, 1: X High event has occurred)
+
+
+================ [Page 38] ================
+Registers description
+LIS3DH
+38/42
+Doc ID 17530 Rev 1
+8.27 
+CLICK_THS (3Ah)
+8.28 
+TIME_LIMIT (3Bh)
+8.29 
+TIME_LATENCY (3Ch)
+8.30 
+TIME WINDOW(3Dh)
+Table 59.
+CLICK_THS register
+-
+Ths6
+Ths5
+Ths4
+Ths3
+Ths2
+Ths1
+Ths0
+Table 60.
+CLICK_SRC description
+Ths6-Ths0
+CLICK-CLICK threshold. Default value: 000 0000
+Table 61.
+TIME_LIMIT register
+-
+TLI6
+TLI5
+TLI4
+TLI3
+TLI2
+TLI1
+TLI0
+Table 62.
+TIME_LIMIT description
+TLI7-TLI0
+CLICK-CLICK Time Limit. Default value: 000 0000
+Table 63.
+TIME_LATENCY register
+TLA7
+TLA6
+TLA5
+TLA4
+TLA3
+TLA2
+TLA1
+TLA0
+Table 64.
+TIME_LATENCY description
+TLA7-TLA0
+CLICK-CLICK time latency. Default value: 000 0000
+Table 65.
+TIME_WINDOW register
+TW7
+TW6
+TW5
+TW4
+TW3
+TW2
+TW1
+TW0
+Table 66.
+TIME_WINDOW description
+TW7-TW0
+CLICK-CLICK time window
+
+
+================ [Page 39] ================
+LIS3DH
+Package information
+Doc ID 17530 Rev 1
+39/42
+9 
+Package information
+In order to meet environmental requirements, ST offers these devices in different grades of
+ECOPACK® packages, depending on their level of environmental compliance. ECOPACK®
+specifications, grade definitions and product status are available at: www.st.com. 
+ECOPACK is an ST trademark. 
+
+
+================ [Page 40] ================
+Package information
+LIS3DH
+40/42
+Doc ID 17530 Rev 1
+Figure 12.
+LGA-16: Mechanical data and package dimensions
+Table 67.
+LGA-16: Mechanical data
+Dim
+mm 
+Min. 
+Typ. 
+Max. 
+A1 
+1
+A2 
+0.785
+A3 
+0.2
+D1 
+2.85
+3
+3.15
+E1 
+2.85
+3
+3.15
+L1 
+1
+1.06
+L2 
+2
+2.06
+N1 
+0.5
+N2 
+1
+M 
+0.04
+0.1
+0.16
+P1 
+0.875
+P2 
+1.275
+T1 
+0.29
+0.35
+0.41
+T2 
+0.19
+0.25
+0.31
+d 
+0.15
+k 
+0.05
+7983231
+
+
+================ [Page 41] ================
+LIS3DH
+Revision history
+Doc ID 17530 Rev 1
+41/42
+10 
+Revision history
+         Table 68.
+Document revision history
+Date
+Revision
+Changes
+21-May-2010
+1
+Initial release
+
+
+================ [Page 42] ================
+LIS3DH
+42/42
+Doc ID 17530 Rev 1
+ 
+Please Read Carefully:
+Information in this document is provided solely in connection with ST products. STMicroelectronics NV and its subsidiaries (“ST”) reserve the
+right to make changes, corrections, modifications or improvements, to this document, and the products and services described herein at any
+time, without notice.
+All ST products are sold pursuant to ST’s terms and conditions of sale.
+Purchasers are solely responsible for the choice, selection and use of the ST products and services described herein, and ST assumes no
+liability whatsoever relating to the choice, selection or use of the ST products and services described herein.
+No license, express or implied, by estoppel or otherwise, to any intellectual property rights is granted under this document. If any part of this
+document refers to any third party products or services it shall not be deemed a license grant by ST for the use of such third party products
+or services, or any intellectual property contained therein or considered as a warranty covering the use in any manner whatsoever of such
+third party products or services or any intellectual property contained therein.
+UNLESS OTHERWISE SET FORTH IN ST’S TERMS AND CONDITIONS OF SALE ST DISCLAIMS ANY EXPRESS OR IMPLIED
+WARRANTY WITH RESPECT TO THE USE AND/OR SALE OF ST PRODUCTS INCLUDING WITHOUT LIMITATION IMPLIED
+WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE (AND THEIR EQUIVALENTS UNDER THE LAWS
+OF ANY JURISDICTION), OR INFRINGEMENT OF ANY PATENT, COPYRIGHT OR OTHER INTELLECTUAL PROPERTY RIGHT.
+UNLESS EXPRESSLY APPROVED IN WRITING BY AN AUTHORIZED ST REPRESENTATIVE, ST PRODUCTS ARE NOT
+RECOMMENDED, AUTHORIZED OR WARRANTED FOR USE IN MILITARY, AIR CRAFT, SPACE, LIFE SAVING, OR LIFE SUSTAINING
+APPLICATIONS, NOR IN PRODUCTS OR SYSTEMS WHERE FAILURE OR MALFUNCTION MAY RESULT IN PERSONAL INJURY,
+DEATH, OR SEVERE PROPERTY OR ENVIRONMENTAL DAMAGE. ST PRODUCTS WHICH ARE NOT SPECIFIED AS "AUTOMOTIVE
+GRADE" MAY ONLY BE USED IN AUTOMOTIVE APPLICATIONS AT USER’S OWN RISK.
+Resale of ST products with provisions different from the statements and/or technical features set forth in this document shall immediately void
+any warranty granted by ST for the ST product or service described herein and shall not create or extend in any manner whatsoever, any
+liability of ST.
+ST and the ST logo are trademarks or registered trademarks of ST in various countries.
+Information in this document supersedes and replaces all information previously supplied.
+The ST logo is a registered trademark of STMicroelectronics. All other names are the property of their respective owners.
+© 2010 STMicroelectronics - All rights reserved
+STMicroelectronics group of companies
+Australia - Belgium - Brazil - Canada - China - Czech Republic - Finland - France - Germany - Hong Kong - India - Israel - Italy - Japan - 
+Malaysia - Malta - Morocco - Philippines - Singapore - Spain - Sweden - Switzerland - United Kingdom - United States of America
+www.st.com
+

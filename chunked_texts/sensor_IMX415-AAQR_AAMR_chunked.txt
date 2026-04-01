@@ -1,0 +1,356 @@
+📦 [Chunk 1]
+[부품명: IMX415-AAQR_AAMR]
+1 
+Copyright 2019 Sony Semiconductor Solutions Corporation 
+[Product Information] 
+Ver.1.0 
+IMX415-AAQR 
+Diagonal 6.43 mm (Type 1/2.8) CMOS Solid-state Image Sensor with Square Pixel for 
+Color Cameras 
+Description 
+The IMX415-AAQR is a diagonal 6.4 mm (Type 1/2.8) CMOS active pixel type solid-state image sensor with a 
+square pixel array and 8.46 M effective pixels. This chip operates with analog 2.9 V, digital 1.1 V, and interface 1.8 V 
+triple power supply, and has low power consumption. High sensitivity, low dark current and no smear are achieved 
+through the adoption of R, G and B primary color mosaic filters. This chip features an electronic shutter with variable 
+charge-integration time. 
+(Applications: Surveillance cameras, FA cameras, Industrial cameras) 
+ 
+Features
+--------------------------------------------------
+
+📦 [Chunk 2]
+[부품명: IMX415-AAQR_AAMR]
+charge-integration time. 
+(Applications: Surveillance cameras, FA cameras, Industrial cameras) 
+ 
+Features 
+◆ CMOS active pixel type dots 
+◆ Built-in timing adjustment circuit, H/V driver and serial communication circuit 
+◆ Input frequency: 24 MHz / 27 MHz / 37.125 MHz / 72 MHz / 74.25 MHz 
+◆ Number of recommended recording pixels: 3840 (H) × 2160 (V) approx. 8.29 M pixels 
+◆ Readout mode 
+All-pixel scan mode 
+Horizontal / Vertical 2/2-line binning mode 
+Window cropping mode 
+Horizontal / Vertical direction - Normal / Inverted readout mode 
+◆ Readout rate 
+Maximum frame rate in 
+All-pixel scan mode: 12 bit: 60.3 frame/s, 10 bit: 90.9 frame/s 
+◆ High dynamic range (HDR) function 
+Multiple exposure HDR 
+Digital overlap HDR 
+◆ Synchronizing sensors function
+--------------------------------------------------
+
+📦 [Chunk 3]
+[부품명: IMX415-AAQR_AAMR]
+◆ High dynamic range (HDR) function 
+Multiple exposure HDR 
+Digital overlap HDR 
+◆ Synchronizing sensors function 
+◆ Variable-speed shutter function (resolution 1H units) 
+◆ CDS / PGA function 
+0 dB to 30 dB : Analog Gain 30 dB (step pitch 0.3 dB)  
+30.3 dB to 72 dB : Analog Gain 30 dB + Digital Gain 0.3 dB to 42 dB (step pitch 0.3 dB) 
+◆ Supports I/O 
+CSI-2 serial data output ( 2 Lane / 4 Lane ), RAW10 / RAW12 output 
+◆ Recommended exit pupil distance: –30 mm to –∞ 
+ 
+Sony reserves the right to change products and specifications without prior notice.  
+Sony logo is a registered trademark of Sony Corporation.  
+ 
+ 
+* STARVIS is a trademark of Sony Corporation. The STARVIS is back-illuminated pixel technology used in CMOS image sensors
+--------------------------------------------------
+
+📦 [Chunk 4]
+[부품명: IMX415-AAQR_AAMR]
+* STARVIS is a trademark of Sony Corporation. The STARVIS is back-illuminated pixel technology used in CMOS image sensors  
+ for surveillance camera applications. It features a sensitivity of 2000 mV or more per 1 μm
+2 (color product, when imaging  
+ with a 706 cd/m
+2 light source, F5.6 in 1 s accumulation equivalent), and realizes high picture quality in the visible-light and  
+ near infrared light regions.
+--------------------------------------------------
+
+📦 [Chunk 5]
+[부품명: IMX415-AAQR_AAMR]
+IMX415-AAQR 
+ 
+2 
+Copyright 2019 Sony Semiconductor Solutions Corporation 
+Device Structure 
+◆ CMOS image sensor 
+◆ Image size  
+ 
+ 
+Diagonal 6.4 mm (Type 1/2.8) approx. 8.40 M pixels, All pixels 
+◆ Total number of pixels  
+ 
+3864 (H) × 2228 (V) approx. 8.60 M pixels 
+◆ Number of effective pixels 
+ 
+3864 (H) × 2192 (V) approx. 8.46 M pixels 
+◆ Number of active pixels 
+ 
+3864 (H) × 2176 (V) approx. 8.40 M pixels 
+◆ Number of recommended recording pixels 3840 (H) × 2160 (V) approx. 8.29 M pixels 
+◆ Unit cell size 
+ 
+ 
+1.45 µm (H) × 1.45 µm (V) 
+◆ Optical black 
+ 
+ 
+Horizontal (H) direction: Front 0 pixel, rear 0 pixel 
+ 
+ 
+ 
+ 
+ 
+ 
+Vertical (V) direction: Front 36 pixels, rear 0 pixel 
+◆ Dummy 
+ 
+ 
+ 
+Horizontal (H) direction: Front 0 pixel, rear 0 pixel
+--------------------------------------------------
+
+📦 [Chunk 6]
+[부품명: IMX415-AAQR_AAMR]
+Vertical (V) direction: Front 36 pixels, rear 0 pixel 
+◆ Dummy 
+ 
+ 
+ 
+Horizontal (H) direction: Front 0 pixel, rear 0 pixel 
+ 
+ 
+ 
+ 
+ 
+ 
+Vertical (V) direction: Front 1 pixel, rear 1 pixel 
+◆ Package 
+ 
+ 
+ 
+114 pin LGA 
+ 
+Image Sensor Characteristics 
+(Tj = 60 °C) 
+Item 
+Value 
+Remarks 
+Sensitivity (F5.6) 
+Typ. 
+2048 Digit 
+1/30 s accumulation 
+12 bit converted value 
+Saturation signal 
+Min. 
+3895 Digit 
+12 bit converted value 
+ 
+Basic Drive Mode 
+Drive mode 
+Recommended number 
+of recording pixels 
+Maximum frame rate 
+[frame/s] 
+Output interface 
+ADC [bit] 
+All pixel 
+3840 (H) × 2160 (V) 
+approx. 8.29 M pixels 
+90.9 
+CSI-2 
+10 
+Horizontal/ 
+Vertical 2/2-line 
+binning 
+1920 (H) × 1080 (V) 
+approx. 2.07 M pixels 
+90.9 
+CSI-2 
+10
+--------------------------------------------------
+
+📦 [Chunk 7]
+[부품명: IMX415-AAQR_AAMR]
+1 
+Copyright 2019 Sony Semiconductor Solutions Corporation 
+[Product Information] 
+Ver.1.0 
+IMX415-AAMR 
+Diagonal 6.43 mm (Type 1/2.8) CMOS Solid-state Image Sensor with Square Pixel for 
+Monochrome Cameras 
+Description 
+The IMX415-AAMR is a diagonal 6.4 mm (Type 1/2.8) CMOS active pixel type solid-state image sensor with a 
+square pixel array and 8.46 M effective pixels. This chip operates with analog 2.9 V, digital 1.1 V, and interface 1.8 V 
+triple power supply, and has low power consumption. High sensitivity, low dark current and no smear are achieved. 
+This chip features an electronic shutter with variable charge-integration time. 
+(Applications: Surveillance cameras, FA cameras, Industrial cameras) 
+ 
+Features 
+◆ CMOS active pixel type dots
+--------------------------------------------------
+
+📦 [Chunk 8]
+[부품명: IMX415-AAQR_AAMR]
+(Applications: Surveillance cameras, FA cameras, Industrial cameras) 
+ 
+Features 
+◆ CMOS active pixel type dots 
+◆ Built-in timing adjustment circuit, H/V driver and serial communication circuit 
+◆ Input frequency: 24 MHz / 27 MHz / 37.125 MHz / 72 MHz / 74.25 MHz 
+◆ Number of recommended recording pixels: 3840 (H) × 2160 (V) approx. 8.29 M pixels 
+◆ Readout mode 
+All-pixel scan mode 
+2 × 2 adjacent pixel binning mode 
+Window cropping mode 
+Horizontal / Vertical direction - Normal / Inverted readout mode 
+◆ Readout rate 
+Maximum frame rate in 
+All-pixel scan mode: 12 bit: 60.3 frame/s, 10 bit: 90.9 frame/s 
+◆ High dynamic range (HDR) function 
+Multiple exposure HDR 
+Digital overlap HDR 
+◆ Synchronizing sensors function 
+◆ Variable-speed shutter function (resolution 1H units)
+--------------------------------------------------
+
+📦 [Chunk 9]
+[부품명: IMX415-AAQR_AAMR]
+Multiple exposure HDR 
+Digital overlap HDR 
+◆ Synchronizing sensors function 
+◆ Variable-speed shutter function (resolution 1H units) 
+◆ CDS / PGA function 
+0 dB to 30 dB : Analog Gain 30 dB (step pitch 0.3 dB)  
+30.3 dB to 72 dB : Analog Gain 30 dB + Digital Gain 0.3 dB to 42 dB (step pitch 0.3 dB) 
+◆ Supports I/O 
+CSI-2 serial data output ( 2 Lane / 4 Lane ), RAW10 / RAW12 output 
+◆ Recommended exit pupil distance: –100 mm to –∞ 
+ 
+Sony reserves the right to change products and specifications without prior notice.  
+Sony logo is a registered trademark of Sony Corporation.  
+ 
+ 
+* STARVIS is a trademark of Sony Corporation. The STARVIS is back-illuminated pixel technology used in CMOS image sensors
+--------------------------------------------------
+
+📦 [Chunk 10]
+[부품명: IMX415-AAQR_AAMR]
+* STARVIS is a trademark of Sony Corporation. The STARVIS is back-illuminated pixel technology used in CMOS image sensors  
+ for surveillance camera applications. It features a sensitivity of 2000 mV or more per 1 μm
+2 (color product, when imaging  
+ with a 706 cd/m
+2 light source, F5.6 in 1 s accumulation equivalent), and realizes high picture quality in the visible-light and  
+ near infrared light regions.
+--------------------------------------------------
+
+📦 [Chunk 11]
+[부품명: IMX415-AAQR_AAMR]
+IMX415-AAMR 
+ 
+2 
+Copyright 2019 Sony Semiconductor Solutions Corporation 
+Device Structure 
+◆ CMOS image sensor 
+◆ Image size  
+ 
+ 
+Diagonal 6.4 mm (Type 1/2.8) approx. 8.40 M pixels, All pixels 
+◆ Total number of pixels  
+ 
+3864 (H) × 2228 (V) approx. 8.60 M pixels 
+◆ Number of effective pixels 
+ 
+3864 (H) × 2192 (V) approx. 8.46 M pixels 
+◆ Number of active pixels 
+ 
+3864 (H) × 2176 (V) approx. 8.40 M pixels 
+◆ Number of recommended recording pixels 3840 (H) × 2160 (V) approx. 8.29 M pixels 
+◆ Unit cell size 
+ 
+ 
+1.45 µm (H) × 1.45 µm (V) 
+◆ Optical black 
+ 
+ 
+Horizontal (H) direction: Front 0 pixel, rear 0 pixel 
+ 
+ 
+ 
+ 
+ 
+ 
+Vertical (V) direction: Front 36 pixels, rear 0 pixel 
+◆ Dummy 
+ 
+ 
+ 
+Horizontal (H) direction: Front 0 pixel, rear 0 pixel
+--------------------------------------------------
+
+📦 [Chunk 12]
+[부품명: IMX415-AAQR_AAMR]
+Vertical (V) direction: Front 36 pixels, rear 0 pixel 
+◆ Dummy 
+ 
+ 
+ 
+Horizontal (H) direction: Front 0 pixel, rear 0 pixel 
+ 
+ 
+ 
+ 
+ 
+ 
+Vertical (V) direction: Front 1 pixel, rear 1 pixel 
+◆ Package 
+ 
+ 
+ 
+114 pin LGA 
+ 
+Image Sensor Characteristics 
+(Tj = 60 °C) 
+Item 
+Value 
+Remarks 
+Sensitivity (F8) 
+Typ. 
+1570 Digit 
+1/30 s accumulation 
+12 bit converted value 
+Saturation signal 
+Min. 
+3895 Digit 
+12 bit converted value 
+ 
+Basic Drive Mode 
+Drive mode 
+Recommended number 
+of recording pixels 
+Maximum frame rate 
+[frame/s] 
+Output interface 
+ADC [bit] 
+All pixel 
+3840 (H) × 2160 (V) 
+approx. 8.29 M pixels 
+90.9 
+CSI-2 
+10 
+2 × 2 adjacent  
+pixel binning 
+1920 (H) × 1080 (V) 
+approx. 2.07 M pixels 
+90.9 
+CSI-2 
+10
+--------------------------------------------------
+
