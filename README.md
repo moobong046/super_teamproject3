@@ -74,9 +74,10 @@ RAG 시스템의 성능을 극대화하기 위해, 무작정 최신 모델을 �
 로컬 환경에서 직접 코드를 돌려보고 싶으신 경우 아래 절차를 따릅니다.
 
 **1. 저장소 클론 및 패키지 설치**
+Python 3.10 이상의 가상 환경(Virtual Environment) 세팅 후 아래 명령어를 실행하여 필수 패키지를 설치합니다.
 ```bash
-git clone [https://github.com/moobong046/test.git](https://github.com/moobong046/test.git)
-cd test
+git clone [https://github.com/moobong046/super_teamproject3.git](https://github.com/moobong046/super_teamproject3.git)
+cd super_teamproject3
 pip install -r requirements.txt
 ```
 **2. 환경 변수 등록**
