@@ -1,0 +1,40 @@
+component_name,manufacturer,category,tier,estimated_price_usd
+L76-L,Quectel,gps,Low,3.5
+L89,Quectel,gps,Mid,5.0
+MAX-M10S,u-blox,gps,High,9.0
+NEO-M8N,u-blox,gps,Mid,6.5
+NEO-M9V,u-blox,gps,High,12.0
+ASM330LHH,STMicroelectronics,imu,High,4.5
+BMA253,Bosch,imu,Low,0.8
+BMA400,Bosch,imu,Mid,1.8
+BMI160,Bosch,imu,Low,1.5
+BMI270,Bosch,imu,Mid,2.0
+LIS3DH,STMicroelectronics,imu,Low,0.7
+LSM6DS3,STMicroelectronics,imu,Mid,2.5
+MMA8452Q,NXP,imu,Low,0.9
+MPU-6000,InvenSense,imu,Mid,3.0
+H5TQ2G83DFR,SK Hynix,memory,Low,2.5
+K4B2G1646F,Samsung,memory,Mid,3.0
+KLM8G1GETF-B041,Samsung,memory,Mid,4.5
+MT41K256M16,Micron,memory,Mid,2.8
+THGBMNG5D1LBAIL,Kioxia,memory,High,6.0
+LM2596,Texas Instruments,power,Low,0.5
+MP1584,Monolithic Power Systems,power,Low,0.4
+MP2307,Monolithic Power Systems,power,Mid,0.8
+TPS5430,Texas Instruments,power,High,1.5
+XL4015,XLSEMI,power,Low,0.3
+CV5,Ambarella,processor,High,25.0
+CV25S,Ambarella,processor,Mid,15.0
+H22A,Ambarella,processor,Mid,12.0
+H32,Ambarella,processor,Low,6.0
+DS3231,Maxim Integrated,rtc,High,2.0
+PCF8563,NXP,rtc,Low,0.5
+IMX335LQN,Sony,sensor,Mid,6.0
+IMX415-AAQR_AAMR,Sony,sensor,Mid,10.0
+IMX662-AAQR_AAQR1,Sony,sensor,High,14.0
+IMX678-AAQR_AAQR1,Sony,sensor,High,18.0
+OV2710,OmniVision,sensor,Low,2.0
+OV4689,OmniVision,sensor,Low,3.5
+ESP32,Espressif Systems,wifi,Mid,2.0
+QCA9377,Qualcomm,wifi,High,4.5
+RTL8723DS,Realtek,wifi,Low,1.5
