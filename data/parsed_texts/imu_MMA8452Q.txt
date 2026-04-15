@@ -1,0 +1,5676 @@
+
+================ [Page 1] ================
+ Document Number: MMA8452Q
+Rev. 10, 04/2016
+NXP Semiconductors
+Data sheet: Technical data
+© 2016 NXP B.V.
+MMA8452Q, 3-axis, 12-bit/8-bit 
+digital accelerometer
+The MMA8452Q is a smart, low-power, three-axis, capacitive, micromachined 
+accelerometer with 12 bits of resolution. This accelerometer is packed with 
+embedded functions with flexible user programmable options, configurable to two 
+interrupt pins. Embedded interrupt functions allow for overall power savings 
+relieving the host processor from continuously polling data. 
+The MMA8452Q has user selectable full scales of ±2 g/±4 g/±8 g with high-pass 
+filtered data as well as non-filtered data available real-time. The device can be 
+configured to generate inertial wakeup interrupt signals from any combination of 
+the configurable embedded functions allowing the MMA8452Q to monitor events 
+and remain in a low-power mode during periods of inactivity. The MMA8452Q is 
+available in a 16-pin QFN, 3 mm x 3 mm x 1 mm package. 
+Features
+•
+1.95 V to 3.6 V supply voltage
+•
+1.6 V to 3.6 V interface voltage
+•
+±2 g/±4 g/±8 g dynamically selectable full-scale
+•
+Output data rates (ODR) from 1.56 Hz to 800 Hz
+•
+99 μg/√Hz noise 
+•
+12-bit and 8-bit digital output 
+•
+I2C digital output interface
+•
+Two programmable interrupt pins for six interrupt sources
+•
+Three embedded channels of motion detection
+—
+ Freefall or motion detection: one channel
+—
+ Pulse detection: one channel
+—
+ Transient detection: one channel
+•
+Orientation (portrait/landscape) detection with set hysteresis
+•
+Automatic ODR change for auto-wake and return to sleep
+•
+High-pass filter data available real-time
+•
+Self-test
+•
+Current consumption: 6 μA to 165 μA
+Typical applications
+•
+E-compass applications
+•
+Static orientation detection (portrait/landscape, up/down, left/right, back/front 
+position identification)
+•
+Notebook, e-reader, and laptop tumble and freefall detection
+•
+Real-time orientation detection (virtual reality and gaming 3D user position feedback)
+•
+Real-time activity analysis (pedometer step counting, freefall drop detection for HDD, dead-reckoning GPS backup)
+•
+Motion detection for portable product power saving (auto-sleep and auto-wake for cell phone, PDA, GPS, gaming)
+•
+Shock and vibration monitoring (mechatronic compensation, shipping and warranty usage logging)
+•
+User interface (menu scrolling by orientation change, pulse detection for button replacement)
+Ordering information
+Part number
+Temperature range
+Package description
+Shipping
+MMA8452QT
+–40°C to +85°C
+QFN-16
+Tray
+MMA8452QR1
+–40°C to +85°C
+QFN-16
+Tape and Reel
+MMA8452Q
+16-pin QFN
+3 mm x 3 mm x 1 mm
+Top and bottom view
+Top view
+Pin connections
+1
+2
+3
+4
+5
+9
+10
+11
+12
+13
+14
+15
+16
+8
+7
+6
+NC
+VDD
+NC
+VDDIO
+BYP
+DNC
+SCL
+GND
+NC
+GND
+INT1
+GND
+INT2
+SA0
+NC
+SDA
+
+
+================ [Page 2] ================
+MMA8452Q
+Sensors
+2
+NXP Semiconductors
+Related documentation
+The MMA8452Q device features and operations are described in a variety of reference manuals, user guides, and application 
+notes. To find the most-current versions of these documents:
+1.
+Go to the NXP homepage at:
+http://www.nxp.com/
+2.
+In the ALL search box at the top of the page, enter the device number MMA8452Q.
+3.
+Click the Documents link.
+Contents
+1
+Block Diagram and Pin Description  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  3
+2
+Mechanical and Electrical Specifications. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  6
+2.1
+Mechanical characteristics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  6
+2.2
+Electrical characteristics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  7
+2.3
+I2C interface characteristics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  8
+2.4
+Absolute maximum ratings . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  9
+3
+Terminology  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  10
+3.1
+Sensitivity . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  10
+3.2
+Zero-g offset . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  10
+3.3
+Self-test. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  10
+4
+System Modes (SYSMOD) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  11
+5
+Functionality . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  12
+5.1
+Device calibration . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  13
+5.2
+8-bit or 12-bit data. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  13
+5.3
+Low-power modes vs. high-resolution modes. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  13
+5.4
+Auto-wake/sleep mode . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  13
+5.5
+Freefall and motion detection . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  13
+5.6
+Transient detection . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  14
+5.7
+Pulse detection . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  14
+5.8
+Orientation detection. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  14
+5.9
+Interrupt register configurations  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  16
+5.10
+Serial I2C interface . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  16
+6
+Register Descriptions. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  19
+6.1
+Data registers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  20
+6.2
+Portrait/landscape embedded function registers. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  25
+6.3
+Motion and freefall embedded function registers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  27
+6.4
+Transient (HPF) acceleration detection  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  32
+6.5
+Single, double and directional pulse-detection registers. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  34
+6.6
+Auto-wake/sleep detection . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  39
+6.7
+Control registers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  40
+6.8
+User offset correction registers. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  43
+7
+Printed Circuit Board Layout and Device Mounting . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  47
+7.1
+Printed circuit board layout . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  47
+7.2
+Overview of soldering considerations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  48
+7.3
+Halogen content . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  48
+8
+Package Information. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  49
+8.1
+Tape and reel information. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  49
+8.2
+Package description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  50
+9
+Revision History . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  53
+
+
+================ [Page 3] ================
+Sensors
+NXP Semiconductors
+3
+MMA8452Q
+1
+Block Diagram and Pin Description
+Figure 1. Block diagram
+Figure 2. Direction of the detectable accelerations
+ 12-bit
+SDA
+SCL
+I2C
+Embedded
+DSP
+Functions
+C to V
+Internal
+OSC
+Clock
+GEN
+ADC
+Converter
+VDDIO
+VSS
+X-axis
+Transducer
+Y-axis
+Transducer
+Z-axis
+Transducer
+Freefall
+and Motion
+Detection
+Transient
+Detection
+(i.e., fast-motion,
+transient)
+Orientation with
+Set Hysteresis
+and Z-lockout
+Shake Detection
+through
+Motion
+Threshold
+Auto-wake/auto-sleep configurable with debounce counter and multiple motion interrupts for control
+Auto-wake/sleep
+Active mode
+sleep
+VDD
+INT1
+INT2
+Active mode
+wake
+Single, Double
+and Directional
+Tap Detection
+MODE Options
+Low Power
+Low Noise + Low Power
+High Resolution
+Normal
+MODE Options
+Low Power
+Low Noise + Low Power
+High Resolution
+Normal
+1
+DIRECTION OF THE 
+DETECTABLE ACCELERATIONS
+(BOTTOM VIEW)
+5
+9
+13
+X
+Y
+Z
+1
+(TOP VIEW)
+Earth Gravity
+
+
+================ [Page 4] ================
+Sensors
+4
+NXP Semiconductors
+MMA8452Q
+Figure 3 shows the device configuration in the six different orientation modes. These orientations are defined as the following: 
+PU = portrait up, LR = landscape right, PD = portrait down, LL = landscape left, back and front side views. There are several 
+registers to configure the orientation detection and are described in detail in the register setting section.
+Figure 3. Landscape/portrait orientation
+Figure 4. Application diagram
+Top View
+PU
+Earth Gravity
+Pin 1
+Xout @ 0 g
+Yout @ –1 g
+Zout @ 0 g
+Xout @ 1 g
+Yout @ 0 g
+Zout @ 0 g
+Xout @ 0 g
+Yout @ 1 g
+Zout @ 0 g
+Xout @ –1 g
+Yout @ 0 g
+Zout @ 0 g
+LL
+PD
+LR
+Side View
+FRONT
+Xout @ 0 g
+Yout @ 0 g
+Zout @ 1 g
+BACK
+Xout @ 0 g
+Yout @ 0 g
+Zout @ –1 g
+0.1μF
+1.6V - 3.6V
+VDDIO
+VDDIO
+VDDIO
+4.7kΩ
+4.7kΩ
+1
+GND
+VDDIO
+SCL
+NC
+INT2
+INT1
+GND
+GND
+SDA
+SA0
+VDD
+NC
+NC
+NC
+BYP
+NC
+MMA8452Q
+2
+16
+12
+13
+14
+15
+11
+10
+3
+4
+5
+6
+7
+8
+9
+4.7μF
+INT1
+INT2
+SA0
+0.1μF
+1.95V - 3.6V
+VDD
+SCL
+SDA
+DNC
+
+
+================ [Page 5] ================
+Sensors
+NXP Semiconductors
+5
+MMA8452Q
+The device power is supplied through VDD line. Power supply decoupling capacitors (100 nF ceramic plus 4.7 µF bulk, or a single 
+4.7 µF ceramic) should be placed as near as possible to the pins 1 and 14 of the device.
+The control signals SCL, SDA, and SA0 are not tolerant of voltages more than VDDIO + 0.3 V. If VDDIO is removed, the control 
+signals SCL, SDA, and SA0 will clamp any logic signals with their internal ESD protection diodes. 
+The functions, the threshold and the timing of the two interrupt pins (INT1 and INT2) are user programmable through the I2C 
+interface. The SDA and SCL I2C connections are open drain and therefore require a pullup resistor as shown in the application 
+diagram in Figure 4.
+Table 1. Pin descriptions
+Pin #
+Pin name
+Description
+1
+VDDIO
+Internal power supply (1.62 V to 3.6 V)
+2
+BYP
+Bypass capacitor (0.1 μF)
+3
+DNC
+Do not connect to anything, leave pin isolated and floating.
+4
+SCL
+I2C serial clock, open drain
+5
+GND
+Connect to ground
+6
+SDA
+I2C serial data
+7
+SA0
+I2C least significant bit of the device I2C address, I2C 7-bit address = 0x1C (SA0 = 0), 0x1D (SA0 = 1). 
+8
+NC
+Internally not connected 
+9
+INT2
+Inertial interrupt 2, output pin
+10
+GND
+Connect to ground
+11
+INT1
+Inertial interrupt 1, output pin
+12
+GND
+Connect to ground
+13
+NC
+Internally not connected 
+14
+VDD
+Power supply (1.95 V to 3.6 V)
+15
+NC
+Internally not connected
+16
+NC
+Internally not connected (can be GND or VDD)
+
+
+================ [Page 6] ================
+Sensors
+6
+NXP Semiconductors
+MMA8452Q
+2
+Mechanical and Electrical Specifications
+2.1
+Mechanical characteristics
+Table 2. Mechanical characteristics @  VDD = 2.5 V, VDDIO = 1.8 V, T = 25 °C unless otherwise noted.
+Parameter
+Test conditions
+Symbol
+Min
+Typ
+Max
+Unit
+Measurement range(1)
+1. Dynamic range is limited to 4 g when the low-noise bit in register 0x2A, bit 2 is set.
+FS[1:0] set to 00
+2 g mode
+ FS
+—
+±2
+—
+ g
+FS[1:0] set to 01
+4 g mode
+—
+±4
+—
+FS[1:0] set to 10
+8 g mode
+—
+±8
+—
+Sensitivity
+FS[1:0] set to 00
+2 g mode
+ So
+—
+1024
+—
+counts/g
+FS[1:0] set to 01
+4 g mode
+—
+512
+—
+FS[1:0] set to 10
+8 g mode
+—
+256
+—
+Sensitivity accuracy(2)
+2. Sensitivity remains in spec as stated, but changing oversampling mode to low power causes 3% sensitivity shift. This behavior is also seen 
+when changing from 800 Hz to any other data rate in the normal, low noise + low power or high resolution mode.
+—
+Soa
+—
+±2.64
+—
+%
+Sensitivity change vs. temperature
+FS[1:0] set to 00
+2 g mode
+ TCSo
+—
+±0.008
+—
+%/°C
+FS[1:0] set to 01
+4 g mode
+—
+—
+FS[1:0] set to 10
+8 g mode
+—
+—
+Zero-g level offset accuracy(3)
+3. Before board mount.
+FS[1:0] 2 g, 4 g, 8 g
+ TyOff
+—
+±17
+—
+ mg
+Zero-g level offset accuracy post-board mount(4)
+4. Post-board mount offset specifications are based on an 8-layer PCB, relative to 25°C.
+FS[1:0] 2 g, 4 g, 8 g
+TyOffPBM
+—
+±20
+—
+ mg
+Zero-g level change vs. temperature
+–40 °C to 85 °C
+ TCOff
+—
+±0.15
+—
+ mg/°C
+Self-test output change(5)
+X
+Y
+Z
+5. Self-test is one direction only. 
+FS[1:0] set to 0
+ 4 g mode
+ Vst
+—
+—
+—
++44
++61
++392
+—
+—
+—
+ LSB
+ODR accuracy
+2-MHz clock
+—
+—
+—
+±2
+—
+%
+Output data bandwidth
+—
+BW
+ODR/3
+—
+ODR/2
+ Hz
+Output noise 
+Normal mode ODR = 400 Hz
+Noise
+—
+126
+—
+ µg/√Hz
+Output noise low-noise mode(1)
+Normal mode ODR = 400 Hz
+Noise
+—
+99
+—
+ µg/√Hz
+Operating temperature range
+—
+Top
+–40
+—
++85
+ °C
+
+
+================ [Page 7] ================
+Sensors
+NXP Semiconductors
+7
+MMA8452Q
+2.2
+Electrical characteristics
+Table 3.  Electrical characteristics @ VDD = 2.5 V, VDDIO = 1.8 V, T = 25 °C unless otherwise noted.
+Parameter
+Test conditions
+Symbol
+Min
+Typ
+Max
+Unit
+Supply voltage
+—
+VDD(1)
+1. There is no requirement for power supply sequencing. The VDDIO input voltage can be higher than the VDD input voltage.
+1.95
+2.5
+ 3.6
+ V
+Interface supply voltage
+—
+VDDIO(1)
+1.62 
+1.8
+ 3.6
+ V
+Low-power mode
+ODR = 1.56 Hz
+IddLP
+—
+6
+—
+μA
+ODR = 6.25 Hz
+—
+6
+—
+ODR = 12.5 Hz
+—
+6
+—
+ODR = 50 Hz
+—
+14
+—
+ODR = 100 Hz
+—
+24
+—
+ODR = 200 Hz
+—
+44
+—
+ODR = 400 Hz
+—
+85
+—
+ODR = 800 Hz
+—
+165
+—
+Normal mode
+ODR = 1.56 Hz
+Idd
+—
+24
+—
+μA
+ODR = 6.25 Hz
+—
+24
+—
+ODR = 12.5 Hz
+—
+24
+—
+ODR = 50 Hz
+—
+24
+—
+ODR = 100 Hz
+—
+44
+—
+ODR = 200 Hz
+—
+85
+—
+ODR = 400 Hz
+—
+165
+—
+ODR = 800 Hz
+—
+165
+—
+Current during boot sequence, 0.5 mSec max 
+duration using recommended bypass cap
+VDD = 2.5 V
+ Idd Boot
+—
+—
+1
+mA
+Value of capacitor on BYP pin
+–40 °C 85 °C
+Cap
+75
+100
+470
+ nF
+Standby mode current @ 25 °C
+VDD = 2.5 V, VDDIO = 1.8 V,
+ standby mode
+IddStby
+—
+1.8
+5
+μA
+Digital high-level input voltage
+SCL, SDA, SA0
+—
+VIH
+0.7*VDDIO
+—
+—
+V
+Digital low-level input voltage 
+SCL, SDA, SA0
+—
+VIL
+—
+—
+0.3*VDDIO
+V
+High-level output voltage
+INT1, INT2
+IO = 500 μA
+VOH
+0.9*VDDIO
+—
+—
+V
+Low-level output voltage 
+INT1, INT2
+IO = 500 μA
+VOL
+—
+—
+0.1*VDDIO
+V
+Low-level output voltage 
+SDA
+IO = 500 μA
+VOLS
+—
+—
+0.1*VDDIO
+V
+Power on ramp time
+—
+0.001
+—
+1000
+ ms
+Boot time
+Time from VDDIO on and 
+VDD > VDD min until I2C is ready 
+for operation, Cbyp = 100 nF
+Tbt
+—
+350
+500
+ µs
+Turn-on time(2)
+2. Note the first sample is typically not very precise. Depending on ODR/MODS setting, a minimum of three samples is recommended for full 
+precision.
+Time to obtain valid data from 
+standby mode to active mode.
+Ton1
+—
+2/ODR + 1 ms
+ s
+Turn-on time
+Time to obtain valid data from valid 
+voltage applied.
+Ton2
+—
+2/ODR + 2 ms
+ —
+Operating temperature range
+—
+Top
+–40
+—
++85
+°C
+
+
+================ [Page 8] ================
+Sensors
+8
+NXP Semiconductors
+MMA8452Q
+2.3
+I2C interface characteristics
+Table 4. I2C slave timing values(1)
+1.All values referred to VIH(min) (0.3 VDD) and VIL(max) (0.7 VDD) levels.
+Parameter
+Symbol
+I2C fast-mode
+Unit
+Min
+Max
+SCL clock frequency
+fSCL
+0
+400
+kHz
+Bus-free time between stop and start condition
+tBUF
+1.3
+—
+μs
+(Repeated) start hold time
+tHD;STA
+0.6
+—
+μs
+Repeated start setup time
+tSU;STA
+0.6
+—
+μs
+Stop condition setup time
+tSU;STO
+0.6
+—
+μs
+SDA data hold time
+tHD;DAT
+0.05
+0.9(2)
+2.This device does not stretch the low period (tLOW) of the SCL signal.
+μs
+SDA setup time
+tSU;DAT
+100
+—
+ns
+SCL clock low time
+tLOW
+1.3
+—
+μs
+SCL clock high time
+tHIGH
+0.6
+—
+μs
+SDA and SCL rise time
+tr
+20 + 0.1 Cb
+(3)
+3.Cb = total capacitance of one bus line in pF.
+300
+ns
+SDA and SCL fall time
+tf
+20 + 0.1 Cb
+(3)
+300
+ns
+SDA valid time (4)
+4.tVD;DAT = time for data signal from SCL low to SDA output (high or low, depending on which one is worse).
+tVD;DAT
+—
+0.9(2)
+μs
+SDA valid acknowledge time (5)
+5.tVD;ACK = time for acknowledgement signal from SCL low to SDA output (high or low, depending on which one is worse).
+tVD;ACK
+—
+0.9(2)
+μs
+Pulse width of spikes on SDA and SCL that must be suppressed by 
+internal input filter
+tSP
+0
+50
+ns
+Capacitive load for each bus line
+Cb
+—
+400
+pF
+
+
+================ [Page 9] ================
+Sensors
+NXP Semiconductors
+9
+MMA8452Q
+Figure 5. I2C slave timing diagram
+2.4
+Absolute maximum ratings
+Stresses above those listed as absolute maximum ratings may cause permanent damage to the device. Exposure to maximum 
+rating conditions for extended periods may affect device reliability.
+Table 5. Maximum ratings
+Rating
+Symbol
+Value
+Unit
+Maximum acceleration (all axes, 100 μs)
+gmax
+5,000
+g
+Supply voltage
+VDD
+–0.3 to + 3.6
+V
+Input voltage on any control pin (SA0, SCL, SDA)
+Vin
+–0.3 to VDDIO + 0.3
+V
+Drop test
+Ddrop
+1.8
+m
+Operating temperature range
+TOP
+–40 to +85
+°C
+Storage temperature range
+TSTG
+–40 to +125 
+°C
+Table 6. ESD and latchup protection characteristics
+Rating
+Symbol
+Value
+Unit
+Human body model
+HBM
+±2000
+V
+Machine model
+MM
+±200
+V
+Charge device model
+CDM
+±500
+V
+Latchup current at T = 85°C
+—
+±100
+mA
+VIL = 0.3VDD
+VIH = 0.7VDD
+This device is sensitive to mechanical shock. Improper handling can cause permanent damage of the part or 
+cause the part to otherwise fail. 
+This device is sensitive to ESD, improper handling can cause permanent damage to the part. 
+ 
+
+
+================ [Page 10] ================
+Sensors
+10
+NXP Semiconductors
+MMA8452Q
+3
+Terminology
+3.1
+Sensitivity
+The sensitivity is represented in counts/g. In 2 g mode the sensitivity is 1024 counts/g. In 4 g mode the sensitivity is 
+512 counts/g and in 8 g mode the sensitivity is 256 counts/g.
+3.2
+Zero-g offset
+Zero-g offset (TyOff) describes the deviation of an actual output signal from the ideal output signal if the sensor is stationary. A 
+sensor stationary on a horizontal surface will measure 0 g in X-axis and 0 g in Y-axis whereas the Z-axis will measure 1 g. The 
+output is ideally in the middle of the dynamic range of the sensor (content of OUT registers 0x00, data expressed as 2's 
+complement number). A deviation from ideal value in this case is called zero-g offset. Offset is to some extent a result of stress 
+on the MEMS sensor and therefore the offset can slightly change after mounting the sensor onto a printed circuit board or 
+exposing it to extensive mechanical stress.
+3.3
+Self-test
+Self-test checks the transducer functionality without external mechanical stimulus. When self-test is activated, an electrostatic 
+actuation force is applied to the sensor, simulating a small acceleration. In this case, the sensor outputs will exhibit a change in 
+their DC levels which are related to the selected full scale through the device sensitivity. When self-test is activated, the device 
+output level is given by the algebraic sum of the signals produced by the acceleration acting on the sensor and by the electrostatic 
+test-force.
+
+
+================ [Page 11] ================
+Sensors
+NXP Semiconductors
+11
+MMA8452Q
+4
+System Modes (SYSMOD)
+Figure 6. MMA8452Q mode transition diagram
+All register contents are preserved when transitioning from active to standby mode. Some registers are reset when transitioning 
+from standby to active. These are all noted in the device memory map register table. The sleep and wake modes are active 
+modes. For more information on how to use the sleep and wake modes and how to transition between these modes, please refer 
+to the functionality section of this document.
+Table 7. Mode of operation description
+Mode
+I2C bus state
+VDD
+Function description
+OFF
+Powered down
+< 1.8 V
+VDDIO Can be > VDD
+• The device is powered off. 
+• All analog and digital blocks are shutdown.
+• I2C bus inhibited.
+Standby
+I2C communication is possible
+> 1.8 V
+• Only digital blocks are enabled. 
+analog subsystem is disabled.
+• Internal clocks disabled.
+• Registers accessible for read/write.
+• Device is configured in standby mode.
+Active
+(wake/sleep)
+I2C communication is possible
+> 1.8 V
+• All blocks are enabled (digital, analog).
+OFF
+Wake
+Standby
+OFF
+Active
+SYSMOD = 00
+SYSMOD = 10
+SYSMOD = 01
+Auto-sleep/wake
+Condition
+VDD > 1.8 V
+VDD < 1.8 V
+CTRL_REG1
+Active bit = 1
+CTRL_REG1
+Active bit = 0
+CTRL_REG1
+Active bit = 0
+
+
+================ [Page 12] ================
+Sensors
+12
+NXP Semiconductors
+MMA8452Q
+5
+Functionality
+The MMA8452Q is a low-power, digital output 3-axis linear accelerometer with a I2C interface and embedded logic used to detect 
+events and notify an external microprocessor over interrupt lines. The functionality includes the following:
+•
+8-bit or 12-bit data which includes high-pass filtered data
+•
+Four different oversampling options for compromising between resolution and current consumption based on application 
+requirements
+•
+Additional low-noise mode that functions independently of the oversampling modes for higher resolution
+•
+Low-power and auto-wake/sleep modes for conservation of current consumption
+•
+Single-/double-pulse with directional information one channel
+•
+Motion detection with directional information or freefall one channel
+•
+Transient detection based on a high-pass filter and settable threshold for detecting the change in acceleration above a 
+threshold with directional information one channel
+•
+Portrait/landscape detection with trip points fixed at 30° and 60° for smooth transitions between orientations.
+All functionality is available in 2 g, 4 g or 8 g dynamic ranges. There are many configuration settings for enabling all the different 
+functions. Separate application notes have been provided to help configure the device for each embedded functionality.
+Table 8. Features of the MMA845xQ devices
+Feature list
+MMA8451Q
+MMA8452Q
+MMA8453Q
+Digital resolution (bits)
+14
+12
+10
+Digital sensitivity (counts/g)
+4096
+1024
+256
+Data-ready interrupt
+Yes
+Yes
+Yes
+Single-pulse interrupt
+Yes
+Yes
+Yes
+Double-pulse interrupt
+Yes
+Yes
+Yes
+Directional-pulse interrupt
+Yes
+Yes
+Yes
+Auto-wake 
+Yes
+Yes
+Yes
+Auto-sleep
+Yes
+Yes
+Yes
+Freefall interrupt
+Yes
+Yes
+Yes
+32-level FIFO 
+Yes
+No
+No
+High-pass filter
+Yes
+Yes
+Yes
+Low-pass filter
+Yes
+Yes
+Yes
+Orientation detection portrait/landscape = 30°, landscape to portrait = 60°, 
+and fixed 45° threshold
+Yes
+Yes
+Yes
+Programmable orientation detection
+Yes
+No
+No
+Motion interrupt with direction
+Yes
+Yes
+Yes
+Transient detection with high-pass filter
+Yes
+Yes
+Yes
+Low-power mode
+Yes
+Yes
+Yes
+
+
+================ [Page 13] ================
+Sensors
+NXP Semiconductors
+13
+MMA8452Q
+5.1
+Device calibration
+The device interface is factory calibrated for sensitivity and zero-g offset for each axis. The trim values are stored in non-volatile 
+memory (NVM). On power-up, the trim parameters are read from NVM and applied to the circuitry. In normal use, further 
+calibration in the end application is not necessary. However, the MMA8452Q allows the user to adjust the zero-g offset for each 
+axis after power-up, changing the default offset values. The user offset adjustments are stored in six volatile registers. For more 
+information on device calibration, refer to application note, AN4069.
+5.2
+8-bit or 12-bit data
+The measured acceleration data is stored in the OUT_X_MSB, OUT_X_LSB, OUT_Y_MSB, OUT_Y_LSB, OUT_Z_MSB, and 
+OUT_Z_LSB registers as 2’s complement 12-bit numbers. The most significant 8-bits of each axis are stored in OUT_X (Y, 
+Z)_MSB, so applications needing only 8-bit results can use these three registers and ignore OUT_X,Y, Z_LSB. To do this, the 
+F_READ bit in CTRL_REG1 must be set. When the F_READ bit is cleared, the fast-read mode is disabled. 
+When the full-scale is set to 2 g, the measurement range is –2 g to +1.999 g, and each count corresponds to 1 g/1024
+(1 mg) at 12-bits resolution. When the full-scale is set to 8 g, the measurement range is –8 g to +7.996 g, and each count 
+corresponds to 1 g/256 (3.9 mg) at 12-bits resolution. The resolution is reduced by a factor of 16 if only the 8-bit results are used. 
+For more information on the data manipulation between data formats and modes, refer to NXP application note AN4076. There 
+is a device driver available that can be used with the Sensor Toolbox demo board (LFSTBEB8451, 2, 3Q).
+5.3
+Low-power modes vs. high-resolution modes
+The MMA8452Q can be optimized for lower power modes or for higher resolution of the output data. High resolution is achieved 
+by setting the LNOISE bit in register 0x2A. This improves the resolution but be aware that the dynamic range is limited to 4 g 
+when this bit is set. This will affect all internal functions and reduce noise. Another method for improving the resolution of the data 
+is by oversampling. One of the oversampling schemes of the data can activated when MODS = 10 in register 0x2B which will 
+improve the resolution of the output data only. The highest resolution is achieved at 1.56 Hz.
+There is a trade-off between low power and high resolution. Low power can be achieved when the oversampling rate is reduced. 
+The lowest power is achieved when MODS = 11 or when the sample rate is set to 1.56 Hz. For more information on how to 
+configure the MMA8452Q in low-power mode or high-resolution mode and to realize the benefits, refer to NXP application note 
+AN4075.
+5.4
+Auto-wake/sleep mode
+The MMA8452Q can be configured to transition between sample rates (with their respective current consumption) based on four 
+of the interrupt functions of the device. The advantage of using the auto-wake/sleep is that the system can automatically transition 
+to a higher sample rate (higher current consumption) when needed but spends the majority of the time in the sleep mode (lower 
+current) when the device does not require higher sampling rates. Auto-wake refers to the device being triggered by one of the 
+interrupt functions to transition to a higher sample rate. This may also interrupt the processor to transition from a sleep mode to a 
+higher power mode.
+Sleep mode occurs after the accelerometer has not detected an interrupt for longer than the user definable time-out period. The 
+device will transition to the specified lower sample rate. It may also alert the processor to go into a lower power mode to save on 
+current during this period of inactivity.
+The interrupts that can wake the device from sleep are the following: pulse detection, orientation detection, motion/freefall, and 
+transient detection. Refer to AN4074, for more detailed information for configuring the auto-wake/sleep.
+5.5
+Freefall and motion detection
+MMA8452Q has flexible interrupt architecture for detecting either a freefall or a motion. Freefall can be enabled where the set 
+threshold must be less than the configured threshold, or motion can be enabled where the set threshold must be greater than 
+the threshold. The motion configuration has the option of enabling or disabling a high-pass filter to eliminate tilt data (static offset). 
+The freefall does not use the high-pass filter. For details on the freefall and motion detection with specific application examples 
+and recommended configuration settings, refer to NXP application note AN4070.
+5.5.1
+Freefall detection
+The detection of freefall involves the monitoring of the X, Y, and Z axes for the condition where the acceleration magnitude is 
+below a user specified threshold for a user definable amount of time. Normally, the usable threshold ranges are between 
+±100 mg and ±500 mg.
+
+
+================ [Page 14] ================
+Sensors
+14
+NXP Semiconductors
+MMA8452Q
+5.5.2
+Motion detection
+Motion is often used to simply alert the main processor that the device is currently in use. When the acceleration exceeds a set 
+threshold the motion interrupt is asserted. A motion can be a fast moving shake or a slow moving tilt. This will depend on the 
+threshold and timing values configured for the event. The motion detection function can analyze static acceleration changes or 
+faster jolts. For example, to detect that an object is spinning, all three axes would be enabled with a threshold detection of > 2 g. 
+This condition would need to occur for a minimum of 100 ms to ensure that the event wasn't just noise. The timing value is set 
+by a configurable debounce counter. The debounce counter acts like a filter to determine whether the condition exists for 
+configurable set of time (i.e., 100 ms or longer). There is also directional data available in the source register to detect the 
+direction of the motion. This is useful for applications such as directional shake or flick, which assists with the algorithm for various 
+gesture detections.
+5.6
+Transient detection
+The MMA8452Q has a built-in high-pass filter. Acceleration data goes through the high-pass filter, eliminating the offset (DC) and 
+low frequencies. The high-pass filter cutoff frequency can be set by the user to four different frequencies which are dependent 
+on the output data rate (ODR). A higher cutoff frequency ensures the DC data or slower moving data will be filtered out, allowing 
+only the higher frequencies to pass. The embedded transient detection function uses the high-pass filtered data allowing the user 
+to set the threshold and debounce counter. The transient detection feature can be used in the same manner as the motion 
+detection by bypassing the high-pass filter. There is an option in the configuration register to do this. This adds more flexibility to 
+cover various customer use cases.
+Many applications use the accelerometer’s static acceleration readings (i.e., tilt) which measure the change in acceleration due 
+to gravity only. These functions benefit from acceleration data being filtered with a low-pass filter where high-frequency data is 
+considered noise. However, there are many functions where the accelerometer must analyze dynamic acceleration. Functions 
+such as tap, flick, shake and step counting are based on the analysis of the change in the acceleration. It is simpler to interpret 
+these functions dependent on dynamic acceleration data when the static component has been removed. The transient detection 
+function can be routed to either interrupt pin through bit 5 in CTRL_REG5 register (0x2E). registers 0x1D to 0x20 are the 
+dedicated transient detection configuration registers. The source register contains directional data to determine the direction of the 
+acceleration, either positive or negative. For details on the benefits of the embedded transient detection function along with specific 
+application examples and recommended configuration settings, please refer to NXP application note AN4071. 
+5.7
+Pulse detection
+The MMA8452Q has embedded single/double and directional pulse detection. This function has various customizing timers for 
+setting the pulse time width and the latency time between pulses. There are programmable thresholds for all three axes. The 
+pulse detection can be configured to run through the high-pass filter and also through a low-pass filter, which provides more 
+customizing and tunable pulse-detection schemes. The status register provides updates on the axes where the event was 
+detected and the direction of the tap. For more information on how to configure the device for pulse detection, please refer to 
+NXP application note AN4072.
+5.8
+Orientation detection
+The MMA8452Q has an orientation detection algorithm with the ability to detect all six orientations. The transition from portrait to 
+landscape is fixed with a 45° threshold angle and a ±14° hysteresis angle. This allows the for a smooth transition from portrait to 
+landscape at approximately 30° and then from landscape to portrait at approximately 60°.
+The angle at which the device no longer detects the orientation change is referred to as the Z-lockout angle. The device operates 
+down to 29° from the flat position. All angles are accurate to ±2°.
+For further information on the orientation detection function refer to NXP application note AN4068.
+Figure 8 shows the definitions of the trip angles going from landscape to portrait (A) and then also from portrait to landscape (B).
+
+
+================ [Page 15] ================
+Sensors
+NXP Semiconductors
+15
+MMA8452Q
+Figure 7. Landscape/portrait orientation
+ 
+Figure 8. Illustration of landscape to portrait transition (A) and portrait to landscape transition (B)
+Figure 9 illustrates the Z-angle lockout region. When lifting the device upright from the flat position it will be active for orientation 
+detection as low as 29° from flat. 
+Figure 9. Illustration of Z-tilt angle lockout transition 
+Top View
+PU
+Earth Gravity
+Pin 1
+Xout @ 0 g
+Yout @ –1 g
+Zout @ 0 g
+Xout @ 1 g
+Yout @ 0 g
+Zout @ 0 g
+Xout @ 0 g
+Yout @ 1 g
+Zout @ 0 g
+Xout @ –1 g
+Yout @ 0 g
+Zout @ 0 g
+LL
+PD
+LR
+Side View
+FRONT
+Xout @ 0 g
+Yout @ 0 g
+Zout @ 1 g
+BACK
+Xout @ 0 g
+Yout @ 0 g
+Zout @ –1 g
+Portrait
+Landscape to portrait
+90°
+Trip angle = 60°
+0° Landscape
+Portrait
+Portrait to landscape
+90°
+Trip angle = 30°
+0° Landscape
+(A)
+(B)
+Upright
+NORMAL
+90°
+Z-LOCK = 29°
+0° Flat
+DETECTION
+REGION
+LOCKOUT
+REGION
+
+
+================ [Page 16] ================
+Sensors
+16
+NXP Semiconductors
+MMA8452Q
+5.9
+Interrupt register configurations
+There are six configurable interrupts in the MMA8452Q: data-ready, motion/freefall, pulse, orientation, transient, and auto-sleep 
+events. These six interrupt sources can be routed to one of two interrupt pins. The interrupt source must be enabled and 
+configured. If the event flag is asserted because the event condition is detected, the corresponding interrupt pin, INT1 or INT2, 
+will assert.
+Figure 10. System interrupt generation block diagram
+5.10
+Serial I2C interface
+Acceleration data may be accessed through an I2C interface thus making the device particularly suitable for direct interfacing with 
+a microcontroller. The MMA8452Q features an interrupt signal which indicates when a new set of measured acceleration data is 
+available thus simplifying data synchronization in the digital system that uses the device. The MMA8452Q may also be configured 
+to generate other interrupt signals accordingly to the programmable embedded functions of the device for motion, freefall, 
+transient, orientation, and pulse.
+The registers embedded inside the MMA8452Q are accessed through the I2C serial interface (Table 9). To enable the I2C 
+interface, VDDIO line must be tied high (i.e., to the interface supply voltage). If VDD is not present and VDDIO is present, the 
+MMA8452Q is in off mode and communications on the I2C interface are ignored. The I2C interface may be used for 
+communications between other I2C devices and the MMA8452Q does not affect  the  I2C bus.
+There are two signals associated with the I2C bus; the serial clock line (SCL) and the serial data line (SDA). The latter is a 
+bidirectional line used for sending and receiving the data to/from the interface. External pullup resistors connected to VDDIO are 
+expected for SDA and SCL. When the bus is free both the lines are high. The I2C interface is compliant with fast mode (400 kHz), 
+and normal mode (100 kHz) I2C standards (Table 5).
+Table 9. Serial interface pin description
+Pin name
+Pin description
+SCL
+I2C serial clock
+SDA
+I2C serial data
+SA0
+I2C least significant bit of the device address
+INTERRUPT
+CONTROLLER
+Data Ready
+Motion/Freefall
+Pulse
+Orientation
+Transient
+Auto-sleep
+INT ENABLE
+INT CFG
+INT1
+INT2
+6
+6
+
+
+================ [Page 17] ================
+Sensors
+NXP Semiconductors
+17
+MMA8452Q
+5.10.1
+I2C operation
+The transaction on the bus is started through a start condition (start) signal. Start condition is defined as a high to low transition on 
+the data line while the SCL line is held high. After start has been transmitted by the master, the bus is considered busy. The next 
+byte of data transmitted after start contains the slave address in the first seven bits, and the eighth bit tells whether the master is 
+receiving data from the slave or transmitting data to the slave. When an address is sent, each device in the system compares the 
+first seven bits after a start condition with its address. If they match, the device considers itself addressed by the master. The 9th 
+clock pulse, following the slave address byte (and each subsequent byte) is the acknowledge (ACK). The transmitter must 
+release the SDA line during the ACK period. The receiver must then pull the data line low so that it remains stable low during the 
+high period of the acknowledge clock period.
+A low to high transition on the SDA line while the SCL line is high is defined as a stop condition (stop). A data transfer is always 
+terminated by a stop. A master may also issue a repeated start during a data transfer. The MMA8452Q expects repeated starts 
+to be used to randomly read from specific registers.
+The MMA8452Q's standard slave address is a choice between the two sequential addresses 0011100 and 0011101. The selection 
+is made by the high- and low-logic level of the SA0 (pin 7) input respectively. The slave addresses are factory programmed and 
+alternate addresses are available at customer request. The format is shown in Table 10.
+Single-byte read
+The MMA8452Q has an internal ADC that can sample, convert and return sensor data on request. The transmission of an 
+8-bit command begins on the falling edge of SCL. After the eight clock cycles are used to send the command, note that the data 
+returned is sent with the MSB first once the data is received. Figure 11 shows the timing diagram for the accelerometer 8-bit I2C 
+read operation. The master (or MCU) transmits a start condition (ST) to the MMA8452Q, slave address ($1D), with the R/W bit 
+set to ‘0’ for a write, and the MMA8452Q sends an acknowledgement. Then the master (or MCU) transmits the address of the 
+register to read and the MMA8452Q sends an acknowledgement. The master (or MCU) transmits a repeated start condition (SR) 
+and then addresses the MMA8452Q ($1D) with the R/W bit set to ‘1’ for a read from the previously selected register. The Slave 
+then acknowledges and transmits the data from the requested register. The master does not acknowledge (NAK) the transmitted 
+data, but transmits a stop condition to end the data transfer.
+Multiple-byte read
+When performing a multi-byte read or burst read, the MMA8452Q automatically increments the received register address 
+commands after a read command is received. Therefore, after following the steps of a single-byte read, multiple bytes of data 
+can be read from sequential registers after each MMA8452Q acknowledgment (AK) is received until a no acknowledge (NAK) 
+occurs from the master followed by a stop condition (SP) signaling an end of transmission.
+Single-byte write
+To start a write command, the master transmits a start condition (ST) to the MMA8452Q, slave address ($1D) with the R/W bit set 
+to ‘0’ for a write, the MMA8452Q sends an acknowledgement. Then the master (MCU) transmits the address of the register to 
+write to, and the MMA8452Q sends an acknowledgement. Then the master (or MCU) transmits the 8-bit data to write to the 
+designated register and the MMA8452Q sends an acknowledgement that it has received the data. Since this transmission is 
+complete, the master transmits a stop condition (SP) to the data transfer. The data sent to the MMA8452Q is now stored in the 
+appropriate register.
+Multiple-byte write
+The MMA8452Q automatically increments the received register address commands after a write command is received. 
+Therefore, after following the steps of a single-byte write, multiple bytes of data can be written to sequential registers after each 
+MMA8452Q acknowledgment (ACK) is received.
+Table 10. I2C device address sequence
+Command
+[7:2]
+Device address
+[1]
+SA0
+[7:1]
+Device address
+R/W
+[7:0]
+8-bit final value
+Read
+001110
+0
+0x1C
+1
+0x39
+Write
+001110
+0
+0x1C
+0
+0x38
+Read
+001110
+1
+0x1D
+1
+0x3B
+Write
+001110
+1
+0x1D
+0
+0x3A
+
+
+================ [Page 18] ================
+Sensors
+18
+NXP Semiconductors
+MMA8452Q
+I2C data sequence diagrams
+ 
+Figure 11. I2C data sequence diagrams
+< Single-byte read >
+Master
+ST
+Device Address[6:0]
+W
+Register Address[7:0]
+SR
+Device Address[6:0]
+R
+NAK SP
+Slave
+AK
+AK
+AK
+Data[7:0]
+< Multiple-byte read >
+Master
+ST
+Device Address[6:0]
+W
+Register Address[7:0]
+SR
+Device Address[6:0]
+R
+AK
+Slave
+AK
+AK
+AK
+Data[7:0]
+Master
+AK
+AK
+NAK
+SP
+Slave
+Data[7:0]
+Data[7:0]
+Data[7:0]
+< Single-byte write >
+Master
+ST
+Device Address[6:0]
+W
+Register Address[7:0]
+Data[7:0]
+SP
+Slave
+AK
+AK
+AK
+< Multiple-byte write >
+Master
+ST
+Device Address[6:0]
+W
+Register Address[7:0]
+Data[7:0]
+Data[7:0]
+SP
+Slave
+AK
+AK
+AK
+AK
+Legend
+ST: Start condition
+SP: Stop condition
+NAK: No acknowledge
+W: Write = 0
+SR: Repeated start condition
+AK: Acknowledge
+R: Read = 1
+
+
+================ [Page 19] ================
+Sensors
+NXP Semiconductors
+19
+MMA8452Q
+6
+Register Descriptions
+Table 11. Register address map  
+Name
+Type Register
+address
+Auto-increment address
+Default
+Hex
+value
+Comment
+F_READ = 0
+F_READ = 1
+STATUS(1)(2)
+R
+0x00
+0x01
+00000000
+0x00
+Real time status
+OUT_X_MSB(1)(2)
+R
+0x01
+0x02
+0x03
+Output
+—
+[7:0] are 8 MSBs of 12-bit sample.
+OUT_X_LSB(1)(2)
+R
+0x02
+0x03
+0x00
+Output
+—
+[7:4] are 4 LSBs of 12-bit sample.
+OUT_Y_MSB(1)(2)
+R
+0x03
+0x04
+0x05
+Output
+—
+[7:0] are 8 MSBs of 12-bit sample.
+OUT_Y_LSB(1)(2)
+R
+0x04
+0x05
+0x00
+Output
+—
+[7:4] are 4 LSBs of 12-bit sample.
+OUT_Z_MSB(1)(2)
+R
+0x05
+0x06
+0x00
+Output
+—
+[7:0] are 8 MSBs of 12-bit sample.
+OUT_Z_LSB(1)(2)
+R
+0x06
+0x00
+Output
+—
+[7:4] are 4 LSBs of 12-bit sample.
+Reserved
+R
+0x07
+—
+—
+—
+Reserved. Read return 0x00.
+Reserved
+R
+0x08
+—
+—
+—
+Reserved. Read return 0x00.
+SYSMOD
+R
+0x0B
+0x0C
+00000000
+0x00
+Current System mode
+INT_SOURCE(1)(2)
+R
+0x0C
+0x0D
+00000000
+0x00
+Interrupt status
+WHO_AM_I
+R
+0x0D
+0x0E
+00101010
+0x2A
+Device ID (0x2A)
+XYZ_DATA_CFG(3)(4)
+R/W
+0x0E
+0x0F
+00000000
+0x00
+HPF data out and dynamic range settings
+HP_FILTER_CUTOFF(3)(4)
+R/W
+0x0F
+0x10
+00000000
+0x00
+Cutoff frequency is set to 16 Hz @ 800 Hz
+PL_STATUS(1)(2)
+R
+0x10
+0x11
+00000000
+0x00
+Landscape/portrait orientation status
+PL_CFG(3)(4)
+R/W
+0x11
+0x12
+10000000
+0x80
+Landscape/portrait configuration.
+PL_COUNT(3)(4)
+R
+0x12
+0x13
+00000000
+0x00
+Landscape/portrait debounce counter
+PL_BF_ZCOMP(3)(4)
+R
+0x13
+0x14
+01000100
+0x44
+Back/front, Z-lock trip threshold
+P_L_THS_REG(3)(4)
+R
+0x14
+0x15
+10000100
+0x84
+Portrait to landscape trip angle is 29°
+FF_MT_CFG(3)(4)
+R/W
+0x15
+0x16
+00000000
+0x00
+Freefall/motion functional block configuration
+FF_MT_SRC(1)(2)
+R
+0x16
+0x17
+00000000
+0x00
+Freefall/motion event source register
+FF_MT_THS(3)(4)
+R/W
+0x17
+0x18
+00000000
+0x00
+Freefall/motion threshold register
+FF_MT_COUNT(3)(4)
+R/W
+0x18
+0x19
+00000000
+0x00
+Freefall/motion debounce counter
+Reserved
+R
+0x19 -
+0x1C
+—
+—
+—
+Reserved. Read return 0x00.
+TRANSIENT_CFG
+R/W
+0x1D
+0x1E
+00000000
+0x00
+Transient functional block configuration
+TRANSIENT_SRC(1)(2)
+R
+0x1E
+0x1F
+00000000
+0x00
+Transient event status register
+TRANSIENT_THS(3)(4)
+R/W
+0x1F
+0x20
+00000000
+0x00
+Transient event threshold
+TRANSIENT_COUNT(3)(4)
+R/W
+0x20
+0x21
+00000000
+0x00
+Transient debounce counter
+PULSE_CFG(3)(4)
+R/W
+0x21
+0x22
+00000000
+0x00
+ELE, Double_XYZ or Single_XYZ
+PULSE_SRC(1)(2)
+R
+0x22
+0x23
+00000000
+0x00
+EA, Double_XYZ or Single_XYZ
+PULSE_THSX(3)(4)
+R/W
+0x23
+0x24
+00000000
+0x00
+X pulse threshold
+PULSE_THSY(3)(4)
+R/W
+0x24
+0x25
+00000000
+0x00
+Y pulse threshold
+PULSE_THSZ(3)(4)
+R/W
+0x25
+0x26
+00000000
+0x00
+Z pulse threshold
+PULSE_TMLT(3)(4)
+R/W
+0x26
+0x27
+00000000
+0x00
+Time limit for pulse
+PULSE_LTCY(3)(4)
+R/W
+0x27
+0x28
+00000000
+0x00
+Latency time for 2nd pulse
+PULSE_WIND(3)(4)
+R/W
+0x28
+0x29
+00000000
+0x00
+Window time for 2nd pulse
+ASLP_COUNT(3)(4)
+R/W
+0x29
+0x2A
+00000000
+0x00
+Counter setting for auto-sleep
+CTRL_REG1(3)(4)
+R/W
+0x2A
+0x2B
+00000000
+0x00
+Data rate, active mode
+CTRL_REG2(3)(4)
+R/W
+0x2B
+0x2C
+00000000
+0x00
+Sleep enable, OS modes, RST, ST
+CTRL_REG3(3)(4)
+R/W
+0x2C
+0x2D
+00000000
+0x00
+Wake from sleep, IPOL, PP_OD
+
+
+================ [Page 20] ================
+Sensors
+20
+NXP Semiconductors
+MMA8452Q
+Note: Auto-increment addresses which are not a simple increment are highlighted in bold. The auto-increment addressing is only enabled when 
+device registers are read using I2C burst-read mode. Therefore the internal storage of the auto-increment address is cleared whenever a 
+stop condition is detected.
+6.1
+Data registers 
+The following are the data registers for the MMA8452Q. For more information on data manipulation of the MMA8452Q, refer to 
+application note, AN4076. 
+CTRL_REG4(3)(4)
+R/W
+0x2D
+0x2E
+00000000
+0x00
+Interrupt enable register
+CTRL_REG5(3)(4)
+R/W
+0x2E
+0x2F
+00000000
+0x00
+Interrupt pin (INT1/INT2) map 
+OFF_X(3)(4)
+R/W
+0x2F
+0x30
+00000000
+0x00
+X-axis offset adjust
+OFF_Y(3)(4)
+R/W
+0x30
+0x31
+00000000
+0x00
+Y-axis offset adjust
+OFF_Z(3)(4)
+R/W
+0x31
+0x0D
+00000000
+0x00
+Z-axis offset adjust
+Reserved (do not modify)
+0x40 – 7F
+—
+—
+—
+Reserved. Read return 0x00.
+1. Register contents are reset when transition from standby to active mode occurs.
+2. This register data is only valid in active mode.
+3. Register contents are preserved when transition from active to standby mode occurs.
+4. Modification of this register’s contents can only occur when device is standby mode except CTRL_REG1 active bit and CTRL_REG2 RST bit. 
+0x00: STATUS data status register (read only)
+Bit 7
+Bit 6
+Bit 5
+Bit 4
+Bit 3
+Bit 2
+Bit 1
+Bit 0
+ZYXOW
+ZOW
+YOW
+XOW
+ZYXDR
+ZDR
+YDR
+XDR
+Table 12. STATUS description
+Field
+Description
+ZYXOW
+X, Y, Z-axis data overwrite. Default value: 0
+0: No data overwrite has occurred
+1: Previous X, Y, or Z data was overwritten by new X, Y, or Z data before it was read
+ZOW
+Z-axis data overwrite. Default value: 0
+0: No data overwrite has occurred
+1: Previous Z-axis data was overwritten by new Z-axis data before it was read
+YOW
+Y-axis data overwrite. Default value: 0
+0: No data overwrite has occurred
+1: Previous Y-axis data was overwritten by new Y-axis data before it was read
+XOW
+X-axis data overwrite. Default value: 0
+0: No data overwrite has occurred
+1: Previous X-axis data was overwritten by new X-axis data before it was read
+ZYXDR
+X, Y, Z-axis new data ready. Default value: 0
+0: No new set of data ready
+1: A new set of data is ready
+ZDR
+Z-axis new data available. Default value: 0
+0: No new Z-axis data is ready
+1: A new Z-axis data is ready
+YDR
+Y-axis new data available. Default value: 0
+0: No new Y-axis data ready
+1: A new Y-axis data is ready
+XDR
+X-axis new data available. Default value: 0
+0: No new X-axis data ready
+1: A new X-axis data is ready
+Table 11. Register address map (continued) 
+Name
+Type Register
+address
+Auto-increment address
+Default
+Hex
+value
+Comment
+F_READ = 0
+F_READ = 1
+
+
+================ [Page 21] ================
+Sensors
+NXP Semiconductors
+21
+MMA8452Q
+ZYXOW is set whenever a new acceleration data is produced before completing the retrieval of the previous set. This event 
+occurs when the content of at least one acceleration data register (i.e., OUT_X, OUT_Y, OUT_Z) has been overwritten. ZYXOW 
+is cleared when the high-bytes of the acceleration data (OUT_X_MSB, OUT_Y_MSB, OUT_Z_MSB) of all the active channels are 
+read.
+ZOW is set whenever a new acceleration sample related to the Z-axis is generated before the retrieval of the previous sample. 
+When this occurs the previous sample is overwritten. ZOW is cleared anytime OUT_Z_MSB register is read.
+YOW is set whenever a new acceleration sample related to the Y-axis is generated before the retrieval of the previous sample. 
+When this occurs the previous sample is overwritten. YOW is cleared anytime OUT_Y_MSB register is read.
+XOW is set whenever a new acceleration sample related to the X-axis is generated before the retrieval of the previous sample. 
+When this occurs the previous sample is overwritten. XOW is cleared anytime OUT_X_MSB register is read.
+ZYXDR signals that a new sample for any of the enabled channels is available. ZYXDR is cleared when the high-bytes of the 
+acceleration data (OUT_X_MSB, OUT_Y_MSB, OUT_Z_MSB) of all the enabled channels are read.
+ZDR is set whenever a new acceleration sample related to the Z-axis is generated. ZDR is cleared anytime OUT_Z_MSB register 
+is read. 
+YDR is set whenever a new acceleration sample related to the Y-axis is generated. YDR is cleared anytime OUT_Y_MSB register 
+is read.
+XDR is set whenever a new acceleration sample related to the X-axis is generated. XDR is cleared anytime OUT_X_MSB register 
+is read.
+Data registers: 0x01: OUT_X_MSB, 0x02: OUT_X_LSB, 0x03: OUT_Y_MSB, 0x04: OUT_Y_LSB, 0x05: OUT_Z_MSB, 0x06: 
+OUT_Z_LSB
+These registers contain the X-axis, Y-axis, and Z-axis 12-bit output sample data expressed as 2's complement numbers. The 
+sample data output registers store the current sample data. 
+OUT_X_MSB, OUT_X_LSB, OUT_Y_MSB, OUT_Y_LSB, OUT_Z_MSB, and OUT_Z_LSB are stored in the auto-incrementing 
+address range of 0x01 to 0x06 to reduce reading the status followed by 12-bit axis data to seven bytes.  If the F_READ bit is set 
+(0x2A bit 1), auto-increment will skip over LSB registers. This will shorten the data acquisition from seven bytes to four bytes. 
+The LSB registers can only be read immediately following the read access of the corresponding MSB register. A random read 
+access to the LSB registers is not possible. Reading the MSB register and then the LSB register in sequence ensures that both 
+bytes (LSB and MSB) belong to the same data sample, even if a new data sample arrives between reading the MSB and the LSB 
+byte.
+0x01: OUT_X_MSB: X_MSB register (read only)
+Bit 7
+Bit 6
+Bit 5
+Bit 4
+Bit 3
+Bit 2
+Bit 1
+Bit 0
+XD11
+XD10
+XD9
+XD8
+XD7
+XD6
+XD5
+XD4
+0x02: OUT_X_LSB: X_LSB register (read only)
+Bit 7
+Bit 6
+Bit 5
+Bit 4
+Bit 3
+Bit 2
+Bit 1
+Bit 0
+XD3
+XD2
+XD1
+XD0
+0
+0
+0
+0
+0x03: OUT_Y_MSB: Y_MSB register (read only)
+Bit 7
+Bit 6
+Bit 5
+Bit 4
+Bit 3
+Bit 2
+Bit 1
+Bit 0
+YD11
+YD10
+YD9
+YD8
+YD7
+YD6
+YD5
+YD4
+0x04: OUT_Y_LSB: Y_LSB register (read only)
+Bit 7
+Bit 6
+Bit 5
+Bit 4
+Bit 3
+Bit 2
+Bit 1
+Bit 0
+YD3
+YD2
+XD1
+XD0
+0
+0
+0
+0
+0x05: OUT_Z_MSB: Z_MSB register (read only)
+Bit 7
+Bit 6
+Bit 5
+Bit 4
+Bit 3
+Bit 2
+Bit 1
+Bit 0
+ZD11
+ZD10
+ZD9
+ZD8
+ZD7
+ZD6
+ZD5
+ZD4
+0x06: OUT_Z_LSB: Z_LSB register (read only)
+Bit 7
+Bit 6
+Bit 5
+Bit 4
+Bit 3
+Bit 2
+Bit 1
+Bit 0
+ZD3
+ZD2
+ZD1
+ZD0
+0
+0
+0
+0
+
+
+================ [Page 22] ================
+Sensors
+22
+NXP Semiconductors
+MMA8452Q
+0x0B: SYSMOD system mode register
+The system mode register indicates the current device operating mode. Applications using the auto-sleep/wake mechanism 
+should use this register to synchronize the application with the device operating mode transitions.
+0x0C: INT_SOURCE system interrupt status register
+In the interrupt source register the status of the various embedded features can be determined. The bits that are set (logic ‘1’) 
+indicate which function has asserted an interrupt and conversely the bits that are cleared (logic ‘0’) indicate which function has 
+not asserted or has deasserted an interrupt. The bits are set by a low to high transition and are cleared by reading the 
+appropriate interrupt source register. The SRC_DRDY bit is cleared by reading the X, Y and Z data. It is not cleared by simply 
+reading the status register (0x00).
+0x0B: SYSMOD: system mode register (read only)
+Bit 7
+Bit 6
+Bit 5
+Bit 4
+Bit 3
+Bit 2
+Bit 1
+Bit 0
+0
+0
+0
+0
+0
+0
+SYSMOD1
+SYSMOD0
+Table 13. SYSMOD description
+Field
+Description
+SYSMOD[1:0]
+System mode. Default value: 00.
+00: Standby mode
+01: Wake mode
+10: Sleep mode
+0x0C: INT_SOURCE: system interrupt status register (read only)
+Bit 7
+Bit 6
+Bit 5
+Bit 4
+Bit 3
+Bit 2
+Bit 1
+Bit 0
+SRC_ASLP
+0
+SRC_TRANS
+SRC_LNDPRT
+SRC_PULSE
+SRC_FF_MT
+ 0
+SRC_DRDY
+Table 14. INT_SOURCE description
+Field
+Description
+SRC_ASLP
+Auto-sleep/wake interrupt status bit. Default value: 0.
+Logic ‘1’ indicates that an interrupt event that can cause a wake to sleep or sleep to wake system mode transition has 
+occurred.
+Logic ‘0’ indicates that no wake to sleep or sleep to wake system mode transition interrupt event has occurred.
+wake to sleep transition occurs when no interrupt occurs for a time period that exceeds the user specified limit
+(ASLP_COUNT). This causes the system to transition to a user specified low ODR setting.
+sleep to wake transition occurs when the user specified interrupt event has woken the system; thus causing the system 
+to transition to a user specified high ODR setting.
+Reading the SYSMOD register clears the SRC_ASLP bit.
+SRC_TRANS
+Transient interrupt status bit. Default value: 0.
+Logic ‘1’ indicates that an acceleration transient value greater than user specified threshold has occurred. Logic ‘0’
+indicates that no transient event has occurred.
+This bit is asserted whenever EA bit in the TRANS_SRC is asserted and the interrupt has been enabled. This bit is 
+cleared by reading the TRANS_SRC register.
+SRC_LNDPRT
+Landscape/portrait orientation interrupt status bit. Default value: 0.
+Logic ‘1’ indicates that an interrupt was generated due to a change in the device orientation status. Logic ‘0’ indicates 
+that no change in orientation status was detected.
+This bit is asserted whenever NEWLP bit in the PL_STATUS is asserted and the interrupt has been enabled.
+This bit is cleared by reading the PL_STATUS register.
+SRC_PULSE
+Pulse interrupt status bit. Default value: 0.
+Logic ‘1’ indicates that an interrupt was generated due to single and/or double pulse event. Logic ‘0’ indicates that no 
+pulse event was detected.
+This bit is asserted whenever EA bit in the PULSE_SRC is asserted and the interrupt has been enabled.
+This bit is cleared by reading the PULSE_SRC register.
+
+
+================ [Page 23] ================
+Sensors
+NXP Semiconductors
+23
+MMA8452Q
+0x0D: WHO_AM_I device ID register
+The device identification register identifies the part. The default value is 0x2A. This value is factory programmed. Consult the 
+factory for custom alternate values.
+0x0E: XYZ_DATA_CFG register
+The XYZ_DATA_CFG register sets the dynamic range and sets the high-pass filter for the output data. When the HPF_OUT bit 
+is set. The data registers 0x01 to 0x06 will contain high-pass filtered data when this bit is set.
+The default full-scale value range is 2 g and the high-pass filter is disabled.
+SRC_FF_MT
+Freefall/motion interrupt status bit. Default value: 0.
+Logic ‘1’ indicates that the freefall/motion function interrupt is active. Logic ‘0’ indicates that no freefall or motion event 
+was detected.
+This bit is asserted whenever EA bit in the FF_MT_SRC register is asserted and the FF_MT interrupt has been enabled.
+This bit is cleared by reading the FF_MT_SRC register.
+SRC_DRDY
+Data-ready interrupt bit status. Default value: 0.
+Logic ‘1’ indicates that the X, Y, Z data-ready interrupt is active indicating the presence of new data and/or data overrun. 
+Otherwise if it is a logic ‘0’ the X, Y, Z interrupt is not active.
+This bit is asserted when the ZYXOW and/or ZYXDR is set and the interrupt has been enabled.
+This bit is cleared by reading the X, Y, and Z data.
+0x0D: WHO_AM_I  device ID register (read only)
+Bit 7
+Bit 6
+Bit 5
+Bit 4
+Bit 3
+Bit 2
+Bit 1
+Bit 0
+0
+0
+1
+0
+1
+0
+1
+0
+0x0E: XYZ_DATA_CFG  (read/write)
+Bit 7
+Bit 6
+Bit 5
+Bit 4
+Bit 3
+Bit 2
+Bit 1
+Bit 0
+0
+0
+0
+HPF_OUT
+0
+0
+FS1
+FS0
+Table 15. XYZ data configuration descriptions
+Field
+Description
+HPF_OUT
+Enable high-pass output data 1 = output data high-pass filtered. Default value: 0
+FS[1:0]
+Output buffer data format full scale. Default value: 00 (2 g).
+Table 16. Full-scale range
+FS1
+FS0
+Full-scale range
+0
+0
+2
+0
+1
+4
+1
+0
+8
+1
+1
+Reserved
+Table 14. INT_SOURCE description (continued)
+Field
+Description
+
+
+================ [Page 24] ================
+Sensors
+24
+NXP Semiconductors
+MMA8452Q
+0x0F: HP_FILTER_CUTOFF high-pass filter register
+This register sets the high-pass filter cutoff frequency for removal of the offset and slower changing acceleration data. The output 
+of this filter is indicated by the data registers (0x01-0x06) when bit 4 (HPF_OUT) of register 0x0E is set. The filter cutoff options 
+change based on the data rate selected as shown in Table 18. For details of implementation on the high-pass filter, refer to NXP 
+application note AN4071.
+0x0F: HP_FILTER_CUTOFF: high-pass filter register (read/write)
+Bit 7
+Bit 6
+Bit 5
+Bit 4
+Bit 3
+Bit 2
+Bit 1
+Bit 0
+0
+0
+Pulse_HPF_BYP Pulse_LPF_EN
+0
+0
+SEL1
+SEL0
+Table 17. High-pass filter cutoff register descriptions
+Field
+Description
+Pulse_HPF_BYP
+Bypass high-pass filter for pulse processing function.
+0: HPF enabled for pulse processing, 1: HPF bypassed for pulse processing
+Default value: 0.
+Pulse_LPF_EN
+Enable low-pass filter for pulse processing function.
+0: LPF disabled for pulse processing, 1: LPF enabled for pulse processing
+Default value: 0.
+SEL[1:0]
+HPF cutoff frequency selection.
+Default value: 00 (see Table 18).
+Table 18. High-pass filter cutoff options
+SEL1
+SEL0
+800 Hz
+400 Hz
+200 Hz
+100 Hz
+50 Hz
+12.5 Hz
+6.25 Hz
+1.56 Hz
+Oversampling mode = normal
+0
+0
+16 Hz
+16 Hz
+8 Hz
+4 Hz
+2 Hz
+2 Hz
+2 Hz
+2 Hz
+0
+1
+8 Hz
+8 Hz
+4 Hz
+2 Hz
+1 Hz
+1 Hz
+1 Hz
+1 Hz
+1
+0
+4 Hz
+4 Hz
+2 Hz
+1 Hz
+0.5 Hz
+0.5 Hz
+0.5 Hz
+0.5 Hz
+1
+1
+2 Hz
+2 Hz
+1 Hz
+0.5 Hz
+0.25 Hz
+0.25 Hz
+0.25 Hz
+0.25 Hz
+Oversampling mode = low noise low power
+0
+0
+16 Hz
+16 Hz
+8 Hz
+4 Hz
+2 Hz
+0.5 Hz
+0.5 Hz
+0.5 Hz
+0
+1
+8 Hz
+8 Hz
+4 Hz
+2 Hz
+1 Hz
+0.25 Hz
+0.25 Hz
+0.25 Hz
+1
+0
+4 Hz
+4 Hz
+2 Hz
+1 Hz
+0.5 Hz
+0.125 Hz
+0.125 Hz
+0.125 Hz
+1
+1
+2 Hz
+2 Hz
+1 Hz
+0.5 Hz
+0.25 Hz
+0.063 Hz
+0.063 Hz
+0.063 Hz
+Oversampling mode = high resolution
+0
+0
+16 Hz
+16 Hz
+16 Hz
+16 Hz
+16 Hz
+16 Hz
+16 Hz
+16 Hz
+0
+1
+8 Hz
+8 Hz
+8 Hz
+8 Hz
+8 Hz
+8 Hz
+8 Hz
+8 Hz
+1
+0
+4 Hz
+4 Hz
+4 Hz
+4 Hz
+4 Hz
+4 Hz
+4 Hz
+4 Hz
+1
+1
+2 Hz
+2 Hz
+2 Hz
+2 Hz
+2 Hz
+2 Hz
+2 Hz
+2 Hz
+Oversampling mode = low power
+0
+0
+16 Hz
+8 Hz
+4 Hz
+2 Hz
+1 Hz
+0.25 Hz
+0.25 Hz
+0.25 Hz
+0
+1
+8 Hz
+4 Hz
+2 Hz
+1 Hz
+0.5 Hz
+0.125 Hz
+0.125 Hz
+0.125 Hz
+1
+0
+4 Hz
+2 Hz
+1 Hz
+0.5 Hz
+0.25 Hz
+0.063 Hz
+0.063 Hz
+0.063 Hz
+1
+1
+2 Hz
+1 Hz
+0.5 Hz
+0.25 Hz
+0.125 Hz
+0.031 Hz
+0.031 Hz
+0.031 Hz
+
+
+================ [Page 25] ================
+Sensors
+NXP Semiconductors
+25
+MMA8452Q
+6.2
+Portrait/landscape embedded function registers
+For more details on the meaning of the different user-configurable settings and for example code refer to NXP application note 
+AN4068.
+0x10: PL_STATUS portrait/landscape status register
+This status register can be read to get updated information on any change in orientation by reading bit 7, or on the specifics of 
+the orientation by reading the other bits. For further understanding of portrait up, portrait down, landscape left, landscape right, 
+back and front orientations please refer to Figure 3. The interrupt is cleared when reading the PL_STATUS register.
+NEWLP is set to 1 after the first orientation detection after a standby to active transition, and whenever a change in LO, BAFRO, 
+or LAPO occurs. NEWLP bit is cleared anytime PL_STATUS register is read. The orientation mechanism state change is limited 
+to a maximum 1.25 g. LAPO BAFRO and LO continue to change when NEWLP is set. The current position is locked if the 
+absolute value of the acceleration experienced on any of the three axes is greater than 1.25 g.
+0x11: Portrait/landscape configuration register
+This register enables the portrait/landscape function and sets the behavior of the debounce counter.
+0x10: PL_STATUS register (read only)
+Bit 7
+Bit 6
+Bit 5
+Bit 4
+Bit 3
+Bit 2
+Bit 1
+Bit 0
+NEWLP
+LO
+0
+0
+0
+LAPO[1]
+LAPO[0]
+BAFRO
+Table 19. PL_STATUS register description
+Field
+Description
+NEWLP
+Landscape/portrait status change flag. Default value: 0.
+0: No change, 1: BAFRO and/or LAPO and/or Z-tilt lockout value has changed
+LO
+Z-tilt angle lockout. Default value: 0.
+0: Lockout condition has not been detected. 
+1: Z-tilt lockout trip angle has been exceeded. Lockout has been detected.
+LAPO[1:0](1)
+1. The default power up state is BAFRO = 0, LAPO = 0, and LO = 0.
+Landscape/portrait orientation. Default value: 00
+00: Portrait up: Equipment standing vertically in the normal orientation 
+01: Portrait down: Equipment standing vertically in the inverted orientation 
+10: Landscape right: Equipment is in landscape mode to the right
+11: Landscape left: Equipment is in landscape mode to the left.
+BAFRO
+Back or front orientation. Default value: 0
+0: Front: Equipment is in the front facing orientation.
+1: Back: Equipment is in the back facing orientation.
+0x11: PL_CFG register (read/write)
+Bit 7
+Bit 6
+Bit 5
+Bit 4
+Bit 3
+Bit 2
+Bit 1
+Bit 0
+DBCNTM
+PL_EN
+0
+0
+0
+0
+0
+0
+Table 20. PL_CFG description
+Field
+Description
+DBCNTM
+Debounce counter mode selection. Default value: 1
+0: Decrements debounce whenever condition of interest is no longer valid.
+1: Clears counter whenever condition of interest is no longer valid.
+PL_EN
+Portrait/landscape detection enable. Default value: 0
+0: Portrait/landscape detection is disabled.
+1: Portrait/landscape detection is enabled.
+
+
+================ [Page 26] ================
+Sensors
+26
+NXP Semiconductors
+MMA8452Q
+0x12: Portrait/landscape debounce counter
+This register sets the debounce count for the orientation state transition. The minimum debounce latency is determined by the 
+data rate set by the product of the selected system ODR and PL_COUNT registers. Any transition from wake to sleep or vice 
+versa resets the internal landscape/portrait debounce counter. Note: The debounce counter weighting (time step) changes based 
+on the ODR and the oversampling mode. Table 22 explains the time step value for all sample rates and all oversampling modes.
+0x13: PL_BF_ZCOMP back/front and Z compensation register
+The Z-lock angle compensation is set to 29°. The back to front trip angle is set to ±75°.
+Note: All angles are accurate to ±2°. 
+0x14: PL_THS_REG portrait/landscape threshold and hysteresis register
+This register represents the portrait to landscape trip threshold.
+0x12: PL_COUNT register (read/write)
+Bit 7
+Bit 6
+Bit 5
+Bit 4
+Bit 3
+Bit 2
+Bit 1
+Bit 0
+DBNCE[7]
+DBNCE[6]
+DBNCE[5]
+DBNCE[4]
+DBNCE[3]
+DBNCE[2]
+DBNCE[1]
+DBNCE[0]
+Table 21. PL_COUNT description
+Field
+Description
+DBCNE[7:0]
+Debounce count value. Default value: 0000_0000.
+Table 22. PL_COUNT relationship with the ODR
+ ODR (Hz)
+Max time range (s)
+Time step (ms)
+Normal
+LPLN
+HighRes
+LP
+Normal
+LPLN
+HighRes
+LP
+800
+0.319
+0.319
+0.319
+0.319
+1.25
+1.25
+1.25
+1.25
+400
+0.638
+0.638
+0.638
+0.638
+2.5
+2.5
+2.5
+2.5
+200
+1.28
+1.28
+0.638
+1.28
+5
+5
+2.5
+5
+100
+2.55
+2.55
+0.638
+2.55
+10
+10
+2.5
+10
+50
+5.1
+5.1
+0.638
+5.1
+20
+20
+2.5
+20
+12.5
+5.1
+20.4
+0.638
+20.4
+20
+80
+2.5
+80
+6.25
+5.1
+20.4
+0.638
+40.8
+20
+80
+2.5
+160
+1.56
+5.1
+20.4
+0.638
+40.8
+20
+80
+2.5
+160
+0x13: PL_BF_ZCOMP register (read only)
+Bit 7
+Bit 6
+Bit 5
+Bit 4
+Bit 3
+Bit 2
+Bit 1
+Bit 0
+BKFR[1]
+BKFR[0]
+0
+0
+0
+ZLOCK[2]
+ZLOCK[1]
+ZLOCK[0]
+Table 23. PL_BF_ZCOMP description
+Field
+Description
+BKFR[1:0]
+Back front trip angle fixed threshold = 01 which is ≥ ±75°. 
+ZLOCK[2:0]
+Z-lock angle fixed threshold = 100 which is 29°.
+0x14: PL_THS_REG register (read only)
+Bit 7
+Bit 6
+Bit 5
+Bit 4
+Bit 3
+Bit 2
+Bit 1
+Bit 0
+PL_THS[4]
+PL_THS[3]
+PL_THS[2]
+PL_THS[1]
+PL_THS[0]
+HYS[2]
+HYS[1]
+HYS[0]
+
+
+================ [Page 27] ================
+Sensors
+NXP Semiconductors
+27
+MMA8452Q
+6.3
+Motion and freefall embedded function registers
+The freefall/motion function can be configured in either freefall or motion detection mode via the OAE configuration bit (0x15 
+bit 6). The freefall/motion detection block can be disabled by setting all three bits ZEFE, YEFE, and XEFE to zero.
+Depending on the register bits ELE (0x15 bit 7) and OAE (0x15 bit 6), each of the freefall and motion detection block can operate 
+in four different modes:
+Mode 1: Freefall detection with ELE = 0, OAE = 0
+In this mode, the EA bit (0x16 bit 7) indicates a freefall event after the debounce counter is complete. The ZEFE, YEFE, and 
+XEFE control bits determine which axes are considered for the freefall detection. Once the EA bit is set, and DBCNTM = 0, the 
+EA bit can get cleared only after the delay specified by FF_MT_COUNT. This is because the counter is in decrement mode. If 
+DBCNTM = 1, the EA bit is cleared as soon as the freefall condition disappears, and will not be set again before the delay 
+specified by FF_MT_COUNT has passed. Reading the FF_MT_SRC register does not clear the EA bit. The event flags (0x16) 
+ZHE, ZHP, YHE, YHP, XHE, and XHP reflect the motion detection status (i.e. high-g event) without any debouncing, provided 
+that the corresponding bits ZEFE, YEFE, and/or XEFE are set.
+Mode 2: Freefall detection with ELE = 1, OAE = 0
+In this mode, the EA event bit indicates a freefall event after the debounce counter. Once the debounce counter reaches the time 
+value for the set threshold, the EA bit is set, and remains set until the FF_MT_SRC register is read. When the FF_MT_SRC 
+register is read, the EA bit and the debounce counter are cleared and a new event can only be generated after the delay specified 
+by FF_MT_CNT. The ZEFE, YEFE, and XEFE control bits determine which axes are considered for the freefall detection. While 
+EA = 0, the event flags ZHE, ZHP, YHE, YHP, XHE, and XHP reflect the motion detection status (i.e., high-g event) without any 
+debouncing, provided that the corresponding bits ZEFE, YEFE, and/or XEFE are set. The event flags ZHE, ZHP, YHE, YHP, XHE, 
+and XHP are latched when the EA event bit is set. The event flags ZHE, ZHP, YHE, YHP, XHE, and XHP will start changing only 
+after the FF_MT_SRC register has been read.
+Mode 3: Motion detection with ELE = 0, OAE = 1
+In this mode, the EA bit indicates a motion event after the debounce counter time is reached. The ZEFE, YEFE, and XEFE control 
+bits determine which axes are taken into consideration for motion detection. Once the EA bit is set, and DBCNTM = 0, the EA bit 
+can get cleared only after the delay specified by FF_MT_COUNT. If DBCNTM = 1, the EA bit is cleared as soon as the motion 
+high-g condition disappears. The event flags ZHE, ZHP, YHE, YHP, XHE, and XHP reflect the motion detection status (i.e., high-
+g event) without any debouncing, provided that the corresponding bits ZEFE, YEFE, and/or XEFE are set. Reading the 
+FF_MT_SRC does not clear any flags, nor is the debounce counter reset.
+Mode 4: Motion detection with ELE = 1, OAE = 1
+In this mode, the EA bit indicates a motion event after debouncing. The ZEFE, YEFE, and XEFE control bits determine which 
+axes are taken into consideration for motion detection. Once the debounce counter reaches the threshold, the EA bit is set, and 
+remains set until the FF_MT_SRC register is read. When the FF_MT_SRC register is read, all register bits are cleared and the 
+debounce counter are cleared and a new event can only be generated after the delay specified by FF_MT_CNT. While the bit 
+EA is zero, the event flags ZHE, ZHP, YHE, YHP, XHE, and XHP reflect the motion detection status (i.e., high-g event) without 
+any debouncing, provided that the corresponding bits ZEFE, YEFE, and/or XEFE are set. When the EA bit is set, these bits keep 
+their current value until the FF_MT_SRC register is read.
+Table 24. PL_THS_REG description
+Field
+Description
+PL_THS[7:3]
+Portrait/landscape fixed threshold angle = 1_0000 (45°). 
+HYS[2:0]
+This is a fixed angle added to the threshold angle for a smoother transition from portrait to landscape and landscape to portrait. 
+This angle is fixed at ±14°, which is 100.
+Table 25. Trip angles with hysteresis for 45° angle
+Hysteresis
+register value
+Hysteresis
+± angle range
+Landscape to portrait
+trip angle
+Portrait to landscape
+trip angle
+4
+±14
+59°
+31°
+
+
+================ [Page 28] ================
+Sensors
+28
+NXP Semiconductors
+MMA8452Q
+0x15: FF_MT_CFG freefall/motion configuration register 
+This is the freefall/motion configuration register for setting up the conditions of the freefall or motion function.
+OAE bit allows the selection between motion (logical OR combination) and freefall (logical AND combination) detection.
+ELE denotes whether the enabled event flag will to be latched in the FF_MT_SRC register or the event flag status in the 
+FF_MT_SRC will indicate the real-time status of the event. If ELE bit is set to a logic ‘1’, then the event flags are frozen when the 
+EA bit gets set, and are cleared by reading the FF_MT_SRC source register. 
+ZHFE, YEFE, XEFE enable the detection of a motion or freefall event when the measured acceleration data on X, Y, Z channel 
+is beyond the threshold set in FF_MT_THS register. If the ELE bit is set to logic ‘1’ in the FF_MT_CFG register new event flags 
+are blocked from updating the FF_MT_SRC register.
+FF_MT_THS is the threshold register used to detect freefall motion events. The unsigned 7-bit FF_MT_THS threshold register 
+holds the threshold for the freefall detection where the magnitude of the X and Y and Z acceleration values is lower or equal than 
+the threshold value. Conversely, the FF_MT_THS also holds the threshold for the motion detection where the magnitude of the 
+X or Y or Z acceleration value is higher than the threshold value. 
+Figure 12. FF_MT_CFG high- and low-g level
+0x16: FF_MT_SRC freefall/motion source register
+0x15: FF_MT_CFG register (read/write)
+Bit 7
+Bit 6
+Bit 5
+Bit 4
+Bit 3
+Bit 2
+Bit 1
+Bit 0
+ELE
+OAE
+ZEFE
+YEFE
+XEFE
+0
+0
+0
+Table 26. FF_MT_CFG description 
+Field
+Description
+ELE
+Event latch enable: Event flags are latched into FF_MT_SRC register. Reading of the FF_MT_SRC register clears the event 
+flag EA and all FF_MT_SRC bits. Default value: 0. 
+0: Event flag latch disabled; 1: Event flag latch enabled
+OAE
+Motion detect/freefall detect flag selection. Default value: 0. (freefall flag)
+0: Freefall flag (logical AND combination) 
+1: Motion flag (logical OR combination)
+ZEFE
+Event flag enable on Z. Default value: 0.
+0: Event detection disabled; 1: Raise event flag on measured acceleration value beyond preset threshold
+YEFE
+Event flag enable on Y event. Default value: 0.
+0: Event detection disabled; 1: Raise event flag on measured acceleration value beyond preset threshold
+XEFE
+Event flag enable on X event. Default value: 0.
+0: Event detection disabled; 1: Raise event flag on measured acceleration value beyond preset threshold
+0x16: FF_MT_SRC freefall and motion source register (read only)
+Bit 7
+Bit 6
+Bit 5
+Bit 4
+Bit 3
+Bit 2
+Bit 1
+Bit 0
+EA
+0
+ZHE
+ZHP
+YHE
+YHP
+XHE
+XHP
++8 g
+High-g + Threshold (Motion)
+Low-g Threshold (Freefall)
+High-g - Threshold (Motion)
+–8 g
+X, Y, Z High-g Region
+X, Y, Z High-g Region
+X, Y, Z Low-g Region
+Negative
+Positive
+Acceleration
+Acceleration
+
+
+================ [Page 29] ================
+Sensors
+NXP Semiconductors
+29
+MMA8452Q
+This register keeps track of the acceleration event which is triggering (or has triggered, in case of ELE bit in FF_MT_CFG register 
+being set to 1) the event flag. In particular EA is set to a logic ‘1’ when the logical combination of acceleration events flags 
+specified in FF_MT_CFG register is true. This bit is used in combination with the values in INT_EN_FF_MT and 
+INT_CFG_FF_MT register bits to generate the freefall/motion interrupts.
+An X,Y, or Z motion is true when the acceleration value of the X or Y or Z channel is higher than the preset threshold value defined 
+in the FF_MT_THS register.
+Conversely an X, Y, and Z low event is true when the acceleration value of the X and Y and Z channel is lower than or equal to 
+the preset threshold value defined in the FF_MT_THS register.
+0x17: FF_MT_THS freefall and motion threshold register
+The threshold resolution is 0.063 g/LSB and the threshold register has a range of 0 to 127 counts. The maximum range is to 8 g. 
+Note that even when the full scale value is set to 2 g or 4 g the motion detects up to 8 g. If the low-noise bit is set in register 0x2A 
+then the maximum threshold will be limited to 4 g regardless of the full-scale range.
+DBCNTM bit configures the way in which the debounce counter is reset when the inertial event of interest is momentarily not true.
+When DBCNTM bit is a logic ‘1’, the debounce counter is cleared to 0 whenever the inertial event of interest is no longer true as 
+shown in Figure 13, (b). While the DBCNTM bit is set to logic ‘0’ the debounce counter is decremented by 1 whenever the inertial 
+event of interest is no longer true (Figure 13, (c)) until the debounce counter reaches 0 or the inertial event of interest becomes 
+active. 
+Decrementing the debounce counter acts as a median enabling the system to filter out irregular spurious events which might 
+impede the detection of inertial events. 
+Table 27.  Freefall/motion source description
+Field
+Description
+EA
+Event active flag. Default value: 0. 
+0: No event flag has been asserted; 1: One or more event flag has been asserted. 
+See the description of the OAE bit to determine the effect of the 3-axis event flags on the EA bit.
+ZHE
+Z-motion flag. Default value: 0. 
+0: No Z-motion event detected, 1: Z motion has been detected 
+This bit reads always zero if the ZEFE control bit is set to zero
+ZHP
+Z-motion polarity flag. Default value: 0. 
+0: Z event was positive g, 1: Z event was negative g 
+This bit read always zero if the ZEFE control bit is set to zero
+YHE
+Y-motion flag. Default value: 0. 
+0: No Y-motion event detected, 1: Y motion has been detected 
+This bit read always zero if the YEFE control bit is set to zero
+YHP
+Y-motion polarity flag. Default value: 0 
+0: Y event detected was positive g, 1: Y event was negative g 
+This bit reads always zero if the YEFE control bit is set to zero
+XHE
+X-motion flag. Default value: 0 
+0: No X-motion event detected, 1: X motion has been detected 
+This bit reads always zero if the XEFE control bit is set to zero
+XHP
+X-motion polarity flag. Default value: 0 
+0: X event was positive g, 1: X event was negative g 
+This bit reads always zero if the XEFE control bit is set to zero
+0x17: FF_MT_THS register (read/write)
+Bit 7
+Bit 6
+Bit 5
+Bit 4
+Bit 3
+Bit 2
+Bit 1
+Bit 0
+DBCNTM
+THS6
+THS5
+THS4
+THS3
+THS2
+THS1
+THS0
+Table 28. FF_MT_THS description
+Field
+Description
+DBCNTM
+Debounce counter mode selection. Default value: 0.
+0: Increments or decrements debounce, 1: Increments or clears counter.
+THS[6:0]
+Freefall/motion threshold: Default value: 000_0000.
+
+
+================ [Page 30] ================
+Sensors
+30
+NXP Semiconductors
+MMA8452Q
+0x18: FF_MT_COUNT debounce register 
+This register sets the number of debounce sample counts for the event trigger.
+This register sets the minimum number of debounce sample counts of continuously matching the detection condition user 
+selected for the freefall, motion event.
+When the internal debounce counter reaches the FF_MT_COUNT value a freefall/motion event flag is set. The debounce counter 
+will never increase beyond the FF_MT_COUNT value. Time step used for the debounce sample count depends on the ODR 
+chosen and the oversampling mode as shown in Table 30.
+0x18: FF_MT_COUNT register (read/write)
+Bit 7
+Bit 6
+Bit 5
+Bit 4
+Bit 3
+Bit 2
+Bit 1
+Bit 0
+D7
+D6
+D5
+D4
+D3
+D2
+D1
+D0
+Table 29. FF_MT_COUNT description
+Field
+Description
+D[7:0]
+Count value. Default value: 0000_0000
+Table 30. FF_MT_COUNT relationship with the ODR
+ ODR (Hz)
+Max time range (s)
+Time step (ms)
+Normal
+LPLN
+HighRes
+LP
+Normal
+LPLN
+HighRes
+LP
+800
+0.319
+0.319
+0.319
+0.319
+1.25
+1.25
+1.25
+1.25
+400
+0.638
+0.638
+0.638
+0.638
+2.5
+2.5
+2.5
+2.5
+200
+1.28
+1.28
+0.638
+1.28
+5
+5
+2.5
+5
+100
+2.55
+2.55
+0.638
+2.55
+10
+10
+2.5
+10
+50
+5.1
+5.1
+0.638
+5.1
+20
+20
+2.5
+20
+12.5
+5.1
+20.4
+0.638
+20.4
+20
+80
+2.5
+80
+6.25
+5.1
+20.4
+0.638
+40.8
+20
+80
+2.5
+160
+1.56
+5.1
+20.4
+0.638
+40.8
+20
+80
+2.5
+160
+
+
+================ [Page 31] ================
+Sensors
+NXP Semiconductors
+31
+MMA8452Q
+Figure 13. DBCNTM bit function
+High-g Event on
+Count Threshold
+FF
+FFEA
+all 3-axis
+(Motion Detect)
+Counter
+Value
+High-g Event on
+Count Threshold
+Debounce
+(a)
+all 3-axis
+(Motion Detect)
+Counter
+Value
+High-g Event on
+Count Threshold
+Debounce
+EA
+all 3-axis
+(Motion Detect)
+Counter
+Value
+DBCNTM = 1
+(b)
+EA
+DBCNTM = 0
+(c)
+
+
+================ [Page 32] ================
+Sensors
+32
+NXP Semiconductors
+MMA8452Q
+6.4
+Transient (HPF) acceleration detection
+For more information on the uses of the transient function please review NXP application note AN4071. This function is similar 
+to the motion detection except that high-pass filtered data is compared. There is an option to disable the high-pass filter through 
+the function. In this case the behavior is the same as the motion detection. This allows for the device to have two motion detection 
+functions.
+0x1D: Transient_CFG register
+The transient detection mechanism can be configured to raise an interrupt when the magnitude of the high-pass filtered 
+acceleration threshold is exceeded. The TRANSIENT_CFG register is used to enable the transient interrupt generation 
+mechanism for the three axes (X, Y, Z) of acceleration. There is also an option to bypass the high-pass filter. When the high-pass 
+filter is bypassed, the function behaves similar to the motion detection. 
+0x1E: TRANSIENT_SRC register
+The transient source register provides the status of the enabled axes and the polarity (directional) information. When this register 
+is read it clears the interrupt for the transient detection. When new events arrive while EA = 1, additional *TRANSE bits may get 
+set, and the corresponding *_Trans_Pol flag become updated. However, no *TRANSE bit may get cleared before the 
+TRANSIENT_SRC register is read. 
+0x1D: TRANSIENT_CFG register (read/write)
+Bit 7
+Bit 6
+Bit 5
+Bit 4
+Bit 3
+Bit 2
+Bit 1
+Bit 0
+0
+0
+0
+ELE
+ZTEFE
+YTEFE
+XTEFE
+HPF_BYP
+Table 31. TRANSIENT_CFG description
+Field
+Description
+ELE
+Transient event flags are latched into the TRANSIENT_SRC register. Reading of the TRANSIENT_SRC register clears the event 
+flag. Default value: 0. 
+0: Event flag latch disabled; 1: Event flag latch enabled
+ZTEFE
+Event flag enable on Z-transient acceleration greater than transient threshold event. Default value: 0. 
+0: Event detection disabled; 1: Raise event flag on measured acceleration delta value greater than transient threshold.
+YTEFE
+Event flag enable on Y-transient acceleration greater than transient threshold event. Default value: 0. 
+0: Event detection disabled; 1: Raise event flag on measured acceleration delta value greater than transient threshold.
+XTEFE
+Event flag enable on X-transient acceleration greater than transient threshold event. Default value: 0. 
+0: Event detection disabled; 1: Raise event flag on measured acceleration delta value greater than transient threshold.
+HPF_BYP
+Bypass high-pass filter. Default value: 0.
+0: Data to transient acceleration detection block is through HPF; 1: Data to transient acceleration detection block is NOT through 
+HPF (similar to motion detection function)
+0x1E: TRANSIENT_SRC register (read only)
+Bit 7
+Bit 6
+Bit 5
+Bit 4
+Bit 3
+Bit 2
+Bit 1
+Bit 0
+0
+ EA
+ZTRANSE
+Z_Trans_Pol
+YTRANSE
+Y_Trans_Pol
+XTRANSE
+X_Trans_Pol
+Table 32. TRANSIENT_SRC description
+Field
+Description
+EA
+Event active flag. Default value: 0. 
+0: No event flag has been asserted; 1: One or more event flag has been asserted. 
+ZTRANSE
+Z-transient event. Default value: 0. 
+0: No interrupt, 1: Z-transient acceleration greater than the value of TRANSIENT_THS event has occurred
+Z_Trans_Pol
+Polarity of Z-transient event that triggered interrupt. Default value: 0. 
+0: Z event was positive g, 1: Z event was negative I
+YTRANSE
+Y-transient event. Default value: 0. 
+0: no interrupt, 1: Y-transient acceleration greater than the value of TRANSIENT_THS event has occurred
+Y_Trans_Pol
+Polarity of Y-transient event that triggered interrupt. Default value: 0. 
+0: Y event was positive g, 1: Y event was negative g
+
+
+================ [Page 33] ================
+Sensors
+NXP Semiconductors
+33
+MMA8452Q
+When the EA bit gets set while ELE = 1, all other status bits get frozen at their current state. By reading the TRANSIENT_SRC 
+register, all bits get cleared.
+0x1F: TRANSIENT_THS register
+The transient threshold register sets the threshold limit for the detection of the transient acceleration. The value in the 
+TRANSIENT_THS register corresponds to a g value which is compared against the values of high-pass filtered data. If the high-
+pass filtered acceleration value exceeds the threshold limit, an event flag is raised and the interrupt is generated if enabled.
+The threshold THS[6:0] is a 7-bit unsigned number, 0.063 g/LSB. The maximum threshold is 8 g. Even if the part is set to full 
+scale at 2 g or 4 g this function will still operate up to 8 g. If the low-noise bit is set in register 0x2A, the maximum threshold to be 
+reached is 4 g.
+Note: If configuring the transient detection threshold for less than 1 g, the high-pass filter will need some settling time. The settling 
+time will vary depending on selected ODR, high-pass frequency cutoff and threshold. For more information, please refer to NXP 
+application note AN4071.
+0x20: TRANSIENT_COUNT
+The TRANSIENT_COUNT sets the minimum number of debounce counts continuously matching the condition where the 
+unsigned value of high-pass filtered data is greater than the user specified value of TRANSIENT_THS.
+The time step for the transient detection debounce counter is set by the value of the system ODR and the oversampling mode.
+XTRANSE
+X-transient event. Default value: 0. 
+0: No interrupt, 1: X-transient acceleration greater than the value of TRANSIENT_THS event has occurred
+X_Trans_Pol
+Polarity of X-transient event that triggered interrupt. Default value: 0. 
+0: X event was positive g, 1: X event was negative g
+0x1F: TRANSIENT_THS register (read/write)
+Bit 7
+Bit 6
+Bit 5
+Bit 4
+Bit 3
+Bit 2
+Bit 1
+Bit 0
+DBCNTM
+THS6
+THS5
+THS4
+THS3
+THS2
+THS1
+THS0
+Table 33. TRANSIENT_THS description
+Field
+Description
+DBCNTM
+Debounce counter mode selection. Default value: 0. 0: increments or decrements debounce; 1: increments or clears counter.
+THS[6:0]
+Transient threshold: Default value: 000_0000.
+0x20: TRANSIENT_COUNT register (read/write)
+Bit 7
+Bit 6
+Bit 5
+Bit 4
+Bit 3
+Bit 2
+Bit 1
+Bit 0
+D7
+D6
+D5
+D4
+D3
+D2
+D1
+D0
+Table 34. TRANSIENT_COUNT description
+Field
+Description
+D[7:0]
+Count value. Default value: 0000_0000.
+Table 35. TRANSIENT_COUNT relationship with the ODR
+ ODR (Hz) 
+Max time range (s)
+Time step (ms)
+Normal
+LPLN
+HighRes
+LP
+Normal
+LPLN
+HighRes
+LP
+800
+0.319
+0.319
+0.319
+0.319
+1.25
+1.25
+1.25
+1.25
+400
+0.638
+0.638
+0.638
+0.638
+2.5
+2.5
+2.5
+2.5
+200
+1.28
+1.28
+0.638
+1.28
+5
+5
+2.5
+5
+100
+2.55
+2.55
+0.638
+2.55
+10
+10
+2.5
+10
+50
+5.1
+5.1
+0.638
+5.1
+20
+20
+2.5
+20
+Table 32. TRANSIENT_SRC description (continued)
+Field
+Description
+
+
+================ [Page 34] ================
+Sensors
+34
+NXP Semiconductors
+MMA8452Q
+6.5
+Single, double and directional pulse-detection registers
+For more details of how to configure the pulse detection and sample code, please refer to NXP application note AN4072. The 
+pulse-detection registers are referred to as pulse.
+0x21: PULSE_CFG pulse configuration register
+This register configures the event flag for the pulse detection for enabling/disabling the detection of a single and double pulse on 
+each of the axes.
+0x22: PULSE_SRC pulse source register
+This register indicates a double or single pulse event has occurred and also which direction. The corresponding axis and event 
+must be enabled in register 0x21 for the event to be seen in the source register.
+12.5
+5.1
+20.4
+0.638
+20.4
+20
+80
+2.5
+80
+6.25
+5.1
+20.4
+0.638
+40.8
+20
+80
+2.5
+160
+1.56
+5.1
+20.4
+0.638
+40.8
+20
+80
+2.5
+160
+0x21: PULSE_CFG Register (read/write)
+Bit 7
+Bit 6
+Bit 5
+Bit 4
+Bit 3
+Bit 2
+Bit 1
+Bit 0
+DPA
+ELE
+ZDPEFE
+ZSPEFE
+YDPEFE
+YSPEFE
+XDPEFE
+XSPEFE
+Table 36. PULSE_CFG description
+Field
+Description
+DPA
+Double-pulse abort. Default value: 0.
+0: Double-pulse detection is not aborted if the start of a pulse is detected during the time period specified by the PULSE_LTCY register.
+1: Setting the DPA bit momentarily suspends the double pulse detection if the start of a pulse is detected during the time period 
+specified by the PULSE_LTCY register and the pulse ends before the end of the time period specified by the PULSE_LTCY register.
+ELE
+Pulse event flags are latched into the PULSE_SRC register. Reading of the PULSE_SRC register clears the event flag.
+Default value: 0.
+0: Event flag latch disabled; 1: Event flag latch enabled
+ZDPEFE
+Event flag enable on double pulse event on Z-axis. Default value: 0.
+0: Event detection disabled; 1: Event detection enabled
+ZSPEFE
+Event flag enable on single pulse event on Z-axis. Default value: 0.
+0: Event detection disabled; 1: Event detection enabled
+YDPEFE
+Event flag enable on double pulse event on Y-axis. Default value: 0.
+0: Event detection disabled; 1: Event detection enabled
+YSPEFE
+Event flag enable on single pulse event on Y-axis. Default value: 0.
+0: Event detection disabled; 1: Event detection enabled
+XDPEFE
+Event flag enable on double pulse event on X-axis. Default value: 0.
+0: Event detection disabled; 1: Event detection enabled
+XSPEFE
+Event flag enable on single pulse event on X-axis. Default value: 0.
+0: Event detection disabled; 1: Event detection enabled
+0x22: PULSE_SRC register (read only)
+Bit 7
+Bit 6
+Bit 5
+Bit 4
+Bit 3
+Bit 2
+Bit 1
+Bit 0
+ EA
+AxZ
+AxY
+AxX
+DPE
+PolZ
+PolY
+PolX
+Table 35. TRANSIENT_COUNT relationship with the ODR (continued)
+ ODR (Hz) 
+Max time range (s)
+Time step (ms)
+Normal
+LPLN
+HighRes
+LP
+Normal
+LPLN
+HighRes
+LP
+
+
+================ [Page 35] ================
+Sensors
+NXP Semiconductors
+35
+MMA8452Q
+When the EA bit gets set while ELE = 1, all status bits (AxZ, AxY, AxZ, DPE, and PolX, PolY, PolZ) are frozen. Reading the 
+PULSE_SRC register clears all bits. Reading the source register will clear the interrupt.
+0x23 - 0x25: PULSE_THSX, Y, Z pulse threshold for X, Y and Z registers
+The pulse threshold can be set separately for the X, Y and Z axes. The PULSE_THSX, PULSE_THSY and PULSE_THSZ 
+registers define the threshold which is used by the system to start the pulse detection procedure. 
+Table 37. PULSE_SRC description
+Field
+Description
+EA
+Event active flag. Default value: 0.
+(0: No interrupt has been generated; 1: One or more interrupt events have been generated)
+AxZ
+Z-axis event. Default value: 0.
+(0: No interrupt; 1: Z-axis event has occurred)
+AxY
+Y-axis event. Default value: 0.
+(0: No interrupt; 1: Y-axis event has occurred)
+AxX
+X-axis event. Default value: 0.
+(0: No interrupt; 1: X-axis event has occurred)
+DPE
+Double pulse on first event. Default value: 0.
+(0: Single-pulse event triggered interrupt; 1: Double pulse event triggered interrupt)
+PolZ
+Pulse polarity of Z-axis event. Default value: 0.
+(0: Pulse event that triggered interrupt was positive; 1: Pulse event that triggered interrupt was negative)
+PolY
+Pulse polarity of Y-axis event. Default value: 0.
+(0: Pulse event that triggered interrupt was positive; 1: Pulse event that triggered interrupt was negative)
+PolX
+Pulse polarity of X-axis event. Default value: 0.
+(0: Pulse event that triggered interrupt was positive; 1: Pulse event that triggered interrupt was negative)
+0x23: PULSE_THSX register (read/write)
+Bit 7
+Bit 6
+Bit 5
+Bit 4
+Bit 3
+Bit 2
+Bit 1
+Bit 0
+0
+THSX6
+THSX5
+THSX4
+THSX3
+THSX2
+THSX1
+THSX0
+Table 38. PULSE_THSX description
+Field
+Description
+THSX[6:0]
+Pulse threshold on X-axis. Default value: 000_0000.
+0x24: PULSE_THSY register (read/write)
+Bit 7
+Bit 6
+Bit 5
+Bit 4
+Bit 3
+Bit 2
+Bit 1
+Bit 0
+0
+THSY6
+THSY5
+THSY4
+THSY3
+THSY2
+THSY1
+THSY0
+Table 39. PULSE_THSY description
+Field
+Description
+THSY[6:0]
+Pulse threshold on Y-axis. Default value: 000_0000.
+0x25: PULSE_THSZ register (read/write)
+Bit 7
+Bit 6
+Bit 5
+Bit 4
+Bit 3
+Bit 2
+Bit 1
+Bit 0
+0
+THSZ6
+THSZ5
+THSZ4
+THSZ3
+THSZ2
+THSZ1
+THSZ0
+Table 40. PULSE_THSZ description
+Field
+Description
+THSZ[6:0]
+Pulse threshold on Z-axis. Default value: 000_0000.
+
+
+================ [Page 36] ================
+Sensors
+36
+NXP Semiconductors
+MMA8452Q
+The threshold values range from 1 to 127 with steps of 0.063 g/LSB at a fixed 8 g acceleration range, thus the minimum resolution 
+is always fixed at 0.063 g/LSB. If the low-noise bit in register 0x2A is set then the maximum threshold will be 4 g. The 
+PULSE_THSX, PULSE_THSY and PULSE_THSZ registers define the threshold which is used by the system to start the pulse 
+detection procedure. The threshold value is expressed over 7-bits as an unsigned number.
+0x26: PULSE_TMLT pulse time window 1 register
+The bits TMLT7 through TMLT0 define the maximum time interval that can elapse between the start of the acceleration on the 
+selected axis exceeding the specified threshold and the end when the acceleration on the selected axis must go below the 
+specified threshold to be considered a valid pulse.
+The minimum time step for the pulse time limit is defined in Table 42 and Table 43. Maximum time for a given ODR and 
+oversampling mode is the time step pulse multiplied by 255. The time steps available are dependent on the oversampling mode 
+and whether the pulse low-pass filter option is enabled or not. The pulse low-pass filter is set in register 0x0F. 
+0x26: PULSE_TMLT register (read/write)
+Bit 7
+Bit 6
+Bit 5
+Bit 4
+Bit 3
+Bit 2
+Bit 1
+Bit 0
+TMLT7
+TMLT6
+TMLT5
+TMLT4
+TMLT3
+TMLT2
+TMLT1
+TMLT0
+Table 41. PULSE_TMLT description
+Field
+Description
+TMLT[7:0]
+Pulse time limit. Default value: 0000_0000.
+Table 42. Time Step for pulse time limit (register 0x0F) Pulse_LPF_EN = 1
+ ODR (Hz)
+Max time range (s)
+Time step (ms)
+Normal
+LPLN
+HighRes
+LP
+Normal
+LPLN
+HighRes
+LP
+800
+0.319
+0.319
+0.319
+0.319
+1.25
+1.25
+1.25
+1.25
+400
+0.638
+0.638
+0.638
+0.638
+2.5
+2.5
+2.5
+2.5
+200
+1.28
+1.28
+0.638
+1.28
+5
+5
+2.5
+5
+100
+2.55
+2.55
+0.638
+2.55
+10
+10
+2.5
+10
+50
+5.1
+5.1
+0.638
+5.1
+20
+20
+2.5
+20
+12.5
+5.1
+20.4
+0.638
+20.4
+20
+80
+2.5
+80
+6.25
+5.1
+20.4
+0.638
+40.8
+20
+80
+2.5
+160
+1.56
+5.1
+20.4
+0.638
+40.8
+20
+80
+2.5
+160
+Table 43. Time step for pulse time limit (register 0x0F) Pulse_LPF_EN = 0
+ ODR (Hz)
+Max time range (s)
+Time step (ms)
+Normal
+LPLN
+HighRes
+LP
+Normal
+LPLN
+HighRes
+LP
+800
+0.159
+0.159
+0.159
+0.159
+0.625
+0.625
+0.625
+0.625
+400
+0.159
+0.159
+0.159
+0.319
+0.625
+0.625
+0.625
+1.25
+200
+0.319
+0.319
+0.159
+0.638
+1.25
+1.25
+0.625
+2.5
+100
+0.638
+0.638
+0.159
+1.28
+2.5
+2.5
+0.625
+5
+50
+1.28
+1.28
+0.159
+2.55
+5
+5
+0.625
+10
+12.5
+1.28
+5.1
+0.159
+10.2
+5
+20
+0.625
+40
+6.25
+1.28
+5.1
+0.159
+10.2
+5
+20
+0.625
+40
+1.56
+1.28
+5.1
+0.159
+10.2
+5
+20
+0.625
+40
+
+
+================ [Page 37] ================
+Sensors
+NXP Semiconductors
+37
+MMA8452Q
+0x27: PULSE_LTCY pulse latency timer register
+The bits LTCY7 through LTCY0 define the time interval that starts after the first pulse detection. During this time interval, all pulses 
+are ignored. Note: This timer must be set for single pulse and for double pulse.
+The minimum time step for the pulse latency is defined in Table 45 and Table 46. The maximum time is the time step at the ODR 
+and oversampling mode multiplied by 255. The timing also changes when the pulse LPF is enabled or disabled.
+0x27: PULSE_LTCY register (read/write)
+Bit 7
+Bit 6
+Bit 5
+Bit 4
+Bit 3
+Bit 2
+Bit 1
+Bit 0
+LTCY7
+LTCY6
+LTCY5
+LTCY4
+LTCY3
+LTCY2
+LTCY1
+LTCY0
+Table 44. PULSE_LTCY description
+Field
+Description
+LTCY[7:0]
+Latency time limit. Default value: 0000_0000
+Table 45. Time step for pulse latency @ ODR and power mode (register 0x0F) Pulse_LPF_EN = 1
+ ODR (Hz)
+Max time range (s)
+Time step (ms)
+Normal
+LPLN
+HighRes
+LP
+Normal
+LPLN
+HighRes
+LP
+800
+0.638
+0.638
+0.638
+0.638
+2.5
+2.5
+2.5
+2.5
+400
+1.276
+1.276
+1.276
+1.276
+5
+5
+5
+5
+200
+2.56
+2.56
+1.276
+2.56
+10
+10
+5
+10
+100
+5.1
+5.1
+1.276
+5.1
+20
+20
+5
+20
+50
+10.2
+10.2
+1.276
+10.2
+40
+40
+5
+40
+12.5
+10.2
+40.8
+1.276
+40.8
+40
+160
+5
+160
+6.25
+10.2
+40.8
+1.276
+81.6
+40
+160
+5
+320
+1.56
+10.2
+40.8
+1.276
+81.6
+40
+160
+5
+320
+Table 46. Time step for pulse latency @ ODR and power mode (register 0x0F) Pulse_LPF_EN = 0
+ ODR (Hz)
+Max time range (s)
+Time step (ms)
+Normal
+LPLN
+HighRes
+LP
+Normal
+LPLN
+HighRes
+LP
+800
+0.318
+0.318
+0.318
+0.318
+1.25
+1.25
+1.25
+1.25
+400
+0.318
+0.318
+0.318
+0.638
+1.25
+1.25
+1.25
+2.5
+200
+0.638
+0.638
+0.318
+1.276
+2.5
+2.5
+1.25
+5
+100
+1.276
+1.276
+0.318
+2.56
+5
+5
+1.25
+10
+50
+2.56
+2.56
+0.318
+5.1
+10
+10
+1.25
+20
+12.5
+2.56
+10.2
+0.318
+20.4
+10
+40
+1.25
+80
+6.25
+2.56
+10.2
+0.318
+20.4
+10
+40
+1.25
+80
+1.56
+2.56
+10.2
+0.318
+20.4
+10
+40
+1.25
+80
+
+
+================ [Page 38] ================
+Sensors
+38
+NXP Semiconductors
+MMA8452Q
+0x28: PULSE_WIND register (read/write)
+The bits WIND7 through WIND0 define the maximum interval of time that can elapse after the end of the latency interval in which 
+the start of the second pulse event must be detected provided the device has been configured for double pulse detection. The 
+detected second pulse width must be shorter than the time limit constraints specified by the PULSE_TMLT register, but the end 
+of the double pulse need not finish within the time specified by the PULSE_WIND register.
+The minimum time step for the pulse window is defined in Table 48 and Table 49. The maximum time is the time step at the ODR, 
+oversampling mode and LPF filter option multiplied by 255.
+0x28: PULSE_WIND second pulse time window register
+Bit 7
+Bit 6
+Bit 5
+Bit 4
+Bit 3
+Bit 2
+Bit 1
+Bit 0
+WIND7
+WIND6
+WIND5
+WIND4
+WIND3
+WIND2
+WIND1
+WIND0
+Table 47. PULSE_WIND description
+Field
+Description
+WIND[7:0]
+Second pulse time window. Default value: 0000_0000.
+Table 48. Time step for PULSE detection window @ ODR and power mode (register 0x0F) Pulse_LPF_EN = 1
+ ODR (Hz)
+Max time range (s)
+Time step (ms)
+Normal
+LPLN
+HighRes
+LP
+Normal
+LPLN
+HighRes
+LP
+800
+0.638
+0.638
+0.638
+0.638
+2.5
+2.5
+2.5
+2.5
+400
+1.276
+1.276
+1.276
+1.276
+5
+5
+5
+5
+200
+2.56
+2.56
+1.276
+2.56
+10
+10
+5
+10
+100
+5.1
+5.1
+1.276
+5.1
+20
+20
+5
+20
+50
+10.2
+10.2
+1.276
+10.2
+40
+40
+5
+40
+12.5
+10.2
+40.8
+1.276
+40.8
+40
+160
+5
+160
+6.25
+10.2
+40.8
+1.276
+81.6
+40
+160
+5
+320
+1.56
+10.2
+40.8
+1.276
+81.6
+40
+160
+5
+320
+Table 49. Time step for PULSE detection window @ ODR and power mode (register 0x0F) Pulse_LPF_EN = 0
+ ODR (Hz)
+Max time range (s)
+Time step (ms)
+Normal
+LPLN
+HighRes
+LP
+Normal
+LPLN
+HighRes
+LP
+800
+0.318
+0.318
+0.318
+0.318
+1.25
+1.25
+1.25
+1.25
+400
+0.318
+0.318
+0.318
+0.638
+1.25
+1.25
+1.25
+2.5
+200
+0.638
+0.638
+0.318
+1.276
+2.5
+2.5
+1.25
+5
+100
+1.276
+1.276
+0.318
+2.56
+5
+5
+1.25
+10
+50
+2.56
+2.56
+0.318
+5.1
+10
+10
+1.25
+20
+12.5
+2.56
+10.2
+0.318
+20.4
+10
+40
+1.25
+80
+6.25
+2.56
+10.2
+0.318
+20.4
+10
+40
+1.25
+80
+1.56
+2.56
+10.2
+0.318
+20.4
+10
+40
+1.25
+80
+
+
+================ [Page 39] ================
+Sensors
+NXP Semiconductors
+39
+MMA8452Q
+6.6
+Auto-wake/sleep detection
+The ASLP_COUNT register sets the minimum time period of inactivity required to change current ODR value from the value 
+specified in the DR[2:0] register to ASLP_RATE register value, provided the SLPE bit is set to a logic ‘1’ in the CTRL_REG2 
+register. See Table 52 for functional blocks that may be monitored for inactivity in order to trigger the return to sleep event.
+D7-D0 defines the minimum duration time to change current ODR value from DR to ASLP_RATE. Time step and maximum value 
+depend on the ODR chosen as shown in Table 51. 
+In order to wake the device, the desired function or functions must be enabled in CTRL_REG4 and set to wake to sleep in 
+CTRL_REG3. All enabled functions will still function in sleep mode at the sleep ODR. Only the functions that have been selected 
+for wake from sleep will wake the device.
+MMA8452Q has four functions that can be used to keep the sensor from falling asleep; transient, orientation, pulse, and motion/
+FF. One or more of these functions can be enabled. In order to wake the device, four functions are provided; transient, orientation, 
+pulse, and the motion/freefall. The auto-wake/sleep interrupt does not affect the wake/sleep, nor does the data-ready interrupt. 
+See register 0x2C for the wake from sleep bits.
+If the auto-sleep bit is disabled, then the device can only toggle between standby and wake mode. If auto-sleep interrupt is 
+enabled, transitioning from active mode to auto-sleep mode and vice versa generates an interrupt.
+0x29: ASLP_COUNT Register (read/write)
+Bit 7
+Bit 6
+Bit 5
+Bit 4
+Bit 3
+Bit 2
+Bit 1
+Bit 0
+D7
+D6
+D5
+D4
+D3
+D2
+D1
+D0
+Table 50. ASLP_COUNT description
+Field
+Description
+D[7:0]
+Duration value. Default value: 0000_0000.
+Table 51. ASLP_COUNT r with ODR
+Output data rate (ODR)
+Duration
+ODR time step
+ASLP_COUNT step
+800 Hz
+0 to 81 s
+1.25 ms
+320 ms
+400 Hz
+0 to 81 s
+2.5 ms
+320 ms
+200 Hz
+0 to 81 s
+5 ms
+320 ms
+100 Hz
+0 to 81 s
+10 ms
+320 ms
+50 Hz
+0 to 81 s
+20 ms
+320 ms
+12.5 Hz
+0 to 81 s
+80 ms
+320 ms
+6.25 Hz
+0 to 81 s
+160 ms
+320 ms
+1.56 Hz
+0 to 162 s
+640 ms
+640 ms
+Table 52. Sleep/wake mode gates and triggers
+Interrupt source
+Event restarts timer and 
+delays return to sleep
+Event will wake from sleep
+SRC_TRANS
+Yes
+Yes
+SRC_LNDPRT
+Yes
+Yes
+SRC_PULSE
+Yes
+Yes
+SRC_FF_MT
+Yes
+Yes
+SRC_ASLP
+No*
+No*
+SRC_DRDY
+No
+No
+
+
+================ [Page 40] ================
+Sensors
+40
+NXP Semiconductors
+MMA8452Q
+6.7
+Control registers
+Note: Except for standby mode selection, the device must be in standby mode to change any of the fields within CTRL_REG1 
+(0X2A).
+0x2A: CTRL_REG1 system control 1 register
+It is important to note that when the device is auto-sleep mode, the system ODR and the data rate for all the system functional 
+blocks are overridden by the data rate set by the ASLP_RATE field.
+DR[2:0] bits select the output data rate (ODR) for acceleration samples. The default value is 000 for a data rate of 800 Hz.
+0x2A: CTRL_REG1 register (read/write)
+Bit 7
+Bit 6
+Bit 5
+Bit 4
+Bit 3
+Bit 2
+Bit 1
+Bit 0
+ASLP_RATE1
+ASLP_RATE0
+DR2
+DR1
+DR0
+LNOISE
+F_READ
+ACTIVE
+Table 53. CTRL_REG1 description
+Field
+Description
+ASLP_RATE[1:0]
+Configures the auto-wake sample frequency when the device is in sleep mode. Default value: 00.
+See Table 54 for more information.
+DR[2:0]
+Data rate selection. Default value: 000.
+See Table 55 for more information.
+LNOISE
+Reduced noise reduced maximum range mode. Default value: 0. 
+(0: Normal mode; 1: Reduced noise mode)
+F_READ
+Fast-read mode: Data format limited to single byte. Default value: 0.
+(0: Normal mode 1: Fast-read mode)
+ACTIVE
+Full-scale selection. Default value: 00.
+(0: Standby mode; 1: Active mode)
+Table 54. Sleep mode rate description
+ASLP_RATE1
+ASLP_RATE0
+Frequency (Hz)
+0
+0
+50
+0
+1
+12.5
+1
+0
+6.25
+1
+1
+1.56
+Table 55. System output data rate selection
+DR2
+DR1
+DR0
+ODR
+Period
+0
+0
+0
+800 Hz
+1.25 ms
+0
+0
+1
+400 Hz
+2.5 ms
+0
+1
+0
+200 Hz
+5 ms
+0
+1
+1
+100 Hz
+10 ms
+1
+0
+0
+50 Hz
+20 ms
+1
+0
+1
+12.5 Hz
+80 ms
+1
+1
+0
+6.25 Hz
+160 ms
+1
+1
+1
+1.56 Hz
+640 ms
+
+
+================ [Page 41] ================
+Sensors
+NXP Semiconductors
+41
+MMA8452Q
+ACTIVE bit selects between standby mode and active mode. The default value is 0 for standby mode.
+LNOISE bit selects between normal full dynamic range mode and a high sensitivity, low noise mode. In low noise mode, the 
+maximum signal that can be measured is ±4 g. Note: Any thresholds set above 4 g will not be reached.
+F_READ bit selects between normal and fast-read mode. When selected, the auto-increment counter will skip over the LSB data 
+bytes.
+0x2B: CTRL_REG2 system control 2 register
+ST bit activates the self-test function. When ST is set, X, Y, and Z outputs will shift. RST bit is used to activate the software reset. 
+The reset mechanism can be enabled in standby and active mode.
+When the reset bit is enabled, all registers are rest and are loaded with default values. Writing ‘1’ to the RST bit immediately 
+resets the device, no matter whether it is in active/wake, active/sleep, or standby mode. 
+The I2C communication system is reset to avoid accidental corrupted data access.
+At the end of the boot process the RST bit is deasserted to 0. Reading this bit will return a value of zero.
+The (S)MODS[1:0] bits select which oversampling mode is to be used shown in Table 58. The oversampling modes are available 
+in both wake mode MOD[1:0] and also in the sleep mode SMOD[1:0].
+Table 56. Full-scale selection
+Active
+Mode
+0
+Standby
+1
+Active
+0x2B: CTRL_REG2 register (read/write)
+Bit 7
+Bit 6
+Bit 5
+Bit 4
+Bit 3
+Bit 2
+Bit 1
+Bit 0
+ST
+RST
+0
+SMODS1
+SMODS0
+SLPE
+MODS1
+MODS0
+Table 57. CTRL_REG2 description
+Field
+Description
+ST
+Self-test enable. Default value: 0.
+0: Self-test disabled; 1: Self-test enabled
+RST
+Software reset. Default value: 0.
+0: Device reset disabled; 1: Device reset enabled.
+SMODS[1:0]
+Sleep mode power scheme selection. Default value: 00.
+See Table 58 and Table 59
+SLPE
+Auto-sleep enable. Default value: 0.
+0: Auto-sleep is not enabled;
+1: Auto-sleep is enabled. 
+MODS[1:0]
+Active mode power scheme selection. Default value: 00.
+See Table 58 and Table 59
+Table 58. MODS oversampling modes
+(S)MODS1
+(S)MODS0
+Power mode
+0
+0
+Normal 
+0
+1
+Low Noise Low Power
+1
+0
+High Resolution
+1
+1
+Low Power
+
+
+================ [Page 42] ================
+Sensors
+42
+NXP Semiconductors
+MMA8452Q
+ 
+0x2C: CTRL_REG3 interrupt control register
+IPOL bit selects the polarity of the interrupt signal. When IPOL is ‘0’ (default value) any interrupt event will signaled with a 
+logical 0.
+PP_OD bit configures the interrupt pin to push-pull or in open drain mode. The default value is 0 which corresponds to push-Pull 
+mode. The open drain configuration can be used for connecting multiple interrupt signals on the same interrupt line.
+0x2D: CTRL_REG4 register (read/write)
+Table 59. MODS oversampling modes current consumption and averaging values at each ODR
+Mode
+Normal (00)
+Low Noise Low Power (01)
+High Resolution (10)
+Low Power (11)
+ODR
+Current μA
+OS Ratio
+Current μA
+OS Ratio
+Current μA
+OS Ratio
+Current μA
+OS Ratio
+1.56 Hz
+24
+128
+8
+32
+165
+1024
+6
+16
+6.25 Hz
+24
+32
+8
+8
+165
+256
+6
+4
+12.5 Hz
+24
+16
+8
+4
+165
+128
+6
+2
+50 Hz
+24
+4
+24
+4
+165
+32
+14
+2
+100 Hz
+44
+4
+44
+4
+165
+16
+24
+2
+200 Hz
+85
+4
+85
+4
+165
+8
+44
+2
+400 Hz
+165
+4
+165
+4
+165
+4
+85
+2
+800 Hz
+165
+2
+165
+2
+165
+2
+165
+2
+0x2C: CTRL_REG3 register (read/write)
+Bit 7
+Bit 6
+Bit 5
+Bit 4
+Bit 3
+Bit 2
+Bit 1
+Bit 0
+0
+WAKE_TRANS
+WAKE_LNDPRT
+WAKE_PULSE
+WAKE_FF_MT
+0
+IPOL
+PP_OD
+Table 60. CTRL_REG3 description
+Field
+Description
+WAKE_TRANS
+0: Transient function is bypassed in sleep mode. Default value: 0.
+1: Transient function interrupt can wake up system
+WAKE_LNDPRT
+0: Orientation function is bypassed in sleep mode. Default value: 0.
+1: Orientation function interrupt can wake up system
+WAKE_PULSE
+0: Pulse function is bypassed in sleep mode. Default value: 0.
+1: Pulse function interrupt can wake up system
+WAKE_FF_MT
+0: Freefall/motion function is bypassed in sleep mode. Default value: 0.
+1: Freefall/motion function interrupt can wake up
+IPOL
+Interrupt polarity active high, or active low. Default value: 0.
+0: Active low; 1: Active high
+PP_OD
+Push-pull/open drain selection on interrupt pad. Default value: 0.
+0: Push-pull; 1: Open drain
+0x2D: CTRL_REG4 register (read/write)
+Bit 7
+Bit 6
+Bit 5
+Bit 4
+Bit 3
+Bit 2
+Bit 1
+Bit 0
+INT_EN_ASLP
+0
+INT_EN_TRANS
+INT_EN_LNDPRT
+INT_EN_PULSE
+INT_EN_FF_MT
+0
+INT_EN_DRDY
+Table 61. Interrupt enable register description
+Field
+Description
+INT_EN_ASLP
+Interrupt enable. Default value: 0.
+0: Auto-sleep/wake interrupt disabled; 1: Auto-sleep/wake interrupt enabled.
+INT_EN_TRANS
+Interrupt enable. Default value: 0.
+0: Transient interrupt disabled; 1: Transient interrupt enabled.
+
+
+================ [Page 43] ================
+Sensors
+NXP Semiconductors
+43
+MMA8452Q
+The corresponding functional block interrupt enable bit allows the functional block to route its event detection flags to the system’s 
+interrupt controller. The interrupt controller routes the enabled functional block interrupt to the INT1 or INT2 pin.
+0x2E: CTRL_REG5 register (read/write)
+The system’s interrupt controller shown in Figure 10 uses the corresponding bit field in the CTRL_REG5 register to determine the 
+routing table for the INT1 and INT2 interrupt pins. If the bit value is logic ‘0’, the functional block’s interrupt is routed to INT2, and 
+if the bit value is logic ‘1’, then the interrupt is routed to INT1. One or more functions can assert an interrupt pin; therefore a host 
+application responding to an interrupt should read the INT_SOURCE (0x0C) register to determine the appropriate sources of the 
+interrupt.
+6.8
+User offset correction registers
+For more information on how to calibrate the 0 g offset,  refer to application note AN4069. The 2’s complement offset correction 
+registers values are used to realign the zero-g position of the X, Y, and Z-axis after device board mount. The resolution of the 
+offset registers is 2 mg per LSB. The 2’s complement 8-bit value would result in an offset compensation range ±256 mg.
+0x2F: OFF_X offset correction X register
+INT_EN_LNDPRT
+Interrupt enable. Default value: 0.
+0: Orientation (landscape/portrait) interrupt disabled.
+1: Orientation (landscape/portrait) interrupt enabled.
+INT_EN_PULSE
+Interrupt enable. Default value: 0.
+0: Pulse detection interrupt disabled; 1: Pulse detection interrupt enabled
+INT_EN_FF_MT
+Interrupt enable. Default value: 0.
+0: Freefall/motion interrupt disabled; 1: Freefall/motion interrupt enabled
+INT_EN_DRDY
+Interrupt enable. Default value: 0.
+0: Data-ready interrupt disabled; 1: Data-ready interrupt enabled
+0x2E: CTRL_REG5 interrupt configuration register
+Bit 7
+Bit 6
+Bit 5
+Bit 4
+Bit 3
+Bit 2
+Bit 1
+Bit 0
+INT_CFG_ASLP
+0
+INT_CFG_TRANS INT_CFG_LNDPRT
+INT_CFG_PULSE
+INT_CFG_FF_MT
+0
+INT_CFG_DRDY
+Table 62. Interrupt configuration register description
+Field
+Description
+INT_CFG_ASLP
+INT1/INT2 configuration. Default value: 0.
+0: Interrupt is routed to INT2 pin; 1: Interrupt is routed to INT1 pin
+INT_CFG_TRANS
+INT1/INT2 configuration. Default value: 0.
+0: Interrupt is routed to INT2 pin; 1: Interrupt is routed to INT1 pin
+INT_CFG_LNDPRT
+INT1/INT2 configuration. Default value: 0.
+0: Interrupt is routed to INT2 pin; 1: Interrupt is routed to INT1 pin
+INT_CFG_PULSE
+INT1/INT2 configuration. Default value: 0.
+0: Interrupt is routed to INT2 pin; 1: Interrupt is routed to INT1 pin
+INT_CFG_FF_MT
+INT1/INT2 configuration. Default value: 0.
+0: Interrupt is routed to INT2 pin; 1: Interrupt is routed to INT1 pin
+INT_CFG_DRDY
+INT1/INT2 configuration. Default value: 0.
+0: Interrupt is routed to INT2 pin; 1: Interrupt is routed to INT1 pin
+0x2F: OFF_X register (read/write)
+Bit 7
+Bit 6
+Bit 5
+Bit 4
+Bit 3
+Bit 2
+Bit 1
+Bit 0
+D7
+D6
+D5
+D4
+D3
+D2
+D1
+D0
+Table 61. Interrupt enable register description (continued)
+Field
+Description
+
+
+================ [Page 44] ================
+Sensors
+44
+NXP Semiconductors
+MMA8452Q
+0x30: OFF_Y offset correction Y register
+0x31: OFF_Z offset correction Z register
+Table 63. OFF_X description
+Field
+Description
+D[7:0]
+X-axis offset value. Default value: 0000_0000.
+0x30: OFF_Y register (read/write)
+Bit 7
+Bit 6
+Bit 5
+Bit 4
+Bit 3
+Bit 2
+Bit 1
+Bit 0
+D7
+D6
+D5
+D4
+D3
+D2
+D1
+D0
+Table 64. OFF_Y description
+Field
+Description
+D[7:0]
+Y-axis offset value. Default value: 0000_0000.
+0x31: OFF_Z register (read/write)
+Bit 7
+Bit 6
+Bit 5
+Bit 4
+Bit 3
+Bit 2
+Bit 1
+Bit 0
+D7
+D6
+D5
+D4
+D3
+D2
+D1
+D0
+Table 65. OFF_Z description
+Field
+Description
+D[7:0]
+Z-axis offset value. Default value: 0000_0000.
+Table 66. MMA8452Q register map
+Reg
+Name
+Definition
+Bit 7 
+Bit 6
+Bit 5
+Bit 4
+Bit 3
+Bit 2
+Bit 1
+Bit 0
+00
+STATUS
+Data Status R
+ZYXOW
+ZOW
+YOW
+XOW
+ZYXDR
+ZDR
+YDR
+XDR
+01
+OUT_X_MSB
+12-bit X data R
+XD11
+XD10
+XD9
+XD8
+XD7
+XD6
+XD5
+XD4
+02
+OUT_X_LSB
+12-bit X data R
+XD3
+XD2
+XD1
+XD0
+0
+0
+0
+0
+03
+OUT_Y_MSB
+12-bit Y data R
+YD11
+YD10
+YD9
+YD8
+YD7
+YD6
+YD5
+YD4
+04
+OUT_Y_LSB
+12-bit Y data R
+YD3
+YD2
+YD1
+YD0
+0
+0
+0
+0
+05
+OUT_Z_MSB
+12-bit Z data R
+ZD11
+ZD10
+ZD9
+ZD8
+ZD7
+ZD6
+ZD5
+ZD4
+06
+OUT_Z_LSB
+12-bit Z data R
+ZD3
+ZD2
+ZD1
+ZD0
+0
+0
+0
+0
+0B
+SYSMOD
+System mode R
+0
+0
+0
+0
+0
+0
+SYSMOD1
+SYSMOD0
+0C
+INT_SOURCE
+Interrupt Status R
+SRC_ASLP
+0
+SRC_TRANS
+SRC_LNDPRT
+SRC_PULSE
+SRC_FF_MT
+0
+SRC_DRDY
+0D
+WHO_AM_I
+ID Register R
+0
+0
+1
+0
+1
+0
+1
+0
+0E
+XYZ_DATA_CFG
+Data Config R/W
+0
+0
+0
+HPF_OUT
+0
+0
+FS1
+FS0
+0F
+HP_FILTER_CUTOFF
+HP Filter Setting R/W
+0
+0
+Pulse_HPF_BYP
+Pulse_LPF_EN
+0
+0
+SEL1
+SEL0
+10
+PL_STATUS
+PL Status R
+NEWLP
+LO
+0
+0
+0
+LAPO[1]
+LAPO[0]
+BAFRO
+11
+PL_CFG
+PL Configuration R/W
+DBCNTM
+PL_EN
+0
+0
+0
+0
+0
+0
+12
+PL_COUNT
+PL DEBOUNCE R/W
+DBNCE[7]
+DBNCE[6]
+DBNCE[5]
+DBNCE[4]
+DBNCE[3]
+DBNCE[2]
+DBNCE[1]
+DBNCE[0]
+13
+PL_BF_ZCOMP
+PL Back/Front Z Comp
+ R
+BKFR[1]
+BKFR[0]
+0
+0
+0
+ZLOCK[2]
+ZLOCK[1]
+ZLOCK[0]
+14
+PL_THS_REG
+PL THRESHOLD R
+PL_THS[4]
+PL_THS[3]
+PL_THS[2]
+PL_THS[1]
+PL_THS[0]
+HYS[2]
+HYS[1]
+HYS[0]
+15
+FF_MT_CFG
+Freefall/Motion Config
+R/W
+ELE
+OAE
+ZEFE
+YEFE
+XEFE
+0
+0
+0
+16
+FF_MT_SRC
+Freefall/Motion Source
+R
+EA
+0
+ZHE
+ZHP
+YHE
+YHP
+XHE 
+XHP
+17
+FF_MT_THS
+Freefall/Motion threshold
+R/W
+DBCNTM
+THS6 
+THS5
+THS4
+THS3
+THS2
+THS1
+THS0
+
+
+================ [Page 45] ================
+Sensors
+NXP Semiconductors
+45
+MMA8452Q
+18
+FF_MT_COUNT
+Freefall/Motion 
+Debounce R/W
+D7
+D6
+D5
+D4
+D3
+D2
+D1
+D0
+1D
+TRANSIENT_CFG
+Transient Config R/W
+0
+0
+0
+ELE
+ZTEFE
+YTEFE
+XTEFE
+HPF_BYP
+1E
+TRANSIENT_SRC
+Transient Source R
+0
+EA
+ZTRANSE
+Z_Trans_Pol
+YTRANSE
+Y_Trans_Pol
+XTRANSE
+X_Trans_Pol
+1F
+TRANSIENT_THS
+Transient threshold R/W
+DBCNTM
+THS6 
+THS5
+THS4
+THS3
+THS2
+THS1
+THS0
+20
+TRANSIENT_COUNT
+Transient Debounce
+R/W
+D7
+D6
+D5
+D4
+D3
+D2
+D1
+D0
+21
+PULSE_CFG
+Pulse Config R/W
+DPA
+ELE
+ZDPEFE
+ZSPEFE
+YDPEFE
+YSPEFE 
+XDPEFE
+XSPEFE
+22
+PULSE_SRC
+Pulse Source R
+EA
+AxZ
+AxY
+AxX
+DPE
+Pol_Z
+Pol_Y
+Pol_X
+23
+PULSE_THSX
+Pulse X Threshold R/W
+0
+THSX6
+THSX5
+THSX4
+THSX3
+THSX2
+THSX1
+THSX0
+24
+PULSE_THSY
+Pulse Y Threshold R/W
+0
+THSY6
+THSY5
+THSY4
+THSY3
+THSY2
+THSY1
+THSY0
+25
+PULSE_THSZ
+Pulse Z Threshold R/W
+0
+THSZ6
+THSZ5
+THSZ4
+THSZ3
+THSZ2
+THSZ1
+THSZ0
+26
+PULSE_TMLT
+Pulse First Timer R/W
+TMLT7
+TMLT6
+TMLT5
+TMLT4
+TMLT3
+TMLT2
+TMLT1
+TMLT0
+27
+PULSE_LTCY
+Pulse Latency R/W
+LTCY7
+LTCY6
+LTCY5
+LTCY4
+LTCY3
+LTCY2
+LTCY1
+LTCY0
+28
+PULSE_WIND
+Pulse 2nd Window
+R/W
+WIND7
+WIND6
+WIND5
+WIND4
+WIND3
+WIND2
+WIND1
+WIND0
+29
+ASLP_COUNT
+Auto-sleep Counter
+R/W
+D7
+D6
+D5
+D4
+D3
+D2
+D1
+D0
+2A
+CTRL_REG1
+Control Reg1 R/W
+ASLP_RATE1
+ASLP_RATE0
+DR2
+DR1
+DR0
+LNOISE
+F_READ
+ACTIVE
+2B
+CTRL_REG2
+Control Reg2 R/W
+ST
+RST
+0
+SMODS1
+SMODS0
+SLPE
+MODS1
+MODS0
+2C
+CTRL_REG3
+Control Reg3
+(wake Interrupts from 
+sleep) R/W
+0
+WAKE_TRANS
+WAKE_LNDPRT
+WAKE_PULSE
+WAKE_FF_MT
+0
+IPOL
+PP_OD
+2D
+CTRL_REG4
+Control Reg4
+(Interrupt Enable Map)
+R/W
+INT_EN_ASLP
+0
+INT_EN_TRANS
+INT_EN_LNDPRT
+INT_EN_PULSE
+INT_EN_FF_MT
+0
+INT_EN_DRDY
+2E
+CTRL_REG5
+Control Reg5
+(Interrupt Configuration)
+R/W
+INT_CFG_ASLP
+0
+INT_CFG_TRANS
+INT_CFG_LNDPR
+T
+INT_CFG_PULSE
+INT_CFG_FF_MT
+0
+INT_CFG_DRDY
+2F
+OFF_X
+X 8-bit offset R/W
+D7
+D6
+D5
+D4
+D3
+D2
+D1
+D0
+30
+OFF_Y
+Y 8-bit offset R/W
+D7
+D6
+D5
+D4
+D3
+D2
+D1
+D0
+31
+OFF_Z
+Z 8-bit offset R/W
+D7
+D6
+D5
+D4
+D3
+D2
+D1
+D0
+Table 67. Accelerometer output data
+ 12-bit data
+Range ±2 g (1 mg)
+Range ±4 g (2 mg)
+Range ±8 g (3.9 mg)
+0111 1111 1111 
+1.999 g
++3.998 g
++7.996 g
+0111 1111 1110
+1.998 g
++3.996 g
++7.992 g
+…
+…
+…
+…
+0000 0000 0001
+0.001 g
++0.002 g
++0.004 g
+0000 0000 0000
+0.0000 g
+0.0000 g
+0.0000 g
+1111 1111 1111
+–0.001 g
+–0.002 g
+–0.004 g
+…
+…
+…
+…
+1000 0000 0001
+–1.999 g
+–3.998 g
+–7.996 g
+1000 0000 0000
+–2.0000 g
+–4.0000 g
+–8.0000 g
+8-bit data
+Range ±2 g (15.6 mg)
+Range ±4 g (31.25 mg)
+Range ±8 g (62.5 mg)
+0111 1111
+1.9844 g
++3.9688 g
++7.9375 g
+0111 1110
+1.9688 g
++3.9375 g
++7.8750 g
+…
+…
+…
+…
+Table 66. MMA8452Q register map (continued)
+Reg
+Name
+Definition
+Bit 7 
+Bit 6
+Bit 5
+Bit 4
+Bit 3
+Bit 2
+Bit 1
+Bit 0
+
+
+================ [Page 46] ================
+Sensors
+46
+NXP Semiconductors
+MMA8452Q
+0000 0001
++0.0156 g
++0.0313 g
++0.0625 g
+0000 0000
+0.000 g
+0.0000 g
+0.0000 g
+1111 1111
+–0.0156 g
+–0.0313 g
+–0.0625 g
+…
+…
+…
+…
+1000 0001
+–1.9844 g
+–3.9688 g
+–7.9375 g
+1000 0000
+–2.0000 g
+–4.0000 g
+–8.0000 g
+Table 67. Accelerometer output data (continued)
+
+
+================ [Page 47] ================
+Sensors
+NXP Semiconductors
+47
+MMA8452Q
+7
+Printed Circuit Board Layout and Device Mounting
+Printed Circuit Board (PCB) layout and device mounting are critical portions of the total design. The footprint for the surface mount 
+packages must be the correct size as a base for a proper solder connection between the PCB and the package. This, along with 
+the recommended soldering materials and techniques, will optimize assembly and minimize the stress on the package after board 
+mounting.
+7.1
+Printed circuit board layout
+The following recommendations are a guide to an effective PCB layout. See Figure 14 for footprint dimensions.
+1.
+Do not solder down exposed ad (EP) under the package to minimize board mounting stress impact to product 
+performance.
+2.
+The solder mask should not cover any of the PCB landing pads, as shown in Figure 14.
+3.
+No additional via nor metal pattern underneath package on the top of the PCB layer.
+4.
+Do not place any components or vias within 2 mm of the package land area. This may cause additional package stress 
+if it is too close to the package land area.
+5.
+Signal traces connected to pads should be as symmetric as possible. Put dummy traces on NC pads, to have same 
+length of exposed trace for all pads.
+6.
+Use a standard pick and place process and equipment. Do not use a hand soldering process.
+7.
+Customers are advised to be cautious about the proximity of screw down holes to the sensor, and the location of any 
+press fit to the assembled PCB when in an enclosure. It is important that the assembled PCB remain flat after 
+assembly to keep electronic operation of the device optimal.
+8.
+The PCB should be rated for the multiple lead-free reflow condition with max 260 °C temperature.
+9.
+NXP using halide-free molding compound (green) and lead-free terminations. These terminations are compatible with 
+tin-lead (Sn-Pb) as well as tin-silver-copper (Sn-Ag-Cu) solder paste soldering processes. Reflow profiles applicable to 
+those processes can be used successfully for soldering the devices.
+
+
+================ [Page 48] ================
+Sensors
+48
+NXP Semiconductors
+MMA8452Q
+Figure 14. Footprint
+7.2
+Overview of soldering considerations
+Information provided here is based on experiments executed on QFN devices. These experiments cannot represent exact 
+conditions present at a customer site. Therefore, information herein should be used for guidance only. Process and design 
+optimizations are recommended to develop an application-specific solution. With the proper PCB footprint and solder stencil 
+designs, the package will self-align during the solder reflow process.
+•
+Stencil thickness is 100 or 125 μm.
+•
+The PCB should be rated for the multiple lead-free reflow condition with a maximum 260 °C temperature.
+•
+Use a standard pick-and-place process and equipment. Do not use a hand soldering process.
+•
+Do not use a screw-down or stacking to mount the PCB into an enclosure. These methods could bend the PCB, which 
+would put stress on the package.
+7.3
+Halogen content
+This package is designed to be halogen free, exceeding most industry and customer standards. Halogen free means that no 
+homogeneous material within the assembled package will contain chlorine (Cl) in excess of 700 ppm or 0.07% weight/weight or 
+bromine (Br) in excess of 900 ppm or 0.09% weight/weight.
+3&%ODQGSDG
+6ROGHUVWHQFLORSHQLQJ
+6ROGHUPDVNRSHQLQJ
+3DFNDJH
+3DFNDJHIRRWSULQW
+3DFNDJHIRRWSULQW
+
+
+
+;
+
+
+
+
+
+
+
+
+3DFNDJHIRRWSULQW
+;
+;
+
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+Package outline
+Package outline
+Package outline
+
+
+================ [Page 49] ================
+Sensors
+NXP Semiconductors
+49
+MMA8452Q
+8
+Package Information
+The MMA8452Q device is housed in a 16-lead QFN package, case number 98ASA00063D.
+8.1
+Tape and reel information
+
+
+================ [Page 50] ================
+Sensors
+50
+NXP Semiconductors
+MMA8452Q
+8.2
+Package description
+98ASA00063D, 16-pin QFN,
+3 mm x 3 mm x 1.0 mm
+
+
+================ [Page 51] ================
+Sensors
+NXP Semiconductors
+51
+MMA8452Q
+98ASA00063D, 16-pin QFN,
+3 mm x 3 mm x 1.0 mm 
+
+
+================ [Page 52] ================
+Sensors
+52
+NXP Semiconductors
+MMA8452Q
+98ASA00063D, 16-pin QFN,
+3 mm x 3 mm x 1.0 mm
+
+
+================ [Page 53] ================
+Sensors
+NXP Semiconductors
+53
+MMA8452Q
+9
+Revision History
+Table 68. Revision history
+Revision 
+number
+Revision 
+date
+Description of changes
+10
+04/2016
+• The format of this data sheet has been redesigned to comply with the new identity guidelines of NXP 
+Semiconductors.
+• Legal texts have been adapted to the new company name where appropriate.
+• Corrected Figure 6 title was MMA8451Q Mode Transition to MMA8452Q mode transition.
+• Table 8: Updated header to include Q suffix on device numbers.
+• Section 8.1: Deleted part marking information.
+• Package outline updated to corporate format only, no technical changes.
+9.2
+06/2015
+—
+9.1
+11/2014
+—
+9
+07/2014
+—
+8.1
+10/2013
+—
+8
+07/2013
+—
+7
+03/2013
+—
+6
+02/2013
+—
+5
+07/2012
+—
+
+
+================ [Page 54] ================
+Information in this document is provided solely to enable system and software implementers to use NXP products. 
+There are no expressed or implied copyright licenses granted hereunder to design or fabricate any integrated circuits 
+based on the information in this document. NXP reserves the right to make changes without further notice to any 
+products herein.
+NXP makes no warranty, representation, or guarantee regarding the suitability of its products for any particular 
+purpose, nor does NXP assume any liability arising out of the application or use of any product or circuit, and 
+specifically disclaims any and all liability, including without limitation, consequential or incidental damages. "Typical" 
+parameters that may be provided in NXP data sheets and/or specifications can and do vary in different applications, 
+and actual performance may vary over time. All operating parameters, including "typicals," must be validated for each 
+customer application by the customer's technical experts. NXP does not convey any license under its patent rights nor 
+the rights of others. NXP sells products pursuant to standard terms and conditions of sale, which can be found at the 
+following address: 
+http://www.nxp.com/terms-of-use.html.
+How to Reach Us:
+Home Page: 
+NXP.com 
+Web Support: 
+http://www.nxp.com/support
+NXP, the NXP logo, Freescale, the Freescale logo, and the Energy Efficient Solutions logo are trademarks of NXP B.V. 
+All other product or service names are the property of their respective owners. All rights reserved. 
+© 2016 NXP B.V. 
+Document Number: MMA8452Q
+Rev. 10
+04/2016
+

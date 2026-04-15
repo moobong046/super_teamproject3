@@ -1,0 +1,3994 @@
+
+================ [Page 1] ================
+THGBMNG5D1LBAIL 
+© 2018 Toshiba Memory Corporation 
+     
+1  
+   
+         February 21st, 2018 
+ 
+TOSHIBA e-MMC Module 
+4GB THGBMNG5D1LBAIL 
+INTRODUCTION 
+THGBMNG5D1LBAIL is 4GB density of e-MMC Module product housed in 153 ball BGA package. This unit is utilized 
+advanced TOSHIBA NAND flash device(s) and controller chip assembled as Multi Chip Module. THGBMNG5D1LBAIL 
+has an industry standard MMC protocol for easy use. 
+ 
+ 
+FEATURES 
+THGBMNG5D1LBAIL Interface 
+THGBMNG5D1LBAIL has the JEDEC/MMCA Version 5.0 interface with 1-I/O, 4-I/O and 8-I/O mode.  
+ 
+ 
+Pin Connection 
+P-WFBGA153-1113-0.50 (11.5mm x 13mm, H0.8mm max. package) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Pin Number 
+Name 
+Pin Number 
+Name 
+Pin Number 
+Name 
+Pin Number 
+Name 
+A3 
+DAT0 
+C2 
+VDDi 
+J5 
+Vss 
+N4 
+VccQ 
+A4 
+DAT1 
+C4 
+VssQ 
+J10 
+Vcc 
+N5 
+VssQ 
+A5 
+DAT2 
+C6 
+VccQ 
+K5 
+RST_n 
+P3 
+VccQ 
+A6 
+Vss 
+E6 
+Vcc 
+K8 
+Vss 
+P4 
+VssQ 
+B2 
+DAT3 
+E7 
+Vss 
+K9 
+Vcc 
+P5 
+VccQ 
+B3 
+DAT4 
+F5 
+Vcc 
+M4 
+VccQ 
+P6 
+VssQ 
+B4 
+DAT5 
+G5 
+Vss 
+M5 
+CMD 
+ 
+ 
+B5 
+DAT6 
+H5 
+DS 
+M6 
+CLK 
+ 
+ 
+B6 
+DAT7 
+H10 
+Vss 
+N2 
+VssQ 
+ 
+ 
+   NC: No Connect, shall be connected to ground or left floating. 
+RFU: Reserved for Future Use, shall be left floating for future use.   
+VSF: Vendor Specific Function, shall be left floating. 
+ 
+14
+13
+12
+11
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+A
+B
+C
+D
+E
+F
+G
+H
+J
+K
+L
+M
+N
+P
+index
+Top View
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+RFU
+NC
+NC
+NC
+NC
+NC
+NC
+RFU
+NC
+NC
+NC
+NC
+RFU
+Vss
+NC
+NC
+DAT7
+DAT2
+DAT1
+DAT6
+DAT5
+DAT0
+DAT4
+DAT3
+VccQ
+VssQ
+CLK
+CMD
+VccQ
+VccQ
+VssQ
+VccQ
+VssQ
+VssQ
+VccQ
+VssQ
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+RFU
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+NC
+VDDi
+RST_n
+Vss
+DS
+Vss
+Vcc
+Vcc
+RFU
+VSF
+VSF
+RFU
+Vss
+VSF
+RFU
+Vss
+Vcc
+RFU
+Vcc
+Vss
+RFU
+RFU
+NC
+NC
+
+
+================ [Page 2] ================
+THGBMNG5D1LBAIL 
+© 2018 Toshiba Memory Corporation 
+     
+2  
+   
+         February 21st, 2018 
+ 
+Part Numbers 
+Available e-MMC Module Products – Part Numbers 
+TOSHIBA Part Number 
+Density 
+Package Size 
+NAND Flash Type 
+Weight 
+THGBMNG5D1LBAIL 
+4GB 
+11.5mm x 13mm x 0.8mm(max) 
+1 x 32Gbit 15nm 
+0.18g typ 
+ 
+Operating Temperature 
+-25°C to +85°C 
+ 
+ 
+Storage Temperature 
+-40°C to +85°C 
+ 
+ 
+Performance 
+X8 mode/ Sequential access 
+TOSHIBA Part Number 
+Density 
+NAND Flash Type 
+Interleave 
+Operation 
+Frequency 
+/Mode 
+VccQ 
+Typ. Performance 
+[MB/sec] 
+Read 
+Write 
+THGBMNG5D1LBAIL 
+4GB 
+1 x 32Gbit 15nm 
+Non 
+Interleave 
+52MHz/SDR 
+1.8V 
+46 
+14 
+3.3V 
+46 
+14 
+52MHz/DDR 
+1.8V 
+88 
+14 
+3.3V 
+88 
+14 
+HS200 
+1.8V 
+152 
+14 
+HS400 
+1.8V 
+152 
+14 
+ 
+ 
+Power Supply 
+Vcc =  
+2.7V to 3.6V 
+VccQ =  
+1.7V to 1.95V / 2.7V to 3.6V 
+ 
+ 
+Operating Current (RMS) 
+The measurement for max RMS current is done as average RMS current consumption over a period of 100ms 
+TOSHIBA Part 
+Number 
+Density 
+NAND Flash Type 
+Interleave 
+Operation 
+Frequency 
+/Mode 
+VccQ 
+Max Operating 
+Current [mA] 
+Iccq 
+Icc 
+THGBMNG5D1LBAIL 
+4GB 
+1 x 32Gbit 15nm 
+Non 
+Interleave 
+52MHz/SDR 
+1.8V 
+60 
+25 
+3.3V 
+70 
+25 
+52MHz/DDR 
+1.8V 
+70 
+30 
+3.3V 
+85 
+30 
+HS200 
+1.8V 
+90 
+30 
+HS400 
+1.8V 
+100 
+30 
+ 
+ 
+ 
+ 
+ 
+
+
+================ [Page 3] ================
+THGBMNG5D1LBAIL 
+© 2018 Toshiba Memory Corporation 
+     
+3  
+   
+         February 21st, 2018 
+ 
+Sleep Mode Current 
+ 
+ 
+TOSHIBA Part Number 
+Density 
+NAND Flash Type 
+Interleave 
+Operation 
+Iccqs [μA] 
+Iccqs+Iccs [μA] 
+Typ. *1 
+Max. *2 
+Typ. *1 
+Max. *2 
+THGBMNG5D1LBAIL 
+4GB 
+1 x 32Gbit 15nm 
+Non 
+Interleave 
+100 
+510 
+120 
+560 
+ 
+ 
+ 
+ 
+*1 : The conditions of typical values are 25°C and VccQ = 3.3V or 1.8V.  
+*2 : The conditions of maximum values are 85°C and VccQ = 3.6V or 1.95V. 
+ 
+ 
+ 
+
+
+================ [Page 4] ================
+THGBMNG5D1LBAIL 
+© 2018 Toshiba Memory Corporation 
+     
+4  
+   
+         February 21st, 2018 
+ 
+Product Architecture 
+ 
+The diagram in Figure 1 illustrates the main functional blocks of the THGBMNG5D1LBAIL. 
+Specification of the CREG and recommended values of the CVCC, and CVCCQ in the Figure 1 are as follows. 
+ 
+Parameter 
+Symbol 
+Unit 
+Min. 
+Typ. 
+Max. 
+Remark 
+VDDi capacitor value 
+CREG 
+μF 
+0.10 
+- 
+2.2* 
+Except HS400 
+μF 
+1.00 
+- 
+2.2* 
+HS400 
+VCC capacitor value 
+CVCC 
+μF 
+- 
+2.2 + 0.1 
+- 
+ 
+VCCQ capacitor value 
+CVCCQ 
+μF 
+- 
+2.2 + 0.1 
+- 
+ 
+* Toshiba recommends that the value should be usually applied as the value of CREG. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Figure 1  THGBMNG5D1LBAIL Block Diagram 
+ 
+VccQ(1.8V/3.3V)
+Vcc(3.3V)
+MMC I/F(1.8V/3.3V)
+Package
+MMC I/O BLOCK
+CREG
+NAND I/O BLOCK
+x11
+CORE LOGIC
+VDDi
+CVCC
+CVCCQ
+NAND I/O
+NAND
+I/O BLOCK
+NAND
+Control signal
+REGULATOR
+
+
+================ [Page 5] ================
+THGBMNG5D1LBAIL 
+© 2018 Toshiba Memory Corporation 
+     
+5  
+   
+         February 21st, 2018 
+ 
+PRODUCT SPECIFICATIONS 
+Package Dimensions 
+P-WFBGA153-1113-0.50 (11.5mm x 13mm, H0.8mm max. package) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Unit: mm 
+
+
+================ [Page 6] ================
+THGBMNG5D1LBAIL 
+© 2018 Toshiba Memory Corporation 
+     
+6  
+   
+         February 21st, 2018 
+ 
+Density Specifications 
+Density 
+Part Number 
+Interleave 
+Operation 
+User Area Density 
+[Bytes] 
+SEC_COUNT in 
+Extended CSD 
+4GB 
+THGBMNG5D1LBAIL 
+Non Interleave 
+3,959,422,976 
+0x00760000 
+1) User area density shall be reduced if enhanced user data area is defined. 
+ 
+ 
+Register Informations 
+OCR Register 
+OCR bit 
+VDD Voltage window 
+Value 
+[6:0] 
+Reserved 
+000 0000b 
+[7] 
+1.70-1.95 V 
+1b 
+[14:8] 
+2.0-2.6 V 
+000 0000b 
+[23:15] 
+2.7-3.6 V 
+1 1111 1111b 
+[28:24] 
+Reserved 
+0 0000b 
+[30:29] 
+Access Mode 
+10b 
+[31] 
+( card power up status bit (busy) )1  
+1) This bit is set to LOW if the Device has not finished the power up routine. 
+ 
+ 
+CID Register 
+CID-slice 
+Name 
+Field 
+Width 
+Value 
+[127:120] 
+Manufacturer ID 
+MID 
+8 
+0001 0001b 
+[119:114]  
+Reserved 
+- 
+6 
+0b 
+[113:112] 
+Device/BGA 
+CBX 
+2 
+01b 
+[111:104] 
+OEM/Application ID 
+OID 
+8 
+0b 
+[103:56] 
+Product name 
+PNM 
+48 
+0x30 30 34 47 41 30 (004GA0) 
+[55:48] 
+Product revision 
+PRV 
+8 
+0x02 
+[47:16] 
+Product serial 
+PSN 
+32 
+Serial number 
+[15:8] 
+Manufacturing date 
+MDT 
+8 
+see-JEDEC Specification 
+[7:1] 
+CRC7 checksum 
+CRC 
+7 
+CRC7 
+[0] 
+Not used, always ‘1’ 
+- 
+1 
+1b 
+ 
+ 
+ 
+
+
+================ [Page 7] ================
+THGBMNG5D1LBAIL 
+© 2018 Toshiba Memory Corporation 
+     
+7  
+   
+         February 21st, 2018 
+ 
+CSD Register 
+CSD-slice 
+Name 
+Field 
+Width 
+Cell Type 
+Value 
+[127:126] 
+CSD structure 
+CSD_STRUCTURE 
+2 
+R 
+0x3 
+[125:122] 
+System specification version 
+SPEC_VERS 
+4 
+R 
+0x4 
+[121:120] 
+Reserved 
+- 
+2 
+R 
+0x0 
+[119:112] 
+Data read access-time 1 
+TAAC 
+8 
+R 
+0x5E 
+[111:104] 
+Data read access-time 2 in CLK cycles 
+ (NSAC * 100) 
+NSAC 
+8 
+R 
+0x00 
+[103:96] 
+Max. bus clock frequency 
+TRAN_SPEED 
+8 
+R 
+0x32 
+[95:84] 
+Device command classes 
+CCC 
+12 
+R 
+0x0F5 
+[83:80] 
+Max. read data block length 
+READ_BL_LEN 
+4 
+R 
+0x9 
+[79:79] 
+Partial blocks for read allowed 
+READ_BL_PARTIAL 
+1 
+R 
+0x0 
+[78:78] 
+Write block misalignment 
+WRITE_BLK_MISALIGN 
+1 
+R 
+0x0 
+[77:77] 
+Read block misalignment 
+READ_BLK_MISALIGN 
+1 
+R 
+0x0 
+[76:76] 
+DSR implemented 
+DSR_IMP 
+1 
+R 
+0x0 
+[75:74] 
+Reserved 
+- 
+2 
+R 
+0x0 
+[73:62] 
+Device size 
+C_SIZE 
+12 
+R 
+0xFFF 
+[61:59] 
+Max. read current @ VDD min. 
+VDD_R_CURR_MIN 
+3 
+R 
+0x7 
+[58:56] 
+Max. read current @ VDD max. 
+VDD_R_CURR_MAX 
+3 
+R 
+0x7 
+[55:53] 
+Max. write current @ VDD min. 
+VDD_W_CURR_MIN 
+3 
+R 
+0x7 
+[52:50] 
+Max. write current @ VDD max. 
+VDD_W_CURR_MAX 
+3 
+R 
+0x7 
+[49:47] 
+Device size multiplier 
+C_SIZE_MULT 
+3 
+R 
+0x7 
+[46:42] 
+Erase group size 
+ERASE_GRP_SIZE 
+5 
+R 
+0x1F 
+[41:37] 
+Erase group size multiplier 
+ERASE_GRP_MULT 
+5 
+R 
+0x1F 
+[36:32] 
+Write protect group size 
+WP_GRP_SIZE 
+5 
+R 
+0x07 
+[31:31] 
+Write protect group enable 
+WP_GRP_ENABLE 
+1 
+R 
+0x1 
+[30:29] 
+Manufacturer default ECC 
+DEFAULT_ECC 
+2 
+R 
+0x0 
+[28:26] 
+Write speed factor 
+R2W_FACTOR 
+3 
+R 
+0x4 
+[25:22] 
+Max. write data block length 
+WRITE_BL_LEN 
+4 
+R 
+0x9 
+[21:21] 
+Partial blocks for write allowed 
+WRITE_BL_PARTIAL 
+1 
+R 
+0x0 
+[20:17] 
+Reserved 
+- 
+4 
+R 
+0x0 
+[16:16] 
+Content protection application 
+CONTENT_PROT_APP 
+1 
+R 
+0x0 
+[15:15] 
+File format group 
+FILE_FORMAT_GRP 
+1 
+R/W 
+0x0 
+[14:14] 
+Copy flag (OTP) 
+COPY 
+1 
+R/W 
+0x0 
+[13:13] 
+Permanent write protection 
+PERM_WRITE_PROTECT 
+1 
+R/W 
+0x0 
+[12:12] 
+Temporary write protection 
+TMP_WRITE_PROTECT 
+1 
+R/W/E 
+0x0 
+[11:10] 
+File format 
+FILE_FORMAT 
+2 
+R/W 
+0x0 
+[9:8] 
+ECC code 
+ECC 
+2 
+R/W/E 
+0x0 
+[7:1] 
+CRC 
+CRC 
+7 
+R/W/E 
+CRC 
+[0] 
+Not used, always ‘1’ 
+- 
+1 
+- 
+0x1 
+ 
+ 
+ 
+
+
+================ [Page 8] ================
+THGBMNG5D1LBAIL 
+© 2018 Toshiba Memory Corporation 
+     
+8  
+   
+         February 21st, 2018 
+ 
+Extended CSD Register 
+CSD-slice 
+Name 
+Field 
+Size 
+(Bytes) 
+Cell 
+Type 
+Value 
+[511:506] 
+Reserved 
+- 
+6 
+- 
+All ‘0’ 
+[505] 
+Extended Security Commands Error 
+EXT_SECURITY_ERR 
+1 
+R 
+0x00 
+[504] 
+Supported Command Sets 
+S_CMD_SET 
+1 
+R 
+0x01 
+[503] 
+HPI features 
+HPI_FEATURES 
+1 
+R 
+0x01 
+[502] 
+Background operations support 
+BKOPS_SUPPORT 
+1 
+R 
+0x01 
+[501] 
+Max_packed read commands 
+MAX_PACKED_READS 
+1 
+R 
+0x3F 
+[500] 
+Max_packed write commands 
+MAX_PACKED_WRITES 
+1 
+R 
+0x3F 
+[499] 
+Data Tag Support 
+DATA_TAG_SUPPORT 
+1 
+R 
+0x01 
+[498] 
+Tag Unit Size 
+TAG_UNIT_SIZE 
+1 
+R 
+0x03 
+[497] 
+Tag Resource Size 
+TAG_RES_SIZE 
+1 
+R 
+0x00 
+[496] 
+Context management capabilities 
+CONTEXT_CAPABILITIES 
+1 
+R 
+0x7F 
+[495] 
+Large Unit size 
+LARGE_UNIT_SIZE_M1 
+1 
+R 
+0x00 
+[494] 
+Extended partitions attribute support 
+EXT_SUPPORT 
+1 
+R 
+0x03 
+[493] 
+Supported modes 
+SUPPORTED_MODES 
+1 
+R 
+0x01 
+[492] 
+FFU features 
+FFU_FEATURES 
+1 
+R 
+0x00 
+[491] 
+Operation codes timeout 
+OPERATION_CODES_TIMEOUT 
+1 
+R 
+0x00 
+[490:487] 
+FFU Argument 
+FFU_ARG 
+4 
+R 
+0xFFFFFFFF 
+[486] 
+Barrier support 
+BARRIER_SUPPORT 
+1 
+R 
+0x00 
+[485:309] 
+Reserved 
+- 
+177 
+- 
+All ‘0’ 
+[308] 
+CMD Queuing Support 
+CMDQ_SUPPORT 
+1 
+R 
+0x00 
+[307] 
+CMD Queuing Depth 
+CMDQ_DEPTH 
+1 
+R 
+0x00 
+[306] 
+Reserved 
+- 
+1 
+- 
+0x00 
+[305:302] 
+Number of FW sectors correctly programmed 
+NUMBER_OF_FW_SECTORS_C
+ORRECTLY_PROGRAMMED 
+4 
+R 
+All ‘0’ 
+[301:270] 
+Vendor proprietary health report 
+VENDOR_PROPRIETARY 
+_HEALTH_REPORT 
+32 
+R 
+All ‘0’ 
+[269] 
+Device life time estimation type B 
+DEVICE_LIFE_TIME_EST_TYP_B 
+1 
+R 
+0x00 
+[268] 
+Device life time estimation type A 
+DEVICE_LIFE_TIME_EST_TYP_A 
+1 
+R 
+0x01 
+[267] 
+Pre EOL information 
+PRE_EOL_INFO 
+1 
+R 
+0x01 
+[266] 
+Optimal read size 
+OPTIMAL_READ_SIZE 
+1 
+R 
+0x04 
+[265] 
+Optimal write size 
+OPTIMAL_WRITE_SIZE 
+1 
+R 
+0x04 
+[264] 
+Optimal trim unit size 
+OPTIMAL_TRIM_UNIT_SIZE 
+1 
+R 
+0x01 
+[263:262] 
+Device version 
+DEVICE_VERSION 
+2 
+R 
+0x00 
+[261:254] 
+Firmware version 
+FIRMWARE_VERSION 
+8 
+R 
+0x01 
+[253] 
+Power class for 200MHz, DDR at VCC=3.6V 
+PWR_CL_DDR_200_360 
+1 
+R 
+0xAA 
+[252:249] 
+Cache size 
+CACHE_SIZE 
+4 
+R 
+0x00001000 
+[248] 
+Generic CMD6 timeout 
+GENERIC_CMD6_TIME 
+1 
+R 
+0x05 
+[247] 
+Power off notification(long) timeout 
+POWER_OFF_LONG_TIME 
+1 
+R 
+0x32 
+[246] 
+Background operations status 
+BKOPS_STATUS 
+1 
+R 
+0x00 
+[245:242] 
+Number of correctly programmed sectors 
+CORRECTLY 
+_PRG_SECTORS_NUM 
+4 
+R 
+0x00000000 
+[241] 
+1st  initialization time after partitioning 
+INI_TIMEOUT_AP 
+1 
+R 
+0x1E 
+
+
+================ [Page 9] ================
+THGBMNG5D1LBAIL 
+© 2018 Toshiba Memory Corporation 
+     
+9  
+   
+         February 21st, 2018 
+ 
+CSD-slice 
+Name 
+Field 
+Size 
+(Bytes) 
+Cell 
+Type 
+Value 
+[240] 
+Cache Flushing Policy 
+CACHE_FLUSH_POLICY 
+1 
+R 
+0x00 
+[239] 
+Power class for 52MHz, DDR @ 3.6V 
+PWR_CL_DDR_52_360 
+1 
+R 
+0x22 
+[238] 
+Power class for 52MHz, DDR @ 1.95V 
+PWR_CL_DDR_52_195 
+1 
+R 
+0x77 
+[237] 
+Power class for 200MHz, 
+@ VCCQ =1.95V, VCC = 3.6V 
+PWR_CL_200_195 
+1 
+R 
+0x88 
+[236] 
+Power class for 200MHz,  
+@ VCCQ=1.3V, VCC = 3.6V 
+PWR_CL_200_130 
+1 
+R 
+0x88 
+[235] 
+Minimum Write Performance for 8bit 
+ @ 52MHz in DDR mode 
+MIN_PERF_DDR_W_8_52 
+1 
+R 
+0x00 
+[234] 
+Minimum Read Performance for 8bit 
+ @ 52MHz in DDR mode 
+MIN_PERF_DDR_R_8_52 
+1 
+R 
+0x50 
+[233] 
+Reserved 
+- 
+1 
+- 
+0x00 
+[232] 
+TRIM Multiplier 
+TRIM_MULT 
+1 
+R 
+0x01 
+[231] 
+Secure Feature support 
+SEC_FEATURE_SUPPORT 
+1 
+R 
+0x55 
+[230] 
+Secure Erase Multiplier  
+SEC_ERASE_MULT 
+1 
+R 
+0XDC 
+[229] 
+Secure TRIM Multiplier  
+SEC_TRIM_MULT 
+1 
+R 
+0xFF 
+[228] 
+Boot information 
+BOOT_INFO 
+1 
+R 
+0x07 
+[227] 
+Reserved 
+- 
+1 
+R 
+0x00 
+[226] 
+Boot partition size 
+BOOT_SIZE_MULTI 
+1 
+R 
+0x10 
+[225] 
+Access size 
+ACC_SIZE 
+1 
+R 
+0x08 
+[224] 
+High-capacity erase unit size 
+HC_ERASE_GRP_SIZE 
+1 
+R 
+0x08 
+[223] 
+High-capacity erase timeout 
+ERASE_TIMEOUT_MULT 
+1 
+R 
+0x07 
+[222] 
+Reliable write sector count 
+REL_WR_SEC_C 
+1 
+R 
+0x01 
+[221] 
+High-capacity write protect group size 
+HC_WP_GRP_SIZE 
+1 
+R 
+0x01 
+[220] 
+Sleep current (Vcc) 
+S_C_VCC 
+1 
+R 
+0x06 
+[219] 
+Sleep current (VccQ) 
+S_C_VCCQ 
+1 
+R 
+0x0A 
+[218] 
+Production state awareness timeout 
+PRODUCTION_STATE 
+_AWARENESS_TIMEOUT 
+1 
+R 
+0x0A 
+[217] 
+Sleep/awake timeout 
+S_A_TIMEOUT 
+1 
+R 
+0x10 
+[216] 
+Sleep Notification Timeout 
+SLEEP_NOTIFICATION_TIME 
+1 
+R 
+0x10 
+[215:212] 
+Sector Count 
+SEC_COUNT 
+4 
+R 
+0x00760000 
+[211] 
+Secure Write Protection Information 
+SECURE_WP_INFO 
+1 
+R 
+0x00 
+[210] 
+Minimum Write Performance for 8bit 
+ @ 52MHz 
+MIN_PERF_W_8_52 
+1 
+R 
+0x00 
+[209] 
+Minimum Read Performance 8bit 
+ @ 52MHz 
+MIN_PERF_R_8_52 
+1 
+R 
+0x64 
+[208] 
+Minimum Write Performance for 8bit 
+ @ 26MHz, for 4bit at 52MHz 
+MIN_PERF_W_8_26_4_52 
+1 
+R
+ 
+ 
+0x00 
+[207] 
+Minimum Read Performance for 8 bit 
+ @ 26MHz, for 4bit at 52MHz 
+MIN_PERF_R_8_26_4_52 
+1 
+R 
+0x3C 
+[206] 
+Minimum Write Performance for 4bit 
+ @ 26MHz 
+MIN_PERF_W_4_26 
+1 
+R 
+0x00 
+[205] 
+Minimum Read Performance for 4bit 
+ @ 26MHz 
+MIN_PERF_R_4_26 
+1 
+R 
+0x1E 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+================ [Page 10] ================
+THGBMNG5D1LBAIL 
+© 2018 Toshiba Memory Corporation 
+     
+10  
+   
+         February 21st, 2018 
+ 
+CSD-slice 
+Name 
+Field 
+Size 
+(Bytes) 
+Cell 
+Type 
+Value 
+[204] 
+Reserved 
+- 
+1 
+- 
+0x00 
+[203] 
+Power class for 26MHz @ 3.6V 
+PWR_CL_26_360 
+1 
+R 
+0x22 
+[202] 
+Power class for 52MHz @ 3.6V 
+PWR_CL_52_360 
+1 
+R 
+0x22 
+[201] 
+Power class for 26MHz @ 1.95V 
+PWR_CL_26_195 
+1 
+R 
+0x66 
+[200] 
+Power class for 52MHz @ 1.95V 
+PWR_CL_52_195 
+1 
+R 
+0x66 
+[199] 
+Partition switching timing 
+PARTITION_SWITCH_TIME 
+1 
+R 
+0x01 
+[198] 
+Out-of-interrupt busy timing 
+OUT_OF_INTERRUPT_TIME 
+1 
+R 
+0x0A 
+[197] 
+I/O Driver Strength 
+DRIVER_STRENGTH 
+1 
+R 
+0x1F 
+[196] 
+Device Type 
+DEVICE_TYPE 
+1 
+R 
+0x57 
+[195] 
+Reserved 
+- 
+1 
+- 
+0x00 
+[194] 
+CSD structure 
+CSD_STRUCTURE 
+1 
+R 
+0x02 
+[193] 
+Reserved 
+- 
+1 
+- 
+0x00 
+[192] 
+Extended CSD revision 
+EXT_CSD_REV 
+1 
+R 
+0x07 
+[191] 
+Command Set 
+CMD_SET 
+1 
+R/W/E_P 
+0x00 
+[190] 
+Reserved 
+- 
+1 
+- 
+0x00 
+[189] 
+Command set revision 
+CMD_SET_REV 
+1 
+R 
+0x00 
+[188] 
+Reserved 
+- 
+1 
+- 
+0x00 
+[187] 
+Power class 1 
+POWER_CLASS 
+1 
+R/W/E_P 
+0x00 
+[186] 
+Reserved 
+- 
+1 
+- 
+0x00 
+[185] 
+High-speed interface timing 
+HS_TIMING 
+1 
+R/W/E_P 
+0x00 
+[184] 
+Strobe Support 
+STROBE_SUPPORT 
+1 
+R 
+0x00 
+[183] 
+Bus width mode 
+BUS_WIDTH 
+1 
+W/E_P 
+0x00 
+[182] 
+Reserved 
+- 
+1 
+- 
+0x00 
+[181] 
+Erased memory content 
+ERASED_MEM_CONT 
+1 
+R 
+0x00 
+[180] 
+Reserved 
+- 
+1 
+- 
+0x00 
+[179] 
+Partition configuration 
+PARTITION_CONFIG 
+1 
+R/W/E & 
+R/W/E_P 
+0x00 
+[178] 
+Boot config protection 
+BOOT_CONFIG_PROT 
+1 
+R/W & 
+R/W/C_
+P 
+0x00 
+[177] 
+Boot bus Conditions 
+BOOT_BUS_CONDITIONS 
+1 
+R/W/E 
+0x00 
+[176] 
+Reserved 
+- 
+1 
+- 
+0x00 
+[175] 
+High-density erase group definition 
+ERASE_GROUP_DEF 
+1 
+R/W/E_P 
+0x00 
+[174] 
+Boot write protection status registers 
+BOOT_WP_STATUS 
+1 
+R 
+0x00 
+[173] 
+Boot area write protection register 
+BOOT_WP 
+1 
+R/W & 
+R/W/C_
+P 
+0x00 
+[172] 
+Reserved 
+- 
+1 
+- 
+0x00 
+[171] 
+User area write protection register 
+USER_WP 
+1 
+R/W, 
+R/W/C_
+P & 
+R/W/E_P 
+0x00 
+[170] 
+Reserved 
+- 
+1 
+- 
+0x00 
+[169] 
+FW configuration 
+FW_CONFIG 
+1 
+R/W 
+0x00 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+================ [Page 11] ================
+THGBMNG5D1LBAIL 
+© 2018 Toshiba Memory Corporation 
+     
+11  
+   
+         February 21st, 2018 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+CSD-slice Name 
+Field 
+Size 
+(Bytes) 
+Cell 
+Type 
+Value 
+[168] 
+RPMB Size 
+RPMB_SIZE_MULT 
+1 
+R 
+0x04 
+[167] 
+Write reliability setting register 
+WR_REL_SET 
+1 
+R/W 
+0x1F 
+[166] 
+Write reliability parameter register 
+WR_REL_PARAM 
+1 
+R 
+0x05 
+[165] 
+Start Sanitize operation 
+SANITIZE_START 
+1 
+W/E_P 
+0x00 
+[164] 
+Manually start  background operations 
+BKOPS_START 
+1 
+W/E_P 
+0x00 
+[163] 
+Enable background operations handshake 
+BKOPS_EN 
+1 
+R/W 
+& 
+R/W/E 
+0x00 
+[162] 
+H/W reset function 
+RST_n_FUNCTION 
+1 
+R/W 
+0x00 
+[161] 
+HPI management 
+HPI_MGMT 
+1 
+R/W/E_P 
+0x00 
+[160] 
+Partitioning Support 
+PARTITIONING_SUPPORT 
+1 
+R 
+0x07 
+[159:157] 
+Max Enhanced Area Size 2 
+MAX_ENH_SIZE_MULT 
+3 
+R 
+0x0001D8 
+[156] 
+Partitions attribute 
+PARTITIONS_ATTRIBUTE 
+1 
+R/W 
+0x00 
+[155] 
+Partitioning Setting 
+PARTITION_SETTING_COMPLET
+ED 
+1 
+R/W 
+0x00 
+[154:143] 
+General Purpose Partition Size 3 
+GP_SIZE_MULT 
+12 
+R/W 
+0x00 
+[142:140] 
+Enhanced User Data Area Size 4 
+ENH_SIZE_MULT 
+3 
+R/W 
+0x00 
+[139:136] 
+Enhanced User Data Start Address 
+ENH_START_ADDR 
+4 
+R/W 
+0x00 
+[135] 
+Reserved 
+- 
+1 
+- 
+0x00 
+[134] 
+Bad Block Management mode 
+SEC_BAD_BLK_MGMNT 
+1 
+R/W 
+0x00 
+[133] 
+Production state awareness5 
+PRODUCTION_STATE 
+_AWARENESS 
+1 
+R/W/E 
+0x00 
+[132] 
+Package Case Temperature is controlled1 
+TCASE_SUPPORT 
+1 
+W/E_P 
+0x00 
+[131] 
+Periodic Wake-up1 
+PERIODIC_WAKEUP 
+1 
+R/W/E 
+0x00 
+[130] 
+Program CID/CSD in DDR mode support 
+PROGRAM_CID_CSD_DDR_SUP
+PORT 
+1 
+R 
+0x01 
+[129:128] 
+Reserved 
+- 
+2 
+- 
+All ‘0’ 
+[127:64] 
+Vendor Specific Fields 
+VENDOR_SPECIFIC_FIELD 
+64 
+- 
+- 
+[63] 
+Native sector size 
+NATIVE_SECTOR_SIZE 
+1 
+R 
+0x01 
+[62] 
+Sector size emulation 
+USE_NATIVE_SECTOR 
+1 
+R/W 
+0x00 
+[61] 
+Sector size 
+DATA_SECTOR_SIZE 
+1 
+R 
+0x00 
+[60] 
+1st  initialization  
+ after disabling sector size emulation 
+INI_TIMEOUT_EMU 
+1 
+R 
+0x0A 
+[59] 
+Class 6 commands control 
+CLASS_6_CTRL 
+1 
+R/W/E_P 
+0x00 
+[58] 
+Number of addressed group to be Released 
+DYNCAP_NEEDED 
+1 
+R 
+0x00 
+[57:56] 
+Exception events control 
+EXCEPTION_EVENTS_CTRL 
+2 
+R/W/E_P 
+0x0000 
+[55:54] 
+Exception events status 
+EXCEPTION_EVENTS_STATUS 
+2 
+R 
+0x0000 
+[53:52] 
+Extended partitions attribute1 
+EXT_PARTITIONS_ATTRIBUTE 
+2 
+R/W 
+0x0000 
+[51:37] 
+Context configuration 
+CONTEXT_CONF 
+15 
+R/W/E_P 
+0x00 
+[36] 
+Packed command status 
+PACKED_COMMAND_STATUS 
+1 
+R 
+0x00 
+[35] 
+Packed command failure index 
+PACKED_FAILURE_INDEX 
+1 
+R 
+0x00 
+[34] 
+Power Off Notification5 
+POWER_OFF_NOTIFICATION 
+1 
+R/W/E_P 
+0x00 
+[33] 
+Control to turn the Cache ON/OFF 
+CACHE_CTRL 
+1 
+R/W/E_P 
+0x00 
+
+
+================ [Page 12] ================
+THGBMNG5D1LBAIL 
+© 2018 Toshiba Memory Corporation 
+     
+12  
+   
+         February 21st, 2018 
+ 
+CSD-slice Name 
+Field 
+Size 
+(Bytes) 
+Cell 
+Type 
+Value 
+[32] 
+Flushing of the cache 
+FLUSH_CACHE 
+1 
+W/E_P 
+0x00 
+[31] 
+Control to turn the Barrier ON/OFF 
+BARRIER_CTRL 
+1 
+R/W 
+0x00 
+[30] 
+Mode config 
+MODE_CONFIG 
+1 
+R/W/E_P 
+0x00 
+[29] 
+Mode operation codes 
+MODE_OPERATION_CODES 
+1 
+W/E_P 
+0x00 
+[28:27] 
+Reserved 
+- 
+2 
+- 
+All ‘0’ 
+[26] 
+FFU status 
+FFU_STATUS 
+1 
+R 
+0x00 
+[25:22] 
+Pre loading data size6 
+PRE_LOADING_DATA_SIZE 
+4 
+R/W/E_P 
+0x00760000 
+[21:18] 
+Max pre loading data size 
+MAX_PRE_LOADING_DATA 
+_SIZE 
+4 
+R 
+0x00760000 
+[17] 
+Product state awareness enablement5 
+PRODUCT_STATE 
+_AWARENESS_ENABLEMENT 
+1 
+R/W/E 
+&R 
+0x03 
+[16] 
+Secure Removal Type 
+SECURE_REMOVAL_TYPE 
+1  
+R/W & R 
+0x09 
+[15] 
+Command Queue Mode Enable 
+CMDQ_MODE_EN 
+1 
+R/W/E_P 
+0x00 
+[14:0] 
+Reserved 
+- 
+15 
+- 
+All ‘0’ 
+ 
+1  Although these fields can be re-written by host, TOSHIBA e-MMC does not support. 
+ 
+2  Max Enhanced Area Size (MAX_ENH_SIZE_MULT [159:157]) has to be calculated by following formula. 
+ 
+   Max Enhanced Area = MAX_ENH_SIZE_MULT x HC_WP_GRP_SIZE x HC_ERASE_GRP_SIZE x 512kBytes 
+( )
+area
+ 
+enhanced
+Max 
+ 
+ 
+area
+ 
+data
+ 
+user
+ 
+Enhanced
+ 
+ i
+size
+ 
+partition
+ 
+general
+ 
+Enhanced
+4
+1
+i
+≤
++
+∑
+=
+ 
+  
+3   General Purpose Partition Size (GP_SIZE_MULT_GP0 - GP_SIZE_MULT_GP3 [154:143]) has to be calculated 
+   by following formula. 
+ 
+   General_Purpose_Partition_X Size = (GP_SIZE_MULT_X_2 x 216 + GP_SIZE_MULT_X_1 x 28 
+                                    + GP_SIZE_MULT_X_0 x 20 ) x HC_WP_GRP_SIZE 
+                                     x HC_ERASE_GRP_SIZE x 512kBytes 
+ 
+4  Enhanced User Data Area Size (ENH_SIZE_MULT [142:140]) has to be calculated by following formula. 
+ 
+   Enhanced User Data Area x Size = (ENH_SIZE_MULT_2 x 216 + ENH_SIZE_MULT_1 x 28 
+                                   + ENH_SIZE_MULT_0 x 20 ) x HC_WP_GRP_SIZE 
+                                    x HC_ERASE_GRP_SIZE x 512kBytes 
+ 
+5   Toshiba recommends to issue the Power Off Notification before turning off the device, especially when cache is 
+ on or AUTO_EN(BKOPS_EN[163]:bit1) is set to ‘1b’. 
+ 
+ 
+
+
+================ [Page 13] ================
+THGBMNG5D1LBAIL 
+© 2018 Toshiba Memory Corporation 
+     
+13  
+   
+         February 21st, 2018 
+ 
+6   - Pre loading data size = PRE_LOADING_DATA_SIZE x Sector Size 
+Pre-loading data size should be multiple of 4KB and the pre-loading data should be written by multiple of 4KB 
+chunk size, aligned with 4KB address. This is because the valid data size will be treated as 4KB when host 
+writes data less than 4KB. 
+ 
+- If the host continues to write data in Normal state (after it wrote PRE_LOADING_DATA_SIZE amount 
+of data) and before soldering, the pre-loading data might be corrupted after soldering. 
+ 
+      - If a power cycle is occurred during the data transfer, the amount of data written to device is not clear. 
+Therefore in this case, host should erase the entire pre-loaded data and set again 
+PRE_LOADING_DATA_SIZE[25:22], PRODUCTION_STATE_AWARENESS[133], and 
+PRODUCT_STATE_AWARENESS_ENABLEMENT[17]. 
+ 
+ 
+ 
+
+
+================ [Page 14] ================
+THGBMNG5D1LBAIL 
+© 2018 Toshiba Memory Corporation 
+     
+14  
+   
+         February 21st, 2018 
+ 
+ELECTRICAL CHARACTERISTICS 
+DC Characteristics 
+Absolute Maximum Ratings 
+The absolute maximum ratings of a semiconductor device are a set of specified parameter values, which must  
+not be exceeded during operation, even for an instant. 
+If any of these rating would be exceeded during operation, the device electrical characteristics may be irreparably  
+altered and the reliability and lifetime of the device can no longer be guaranteed. Moreover, these operations with  
+exceeded ratings may cause break down, damage, and/or degradation to any other equipment. Applications using  
+the device should be designed such that each maximum rating will never be exceeded in any operating conditions. 
+Before using, creating, and/or producing designs, refer to and comply with the precautions and conditions set forth  
+in this document. 
+Parameter 
+Symbol 
+Test Conditions 
+Min 
+Max 
+Unit 
+Supply voltage 1 
+VCC 
+ 
+-0.5 
+4.1 
+V 
+Supply voltage 2 
+VCCQ 
+ 
+-0.5 
+4.1 
+V 
+Voltage Input 
+VIO 
+ 
+-0.5 
+VCCQ+0.5(≤4.1) 
+V 
+ 
+General 
+Parameter 
+Symbol 
+Test Conditions 
+Min 
+Max 
+Unit 
+Peak voltage on all lines 
+ 
+ 
+-0.5 
+VCCQ+0.5 
+V 
+All Inputs 
+Input Leakage Current (before initialization sequence1 
+and/or the internal pull up resistors connected) 
+ 
+ 
+-100 
+100 
+μA 
+Input Leakage Current (after initialization sequence and 
+the internal pull up resistors disconnected) 
+ 
+ 
+-2 
+2 
+μA 
+All Outputs 
+Output Leakage Current (before initialization sequence) 
+ 
+ 
+-100 
+100 
+μA 
+Output Leakage Current (after initialization sequence) 
+ 
+ 
+-2 
+2 
+μA 
+ 
+1) Initialization sequence is defined in Power-Up chapter of JEDEC/MMCA Standard 
+ 
+Power Supply Voltage 
+Parameter 
+Symbol 
+Test Conditions 
+Min 
+Max 
+Unit 
+Supply voltage 1 
+VCC 
+ 
+2.7 
+3.6 
+V 
+Supply voltage 2 
+VCCQ 
+ 
+1.7 
+1.95 
+V 
+2.7 
+3.6 
+V 
+1) Once the power supply VCC or VCCQ falls below the minimum guaranteed voltage (for example, upon sudden power fail),  
+the voltage level of VCC or VCCQ shall be kept less than 0.5 V for at least 1ms before it goes beyond 0.5 V again. 
+2) The host and device I/O power (VCCQ) shall be provided from same power supply. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+================ [Page 15] ================
+THGBMNG5D1LBAIL 
+© 2018 Toshiba Memory Corporation 
+     
+15  
+   
+         February 21st, 2018 
+ 
+Supply Current 
+Parameter 
+Symbol 
+Interleave 
+Operation 
+Frequency 
+/Mode 
+VccQ 
+Min 
+Max 
+Unit 
+Iccq 
+Icc 
+Iccq 
+Icc 
+Operation 
+(RMS) 
+Read 
+IROP 
+Non Interleave 
+52MHz/SDR 
+1.8V 
+ 
+ 
+60 
+10 
+mA 
+3.3V 
+ 
+ 
+70 
+15 
+52MHz/DDR 
+1.8V 
+ 
+ 
+70 
+20 
+mA 
+3.3V 
+ 
+ 
+85 
+20 
+HS200 
+1.8V 
+ 
+ 
+90 
+30 
+mA 
+HS400 
+1.8V 
+ 
+ 
+100 
+30 
+mA 
+Write 
+IWOP 
+Non Interleave 
+52MHz/SDR 
+1.8V 
+ 
+ 
+50 
+25 
+mA 
+3.3V 
+ 
+ 
+55 
+25 
+52MHz/DDR 
+1.8V 
+ 
+ 
+50 
+30 
+mA 
+3.3V 
+ 
+ 
+55 
+30 
+HS200 
+1.8V 
+ 
+ 
+55 
+30 
+mA 
+HS400 
+1.8V 
+ 
+ 
+60 
+30 
+mA 
+ 
+ 
+
+
+================ [Page 16] ================
+THGBMNG5D1LBAIL 
+© 2018 Toshiba Memory Corporation 
+     
+16  
+   
+         February 21st, 2018 
+ 
+Internal resistance and Device capacitance 
+Parameter 
+Symbol 
+Test Conditions 
+Min 
+Max 
+Unit 
+Single device capacitance 
+CDEVICE 
+ 
+ 
+6 
+pF 
+Internal pull up resistance DAT1 – DAT7 
+RINT 
+ 
+10 
+150 
+kΩ 
+ 
+Bus Signal Levels 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Open-Drain Mode Bus Signal Level 
+Parameter  
+Symbol 
+Min 
+Max 
+Unit 
+Conditions  
+Output HIGH voltage 
+VOH 
+VCCQ - 0.2 
+ 
+V 
+NOTE 1 
+Output LOW voltage 
+VOL 
+ 
+0.3 
+V 
+IOL = 2 mA 
+NOTE 1: Because VOH depends on external resistance value (including outside the package), this value does not apply as device 
+specification. Host is responsible to choose the external pull-up and open drain resistance value to meet VOH Min value.  
+ 
+Push-Pull Mode Bus Signal Level (High-Voltage) 
+Parameter  
+Symbol 
+Min 
+Max 
+Unit  
+Conditions  
+Output HIGH voltage  
+VOH 
+0.75 * VCCQ 
+ 
+V 
+IOH = -100 μA @ VCCQ min  
+Output LOW voltage  
+VOL 
+ 
+0.125 * VCCQ 
+V 
+IOL = 100 μA @ VCCQ min  
+Input HIGH voltage  
+VIH 
+0.625 * VCCQ 
+VCCQ + 0.3 
+V 
+ 
+Input LOW voltage  
+VIL 
+VSS - 0.3 
+0.25 * VCCQ 
+V 
+ 
+ 
+ 
+Push-Pull Mode Bus Signal Level (Dual-Voltage) 
+Parameter  
+Symbol 
+Min 
+Max 
+Unit 
+Conditions  
+Output HIGH voltage  
+VOH 
+VCCQ - 0.45 
+ 
+V 
+IOH = -2mA  
+Output LOW voltage  
+VOL 
+ 
+0.45 
+V 
+IOL = 2mA  
+Input HIGH voltage  
+VIH 
+0.65 * VCCQ 
+VCCQ + 0.3 
+V 
+ 
+Input LOW voltage  
+VIL 
+VSS - 0.3 
+0.35 * VCCQ 
+V 
+ 
+
+
+================ [Page 17] ================
+THGBMNG5D1LBAIL 
+© 2018 Toshiba Memory Corporation 
+     
+17  
+   
+         February 21st, 2018 
+ 
+Driver Types Definition 
+In JEDEC, Driver Type-0 is defined as mandatory for e-MMC HS200&HS400 Device. While four additional Driver 
+Types (1, 2, 3 and 4) are defined as optional, to allow the support of wider Host loads. The Host may select the most 
+appropriate Driver Type of the Device (if supported) to achieve optimal signal integrity performance.  
+ 
+Driver Type-0 is targeted for transmission line, based distributed system with 50Ω nominal line impedance. 
+Therefore, it is defined as 50Ω nominal driver. The nominal line impedance should be kept as 50Ω even if Driver Type 
+would be changed. 
+For HS200, when tested with CL = 15pF Driver Type-0 shall meet all AC characteristics and HS200 Device output 
+timing requirements. The test circuit defined in section 10.5.4.3 of JEDEC/MMCA Standard 5.0 is used for testing of 
+Driver Type-0. 
+For HS400, when tested with the reference load defined in page 27 HS400 reference load figure, Driver Type-0 or 
+Driver Type-1 or Driver Type-4 shall meet all AC characteristics and HS400 Device output timing requirements. 
+ 
+Driver 
+Type 
+TOSHIBA 
+e-MMC 
+Nominal Impedance 
+(Driver strength) 
+Approximated driving capability 
+compared to Type-0 
+Remark 
+0 
+Supported 
+50 Ω (18mA) 
+x1 
+Default Driver Type 
+1 
+Supported 
+33 Ω (27mA) 
+x1.5 
+Recommendation at HS400 under the 
+condition of JEDEC standard 
+reference load. 
+2 
+Supported 
+66 Ω (14mA) 
+x0.75 
+ 
+3 
+Supported 
+100 Ω (9mA) 
+x0.5 
+ 
+4 
+Supported 
+40 Ω (23mA) 
+X1.2 
+Recommendation at HS400 under the 
+condition of JEDEC standard 
+reference load. 
+ 
+1) Nominal impedance is defined by I-V characteristics of output driver at 0.9V when VCCQ = 1.8V. 
+ 
+*The most suitable setting for user’s operating environment should be selected.  
+At HS400, Toshiba recommends Driver Type-1 and Type-4. This is because they meet all AC characteristics and 
+Device output timing requirements under the condition of JEDEC standard reference load.  
+   
+ 
+ 
+ 
+
+
+================ [Page 18] ================
+THGBMNG5D1LBAIL 
+© 2018 Toshiba Memory Corporation 
+     
+18  
+   
+         February 21st, 2018 
+ 
+Bus Timing 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Device Interface Timings (High-speed interface timing) 
+Parameter 
+Symbol 
+Min 
+Max 
+Unit 
+Remark 
+Clock CLK(1) 
+Clock frequency Data Transfer Mode (PP)(2)  
+fpp 
+0 
+52(3) 
+MHz 
+CL ≤ 30pF  
+Tolerance: +100kHz 
+Clock frequency Identification Mode (OD) 
+fOD 
+0 
+400 
+kHz 
+Tolerance: +20kHz 
+Clock high time 
+tWH 
+6.5 
+ 
+ns 
+CL ≤ 30pF 
+Clock low time 
+tWL 
+6.5 
+ 
+ns 
+CL ≤ 30pF 
+Clock rise time(4) 
+tTLH 
+ 
+3 
+ns 
+CL ≤ 30pF 
+Clock fall time 
+tTHL 
+ 
+3 
+ns 
+CL ≤ 30pF 
+Inputs CMD, DAT (referenced to CLK) 
+Input set-up time 
+tISU 
+3 
+ 
+ns 
+CL ≤ 30pF 
+Input hold time 
+tIH 
+3 
+ 
+ns 
+CL ≤ 30pF 
+Outputs CMD, DAT (referenced to CLK) 
+Output Delay time during Data Transfer 
+tODLY 
+ 
+13.7 
+ns 
+CL ≤ 30pF 
+Output hold time 
+tOH 
+2.5 
+ 
+ns 
+CL ≤ 30pF 
+Signal rise time(5)  
+trise 
+ 
+3 
+ns 
+CL ≤ 30pF 
+Signal fall time 
+tfall 
+ 
+3 
+ns 
+CL ≤ 30pF 
+ 
+1) CLK timing is measured at 50% of VCCQ 
+ 
+2) This product shall support the full frequency range from 0 MHz - 26 MHz, or 0 MHz - 52 MHz 
+ 
+3) Device can operate as high-speed interface timing at 26MHz clock frequency. 
+ 
+4) CLK rise and fall times are measured by min (VIH) and max (VIL). 
+ 
+5) Inputs CMD, DAT rise and fall times area measured by min (VIH) and max (VIL), and outputs CMD, DAT rise and fall times 
+             are measured by min (VOH) and max (VOL). 
+ 
+ 
+
+
+================ [Page 19] ================
+THGBMNG5D1LBAIL 
+© 2018 Toshiba Memory Corporation 
+     
+19  
+   
+         February 21st, 2018 
+ 
+Device Interface Timings (Backward-compatible interface timing) 
+Parameter 
+Symbol 
+Min 
+Max 
+Unit 
+Remark(1) 
+Clock CLK(2) 
+Clock frequency Data Transfer Mode (PP)(3)  
+fpp 
+0 
+26 
+MHz 
+CL ≤ 30pF 
+Clock frequency Identification Mode (OD) 
+fOD 
+0 
+400 
+kHz 
+ 
+Clock high time 
+tWH 
+10 
+ 
+ns 
+CL ≤ 30pF 
+Clock low time 
+tWL 
+10 
+ 
+ns 
+CL ≤ 30pF 
+Clock rise time(4) 
+tTLH 
+ 
+10 
+ns 
+CL ≤ 30pF 
+Clock fall time 
+tTHL 
+ 
+10 
+ns 
+CL ≤ 30pF 
+Inputs CMD,DAT (referenced to CLK) 
+Input set-up time 
+tISU 
+3 
+ 
+ns 
+CL ≤ 30pF 
+Input hold time 
+tIH 
+3 
+ 
+ns 
+CL ≤ 30pF 
+Outputs CMD,DAT (referenced to CLK) 
+Output set-up time(5) 
+tOSU 
+11.7 
+ 
+ns 
+CL ≤ 30pF 
+Output hold time(5) 
+tOH 
+8.3 
+ 
+ns 
+CL ≤ 30pF 
+ 
+1) The e-MMC must always start with the backward-compatible interface timing. The timing mode can be switched to 
+             high-speed interface timing by the host sending the SWITCH command (CMD6) with the argument for high-speed 
+             interface select. 
+ 
+2) CLK timing is measured at 50% of VCCQ 
+ 
+3) For compatibility with e-MMCs that support the v4.2 standard or earlier, host should not use >26MHz before switching to 
+             high-speed interface timing. 
+ 
+4) CLK rise and fall times are measured by min (VIH) and max (VIL). 
+5) tOSU and tOH are defined as values from clock rising edge. However, the e-MMC device will utilize clock falling edge to  
+output data in backward compatibility mode. Therefore, it is recommended for hosts either to set tWL value as long as  
+possible within the range which will not go over tCK - tOHmin) in the system or to use slow clock frequency, so that host  
+ 
+  could have data set up margin for the device. 
+Toshiba e-MMC device utilize clock falling edge to output data in backward compatibility mode. 
+Host should optimize the timing in order to have data set up margin as follows. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Figure 2  Output timing 
+ 
+ 
+ 
+tOSU (min)  =  tWL(min)  -  tODLY(max 8ns) 
+tWL 
+tODLY 
+tOSU 
+tOH 
+ 
+ 
+ 
+Output 
+CLK 
+Invalid 
+Data 
+
+
+================ [Page 20] ================
+THGBMNG5D1LBAIL 
+© 2018 Toshiba Memory Corporation 
+     
+20  
+   
+         February 21st, 2018 
+ 
+Bus Timing for DAT signals for during 2x data rate operation 
+These timings applies to the DAT[7:0] signals only when the device is configured for dual data mode operation. In 
+this dual data mode, the DAT signals operates synchronously of both the rising and the falling edges of CLK. The 
+CMD signal still operates synchronously of the rising edge of CLK and therefore complies with the bus timing 
+specified in High-speed interface timing or Backward-compatible interface timing. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+High-speed dual data rate interface timings 
+Parameter 
+Symbol 
+Min 
+Max 
+Unit 
+Remark 
+Input CLK (1)  
+Clock duty cycle 
+ 
+45 
+55 
+% 
+Includes jitter, phase noise 
+Clock rise time 
+tTLH 
+ 
+3 
+ns 
+CL ≤ 30pF 
+Clock fall time 
+tTHL 
+ 
+3 
+ns 
+CL ≤ 30pF 
+Input CMD(referenced to CLK-SDR mode) 
+Input set-up time 
+tISUddr 
+3 
+ 
+ns 
+CL ≤ 20pF 
+Input hold time 
+tIHddr 
+3 
+ 
+ns 
+CL ≤ 20pF 
+Output CMD(referenced to CLK-SDR mode) 
+Output delay time during data transfer 
+tODLY 
+ 
+13.7 
+ns 
+CL ≤ 20pF 
+Output hold time 
+tOH 
+2.5 
+ 
+ns 
+CL ≤ 20pF 
+Signal rise time 
+tRISE 
+ 
+3 
+ns 
+CL ≤ 20pF 
+Signal fall time 
+tFALL 
+ 
+3 
+ns 
+CL ≤ 20pF 
+
+
+================ [Page 21] ================
+THGBMNG5D1LBAIL 
+© 2018 Toshiba Memory Corporation 
+     
+21  
+   
+         February 21st, 2018 
+ 
+Parameter 
+Symbol 
+Min 
+Max 
+Unit 
+Remark 
+Input DAT (referenced to CLK-DDR mode) 
+Input set-up time 
+tISUddr 
+2.5 
+ 
+ns 
+CL ≤ 20pF 
+Input hold time 
+tIHddr 
+2.5 
+ 
+ns 
+CL ≤ 20pF 
+Output DAT (referenced to CLK-DDR mode) 
+Output delay time during data transfer 
+tODLYddr 
+1.5 
+7 
+ns 
+CL ≤ 20pF 
+Signal rise time (all signals) (2)  
+tRISE 
+ 
+2 
+ns 
+CL ≤ 20pF 
+Signal fall time (all signals) 
+tFALL 
+ 
+2 
+ns 
+CL ≤ 20pF 
+1) 
+CLK timing is measured at 50% of VCCQ. 
+2) 
+Inputs DAT rise and fall times are measured by min (VIH) and max (VIL), and outputs DAT rise and fall times are measured 
+by min (VOH) and max (VOL). 
+ 
+
+
+================ [Page 22] ================
+THGBMNG5D1LBAIL 
+© 2018 Toshiba Memory Corporation 
+     
+22  
+   
+         February 21st, 2018 
+ 
+Bus Timing Specification in HS200 mode 
+ 
+HS200 Clock Timing 
+Host CLK Timing in HS200 mode shall conform to the timing specified in following figure and Table. CLK input shall 
+satisfy the clock timing over all possible operation and environment conditions. CLK input parameters should be 
+measured while CMD and DAT lines are stable high or low, as close as possible to the Device. The maximum 
+frequency of HS200 is 200MHz. Hosts can use any frequency up to the maximum that HS200 mode allows.  
+      
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+      
+NOTE 1 VIH denote VIH(min.) and VIL denotes VIL(max.). 
+NOTE 2 VT = 50% of VCCQ, indicates clock reference point for timing measurements. 
+ 
+Symbol 
+Min 
+Max 
+Unit 
+Remark  
+tPERIOD 
+5 
+ 
+ns 
+200MHz (Max.), between rising edges 
+tTLH, tTHL 
+ 
+0.2 * tPERIOD 
+ns 
+tTLH, tTHL < 1ns (max.) at 200MHz, CDEVICE=6pF,  
+The absolute maximum value of tTLH, tTHL is 10ns regardless of 
+clock frequency. 
+Duty Cycle 
+30 
+70 
+% 
+ 
+ 
+ 
+HS200 Device Input Timing 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+NOTE 1 tISU and tIH are measured at VIL(max) and VIH(min).  
+NOTE 2 VIH denote VIH(min) and VIL denotes VIL(max). 
+ 
+ 
+Symbol 
+Min 
+Max 
+Unit 
+Remark  
+tISU 
+1.40 
+ 
+ns 
+CDEVICE ≤ 6pF 
+tIH 
+0.8 
+ 
+ns 
+CDEVICE ≤ 6pF 
+ 
+ 
+ 
+VIH
+VIL
+VT
+tTLH
+tPERIOD
+tTHL
+VCCQ
+VSS
+CLOCK 
+INPUT
+VT
+tPERIOD
+VCCQ
+VSS
+CLOCK 
+INPUT
+VIH
+VIL
+tISU
+tIH
+CMD.DAT[7-0] 
+INPUT
+VALID 
+WINDOW
+VIH
+VIL
+VCCQ
+VSS
+
+
+================ [Page 23] ================
+THGBMNG5D1LBAIL 
+© 2018 Toshiba Memory Corporation 
+     
+23  
+   
+         February 21st, 2018 
+ 
+HS200 Device Output Timing 
+tPH parameter is defined to allow device output delay to be longer than tPERIOD. After initialization, the tPH may have 
+random phase relation to the clock. The Host is responsible to find the optimal sampling point for the Device outputs, 
+while switching to the HS200 mode. 
+ While setting the sampling point of data, a long term drift, which mainly depends on temperature drift, should be 
+considered. The temperature drift is expressed by ΔTPH. Output valid data window (tVW) is available regardless of the 
+drift (ΔTPH) but position of data window varies by the drift. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+      NOTE VOH denotes VOH(min) and VOL denotes VOL(max). 
+ 
+ 
+Symbol 
+Min 
+Max 
+Unit 
+Remark 1  
+tPH 
+0 
+2 
+UI 
+Device output momentary phase from CLK input to CMD 
+or DAT lines output. 
+Does not include a long term temperature drift. 
+ΔTPH 
+-350 
+(ΔT = -20 °C) 
++1550 
+(ΔT = 90 °C ) 
+ps 
+Delay variation due to temperature change after tuning. 
+Total allowable shift of output valid window (TVW) from last 
+system Tuning procedure 
+ΔTPH is 2600ps for ΔT from -25 °C to 125 °C during 
+operation. 
+tVW 
+0.575 
+ 
+UI 
+tVW =2.88ns at 200MHz 
+Using test circuit in following figure including skew 
+among CMD and DAT lines created by the Device. 
+Host path may add Signal Integrity induced noise, skews, 
+etc. Expected tVW at Host input is larger than 0.475UI. 
+NOTE 
+Unit Interval (UI) is one bit nominal time. For example, UI=5ns at 200 MHz. 
+ 
+ 
+ 
+ 
+ 
+VT
+tPERIOD
+VCCQ
+VSS
+CLOCK 
+INPUT
+VOH
+VOL
+tVW
+CMD.DAT[7-0] 
+OUTPUT
+VALID 
+WINDOW
+tPH
+VOH
+VOL
+VCCQ
+VSS
+Meas. Location 
+Driver 
+CL=15pF 
+ 
+NOTE 1 CL is total equivalent lumped capacitance for each Driver.  
+NOTE 2 CL incorporates device die load, device package load and equivalent lumped load external to the device.  
+NOTE 3 In distributed transmission lines only part of the line capacitance considered as load for the Driver. 
+
+
+================ [Page 24] ================
+THGBMNG5D1LBAIL 
+© 2018 Toshiba Memory Corporation 
+     
+24  
+   
+         February 21st, 2018 
+ 
+ΔTPH consideration 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Implementation Guide:  
+Host should design to avoid sampling errors that may be caused by the ΔTPH drift. 
+It is recommended to perform tuning procedure while Device wakes up, after sleep. 
+One simple way to overcome the ΔTPH drift is by reduction of operating frequency. 
+
+
+================ [Page 25] ================
+THGBMNG5D1LBAIL 
+© 2018 Toshiba Memory Corporation 
+     
+25  
+   
+         February 21st, 2018 
+ 
+Bus Timing Specification in HS400 mode 
+ 
+HS400 Input Timing 
+The CMD input timing for HS400 mode is the same as CMD input timing for HS200 mode. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+NOTE VT = 50% of VCCQ, indicates clock reference point for timing measurements. 
+ 
+Parameter 
+Symbol 
+Min 
+Max 
+Unit 
+Remark 
+Input CLK 
+Cycle time data transfer 
+mode 
+tPERIOD 
+5 
+ 
+ns 
+200 MHz(Max), between rising edges 
+With respect to VT 
+Slew rate 
+SR 
+1.125 
+ 
+V/ns 
+With respect to VIH /VIL 
+Duty cycle distortion 
+tCKDCD 
+0.0 
+0.3 
+ns 
+Allowable deviation from an ideal 50% duty cycle.  
+With respect to VT  
+Includes jitter, phase noise 
+Minimum pulse width 
+tCKMPW 
+2.2 
+ 
+ns 
+With respect to VT  
+Input DAT(referenced to CLK) 
+Input set-up time 
+tISUddr 
+0.4 
+ 
+ns 
+CDEVICE ≤ 6 pF 
+With respect to VIH /VIL 
+Input hold time 
+tIHddr 
+0.4 
+ 
+ns 
+CDEVICE ≤ 6 pF 
+With respect to VIH /VIL 
+Slew rate 
+SR 
+1.125 
+ 
+V/ns 
+With respect to VIH /VIL 
+ 
+ 
+ 
+
+
+================ [Page 26] ================
+THGBMNG5D1LBAIL 
+© 2018 Toshiba Memory Corporation 
+     
+26  
+   
+         February 21st, 2018 
+ 
+HS400 Device Output Timing 
+The Data Strobe is used to read data in HS400 mode. The Data Strobe is toggled only during data read or CRC status response. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+NOTE VT = 50% of VCCQ, indicates clock reference point for timing measurements. 
+ 
+Parameter 
+Symbol 
+Min 
+Max 
+Unit 
+Remark 
+Data Strobe 
+Cycle time data transfer 
+mode 
+tPERIOD 
+5 
+ 
+ns 
+200 MHz(Max), between rising edges 
+With respect to VT 
+Slew rate 
+SR 
+1.125 
+ 
+V/ns 
+With respect to VOH/VOL and HS400 reference load 
+Duty cycle distortion 
+tDSDCD 
+0.0 
+0.2 
+ns 
+Allowable deviation from the input CLK duty cycle 
+distortion(tCKDCD) 
+With respect to VT  
+Includes jitter, phase noise 
+Minimum pulse width 
+tDSMPW 
+2.0 
+ 
+ns 
+With respect to VT  
+Output DAT(referenced to Data Strobe) 
+Output skew 
+tRQ 
+ 
+0.4 
+ns 
+With respect to VOH /VOL and HS400 reference load 
+Output hold skew 
+tRQH 
+ 
+0.4 
+ns 
+With respect to VOH /VOL and HS400 reference load 
+Slew rate 
+SR 
+1.125 
+ 
+V/ns 
+With respect to VOH /VOL and HS400 reference load 
+ 
+ 
+ 
+
+
+================ [Page 27] ================
+THGBMNG5D1LBAIL 
+© 2018 Toshiba Memory Corporation 
+     
+27  
+   
+         February 21st, 2018 
+ 
+HS400 Device Command Output Timing 
+The Data Strobe is used to response of any command in HS400 mode. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Note : VT = 50% of VCCQ, indicates clock reference point for timing measurements. 
+ 
+Parameter 
+Symbol 
+Min 
+Max 
+Unit 
+Remark 
+Data Strobe 
+Cycle time data transfer 
+mode 
+tPERIOD 
+5 
+ 
+ns 
+200 MHz(Max), between rising edges 
+With respect to VT 
+Slew rate 
+SR 
+1.125 
+ 
+V/ns 
+With respect to VOH/VOL and HS400 reference load 
+Duty cycle distortion 
+tDSDCD 
+0.0 
+0.2 
+ns 
+Allowable deviation from the input CLK duty cycle 
+distortion(tCKDCD) 
+With respect to VT  
+Includes jitter, phase noise 
+Minimum pulse width 
+tDSMPW 
+2.0 
+ 
+ns 
+With respect to VT  
+CMD Response (referenced to Data Strobe) 
+Output skew(CMD) 
+tRQ_CMD 
+ 
+0.4 
+ns 
+With respect to VOH /VOL and HS400 reference load 
+Output hold skew(CMD) 
+tRQH_CMD 
+ 
+0.4 
+ns 
+With respect to VOH /VOL and HS400 reference load 
+Slew rate 
+SR 
+1.125 
+ 
+V/ns 
+With respect to VOH /VOL and HS400 reference load 
+ 
+ 
+
+
+================ [Page 28] ================
+THGBMNG5D1LBAIL 
+© 2018 Toshiba Memory Corporation 
+     
+28  
+   
+         February 21st, 2018 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                                       Figure 3  HS400 reference load 
+ 
+ 
+ 
+HS400 Capacitance 
+The Data Strobe is used to read data in HS400 mode. The Data Strobe is toggled only during data read or CRC status response. 
+Parameter 
+Symbol 
+Min 
+Typ. 
+Max 
+Unit 
+Remark 
+Pull-up resistance for CMD 
+RCMD 
+4.7 
+ 
+100(1) 
+kΩ 
+ 
+Pull-up resistance for DAT0-7 
+RDAT 
+10 
+ 
+100(1) 
+kΩ 
+ 
+Pull-down resistance for Data Strobe 
+RDS 
+10 
+ 
+100(1) 
+kΩ 
+ 
+Internal pull up resistance DAT1-DAT7 
+Rint 
+10 
+ 
+150 
+kΩ 
+ 
+Single Device capacitance 
+CDevice 
+ 
+ 
+6 
+pF 
+ 
+NOTE 1 
+Recommended maximum value is 50 kΩ for 1.8 V interface supply voltages. 
+  
+ 
+Driver 
+ 
+Device I/O 
+Z0 = 50 Ohm 
+Td = 350 ps 
+ 
+Reference Load 
+Measurement Point 
+CREFERENCE = 4pF 
+
+
+================ [Page 29] ================
+THGBMNG5D1LBAIL 
+© 2018 Toshiba Memory Corporation 
+     
+29  
+   
+         February 21st, 2018 
+ 
+Overshoot/Undershoot Specification 
+ 
+VCCQ 
+Unit 
+1.70V - 1.95V 
+Maximum peak amplitude allowed for overshoot area. 
+(See Figure Overshoot/Undershoot definition) 
+Max 
+0.9 
+V 
+Maximum peak amplitude allowed for undershoot area. 
+(See Figure Overshoot/Undershoot definition) 
+Max 
+0.9 
+V 
+Maximum area above VCCQ 
+ (See Figure Overshoot/Undershoot definition) 
+Max 
+1.5 
+V-ns 
+Maximum area below VSSQ 
+ (See Figure Overshoot/Undershoot definition) 
+Max 
+1.5 
+V-ns 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Figure 4  Overshoot/Undershoot definition 
+ 
+H/W Reset Operation 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Note *1: Device will detect the rising edge of RST_n signal to trigger internal reset sequence  
+ 
+ 
+H/W Reset Timings 
+Symbol 
+Parameter 
+Min 
+Max 
+Unit 
+tRSTW 
+RST_n pulse width 
+1 
+ 
+μs 
+tRSCA 
+RST_n to Command time 
+200 (1) 
+ 
+μs 
+tRSTH 
+RST_n high period (interval time) 
+1 
+ 
+μs 
+ 
+1) 74 cycles of clock signal required before issuing CMD1 or CMD0 with argument 0xFFFFFFFA 
+2) During the device internal initialization sequence right after power on, device may not be able to detect RST_n signal, 
+  because the device may not complete loading RST_n_ENABLE bits of the extended CSD register into the controller yet. 
+ 
+
+
+================ [Page 30] ================
+THGBMNG5D1LBAIL 
+© 2018 Toshiba Memory Corporation 
+     
+30  
+   
+         February 21st, 2018 
+ 
+Power-up sequence 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Figure 5  Power up sequence 
+ 
+Power-up parameter 
+Parameter 
+Symbol 
+Min 
+Max 
+Remark 
+Supply power-up for 3.3V 
+tPRUH 
+5 μs 
+35 ms 
+ 
+Supply power-up for 1.8V 
+tPRUL 
+5 μs 
+25 ms 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+0.5V 
+VccQ min 
+VccQ max 
+Vcc min 
+Vcc max 
+Vcc Power up time 
+tPRUH 
+Vccq Power up time 
+tPRUL 
+Vccq Power up time 
+tPRUL 
+time 
+Supply voltage 
+
+
+================ [Page 31] ================
+THGBMNG5D1LBAIL 
+© 2018 Toshiba Memory Corporation 
+     
+31  
+   
+         February 21st, 2018 
+ 
+Functional restrictions 
+- Pre loading data size is limited to MAX_PRE_LOADING_DATA_SIZE[21-18] regardless of using Production  
+State Awareness function. 
+- MAX_PRE_LOADING_DATA_SIZE[21-18] value will change when host sets Enhanced User area Partition. 
+ 
+ 
+Reliability Guidance 
+ 
+This reliability guidance is intended to notify some guidance related to using raw NAND flash. Although random 
+bit errors may occur during use, it does not necessarily mean that a block is bad. Generally, a block should be 
+marked as bad when a program status failure or erase status failure is detected. The other failure modes may be 
+recovered by a block erase. ECC treatment for read data is mandatory due to the following Data Retention and 
+Read Disturb failures. 
+ 
+-Write/Erase Endurance 
+Write/Erase endurance failures may occur in a cell, page, or block, and are detected by doing a status read after 
+either an auto program or auto block erase operation. The cumulative bad block count will increase along with the 
+number of write/erase cycles. 
+ 
+-Data Retention 
+The data in memory may change after a certain amount of storage time. This is due to charge loss or charge gain. 
+After block erasure and reprogramming, the block may become usable again. Also write/erase endurance 
+deteriorates data retention capability. The figure below shows a generic trend of relationship between write/erase 
+endurance and data retention. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+-Read Disturb 
+A read operation may disturb the data in memory. The data may change due to charge gain. Usually, bit errors 
+occur on other pages in the block, not the page being read. After a large number of read cycles (between block 
+erases), a tiny charge may build up and can cause a cell to be soft programmed to another state. After block erasure 
+and reprogramming, the block may become usable again. 
+ 
+ 
+Considering the above failure modes, TOSHIBA recommends following usage: 
+- Please avoid any excessive iteration of resets and initialization sequences (Device identification mode) as far as  
+possible after power-on, which may result in read disturb failure. The resets include hardware resets and software  
+resets. 
+e.g.1) Iteration of the following command sequence, CMD0 - CMD1 --- 
+The assertion of CMD1 implies a count of internal read operation in Raw NAND. 
+CMD0: Reset command, CMD1: Send operation command 
+ 
+     e.g.2) Iteration of the following commands, CMD30 and/or CMD31 
+CMD30: Send status of write protection bits, CMD31: Send type of write protection  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+================ [Page 32] ================
+THGBMNG5D1LBAIL 
+© 2018 Toshiba Memory Corporation 
+     
+32  
+   
+         February 21st, 2018 
+ 
+Document Revision History 
+ 
+Rev0.1                    Dec. 30th, 2017 
+ 
+- Released as preliminary revision 
+Rev1.0                    Feb. 21st, 2018 
+ 
+- Released as first revision 
+ 
+ 
+ 
+
+
+================ [Page 33] ================
+THGBMNG5D1LBAIL 
+© 2018 Toshiba Memory Corporation 
+     
+33  
+   
+         February 21st, 2018 
+ 
+RESTRICTIONS ON PRODUCT USE 
+Toshiba Corporation and its subsidiaries and affiliates are collectively referred to as “TOSHIBA”. 
+Hardware, software and systems described in this document are collectively referred to as “Product”. 
+• TOSHIBA reserves the right to make changes to the information in this document and related Product without notice. 
+• This document and any information herein may not be reproduced without prior written permission from TOSHIBA. Even with 
+TOSHIBA's written permission, reproduction is permissible only if reproduction is without alteration/omission. 
+• Though TOSHIBA works continually to improve Product's quality and reliability, Product can malfunction or fail. Customers are 
+responsible for complying with safety standards and for providing adequate designs and safeguards for their hardware, software 
+and systems which minimize risk and avoid situations in which a malfunction or failure of Product could cause loss of human life, 
+bodily injury or damage to property, including data loss or corruption. Before customers use the Product, create designs including 
+the Product, or incorporate the Product into their own applications, customers must also refer to and comply with (a) the latest 
+versions of all relevant TOSHIBA information, including without limitation, this document, the specifications, the data sheets and 
+application notes for Product and the precautions and conditions set forth in the "TOSHIBA Semiconductor Reliability Handbook" 
+and (b) the instructions for the application with which the Product will be used with or for. Customers are solely responsible for all 
+aspects of their own product design or applications, including but not limited to (a) determining the appropriateness of the use of this 
+Product in such design or applications; (b) evaluating and determining the applicability of any information contained in this 
+document, or in charts, diagrams, programs, algorithms, sample application circuits, or any other referenced documents; and (c) 
+validating all operating parameters for such designs and applications. TOSHIBA ASSUMES NO LIABILITY FOR CUSTOMERS' 
+PRODUCT DESIGN OR APPLICATIONS. 
+• PRODUCT IS NEITHER INTENDED NOR WARRANTED FOR USE IN EQUIPMENTS OR SYSTEMS THAT REQUIRE 
+EXTRAORDINARILY HIGH LEVELS OF QUALITY AND/OR RELIABILITY, AND/OR A MALFUNCTION OR FAILURE OF WHICH 
+MAY CAUSE LOSS OF HUMAN LIFE, BODILY INJURY, SERIOUS PROPERTY DAMAGE AND/OR SERIOUS PUBLIC IMPACT 
+("UNINTENDED USE"). Except for specific applications as expressly stated in this document, Unintended Use includes, without 
+limitation, equipment used in nuclear facilities, equipment used in the aerospace industry, medical equipment, equipment used for 
+automobiles, trains, ships and other transportation, traffic signaling equipment, equipment used to control combustions or 
+explosions, safety devices, elevators and escalators, devices related to electric power, and equipment used in finance-related fields. 
+IF YOU USE PRODUCT FOR UNINTENDED USE, TOSHIBA ASSUMES NO LIABILITY FOR PRODUCT. For details, please 
+contact your TOSHIBA sales representative. 
+• Do not disassemble, analyze, reverse-engineer, alter, modify, translate or copy Product, whether in whole or in part. 
+• Product shall not be used for or incorporated into any products or systems whose manufacture, use, or sale is prohibited under any 
+applicable laws or regulations. 
+• The information contained herein is presented only as guidance for Product use. No responsibility is assumed by TOSHIBA for any 
+infringement of patents or any other intellectual property rights of third parties that may result from the use of Product. No license to 
+any intellectual property right is granted by this document, whether express or implied, by estoppel or otherwise. 
+• ABSENT A WRITTEN SIGNED AGREEMENT, EXCEPT AS PROVIDED IN THE RELEVANT TERMS AND CONDITIONS OF 
+SALE FOR PRODUCT, AND TO THE MAXIMUM EXTENT ALLOWABLE BY LAW, TOSHIBA (1) ASSUMES NO LIABILITY 
+WHATSOEVER, INCLUDING WITHOUT LIMITATION, INDIRECT, CONSEQUENTIAL, SPECIAL, OR INCIDENTAL DAMAGES 
+OR LOSS, INCLUDING WITHOUT LIMITATION, LOSS OF PROFITS, LOSS OF OPPORTUNITIES, BUSINESS INTERRUPTION 
+AND LOSS OF DATA, AND (2) DISCLAIMS ANY AND ALL EXPRESS OR IMPLIED WARRANTIES AND CONDITIONS 
+RELATED TO SALE, USE OF PRODUCT, OR INFORMATION, INCLUDING WARRANTIES OR CONDITIONS OF 
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, ACCURACY OF INFORMATION, OR NONINFRINGEMENT. 
+• Do not use or otherwise make available Product or related software or technology for any military purposes, including without 
+limitation, for the design, development, use, stockpiling or manufacturing of nuclear, chemical, or biological weapons or missile 
+technology products (mass destruction weapons). Product and related software and technology may be controlled under the 
+applicable export laws and regulations including, without limitation, the Japanese Foreign Exchange and Foreign Trade Law and the 
+U.S. Export Administration Regulations. Export and re-export of Product or related software or technology are strictly prohibited 
+except in compliance with all applicable export laws and regulations. 
+• Please contact your TOSHIBA sales representative for details as to environmental matters such as the RoHS compatibility of 
+Product. Please use Product in compliance with all applicable laws and regulations that regulate the inclusion or use of controlled 
+substances, including without limitation, the EU RoHS Directive. TOSHIBA ASSUMES NO LIABILITY FOR DAMAGES OR 
+LOSSES OCCURRING AS A RESULT OF NONCOMPLIANCE WITH APPLICABLE LAWS AND REGULATIONS. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+

@@ -1,0 +1,3291 @@
+
+================ [Page 1] ================
+TPS543x 3A, Wide Input Range, Step-Down Converter
+1 Features
+•
+Wide input voltage range:
+–
+TPS5430: 5.5V to 36V
+–
+TPS5431: 5.5V to 23V
+•
+Up to 3A continuous (4A peak) output current
+•
+High efficiency up to 95% enabled by 100mΩ 
+integrated MOSFET switch
+•
+Wide output voltage range: adjustable down to 
+1.22V with 1.5% initial accuracy
+•
+Internal compensation minimizes external parts 
+count
+•
+Fixed 500kHz switching frequency for small filter 
+size
+•
+Improved line regulation and transient response by 
+input voltage feedforward
+•
+System protected by overcurrent limiting, 
+overvoltage protection, and thermal shutdown
+•
+–40°C to 125°C operating junction temperature 
+range
+•
+Available in small thermally enhanced 8-pin SO 
+PowerPAD™ integrated circuit package
+•
+Create a custom design using the TPS5430 with 
+the WEBENCH® Power Designer
+2 Applications
+•
+Consumer: set-top box, DVD, LCD displays
+•
+Industrial and car audio power supplies
+•
+Battery chargers, high-power LED supply
+•
+12V and 24V distributed power systems
+3 Description
+The TPS543x is a high-output-current PWM converter 
+that integrates a low-resistance, high-side N-channel 
+MOSFET. Included on the substrate with the 
+listed features are a high-performance voltage 
+error amplifier that provides tight voltage regulation 
+accuracy under transient conditions; an undervoltage-
+lockout circuit to prevent start-up until the input 
+voltage reaches 5.5V; an internally set slow-start 
+circuit to limit inrush currents; and a voltage feed-
+forward circuit to improve the transient response. 
+Using the ENA pin, shutdown supply current is 
+reduced to 15μA typically. Other features include an 
+active-high enable, overcurrent limiting, overvoltage 
+protection and thermal shutdown. To reduce design 
+complexity and external component count, the 
+TPS543x feedback loop is internally compensated. 
+The TPS5431 is intended to operate from power rails 
+up to 23V. The TPS5430 regulates a wide variety of 
+power sources including 24V bus.
+The TPS543x device is available in a thermally 
+enhanced, easy to use 8-pin SOIC PowerPAD 
+integrated circuit package. TI provides evaluation 
+modules and the Designer software tool to aid in 
+quickly achieving high-performance power supply 
+designs to meet aggressive equipment development 
+cycles.
+Device Information
+PART NUMBER
+PACKAGE(1)
+INPUT VOLTAGE
+TPS5430
+DDA (HSOP, 8)
+5.5V to 36V
+TPS5431
+5.5V to 23V
+(1)
+For more information, see Section 10.
+VIN
+NC
+NC
+ENA
+GND
+VSENSE
+BOOT
+PH
+TPS5430/31
+VIN
+VOUT
+95
+60
+70
+80
+90
+100
+0
+0.5
+1
+1.5
+2.5
+3
+3.5
+Efficiency −%
+I
+Output Current
+A
+O
+-
+-
+Efficiency vs Output Current
+Simplified Schematic
+VI = 12 V
+V
+= 5 V
+f = 500 kHz
+T
+= 25 C
+O
+s
+A
+o
+2
+50
+55
+65
+75
+85
+TPS5430, TPS5431
+SLVS632K – JANUARY 2006 – REVISED JANUARY 2024
+An IMPORTANT NOTICE at the end of this data sheet addresses availability, warranty, changes, use in safety-critical applications, 
+intellectual property matters and other important disclaimers. PRODUCTION DATA.
+
+
+================ [Page 2] ================
+Table of Contents
+1 Features............................................................................1
+2 Applications.....................................................................1
+3 Description.......................................................................1
+4 Pin Configuration and Functions...................................3
+5 Specifications.................................................................. 4
+5.1 Absolute Maximum Ratings........................................ 4
+5.2 ESD Ratings............................................................... 4
+5.3 Recommended Operating Conditions.........................4
+5.4 Thermal Information (DDA Package)..........................4
+5.5 Electrical Characteristics.............................................5
+5.6 Typical Characteristics................................................6
+6 Detailed Description........................................................8
+6.1 Overview.....................................................................8
+6.2 Functional Block Diagram...........................................8
+6.3 Feature Description.....................................................9
+6.4 Device Functional Modes..........................................10
+7 Application and Implementation..................................12
+7.1 Application Information............................................. 12
+7.2 Typical Applications.................................................. 13
+7.3 Power Supply Recommendations.............................25
+7.4 Layout....................................................................... 25
+8 Device and Documentation Support............................27
+8.1 Device Support......................................................... 27
+8.2 Receiving Notification of Documentation Updates....27
+8.3 Support Resources................................................... 27
+8.4 Trademarks...............................................................27
+8.5 Electrostatic Discharge Caution................................27
+8.6 Glossary....................................................................27
+9 Revision History............................................................ 28
+10 Mechanical, Packaging, and Orderable 
+Information.................................................................... 29
+TPS5430, TPS5431
+SLVS632K – JANUARY 2006 – REVISED JANUARY 2024
+www.ti.com
+2
+Submit Document Feedback
+Copyright © 2024 Texas Instruments Incorporated
+Product Folder Links: TPS5430 TPS5431
+
+
+================ [Page 3] ================
+4 Pin Configuration and Functions
+1
+2
+3
+4
+8
+7
+6
+5
+DAP
+BOOT
+NC
+NC
+VSENSE
+PH
+VIN
+GND
+ENA
+Figure 4-1. DDA Package 8-Pin SOIC with Thermal Pad Top View
+Table 4-1. Pin Functions
+PIN
+TYPE
+DESCRIPTION
+NAME
+NO.
+BOOT
+1
+O
+Boost capacitor for the high-side FET gate driver. Connect 0.01 μF low ESR capacitor from BOOT pin to PH 
+pin.
+NC
+2, 3
+—
+Not connected internally.
+VSENSE
+4
+I
+Feedback voltage for the regulator. Connect to output voltage divider.
+ENA
+5
+I
+On and off control. Below 0.5 V, the device stops switching. Float the pin to enable.
+GND
+6
+—
+Ground. Connect to DAP.
+VIN
+7
+—
+Input supply voltage. Bypass VIN pin to GND pin close to device package with a high quality, low ESR ceramic 
+capacitor.
+PH
+8
+I
+Source of the high side power MOSFET. Connected to external inductor and diode.
+DAP
+—
+GND pin must be connected to the exposed pad for proper operation.
+www.ti.com
+TPS5430, TPS5431
+SLVS632K – JANUARY 2006 – REVISED JANUARY 2024
+Copyright © 2024 Texas Instruments Incorporated
+Submit Document Feedback
+3
+Product Folder Links: TPS5430 TPS5431
+
+
+================ [Page 4] ================
+5 Specifications
+5.1 Absolute Maximum Ratings
+Over operating junction temperature range (unless otherwise noted) (1)
+MIN
+MAX
+UNIT
+Input voltage
+VIN(2) to GND, TPS5430  
+–0.3
+40
+V
+Input voltage
+VIN to GND, TPS5431
+–0.3
+25
+V
+Input voltage
+ENA to GND      
+–0.3
+7
+V
+Input voltage
+VSENSE to GND
+–0.3
+3
+V
+Output voltage
+BOOT to PH   
+  
+–0.3
+6
+V
+Output voltage
+PH to GND, (Steady-state)(2) , TPS5430  
+–0.6
+40
+V
+Output voltage
+PH to GND, (Steady-state), TPS5431
+–0.6
+25
+V
+Output voltage
+PH to GND, (transient < 10ns)  
+–1.2
+V
+Source current
+PH
+Internally Limited
+Source current
+PH Leakage current
+10
+µA
+TJ
+Operating virtual junction temperature
+–40
+150
+°C
+Tstg
+Storage temperature
+–65
+150
+°C
+(1)
+Operation outside the Absolute Maximum Ratings may cause permanent device damage. Absolute Maximum Ratings do not imply 
+functional operation of the device at these or any other conditions beyond those listed under Recommended Operating Conditions. 
+If used outside the Recommended Operating Conditions but within the Absolute Maximum Ratings, the device may not be fully 
+functional, and this may affect device reliability, functionality, performance, and shorten the device lifetime.
+(2)
+Approaching the absolute maximum rating for the VIN pin may cause the voltage on the PH pin to exceed the absolute maximum 
+rating.
+5.2 ESD Ratings
+VALUE
+UNIT
+V(ESD)
+Electrostatic discharge
+Human-body model (HBM), per ANSI/ESDA/JEDEC 
+JS-001(1)
+±2000
+V
+Charged-device model (CDM), per JEDEC specification 
+JESD22-C101(2)   
+±750
+(1)
+JEDEC document JEP155 states that 500-V HBM allows safe manufacturing with a standard ESD control process.
+(2)
+JEDEC document JEP157 states that 250-V CDM allows safe manufacturing with a standard ESD control process.
+5.3 Recommended Operating Conditions
+Over operating junction temperature range (unless otherwise noted)
+MIN
+NOM
+MAX
+UNIT
+Input voltage
+Input voltage range, TPS5430       
+5.5
+36
+V
+Input voltage
+Input voltage range, TPS5431 
+5.5
+23
+V
+TJ
+Operating junction temperature 
+-40
+125
+°C
+5.4 Thermal Information (DDA Package)
+THERMAL METRIC(1)
+TPS543X 
+UNIT
+DDA (HSOIC)
+8 PINs
+RθJA
+Junction-to-ambient thermal resistance (TPS5430EVM)(2)        
+45
+°C/W
+RθJA
+Junction-to-ambient thermal resistance (JESD 51-7)(3)     
+42.3
+°C/W
+RθJC(top)
+Junction-to-case (top) thermal resistance  
+46
+°C/W
+RθJB
+Junction-to-board thermal resistance
+15
+°C/W
+ψJT
+Junction-to-top characterization parameter
+5.2
+°C/W
+ψJB
+Junction-to-board characterization parameter
+15.3
+°C/W
+TPS5430, TPS5431
+SLVS632K – JANUARY 2006 – REVISED JANUARY 2024
+www.ti.com
+4
+Submit Document Feedback
+Copyright © 2024 Texas Instruments Incorporated
+Product Folder Links: TPS5430 TPS5431
+
+
+================ [Page 5] ================
+THERMAL METRIC(1)
+TPS543X 
+UNIT
+DDA (HSOIC)
+8 PINs
+RθJC(bot)
+Junction-to-case (bottom) thermal resistance   
+6
+°C/W
+(1)
+For more information about traditional and new thermal metrics, see Semiconductor and IC Package Thermal Metrics.  
+(2)
+Refer to the EVM User's Guide for board layout and additional information.  For thermal design information please see the Maximum 
+Ambient Temperature section.  
+(3)
+The value of RΘJA given in this table is only valid for comparison with other packages and cannot be used for design purposes.  These 
+values were calculated in accordance with JESD 51-7, and simulated on a 4-layer JEDEC board.  They do not represent the 
+performance obtained in an actual application.  For example, the EVM RΘJA = TBD ℃/W.  For design information please see the 
+Maximum Ambient Temperature section.  
+5.5 Electrical Characteristics
+TJ = –40°C to +125°C, VIN = 5.5 V to 36 V. Typical values are at TJ = 25°C and VIN = 12 V (unless otherwise noted)
+PARAMETER
+TEST CONDITIONS
+MIN
+TYP
+MAX
+UNIT
+SUPPLY VOLTAGE (VIN PIN)
+IQ(VIN)
+VIN quiescent current       
+Non-switching, VSENSE = 2V, PH pin open
+2
+4.4
+mA
+ISD(VIN)
+VIN shutdown supply current       
+Shutdown, ENA = 0 V
+15
+50
+µA
+UVLO
+VINUVLO(R)
+VIN UVLO rising threshold        
+VVIN rising
+5.3
+5.5
+V
+VINUVLO(H)
+VIN UVLO hysteresis           
+0.35
+V
+VOLTAGE REFERENCE
+VFB
+FB voltage
+TJ = 25°C 
+1.202
+1.221
+1.239
+V
+VFB
+FB voltage
+TJ = –40°C to 125°C
+1.196
+1.221
+1.245
+V
+OSCILLATOR
+fSW
+Switching frequency       
+400
+500
+600
+kHz
+tON(min)
+Minimum ON pulse width    .  
+150
+200
+ns
+DMAX
+Maximum Duty Cycle
+fSW = 500 kHz
+87%
+89%
+ENABLE (ENA PIN)
+VEN(R)
+ENA voltage rising threshold
+1.3
+V
+VEN(F)
+ENA voltage falling threshold
+0.5
+V
+VEN(H)
+ENA voltage hysteresis
+325
+mV
+tSS
+Internal slow-start time (0~100%)
+5.4
+8
+10
+ms
+OVERCURRENT PROTECTION
+IHS(OC)
+High-side peak current limit
+4.0
+5.0
+6.0
+A
+Hiccup time before re-start
+13
+16
+20
+ms
+OUTPUT MOSFET
+RDSON(HS)
+High-side MOSFET on-resistance
+VIN = 12 V, VBOOT-SW = 4.5 V
+100
+230
+mΩ
+RDSON(HS)
+High-side MOSFET on-resistance
+VIN = 5.5 V, VBOOT-SW = 4.0 V
+125
+mΩ
+THERMAL SHUTDOWN
+TJ(SD)
+Thermal shutdown threshold (1)
+Temperature rising
+135
+162
+°C
+TJ(HYS)
+Thermal shutdown hysteresis (1)
+14
+°C
+(1)
+Parameter specified by design, statistical analysis and production testing of correlated parameters. Not production tested.
+www.ti.com
+TPS5430, TPS5431
+SLVS632K – JANUARY 2006 – REVISED JANUARY 2024
+Copyright © 2024 Texas Instruments Incorporated
+Submit Document Feedback
+5
+Product Folder Links: TPS5430 TPS5431
+
+
+================ [Page 6] ================
+5.6 Typical Characteristics
+460
+470
+480
+490
+500
+510
+520
+530
+−50
+−25
+0
+25
+50
+75
+100
+125
+f −Oscillator Frequency −kHz
+T −Junction Temperature −°C
+Figure 5-1. Oscillator Frequency vs. Junction 
+Temperature
+2.5
+2.75
+3
+3.25
+3.5
+−50
+−25
+0
+25
+50
+75
+100
+125
+T J −Junction T emperature −°C
+I Q−Quiescent Current
+−mA
+V = 12 V
+I
+Figure 5-2. Non-Switching Quiescent Current vs. 
+Junction Temperature
+5
+10
+15
+20
+25
+0
+5
+10
+15
+20
+25
+30
+35
+40
+T J = 125°C
+T J = 27°C
+T J = –
+°
+40 C
+ENA = 0 V
+VI −Input V oltage −V
+I SD −Shutdown Current
+−A
+µ
+Figure 5-3. Shutdown Quiescent Current vs. Input 
+Voltage
+1.210
+1.215
+1.220
+1.225
+1.230
+-50
+-25
+0
+25
+50
+75
+100
+125
+T - Junction Temperature -  °C
+J
+V
+- Voltage Reference - V
+REF
+Figure 5-4. Voltage Reference vs. Junction 
+Temperature
+80
+90
+100
+110
+120
+130
+140
+150
+160
+170
+180
+−50
+−25
+0
+25
+50
+75
+100
+125
+mΩ
+−On Resistance −
+rDS(on)
+T J −Junction Temperature
+−°C
+VI = 12 V
+Figure 5-5. On Resistance vs. Junction 
+Temperature
+7
+7.5
+8
+8.5
+9
+−50
+−25
+0
+25
+50
+75
+100
+125
+TJ −Junction Temperature −°C
+TSS −Internal Slow Start Time −ms
+Figure 5-6. Internal Slow Start Time vs. Junction 
+Temperature
+TPS5430, TPS5431
+SLVS632K – JANUARY 2006 – REVISED JANUARY 2024
+www.ti.com
+6
+Submit Document Feedback
+Copyright © 2024 Texas Instruments Incorporated
+Product Folder Links: TPS5430 TPS5431
+
+
+================ [Page 7] ================
+120
+130
+140
+150
+160
+170
+180
+−50
+−25
+0
+25
+50
+75
+100
+125
+TJ −Junction Temperature −°C
+Minimum Controllable On Time −ns
+Figure 5-7. Minimum Controllable On Time vs. 
+Junction Temperature
+7
+7.25
+7.50
+7.75
+8
+-50
+-25
+0
+25
+50
+75
+100
+125
+T - Junction Temperature -  °C
+J
+Minimum Duty Ratio - %
+Figure 5-8. Minimum Controllable Duty Ratio vs. 
+Junction Temperature
+www.ti.com
+TPS5430, TPS5431
+SLVS632K – JANUARY 2006 – REVISED JANUARY 2024
+Copyright © 2024 Texas Instruments Incorporated
+Submit Document Feedback
+7
+Product Folder Links: TPS5430 TPS5431
+
+
+================ [Page 8] ================
+6 Detailed Description
+6.1 Overview
+The TPS543x is a 3-A, step-down (buck) regulator with an integrated high-side n-channel MOSFET. The 
+TPS5431 is intended to operate from power rails up to 23 V and the TPS5430 up to 36 V. These devices 
+implement constant-frequency voltage-mode control with voltage feed forward for improved line regulation and 
+line transient response. Internal compensation reduces design complexity and external component count.
+The integrated 100-mΩ high-side MOSFET supports high-efficiency power-supply designs capable of delivering 
+3-A of continuous current to a load. The gate-drive bias voltage for the integrated high-side MOSFET is supplied 
+by a bootstrap capacitor connected from the BOOT to PH pins. The TPS543x reduces the external component 
+count by integrating the bootstrap recharge diode.
+The TPS543x has a default input start-up voltage of 5.3 V typical. The ENA pin can be used to disable the 
+TPS543x reducing the supply current to 15 µA. An internal pullup current source enables operation when the 
+ENA pin is floating. The TPS543x includes an internal slow-start circuit that slows the output rise time during 
+start up to reduce in rush current and output voltage overshoot. The minimum output voltage is the internal 
+1.221-V feedback reference. Output overvoltage transients are minimized by an Overvoltage Protection (OVP) 
+comparator. When the OVP comparator is activated, the high-side MOSFET is turned off and remains off until 
+the output voltage is less than 112.5% of the desired output voltage.
+Internal cycle-by-cycle overcurrent protection limits the peak current in the integrated high-side MOSFET. For 
+continuous overcurrent fault conditions the TPS543x enters hiccup mode overcurrent limiting. Thermal protection 
+protects the device from overheating.
+6.2 Functional Block Diagram
+VIN
+UVLO
+ENABLE
+Thermal
+Protection
+Reference
+Overcurrent
+Gate Drive
+Oscillator
+Ramp
+Generator
+VREF
+PH
+ENA
+GND
+BOOT
+Z1
+Z2
+SHDN
+SHDN
+SHDN
+SHDN
+SHDN
+SHDN
+SHDN
+SHDN
+VIN
+112.5% VREF
+VSENSE
+OVP
+HICCUP
+HICCUP
+SHDN
+NC
+Feed Forward
+BOOT
+NC
+DAP
+VIN
+VOUT
+5 µA
+1.221 V Bandgap
+Slow Start
+Boot
+Regulator
+Error
+Amplifier
+Gain = 25
+PWM
+Comparator
+Protection
+Gate
+Driver
+Control
+VSENSE
+TPS5430, TPS5431
+SLVS632K – JANUARY 2006 – REVISED JANUARY 2024
+www.ti.com
+8
+Submit Document Feedback
+Copyright © 2024 Texas Instruments Incorporated
+Product Folder Links: TPS5430 TPS5431
+
+
+================ [Page 9] ================
+6.3 Feature Description
+6.3.1 Oscillator Frequency
+The internal free running oscillator sets the PWM switching frequency at 500 kHz. The 500 kHz switching 
+frequency allows less output inductance for the same output ripple requirement resulting in a smaller output 
+inductor.
+6.3.2 Voltage Reference
+The voltage reference system produces a precision reference signal by scaling the output of a temperature 
+stable bandgap circuit. The bandgap and scaling circuits are trimmed during production testing to an output of 
+1.221 V at room temperature.
+6.3.3 Enable (ENA) and Internal Slow Start
+The ENA pin provides electrical on/off control of the regulator. After the ENA pin voltage exceeds the threshold 
+voltage, the regulator starts operation and the internal slow start begins to ramp. If the ENA pin voltage is pulled 
+below the threshold voltage, the regulator stops switching and the internal slow start resets. Connecting the pin 
+to ground or to any voltage less than 0.5 V will disable the regulator and activate the shutdown mode. The 
+quiescent current of the TPS543x in shutdown mode is typically 15 μA.
+The ENA pin has an internal pull-up current source, allowing the user to float the ENA pin. If an application 
+requires controlling the ENA pin, use open drain or open collector output logic to interface with the pin. To limit 
+the start-up inrush current, an internal slow-start circuit is used to ramp up the reference voltage from 0 V to its 
+final value, linearly. The internal slow start time is 8 ms typically.
+6.3.4 Undervoltage Lockout (UVLO)
+The TPS543x incorporate an undervoltage lockout circuit to keep the device disabled when VIN (the input 
+voltage) is below the UVLO start voltage threshold. During power up, internal circuits are held inactive and 
+the internal slow start is grounded until VIN exceeds the UVLO start threshold voltage. After the UVLO start 
+threshold voltage is reached, the internal slow start is released and device start-up begins. The device operates 
+until VIN falls below the UVLO stop threshold voltage. The typical hysteresis in the UVLO comparator is 350 mV.
+6.3.5 Boost Capacitor (BOOT)
+Connect a 0.01 μF low-ESR ceramic capacitor between the BOOT pin and PH pin. This capacitor provides the 
+gate drive voltage for the high-side MOSFET. X7R or X5R grade dielectrics are recommended due to their stable 
+values over temperature.
+6.3.6 Output Feedback (VSENSE) and Internal Compensation
+The output voltage of the regulator is set by feeding back the center point voltage of an external resistor divider 
+network to the VSENSE pin. In steady-state operation, the VSENSE pin voltage must be equal to the voltage 
+reference 1.221 V.
+The TPS543x implements internal compensation to simplify the regulator design. Because the TPS543x uses 
+voltage mode control, a type 3 compensation network has been designed on chip to provide a high crossover 
+frequency and a high phase margin for good stability. See the Internal Compensation Network in the applications 
+section for more details.
+6.3.7 Voltage Feed-Forward
+The internal voltage feed-forward provides a constant dc power stage gain despite any variations with the input 
+voltage. This greatly simplifies the stability analysis and improves the transient response. Voltage feed forward 
+varies the peak ramp voltage inversely with the input voltage so that the modulator and power stage gain are 
+constant at the feed forward gain, i.e.
+Feed Forward Gain 
+VIN
+Ramppkpk
+(1)
+www.ti.com
+TPS5430, TPS5431
+SLVS632K – JANUARY 2006 – REVISED JANUARY 2024
+Copyright © 2024 Texas Instruments Incorporated
+Submit Document Feedback
+9
+Product Folder Links: TPS5430 TPS5431
+
+
+================ [Page 10] ================
+The typical feed forward gain of TPS543x is 25.
+6.3.8 Pulse-Width-Modulation (PWM) Control
+The regulator employs a fixed frequency pulse-width-modulator (PWM) control method. First, the feedback 
+voltage (VSENSE pin voltage) is compared to the constant voltage reference by the high gain error amplifier and 
+compensation network to produce a error voltage. Then, the error voltage is compared to the ramp voltage by 
+the PWM comparator. In this way, the error voltage magnitude is converted to a pulse width which is the duty 
+cycle. Finally, the PWM output is fed into the gate drive circuit to control the on-time of the high-side MOSFET.
+6.3.9 Overcurrent Limiting
+Overcurrent limiting is implemented by sensing the drain-to-source voltage across the high-side MOSFET. The 
+drain to source voltage is then compared to a voltage level representing the overcurrent threshold limit. If the 
+drain-to-source voltage exceeds the overcurrent threshold limit, the overcurrent indicator is set true. The system 
+will ignore the overcurrent indicator for the leading edge blanking time at the beginning of each cycle to avoid 
+any turn-on noise glitches.
+After overcurrent indicator is set true, overcurrent limiting is triggered. The high-side MOSFET is turned off for 
+the rest of the cycle after a propagation delay. The overcurrent limiting mode is called cycle-by-cycle current 
+limiting.
+Sometimes under serious overload conditions such as short-circuit, the overcurrent runaway can still happen 
+when using cycle-by-cycle current limiting. A second mode of current limiting is used, i.e. hiccup mode 
+overcurrent limiting. During hiccup mode overcurrent limiting, the voltage reference is grounded and the high-
+side MOSFET is turned off for the hiccup time. After the hiccup time duration is complete, the regulator restarts 
+under control of the slow start circuit.
+6.3.10 Overvoltage Protection
+The TPS543x has an overvoltage protection (OVP) circuit to minimize voltage overshoot when recovering from 
+output fault conditions. The OVP circuit includes an overvoltage comparator to compare the VSENSE pin voltage 
+and a threshold of 112.5% x VREF. After the VSENSE pin voltage is higher than the threshold, the high-side 
+MOSFET will be forced off. When the VSENSE pin voltage drops lower than the threshold, the high-side 
+MOSFET will be enabled again.
+6.3.11 Thermal Shutdown
+The TPS543x protects itself from overheating with an internal thermal shutdown circuit. If the junction 
+temperature exceeds the thermal shutdown trip point, the voltage reference is grounded and the high-side 
+MOSFET is turned off. The part is restarted under control of the slow start circuit automatically when the junction 
+temperature drops 14°C below the thermal shutdown trip point.
+6.4 Device Functional Modes
+6.4.1 Operation near Minimum Input Voltage
+The TPS543x is recommended to operate with input voltages above 5.5 V. The typical VIN UVLO threshold is 
+5.3 V and the device can operate at input voltages down to the UVLO voltage. At input voltages below the actual 
+UVLO voltage the device will not switch. If EN is floating or externally pulled up to greater up than 1.3 V, when 
+V(VIN) passes the UVLO threshold the TPS543x will become active. Switching is enabled and the slow-start 
+sequence is initiated. The TPS543x starts linearly ramping up the internal reference voltage from 0 V to its final 
+value over the internal slow-start time period.
+6.4.2 Operation with ENA control
+The enable start threshold voltage is 1.3 V max. With ENA held below the 0.5 V minimum stop threshold voltage 
+the TPS543x is disabled and switching is inhibited even if VIN is above its UVLO threshold. The quiescent 
+current is reduced in this state. If the ENA voltage is increased above the max start threshold while V(VIN) is 
+above the UVLO threshold, the device becomes active. Switching is enabled and the slow-start sequence is 
+TPS5430, TPS5431
+SLVS632K – JANUARY 2006 – REVISED JANUARY 2024
+www.ti.com
+10
+Submit Document Feedback
+Copyright © 2024 Texas Instruments Incorporated
+Product Folder Links: TPS5430 TPS5431
+
+
+================ [Page 11] ================
+initiated. The TPS543x starts linearly ramping up the internal reference voltage from 0 V to its final value over 
+the internal slow-start time period.
+www.ti.com
+TPS5430, TPS5431
+SLVS632K – JANUARY 2006 – REVISED JANUARY 2024
+Copyright © 2024 Texas Instruments Incorporated
+Submit Document Feedback
+11
+Product Folder Links: TPS5430 TPS5431
+
+
+================ [Page 12] ================
+7 Application and Implementation
+Note
+Information in the following applications sections is not part of the TI component specification, 
+and TI does not warrant its accuracy or completeness. TI’s customers are responsible for 
+determining suitability of components for their purposes, as well as validating and testing their design 
+implementation to confirm system functionality.
+7.1 Application Information
+The TPS543x is a 3-A, step down regulator with an integrated high side MOSFET. This device is typically used 
+to convert a higher DC voltage to a lower DC voltage with a maximum available output current of 3 A. Example 
+applications are: High Density Point-of-Load Regulators for Set-top Box, DVD, LCD and Plasma Displays, High 
+Power LED Supply, Car Audio, Battery Chargers, and other 12-V and 24-V Distributed Power Systems. Use the 
+following design procedure to select component values for the TPS543x. This procedure illustrates the design 
+of a high frequency switching regulator. Alternatively, use the WEBENCH® software to generate a complete 
+design. The WEBENCH software uses an iterative design procedure and accesses a comprehensive database 
+of components when generating a design.
+To begin the design process a few parameters must be decided upon. The designer needs to know the following:
+•
+Input voltage range
+•
+Output voltage
+•
+Input ripple voltage
+•
+Output ripple voltage
+•
+Output current rating
+•
+Operating frequency
+TPS5430, TPS5431
+SLVS632K – JANUARY 2006 – REVISED JANUARY 2024
+www.ti.com
+12
+Submit Document Feedback
+Copyright © 2024 Texas Instruments Incorporated
+Product Folder Links: TPS5430 TPS5431
+
+
+================ [Page 13] ================
+7.2 Typical Applications
+7.2.1 12-V Input to 5.0-V Output
+Figure 7-1 shows the schematic for a typical TPS5430 application. The TPS5430 can provide up to 3 A output 
+current at a nominal output voltage of 5 V. For proper thermal performance, the DAP underneath the device must 
+be soldered down to the printed-circuit board.
++
+DAP
+10.8 - 19.8 V
+L1
+15 H
+m
+6
+4
+9
+5
+2
+3
+GND
+VSNS
+VIN
+NC
+NC
+ENA
+BOOT
+PH
+7
+1
+8
+C1
+10 F
+m
+C3
+220 F
+m
+D1
+B340A
+C2
+0.01 F
+m
+VOUT
+5 V
+R2
+3.24 kW
+R1
+10 kW
+VIN
+EN
+U1
+TPS5430DDA
+Figure 7-1. Application Circuit, 12 V Input to 5.0 V Output
+7.2.1.1 Design Requirements
+For this design example, use the following as the input parameters:
+DESIGN PARAMETER(1)
+EXAMPLE VALUE
+Input voltage range
+10.8 V to 19.8 V
+Output voltage
+5 V
+Input ripple voltage
+300 mV
+Output ripple voltage
+30 mV
+Output current rating
+3 A
+Operating frequency
+500 kHz
+(1)
+As an additional constraint, the design is set up to be small size and low component height.
+www.ti.com
+TPS5430, TPS5431
+SLVS632K – JANUARY 2006 – REVISED JANUARY 2024
+Copyright © 2024 Texas Instruments Incorporated
+Submit Document Feedback
+13
+Product Folder Links: TPS5430 TPS5431
+
+
+================ [Page 14] ================
+7.2.1.2 Detailed Design Procedure
+The following design procedure can be used to select component values for the TPS5430. This section presents 
+a simplified discussion of the design process.
+7.2.1.2.1 Custom Design With WEBENCH® Tools
+Click here to create a custom design using the TPS5430 device with the WEBENCH® Power Designer.
+1.
+Start by entering the input voltage (VIN), output voltage (VOUT), and output current (IOUT) requirements.
+2.
+Optimize the design for key parameters such as efficiency, footprint, and cost using the optimizer dial.
+3.
+Compare the generated design with other possible solutions from Texas Instruments.
+The WEBENCH Power Designer provides a customized schematic along with a list of materials with real-time 
+pricing and component availability.
+In most cases, these actions are available:
+•
+Run electrical simulations to see important waveforms and circuit performance
+•
+Run thermal simulations to understand board thermal performance
+•
+Export customized schematic and layout into popular CAD formats
+•
+Print PDF reports for the design, and share the design with colleagues
+Get more information about WEBENCH tools at www.ti.com/WEBENCH.
+7.2.1.2.2 Switching Frequency
+The switching frequency for the TPS5430 is internally set to 500 kHz. It is not possible to adjust the switching 
+frequency.
+7.2.1.2.3 Input Capacitors
+The TPS5430 requires an input decoupling capacitor and, depending on the application, a bulk input capacitor. 
+The recommended value for the decoupling capacitor, C1, is 10 μF. A high quality ceramic type X5R or X7R is 
+required. For some applications, a smaller value decoupling capacitor can be used, so long as the input voltage 
+and current ripple ratings are not exceeded. The voltage rating must be greater than the maximum input voltage, 
+including ripple.
+This input ripple voltage can be approximated by Equation 2 :
+VIN 
+IOUT(MAX)  0.25
+CBULK  ƒsw
+IOUT(MAX)  ESRMAX
+(2)
+Where IOUT(MAX) is the maximum load current, f SW is the switching frequency, CIN is the input capacitor value 
+and ESRMAX is the maximum series resistance of the input capacitor.
+The maximum RMS ripple current also needs to be checked. For worst case conditions, this can be 
+approximated by Equation 3 :
+ICIN 
+IOUT(MAX)
+2
+(3)
+In this case the input ripple voltage can be 156 mV and the RMS ripple current can be 1.5 A. The maximum 
+voltage across the input capacitors can be VIN max plus delta VIN/2. The chosen input decoupling capacitor is 
+rated for 25 V and the ripple current capacity is greater than 3 A, providing ample margin. It is very important that 
+the maximum ratings for voltage and current are not exceeded under any circumstance.
+Additionally some bulk capacitance can be needed, especially if the TPS5430 circuit is not located within about 
+2 inches from the input voltage source. The value for this capacitor is not critical but it also must be rated to 
+handle the maximum input voltage including ripple voltage and must filter the output so that input ripple voltage 
+is acceptable.
+TPS5430, TPS5431
+SLVS632K – JANUARY 2006 – REVISED JANUARY 2024
+www.ti.com
+14
+Submit Document Feedback
+Copyright © 2024 Texas Instruments Incorporated
+Product Folder Links: TPS5430 TPS5431
+
+
+================ [Page 15] ================
+7.2.1.2.4 Output Filter Components
+Two components need to be selected for the output filter, L1 and C2. Because the TPS5430 is an internally 
+compensated device, a limited range of filter component types and values can be supported.
+7.2.1.2.4.1 Inductor Selection
+To calculate the minimum value of the output inductor, use Equation 4:
+LMIN 
+VOUT(MAX) VIN(MAX)  VOUT
+VIN(max)  KIND  IOUT  FSW
+(4)
+KIND is a coefficient that represents the amount of inductor ripple current relative to the maximum output current. 
+Three things need to be considered when determining the amount of ripple current in the inductor: the peak to 
+peak ripple current affects the output ripple voltage amplitude, the ripple current affects the peak switch current 
+and the amount of ripple current determines at what point the circuit becomes discontinuous. For designs using 
+the TPS5430, KIND of 0.2 to 0.3 yields good results. Low output ripple voltages can be obtained when paired with 
+the proper output capacitor, the peak switch current will be well below the current limit set point and relatively low 
+load currents can be sourced before discontinuous operation.
+For this design example use KIND = 0.2 and the minimum inductor value is calculated to be 12.5 μH. The next 
+highest standard value is 15 μH, which is used in this design.
+For the output filter inductor it is important that the RMS current and saturation current ratings not be exceeded. 
+The RMS inductor current can be found from Equation 5:
+IL(RMS) 
+I2
+OUT(MAX)  1
+12 
+VOUT VIN(MAX)  VOUT
+VIN(MAX)  LOUT  FSW  0.8
+2
+
+(5)
+and the peak inductor current can be determined with Equation 6:
+IL(PK)  IOUT(MAX) 
+VOUT VIN(MAX)  VOUT
+1.6  VIN(MAX)  LOUT  FSW
+(6)
+For this design, the RMS inductor current is 3.003 A, and the peak inductor current is 3.31 A. The chosen 
+inductor is a Sumida CDRH104R-150 15 μH. It has a saturation current rating of 3.4 A and a RMS current 
+rating of 3.6 A, easily meeting these requirements. A lesser rated inductor can be used, however this device was 
+chosen because of its low profile component height. In general, inductor values for use with the TPS5430 are in 
+the range of 10 μH to 100 μH.
+www.ti.com
+TPS5430, TPS5431
+SLVS632K – JANUARY 2006 – REVISED JANUARY 2024
+Copyright © 2024 Texas Instruments Incorporated
+Submit Document Feedback
+15
+Product Folder Links: TPS5430 TPS5431
+
+
+================ [Page 16] ================
+7.2.1.2.4.2 Capacitor Selection
+The important design factors for the output capacitor are dc voltage rating, ripple current rating, and equivalent 
+series resistance (ESR). The dc voltage and ripple current ratings cannot be exceeded. The ESR is important 
+because along with the inductor ripple current it determines the amount of output ripple voltage. The actual value 
+of the output capacitor is not critical, but some practical limits do exist. Consider the relationship between the 
+desired closed loop crossover frequency of the design and LC corner frequency of the output filter. Due to the 
+design of the internal compensation, it is desirable to keep the closed loop crossover frequency in the range 3 
+kHz to 30 kHz as this frequency range has adequate phase boost to allow for stable operation. For this design 
+example, it is assumed that the intended closed loop crossover frequency will be between 2590 Hz and 24 
+kHz and also below the ESR zero of the output capacitor. Under these conditions the closed loop crossover 
+frequency is related to the LC corner frequency by:
+fCO 
+fLC
+2
+85 VOUT
+(7)
+And the desired output capacitor value for the output filter to:
+COUT 
+1
+3357  LOUT  fCO  VOUT
+(8)
+For a desired crossover of 18 kHz and a 15 μH inductor, the calculated value for the output capacitor is 220 μF. 
+The capacitor type must be chosen so that the ESR zero is above the loop crossover. The maximum ESR must 
+be:
+ESRMAX 
+1
+2  COUT  fCO
+(9)
+The maximum ESR of the output capacitor also determines the amount of output ripple as specified in the initial 
+design parameters. The output ripple voltage is the inductor ripple current times the ESR of the output filter. 
+Check that the maximum specified ESR as listed in the capacitor data sheet results in an acceptable output 
+ripple voltage:
+V
+(MAX) =
+PP
+(                       )
+ESR
+x  V
+x    V
+-  V
+MAX
+OUT
+IN(MAX)
+OUT
+N
+x  V
+x  L
+C
+IN(MAX)
+OUT x  FSW
+(10)
+where
+•
+ΔVPP is the desired peak-to-peak output ripple.
+•
+NC is the number of parallel output capacitors.
+•
+FSW is the switching frequency.
+For this design example, a single 220 μF output capacitor is chosen for C3. The calculated RMS ripple current 
+is 143 mA and the maximum ESR required is 40 mΩ. A capacitor that meets these requirements is a Sanyo 
+Poscap 10TPB220M, rated at 10 V with a maximum ESR of 40 mΩ and a ripple current rating of 3 A. An 
+additional small 0.1 μF ceramic bypass capacitor can also used, but is not included in this design.
+The minimum ESR of the output capacitor must also be considered. For good phase margin, the ESR zero when 
+the ESR is at a minimum must not be too far above the internal compensation poles at 24 kHz and 54 kHz.
+The selected output capacitor must also be rated for a voltage greater than the desired output voltage plus one 
+half the ripple voltage. Any derating amount must also be included. The maximum RMS ripple current in the 
+output capacitor is given by Equation 11:
+TPS5430, TPS5431
+SLVS632K – JANUARY 2006 – REVISED JANUARY 2024
+www.ti.com
+16
+Submit Document Feedback
+Copyright © 2024 Texas Instruments Incorporated
+Product Folder Links: TPS5430 TPS5431
+
+
+================ [Page 17] ================
+ICOUT(RMS)  1
+12
+
+
+
+VOUT VIN(MAX)  VOUT
+VIN(MAX)  LOUT  FSW  NC	
+
+(11)
+where
+•
+NC is the number of output capacitors in parallel.
+•
+FSW is the switching frequency.
+Other capacitor types can be used with the TPS5430, depending on the needs of the application.
+7.2.1.2.5 Output Voltage Set-Point
+The output voltage of the TPS5430 is set by a resistor divider (R1 and R2) from the output to the VSENSE pin. 
+Calculate the R2 resistor value for the output voltage of 5 V using Equation 12:
+R2 
+R1  1.221
+VOUT  1.221
+(12)
+For any TPS5430 design, start with an R1 value of 10 kΩ. R2 is then 3.24 kΩ.
+7.2.1.2.6 BOOT Capacitor
+The BOOT capacitor must be 0.01 μF.
+7.2.1.2.7 Catch Diode
+The TPS5430 is designed to operate using an external catch diode between PH and GND. The selected diode 
+must meet the absolute maximum ratings for the application: Reverse voltage must be higher than the maximum 
+voltage at the PH pin, which is VIN(MAX) + 0.5 V. Peak current must be greater than IOUT(MAX) plus on half the 
+peak to peak inductor current. Forward voltage drop must be small for higher efficiencies. It is important to note 
+that the catch diode conduction time is typically longer than the high-side FET on time, so attention paid to diode 
+parameters can make a marked improvement in overall efficiency. Additionally, check that the device chosen is 
+capable of dissipating the power losses. For this design, a Diodes, Inc. B340A is chosen, with a reverse voltage 
+of 40 V, forward current of 3 A, and a forward voltage drop of 0.5 V.
+7.2.1.2.8 Advanced Information
+7.2.1.2.8.1 Output Voltage Limitations
+Due to the internal design of the TPS543x, there are both upper and lower output voltage limits for any given 
+input voltage. The upper limit of the output voltage set point is constrained by the maximum duty cycle of 87% 
+and is given by:
+VOUTMAX  0.87 VINMIN  IOMAX  0.230  VD IOMAX  RL  VD
+(13)
+where
+•
+VINMIN = minimum input voltage
+•
+IOMAX = maximum load current
+•
+VD = catch diode forward voltage.
+•
+RL= output inductor series resistance.
+This equation assumes maximum on resistance for the internal high side FET.
+The lower limit is constrained by the minimum controllable on time which can be as high as 200 ns. The 
+approximate minimum output voltage for a given input voltage and minimum load current is given by:
+www.ti.com
+TPS5430, TPS5431
+SLVS632K – JANUARY 2006 – REVISED JANUARY 2024
+Copyright © 2024 Texas Instruments Incorporated
+Submit Document Feedback
+17
+Product Folder Links: TPS5430 TPS5431
+
+
+================ [Page 18] ================
+VOUTMIN  0.12 VINMAX  IOMIN  0.110  VD IOMIN  RL  VD
+(14)
+where
+•
+VINMAX = maximum input voltage
+•
+IOMIN = minimum load current
+•
+VD = catch diode forward voltage.
+•
+RL= output inductor series resistance.
+7.2.1.2.8.2 Internal Compensation Network
+The design equations given in the example circuit can be used to generate circuits using the TPS543x. These 
+designs are based on certain assumptions and will tend to always select output capacitors within a limited 
+range of ESR values. If a different capacitor type is desired, it can be possible to fit one to the internal 
+compensation of the TPS543x. Equation 15 gives the nominal frequency response of the internal voltage-mode 
+type III compensation network:
+H(s) 
+1 
+s
+2Fz1 1 
+s
+2Fz2
+
+s
+2Fp0 1 
+s
+2Fp1 1 
+s
+2Fp2 1 
+s
+2Fp3
+(15)
+where
+•
+fp0 = 2165 Hz, fz1 = 2170 Hz, fz2 = 2590 Hz
+•
+fp1 = 24 kHz, fp2 = 54 kHz, fp3 = 440 kHz
+•
+fp3 represents the non-ideal parasitics effect.
+Using this information along with the desired output voltage, feed forward gain and output filter characteristics, 
+the closed loop transfer function can be derived.
+7.2.1.2.8.3 Thermal Calculations
+The following formulas show how to estimate the device power dissipation under continuous conduction mode 
+operations. They must not be used if the device is working at light loads in the discontinuous conduction mode.
+Conduction Loss: Pcon = IOUT 2 × Rds(on) × VOUT/VIN
+Switching Loss: Psw = VIN × IOUT × 0.01
+Quiescent Current Loss: Pq = VIN × 0.01
+Total Loss: Ptot = Pcon + Psw + Pq
+Given TA => Estimated Junction Temperature: TJ = TA + Rth x Ptot
+Given TJMAX = 125°C => Estimated Maximum Ambient Temperature: TAMAX = TJMAX – Rth × Ptot
+TPS5430, TPS5431
+SLVS632K – JANUARY 2006 – REVISED JANUARY 2024
+www.ti.com
+18
+Submit Document Feedback
+Copyright © 2024 Texas Instruments Incorporated
+Product Folder Links: TPS5430 TPS5431
+
+
+================ [Page 19] ================
+7.2.1.3 Application Curves
+The performance graphs (Figure 7-2 through Figure 7-8) are applicable to the circuit in Figure 7-1. Ta= 25 °C. 
+unless otherwise specified.
+75
+80
+85
+90
+95
+100
+0
+0.5
+1
+1.5
+2
+2.5
+3
+3.5
+I
+- Output Current - A
+O
+Efficiency - %
+V = 15 V
+I
+V = 10.8 V
+I
+V = 12 V
+I
+V = 18 V
+I
+V = 19.8 V
+I
+Figure 7-2. Efficiency vs. Output Current
+-0.3
+-0.2
+-0.1
+0
+0.1
+0.2
+0.3
+0
+0.5
+1
+1.5
+2
+2.5
+3
+I
+- Output Current - A
+O
+Output Regulation - %
+Figure 7-3. Output Regulation % vs. Output 
+Current
+-0.1
+-0.08
+-0.06
+-0.04
+-0.02
+0
+0.02
+0.04
+0.06
+0.08
+0.1
+10.8
+13.8
+16.8
+19.8
+V - Input Voltage - V
+I
+Input Regulation - %
+I
+= 0 A
+O
+I
+= 3 A
+O
+I
+= 1.5 A
+O
+Figure 7-4. Input Regulation % vs. Input Voltage
+t -Time - 500 ns/Div
+PH = 5 V/Div
+V
+= 100 mV/Div (AC Coupled)
+IN
+Figure 7-5. Input Voltage Ripple and PH Node, IO = 
+3 A.
+t - Time = 500 ns/Div
+PH = 5 V/Div
+V
+= 20 mV/Div (AC Coupled)
+OUT
+Figure 7-6. Output Voltage Ripple and PH Node, IO 
+= 3 A
+t - Time = 200 μs/Div
+I
+= 1 A /Div
+OUT
+V
+= 50 mV/Div (AC Coupled)
+OUT
+Figure 7-7. Transient Response, IO Step 0.75 to 
+2.25 A.
+www.ti.com
+TPS5430, TPS5431
+SLVS632K – JANUARY 2006 – REVISED JANUARY 2024
+Copyright © 2024 Texas Instruments Incorporated
+Submit Document Feedback
+19
+Product Folder Links: TPS5430 TPS5431
+
+
+================ [Page 20] ================
+t - Time = 2 ms/Div
+V
+= 2 V/Div
+OUT
+V
+= 5 V/Div
+IN
+Figure 7-8. Startup Waveform, VIN and VOUT.
+TPS5430, TPS5431
+SLVS632K – JANUARY 2006 – REVISED JANUARY 2024
+www.ti.com
+20
+Submit Document Feedback
+Copyright © 2024 Texas Instruments Incorporated
+Product Folder Links: TPS5430 TPS5431
+
+
+================ [Page 21] ================
+7.2.2 Wide Input Voltage Ranges with TPS5430
+Figure 7-9 shows an application circuit using the wide input voltage range of the TPS5430.
++
+10-35 V
+VIN
+C1
+4.7 F
+m
+C4
+4.7 F
+m
+ENA
+VIN
+ENA
+NC
+NC
+GND
+DAP
+BOOT
+PH
+VSNS
+U1
+TPS5430DDA
+C2
+0.01 F
+m
+L1
+22 H
+m
+D1
+B340A
+C3
+220 F
+m
+R2
+3.24 kW
+5 V
+VOUT
+R1
+10 kW
+C3 = Sanyo POSCAP 10TP220M
+6
+4
+9
+5
+2
+3
+7
+1
+Figure 7-9. 10-V – 35-V Input to 5-V Output Application Circuit
+7.2.2.1 Design Requirements
+For this design example, use the following as the input parameters. This circuit is also designed with a larger 
+value output inductor and a lower closed loop crossover frequency.
+DESIGN PARAMETER
+EXAMPLE VALUE
+Input voltage range
+10 V to 35 V
+Output voltage
+5 V
+Input ripple voltage
+300 mV
+Output ripple voltage
+30 mV
+Output current rating
+3 A
+Operating frequency
+500 kHz
+7.2.2.2 Detailed Design Procedure
+The design procedure is similar to what is given for the design example in Section 7.2.1.2.
+www.ti.com
+TPS5430, TPS5431
+SLVS632K – JANUARY 2006 – REVISED JANUARY 2024
+Copyright © 2024 Texas Instruments Incorporated
+Submit Document Feedback
+21
+Product Folder Links: TPS5430 TPS5431
+
+
+================ [Page 22] ================
+7.2.2.3 Wide Input Voltage Ranges with TPS5431
+Figure 7-10 shows an application circuit using the wide input voltage range of the TPS5431.
++
+9-21 V
+VIN
+C1
+ENA
+VIN
+ENA
+NC
+NC
+GND
+DAP
+BOOT
+PH
+VSNS
+U1
+TPS5431DDA
+C2
+0.01 F
+m
+L1
+18 H
+m
+D1
+B340A
+C3
+220 F
+m
+R2
+3.24 kW
+5 V
+VOUT
+R1
+10 kW
+C3 = Sanyo POSCAP 10TP220M
+6
+4
+9
+5
+2
+3
+7
+1
+Figure 7-10. 9 V – 21 V Input to 5 V Output Application Circuit
+7.2.2.3.1 Design Requirements
+For this design example, use the following as the input parameters. This circuit is also designed with a larger 
+value output inductor and a lower closed loop crossover frequency.
+DESIGN PARAMETER
+EXAMPLE VALUE
+Input voltage range
+9 V to 21 V
+Output voltage
+5 V
+Input ripple voltage
+300 mV
+Output ripple voltage
+30 mV
+Output current rating
+3 A
+Operating frequency
+500 kHz
+7.2.2.3.2 Detailed Design Procedure
+The design procedure is similar to what is given for the design example in Section 7.2.1.2.
+TPS5430, TPS5431
+SLVS632K – JANUARY 2006 – REVISED JANUARY 2024
+www.ti.com
+22
+Submit Document Feedback
+Copyright © 2024 Texas Instruments Incorporated
+Product Folder Links: TPS5430 TPS5431
+
+
+================ [Page 23] ================
+7.2.3 Circuit Using Ceramic Output Filter Capacitors
+Figure 7-11 shows an application circuit using all ceramic capacitors for the input and output filters.
+VIN 10 24 V
+-
+C1
+4.7 F
+m
+L1
+15 H
+m
+R1
+10 kW
+R2
+5.9 kW
+R3
+549 W
+C6
+1500 pF
+U1
+TPS5430DDA
+VIN
+GND
+VSNS
+PH
+BOOT
+DAP
+EN
+3.3 V
+VOUT
+C2
+0.01 F
+m
+D1
+MRBS340
+C3
+100 F
+m
+C7
+0.1 F
+m
+C4
+150 pF
+VIN
+7
+1
+2
+4
+5
+8
+3
+6
+9
+ENA
+NC
+NC
+Figure 7-11. Ceramic Output Filter Capacitors Circuit
+7.2.3.1 Design Requirements
+For this design example, use the following as the input parameters. This circuit is also designed with a ceramic 
+output filter capacitor.
+DESIGN PARAMETER
+EXAMPLE VALUE
+Input voltage range
+10 V to 24 V
+Output voltage
+3.3 V
+Input ripple voltage
+300 mV
+Output current rating
+3 A
+Operating frequency
+500 kHz
+7.2.3.2 Detailed Design Procedure
+The design procedure is similar to what is given for the design example in Section 7.2.1.2, except for the 
+selection of the output filter capacitor values and the design of the additional compensation components required 
+to stabilize the circuit.
+www.ti.com
+TPS5430, TPS5431
+SLVS632K – JANUARY 2006 – REVISED JANUARY 2024
+Copyright © 2024 Texas Instruments Incorporated
+Submit Document Feedback
+23
+Product Folder Links: TPS5430 TPS5431
+
+
+================ [Page 24] ================
+7.2.3.2.1 Output Filter Component Selection
+Using Equation 11, the minimum inductor value is 12 μH. A value of 15 μH is chosen for this design.
+When using ceramic output filer capacitors, the recommended LC resonant frequency must be no more than 
+7 kHz. Because the output inductor is already selected at 15 μH, this limits the minimum output capacitor value 
+to:
+C
+(MIN)
+O
+³
+1
+2
+(2
+x  7000)   x  L
+p
+O
+(16)
+The minimum capacitor value is calculated to be 34 μF. For this circuit a larger value of capacitor yields better 
+transient response. A single 100 μF output capacitor is used for C3. It is important to note that the actual 
+capacitance of ceramic capacitors decreases with applied voltage. In this example, the output voltage is set to 
+3.3 V, minimizing this effect.
+7.2.3.2.2 External Compensation Network
+When using ceramic output capacitors, additional circuitry is required to stabilize the closed loop system. For 
+this circuit, the external components are R3, C4, C6, and C7. To determine the value of these components, first 
+calculate the LC resonant frequency of the output filter:
+F
+=
+LC
+1
+2
+L
+p
+O
+O
+x C
+(EFF)
+Ö
+(17)
+For this example the effective resonant frequency is calculated as 4109 Hz
+The network composed of R1, R2, R3, C5, C6, and C7 has two poles and two zeros that are used to tailor the 
+overall response of the feedback network to accommodate the use of the ceramic output capacitors. The pole 
+and zero locations are given by the following equations:
+Fp1  =  500000  x
+VO
+FLC
+(18)
+Fz1  =  0.7  x  FLC
+(19)
+Fz2  =  2.5  x  FLC
+(20)
+The final pole is located at a frequency too high to be of concern. The second zero, fz2 as defined by Equation 
+20 uses 2.5 for the frequency multiplier. In some cases this can need to be slightly higher or lower. Values in the 
+range of 2.3 to 2.7 work well. The values for R1 and R2 are fixed by the 3.3 V output voltage as calculated using 
+Equation 12. For this design R1 = 10 kΩ and R2 = 5.90 kΩ. With Fp1 = 401 Hz, Fz1 = 2876 Hz and Fz2 = 10.3 
+kHz, the values of R3, C6 and C7 are determined using Equation 21, Equation 22, and Equation 23:
+C7  =
+1
+2
+x  Fp1  x  (R1 ||  R2)
+p
+(21)
+R3  =
+1
+2
+x  Fz1  x C7
+p
+(22)
+C6  =
+1
+2
+x  Fz2  x R1
+p
+(23)
+For this design, using the closest standard values, C7 is 0.1 μF, R3 is 549 Ω, and C6 is 1500 pF. C4 is added 
+to improve load regulation performance. It is effectively in parallel with C6 in the location of the second pole 
+TPS5430, TPS5431
+SLVS632K – JANUARY 2006 – REVISED JANUARY 2024
+www.ti.com
+24
+Submit Document Feedback
+Copyright © 2024 Texas Instruments Incorporated
+Product Folder Links: TPS5430 TPS5431
+
+
+================ [Page 25] ================
+frequency, so it must be small in relationship to C6. C4 must be less the 1/10 the value of C6. For this example, 
+150 pF works well.
+For additional information on external compensation of the TPS5430, TPS5431 or other wide voltage range 
+devices, see the Using TPS5410/20/30/31 With Aluminum/Ceramic Output Capacitors application report.
+7.3 Power Supply Recommendations
+The TPS5430 is designed to operate from an input voltage supply range between 5.5 V and 36 V. The TPS5431 
+is designed to operate from an input voltage supply range between 5.5 V and 23 V. This input supply must 
+remain within the input voltage supply range. If the input supply is located more than a few inches from 
+the TPS543x converter bulk capacitance can be required in addition to the ceramic bypass capacitors. An 
+electrolytic capacitor with a value of 100 μF is a typical choice.
+7.4 Layout
+7.4.1 Layout Guidelines
+Connect a low ESR ceramic bypass capacitor to the VIN pin. Care must be taken to minimize the loop area 
+formed by the bypass capacitor connections, the VIN pin, and the TPS543x ground pin. The best way to do 
+this is to extend the top side ground area from under the device adjacent to the VIN trace, and place the 
+bypass capacitor as close as possible to the VIN pin. The minimum recommended bypass capacitance is 4.7 μF 
+ceramic with a X5R or X7R dielectric.
+There must be a ground area on the top layer directly underneath the IC, with an exposed area for connection to 
+the DAP. Use vias to connect this ground area to any internal ground planes. Use additional vias at the ground 
+side of the input and output filter capacitors as well. The GND pin must be tied to the PCB ground by connecting 
+it to the ground area under the device as shown below.
+The PH pin must be routed to the output inductor, catch diode and boot capacitor. Because the PH connection 
+is the switching node, the inductor must be located very close to the PH pin and the area of the PCB conductor 
+minimized to prevent excessive capacitive coupling. The catch diode must also be placed close to the device to 
+minimize the output current loop area. Connect the boot capacitor between the phase node and the BOOT pin 
+as shown. Keep the boot capacitor close to the IC and minimize the conductor trace lengths. The component 
+placements and connections shown work well, but other connection routings can also be effective.
+Connect the output filter capacitor(s) as shown between the VOUT trace and GND. It is important to keep the 
+loop formed by the PH pin, Lout, Cout and GND as small as is practical.
+Connect the VOUT trace to the VSENSE pin using the resistor divider network to set the output voltage. Do not 
+route this trace too close to the PH trace. Due to the size of the IC package and the device pin-out, the trace can 
+need to be routed under the output capacitor. Alternately, the routing can be done on an alternate layer if a trace 
+under the output capacitor is not desired.
+If using the grounding scheme shown in Figure 7-12, use a via connection to a different layer to route to the ENA 
+pin.
+www.ti.com
+TPS5430, TPS5431
+SLVS632K – JANUARY 2006 – REVISED JANUARY 2024
+Copyright © 2024 Texas Instruments Incorporated
+Submit Document Feedback
+25
+Product Folder Links: TPS5430 TPS5431
+
+
+================ [Page 26] ================
+7.4.2 Layout Example
+BOOT
+NC
+NC
+VSENSE
+PH
+VIN
+GND
+ENA
+VOUT
+PH
+Vin
+TOPSIDE GROUND AREA
+VIA to Ground Plane
+OUTPUT
+INDUCTOR
+OUTPUT
+FILTER
+CAPACITOR
+BOOT
+CAPACITOR
+INPUT
+BYPASS
+CAPACITOR
+INPUT
+BULK
+FILTER
+CATCH
+DIODE
+Signal VIA
+Route feedback
+trace under output
+filter capacitor or on
+other layer
+RESISTOR
+DIVIDER
+Figure 7-12. Design Layout
+TPS5430, TPS5431
+SLVS632K – JANUARY 2006 – REVISED JANUARY 2024
+www.ti.com
+26
+Submit Document Feedback
+Copyright © 2024 Texas Instruments Incorporated
+Product Folder Links: TPS5430 TPS5431
+
+
+================ [Page 27] ================
+8 Device and Documentation Support
+8.1 Device Support
+8.1.1 Third-Party Products Disclaimer
+TI'S PUBLICATION OF INFORMATION REGARDING THIRD-PARTY PRODUCTS OR SERVICES DOES NOT 
+CONSTITUTE AN ENDORSEMENT REGARDING THE SUITABILITY OF SUCH PRODUCTS OR SERVICES 
+OR A WARRANTY, REPRESENTATION OR ENDORSEMENT OF SUCH PRODUCTS OR SERVICES, EITHER 
+ALONE OR IN COMBINATION WITH ANY TI PRODUCT OR SERVICE.
+8.1.2 Development Support
+8.1.2.1 Custom Design With WEBENCH® Tools
+Click here to create a custom design using the TPS5430 device with the WEBENCH® Power Designer.
+1.
+Start by entering the input voltage (VIN), output voltage (VOUT), and output current (IOUT) requirements.
+2.
+Optimize the design for key parameters such as efficiency, footprint, and cost using the optimizer dial.
+3.
+Compare the generated design with other possible solutions from Texas Instruments.
+The WEBENCH Power Designer provides a customized schematic along with a list of materials with real-time 
+pricing and component availability.
+In most cases, these actions are available:
+•
+Run electrical simulations to see important waveforms and circuit performance
+•
+Run thermal simulations to understand board thermal performance
+•
+Export customized schematic and layout into popular CAD formats
+•
+Print PDF reports for the design, and share the design with colleagues
+Get more information about WEBENCH tools at www.ti.com/WEBENCH.
+8.2 Receiving Notification of Documentation Updates
+To receive notification of documentation updates, navigate to the device product folder on ti.com. Click on 
+Notifications to register and receive a weekly digest of any product information that has changed. For change 
+details, review the revision history included in any revised document.
+8.3 Support Resources
+TI E2E™ support forums are an engineer's go-to source for fast, verified answers and design help — straight 
+from the experts. Search existing answers or ask your own question to get the quick design help you need.
+Linked content is provided "AS IS" by the respective contributors. They do not constitute TI specifications and do 
+not necessarily reflect TI's views; see TI's Terms of Use.
+8.4 Trademarks
+PowerPAD™ and TI E2E™ are trademarks of Texas Instruments.
+WEBENCH® is a registered trademark of Texas Instruments.
+All trademarks are the property of their respective owners.
+8.5 Electrostatic Discharge Caution
+This integrated circuit can be damaged by ESD. Texas Instruments recommends that all integrated circuits be handled 
+with appropriate precautions. Failure to observe proper handling and installation procedures can cause damage.
+ESD damage can range from subtle performance degradation to complete device failure. Precision integrated circuits may 
+be more susceptible to damage because very small parametric changes could cause the device not to meet its published 
+specifications.
+8.6 Glossary
+TI Glossary 
+This glossary lists and explains terms, acronyms, and definitions.
+www.ti.com
+TPS5430, TPS5431
+SLVS632K – JANUARY 2006 – REVISED JANUARY 2024
+Copyright © 2024 Texas Instruments Incorporated
+Submit Document Feedback
+27
+Product Folder Links: TPS5430 TPS5431
+
+
+================ [Page 28] ================
+9 Revision History
+NOTE: Page numbers for previous revisions may differ from page numbers in the current version.
+Changes from Revision J (July 2022) to Revision K (January 2024)
+Page
+•
+Updated WEBENCH® links throughout the data sheet. Added "integrated circuit" when the PowerPAD™ 
+package is mentioned. Changed MOSFET resistance 110mΩ to100mΩ. Changed IQ from 18μA to 15μA...... 1
+•
+Changed Pin Configuration figure title to "DDA Package 8-Pin SOIC with Thermal Pad Top View" and 
+repositioned the title to the correct position. Changed "PowerPAD" to "DAP". ................................................. 3
+•
+Updated Absolute Maximum Ratings table to new format which does not include specific parameter names 
+and does include min and max columns. TJ called out in header.  Pin names are used rather than signal 
+names.  BOOT and PH voltages now marked as output voltage. Updated footnotes and removed Note 2...... 4
+•
+Changed BOOT to PH Absolute Maximum from 10 V to 6 V............................................................................. 4
+•
+Changed PH to GND Absolute Maximum (transient < 10 ns) from -4 V to -1.2 V.............................................. 4
+•
+Changed CDM ESD from ±1500 V to ±750 V.................................................................................................... 4
+•
+Changed recommended operating "VI" to "input voltage".................................................................................. 4
+•
+Updated thermal information footnotes to match current TI standards which include JEDEC standard 
+information.  Changed custom board information to EVM RθJA information.......................................................4
+•
+Changed RθJC(top)  from 46.4 to 46, RθJB from 20.8 to 15, ψJT from 4.9 to 5.2, ψJB from 20.7 to 15.3, 
+and RθJC(bot) from 0.8 to 6.................................................................................................................................. 4
+•
+ Added condition for typical specifications EC table’s header, added parameter names, and used pin names 
+in parameter descriptions.  Footnote added.......................................................................................................5
+•
+Changed test condition for VFB from “IO = 0 A to 3 A” to “TJ = –40°C to 125°C”, Changed rDS(ON) to RDSON(HS) 
+and test condition to for RDSON(HS) from “VIN = 5.5 V” to “VIN = 5.5 V, VBOOT-SW = 4.0 V”.................................5
+•
+Changed the name of IQ to ISD(VIN) if ENA is low and IQ(VIN) if the chip is active................................................5
+•
+Added test condition for DMAX, “fSW = 500 kHz” and for second RDSON(HS) spec “VIN = 12 V, VBOOT-SW = 
+4.5 V”..................................................................................................................................................................5
+•
+Changed IQ(VIN) typical from 3 mA to 2 mA, ISD(VIN) typical from 18 µA to 15 µA, VINUVLO(H) from 330 mV to 
+0.35 V, and VEN(H) from 450 mV to 325 mV........................................................................................................5
+•
+Changed RDS(ON) with VIN = 5 V typical from 150 mΩ to 125 mΩ and with VIN = 12 V from 110 mΩ to 100 
+mΩ...................................................................................................................................................................... 5
+•
+Changed "110-mΩ high-side MOSFET" to "100-mΩ high-side MOSFET" and 18 µA to 15 µA in Overview .... 8
+•
+Changed shutdown current from 18 μA to 15 μA in Enable (ENA) and Internal Slow Start section...................9
+•
+Changed UVLO hysteresis from 330 mV to 350 mV in UVLO description.........................................................9
+•
+Changed "PwPd" to "DAP" on the TPS5430DDA package drawing in Figure 7-1 and "exposed PowerPAD™" 
+to DAP in circuit description .............................................................................................................................13
+•
+Changed "PwPd" to "DAP" on the TPS5430DDA package drawing in Figure 7-9...........................................21
+•
+Changed "PwPd" to "DAP" on the TPS5431DDA package drawing in Figure 7-10.........................................22
+•
+Changed "PwPd" to "DAP" on the TPS5430DDA package drawing in Figure 7-11......................................... 23
+•
+Changed "PowerPAD" to "DAP" in Layout Guidelines .....................................................................................25
+Changes from Revision I (April 2017) to Revision J (July 2022)
+Page
+•
+Updated the numbering format for tables, figures, and cross-references throughout the document................. 1
+Changes from Revision H (April 2016) to Revision I (March 2017)
+Page
+•
+Added WEBENCH® Model ............................................................................................................................... 1
+TPS5430, TPS5431
+SLVS632K – JANUARY 2006 – REVISED JANUARY 2024
+www.ti.com
+28
+Submit Document Feedback
+Copyright © 2024 Texas Instruments Incorporated
+Product Folder Links: TPS5430 TPS5431
+
+
+================ [Page 29] ================
+10 Mechanical, Packaging, and Orderable Information
+The following pages include mechanical, packaging, and orderable information. This information is the most 
+current data available for the designated devices. This data is subject to change without notice and revision of 
+this document. For browser-based versions of this data sheet, refer to the left-hand navigation.
+www.ti.com
+TPS5430, TPS5431
+SLVS632K – JANUARY 2006 – REVISED JANUARY 2024
+Copyright © 2024 Texas Instruments Incorporated
+Submit Document Feedback
+29
+Product Folder Links: TPS5430 TPS5431
+
+
+================ [Page 30] ================
+PACKAGE OPTION ADDENDUM
+www.ti.com
+8-Jan-2026
+PACKAGING INFORMATION
+Orderable part number
+Status
+(1)
+Material type
+(2)
+Package | Pins
+Package qty | Carrier
+RoHS
+(3)
+Lead finish/
+Ball material
+(4)
+MSL rating/
+Peak reflow
+(5)
+Op temp (°C)
+Part marking
+(6)
+TPS5430DDA
+Active
+Production
+SO PowerPAD
+(DDA) | 8
+75 | TUBE
+Yes
+Call TI | Nipdauag
+| Nipdau
+Level-2-260C-1 YEAR
+-40 to 125
+5430
+TPS5430DDA.A
+Active
+Production
+SO PowerPAD
+(DDA) | 8
+75 | TUBE
+Yes
+Call TI | Nipdauag
+| Nipdau
+Level-2-260C-1 YEAR
+-40 to 125
+5430
+TPS5430DDA.B
+Active
+Production
+SO PowerPAD
+(DDA) | 8
+75 | TUBE
+Yes
+Call TI | Nipdauag
+| Nipdau
+Level-2-260C-1 YEAR
+-40 to 125
+5430
+TPS5430DDAG4
+Active
+Production
+SO PowerPAD
+(DDA) | 8
+75 | TUBE
+Yes
+Call TI | Nipdauag
+| Nipdau
+Level-2-260C-1 YEAR
+-40 to 125
+5430
+TPS5430DDAR
+Active
+Production
+SO PowerPAD
+(DDA) | 8
+2500 | LARGE T&R
+Yes
+Call TI | Nipdauag
+| Nipdau
+Level-2-260C-1 YEAR
+-40 to 125
+5430
+TPS5430DDAR.A
+Active
+Production
+SO PowerPAD
+(DDA) | 8
+2500 | LARGE T&R
+Yes
+Call TI | Nipdauag
+| Nipdau
+Level-2-260C-1 YEAR
+-40 to 125
+5430
+TPS5430DDAR.B
+Active
+Production
+SO PowerPAD
+(DDA) | 8
+2500 | LARGE T&R
+Yes
+Call TI | Nipdauag
+| Nipdau
+Level-2-260C-1 YEAR
+-40 to 125
+5430
+TPS5430DDARG4
+Active
+Production
+SO PowerPAD
+(DDA) | 8
+2500 | LARGE T&R
+Yes
+Call TI | Nipdauag
+| Nipdau
+Level-2-260C-1 YEAR
+-40 to 125
+5430
+TPS5431DDA
+Active
+Production
+SO PowerPAD
+(DDA) | 8
+75 | TUBE
+Yes
+Call TI | Nipdauag
+| Nipdau
+Level-2-260C-1 YEAR
+-40 to 125
+5431
+TPS5431DDA.A
+Active
+Production
+SO PowerPAD
+(DDA) | 8
+75 | TUBE
+Yes
+Call TI | Nipdauag
+| Nipdau
+Level-2-260C-1 YEAR
+-40 to 125
+5431
+TPS5431DDA.B
+Active
+Production
+SO PowerPAD
+(DDA) | 8
+75 | TUBE
+Yes
+Call TI | Nipdauag
+| Nipdau
+Level-2-260C-1 YEAR
+-40 to 125
+5431
+TPS5431DDAG4
+Active
+Production
+SO PowerPAD
+(DDA) | 8
+75 | TUBE
+Yes
+Call TI | Nipdauag
+| Nipdau
+Level-2-260C-1 YEAR
+-40 to 125
+5431
+TPS5431DDAR
+Active
+Production
+SO PowerPAD
+(DDA) | 8
+2500 | LARGE T&R
+Yes
+Call TI | Nipdauag
+| Nipdau
+Level-2-260C-1 YEAR
+-40 to 125
+5431
+TPS5431DDAR.A
+Active
+Production
+SO PowerPAD
+(DDA) | 8
+2500 | LARGE T&R
+Yes
+Call TI | Nipdauag
+| Nipdau
+Level-2-260C-1 YEAR
+-40 to 125
+5431
+TPS5431DDAR.B
+Active
+Production
+SO PowerPAD
+(DDA) | 8
+2500 | LARGE T&R
+Yes
+Call TI | Nipdauag
+| Nipdau
+Level-2-260C-1 YEAR
+-40 to 125
+5431
+TPS5431DDARG4
+Active
+Production
+SO PowerPAD
+(DDA) | 8
+2500 | LARGE T&R
+Yes
+Call TI | Nipdauag
+| Nipdau
+Level-2-260C-1 YEAR
+-40 to 125
+5431
+ 
+(1) Status:  For more details on status, see our product life cycle.
+Addendum-Page 1
+
+
+================ [Page 31] ================
+PACKAGE OPTION ADDENDUM
+www.ti.com
+8-Jan-2026
+ 
+(2) Material type:  When designated, preproduction parts are prototypes/experimental devices, and are not yet approved or released for full production. Testing and final process, including without limitation quality assurance,
+reliability performance testing, and/or process qualification, may not yet be complete, and this item is subject to further changes or possible discontinuation. If available for ordering, purchases will be subject to an additional
+waiver at checkout, and are intended for early internal evaluation purposes only. These items are sold without warranties of any kind.
+ 
+(3) RoHS values:  Yes, No, RoHS Exempt. See the TI RoHS Statement for additional information and value definition.
+ 
+(4) Lead finish/Ball material:  Parts may have multiple material finish options. Finish options are separated by a vertical ruled line. Lead finish/Ball material values may wrap to two lines if the finish value exceeds the maximum
+column width.
+ 
+(5) MSL rating/Peak reflow:  The moisture sensitivity level ratings and peak solder (reflow) temperatures. In the event that a part has multiple moisture sensitivity ratings, only the lowest level per JEDEC standards is shown.
+Refer to the shipping label for the actual reflow temperature that will be used to mount the part to the printed circuit board.
+ 
+(6) Part marking:  There may be an additional marking, which relates to the logo, the lot trace code information, or the environmental category of the part.
+ 
+Multiple part markings will be inside parentheses. Only one part marking contained in parentheses and separated by a "~" will appear on a part. If a line is indented then it is a continuation of the previous line and the two
+combined represent the entire part marking for that device.
+ 
+Important Information and Disclaimer:The information provided on this page represents TI's knowledge and belief as of the date that it is provided. TI bases its knowledge and belief on information provided by third parties, and
+makes no representation or warranty as to the accuracy of such information. Efforts are underway to better integrate information from third parties. TI has taken and continues to take reasonable steps to provide representative
+and accurate information but may not have conducted destructive testing or chemical analysis on incoming materials and chemicals. TI and TI suppliers consider certain information to be proprietary, and thus CAS numbers
+and other limited information may not be available for release.
+ 
+In no event shall TI's liability arising out of such information exceed the total purchase price of the TI part(s) at issue in this document sold by TI to Customer on an annual basis.
+ 
+ OTHER QUALIFIED VERSIONS OF TPS5430 :
+• Automotive : TPS5430-Q1
+• Enhanced Product : TPS5430-EP
+ NOTE: Qualified Version Definitions:
+• Automotive - Q100 devices qualified for high-reliability automotive applications targeting zero defects
+• Enhanced Product - Supports Defense, Aerospace and Medical Applications
+Addendum-Page 2
+
+
+================ [Page 32] ================
+PACKAGE MATERIALS INFORMATION
+ 
+ 
+www.ti.com
+7-Feb-2026
+TAPE AND REEL INFORMATION
+Reel Width (W1)
+REEL DIMENSIONS
+A0
+B0
+K0
+W
+Dimension designed to accommodate the component length
+Dimension designed to accommodate the component thickness
+Overall width of the carrier tape
+Pitch between successive cavity centers
+Dimension designed to accommodate the component width
+TAPE DIMENSIONS
+K0
+ P1
+B0 W
+A0
+Cavity
+QUADRANT ASSIGNMENTS FOR PIN 1 ORIENTATION IN TAPE
+Pocket Quadrants
+Sprocket Holes
+Q1
+Q1
+Q2
+Q2
+Q3
+Q3
+Q4
+Q4
+User Direction of Feed
+P1
+Reel
+Diameter
+ 
+*All dimensions are nominal
+Device
+Package
+Type
+Package
+Drawing
+Pins
+SPQ
+Reel
+Diameter
+(mm)
+Reel
+Width
+W1 (mm)
+A0
+(mm)
+B0
+(mm)
+K0
+(mm)
+P1
+(mm)
+W
+(mm)
+Pin1
+Quadrant
+TPS5430DDAR
+SO
+PowerPAD
+DDA
+8
+2500
+330.0
+12.8
+6.4
+5.2
+2.1
+8.0
+12.0
+Q1
+Pack Materials-Page 1
+
+
+================ [Page 33] ================
+PACKAGE MATERIALS INFORMATION
+ 
+ 
+www.ti.com
+7-Feb-2026
+TAPE AND REEL BOX DIMENSIONS
+Width (mm)
+W
+L
+H
+ 
+*All dimensions are nominal
+Device
+Package Type
+Package Drawing
+Pins
+SPQ
+Length (mm)
+Width (mm)
+Height (mm)
+TPS5430DDAR
+SO PowerPAD
+DDA
+8
+2500
+366.0
+364.0
+50.0
+Pack Materials-Page 2
+
+
+================ [Page 34] ================
+PACKAGE MATERIALS INFORMATION
+ 
+ 
+www.ti.com
+7-Feb-2026
+TUBE
+ 
+ 
+L - Tube length
+T - Tube  
+height
+W - Tube  
+width
+B - Alignment groove width
+ 
+ 
+*All dimensions are nominal
+Device
+Package Name
+Package Type
+Pins
+SPQ
+L (mm)
+W (mm)
+T (µm)
+B (mm)
+TPS5430DDA
+DDA
+HSOIC
+8
+75
+508
+12.19
+510
+7.88
+TPS5430DDA
+DDA
+HSOIC
+8
+75
+506.6
+8
+3940
+4.32
+TPS5430DDA
+DDA
+HSOIC
+8
+75
+517
+7.87
+635
+4.25
+TPS5430DDA
+DDA
+HSOIC
+8
+75
+507
+8
+3940
+4.32
+TPS5430DDA.A
+DDA
+HSOIC
+8
+75
+506.6
+8
+3940
+4.32
+TPS5430DDA.A
+DDA
+HSOIC
+8
+75
+508
+12.19
+510
+7.88
+TPS5430DDA.A
+DDA
+HSOIC
+8
+75
+517
+7.87
+635
+4.25
+TPS5430DDA.A
+DDA
+HSOIC
+8
+75
+507
+8
+3940
+4.32
+TPS5430DDA.B
+DDA
+HSOIC
+8
+75
+506.6
+8
+3940
+4.32
+TPS5430DDA.B
+DDA
+HSOIC
+8
+75
+507
+8
+3940
+4.32
+TPS5430DDA.B
+DDA
+HSOIC
+8
+75
+517
+7.87
+635
+4.25
+TPS5430DDA.B
+DDA
+HSOIC
+8
+75
+508
+12.19
+510
+7.88
+TPS5430DDAG4
+DDA
+HSOIC
+8
+75
+507
+8
+3940
+4.32
+TPS5430DDAG4
+DDA
+HSOIC
+8
+75
+517
+7.87
+635
+4.25
+TPS5430DDAG4
+DDA
+HSOIC
+8
+75
+508
+12.19
+510
+7.88
+TPS5430DDAG4
+DDA
+HSOIC
+8
+75
+506.6
+8
+3940
+4.32
+TPS5430DDAR
+DDA
+HSOIC
+8
+2500
+508
+12.19
+510
+7.88
+TPS5430DDAR.A
+DDA
+HSOIC
+8
+2500
+508
+12.19
+510
+7.88
+TPS5430DDAR.B
+DDA
+HSOIC
+8
+2500
+508
+12.19
+510
+7.88
+TPS5430DDARG4
+DDA
+HSOIC
+8
+2500
+508
+12.19
+510
+7.88
+TPS5431DDA
+DDA
+HSOIC
+8
+75
+506.6
+8
+3940
+4.32
+TPS5431DDA
+DDA
+HSOIC
+8
+75
+507
+8
+3940
+4.32
+TPS5431DDA
+DDA
+HSOIC
+8
+75
+508
+12.19
+510
+7.88
+TPS5431DDA
+DDA
+HSOIC
+8
+75
+517
+7.87
+635
+4.25
+TPS5431DDA.A
+DDA
+HSOIC
+8
+75
+517
+7.87
+635
+4.25
+TPS5431DDA.A
+DDA
+HSOIC
+8
+75
+506.6
+8
+3940
+4.32
+TPS5431DDA.A
+DDA
+HSOIC
+8
+75
+508
+12.19
+510
+7.88
+TPS5431DDA.A
+DDA
+HSOIC
+8
+75
+507
+8
+3940
+4.32
+TPS5431DDA.B
+DDA
+HSOIC
+8
+75
+506.6
+8
+3940
+4.32
+Pack Materials-Page 3
+
+
+================ [Page 35] ================
+PACKAGE MATERIALS INFORMATION
+ 
+ 
+www.ti.com
+7-Feb-2026
+Device
+Package Name
+Package Type
+Pins
+SPQ
+L (mm)
+W (mm)
+T (µm)
+B (mm)
+TPS5431DDA.B
+DDA
+HSOIC
+8
+75
+517
+7.87
+635
+4.25
+TPS5431DDA.B
+DDA
+HSOIC
+8
+75
+508
+12.19
+510
+7.88
+TPS5431DDA.B
+DDA
+HSOIC
+8
+75
+507
+8
+3940
+4.32
+TPS5431DDAG4
+DDA
+HSOIC
+8
+75
+517
+7.87
+635
+4.25
+TPS5431DDAG4
+DDA
+HSOIC
+8
+75
+508
+12.19
+510
+7.88
+TPS5431DDAG4
+DDA
+HSOIC
+8
+75
+506.6
+8
+3940
+4.32
+TPS5431DDAG4
+DDA
+HSOIC
+8
+75
+507
+8
+3940
+4.32
+TPS5431DDAR
+DDA
+HSOIC
+8
+2500
+508
+12.19
+510
+7.88
+TPS5431DDAR.A
+DDA
+HSOIC
+8
+2500
+508
+12.19
+510
+7.88
+TPS5431DDAR.B
+DDA
+HSOIC
+8
+2500
+508
+12.19
+510
+7.88
+TPS5431DDARG4
+DDA
+HSOIC
+8
+2500
+508
+12.19
+510
+7.88
+Pack Materials-Page 4
+
+
+================ [Page 36] ================
+GENERIC PACKAGE VIEW
+Images above are just a representation of the package family, actual package may vary.
+Refer to the product data sheet for package details.
+DDA 8
+PowerPAD
+ TM SOIC - 1.7 mm max height
+PLASTIC SMALL OUTLINE
+4202561/G
+
+
+================ [Page 37] ================
+www.ti.com
+PACKAGE OUTLINE
+C
+ TYP
+6.2
+5.8
+1.7 MAX
+6X 1.27
+8X 0.51
+0.31
+2X
+3.81
+ TYP
+0.25
+0.10
+0 - 8
+0.15
+0.00
+2.6
+2.0
+3.1
+2.5
+0.25
+GAGE PLANE
+1.27
+0.40
+A
+NOTE 3
+5.0
+4.8
+B
+4.0
+3.8
+4221637/B   03/2016
+PowerPAD    SOIC - 1.7 mm max height
+DDA0008J
+PLASTIC SMALL OUTLINE
+NOTES: 
+ 
+1. All linear dimensions are in millimeters. Any dimensions in parenthesis are for reference only. Dimensioning and tolerancing
+    per ASME Y14.5M. 
+2. This drawing is subject to change without notice. 
+3. This dimension does not include mold flash, protrusions, or gate burrs. Mold flash, protrusions, or gate burrs shall not
+    exceed 0.15 mm per side. 
+4. This dimension does not include interlead flash. Interlead flash shall not exceed 0.25 mm per side.
+5. Reference JEDEC registration MS-012, variation BA.
+ 
+PowerPAD is a trademark of Texas Instruments.
+TM
+1
+8
+0.1
+C A
+B
+5
+4
+PIN 1 ID
+AREA
+NOTE 4
+SEATING PLANE
+0.1 C
+ SEE DETAIL A
+DETAIL A
+TYPICAL
+SCALE  2.400
+EXPOSED
+THERMAL PAD
+4
+1
+5
+8
+
+
+================ [Page 38] ================
+www.ti.com
+EXAMPLE BOARD LAYOUT
+(5.4)
+0.07 MAX
+ALL AROUND
+0.07 MIN
+ALL AROUND
+8X (1.55)
+8X (0.6)
+6X (1.27)
+(2.95)
+NOTE 9
+(4.9)
+NOTE 9
+(2.6)
+(3.1)
+SOLDER MASK
+OPENING
+(
+) TYP
+VIA
+0.2
+(1.3) TYP
+(1.3)
+TYP
+4221637/B   03/2016
+PowerPAD    SOIC - 1.7 mm max height
+DDA0008J
+PLASTIC SMALL OUTLINE
+SYMM
+SYMM
+SEE DETAILS
+LAND PATTERN EXAMPLE
+SCALE:10X
+1
+4
+5
+8
+SOLDER MASK
+OPENING
+ 
+METAL COVERED
+BY SOLDER MASK
+SOLDER MASK
+DEFINED PAD
+NOTES: (continued)
+ 
+6. Publication IPC-7351 may have alternate designs. 
+7. Solder mask tolerances between and around signal pads can vary based on board fabrication site. 
+8. This package is designed to be soldered to a thermal pad on the board. For more information, see Texas Instruments literature
+    numbers SLMA002 (www.ti.com/lit/slma002) and SLMA004 (www.ti.com/lit/slma004).
+9. Size of metal pad may vary due to creepage requirement.
+ 
+TM
+METAL
+SOLDER MASK
+OPENING
+NON SOLDER MASK
+DEFINED
+SOLDER MASK DETAILS
+OPENING
+SOLDER MASK
+METAL UNDER
+SOLDER MASK
+SOLDER MASK
+DEFINED
+
+
+================ [Page 39] ================
+www.ti.com
+EXAMPLE STENCIL DESIGN
+8X (1.55)
+8X (0.6)
+6X (1.27)
+(5.4)
+(2.6)
+(3.1)
+BASED ON
+0.127 THICK
+STENCIL
+4221637/B   03/2016
+PowerPAD    SOIC - 1.7 mm max height
+DDA0008J
+PLASTIC SMALL OUTLINE
+2.20 X 2.62
+0.175
+2.37 X 2.83
+0.150
+2.6 X 3.1  (SHOWN)
+0.125
+2.91 X 3.47
+0.1
+SOLDER STENCIL
+OPENING
+STENCIL
+THICKNESS
+NOTES: (continued)
+ 
+10. Laser cutting apertures with trapezoidal walls and rounded corners may offer better paste release. IPC-7525 may have alternate
+      design recommendations.   
+11. Board assembly site may have different recommendations for stencil design.
+ 
+TM
+SOLDER PASTE EXAMPLE
+EXPOSED PAD
+100% PRINTED SOLDER COVERAGE BY AREA
+SCALE:10X
+SYMM
+SYMM
+1
+4
+5
+8
+BASED ON
+0.125 THICK
+STENCIL
+BY SOLDER MASK
+METAL COVERED
+SEE TABLE FOR
+DIFFERENT OPENINGS
+FOR OTHER STENCIL
+THICKNESSES
+
+
+================ [Page 40] ================
+www.ti.com
+PACKAGE OUTLINE
+C
+6.2
+5.8 TYP
+1.7 MAX
+6X 1.27
+8X 0.51
+0.31
+2X
+3.81
+0.25
+0.10 TYP
+0 - 8
+0.15
+0.00
+2.71
+2.11
+3.4
+2.8
+4X (0 -10 )
+0.25
+GAGE PLANE
+1.27
+0.40
+A
+5.0
+4.8
+NOTE 3
+B
+4.0
+3.8
+4214849/B   09/2025
+PowerPAD    SOIC - 1.7 mm max height
+DDA0008B
+PLASTIC SMALL OUTLINE
+NOTES: 
+ 
+1. All linear dimensions are in millimeters. Any dimensions in parenthesis are for reference only. Dimensioning and tolerancing
+    per ASME Y14.5M. 
+2. This drawing is subject to change without notice. 
+3. This dimension does not include mold flash, protrusions, or gate burrs. Mold flash, protrusions, or gate burrs shall not
+    exceed 0.15 mm per side. 
+4. This dimension does not include interlead flash. Interlead flash shall not exceed 0.25 mm per side.
+5. Reference JEDEC registration MS-012.
+ 
+PowerPAD is a trademark of Texas Instruments.
+TM
+1
+8
+0.25
+C A B
+5
+4
+PIN 1 ID
+AREA
+NOTE 4
+SEATING PLANE
+0.1 C
+ SEE DETAIL A
+DETAIL A
+TYPICAL
+SCALE  2.400
+EXPOSED
+THERMAL PAD
+4
+1
+5
+8
+9
+
+
+================ [Page 41] ================
+www.ti.com
+EXAMPLE BOARD LAYOUT
+(5.4)
+(1.3) TYP
+(
+0.2) TYP
+VIA
+(R0.05) TYP
+0.07 MAX
+ALL AROUND
+0.07 MIN
+ALL AROUND
+8X (1.55)
+8X (0.6)
+6X (1.27)
+(2.95)
+NOTE 9
+(4.9)
+NOTE 9
+(2.71)
+(3.4)
+SOLDER MASK
+OPENING
+(1.3)
+TYP
+4214849/B   09/2025
+PowerPAD    SOIC - 1.7 mm max height
+DDA0008B
+PLASTIC SMALL OUTLINE
+SYMM
+SYMM
+SEE DETAILS
+LAND PATTERN EXAMPLE
+SCALE:10X
+1
+4
+5
+8
+SOLDER MASK
+OPENING
+ 
+METAL COVERED
+BY SOLDER MASK
+SOLDER MASK
+DEFINED PAD
+9
+NOTES: (continued)
+ 
+6.   Publication IPC-7351 may have alternate designs. 
+7.   Solder mask tolerances between and around signal pads can vary based on board fabrication site. 
+8.   This package is designed to be soldered to a thermal pad on the board. For more information, see Texas Instruments literature
+       numbers SLMA002 (www.ti.com/lit/slma002) and SLMA004 (www.ti.com/lit/slma004).
+9.   Size of metal pad may vary due to creepage requirement.
+10. Vias are optional depending on application, refer to device data sheet. If any vias are implemented, refer to their locations shown
+      on this view. It is recommended that vias under paste be filled, plugged or tented.
+TM
+METAL
+SOLDER MASK
+OPENING
+NON SOLDER MASK
+DEFINED
+SOLDER MASK DETAILS
+PADS 1-8
+OPENING
+SOLDER MASK
+METAL UNDER
+SOLDER MASK
+SOLDER MASK
+DEFINED
+
+
+================ [Page 42] ================
+www.ti.com
+EXAMPLE STENCIL DESIGN
+(R0.05) TYP
+8X (1.55)
+8X (0.6)
+6X (1.27)
+(5.4)
+(2.71)
+(3.4)
+BASED ON
+0.125 THICK
+STENCIL
+4214849/B   09/2025
+PowerPAD    SOIC - 1.7 mm max height
+DDA0008B
+PLASTIC SMALL OUTLINE
+2.29 X 2.87
+0.175
+2.47 X 3.10
+0.150
+2.71 X 3.40 (SHOWN)
+0.125
+3.03 X 3.80
+0.1
+SOLDER STENCIL
+OPENING
+STENCIL
+THICKNESS
+NOTES: (continued)
+ 
+11. Laser cutting apertures with trapezoidal walls and rounded corners may offer better paste release. IPC-7525 may have alternate
+      design recommendations.   
+12. Board assembly site may have different recommendations for stencil design.
+ 
+TM
+SOLDER PASTE EXAMPLE
+EXPOSED PAD
+100% PRINTED SOLDER COVERAGE BY AREA
+SCALE:10X
+SYMM
+SYMM
+1
+4
+5
+8
+BASED ON
+0.125 THICK
+STENCIL
+BY SOLDER MASK
+METAL COVERED
+SEE TABLE FOR
+DIFFERENT OPENINGS
+FOR OTHER STENCIL
+THICKNESSES
+9
+
+
+================ [Page 43] ================
+IMPORTANT NOTICE AND DISCLAIMER
+TI PROVIDES TECHNICAL AND RELIABILITY DATA (INCLUDING DATASHEETS), DESIGN RESOURCES (INCLUDING REFERENCE 
+DESIGNS), APPLICATION OR OTHER DESIGN ADVICE, WEB TOOLS, SAFETY INFORMATION, AND OTHER RESOURCES “AS IS” 
+AND WITH ALL FAULTS, AND DISCLAIMS ALL WARRANTIES, EXPRESS AND IMPLIED, INCLUDING WITHOUT LIMITATION ANY 
+IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD 
+PARTY INTELLECTUAL PROPERTY RIGHTS.
+These resources are intended for skilled developers designing with TI products. You are solely responsible for (1) selecting the appropriate 
+TI products for your application, (2) designing, validating and testing your application, and (3) ensuring your application meets applicable 
+standards, and any other safety, security, regulatory or other requirements.
+These resources are subject to change without notice. TI grants you permission to use these resources only for development of an 
+application that uses the TI products described in the resource. Other reproduction and display of these resources is prohibited. No license 
+is granted to any other TI intellectual property right or to any third party intellectual property right. TI disclaims responsibility for, and you fully 
+indemnify TI and its representatives against any claims, damages, costs, losses, and liabilities arising out of your use of these resources.
+TI’s products are provided subject to TI’s Terms of Sale, TI’s General Quality Guidelines, or other applicable terms available either on 
+ti.com or provided in conjunction with such TI products. TI’s provision of these resources does not expand or otherwise alter TI’s applicable 
+warranties or warranty disclaimers for TI products. Unless TI explicitly designates a product as custom or customer-specified, TI products 
+are standard, catalog, general purpose devices.
+TI objects to and rejects any additional or different terms you may propose.
+IMPORTANT NOTICE
+Copyright © 2026, Texas Instruments Incorporated
+Last updated 10/2025
+

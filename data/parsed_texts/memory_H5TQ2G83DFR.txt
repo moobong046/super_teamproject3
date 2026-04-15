@@ -1,0 +1,3832 @@
+
+================ [Page 1] ================
+Rev. 1.1 / May. 2012
+1 
+2Gb DDR3 SDRAM
+2Gb DDR3 SDRAM
+Lead-Free&Halogen-Free
+(RoHS Compliant)
+H5TQ2G83DFR-xxC
+H5TQ2G63DFR-xxC
+H5TQ2G83DFR-xxI
+H5TQ2G63DFR-xxI
+H5TQ2G83DFR-xxJ
+H5TQ2G63DFR-xxJ
+H5TQ2G83DFR-xxL
+H5TQ2G63DFR-xxL
+* SK Hynix reserves the right to change products or specifications without notice.
+
+
+================ [Page 2] ================
+Rev. 1.1 / May. 2012
+2 
+Revision History
+Revision No.
+History
+Draft Date
+Remark
+0.01
+Preliminary version release
+July. 2011
+Preliminary
+0.02
+Add temperature information in feature
+Aug. 2011
+Preliminary
+0.03
+update operation frequency
+Oct. 2011
+Preliminary
+0.04
+update IDD 1600,1866,2133
+Nov. 2011
+Preliminary
+0.05
+update IDD data
+Nov. 2011
+Preliminary
+0.06
+update IDD data (x8)
+Dec. 2011
+Preliminary
+0.07
+update Pakage Dimension (x16)
+- Corrected Pakage Dimension 
+(Page 34 , 78 Balls to 96Balls)
+Dec. 2011
+Preliminary
+0.08
+update IDD data
+Feb.2012
+Page 24, all IDD specs are completed
+0.09
+Official Version Release
+Mar.2012
+Deleted “Preliminary”
+1.0
+Official Version Release & Add L/J Part 
+Apr.2012
+Add L/J Part support
+1.1
+Delete Comments regarding IDD6TC
+& New revised logo (Hynix to SK hynix)
+May.2012
+Page 12/17/24
+
+
+================ [Page 3] ================
+Rev. 1.1 / May. 2012
+3 
+Description
+The H5TQ2G83DFR-xxC, H5TQ2G63DFR-xxC,H5TQ2G83DFR-xxI, H5TQ2G63DFR-xxI, H5TQ2G83DFR-
+xxL,H5TQ2G63DFR-xxL,H5TQ2G83DFR-xxJ,H5TQ2G63DFR-xxJ are a 2,147,483,648-bit CMOS Double Data 
+Rate III (DDR3) Synchronous DRAM, ideally suited for the main memory applications which requires large 
+memory density and high bandwidth. SK Hynix 2Gb DDR3 SDRAMs offer fully synchronous operations ref-
+erenced to both rising and falling edges of the clock. While all addresses and control inputs are latched on 
+the rising edges of the CK (falling edges of the CK), Data, Data strobes and Write data masks inputs are 
+sampled on both rising and falling edges of it. The data paths are internally pipelined and 8-bit prefetched 
+to achieve very high bandwidth.
+Device Features and Ordering Information
+FEATURES
+* This product in compliance with the RoHS directive.
+•   VDD=VDDQ=1.5V +/- 0.075V 
+•   Fully differential clock inputs (CK, CK) operation 
+•   Differential Data Strobe (DQS, DQS) 
+•   On chip DLL align DQ, DQS and DQS transition with CK 
+ transition 
+•   DM masks write data-in at the both rising and falling 
+ edges of the data strobe 
+•   All addresses and control inputs except data, 
+ data strobes and data masks latched on the 
+ rising edges of the clock 
+•   Programmable CAS latency 5, 6, 7, 8, 9, 10, 11, 12, 13 
+and 14 supported 
+•   Programmable additive latency 0, CL-1, and CL-2 
+ supported 
+•   Programmable CAS Write latency (CWL) = 5, 6, 7, 8
+ 
+•   Programmable burst length 4/8 with both nibble    
+ sequential and interleave mode 
+•   BL switch on the fly 
+•   8banks 
+•   Average Refresh Cycle   (Tcase    0  oC~ 95 oC)                                                      
+- 7.8 µs at 0oC ~ 85 oC                                                                
+- 3.9 µs at 85oC ~ 95 oC                                                 
+Commercial Temperature( 0oC ~ 85 oC)                      
+Industrial Temperature( -40oC ~ 95 oC)
+•   JEDEC standard 78ball FBGA(x8), 96ball FBGA(x16)
+•   Driver strength selected by EMRS 
+•   Dynamic On Die Termination supported 
+•   Asynchronous RESET pin supported 
+•   ZQ calibration supported 
+•   TDQS (Termination Data Strobe) supported (x8 only) 
+•   Write Levelization supported 
+•   8 bit pre-fetch 
+
+
+================ [Page 4] ================
+Rev. 1.1 / May. 2012
+4 
+ORDERING INFORMATION
+* xx means Speed Bin Grade
+OPERATING FREQUENCY
+* xx means Speed Bin Grade
+Part No.
+Configuration
+Power Consumption
+Temperature
+Package
+H5TQ2G83DFR-*xxC
+256M x 8
+Normal Consumption
+Commercial
+78ball FBGA
+H5TQ2G83DFR-*xxI
+Industrial
+H5TQ2G83DFR-*xxL
+Low Power Consumption
+(IDD6 Only)
+Commercial
+H5TQ2G83DFR-*xxJ
+Industrial
+H5TQ2G63DFR-*xxC
+128M x 16
+Normal Consumption
+Commercial
+96ball FBGA
+H5TQ2G63DFR-*xxI
+Industrial
+H5TQ2G63DFR-*xxL
+Low Power Consumption
+(IDD6 Only)
+Commercial
+H5TQ2G63DFR-*xxJ
+Industrial
+Speed
+Grade
+(Marking)
+Frequency [Mbps]
+Remark
+(CL-tRCD-tRP)
+CL5
+CL6
+CL7
+CL8
+CL9
+CL10
+CL11
+CL12
+CL13
+CL14
+-G7
+667
+800
+1066
+1066
+DDR3-1066 7-7-7
+-H9
+667
+800
+1066
+1066
+1333
+1333
+DDR3-1333 9-9-9
+-PB
+667
+800
+1066
+1066
+1333
+1333
+1600
+DDR3-1600 11-11-11
+-RD
+800
+1066
+1066
+1333
+1333
+1600
+1866
+DDR3-1866 13-13-13
+-TE
+800
+1066
+1066
+1333
+1333
+1600
+1866
+2133
+DDR3-2133 14-14-14
+
+
+================ [Page 5] ================
+Rev. 1.1 / May. 2012
+5 
+x8 Package Ball out (Top view): 78ball FBGA Package
+1
+2
+3
+4
+5
+6
+7
+8
+9
+A
+VSS
+VDD
+NC
+NU/TDQS
+VSS
+VDD
+A
+B
+VSS
+VSSQ
+DQ0
+DM/TDQS
+VSSQ
+VDDQ
+B
+C
+VDDQ
+DQ2
+DQS
+DQ1
+DQ3
+VSSQ
+C
+D
+VSSQ
+DQ6
+DQS
+VDD
+VSS
+VSSQ
+D
+E
+VREFDQ
+VDDQ
+DQ4
+DQ7
+DQ5
+VDDQ
+E
+F
+NC
+VSS
+RAS
+CK
+VSS
+NC
+F
+G
+ODT
+VDD
+CAS
+CK
+VDD
+CKE
+G
+H
+NC
+CS
+WE
+A10/AP
+ZQ
+NC
+H
+J
+VSS
+BA0
+BA2
+NC
+VREFCA
+VSS
+J
+K
+VDD
+A3
+A0
+A12/BC
+BA1
+VDD
+K
+L
+VSS
+A5
+A2
+A1
+A4
+VSS
+L
+M
+VDD
+A7
+A9
+A11
+A6
+VDD
+M
+N
+VSS
+RESET
+A13
+A14
+A8
+VSS
+N
+1
+2
+3
+4
+5
+6
+7
+8
+9
+1
+2
+A
+B
+C
+D
+E
+F
+G
+H
+J
+K
+L
+M
+N
+Populated ball
+Ball not populated
+3
+7
+8
+9
+(Top View: See the balls through the Package) 
+
+
+================ [Page 6] ================
+Rev. 1.1 / May. 2012
+6 
+x16 Package Ball out (Top view): 96ball FBGA Package
+1
+2
+3
+4
+5
+6
+7
+8
+9
+A
+VDDQ
+DQU5
+DQU7
+DQU4
+VDDQ
+VSS
+A
+B
+VSSQ
+VDD
+VSS
+DQSU
+DQU6
+VSSQ
+B
+C
+VDDQ
+DQU3
+DQU1
+DQSU
+DQU2
+VDDQ
+C
+D
+VSSQ
+VDDQ
+DMU
+DQU0
+VSSQ
+VDD
+D
+E
+VSS
+VSSQ
+DQL0
+DML
+VSSQ
+VDDQ
+E
+F
+VDDQ
+DQL2
+DQSL
+DQL1
+DQL3
+VSSQ
+F
+G
+VSSQ
+DQL6
+DQSL
+VDD
+VSS
+VSSQ
+G
+H
+VREFDQ
+VDDQ
+DQL4
+DQL7
+DQL5
+VDDQ
+H
+J
+NC
+VSS
+RAS
+CK
+VSS
+NC
+J
+K
+ODT
+VDD
+CAS
+CK
+VDD
+CKE
+K
+L
+NC
+CS
+WE
+A10/AP
+ZQ
+NC
+L
+M
+VSS
+BA0
+BA2
+NC
+VREFCA
+VSS
+M
+N
+VDD
+A3
+A0
+A12/BC
+BA1
+VDD
+N
+P
+VSS
+A5
+A2
+A1
+A4
+VSS
+P
+R
+VDD
+A7
+A9
+A11
+A6
+VDD
+R
+T
+VSS
+RESET
+A13
+NC
+A8
+VSS
+T
+1
+2
+3
+4
+5
+6
+7
+8
+9
+1
+A
+B
+C
+D
+E
+F
+G
+H
+J
+K
+L
+M
+N
+Populated ball
+Ball not populated
+2
+7
+8
+9
+(Top View: See the balls through the Package) 
+3
+P
+R
+T
+
+
+================ [Page 7] ================
+Rev. 1.1 / May. 2012
+7 
+Pin Functional Description
+Symbol
+Type
+Function
+CK, CK
+Input
+Clock: CK and CK are differential clock inputs. All address and control input signals are 
+sampled on the crossing of the positive edge of CK and negative edge of CK. 
+CKE, (CKE0), 
+(CKE1)
+Input
+Clock Enable: CKE HIGH activates, and CKE Low deactivates, internal clock signals and 
+device input buffers and output drivers. Taking CKE Low provides Precharge Power-Down 
+and Self-Refresh operation (all banks idle), or Active Power-Down (row Active in any 
+bank). 
+CKE is asynchronous for Self-Refresh exit. After VREFCA and VREFDQ have become stable 
+during the power on and initialization sequence, they must be maintained during all 
+operations (including Self-Refresh). CKE must be maintained high throughout read and 
+write accesses. Input buffers, excluding CK, CK, ODT and CKE, are disabled during power-
+down. Input buffers, excluding CKE, are disabled during Self-Refresh.
+CS, (CS0), 
+(CS1), (CS2), 
+(CS3)
+Input
+Chip Select: All commands are masked when CS is registered HIGH. 
+CS provides for external Rank selection on systems with multiple Ranks. 
+CS is considered part of the command code.
+ODT, (ODT0), 
+(ODT1)
+Input
+On Die Termination: ODT (registered HIGH) enables termination resistance internal to the 
+DDR3 SDRAM. When enabled, ODT is only applied to each DQ, DQS, DQS and DM/TDQS, 
+NU/TDQS (When TDQS is enabled via Mode Register A11=1 in MR1) signal for x4/x8 
+configurations. For x16 configuration, ODT is applied to each DQ, DQSU, DQSU, DQSL, 
+DQSL, DMU, and DML signal. The ODT pin will be ignored if MR1 is programmed to disable 
+ODT.
+RAS. 
+CAS. WE
+Input
+Command Inputs: RAS, CAS and WE (along with CS) define the command being entered.
+DM, (DMU), 
+(DML)
+Input
+Input Data Mask: DM is an input mask signal for write data. Input data is masked when 
+DM is sampled HIGH coincident with that input data during a Write access. DM is sampled 
+on both edges of DQS. For x8 device, the function of DM or TDQS/TDQS is enabled by 
+Mode Register A11 setting in MR1.
+BA0 - BA2
+Input
+Bank Address Inputs: BA0 - BA2 define to which bank an Active, Read, Write or Precharge 
+command is being applied. Bank address also determines if the mode register or extended 
+mode register is to be accessed during a MRS cycle.
+A0 - A15
+Input
+Address Inputs: Provide the row address for Active commands and the column address for 
+Read/Write commands to select one location out of the memory array in the respective 
+bank. (A10/AP and A12/BC have additional functions, see below).
+The address inputs also provide the op-code during Mode Register Set commands.
+A10 / AP
+Input
+Auto-precharge: A10 is sampled during Read/Write commands to determine whether 
+Autoprecharge should be performed to the accessed bank after the Read/Write operation. 
+(HIGH: Autoprecharge; LOW: no Autoprecharge).A10 is sampled during a Precharge 
+command to determine whether the Precharge applies to one bank (A10 LOW) or all 
+banks (A10 HIGH). If only one bank is to be precharged, the bank is selected by bank 
+addresses. 
+A12 / BC
+Input
+Burst Chop: A12 / BC is sampled during Read and Write commands to determine if burst 
+chop (on-the-fly) will be performed. 
+(HIGH, no burst chop; LOW: burst chopped). See command truth table for details.
+
+
+================ [Page 8] ================
+Rev. 1.1 / May. 2012
+8 
+RESET
+Input
+Active Low Asynchronous Reset: Reset is active when RESET is LOW, and inactive when 
+RESET is HIGH. RESET must be HIGH during normal operation. 
+RESET is a CMOS rail-to-rail signal with DC high and low at 80% and 20% of VDD, i.e. 
+1.20V for DC high and 0.30V for DC low.
+DQ
+Input / 
+Output
+Data Input/ Output: Bi-directional data bus.
+DQU, DQL, 
+DQS, DQS, 
+DQSU, DQSU, 
+DQSL, DQSL
+Input / 
+Output
+Data Strobe: output with read data, input with write data. Edge-aligned with read data, 
+centered in write data. The data strobe DQS, DQSL, and DQSU are paired with differential 
+signals DQS, DQSL, and DQSU, respectively, to provide differential pair signaling to the 
+system during reads and writes. DDR3 SDRAM supports differential data strobe only and 
+does not support single-ended.
+TDQS, TDQS
+Output
+Termination Data Strobe: TDQS/TDQS is applicable for x8 DRAMs only. When enabled via 
+Mode Register A11 = 1 in MR1, the DRAM will enable the same termination resistance 
+function on TDQS/TDQS that is applied to DQS/DQS. When disabled via mode register A11 
+= 0 in MR1, DM/TDQS will provide the data mask function and TDQS is not used. x4/x16 
+DRAMs must disable the TDQS function via mode register A11 = 0 in MR1.
+NC
+No Connect: No internal electrical connection is present.
+NU
+No Use
+VDDQ
+Supply
+DQ Power Supply: 1.5 V +/- 0.075 V
+VSSQ
+Supply
+DQ Ground
+VDD
+Supply
+Power Supply: 1.5 V +/- 0.075 V
+VSS
+Supply
+Ground
+VREFDQ
+Supply
+Reference voltage for DQ
+VREFCA
+Supply
+Reference voltage for CA
+ZQ
+Supply
+Reference Pin for ZQ calibration
+Note: 
+Input only pins (BA0-BA2, A0-A15, RAS, CAS, WE, CS, CKE, ODT, DM, and RESET) do not supply termination.
+Symbol
+Type
+Function
+
+
+================ [Page 9] ================
+Rev. 1.1 / May. 2012
+9 
+ROW AND COLUMN ADDRESS TABLE
+2Gb
+Note1: Page size is the number of bytes of data delivered from the array to the internal sense amplifiers 
+            when an ACTIVE command is registered. Page size is per bank, calculated as follows:
+        page size = 2 COLBITS * ORG  8
+        where COLBITS = the number of column address bits, ORG = the number of I/O (DQ) bits
+Configuration
+256Mb x 8
+128Mb x 16
+# of Banks
+8
+8
+Bank Address
+BA0 - BA2
+BA0 - BA2
+Auto precharge
+A10/AP
+A10/AP
+BL switch on the fly
+A12/BC
+A12/BC
+Row Address
+A0 - A14
+A0 - A13
+Column Address
+A0 - A9 
+A0 - A9 
+Page size 1
+1 KB
+2 KB
+
+
+================ [Page 10] ================
+Rev. 1.1 / May. 2012
+10 
+Absolute Maximum Ratings
+Absolute Maximum DC Ratings
+DRAM Component Operating Temperature Range
+Absolute Maximum DC Ratings
+Symbol
+Parameter 
+Rating
+Units
+Notes
+ VDD
+Voltage on VDD pin relative to Vss
+- 0.4 V ~ 1.975 V
+V 
+1,3
+VDDQ 
+Voltage on VDDQ pin relative to Vss
+- 0.4 V ~ 1.975 V
+V 
+1,3
+VIN, VOUT Voltage on any pin relative to Vss
+- 0.4 V ~ 1.975 V
+V 
+1
+TSTG 
+Storage Temperature 
+-55 to +100
+oC
+1, 2 
+Notes:
+1. Stresses greater than those listed under “Absolute Maximum Ratings” may cause permanent damage to the 
+device. This is a stress rating only and functional operation of the device at these or any other conditions above 
+those indicated in the operational sections of this specification is not implied. Exposure to absolute maximum rat-
+ing conditions for extended periods may affect reliability.
+2. Storage Temperature is the case surface temperature on the center/top side of the DRAM. For the measurement 
+conditions, please refer to JESD51-2 standard.
+3. VDD and VDDQ must be within 300mV of each other at all times; and VREF must not be greater than 
+0.6XVDDQ,When VDD and VDDQ are less than 500mV; VREF may be equal to or less than 300mV.
+Temperature Range
+Symbol
+Parameter 
+Rating
+Units
+Notes
+ TOPER
+ Normal Operating Temperature Range
+0 to 85
+oC 
+1,2
+ Industrial Temperature Range 
+-40 to 95
+oC
+1,3
+Notes:
+1. Operating Temperature TOPER is the case surface temperature on the center / top side of the DRAM. For measure-
+ment conditions, please refer to the JEDEC document JESD51-2.
+2. The Normal Temperature Range specifies the temperatures where all DRAM specifications will be supported. Dur-
+ing operation, the DRAM case temperature must be maintained between 0 - 85oC under all operating conditions.
+3. Some applications require operation of the DRAM in the Extended Temperature Range between 85oC and 95oC 
+case temperature. Full specifications are guaranteed in this range, but the following additional conditions apply:
+a. Refresh commands must be doubled in frequency, therefore reducing the Refresh interval tREFI to 3.9 µs.
+b. If Self-Refresh operation is required in the Extended Temperature Range, then it is mandatory to use the Man-
+ual Self-Refresh mode with Extended Temperature Range capability (MR2 A6 = 0b and MR2 A7 = 1b). 
+
+
+================ [Page 11] ================
+Rev. 1.1 / May. 2012
+11 
+AC & DC Operating Conditions
+Recommended DC Operating Conditions
+Recommended DC Operating Conditions
+Symbol
+Parameter
+Rating
+Units
+Notes
+Min.
+Typ. 
+Max.
+VDD
+Supply Voltage
+1.425
+1.500
+1.575
+V
+1,2
+VDDQ
+Supply Voltage for Output
+1.425
+1.500
+1.575
+V
+1,2
+Notes:
+1. Under all conditions, VDDQ must be less than or equal to VDD.
+2. VDDQ tracks with VDD. AC parameters are measured with VDD and VDDQ tied together.
+
+
+================ [Page 12] ================
+Rev. 1.1 / May. 2012
+12 
+IDD and IDDQ Specification Parameters and Test Conditions
+IDD and IDDQ Measurement Conditions
+In this chapter, IDD and IDDQ measurement conditions such as test load and patterns are defined. Figure
+1. shows the setup and test load for IDD and IDDQ measurements.
+•
+IDD currents (such as IDD0, IDD1, IDD2N, IDD2NT, IDD2P0, IDD2P1, IDD2Q, IDD3N, IDD3P, IDD4R,
+IDD4W, IDD5B, IDD6, IDD6ET and IDD7) are measured as time-averaged currents with all VDD balls
+of the DDR3 SDRAM under test tied together. Any IDDQ current is not included in IDD currents.
+•
+IDDQ currents (such as IDDQ2NT and IDDQ4R) are measured as time-averaged currents with all
+VDDQ balls of the DDR3 SDRAM under test tied together. Any IDD current is not included in IDDQ cur-
+rents.
+Attention: IDDQ values cannot be directly used to calculate IO power of the DDR3 SDRAM. They can
+be used to support correlation of simulated IO power to actual IO power as outlined in Figure 2. In
+DRAM module application, IDDQ cannot be measured separately since VDD and VDDQ are using one
+merged-power layer in Module PCB.
+For IDD and IDDQ measurements, the following definitions apply:
+•
+”0” and “LOW” is defined as VIN <= VILAC(max).
+•
+”1” and “HIGH” is defined as VIN >= VIHAC(max).
+•
+“MID_LEVEL” is defined as inputs are VREF = VDD/2.
+•
+Timing used for IDD and IDDQ Measurement-Loop Patterns are provided in Table 1.
+•
+Basic IDD and IDDQ Measurement Conditions are described in Table 2.
+•
+Detailed IDD and IDDQ Measurement-Loop Patterns are described in Table 3 through Table 10.
+•
+IDD Measurements are done after properly initializing the DDR3 SDRAM. This includes but is not lim-
+ited to setting
+RON = RZQ/7 (34 Ohm in MR1);
+Qoff = 0B (Output Buffer enabled in MR1);
+RTT_Nom = RZQ/6 (40 Ohm in MR1);
+RTT_Wr = RZQ/2 (120 Ohm in MR2);
+TDQS Feature disabled in MR1
+•
+Attention: The IDD and IDDQ Measurement-Loop Patterns need to be executed at least one time
+before actual IDD or IDDQ measurement is started.
+•
+Define D = {CS, RAS, CAS, WE}:= {HIGH, LOW, LOW, LOW}
+•
+Define D = {CS, RAS, CAS, WE}:= {HIGH, HIGH, HIGH, HIGH}
+
+
+================ [Page 13] ================
+Rev. 1.1 / May. 2012
+13 
+Figure 1 - Measurement Setup and Test Load for IDD and IDDQ (optional) Measurements
+[Note: DIMM level Output test load condition may be different from above]
+Figure 2 - Correlation from simulated Channel IO Power to actual Channel IO Power supported
+by IDDQ Measurement
+VDD
+DDR3
+SDRAM
+VDDQ
+RESET
+CK/CK
+DQS, DQS
+CS
+RAS, CAS, WE
+A, BA
+ODT
+ZQ VSS
+VSSQ
+DQ, DM,
+TDQS, TDQS
+CKE
+RTT = 25 Ohm
+VDDQ/2
+IDD
+IDDQ (optional)
+Application specific
+memory channel
+environment
+Channel
+IO Power
+Simulation
+IDDQ
+Simulation
+IDDQ
+Simulation
+Channel IO Power
+Number
+IDDQ
+Test Load
+Correction
+
+
+================ [Page 14] ================
+Rev. 1.1 / May. 2012
+14 
+Table 1 -Timings used for IDD and IDDQ Measurement-Loop Patterns
+Table 2 -Basic IDD and IDDQ Measurement Conditions
+Symbol
+DDR3-1066
+DDR3-1333
+DDR3-1600
+DDR3-1866
+DDR3-2133 Uni
+t
+7-7-7
+9-9-9
+11-11-11
+13-13-13
+14-14-14
+tCK
+1.875
+1.5
+1.25
+1.07
+0.935
+ns
+CL
+7
+9
+11
+13
+14
+nCK
+nRCD
+7
+9
+11
+13
+14
+nCK
+nRC
+27
+33
+39
+45
+50
+nCK
+nRAS
+20
+24
+28
+32
+36
+nCK
+nRP
+7
+9
+11
+13
+14
+nCK
+nFAW
+1KB page 
+size
+20
+20
+24
+26
+27
+nCK
+2KB page 
+size
+27
+30
+32
+33
+38
+nCK
+nRRD
+1KB page 
+size
+4
+4
+5
+5
+6
+nCK
+2KB page 
+size
+6
+5
+6
+6
+7
+nCK
+nRFC -512Mb
+48
+60
+72
+85
+97
+nCK
+nRFC-1 Gb
+59
+74
+88
+103
+118
+nCK
+nRFC- 2 Gb
+86
+107
+128
+150
+172
+nCK
+nRFC- 4 Gb
+160
+200
+240
+281
+321
+nCK
+nRFC- 8 Gb
+187
+234
+280
+328
+375
+nCK
+Symbol
+Description
+IDD0
+Operating One Bank Active-Precharge Current
+CKE: High; External clock: On; tCK, nRC, nRAS, CL: see Table 1; BL: 8a); AL: 0; CS: High between ACT 
+and PRE; Command, Address, Bank Address Inputs: partially toggling according to Table 3; Data IO: 
+MID-LEVEL; DM: stable at 0; Bank Activity: Cycling with one bank active at a time: 0,0,1,1,2,2,... (see 
+Table 3); Output Buffer and RTT: Enabled in Mode Registersb); ODT Signal: stable at 0; Pattern Details: 
+see Table 3.
+
+
+================ [Page 15] ================
+Rev. 1.1 / May. 2012
+15 
+IDD1
+Operating One Bank Active-Read-Precharge Current
+CKE: High; External clock: On; tCK, nRC, nRAS, nRCD, CL: see Table 1; BL: 8a); AL: 0; CS: High between 
+ACT, RD and PRE; Command, Address; Bank Address Inputs, Data IO: partially toggling according to 
+Table 4; DM: stable at 0; Bank Activity: Cycling with on bank active at a time: 0,0,1,1,2,2,... (see Table 
+4); Output Buffer and RTT: Enabled in Mode Registersb); ODT Signal: stable at 0; Pattern Details: see 
+Table 4.
+IDD2N
+Precharge Standby Current
+CKE: High; External clock: On; tCK, CL: see Table 1; BL: 8a); AL: 0; CS: stable at 1; Command, Address, 
+Bank Address Inputs: partially toggling according to Table 5; Data IO: MID_LEVEL; DM: stable at 0; 
+Bank Activity: all banks closed; Output Buffer and RTT: Enabled in Mode Registersb); ODT Signal: stable 
+at 0; Pattern Details: see Table 5.
+IDD2NT
+Precharge Standby ODT Current
+CKE: High; External clock: On; tCK, CL: see Table 1; BL: 8a); AL: 0; CS: stable at 1; Command, Address, 
+Bank Address Inputs: partially toggling according to Table 6; Data IO: MID_LEVEL; DM: stable at 0; 
+Bank Activity: all banks closed; Output Buffer and RTT: Enabled in Mode Registersb); ODT Signal: tog-
+gling according to Table 6; Pattern Details: see Table 6.
+IDD2P0
+Precharge Power-Down Current Slow Exit
+CKE: Low; External clock: On; tCK, CL: see Table 1; BL: 8a); AL: 0; CS: stable at 1; Command, Address, 
+Bank Address Inputs: stable at 0; Data IO: MID_LEVEL; DM: stable at 0; Bank Activity: all banks closed; 
+Output Buffer and RTT: Enabled in Mode Registersb); ODT Signal: stable at 0; Precharge Power Down 
+Mode: Slow Exitc)
+IDD2P1
+Precharge Power-Down Current Fast Exit
+CKE: Low; External clock: On; tCK, CL: see Table 1; BL: 8a); AL: 0; CS: stable at 1; Command, Address, 
+Bank Address Inputs: stable at 0; Data IO: MID_LEVEL; DM: stable at 0; Bank Activity: all banks closed; 
+Output Buffer and RTT: Enabled in Mode Registersb); ODT Signal: stable at 0; Precharge Power Down 
+Mode: Fast Exitc)
+IDD2Q
+Precharge Quiet Standby Current
+CKE: High; External clock: On; tCK, CL: see Table 1; BL: 8a); AL: 0; CS: stable at 1; Command, Address, 
+Bank Address Inputs: stable at 0; Data IO: MID_LEVEL; DM: stable at 0; Bank Activity: all banks closed; 
+Output Buffer and RTT: Enabled in Mode Registersb); ODT Signal: stable at 0
+Symbol
+Description
+
+
+================ [Page 16] ================
+Rev. 1.1 / May. 2012
+16 
+IDD3N
+Active Standby Current
+CKE: High; External clock: On; tCK, CL: see Table 1; BL: 8a); AL: 0; CS: stable at 1; Command, Address, 
+Bank Address Inputs: partially toggling according to Table 5; Data IO: MID_LEVEL; DM: stable at 0; 
+Bank Activity: all banks open; Output Buffer and RTT: Enabled in Mode Registersb); ODT Signal: stable 
+at 0; Pattern Details: see Table 5.
+IDD3P
+Active Power-Down Current
+CKE: Low; External clock: On; tCK, CL: see Table 1; BL: 8a); AL: 0; CS: stable at 1; Command, Address, 
+Bank Address Inputs: stable at 0; Data IO: MID_LEVEL; DM: stable at 0; Bank Activity: all banks open; 
+Output Buffer and RTT: Enabled in Mode Registersb); ODT Signal: stable at 0
+IDD4R
+Operating Burst Read Current
+CKE: High; External clock: On; tCK, CL: see Table 1; BL: 8a); AL: 0; CS: High between RD; Command, 
+Address, Bank Address Inputs: partially toggling according to Table 7; Data IO: seamless read data burst 
+with different data between one burst and the next one according to Table 7; DM: stable at 0; Bank 
+Activity: all banks open, RD commands cycling through banks: 0,0,1,1,2,2,...(see Table 7); Output Buffer 
+and RTT: Enabled in Mode Registersb); ODT Signal: stable at 0; Pattern Details: see Table 7.
+IDD4W
+Operating Burst Write Current
+CKE: High; External clock: On; tCK, CL: see Table 1; BL: 8a); AL: 0; CS: High between WR; Command, 
+Address, Bank Address Inputs: partially toggling according to Table 8; Data IO: seamless read data burst 
+with different data between one burst and the next one according to Table 8; DM: stable at 0; Bank 
+Activity: all banks open, WR commands cycling through banks: 0,0,1,1,2,2,...(see Table 8); Output Buf-
+fer and RTT: Enabled in Mode Registersb); ODT Signal: stable at HIGH; Pattern Details: see Table 8.
+IDD5B 
+Burst Refresh Current
+CKE: High; External clock: On; tCK, CL, nRFC: see Table 1; BL: 8a); AL: 0; CS: High between REF; Com-
+mand, Address, Bank Address Inputs: partially toggling according to Table 9; Data IO: MID_LEVEL; DM: 
+stable at 0; Bank Activity: REF command every nREF (see Table 9); Output Buffer and RTT: Enabled in 
+Mode Registersb); ODT Signal: stable at 0; Pattern Details: see Table 9.
+IDD6
+Self-Refresh Current: Normal Temperature Range
+TCASE: 0 - 85 oC; Auto Self-Refresh (ASR): Disabledd);Self-Refresh Temperature Range (SRT): Normale); 
+CKE: Low; External clock: Off; CK and CK: LOW; CL: see Table 1; BL: 8a); AL: 0; CS, Command, Address, 
+Bank Address Inputs, Data IO: MID_LEVEL; DM: stable at 0; Bank Activity: Self-Refresh operation; Out-
+put Buffer and RTT: Enabled in Mode Registersb); ODT Signal: MID_LEVEL
+Symbol
+Description
+
+
+================ [Page 17] ================
+Rev. 1.1 / May. 2012
+17 
+a) Burst Length: BL8 fixed by MRS: set MR0 A[1,0]=00B
+b) Output Buffer Enable: set MR1 A[12] = 0B; set MR1 A[5,1] = 01B; RTT_Nom enable: set MR1 A[9,6,2] = 011B;
+RTT_Wr enable: set MR2 A[10,9] = 10B
+c) Precharge Power Down Mode: set MR0 A12=0B for Slow Exit or MR0 A12 = 1B for Fast Exit
+d) Auto Self-Refresh (ASR): set MR2 A6 = 0B to disable or 1B to enable feature
+e) Self-Refresh Temperature Range (SRT): set MR2 A7 = 0B for normal or 1B for extended temperature range
+f) Read Burst Type: Nibble Sequential, set MR0 A[3] = 0B
+IDD6ET
+Self-Refresh Current: Extended Temperature Range (optional)f)
+TCASE: 0 - 95 oC; Auto Self-Refresh (ASR): Disabledd);Self-Refresh Temperature Range (SRT): Extend-
+ede); CKE: Low; External clock: Off; CK and CK: LOW; CL: see Table 1; BL: 8a); AL: 0; CS, Command, 
+Address, Bank Address Inputs, Data IO: MID_LEVEL; DM: stable at 0; Bank Activity: Extended Tempera-
+ture Self-Refresh operation; Output Buffer and RTT: Enabled in Mode Registersb); ODT Signal: 
+MID_LEVEL
+IDD7
+Operating Bank Interleave Read Current
+CKE: High; External clock: On; tCK, nRC, nRAS, nRCD, NRRD, nFAW, CL: see Table 1; BL: 8a), f); AL: CL-
+1; CS: High between ACT and RDA; Command, Address, Bank Address Inputs: partially toggling accord-
+ing to Table 10; Data IO: read data burst with different data between one burst and the next one 
+according to Table 10; DM: stable at 0; Bank Activity: two times interleaved cycling through banks (0, 
+1,...7) with different addressing, wee Table 10; Output Buffer and RTT: Enabled in Mode Registersb); 
+ODT Signal: stable at 0; Pattern Details: see Table 10.
+Symbol
+Description
+
+
+================ [Page 18] ================
+Rev. 1.1 / May. 2012
+18 
+Table 3 - IDD0 Measurement-Loop Patterna)
+a) DM must be driven LOW all the time. DQS, DQS are MID-LEVEL.
+b) DQ signals are MID-LEVEL.
+CK, CK
+CKE
+Sub-Loop
+Cycle
+ Number
+Command
+CS
+RAS
+CAS
+WE
+ODT
+BA[2:0]
+A[15:11]
+A[10]
+A[9:7]
+A[6:3]
+A[2:0]
+Datab)
+toggling
+Static High
+0
+0
+ACT
+0
+0
+1
+1
+0
+0
+00
+0
+0
+0
+0
+-
+1,2
+D, D
+1
+0
+0
+0
+0
+0
+00
+0
+0
+0
+0
+-
+3,4
+D, D
+1
+1
+1
+1
+0
+0
+00
+0
+0
+0
+0
+-
+...
+repeat pattern 1...4 until nRAS - 1, truncate if necessary
+nRAS
+PRE
+0
+0
+1
+0
+0
+0
+00
+0
+0
+0
+0
+-
+...
+repeat pattern 1...4 until nRC - 1, truncate if necessary
+1*nRC+0
+ACT
+0
+0
+1
+1
+0
+0
+00
+0
+0
+F
+0
+-
+1*nRC+1, 2
+D, D
+1
+0
+0
+0
+0
+0
+00
+0
+0
+F
+0
+-
+1*nRC+3, 4
+D, D
+1
+1
+1
+1
+0
+0
+00
+0
+0
+F
+0
+-
+...
+repeat pattern 1...4 until 1*nRC + nRAS - 1, truncate if necessary
+1*nRC+nRAS
+PRE
+0
+0
+1
+0
+0
+0
+00
+0
+0
+F
+0
+-
+...
+repeat pattern 1...4 until 2*nRC - 1, truncate if necessary
+1
+2*nRC
+repeat Sub-Loop 0, use BA[2:0] = 1 instead
+2
+4*nRC
+repeat Sub-Loop 0, use BA[2:0] = 2 instead
+3
+6*nRC
+repeat Sub-Loop 0, use BA[2:0] = 3 instead
+4
+8*nRC
+repeat Sub-Loop 0, use BA[2:0] = 4 instead
+5
+10*nRC
+repeat Sub-Loop 0, use BA[2:0] = 5 instead
+6
+12*nRC
+repeat Sub-Loop 0, use BA[2:0] = 6 instead
+7
+14*nRC
+repeat Sub-Loop 0, use BA[2:0] = 7 instead
+
+
+================ [Page 19] ================
+Rev. 1.1 / May. 2012
+19 
+Table 4 - IDD1 Measurement-Loop Patterna)
+a) DM must be driven LOW all the time. DQS, DQS are used according to RD Commands, otherwise MID-LEVEL.
+b) Burst Sequence driven on each DQ signal by Read Command. Outside burst operation, DQ signals are MID_LEVEL.
+CK, CK
+CKE
+Sub-Loop
+Cycle
+ Number
+Command
+CS
+RAS
+CAS
+WE
+ODT
+BA[2:0]
+A[15:11]
+A[10]
+A[9:7]
+A[6:3]
+A[2:0]
+Datab)
+toggling
+Static High
+0
+0
+ACT
+0
+0
+1
+1
+0
+0
+00
+0
+0
+0
+0
+-
+1,2
+D, D
+1
+0
+0
+0
+0
+0
+00
+0
+0
+0
+0
+-
+3,4
+D, D
+1
+1
+1
+1
+0
+0
+00
+0
+0
+0
+0
+-
+...
+repeat pattern 1...4 until nRCD - 1, truncate if necessary
+nRCD
+RD
+0
+1
+0
+1
+0
+0
+00
+0
+0
+0
+0
+00000000
+...
+repeat pattern 1...4 until nRAS - 1, truncate if necessary
+nRAS
+PRE
+0
+0
+1
+0
+0
+0
+00
+0
+0
+0
+0
+-
+...
+repeat pattern 1...4 until nRC - 1, truncate if necessary
+1*nRC+0
+ACT
+0
+0
+1
+1
+0
+0
+00
+0
+0
+F
+0
+-
+1*nRC+1,2
+D, D
+1
+0
+0
+0
+0
+0
+00
+0
+0
+F
+0
+-
+1*nRC+3,4
+D, D
+1
+1
+1
+1
+0
+0
+00
+0
+0
+F
+0
+-
+...
+repeat pattern nRC + 1,...4 until nRC + nRCE - 1, truncate if necessary
+1*nRC+nRCD
+RD
+0
+1
+0
+1
+0
+0
+00
+0
+0
+F
+0
+00110011
+...
+repeat pattern nRC + 1,...4 until nRC + nRAS - 1, truncate if necessary
+1*nRC+nRAS
+PRE
+0
+0
+1
+0
+0
+0
+00
+0
+0
+F
+0
+-
+...
+repeat pattern nRC + 1,...4 until *2 nRC - 1, truncate if necessary
+1
+2*nRC
+repeat Sub-Loop 0, use BA[2:0] = 1 instead
+2
+4*nRC
+repeat Sub-Loop 0, use BA[2:0] = 2 instead
+3
+6*nRC
+repeat Sub-Loop 0, use BA[2:0] = 3 instead
+4
+8*nRC
+repeat Sub-Loop 0, use BA[2:0] = 4 instead
+5
+10*nRC
+repeat Sub-Loop 0, use BA[2:0] = 5 instead
+6
+12*nRC
+repeat Sub-Loop 0, use BA[2:0] = 6 instead
+7
+14*nRC
+repeat Sub-Loop 0, use BA[2:0] = 7 instead
+
+
+================ [Page 20] ================
+Rev. 1.1 / May. 2012
+20 
+Table 5 - IDD2N and IDD3N Measurement-Loop Patterna) 
+a) DM must be driven LOW all the time. DQS, DQS are MID-LEVEL.
+b) DQ signals are MID-LEVEL.
+Table 6 - IDD2NT and IDDQ2NT Measurement-Loop Patterna)  
+a) DM must be driven LOW all the time. DQS, DQS are MID-LEVEL.
+b) DQ signals are MID-LEVEL.
+CK, CK
+CKE
+Sub-Loop
+Cycle
+ Number
+Command
+CS
+RAS
+CAS
+WE
+ODT
+BA[2:0]
+A[15:11]
+A[10]
+A[9:7]
+A[6:3]
+A[2:0]
+Datab)
+toggling
+Static High
+0
+0
+D
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+-
+1
+D
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+-
+2
+D
+1
+1
+1
+1
+0
+0
+0
+0
+0
+F
+0
+-
+3
+D
+1
+1
+1
+1
+0
+0
+0
+0
+0
+F
+0
+-
+1
+4-7
+repeat Sub-Loop 0, use BA[2:0] = 1 instead
+2
+8-11
+repeat Sub-Loop 0, use BA[2:0] = 2 instead
+3
+12-15
+repeat Sub-Loop 0, use BA[2:0] = 3 instead
+4
+16-19
+repeat Sub-Loop 0, use BA[2:0] = 4 instead
+5
+20-23
+repeat Sub-Loop 0, use BA[2:0] = 5 instead
+6
+24-17
+repeat Sub-Loop 0, use BA[2:0] = 6 instead
+7
+28-31
+repeat Sub-Loop 0, use BA[2:0] = 7 instead
+CK, CK
+CKE
+Sub-Loop
+Cycle
+ Number
+Command
+CS
+RAS
+CAS
+WE
+ODT
+BA[2:0]
+A[15:11]
+A[10]
+A[9:7]
+A[6:3]
+A[2:0]
+Datab)
+toggling
+Static High
+0
+0
+D
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+-
+1
+D
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+-
+2
+D
+1
+1
+1
+1
+0
+0
+0
+0
+0
+F
+0
+-
+3
+D
+1
+1
+1
+1
+0
+0
+0
+0
+0
+F
+0
+-
+1
+4-7
+repeat Sub-Loop 0, but ODT = 0 and BA[2:0] = 1
+2
+8-11
+repeat Sub-Loop 0, but ODT = 1 and BA[2:0] = 2 
+3
+12-15
+repeat Sub-Loop 0, but ODT = 1 and BA[2:0] = 3 
+4
+16-19
+repeat Sub-Loop 0, but ODT = 0 and BA[2:0] = 4
+5
+20-23
+repeat Sub-Loop 0, but ODT = 0 and BA[2:0] = 5
+6
+24-17
+repeat Sub-Loop 0, but ODT = 1 and BA[2:0] = 6 
+7
+28-31
+repeat Sub-Loop 0, but ODT = 1 and BA[2:0] = 7 
+
+
+================ [Page 21] ================
+Rev. 1.1 / May. 2012
+21 
+Table 7 - IDD4R and IDDQ4R Measurement-Loop Patterna)
+a) DM must be driven LOW all the time. DQS, DQS are used according to RD Commands, otherwise MID-LEVEL.
+b) Burst Sequence driven on each DQ signal by Read Command. Outside burst operation, DQ signals are MID-LEVEL.
+CK, CK
+CKE
+Sub-Loop
+Cycle
+ Number
+Command
+CS
+RAS
+CAS
+WE
+ODT
+BA[2:0]
+A[15:11]
+A[10]
+A[9:7]
+A[6:3]
+A[2:0]
+Datab)
+toggling
+Static High
+0
+0
+RD
+0
+1
+0
+1
+0
+0
+00
+0
+0
+0
+0
+00000000
+1
+D
+1
+0
+0
+0
+0
+0
+00
+0
+0
+0
+0
+-
+2,3
+D,D
+1
+1
+1
+1
+0
+0
+00
+0
+0
+0
+0
+-
+4
+RD
+0
+1
+0
+1
+0
+0
+00
+0
+0
+F
+0
+00110011
+5
+D
+1
+0
+0
+0
+0
+0
+00
+0
+0
+F
+0
+-
+6,7
+D,D
+1
+1
+1
+1
+0
+0
+00
+0
+0
+F
+0
+-
+1
+8-15
+repeat Sub-Loop 0, but BA[2:0] = 1
+2
+16-23
+repeat Sub-Loop 0, but BA[2:0] = 2 
+3
+24-31
+repeat Sub-Loop 0, but BA[2:0] = 3 
+4
+32-39
+repeat Sub-Loop 0, but BA[2:0] = 4
+5
+40-47
+repeat Sub-Loop 0, but BA[2:0] = 5
+6
+48-55
+repeat Sub-Loop 0, but BA[2:0] = 6 
+7
+56-63
+repeat Sub-Loop 0, but BA[2:0] = 7 
+
+
+================ [Page 22] ================
+Rev. 1.1 / May. 2012
+22 
+Table 8 - IDD4W Measurement-Loop Patterna) 
+a) DM must be driven LOW all the time. DQS, DQS are used according to WR Commands, otherwise MID-LEVEL.
+b) Burst Sequence driven on each DQ signal by Write Command. Outside burst operation, DQ signals are MID-LEVEL.
+Table 9 - IDD5B Measurement-Loop Patterna)
+a) DM must be driven LOW all the time. DQS, DQS are MID-LEVEL.
+b) DQ signals are MID-LEVEL.
+CK, CK
+CKE
+Sub-Loop
+Cycle
+ Number
+Command
+CS
+RAS
+CAS
+WE
+ODT
+BA[2:0]
+A[15:11]
+A[10]
+A[9:7]
+A[6:3]
+A[2:0]
+Datab)
+toggling
+Static High
+0
+0
+WR
+0
+1
+0
+0
+1
+0
+00
+0
+0
+0
+0
+00000000
+1
+D
+1
+0
+0
+0
+1
+0
+00
+0
+0
+0
+0
+-
+2,3
+D,D
+1
+1
+1
+1
+1
+0
+00
+0
+0
+0
+0
+-
+4
+WR
+0
+1
+0
+0
+1
+0
+00
+0
+0
+F
+0
+00110011
+5
+D
+1
+0
+0
+0
+1
+0
+00
+0
+0
+F
+0
+-
+6,7
+D,D
+1
+1
+1
+1
+1
+0
+00
+0
+0
+F
+0
+-
+1
+8-15
+repeat Sub-Loop 0, but BA[2:0] = 1
+2
+16-23
+repeat Sub-Loop 0, but BA[2:0] = 2 
+3
+24-31
+repeat Sub-Loop 0, but BA[2:0] = 3 
+4
+32-39
+repeat Sub-Loop 0, but BA[2:0] = 4
+5
+40-47
+repeat Sub-Loop 0, but BA[2:0] = 5
+6
+48-55
+repeat Sub-Loop 0, but BA[2:0] = 6 
+7
+56-63
+repeat Sub-Loop 0, but BA[2:0] = 7 
+CK, CK
+CKE
+Sub-Loop
+Cycle
+ Number
+Command
+CS
+RAS
+CAS
+WE
+ODT
+BA[2:0]
+A[15:11]
+A[10]
+A[9:7]
+A[6:3]
+A[2:0]
+Datab)
+toggling
+Static High
+0
+0
+REF
+0
+0
+0
+1
+0
+0
+0
+0
+0
+0
+0
+-
+1
+1.2
+D, D
+1
+0
+0
+0
+0
+0
+00
+0
+0
+0
+0
+-
+3,4
+D, D
+1
+1
+1
+1
+0
+0
+00
+0
+0
+F
+0
+-
+5...8
+repeat cycles 1...4, but BA[2:0] = 1
+9...12
+repeat cycles 1...4, but BA[2:0] = 2
+13...16
+repeat cycles 1...4, but BA[2:0] = 3
+17...20
+repeat cycles 1...4, but BA[2:0] = 4
+21...24
+repeat cycles 1...4, but BA[2:0] = 5
+25...28
+repeat cycles 1...4, but BA[2:0] = 6
+29...32
+repeat cycles 1...4, but BA[2:0] = 7
+2
+33...nRFC-1
+repeat Sub-Loop 1, until nRFC - 1. Truncate, if necessary.
+
+
+================ [Page 23] ================
+Rev. 1.1 / May. 2012
+23 
+Table 10 - IDD7 Measurement-Loop Patterna)
+ATTENTION! Sub-Loops 10-19 have inverse A[6:3] Pattern and Data Pattern than Sub-Loops 0-9 
+a) DM must be driven LOW all the time. DQS, DQS are used according to RD Commands, otherwise MID-LEVEL.
+b) Burst Sequence driven on each DQ signal by Read Command. Outside burst operation, DQ signals are MID-LEVEL.
+CK, CK
+CKE
+Sub-Loop
+Cycle
+ Number
+Command
+CS
+RAS
+CAS
+WE
+ODT
+BA[2:0]
+A[15:11]
+A[10]
+A[9:7]
+A[6:3]
+A[2:0]
+Datab)
+toggling
+Static High
+0
+0
+ACT
+0
+0
+1
+1
+0
+0
+00
+0
+0
+0
+0
+-
+1
+RDA
+0
+1
+0
+1
+0
+0
+00
+1
+0
+0
+0
+00000000
+2
+D
+1
+0
+0
+0
+0
+0
+00
+0
+0
+0
+0
+-
+...
+repeat above D Command until nRRD - 1
+1
+nRRD
+ACT
+0
+0
+1
+1
+0
+1
+00
+0
+0
+F
+0
+-
+nRRD+1
+RDA
+0
+1
+0
+1
+0
+1
+00
+1
+0
+F
+0
+00110011
+nRRD+2
+D
+1
+0
+0
+0
+0
+1
+00
+0
+0
+F
+0
+-
+...
+repeat above D Command until 2* nRRD - 1
+2
+2*nRRD
+repeat Sub-Loop 0, but BA[2:0] = 2
+3
+3*nRRD
+repeat Sub-Loop 1, but BA[2:0] = 3
+4
+4*nRRD
+D
+1
+0
+0
+0
+0
+3
+00
+0
+0
+F
+0
+-
+Assert and repeat above D Command until nFAW - 1, if necessary
+5
+nFAW
+repeat Sub-Loop 0, but BA[2:0] = 4
+6
+nFAW+nRRD
+repeat Sub-Loop 1, but BA[2:0] = 5
+7
+nFAW+2*nRRD
+repeat Sub-Loop 0, but BA[2:0] = 6
+8
+nFAW+3*nRRD
+repeat Sub-Loop 1, but BA[2:0] = 7
+9
+nFAW+4*nRRD
+D
+1
+0
+0
+0
+0
+7
+00
+0
+0
+F
+0
+-
+Assert and repeat above D Command until 2* nFAW - 1, if necessary
+10
+2*nFAW+0
+ACT
+0
+0
+1
+1
+0
+0
+00
+0
+0
+F
+0
+-
+2*nFAW+1
+RDA
+0
+1
+0
+1
+0
+0
+00
+1
+0
+F
+0
+00110011
+2&nFAW+2
+D
+1
+0
+0
+0
+0
+0
+00
+0
+0
+F
+0
+-
+Repeat above D Command until 2* nFAW + nRRD - 1
+11
+2*nFAW+nRRD
+ACT
+0
+0
+1
+1
+0
+1
+00
+0
+0
+0
+0
+-
+2*nFAW+nRRD+1
+RDA
+0
+1
+0
+1
+0
+1
+00
+1
+0
+0
+0
+00000000
+2&nFAW+nRRD+
+2
+D
+1
+0
+0
+0
+0
+1
+00
+0
+0
+0
+0
+-
+Repeat above D Command until 2* nFAW + 2* nRRD - 1
+12
+2*nFAW+2*nRRD
+repeat Sub-Loop 10, but BA[2:0] = 2
+13
+2*nFAW+3*nRRD
+repeat Sub-Loop 11, but BA[2:0] = 3
+14
+2*nFAW+4*nRRD
+D
+1
+0
+0
+0
+0
+3
+00
+0
+0
+0
+0
+-
+Assert and repeat above D Command until 3* nFAW - 1, if necessary
+15
+3*nFAW
+repeat Sub-Loop 10, but BA[2:0] = 4
+16
+3*nFAW+nRRD
+repeat Sub-Loop 11, but BA[2:0] = 5
+17
+3*nFAW+2*nRRD
+repeat Sub-Loop 10, but BA[2:0] = 6
+18
+3*nFAW+3*nRRD
+repeat Sub-Loop 11, but BA[2:0] = 7
+19
+3*nFAW+4*nRRD
+D
+1
+0
+0
+0
+0
+7
+00
+0
+0
+0
+0
+-
+Assert and repeat above D Command until 4* nFAW - 1, if necessary
+
+
+================ [Page 24] ================
+Rev. 1.1 / May. 2012
+24 
+IDD Specifications
+IDD values are for full operating range of voltage and temperature unless otherwise noted.
+IDD Specification
+Notes:
+1. Applicable for MR2 settings A6=0 and A7=0. Temperature range for IDD6 is 0 - 85oC.
+2. Applicable for MR2 settings A6=0 and A7=1. Temperature range for IDD6ET is 0 - 95oC.
+Speed Grade
+Bin
+Symbol
+DDR3 - 1066
+7-7-7
+DDR3 - 1333
+9-9-9
+DDR3 - 1600
+11-11-11
+DDR3 - 1866
+13-13-13
+DDR3 - 2133
+14-14-14
+Unit
+Notes
+Max.
+Max.
+Max.
+Max.
+Max.
+IDD0
+50
+55
+55
+60
+65
+mA
+x8
+50
+55
+55
+60
+65
+mA
+x16
+IDD01
+60
+65
+70
+75
+80
+mA
+x8
+60
+65
+70
+75
+80
+mA
+x16
+IDD2P0
+12
+12
+12
+12
+12
+mA
+x8/16
+IDD2P1
+15
+15
+20
+20
+20
+mA
+x8
+15
+15
+20
+20
+20
+mA
+x16
+IDD2N
+25
+25
+30
+30
+35
+mA
+x8/16
+IDD2NT
+25
+25
+30
+30
+35
+mA
+x8
+35
+40
+40
+40
+45
+mA
+x16
+IDD2Q
+25
+25
+30
+30
+35
+mA
+x8/16
+IDD3P
+20
+20
+20
+20
+25
+mA
+x8
+20
+20
+20
+20
+25
+mA
+x16
+IDD3N
+30
+30
+35
+35
+40
+mA
+x8
+30
+30
+35
+35
+40
+mA
+x16
+IDD4R
+120
+140
+165
+185
+210
+mA
+x8
+120
+140
+165
+185
+210
+mA
+x16
+IDD4w
+115
+135
+155
+170
+190
+mA
+x8
+115
+135
+155
+170
+190
+mA
+x16
+IDD5B
+105
+110
+120
+125
+130
+mA
+x8
+105
+110
+120
+125
+130
+mA
+x16
+IDD6
+Normal
+12
+12
+12
+12
+12
+mA
+x8/16
+Low
+power
+6.5
+6.5
+6.5
+6.5
+6.5
+mA
+x8
+6.5
+6.5
+6.5
+6.5
+6.5
+mA
+x16
+IDD6ET
+14
+14
+14
+ 14
+14
+mA
+x8/16
+IDD7
+215
+225
+235
+255
+280
+mA
+x8
+215
+225
+235
+255
+280
+mA
+x16
+
+
+================ [Page 25] ================
+Rev. 1.1 / May. 2012
+25 
+Input/Output Capacitance
+Parameter
+Symbol
+DDR3-800
+DDR3-1066 DDR3-1333 DDR3-1600 DDR3-1866 DDR3-2133
+Units
+Notes
+Min
+Max
+Min
+Max
+Min
+Max
+Min
+Max
+Min
+Max
+Min
+Max
+Input/output capacitance
+(DQ, DM, DQS, DQS, 
+TDQS, TDQS)
+CIO
+1.5
+3.0
+1.5
+2.7
+1.5
+2.5
+1.5
+2.3
+1.4
+2.2
+1.4
+2.1
+pF
+1,2,3
+Input capacitance, CK and 
+CK
+CCK
+0.8
+1.6
+0.8
+1.6
+0.8
+1.4
+0.8
+1.4
+0.8
+1.3
+0.8
+1.3
+pF
+2,3
+Input capacitance delta
+CK and CK
+CDCK
+0
+0.15
+0
+0.15
+0
+0.15
+0
+0.15
+0
+0.15
+0
+0.15
+pF
+2,3,4
+Input capacitance delta, 
+DQS and DQS
+CDDQS
+0
+0.20
+0
+0.20
+0
+0.15
+0
+0.15
+0
+0.15
+0
+0.15
+pF
+2,3,5
+Input capacitance
+(All other input-only pins)
+CI
+0.75
+1.4
+0.75
+1.35
+0.75
+1.3
+0.75
+1.3
+0.75
+1.2
+0.75
+1.2
+pF
+2,3,6
+Input capacitance delta
+(All CTRL input-only pins)
+CDI_CTR
+L
+-0.5
+0.3
+-0.5
+0.3
+-0.4
+0.2
+-0.4
+0.2
+-0.4
+0.2
+-0.4
+0.2
+pF
+2,3,7,8
+Input capacitance delta
+(All ADD/CMD input-only 
+pins)
+CDI_ADD
+_CMD
+-0.5
+0.5
+-0.5
+0.5
+-0.4
+0.4
+-0.4
+0.4
+-0.4
+0.4
+-0.4
+0.4
+pF
+2,3,9,10
+Input/output capacitance 
+delta
+ (DQ, DM, DQS, DQS)
+CDIO
+-0.5
+0.3
+-0.5
+0.3
+-0.5
+0.3
+-0.5
+0.3
+-0.5
+0.3
+-0.5
+0.3
+pF
+2,3,11
+Input/output capacitance 
+of ZQ pin
+CZQ
+-
+3
+-
+3
+-
+3
+-
+3
+-
+3
+-
+3
+pF
+2,3,12
+Notes:
+1. Although the DM, TDQS and TDQS pins have different functions, the loading matches DQ and DQS.
+2. This parameter is not subject to production test. It is verified by design and characterization. The capacitance is
+    measured according to JEP147(“PROCEDURE FOR MEASURING INPUT CAPACITANCE USING A VECTOR NETWORK 
+    ANALYZER(VNA)”) with VDD, VDDQ, VSS,VSSQ applied and all other pins floating (except the pin under test, CKE, 
+    RESET and ODT as necessary). VDD=VDDQ=1.5V, VBIAS=VDD/2 and on-die termination off.
+3. This parameter applies to monolithic devices only; stacked/dual-die devices are not covered here
+4. Absolute value of CCK-CCK.
+5. Absolute value of CIO(DQS)-CIO(DQS).
+6. CI applies to ODT, CS, CKE, A0-A15, BA0-BA2, RAS, CAS, WE.
+7. CDI_CTR applies to ODT, CS and CKE.
+8. CDI_CTRL=CI(CNTL) - 0.5 * CI(CLK) + CI(CLK))
+9. CDI_ADD_CMD applies to A0-A15, BA0-BA2, RAS, CAS and WE.
+10. CDI_ADD_CMD=CI(ADD_CMD) - 0.5*(CI(CLK)+CI(CLK))
+11. CDIO=CIO(DQ) - 0.5*(CIO(DQS)+CIO(DQS))
+12. Maximum external load capacitance an ZQ pin: 5 pF.
+
+
+================ [Page 26] ================
+Rev. 1.1 / May. 2012
+26 
+Standard Speed Bins
+DDR3L SDRAM Standard Speed Bins include tCK, tRCD, tRP, tRAS and tRC for each corresponding bin.
+DDR3-800 Speed Bins
+For specific Notes See "Speed Bin Table Notes" on page 32.
+Speed Bin
+DDR3-800E
+Unit
+Notes
+CL - nRCD - nRP
+6-6-6
+Parameter
+Symbol
+min
+max
+Internal read command to first data
+tAA
+15
+20
+ns
+ACT to internal read or write delay time
+tRCD
+15
+—
+ns
+PRE command period
+tRP
+15
+—
+ns
+ACT to ACT or REF command period
+tRC
+52.5
+—
+ns
+ACT to PRE command period
+tRAS
+37.5
+9 * tREFI
+ns
+CL = 5
+CWL = 5
+tCK(AVG)
+3.0
+3.3
+ns
+1, 2, 3, 4, 11
+CL = 6
+CWL = 5
+tCK(AVG)
+2.5
+3.3
+ns
+1, 2, 3
+Supported CL Settings
+5, 6
+nCK
+11
+Supported CWL Settings
+5
+nCK
+
+
+================ [Page 27] ================
+Rev. 1.1 / May. 2012
+27 
+DDR3-1066 Speed Bins
+For specific Notes See "Speed Bin Table Notes" on page 32.
+Speed Bin
+DDR3-1066F
+Unit
+Note
+CL - nRCD - nRP
+7-7-7
+Parameter
+Symbol
+min
+max
+Internal read command to 
+first data
+tAA
+13.125
+20
+ns
+ACT to internal read or 
+write delay time
+tRCD
+13.125
+—
+ns
+PRE command period
+tRP
+13.125
+—
+ns
+ACT to ACT or REF 
+command period
+tRC
+50.625
+—
+ns
+ACT to PRE command 
+period
+tRAS
+37.5
+9 * tREFI
+ns
+CL = 5
+CWL = 5
+tCK(AVG)
+3.0
+3.3
+ns
+1, 2, 3, 4, 6, 11
+CWL = 6
+tCK(AVG)
+Reserved
+ns
+4
+CL = 6
+CWL = 5
+tCK(AVG)
+2.5
+3.3
+ns
+1, 2, 3, 6
+CWL = 6
+tCK(AVG)
+Reserved
+ns
+1, 2, 3, 4
+CL = 7
+CWL = 5
+tCK(AVG)
+Reserved
+ns
+4
+CWL = 6
+tCK(AVG)
+1.875
+< 2.5
+ns
+1, 2, 3, 4
+CL = 8
+CWL = 5
+tCK(AVG)
+Reserved
+ns
+4
+CWL = 6
+tCK(AVG)
+1.875
+< 2.5
+ns
+1, 2, 3
+Supported CL Settings
+5,  6, 7, 8
+nCK
+11
+Supported CWL Settings
+5, 6
+nCK
+
+
+================ [Page 28] ================
+Rev. 1.1 / May. 2012
+28 
+DDR3-1333 Speed Bins
+For specific Notes See "Speed Bin Table Notes" on page 32.
+Speed Bin
+DDR3-1333H
+Unit
+Note
+CL - nRCD - nRP
+9-9-9
+Parameter
+Symbol
+min
+max
+Internal read 
+command to first data
+tAA
+13.5
+(13.125)11 
+20
+ns
+ACT to internal read or 
+write delay time
+tRCD
+13.5
+(13.125)11 
+—
+ns
+PRE command period
+tRP
+13.5
+(13.125)11 
+—
+ns
+ACT to ACT or REF 
+command period
+tRC
+49.5
+(49.125)11 
+—
+ns
+ACT to PRE command 
+period
+tRAS
+36
+9 * tREFI
+ns
+CL = 5
+CWL = 5
+tCK(AVG)
+3.0
+3.3
+ns
+1, 2, 3, 4, 
+7, 11
+CWL = 6, 7
+tCK(AVG)
+Reserved
+ns
+4
+CL = 6
+CWL = 5
+tCK(AVG)
+2.5
+3.3
+ns
+1, 2, 3, 7
+CWL = 6
+tCK(AVG)
+Reserved
+ns
+1, 2, 3, 4, 7
+CWL = 7
+tCK(AVG)
+Reserved
+ns
+4
+CL = 7
+CWL = 5
+tCK(AVG)
+Reserved
+ns
+4
+CWL = 6
+tCK(AVG)
+1.875
+< 2.5
+ns
+1, 2, 3, 4, 7
+(Optional)11
+CWL = 7
+tCK(AVG)
+Reserved
+ns
+1, 2, 3, 4
+CL = 8
+CWL = 5
+tCK(AVG)
+Reserved
+ns
+4
+CWL = 6
+tCK(AVG)
+1.875
+< 2.5
+ns
+1, 2, 3, 7
+CWL = 7
+tCK(AVG)
+Reserved
+ns
+1, 2, 3, 4
+CL = 9
+CWL = 5, 6
+tCK(AVG)
+Reserved
+ns
+4
+CWL = 7
+tCK(AVG)
+1.5
+<1.875
+ns
+1, 2, 3, 4
+CL = 10
+CWL = 5, 6
+tCK(AVG)
+Reserved
+ns
+4
+CWL = 7
+tCK(AVG)
+1.5
+<1.875
+ns
+1, 2, 3
+(Optional)
+ns
+5
+Supported CL Settings
+5, 6, 8, (7), 9, (10)
+nCK
+Supported CWL Settings
+5, 6, 7
+nCK
+
+
+================ [Page 29] ================
+Rev. 1.1 / May. 2012
+29 
+DDR3-1600 Speed Bins
+For specific Notes See "Speed Bin Table Notes" on page 32.
+Speed Bin
+DDR3-1600K
+Unit
+Note
+CL - nRCD - nRP
+11-11-11
+Parameter
+Symbol
+min
+max
+Internal read 
+command to first data
+tAA
+13.75
+(13.125)11 
+20
+ns
+ACT to internal read or 
+write delay time
+tRCD
+13.75
+(13.125)11 
+—
+ns
+PRE command period
+tRP
+13.75
+(13.125)11 
+—
+ns
+ACT to ACT or REF 
+command period
+tRC
+48.75
+(48.125)11
+—
+ns
+ACT to PRE command 
+period
+tRAS
+35
+9 * tREFI
+ns
+CL = 5
+CWL = 5
+tCK(AVG)
+3.0
+3.3
+ns
+1, 2, 3, 4, 
+8, 11
+CWL = 6, 7
+tCK(AVG)
+Reserved
+ns
+4
+CL = 6
+CWL = 5
+tCK(AVG)
+2.5
+3.3
+ns
+1, 2, 3, 8
+CWL = 6
+tCK(AVG)
+Reserved
+ns
+1, 2, 3, 4, 8
+CWL = 7
+tCK(AVG)
+Reserved
+ns
+4
+CL = 7
+CWL = 5
+tCK(AVG)
+Reserved
+ns
+4
+CWL = 6
+tCK(AVG)
+1.875
+< 2.5
+ns
+1, 2, 3, 4, 8
+(Optional)5
+CWL = 7
+tCK(AVG)
+Reserved
+ns
+1, 2, 3, 4, 8
+CWL = 8
+tCK(AVG)
+Reserved
+ns
+4
+CL = 8
+CWL = 5
+tCK(AVG)
+Reserved
+ns
+4
+CWL = 6
+tCK(AVG)
+1.875
+< 2.5
+ns
+1, 2, 3, 8
+CWL = 7
+tCK(AVG)
+Reserved
+ns
+1, 2, 3, 4, 8
+CWL = 8
+tCK(AVG)
+Reserved
+ns
+1, 2, 3, 4
+CL = 9
+CWL = 5, 6
+tCK(AVG)
+Reserved
+ns
+4
+CWL = 7
+tCK(AVG)
+1.5
+<1.875
+ns
+1, 2, 3, 4, 8
+(Optional)5
+CWL = 8
+tCK(AVG)
+Reserved
+ns
+1, 2, 3, 4
+CL = 10
+CWL = 5, 6
+tCK(AVG)
+Reserved
+ns
+4
+CWL = 7
+tCK(AVG)
+1.5
+<1.875
+ns
+1, 2, 3, 8
+CWL = 8
+tCK(AVG)
+Reserved
+ns
+1, 2, 3, 4
+CL = 11 CWL = 5, 6,7 tCK(AVG)
+Reserved
+ns
+4
+CWL = 8
+tCK(AVG)
+1.25
+<1.5
+ns
+1, 2, 3
+Supported CL Settings
+5, 6, (7), 8, (9), 10, 11
+nCK
+Supported CWL Settings
+5, 6, 7, 8
+nCK
+
+
+================ [Page 30] ================
+Rev. 1.1 / May. 2012
+30 
+DDR3-1866 Speed Bins
+For specific Notes See "Speed Bin Table Notes" on page 32.
+Speed Bin
+DDR3-1866M
+Unit
+Note
+CL - nRCD - nRP
+13-13-13
+Parameter
+Symbol
+min
+max
+Internal read command 
+to first data
+tAA
+13.91
+(13.125)13 
+20
+ns
+ACT to internal read or 
+write delay time
+tRCD
+13.91
+(13.125)13 
+—
+ns
+PRE command period
+tRP
+13.91
+(13.125)13 
+—
+ns
+ACT to PRE command 
+period
+tRAS
+34
+9 * tREFI
+ns
+ACT to ACT or PRE 
+command period
+tRC
+47.91
+(47.125)13
+-
+ns
+CL = 5
+CWL = 5
+tCK(AVG)
+3.0
+3.3
+ns
+1, 2, 3, 4, 9
+CWL = 6,7,8,9
+tCK(AVG)
+Reserved
+ns
+4
+CL = 6
+CWL = 5
+tCK(AVG)
+2.5
+3.3
+ns
+1, 2, 3, 9
+CWL = 6
+tCK(AVG)
+Reserved
+ns
+1, 2, 3, 4, 9
+CWL = 7,8,9
+tCK(AVG)
+Reserved
+ns
+4
+CL = 7
+CWL = 5
+tCK(AVG)
+Reserved
+ns
+4
+CWL = 6
+tCK(AVG)
+1.875
+< 2.5
+ns
+1, 2, 3, 4, 9
+CWL = 7,8,9
+tCK(AVG)
+Reserved
+ns
+4
+CL = 8
+CWL = 5
+tCK(AVG)
+Reserved
+ns
+4
+CWL = 6
+tCK(AVG)
+1.875
+< 2.5
+ns
+1, 2, 3, 9
+CWL = 7
+tCK(AVG)
+Reserved
+ns
+1, 2, 3, 4, 9
+CWL = 8,9
+tCK(AVG)
+Reserved
+ns
+4
+CL = 9
+CWL = 5, 6
+tCK(AVG)
+Reserved
+ns
+4
+CWL = 7
+tCK(AVG)
+1.5
+<1.875
+ns
+1, 2, 3, 4, 9
+CWL = 8
+tCK(AVG)
+Reserved
+ns
+1, 2, 3, 4, 9
+CWL = 9
+tCK(AVG)
+Reserved
+ns
+4
+CL = 10
+CWL = 5, 6
+tCK(AVG)
+Reserved
+ns
+4
+CWL = 7
+tCK(AVG)
+1.5
+<1.875
+ns
+1, 2, 3, 9
+CWL = 8
+tCK(AVG)
+Reserved
+ns
+1, 2, 3, 4, 9
+CL = 11
+CWL = 5,6,7
+tCK(AVG)
+Reserved
+ns
+4
+CWL = 8
+tCK(AVG)
+1.25
+<1.5
+ns
+1, 2, 3, 4, 9
+CWL = 9
+tCK(AVG)
+Reserved
+ns
+1, 2, 3, 4
+CL = 12 CWL = 5,6,7,8
+tCK(AVG)
+Reserved
+ns
+4
+CWL = 9
+tCK(AVG)
+Reserved
+ns
+1,2,3,4
+CL = 13 CWL = 5,6,7,8
+tCK(AVG)
+Reserved
+ns
+4
+CWL = 9
+tCK(AVG)
+1.07
+<1.25
+ns
+1, 2, 3
+Supported CL Settings
+5, 6, 7, 8, 9, 10, 11, 13
+nCK
+Supported CWL Settings
+5, 6, 7, 8, 9
+nCK
+
+
+================ [Page 31] ================
+Rev. 1.1 / May. 2012
+31 
+DDR3-2133 Speed Bins
+For specific Notes See "Speed Bin Table Notes" on page 32.
+Speed Bin
+DDR3-2133N
+Unit
+Note
+CL - nRCD - nRP
+14-14-14
+Parameter
+Symbol
+min
+max
+Internal read command to 
+first data
+tAA
+13.09
+20.0
+ns
+ACT to internal read or write 
+delay time
+tRCD
+13.09
+—
+ns
+PRE command period
+tRP
+13.09
+—
+ns
+ACT to PRE command period
+tRAS
+33.0
+9 * tREFI
+ns
+ACT to ACT or PRE 
+command period
+tRC
+46.09
+-
+ns
+CL = 5
+CWL = 5
+tCK(AVG)
+Reserved
+ns
+1, 2, 3, 4, 10
+CWL = 6,7,8,9,10
+tCK(AVG)
+Reserved
+ns
+4
+CL = 6
+CWL = 5
+tCK(AVG)
+2.5
+3.3
+ns
+1, 2, 3, 10
+CWL = 6
+tCK(AVG)
+Reserved
+ns
+1, 2, 3, 4, 10
+CWL = 7,8,910
+tCK(AVG)
+Reserved
+ns
+4
+CL = 7
+CWL = 5
+tCK(AVG)
+Reserved
+ns
+4
+CWL = 6
+tCK(AVG)
+1.875
+< 2.5
+ns
+1, 2, 3, 10
+CWL = 7
+tCK(AVG)
+Reserved
+ns
+1, 2, 3, 4, 10
+CWL = 8,9,10
+tCK(AVG)
+Reserved
+ns
+4
+CL = 8
+CWL = 5
+tCK(AVG)
+Reserved
+ns
+4
+CWL = 6
+tCK(AVG)
+1.875
+< 2.5
+ns
+1, 2, 3, 10
+CWL = 7
+tCK(AVG)
+Reserved
+ns
+1, 2, 3, 4, 10
+CWL = 8,9,10
+tCK(AVG)
+Reserved
+ns
+4
+CL = 9
+CWL = 5, 6
+tCK(AVG)
+Reserved
+ns
+4
+CWL = 7
+tCK(AVG)
+1.5
+<1.875
+ns
+1, 2, 3, 10
+CWL = 8
+tCK(AVG)
+Reserved
+ns
+1, 2, 3, 4, 10
+CWL = 9,10
+tCK(AVG)
+Reserved
+ns
+4
+CL = 10
+CWL = 5, 6
+tCK(AVG)
+Reserved
+ns
+4
+CWL = 7
+tCK(AVG)
+1.5
+<1.875
+ns
+1, 2, 3, 9
+CWL = 8
+tCK(AVG)
+Reserved
+ns
+1, 2, 3, 4, 9
+CWL = 9
+tCK(AVG)
+Reserved
+ns
+4
+CWL = 10
+tCK(AVG)
+Reserved
+ns
+4
+CL = 11
+CWL = 5,6,7
+tCK(AVG)
+Reserved
+ns
+4
+CWL = 8
+tCK(AVG)
+1.25
+<1.5
+ns
+1, 2, 3, 10
+CWL = 9
+tCK(AVG)
+Reserved
+ns
+1, 2, 3, 4, 10
+CWL = 10
+tCK(AVG)
+Reserved
+ns
+1, 2, 3, 4
+CL = 12
+CWL = 5,6,7,8
+tCK(AVG)
+Reserved
+ns
+4
+CWL = 9
+tCK(AVG)
+Reserved
+ns
+1,2,3,4, 10
+CWL = 10
+tCK(AVG)
+Reserved
+ns
+4
+CL = 13
+CWL = 5,6,7,8
+tCK(AVG)
+Reserved
+ns
+4
+CWL = 9
+tCK(AVG)
+1.07
+<1.25
+ns
+1, 2, 3, 10
+CWL = 10
+tCK(AVG)
+Reserved
+1, 2, 3, 4
+CL = 14
+CWL = 5,6,7,8,9
+tCK(AVG)
+Reserved
+ns
+4
+CWL = 10
+tCK(AVG)
+0.935
+<1.07
+ns
+1, 2, 3
+Supported CL Settings
+5, 6, 7, 8, 9, 10, 11, 12, 13, 14
+nCK
+Supported CWL Settings
+5, 6, 7, 8, 9, 10
+nCK
+
+
+================ [Page 32] ================
+Rev. 1.1 / May. 2012
+32 
+Speed Bin Table Notes
+absolute specification (toper; vddq = vdd = 1.5v +/- 0.075 v); 
+1. the cl setting and cwl setting result in tck(avg).min and tck(avg).max requirements. when making a selection of
+tck(avg), both need to be fulfilled: requirements from cl setting as well as requirements from cwl setting.
+2. tck(avg).min limits: since cas latency is not purely analog - data and strobe output are synchronized by the dll - all
+possible intermediate frequencies may not be guaranteed. an application should use the next smaller jedec stan-
+dard tck(avg) value (3.0, 2.5, 1.875, 1.5, or 1.25 ns) when calculating cl [nck] = taa [ns] / tck(avg) [ns], rounding
+up to the next ‘supported cl’, where tck(avg) = 3.0 ns should only be used for cl = 5 calculation.
+3. tck(avg).max limits: calculate tck(avg) = taa.max / cl selected and round the resulting tck(avg) down to the next
+valid speed bin (i.e. 3.3ns or 2.5ns or 1.875 ns or 1.25 ns). this result is tck(avg).max corresponding to cl
+selected.
+4. ‘reserved’ settings are not allowed. user must program a different value.
+5. ‘optional’ settings allow certain devices in the industry to support this setting, however, it is not a mandatory fea-
+ture. refer to SK Hynix dimm data sheet and/or the dimm spd information if and how this setting is supported.
+6. any ddr3-1066 speed bin also supports functional operation at lower frequencies as shown in the table which are
+not subject to production tests but verified by design/characterization.
+7. any ddr3-1333 speed bin also supports functional operation at lower frequencies as shown in the table which are
+not subject to production tests but verified by design/characterization.
+8. any ddr3-1600 speed bin also supports functional operation at lower frequencies as shown in the table which are
+not subject to production tests but verified by design/characterization. 
+9. any ddr3-1866 speed bin also supports functional operation at lower frequencies as shown in the table which are
+not subject to production tests but verified by design/characterization.
+10. any ddr3-2133 speed bin also supports functional operation at lower frequencies as shown in the table which are
+not subject to production tests but verified by design/characterization
+11. SK Hynix ddr3 sdram devices supporting optional down binning to cl=7 and cl=9, and taa/trcd/trp must be 13.125
+ns or lower. spd settings must be programmed to match. for example, ddr3-1333h devices supporting down bin-
+ning to ddr3-1066f should program 13.125 ns in spd bytes for taamin (byte 16), trcdmin (byte 18), and trpmin
+(byte 20). ddr3-1600k devices supporting down binning to ddr3-1333h or ddr3-1600f should program 13.125 ns
+in spd bytes for taamin (byte 16), trcdmin (byte 18), and trpmin (byte 20). once trp (byte 20) is programmed to
+13.125ns, trcmin (byte 21,23) also should be programmed accordingly. for example, 49.125ns (trasmin + trpmin
+= 36 ns + 13.125 ns) for ddr3-1333h and 48.125ns (trasmin + trpmin = 35 ns + 13.125 ns) for ddr3-1600k.
+12. for cl5 support, refer to dimm spd information. dram is required to support cl5. cl5 is not mandatory in spd coding.
+13. SK Hynix ddr3 sdram devices supporting optional down binning to cl=11, cl=9 and cl=7, taa/trcd/
+     trpmin must be 13.125ns. spd setting must be programed to match. for example, ddr3-1866m
+     devices supporting down binning to ddr3-1600k or ddr3-1333h or 1066f should program 13.125ns
+     in spd bytes for taamin(byte 16), trcdmin(byte 18) and trpmin(byte 20) is programmed to 13.125ns,
+     trcmin(byte 21,23) also should be programmed accordingly. for example, 47.125ns (trasmin + trpmin = 34ns +
+     13.125ns)
+
+
+================ [Page 33] ================
+Rev. 1.1 / May. 2012
+33 
+Package Dimensions
+Package Dimension(x8): 78Ball Fine Pitch Ball Grid Array Outline
+
+
+================ [Page 34] ================
+Rev. 1.1 / May. 2012
+34 
+Package Dimension(x16): 96Ball Fine Pitch Ball Grid Array Outline
+

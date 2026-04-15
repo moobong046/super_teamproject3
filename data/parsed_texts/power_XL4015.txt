@@ -1,0 +1,531 @@
+
+================ [Page 1] ================
+                                          Datasheet             
+ 
+5A 180KHz 36V Buck DC to DC Converter                                XL4015
+ 
+ 
+Rev 1.5                                                                                  www.xlsemi.com 
+1 
+Features 
+ Wide 8V to 36V Input Voltage Range 
+ Output Adjustable from 1.25V to 32V 
+ Maximum Duty Cycle 100% 
+ Minimum Drop Out 0.3V 
+ Fixed 180KHz Switching Frequency 
+ 5A Constant Output Current Capability 
+ Internal Optimize Power MOSFET 
+ High efficiency up to 96% 
+ Excellent line and load regulation 
+ Built in thermal shutdown function 
+ Built in current limit function 
+ Built in output short protection function 
+ Available in TO263-5L package 
+ 
+ 
+ 
+Applications 
+ LCD Monitor and LCD TV 
+ Portable instrument power supply 
+ Telecom / Networking Equipment 
+ 
+ 
+ 
+ 
+ 
+General Description 
+The XL4015 is a 180 KHz fixed frequency 
+PWM buck (step-down) DC/DC converter, 
+capable of driving a 5A load with high 
+efficiency, low ripple and excellent line and 
+load regulation. Requiring a minimum 
+number of external components, the regulator 
+is simple to use and include internal 
+frequency 
+compensation 
+and 
+a 
+fixed-frequency oscillator.  
+ 
+The PWM control circuit is able to adjust the 
+duty ratio linearly from 0 to 100%. An over 
+current protection function  is built inside. 
+When short protection function happens, the 
+operation frequency will be reduced from 
+180KHz to 48KHz. An internal compensation 
+block is built in to minimize external 
+component count. 
+ 
+ 
+ 
+ 
+ 
+ 
+Figure1. Package Type of XL4015 
+
+
+================ [Page 2] ================
+                                          Datasheet             
+ 
+5A 180KHz 36V Buck DC to DC Converter                                XL4015
+ 
+ 
+Rev 1.5                                                                                  www.xlsemi.com 
+2 
+Pin Configurations 
+ 
+ 
+ 
+Figure2. Pin Configuration of XL4015 (Top View) 
+ 
+Table 1 Pin Description 
+ 
+Pin Number 
+Pin Name 
+Description 
+1 
+GND 
+Ground Pin. Care must be taken in layout. This pin should be 
+placed outside of the Schottky Diode to output capacitor 
+ground path to prevent switching current spikes from inducing 
+voltage noise into XL4015. 
+2 
+FB 
+Feedback Pin (FB). Through an external resistor divider 
+network, FB senses the output voltage and regulates it. The 
+feedback threshold voltage is 1.25V. 
+3 
+SW 
+Power Switch Output Pin (SW). SW is the switch node that 
+supplies power to the output. 
+4 
+VC 
+Internal Voltage Regulator Bypass Capacity. In typical system 
+application, The VC pin connect a 1uf capacity to VIN. 
+5 
+VIN 
+Supply Voltage Input Pin. XL4015 operates from a 8V to 36V 
+DC voltage. Bypass Vin to GND with a suitably large 
+capacitor to eliminate noise on the input. 
+ 
+ 
+
+
+================ [Page 3] ================
+                                          Datasheet             
+ 
+5A 180KHz 36V Buck DC to DC Converter                                XL4015
+ 
+ 
+Rev 1.5                                                                                  www.xlsemi.com 
+3 
+Function Block 
+ 
+ 
+Figure3. Function Block Diagram of XL4015 
+ 
+Typical Application Circuit 
+ 
+ 
+Figure4. XL4015 Typical Application Circuit (VIN=8V~36V, VOUT=5V/5A) 
+
+
+================ [Page 4] ================
+                                          Datasheet             
+ 
+5A 180KHz 36V Buck DC to DC Converter                                XL4015
+ 
+ 
+Rev 1.5                                                                                  www.xlsemi.com 
+4 
+Ordering Information 
+Order Information 
+Marking ID 
+Package Type 
+Packing Type Supplied As 
+XL4015E1 
+XL4015E1 
+TO263-5L 
+800 Units on Tape & Reel 
+XLSEMI Pb-free products, as designated with “E1” suffix in the par number, are RoHS compliant. 
+ 
+Absolute Maximum Ratings（Note1） 
+Parameter 
+Symbol 
+Value 
+Unit 
+Input Voltage 
+Vin 
+-0.3 to 40 
+V 
+Feedback Pin Voltage 
+VFB 
+-0.3 to Vin 
+V 
+Output Switch Pin Voltage 
+VOutput 
+-0.3 to Vin 
+V 
+Power Dissipation 
+PD 
+Internally limited 
+mW 
+Thermal Resistance (TO263-5L) 
+(Junction to Ambient, No Heatsink, Free Air) 
+RJA 
+30 
+ºC/W 
+Operating Junction Temperature 
+TJ 
+-40 to 125 
+ºC 
+Storage Temperature 
+TSTG 
+-65 to 150 
+ºC 
+Lead Temperature (Soldering, 10 sec) 
+TLEAD 
+260 
+ºC 
+ESD (HBM) 
+ 
+>2000 
+V 
+ 
+Note1: Stresses greater than those listed under Maximum Ratings may cause permanent damage 
+to the device. This is a stress rating only and functional operation of the device at these or any 
+other conditions above those indicated in the operation is not implied. Exposure to absolute 
+maximum rating conditions for extended periods may affect reliability. 
+
+
+================ [Page 5] ================
+                                          Datasheet             
+ 
+5A 180KHz 36V Buck DC to DC Converter                                XL4015
+ 
+ 
+Rev 1.5                                                                                  www.xlsemi.com 
+5 
+XL4015 Electrical Characteristics 
+Ta = 25℃;unless otherwise specified. 
+Symbol 
+Parameter 
+Test Condition 
+Min.
+Typ. 
+Max. 
+Unit
+System parameters test circuit figure4 
+VFB 
+Feedback 
+Voltage 
+Vin = 8V to 40V, Vout=5V 
+Iload=0.5A to 5A 
+1.225
+1.25 
+1.275 
+V 
+Efficiency 
+ŋ 
+Vin=12V ,Vout=5V 
+Iout=5A 
+- 
+87 
+- 
+% 
+Efficiency 
+ŋ 
+Vin=24V ,Vout=12V 
+Iout=4A 
+- 
+93 
+- 
+% 
+ 
+Electrical Characteristics (DC Parameters) 
+Vin = 12V, GND=0V, Vin & GND parallel connect a 220uf/50V capacitor; Iout=500mA, Ta = 
+25℃; the others floating unless otherwise specified. 
+Parameters 
+Symbol 
+Test Condition 
+Min.
+Typ. 
+Max. 
+Unit
+Input operation voltage 
+Vin 
+ 
+8 
+ 
+36 
+V 
+Quiescent Supply Current 
+Iq 
+VFB =Vin 
+ 
+2.1 
+5 
+mA
+Oscillator Frequency 
+Fosc 
+ 
+144 
+180 
+216 
+KHz
+Output Short Frequency 
+Fosp 
+ 
+ 
+48 
+ 
+KHz
+Switch Current Limit 
+IL 
+VFB =0 
+ 
+7 
+ 
+A 
+Max. Duty Cycle  
+DMAX 
+VFB=0V 
+ 
+100 
+ 
+% 
+Output Power PMOS 
+Rdson 
+VFB=0V, Vin=12V, 
+ISW=5A 
+ 
+60 
+80 
+moh
+m 
+ 
+
+
+================ [Page 6] ================
+                                          Datasheet             
+ 
+5A 180KHz 36V Buck DC to DC Converter                                XL4015
+ 
+ 
+Rev 1.5                                                                                  www.xlsemi.com 
+6 
+Typical System Application (VOUT=5V/5A) 
+ 
+Figure5. XL4015 System Parameters Test Circuit (VIN=8V~36V, VOUT=5V/5A) 
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+3.5
+4.0
+4.5
+5.0
+50
+55
+60
+65
+70
+75
+80
+85
+90
+95
+100
+ 
+Efficiency VS Output current
+Efficiency(%)
+Load current(A)
+ VIN=8V,VOUT=5V,IOUT=0.1A~5A
+ VIN=12V,VOUT=5V,IOUT=0.1A~5A
+ VIN=24V,VOUT=5V,IOUT=0.1A~5A
+ VIN=36V,VOUT=5V,IOUT=0.1A~5A
+ 
+Figure6. XL4015 System Efficiency Curve 
+
+
+================ [Page 7] ================
+                                          Datasheet             
+ 
+5A 180KHz 36V Buck DC to DC Converter                                XL4015
+ 
+ 
+Rev 1.5                                                                                  www.xlsemi.com 
+7 
+Typical System Application (VOUT=12V/4A) 
+ 
+Figure7. XL4015 System Parameters Test Circuit (VIN=15V~36V, VOUT=12V/4A) 
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+3.5
+4.0
+50
+55
+60
+65
+70
+75
+80
+85
+90
+95
+100
+ 
+Efficiency VS Output current
+Efficiency(%)
+Output current(A)
+ VIN=15V,VOUT=12V,IOUT=0.1A~4A
+ VIN=24V,VOUT=12V,IOUT=0.1A~4A
+ VIN=36V,VOUT=12V,IOUT=0.1A~4A
+ 
+Figure8. XL4015 System Efficiency Curve 
+ 
+ 
+ 
+
+
+================ [Page 8] ================
+                                          Datasheet             
+ 
+5A 180KHz 36V Buck DC to DC Converter                                XL4015
+ 
+ 
+Rev 1.5                                                                                  www.xlsemi.com 
+8 
+Typical System Application (TTL shutdown function) 
+Logic level signals shutdown function can be used in typical system application with external 
+components. When the TTL high voltage above 3.3V(referenced to ground, lower than VIN), the 
+converter will shutdown, input current less than 5mA; when the TTL Low voltage below 
+0.8V(referenced to ground), the converter will turn on. 
+ 
+Figure9. XL4015 Typical Application Circuit 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+
+
+================ [Page 9] ================
+                                          Datasheet             
+ 
+5A 180KHz 36V Buck DC to DC Converter                                XL4015
+ 
+ 
+Rev 1.5                                                                                  www.xlsemi.com 
+9 
+Package Information 
+TO263-5L 
+ 
+ 
+ 
+ 
+Symbol 
+Dimensions In Millimeters 
+Dimensions In Inches 
+Min 
+Max 
+Min 
+Max 
+A 
+4.06 
+4.83 
+0.160 
+0.190 
+B 
+0.71 
+1.02 
+0.030 
+0.040 
+C 
+0.36 
+0.64 
+0.014 
+0.025 
+C2 
+1.14 
+1.40 
+0.045 
+0.055 
+D 
+8.39 
+9.65 
+0.330 
+0.380 
+E 
+9.78 
+10.54 
+0.385 
+0.415 
+e 
+1.55 
+1.85 
+0.061 
+0.073 
+F 
+6.36 
+7.36 
+0.250 
+0.290 
+L 
+13.95 
+15.37 
+0.549 
+0.605 
+L2 
+1.12 
+1.42 
+0.044 
+0.056 
+ 
+ 
+
+
+================ [Page 10] ================
+                                          Datasheet             
+ 
+5A 180KHz 36V Buck DC to DC Converter                                XL4015
+ 
+ 
+Rev 1.5                                                                                  www.xlsemi.com 
+10 
+Important Notice 
+XLSEMI reserve the right to make modifications, enhancements, improvements, corrections or 
+other changes without notice at any time. XLSEMI does not assume any liability arising out of 
+the application or use of any product described herein; neither does it convey any license under 
+its patent rights, nor the rights of others. XLSEMI assumes no liability for applications assistance 
+or the design of Buyers’ products. Buyers are responsible for their products and applications 
+using XLSEMI components. To minimize the risks associated with Buyers’ products and 
+applications, Buyers should provide adequate design and operating safeguards. XLSEMI 
+warrants performance of its products to the specifications applicable at the time of sale, in 
+accordance with the warranty in XLSEMI’s terms and conditions of sale of semiconductor 
+products. Testing and other quality control techniques are used to the extent XLSEMI deems 
+necessary to support this warranty. Except where mandated by applicable law, testing of all 
+parameters of each component is not necessarily performed. 
+For the latest product information, go to www.xlsemi.com. 
+ 
+ 
+

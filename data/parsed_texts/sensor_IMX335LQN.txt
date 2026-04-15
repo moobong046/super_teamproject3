@@ -1,0 +1,111 @@
+
+================ [Page 1] ================
+1 
+Copyright 2018 Sony Semiconductor Solutions Corporation 
+ 
+Ver.1.1
+IMX335LQN
+Diagonal 6.52 mm (Type 1/2.8) CMOS Solid-state Image Sensor with Square Pixel for 
+Color Cameras 
+Description 
+The IMX335LQN is a diagonal 6.52 mm (Type 1/2.8) CMOS active pixel type solid-state image sensor with a square 
+pixel array and 5.14 M effective pixels. This chip operates with analog 2.9 V, digital 1.2 V, and interface 1.8 V triple 
+power supply, and has low power consumption. High sensitivity, low dark current and no smear are achieved through 
+the adoption of R, G and B primary color mosaic filters. This chip features an electronic shutter with variable 
+charge-integration time. 
+(Applications: Surveillance cameras, FA cameras, Industrial cameras) 
+Features 
+◆ CMOS active pixel type dots
+◆ Built-in timing adjustment circuit, H/V driver and serial communication circuit
+◆ Input frequency: 6 to 27 MHz / 37.125 MHz / 74.25 MHz
+◆ Number of recommended recording pixels: 2592 (H) × 1944 (V) approx. 5.04 M pixels
+◆ Readout mode
+All-pixel scan mode
+Horizontal/Vertical 2/2-line binning mode
+Window cropping mode
+Vertical / Horizontal direction-normal / inverted readout mode
+◆ Readout rate
+Maximum frame rate in All-pixel scan mode  2592 (H)×1944 (V)  A/D 10-bit : 60 frame/s
+◆ High dynamic range (HDR) function
+Multiple exposure HDR
+Digital overlap HDR
+◆ Variable-speed shutter function (resolution 1H units)
+◆ 10-bit / 12-bit A/D converter
+◆ CDS / PGA function
+0 dB to 30 dB : Analog Gain 30 dB (step pitch 0.3 dB)
+30.3 dB to 72 dB : Analog Gain 30 dB + Digital Gain 0.3 to 42 dB (step pitch 0.3 dB)
+◆ Supports I/O
+CSI-2 serial data output ( 2 Lane / 4 Lane, RAW10 / RAW12 output)
+◆ Recommended exit pupil distance: –30 mm to –∞
+Sony reserves the right to change products and specifications without prior notice. 
+"Sony", "SONY" logo are registered trademarks or trademarks of Sony Group Corporation or its affiliates.
+* STARVIS is a registered trademark or trademark of Sony Group Corporation or its affiliates. The STARVIS is back-illuminated pixel
+technology used in CMOS image sensors for security camera applications. It features a sensitivity of 2000 mV or more per 1 μm2 (color
+product, when imaging with a 706 cd/m2 light source, F5.6 in 1 s accumulation equivalent), and realizes high picture quality in the visible-
+light and near infrared light regions. 
+
+
+================ [Page 2] ================
+IMX335LQN 
+2 
+Device Structure 
+◆ CMOS image sensor
+◆ Image size
+Type 1/2.8 
+◆ Total number of pixels
+2704 (H) × 2104 (V) approx. 5.69 M pixels 
+◆ Number of effective pixels
+2616 (H) × 1964 (V) approx. 5.14 M pixels 
+◆ Number of active pixels
+2616 (H) × 1960 (V) approx. 5.11 M pixels 
+◆ Number of recommended recording pixels
+2592 (H) × 1944 (V) approx. 5.04 M pixels 
+◆ Unit cell size
+2.0 µm (H) × 2.0 µm (V) 
+◆ Optical black
+Horizontal (H) direction: Front 0 pixel, rear 0 pixel 
+Vertical (V) direction: Front 13 pixels, rear 0 pixel 
+◆ Dummy
+Horizontal (H) direction: Front 0 pixel, rear 0 pixel 
+Vertical (V) direction: Front 0 pixel, rear 0 pixel 
+◆ Package
+88 pin CSP BGA 
+Image Sensor Characteristics 
+(Tj = 60 °C) 
+Item 
+Value 
+Remarks 
+Sensitivity (F5.6) 
+Typ. 
+2200 Digit 
+1/30 s accumulation 
+12 bit converted value 
+Saturation signal 
+Min. 
+3895 Digit 
+12 bit converted value 
+Basic Drive Mode 
+Drive mode 
+Recommended number 
+of recording pixels 
+Maximum frame rate 
+[frame/s] 
+Output interface 
+ADC [bit] 
+All pixel 
+2592 (H) × 1944 (V) 
+approx. 5.04 M pixels 
+60 
+CSI-2 
+10 
+Horizontal/ 
+Vertical 2/2-line 
+binning 
+1296 (H) × 972 (V) 
+approx. 1.26 M pixels 
+60 
+CSI-2 
+10 
+Image Sensors for Security Cameras: 
+https://www.sony.net/cis-security/
+

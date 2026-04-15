@@ -1,0 +1,1381 @@
+
+================ [Page 1] ================
+
+NEO-M9V-20B
+Multi-mode dead reckoning module
+Professional grade
+Data sheet
+Abstract
+This data sheet describes the u-blox NEO-M9V standard precision with
+multi-mode dead reckoning (MDR) module. NEO-M9V oﬀers ultra-robust
+meter-level GNSS positioning performance with concurrent reception of up
+to four GNSS (GPS, GLONASS, BeiDou, Galileo) together with vehicle speed
+information and integrated 3D sensors in a 12.2 x 16.0 mm package.
+www.u-blox.com
+UBX-21029781 - R04
+C1-Public
+
+
+================ [Page 2] ================
+NEO-M9V-20B - Data sheet
+Document information
+Title
+NEO-M9V-20B
+Subtitle
+Multi-mode dead reckoning module
+Document type
+Data sheet
+Document number
+UBX-21029781
+Revision and date
+R04
+16-Mar-2023
+Disclosure restriction
+C1-Public
+Product status
+Corresponding content status
+Functional Sample
+Draft
+For functional testing. Revised and supplementary data will be published
+later.
+In development /
+prototype
+Objective speciﬁcation
+Target values. Revised and supplementary data will be published later.
+Engineering sample
+Advance information
+Data based on early testing. Revised and supplementary data will be
+published later.
+Initial production
+Early production information
+Data from product veriﬁcation. Revised and supplementary data may be
+published later.
+Mass production /
+End of life
+Production information
+Document contains the ﬁnal product speciﬁcation.
+This document applies to the following products:
+Product name
+Type number
+Firmware version
+IN/PCN
+reference
+Product status
+NEO-M9V
+NEO-M9V-20B-00
+MDR 2.10
+UBX-22001207,
+UBX-22002823
+End of life
+NEO-M9V
+NEO-M9V-20B-01
+MDR 2.16
+UBX-22036877
+Mass production
+u-blox or third parties may hold intellectual property rights in the products, names, logos and designs included in this
+document. Copying, reproduction, or modiﬁcation of this document or any part thereof is only permitted with the express
+written permission of u-blox. Disclosure to third parties is permitted for clearly public documents only.
+The information contained herein is provided "as is" and u-blox assumes no liability for its use. No warranty, either express
+or implied, is given, including but not limited to, with respect to the accuracy, correctness, reliability and ﬁtness for a
+particular purpose of the information. This document may be revised by u-blox at any time without notice. For the most recent
+documents, visit www.u-blox.com.
+Copyright © 2023, u-blox AG.
+UBX-21029781 - R04
+ 
+Page 2 of 23
+C1-Public
+
+
+================ [Page 3] ================
+NEO-M9V-20B - Data sheet
+Contents
+1 Functional description......................................................................................................... 4
+1.1 Overview.................................................................................................................................................... 4
+1.2 Performance............................................................................................................................................. 4
+1.3 Supported GNSS constellations..........................................................................................................5
+1.4 Supported protocols...............................................................................................................................6
+1.5 Firmware features...................................................................................................................................6
+1.6 Multi-mode dead reckoning.................................................................................................................. 6
+2 System description...............................................................................................................8
+2.1 Block diagram.......................................................................................................................................... 8
+3 Pin deﬁnition........................................................................................................................... 9
+3.1 Pin assignment........................................................................................................................................9
+4 Electrical speciﬁcation...................................................................................................... 11
+4.1 Absolute maximum ratings................................................................................................................11
+4.2 Operating conditions............................................................................................................................11
+4.3 Indicative power requirements...........................................................................................................12
+5 Communications interfaces.............................................................................................13
+5.1 UART........................................................................................................................................................13
+5.2 SPI............................................................................................................................................................ 13
+5.3 I2C............................................................................................................................................................ 14
+5.4 USB.......................................................................................................................................................... 16
+5.5 WT (wheel tick) and DIR (forward/reverse indication).................................................................. 16
+5.6 Default interface settings...................................................................................................................16
+6 Mechanical speciﬁcation.................................................................................................. 17
+7 Reliability tests and approvals....................................................................................... 19
+7.1 Approvals................................................................................................................................................ 19
+8 Labeling and ordering information................................................................................ 20
+8.1 Product labeling.................................................................................................................................... 20
+8.2 Explanation of product codes............................................................................................................ 20
+8.3 Ordering codes...................................................................................................................................... 20
+Related documents................................................................................................................ 21
+Revision history.......................................................................................................................22
+UBX-21029781 - R04
+ 
+Contents
+Page 3 of 23
+C1-Public
+
+
+================ [Page 4] ================
+NEO-M9V-20B - Data sheet
+1 Functional description
+1.1 Overview
+The NEO-M9V-20B GNSS receiver features the u-blox M9 standard precision GNSS platform  with
+3D multi-mode dead reckoning (MDR). It provides exceptional sensitivity and acquisition times for
+all L1 GNSS systems. u-blox M9 receivers are available in diﬀerent variants to serve automotive and
+industrial tracking applications, such as navigation, telematics and UAVs.
+NEO-M9V-20B is the ﬁrst u-blox GNSS receiver with untethered (UDR) and automotive dead
+reckoning (ADR), specially designed for ﬂeet management and micromobility applications. It directly
+succeeds the u-blox M8 product range, namely NEO-M8U and NEO-M8L.
+u-blox M9 receivers support concurrent reception of four GNSS. The high number of visible satellites
+allows the receiver to select the best signals. This maximizes the position accuracy, in particular
+under challenging conditions such as deep urban canyons.
+u-blox M9 receivers detect jamming and spooﬁng events and report them to the host, which allows
+the system to react to such events. RF design eﬀort for NEO-M9V-20B is reduced, as a SAW ﬁlter
+and an LNA are integrated. Advanced ﬁltering algorithms mitigate the impact of RF interference
+and jamming, thus enabling the product to operate as intended.
+The receiver also provides higher navigation rate and improved security features compared to
+previous u-blox GNSS generations.
+Access to native, high-rate sensor data also enables host applications to make full use of the
+receiver’s assets, including the wake-on-motion functionality that allows to turn oﬀ the host and
+save power until motion is detected by the IMU.
+1.2 Performance
+Parameter
+Speciﬁcation
+Receiver type
+Multi-constellation GNSS standard precision receiver
+Accuracy of time pulse signal
+RMS
+99%
+30 ns
+60 ns
+Frequency of time pulse signal
+0.25 Hz to 10 MHz
+(conﬁgurable)
+Operational limits1
+Dynamics
+Altitude
+Velocity
+≤ 4 g
+80,000 m
+500 m/s
+Position error during GNSS loss2
+3D Gyro + 3D accelerometer + WT
+3D Gyro + 3D accelerometer
+2 %
+10 %
+Max navigation update rate (PVT)3
+Priority navigation mode
+Non-priority navigation mode
+Secondary output
+50 Hz
+5 Hz
+5 Hz
+Navigation latency
+Priority navigation mode
+15 ms
+1 Assuming Airborne 4 g platform
+2 68% error incurred without GNSS as a percentage of distance of traveled 3000 m, applicable to four-wheel road vehicle
+3 Rates with SBAS and QZSS enabled for > 98% ﬁx report rate under typical conditions
+UBX-21029781 - R04
+ 
+1 Functional description
+Page 4 of 23
+C1-Public
+
+
+================ [Page 5] ================
+NEO-M9V-20B - Data sheet
+Parameter
+Speciﬁcation
+Velocity accuracy4
+0.08 m/s
+Dynamic attitude accuracy4
+Heading
+Pitch
+Roll
+0.3 deg
+0.4 deg
+0.6 deg
+Max sensor measurement output rate
+Raw
+Calibrated
+100 Hz
+100 Hz
+GNSS
+GPS+GLO+GAL+BDS
+GPS+GLO
+BDS+GLO
+Acquisition5
+Cold start
+Hot start
+Aided start6
+24 s
+2 s
+3 s
+25 s
+2 s
+2 s
+28 s
+2 s
+3 s
+Sensitivity7
+Tracking and nav.
+Reacquisition
+Cold start
+Hot start
+-159 dBm
+-158 dBm
+-147 dBm
+-159 dBm
+-159 dBm
+-158 dBm
+-148 dBm
+-159 dBm
+-159 dBm
+-158 dBm
+-146 dBm
+-158 dBm
+Position accuracy PVT 8
+Horizontal
+Vertical
+1.5 m
+3 m
+1.7 m
+3.5 m
+2.5 m
+4.5 m
+Table 1: NEO-M9V-20B typical performance in multi-constellation GNSS modes
+1.3 Supported GNSS constellations
+The NEO-M9V-20B is a concurrent GNSS receiver which can receive and track multiple GNSS
+systems. The NEO-M9V-20B receiver can be conﬁgured for concurrent GPS, GLONASS, Galileo and
+BeiDou plus SBAS and QZSS reception. If power consumption is a key factor, then the receiver can
+be conﬁgured for a subset of GNSS constellations.
+Supported GNSS systems and their signals are:
+GPS / QZSS
+GLONASS
+Galileo
+BeiDou
+L1C/A (1575.42 MHz)
+L1OF (1602 MHz + k*562.5
+kHz, k = –7,..., 5, 6)
+E1-B/C (1575.42 MHz)
+B1I (1561.098 MHz)
+Table 2: Supported GNSS systems and signals
+The following GNSS assistance services can be activated:
+AssistNow™ Online
+AssistNow™ Oﬄine
+AssistNow™ Autonomous
+Supported
+Not supported
+Not supported
+Table 3: Supported assisted GNSS (A-GNSS) services
+NEO-M9V-20B supports the following augmentation systems:
+SBAS
+QZSS
+IMES
+Diﬀerential GNSS
+EGNOS, GAGAN, MSAS and WAAS supported
+L1S supported
+Not supported
+Not supported
+Table 4: Supported augmentation systems
+4 68% at 30 m/s for dynamic operation
+5 Commanded starts. All satellites at -130 dBm. GPS always in combination with QZSS and SBAS. Measured at room
+temperature.
+6 Dependent on the speed and latency of the aiding data connection, commanded starts.
+7 Demonstrated with a good external LNA. Measured at room temperature.
+8 CEP, 50%, open sky with SBAS and QZSS enabled, -130 dBm, > 6 SVs
+UBX-21029781 - R04
+ 
+1 Functional description
+Page 5 of 23
+C1-Public
+
+
+================ [Page 6] ================
+NEO-M9V-20B - Data sheet
+The SBAS and QZSS augmentation systems can be enabled only if GPS operation is also
+enabled.
+1.4 Supported protocols
+The NEO-M9V-20B supports the following protocols:
+Protocol
+Type
+UBX
+Input/output, binary, u-blox proprietary
+NMEA 4.11 (default), 4.10, 4.0, 2.3, and 2.1
+Input/output, ASCII
+Table 5: Supported protocols
+For speciﬁcation of the protocols, see the Interface description [2].
+1.5 Firmware features
+Feature
+Description
+Advanced calibration handling
+Calibration information can be stored with the host
+Assisted GNSS
+AssistNow Online supported
+Automotive dead reckoning
+Combines satellite and sensor-based navigation (IMU and odometer input)
+Automatic alignment
+Automatic estimation of the alignment angles (automotive dynamic model only)
+Backup modes
+Hardware backup mode, software backup mode
+Dual output
+GNSS only and Fused (GNSS+DR) output
+Geofencing
+Untethered dead reckoning
+Combines satellite and sensor-based navigation (IMU)
+Upgradeable ﬁrmware
+Firmware in ﬂash memory can be upgraded
+Wake on motion
+Wakes up the receiver and the host while the receiver is in SW backup mode
+Weak signal compensation
+Improves position and speed accuracy with low signal levels
+Table 6: Firmware features
+Feature
+Description
+Anti-jamming
+RF interference and jamming detection and reporting
+Anti-spooﬁng
+Spooﬁng detection and reporting
+Conﬁguration lockdown
+Receiver conﬁguration can be locked by command
+Message integrity
+All messages signed with SHA-256
+Secure boot
+Only signed FW images executed
+Table 7: Security features
+1.6 Multi-mode dead reckoning
+u-blox’s proprietary multi-mode dead reckoning (MDR) consists of two operating modes: untethered
+dead reckoning (UDR) and automotive dead reckoning (ADR). UDR is based on sensor fusion
+dead reckoning (SFDR) technology, which combines multi-constellation GNSS measurements with
+the NEO-M9V-20B's internal 6-axis IMU only. Whereas ADR is based on SFDR technology, which
+combines multi-constellation GNSS measurements with the NEO-M9V-20B's internal 6-axis IMU
+and wheel tick or speed.
+The module has ready-to-use UDR and could perform advanced ADR when speed pulses from the
+vehicle’s wheel tick (WT) sensor are provided. Alternatively, the vehicle speed data can be provided
+as messages via a serial interface.
+UBX-21029781 - R04
+ 
+1 Functional description
+Page 6 of 23
+C1-Public
+
+
+================ [Page 7] ================
+NEO-M9V-20B - Data sheet
+Sensor data and GNSS signals are processed together, achieving 100% coverage, with highly
+accurate and continuous positioning even in GNSS-hostile environments (for example, urban
+canyons) or in case of GNSS signal absence (for example, tunnels and parking garages).
+For more details, see the Integration manual [1].
+The NEO-M9V-20B combines GNSS and dead reckoning measurements and computes a position
+solution at rates of up to 50 Hz in the priority navigation mode.
+The NEO-M9V-20B will work optimally in priority navigation mode when the IMU and WT sensors
+are calibrated, and the alignment angles are conﬁgured correctly.
+Dead reckoning allows navigation to commence as soon as power is applied to the module (that is,
+before a GNSS ﬁx has been established) under the following conditions:
+•
+The vehicle has not been moved while the module has been switched oﬀ.
+•
+At least a dead reckoning ﬁx was available when the vehicle was last used.
+•
+A backup supply has been available for the module since the vehicle was last used.
+The save-on-shutdown feature can be used when no backup supply is available. All information
+necessary will be saved to the ﬂash and read from the ﬂash upon restart.
+The advanced calibration handling feature can be used when no backup supply is available or
+the save-on-shutdown feature cannot be used. This feature allows the host to poll and later send
+the sensor initialization and calibration parameters.
+UBX-21029781 - R04
+ 
+1 Functional description
+Page 7 of 23
+C1-Public
+
+
+================ [Page 8] ================
+NEO-M9V-20B - Data sheet
+2 System description
+2.1 Block diagram
+Figure 1: NEO-M9V-20B block diagram
+UBX-21029781 - R04
+ 
+2 System description
+Page 8 of 23
+C1-Public
+
+
+================ [Page 9] ================
+NEO-M9V-20B - Data sheet
+3 Pin deﬁnition
+3.1 Pin assignment
+The pin assignment of the NEO-M9V-20B module is shown in Figure 2. The deﬁned conﬁguration
+of the PIOs is listed in Table 8.
+Figure 2: NEO-M9V-20B pin assignment
+Pin no.
+Name
+I/O
+Description
+1
+SAFEBOOT_N
+I
+SAFEBOOT_N (used for FW updates and reconﬁguration, leave open)9
+2
+D_SEL
+I
+Interface select (open or VCC = UART + I2C; GND = SPI)
+3
+TIMEPULSE
+O
+TIMEPULSE (1 PPS, TP2)9
+4
+WHEELTICK
+I
+Wheel-tick input
+5
+USB_DM
+I/O
+USB data (DM)
+6
+USB_DP
+I/O
+USB data (DP)
+7
+V_USB
+I
+USB supply
+8
+RESET_N
+I
+RESET (active low)
+9
+VCC_RF
+O
+Voltage for external LNA
+10
+GND
+I
+Ground
+11
+RF_IN
+I
+GNSS signal input
+12
+GND
+I
+Ground
+13
+GND
+I
+Ground
+14
+LNA_EN
+O
+Antenna/LNA control
+9 The receiver enters safeboot mode if this pin is low at start up. The SAFEBOOT_N pin is internally connected to
+TIMEPULSE pin through a 1 kΩ series resistor.
+UBX-21029781 - R04
+ 
+3 Pin deﬁnition
+Page 9 of 23
+C1-Public
+
+
+================ [Page 10] ================
+NEO-M9V-20B - Data sheet
+Pin no.
+Name
+I/O
+Description
+15
+DIR
+I
+Direction input for speed pulse
+16
+Reserved
+-
+Reserved
+17
+WOM
+O
+Wake on motion interrupt
+18
+SDA / SPI CS_N
+I/O
+I2C data if D_SEL = VCC (or open); SPI chip select if D_SEL = GND
+19
+SCL / SPI SLK
+I/O
+I2C clock if D_SEL = VCC (or open); SPI clock if D_SEL = GND
+20
+TXD / SPI MISO
+O
+UART output if D_SEL = VCC (or open); SPI MISO if D_SEL = GND
+21
+RXD / SPI MOSI
+I
+UART input if D_SEL = VCC (or open); SPI MOSI if D_SEL = GND
+22
+V_BCKP
+I
+Backup voltage supply
+23
+VCC
+I
+Supply voltage
+24
+GND
+I
+Ground
+Table 8: NEO-M9V-20B pin assignment
+For detailed information on the pin functions and characteristics see the integration manual [1].
+UBX-21029781 - R04
+ 
+3 Pin deﬁnition
+Page 10 of 23
+C1-Public
+
+
+================ [Page 11] ================
+NEO-M9V-20B - Data sheet
+4 Electrical speciﬁcation
+CAUTION Operating the device above one or more of the limiting values may cause permanent
+damage to the device. The values provided in this chapter are stress ratings. Extended exposure
+to the values outside the limits may eﬀect the device reliability.
+Where application information is given, it is advisory only and does not form part of the
+speciﬁcation.
+For detailed information on the device integration, see the integration manual [1].
+4.1 Absolute maximum ratings
+Parameter
+Symbol
+Condition
+Min
+Max
+Units
+Power supply voltage
+VCC
+-0.5
+3.6
+V
+Voltage ramp on VCC10
+20
+8000
+µs/V
+Backup battery voltage
+V_BCKP
+-0.5
+3.6
+V
+Voltage ramp on V_BCKP10
+20
+µs/V
+Input pin voltage
+Vin
+VCC ≤ 3.1 V
+-0.5
+VCC + 0.5
+V
+VCC > 3.1 V
+-0.5
+3.6
+V
+VCC_RF output current
+ICC_RF
+300
+mA
+Supply voltage USB
+V_USB
+–0.5
+3.6
+V
+USB signals
+USB_DM,
+USB_DP
+-0.5
+V_USB + 0.5 V
+Input power at RF_IN
+Prﬁn
+source impedance =
+50 Ω, continuous wave
+1311
+dBm
+Storage temperature
+Tstg
+-40
++85
+°C
+Table 9: Absolute maximum ratings
+CAUTION Risk of equipment damage. This product is not protected against overvoltage or
+reversed voltages. Use appropriate protection diodes to avoid voltage spikes exceeding the
+speciﬁed boundaries damaging the equipment.
+4.2 Operating conditions
+The values for the following operating conditions have been speciﬁed at 25°C ambient
+temperature. Extreme operating temperatures can signiﬁcantly impact the speciﬁed values. If
+an application operates near the min or max temperature limits, ensure the speciﬁed values are
+not exceeded.
+Parameter
+Symbol
+Min
+Typical
+Max
+Units
+Condition
+Power supply voltage
+VCC
+2.7
+3.0
+3.6
+V
+Backup battery voltage
+V_BCKP
+1.65
+3.6
+V
+Backup battery current12
+I_BCKP
+45
+µA
+V_BCKP = 3 V,
+VCC = 0 V
+SW backup current
+I_SWBCKP
+0.5
+mA
+Input pin voltage range
+Vin
+0
+VCC
+V
+10 Exceeding the ramp speed may permanently damage the device
+11 +13 dBm for outband; 0 dBm for inband
+12 To measure the I_BCKP the receiver should ﬁrst be switched on, i.e. VCC and V_BCKP is available. Then set VCC to 0 V
+while the V_BCKP remains available. Afterward measure the current consumption at the V_BCKP.
+UBX-21029781 - R04
+ 
+4 Electrical speciﬁcation
+Page 11 of 23
+C1-Public
+
+
+================ [Page 12] ================
+NEO-M9V-20B - Data sheet
+Parameter
+Symbol
+Min
+Typical
+Max
+Units
+Condition
+Digital IO pin low level input voltage
+Vil
+0.4
+V
+Digital IO pin high level input voltage
+Vih
+0.8 * VCC
+V
+Digital IO pin low level output voltage
+Vol
+0.4
+V
+Iol = 2 mA13
+Digital IO pin high level output voltage Voh
+VCC – 0.4
+V
+Ioh = 2 mA13
+Pull-up resistance for SCL, SDA
+Rpu
+7
+15
+30
+kΩ
+Pull-up resistance for D_SEL, RXD,
+TXD, SAFEBOOT_N, EXTINT
+Rpu
+30
+75
+130
+kΩ
+Pull-up resistance for RESET_N
+Rpu
+7
+10
+13
+kΩ
+VCC_RF voltage
+VCC_RF
+VCC - 0.1
+V
+VCC_RF output current
+ICC_RF
+50
+mA
+Receiver chain noise ﬁgure14
+NFtot
+5
+dB
+External gain (at RF_IN)
+Ext_gain
+30
+dB
+Operating temperature
+Topr
+-40
++25
++85
+°C
+Table 10: Operating conditions
+Operation beyond the speciﬁed operating conditions can aﬀect the device reliability.
+4.3 Indicative power requirements
+Table 11 provides examples of typical current requirements when using a cold start command. The
+given values are total system supply current for a possible application including RF and baseband
+sections.
+The actual power requirements vary depending on the FW version used, external circuitry,
+number of satellites tracked, signal strength, type and time of start, duration, and conditions
+of test.
+Symbol
+Parameter
+Conditions
+GPS+GLO+GAL+BDS
+GPS+GLO
+BDS+GLO
+Unit
+IPEAK
+Peak current
+Acquisition
+67
+63
+64
+mA
+IVCC
+15
+VCC current
+Acquisition
+53
+43
+47
+mA
+Tracking
+49
+43
+44
+mA
+Table 11: Currents to calculate the indicative power requirements
+All values in Table 11 are measured at 25 °C ambient temperature. SBAS and QZSS are activated
+in all measurements.
+13 TIMEPULSE has 4 mA current drive/sink capability
+14 Only valid for GPS
+15 Simulated signal, current measured at 3.0 V
+UBX-21029781 - R04
+ 
+4 Electrical speciﬁcation
+Page 12 of 23
+C1-Public
+
+
+================ [Page 13] ================
+NEO-M9V-20B - Data sheet
+5 Communications interfaces
+The NEO-M9V-20B has several communications interfaces, including UART, SPI, I2C and USB.
+All the inputs have internal pull-up resistors in normal operation and can be left open if not used.
+All the PIOs are supplied by VCC, therefore all the voltage levels of the PIO pins are related to VCC
+supply voltage.
+5.1 UART
+The NEO-M9V-20B has one UART interface which supports conﬁgurable baud rates. See the
+integration manual [1].
+Hardware ﬂow control is not supported.
+The UART1 is enabled if D_SEL pin of the module is left open or "high".
+Symbol
+Parameter
+Min
+Max
+Unit
+Ru
+Baud rate
+4800
+921600
+bit/s
+ΔTx
+Tx baud rate accuracy
+-1%
++1%
+-
+ΔRx
+Rx baud rate tolerance
+-2.5%
++2.5%
+-
+Table 12: NEO-M9V-20B UART speciﬁcations
+5.2 SPI
+The SPI interface is disabled by default. The SPI interface shares pins with UART and I2C and can be
+selected by setting D_SEL = 0. The SPI interface can be operated in slave mode only. The maximum
+transfer rate using SPI is 125 kB/s and the maximum SPI clock frequency is 5.5 MHz.
+The SPI timing parameters for slave operation are deﬁned in Figure 3. Default SPI conﬁguration is
+CPOL = 0 and CPHA = 0.
+Figure 3: NEO-M9V-20B SPI speciﬁcation mode 1: CPHA=0 SCK = 5.33 MHz
+Symbol
+Parameter
+Min
+Max
+Unit
+1
+CS deassertion hold time
+23
+-
+ns
+UBX-21029781 - R04
+ 
+5 Communications interfaces
+Page 13 of 23
+C1-Public
+
+
+================ [Page 14] ================
+NEO-M9V-20B - Data sheet
+Symbol
+Parameter
+Min
+Max
+Unit
+2
+Slave select time (CS to SCK)
+20
+-
+ns
+3
+SCK rise/fall time
+-
+7
+ns
+4
+SCK high time
+24
+-
+ns
+5
+SCK low time
+24
+-
+ns
+6
+Slave deselect time (SCK falling to CS)
+30
+-
+ns
+7
+Slave deselect time (CS to SCK)
+30
+-
+ns
+9
+CS high time
+32
+-
+ns
+10
+MOSI transition time
+-
+7
+ns
+11
+MOSI setup time
+16
+-
+ns
+12
+MOSI hold time
+24
+-
+ns
+Table 13: SPI slave input timing parameters 1 - 12
+Symbol
+Parameter
+Min
+Max
+Unit
+A
+MISO data valid time (CS)
+12
+40
+ns
+B
+MISO data valid time (SCK), weak driver mode
+15
+40
+ns
+C
+MISO data hold time
+100
+140
+ns
+D
+MISO rise/fall time, weak driver mode
+0
+5
+ns
+E
+MISO data disable lag time
+15
+35
+ns
+Table 14: SPI slave timing parameters A - E, 2 pF load capacitance
+Symbol
+Parameter
+Min
+Max
+Unit
+A
+MISO data valid time (CS)
+16
+55
+ns
+B
+MISO data valid time (SCK), weak driver mode
+20
+55
+ns
+C
+MISO data hold time
+100
+150
+ns
+D
+MISO rise/fall time, weak driver mode
+3
+20
+ns
+E
+MISO data disable lag time
+15
+35
+ns
+Table 15: SPI slave timing parameters A - E, 20 pF load capacitance
+Symbol
+Parameter
+Min
+Max
+Unit
+A
+MISO data valid time (CS)
+26
+85
+ns
+B
+MISO data valid time (SCK), weak driver mode
+30
+85
+ns
+C
+MISO data hold time
+110
+160
+ns
+D
+MISO rise/fall time, weak driver mode
+13
+45
+ns
+E
+MISO data disable lag time
+15
+35
+ns
+Table 16: SPI slave timing parameters A - E, 60 pF load capacitance
+5.3 I2C
+An I2C interface is available for communication with an external host CPU in I2C Fast-mode.
+Backwards compatibility with Standard-mode I2C bus operation is not supported. The interface can
+be operated only in slave mode with a maximum bit rate of 400 kbit/s. The interface can make use
+of clock stretching by holding the SCL line LOW to pause a transaction. In this case, the bit transfer
+rate is reduced. The maximum clock stretching time is 20 ms.
+UBX-21029781 - R04
+ 
+5 Communications interfaces
+Page 14 of 23
+C1-Public
+
+
+================ [Page 15] ================
+NEO-M9V-20B - Data sheet
+Figure 4: NEO-M9V-20B I2C slave speciﬁcation
+I2C Fast-mode
+Symbol
+Parameter
+Min
+Max
+Unit
+fSCL
+SCL clock frequency
+0
+400
+kHz
+tHD;STA
+Hold time (repeated) START condition
+0.6
+-
+µs
+tLOW
+Low period of the SCL clock
+1.3
+-
+µs
+tHIGH
+High period of the SCL clock
+0.6
+-
+µs
+tSU;STA
+Setup time for a repeated START condition
+0.6
+-
+µs
+tHD;DAT
+Data hold time
+0 16
+- 17
+µs
+tSU;DAT
+Data setup time
+100 18
+ns
+tr
+Rise time of both SDA and SCL signals
+-
+300 (for C = 400pF)
+ns
+tf
+Fall time of both SDA and SCL signals
+-
+300 (for C = 400pF)
+ns
+tSU;STO
+Setup time for STOP condition
+0.6
+-
+µs
+tBUF
+Bus-free time between a STOP and START
+condition
+1.3
+-
+µs
+tVD;DAT
+Data valid time
+-
+0.9 17
+µs
+tVD;ACK
+Data valid acknowledge time
+-
+0.9 17
+µs
+VnL
+Noise margin at the low level
+0.1 VCC
+-
+V
+VnH
+Noise margin at the high level
+0.2 VCC
+-
+V
+Table 17: NEO-M9V-20B I2C slave timings and speciﬁcations
+16 External device must provide a hold time of at least one transition time (max 300 ns) for the SDA signal (with respect to
+the min Vih of the SCL signal) to bridge the undeﬁned region of the falling edge of SCL.
+17 The maximum tHD;DAT must be less than the maximum tVD;DAT or tVD;ACK with a maximum of 0.9 µs by a transition time.
+This maximum must only be met if the device does not stretch the LOW period (tLOW) of the SCL signal. If the clock
+stretches the SCL, the data must be valid by the set-up time before it releases the clock.
+18 When the I2C slave is stretching the clock, the tSU;DAT of the ﬁrst bit of the next byte is 62.5 ns.
+UBX-21029781 - R04
+ 
+5 Communications interfaces
+Page 15 of 23
+C1-Public
+
+
+================ [Page 16] ================
+NEO-M9V-20B - Data sheet
+The I2C interface is only available with the UART default mode. If the SPI interface is selected
+by using D_SEL = 0, the I2C interface is not available.
+5.4 USB
+The USB 2.0 FS (full speed, 12 Mbit/s) interface can be used for host communication. Due to
+the hardware implementation, it may not be possible to certify the USB interface. The V_USB pin
+supplies the USB interface.
+5.5 WT (wheel tick) and DIR (forward/reverse indication)
+NEO-M9V-20B pin 4 (WT) is available as a wheel-tick input. The pin 15 (DIR) is available as a direction
+input (forward/reverse indication).
+By default the wheel tick count is derived from the rising edges of the WT input.
+For optimal performance the wheel tick resolution should be less than 5 cm. With the maximum
+supported wheel tick resolution is 40 cm.
+The DIR input shall indicate whether the vehicle is moving forwards or backwards.
+Alternatively, the vehicle WT (or speed) and DIR inputs can be provided via one of the communication
+interfaces with UBX-ESF-MEAS messages.
+For more details, see the integration manual [1].
+5.6 Default interface settings
+Interface
+Settings
+UART
+38400 baud, 8 bits, no parity bit, 1 stop bit.
+Output messages: NMEA GGA, GLL, GSA, GSV, RMC, VTG, TXT (no UBX).
+Input protocols: UBX and NMEA.
+USB
+Output messages activated as in UART. Input protocols available as in UART.
+I2C
+Output messages activated as in UART. Input protocols available as in UART.
+SPI
+Output messages activated as in UART. Input protocols available as in UART.
+Table 18: Default interface settings
+Refer to the applicable interface description [2] for information about further settings.
+By default the NEO-M9V-20B outputs NMEA messages that include satellite data for all GNSS
+bands being received. This results in a higher-than-before NMEA load output for each navigation
+period. Make sure the UART baud rate being used is suﬃcient for the selected navigation rate and
+the number of GNSS signals being received.
+UBX-21029781 - R04
+ 
+5 Communications interfaces
+Page 16 of 23
+C1-Public
+
+
+================ [Page 17] ================
+NEO-M9V-20B - Data sheet
+6 Mechanical speciﬁcation
+Figure 5: NEO-M9V-20B mechanical drawing
+Symbol
+Min (mm)
+Typical (mm)
+Max (mm)
+A
+15.9
+16.0
+16.1
+B
+12.1
+12.2
+12.3
+C
+2.2
+2.4
+2.6
+D
+0.9
+1.0
+1.1
+E
+1.0
+1.1
+1.2
+F
+2.9
+3.0
+3.1
+G
+0.9
+1.0
+1.1
+H
+-
+0.82
+-
+K
+0.7
+0.8
+0.9
+M
+0.8
+0.9
+1.0
+N
+0.4
+0.5
+0.6
+P*
+0.0
+-
+0.5
+The de-paneling residual tabs may be on either
+side (not both).
+Weight
+1.6 g
+Table 19: NEO-M9V-20B mechanical dimensions
+UBX-21029781 - R04
+ 
+6 Mechanical speciﬁcation
+Page 17 of 23
+C1-Public
+
+
+================ [Page 18] ================
+NEO-M9V-20B - Data sheet
+The mechanical picture of the de-paneling residual tabs (P*) is an approximate representation,
+shape and position may vary.
+Component keep-out area must consider that the de-paneling residual tabs can be on either
+side (not both).
+UBX-21029781 - R04
+ 
+6 Mechanical speciﬁcation
+Page 18 of 23
+C1-Public
+
+
+================ [Page 19] ================
+NEO-M9V-20B - Data sheet
+7 Reliability tests and approvals
+NEO-M9V-20B modules are based on AEC-Q100 qualiﬁed GNSS chips.
+Tests for product family qualiﬁcations comply with AEC-Q104 "Failure Mechanism Based Stress
+Test Qualiﬁcation For Multichip Modules (MCM) In Automotive Applications", and appropriate
+standards.
+7.1 Approvals
+NEO-M9V-20B complies with the essential requirements and other relevant provisions of the Radio Equipment Directive
+(RED) 2014/53/EU.
+NEO-M9V-20B complies with the Directive 2011/65/EU (EU RoHS 2) and its amendment Directive (EU) 2015/863 (EU RoHS
+3).
+The Declaration of Conformity (DoC) is available on the u-blox website.
+UBX-21029781 - R04
+ 
+7 Reliability tests and approvals
+Page 19 of 23
+C1-Public
+
+
+================ [Page 20] ================
+NEO-M9V-20B - Data sheet
+8 Labeling and ordering information
+This section provides information about product labeling and ordering. For information about
+moisture sensitivity level (MSL), product handling and soldering see the Integration manual [1].
+8.1 Product labeling
+The labeling of the NEO-M9V-20B modules provides product information and revision information.
+For more information contact u-blox sales.
+8.2 Explanation of product codes
+Three product code formats are used in the NEO-M9V-20B labels. The Product name used in
+documentation such as this data sheet identiﬁes all u-blox products, independent of packaging and
+quality grade.  The Ordering code includes options and quality, while the Type number includes the
+hardware and ﬁrmware versions.
+Table 20 below details these three formats.
+Format
+Structure
+Product code
+Product name
+PPP-TGV
+NEO-M9V
+Ordering code
+PPP-TGV-NNQ
+NEO-M9V-20B
+Type number
+PPP-TGV-NNQ-XX
+NEO-M9V-20B-00
+Table 20: Product code formats
+The parts of the product code are explained in Table 21.
+Code
+Meaning
+Example
+PPP
+Product family
+NEO
+TG
+Platform
+M9 = u-blox M9
+V
+Variant
+V = MDR Multi-mode Dead Reckoning
+NNQ
+Option / Quality grade
+NN: Option [00...99]
+Q: Grade, A = Automotive, B = Professional
+XX
+Product detail
+Describes hardware and ﬁrmware versions
+Table 21: Part identiﬁcation code
+8.3 Ordering codes
+Ordering code
+Product
+Remark
+NEO-M9V-20B
+u-blox NEO-M9V module, Professional grade
+Table 22: Product ordering codes
+Product changes aﬀecting form, ﬁt or function are documented by u-blox. For a list of Product
+Change Notiﬁcations (PCNs) see our website at: https://www.u-blox.com/en/product-resources.
+UBX-21029781 - R04
+ 
+8 Labeling and ordering information
+Page 20 of 23
+C1-Public
+
+
+================ [Page 21] ================
+NEO-M9V-20B - Data sheet
+Related documents
+[1]
+NEO-M9V Integration manual, UBX-21029776
+[2]
+MDR 2.16 Interface description, UBX-22037308
+[3]
+Packaging information for u-blox chips, modules, and antennas, UBX-14001652
+For regular updates to u-blox documentation and to receive product change notiﬁcations please
+register on our homepage https://www.u-blox.com.
+UBX-21029781 - R04
+ 
+Related documents
+Page 21 of 23
+C1-Public
+
+
+================ [Page 22] ================
+NEO-M9V-20B - Data sheet
+Revision history
+Revision
+Date
+Name
+Status / comments
+R01
+05-Jan-2022
+apai/ssid
+Advance information
+R02
+25-Mar-2022
+apai
+Initial production for NEO-M9V-20B-00
+R03
+30-May-2022
+ssid
+Mass production for NEO-M9V-20B-00
+R04
+16-Mar-2023
+njaf
+Mass production for NEO-M9V-20B-01 with MDR 2.16 FW
+Updated I2C and SPI timing speciﬁcations in section Communications
+interfaces
+Updated VCC_RF output current in table Absolute maximum ratings
+Added timepulse details in table Operating conditions
+Updated backup current in table Operating conditions
+Updated section Mechanical speciﬁcation
+UBX-21029781 - R04
+ 
+Revision history
+Page 22 of 23
+C1-Public
+
+
+================ [Page 23] ================
+NEO-M9V-20B - Data sheet
+Contact
+u-blox AG
+Address:
+Zürcherstrasse 68
+8800 Thalwil
+Switzerland
+For further support and contact information, visit us at www.u-blox.com/support.
+UBX-21029781 - R04
+ 
+Page 23 of 23
+C1-Public
+

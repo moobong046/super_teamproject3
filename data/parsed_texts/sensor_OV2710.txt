@@ -1,0 +1,204 @@
+
+================ [Page 1] ================
+OmniVision's True 1080p High Definition (HD)
+Video Image Sensor
+OV2710 full HD (1080p) product brief
+lead free
+available in 
+a lead-free 
+package
+The OV2710 is a true full HD (1080p) CMOS image 
+sensor designed specifically to deliver high-end HD 
+video to digital video camcorders, notebooks,
+PC webcam and other mobile applications. The
+1/2.7-inch OV2710 addresses the fast growing demand 
+for affordable, HD-quality digital video solutions for 
+video conferencing and recording.
+The OV2710 is among the very first no-compromise
+full HD (1080p) sensors available on the market, 
+meaning it offers the HD video format with a display 
+resolution of 1920 x 1080 pixels, operating at
+30 frames per second. Built with OmniVision's 
+proprietary 3 µm OmniPixel3-HS™ high sensitivity pixel 
+technology, the OV2710 delivers low-light sensitivity of
+3300 mV/lux-sec, S/N ratio of 39 dB, dark current of
+10 mV/sec and a peak dynamic range of 69 dB. This 
+enables cameras to operate in virtually every lighting 
+condition from bright daylight to nearly complete 
+darkness below 15 lux. 
+The OV2710 supports multiple platform architectures 
+and controllers with both parallel and MIPI interfaces. 
+By allowing system designers to leverage the same 
+opto-electrical design across various products and 
+multiple market segments, the OV2710 significantly 
+reduces product development time. OmniVision's 
+OmniPixel3-HS pixel technology has already been 
+proven in high quality webcam/video applications and is 
+now available in 1080p full HD in the OV2710.
+Find out more at www.ovt.com.
+TM
+TM
+Downloaded from Arrow.com.
+
+
+================ [Page 2] ================
+¬
+¬
+¬
+Notebooks
+PC Webcams
+Camcorders
+¬
+¬
+¬
+Digital Still Cameras
+Telepresence
+Portable Media Players
+Applications
+¬
+¬
+¬
+¬
+¬
+¬
+¬
+¬
+¬
+programmable controls: gain, exposure,
+frame rate, image size, horizontal
+mirror, vertical flip, cropping,
+windowing, and panning
+automatic image control functions:
+- automatic exposure (AEC)
+- automatic gain control (AGC)
+- automatic white balance (AWB)
+- automatic black level
+   calibration (ABLC)
+serial camera control bus (SCCB)
+lens correction (LENC)
+deffective pixel correction (DPC)
+support for digital video port (DVP)
+parallel output interface
+integrated auto focus filter
+support for one lane MIPI interface
+(up to 800 Mbps)
+support for 8-/10-bit RAW RGB output
+format
+support for image sizes:
+- 1080p at 30 fps
+- cropped 720p at 60 fps
+- VGA at 120 fps
+support for black sun cancellation
+embedded one-time programmable
+(OTP) memory
+on-chip phase lock loop (PLL)
+built-in 1.5V regulator for core
+¬
+¬
+¬
+¬
+¬
+Product Features
+¬ OV02710-A68A
+(color, lead-free, 68-pin CSP3)
+ 
+ 
+Ordering Information
+¬
+¬
+¬
+¬
+¬
+¬
+¬
+¬
+active array size: 1920 x 1080
+power supply:
+- analog: 3.0 ~ 3.6 V (3.3 V typical)
+- core: 1.425 ~ 1.575 V (1.5 V typical)
+- I/O: 1.7 ~ 3.6 V (1.8 V typical)
+temperature range:
+- operating: -30° C to 70° C
+- stable image: 0° C to 50° C
+output interfaces: 10-bit parallel/
+one lane MIPI
+output formats: 10-bit RAW RGB
+lens size: 1/2.7"
+lens chief ray angle: 23.6°
+input clock frequency: 6 ~ 27 MHz
+¬
+¬
+¬
+¬
+¬
+¬
+¬
+¬
+dynamic range: 69 dB
+maximum image transfer rate:
+- 1080p: 30 fps
+- 720p: 60 fps
+- VGA: 120 fps
+- QVGA: 240 fps
+sensitivity: 3300 mV/(lux-sec)
+shutter: rolling
+S/N ratio: 39 dB
+pixel size: 3 µm x 3 µm
+image area: 5856 µm x 3276 µm
+package dimensions:
+7465 µm x 5865 µm
+Product Specifications
+Version 1.1, December, 2009
+OmniVision reserves the right to make changes to their products or to discontinue any product or
+service without further notice. OmniVision and OmniPixel are registered trademarks of OmniVision
+Technologies, Inc. The OmniVision logo and OmniPixel3-HS are trademarks of OmniVision
+Technologies, Inc. All other trademarks are the property of their respective owners.
+4275 Burton Drive
+Santa Clara, CA 95054
+USA
+Tel: + 1 408 567 3000
+Fax: + 1 408 567 3001
+www.ovt.com
+TM
+TM
+OV2710
+Functional Block Diagram
+OV2710
+image sensor core
+image sensor
+processor
+image output
+interface
+PLL
+control register bank
+SCCB slave interface
+timing generator and system control logic
+gain control
+XVCLK
+PWDN
+RESETB
+TM
+VSYNC
+HREF
+PCLK
+SIOC
+SIOD
+AMP
+10-bit
+ADC
+MIPI
+DVP
+MCP/N
+MDP/N
+D[9:0]
+FIFO
+LENC
+DPC
+format
+column
+sample/hold
+row select
+image
+array
+Downloaded from Arrow.com.
+

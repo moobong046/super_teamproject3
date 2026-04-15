@@ -1,0 +1,3111 @@
+
+================ [Page 1] ================
+LM2596
+www.ti.com
+SNVS124C –NOVEMBER 1999–REVISED APRIL 2013
+LM2596 SIMPLE SWITCHER® Power Converter 150 kHz
+3A Step-Down Voltage Regulator
+Check for Samples: LM2596
+1FEATURES
+DESCRIPTION
+The LM2596 series of regulators are monolithic
+23•
+3.3V, 5V, 12V, and Adjustable Output Versions
+integrated circuits that provide all the active functions
+•
+Adjustable Version Output Voltage Range,
+for a step-down (buck) switching regulator, capable of
+1.2V to 37V ±4% Max Over Line and Load
+driving
+a
+3A
+load
+with
+excellent
+line
+and
+load
+Conditions
+regulation. These devices are available in fixed output
+voltages of 3.3V, 5V, 12V, and an adjustable output
+•
+Available in TO-220 and TO-263 Packages
+version.
+•
+Ensured 3A Output Load Current
+Requiring
+a
+minimum
+number
+of
+external
+•
+Input Voltage Range Up to 40V
+components, these regulators are simple to use and
+•
+Requires Only 4 External Components
+include internal frequency compensation , and a
+•
+Excellent Line and Load Regulation
+fixed-frequency oscillator.
+Specifications
+The LM2596 series operates at a switching frequency
+•
+150 kHz Fixed Frequency Internal Oscillator
+of
+150
+kHz
+thus
+allowing
+smaller
+sized
+filter
+•
+TTL Shutdown Capability
+components than what would be needed with lower
+frequency
+switching
+regulators.
+Available
+in
+a
+•
+Low Power Standby Mode, IQ Typically 80 μA
+standard
+5-lead
+TO-220
+package
+with
+several
+•
+High Efficiency
+different lead bend options, and a 5-lead TO-263
+•
+Uses Readily Available Standard Inductors
+surface mount package.
+•
+Thermal Shutdown and Current Limit
+A standard series of inductors are available from
+Protection
+several different manufacturers optimized for use with
+the LM2596 series. This feature greatly simplifies the
+APPLICATIONS
+design of switch-mode power supplies.
+•
+Simple High-Efficiency Step-Down (Buck)
+Other features include a ensured ±4% tolerance on
+Regulator
+output voltage under specified input voltage and
+output load conditions, and ±15% on the oscillator
+•
+On-Card Switching Regulators
+frequency. External shutdown is included, featuring
+•
+Positive to Negative Converter
+typically
+80
+μA
+standby
+current.
+Self
+protection
+features include a two stage frequency reducing
+current limit for the output switch and an over
+temperature shutdown for complete protection under
+fault conditions. (1)
+(1)
+† Patent Number 5,382,918.
+Typical Application
+(Fixed Output Voltage Versions)
+1
+Please be aware that an important notice concerning availability, standard warranty, and use in critical applications of
+Texas Instruments semiconductor products and disclaimers thereto appears at the end of this data sheet.
+2SIMPLE SWITCHER is a registered trademark of Texas Instruments.
+3All other trademarks are the property of their respective owners.
+PRODUCTION DATA information is current as of publication date.
+Copyright © 1999–2013, Texas Instruments Incorporated
+Products conform to specifications per the terms of the Texas
+Instruments standard warranty. Production processing does not
+necessarily include testing of all parameters.
+
+
+================ [Page 2] ================
+LM2596
+SNVS124C –NOVEMBER 1999–REVISED APRIL 2013
+www.ti.com
+Connection Diagrams
+Figure 1. 5-Lead Bent and Staggered Leads,
+Figure 2. 5-Lead DDPAK/TO-263 (S) Package
+Through Hole TO-220 (T) Package
+See Package Number KTT0005B
+See Package Number NDH0005D
+These devices have limited built-in ESD protection. The leads should be shorted together or the device placed in conductive foam
+during storage or handling to prevent electrostatic damage to the MOS gates.
+Absolute Maximum Ratings (1)(2)
+Maximum Supply Voltage
+45V
+ON /OFF Pin Input Voltage
+−0.3 ≤V ≤+25V
+Feedback Pin Voltage
+−0.3 ≤V ≤+25V
+Output Voltage to Ground (Steady State)
+−1V
+Power Dissipation
+Internally limited
+Storage Temperature Range
+−65°C to +150°C
+ESD Susceptibility
+Human Body Model (3)
+2 kV
+Lead Temperature
+DDPAK/TO-263 Package
+Vapor Phase (60 sec.)
++215°C
+Infrared (10 sec.)
++245°C
+TO-220 Package (Soldering, 10 sec.)
++260°C
+Maximum Junction Temperature
++150°C
+(1)
+Absolute Maximum Ratings indicate limits beyond which damage to the device may occur. Operating Ratings indicate conditions for
+which the device is intended to be functional, but do not ensure specific performance limits. For ensured specifications and test
+conditions, see the Electrical Characteristics.
+(2)
+If Military/Aerospace specified devices are required, please contact the Texas Instruments Sales Office/ Distributors for availability and
+specifications.
+(3)
+The human body model is a 100 pF capacitor discharged through a 1.5k resistor into each pin.
+Operating Conditions
+Temperature Range
+−40°C ≤TJ ≤+125°C
+Supply Voltage
+4.5V to 40V
+2
+Submit Documentation Feedback
+Copyright © 1999–2013, Texas Instruments Incorporated
+Product Folder Links: LM2596
+
+
+================ [Page 3] ================
+LM2596
+www.ti.com
+SNVS124C –NOVEMBER 1999–REVISED APRIL 2013
+LM2596-3.3 Electrical Characteristics
+Specifications with standard type face are for TJ = 25°C, and those with boldface type apply over full Operating
+Temperature Range
+LM2596-3.3
+Units
+Symbol
+Parameter
+Conditions
+Typ
+Limit
+(Limits)
+(1)
+(2)
+SYSTEM PARAMETERS (3) Test Circuit Figure 20
+VOUT
+Output Voltage
+4.75V ≤VIN ≤40V, 0.2A ≤ILOAD ≤3A
+3.3
+V
+3.168/3.135
+V(min)
+3.432/3.465
+V(max)
+η
+Efficiency
+VIN = 12V, ILOAD = 3A
+73
+%
+(1)
+Typical numbers are at 25°C and represent the most likely norm.
+(2)
+All limits specified at room temperature (standard type face) and at temperature extremes (bold type face). All room temperature limits
+are 100% production tested. All limits at temperature extremes are ensured via correlation using standard Statistical Quality Control
+(SQC) methods. All limits are used to calculate Average Outgoing Quality Level (AOQL).
+(3)
+External components such as the catch diode, inductor, input and output capacitors, and voltage programming resistors can affect
+switching regulator system performance. When the LM2596 is used as shown in the Figure 20 test circuit, system performance will be
+as shown in system parameters of Electrical Characteristics section.
+LM2596-5.0 Electrical Characteristics
+Specifications with standard type face are for TJ = 25°C, and those with boldface type apply over full Operating
+Temperature Range
+LM2596-5.0
+Units
+Symbol
+Parameter
+Conditions
+Typ
+Limit
+(Limits)
+(1)
+(2)
+SYSTEM PARAMETERS (3) Test Circuit Figure 20
+VOUT
+Output Voltage
+7V ≤VIN ≤40V, 0.2A ≤ILOAD ≤3A
+5.0
+V
+4.800/4.750
+V(min)
+5.200/5.250
+V(max)
+η
+Efficiency
+VIN = 12V, ILOAD = 3A
+80
+%
+(1)
+Typical numbers are at 25°C and represent the most likely norm.
+(2)
+All limits specified at room temperature (standard type face) and at temperature extremes (bold type face). All room temperature limits
+are 100% production tested. All limits at temperature extremes are ensured via correlation using standard Statistical Quality Control
+(SQC) methods. All limits are used to calculate Average Outgoing Quality Level (AOQL).
+(3)
+External components such as the catch diode, inductor, input and output capacitors, and voltage programming resistors can affect
+switching regulator system performance. When the LM2596 is used as shown in the Figure 20 test circuit, system performance will be
+as shown in system parameters of Electrical Characteristics section.
+LM2596-12 Electrical Characteristics
+Specifications with standard type face are for TJ = 25°C, and those with boldface type apply over full Operating
+Temperature Range
+LM2596-12
+Units
+Symbol
+Parameter
+Conditions
+Typ
+Limit
+(Limits)
+(1)
+(2)
+SYSTEM PARAMETERS (3) Test Circuit Figure 20
+VOUT
+Output Voltage
+15V ≤VIN ≤40V, 0.2A ≤ILOAD ≤3A
+12.0
+V
+11.52/11.40
+V(min)
+12.48/12.60
+V(max)
+η
+Efficiency
+VIN = 25V, ILOAD = 3A
+90
+%
+(1)
+Typical numbers are at 25°C and represent the most likely norm.
+(2)
+All limits specified at room temperature (standard type face) and at temperature extremes (bold type face). All room temperature limits
+are 100% production tested. All limits at temperature extremes are ensured via correlation using standard Statistical Quality Control
+(SQC) methods. All limits are used to calculate Average Outgoing Quality Level (AOQL).
+(3)
+External components such as the catch diode, inductor, input and output capacitors, and voltage programming resistors can affect
+switching regulator system performance. When the LM2596 is used as shown in the Figure 20 test circuit, system performance will be
+as shown in system parameters of Electrical Characteristics section.
+Copyright © 1999–2013, Texas Instruments Incorporated
+Submit Documentation Feedback
+3
+Product Folder Links: LM2596
+
+
+================ [Page 4] ================
+LM2596
+SNVS124C –NOVEMBER 1999–REVISED APRIL 2013
+www.ti.com
+LM2596-ADJ Electrical Characteristics
+Specifications with standard type face are for TJ = 25°C, and those with boldface type apply over full Operating
+Temperature Range
+LM2596-ADJ
+Units
+Symbol
+Parameter
+Conditions
+Typ
+Limit
+(Limits)
+(1)
+(2)
+SYSTEM PARAMETERS (3) Test Circuit Figure 20
+VFB
+Feedback Voltage
+4.5V ≤VIN ≤40V, 0.2A ≤ILOAD ≤3A
+1.230
+V
+VOUT programmed for 3V. Circuit of Figure 20
+1.193/1.180
+V(min)
+1.267/1.280
+V(max)
+η
+Efficiency
+VIN = 12V, VOUT = 3V, ILOAD = 3A
+73
+%
+(1)
+Typical numbers are at 25°C and represent the most likely norm.
+(2)
+All limits specified at room temperature (standard type face) and at temperature extremes (bold type face). All room temperature limits
+are 100% production tested. All limits at temperature extremes are ensured via correlation using standard Statistical Quality Control
+(SQC) methods. All limits are used to calculate Average Outgoing Quality Level (AOQL).
+(3)
+External components such as the catch diode, inductor, input and output capacitors, and voltage programming resistors can affect
+switching regulator system performance. When the LM2596 is used as shown in the Figure 20 test circuit, system performance will be
+as shown in system parameters of Electrical Characteristics section.
+All Output Voltage Versions Electrical Characteristics
+Specifications with standard type face are for TJ = 25°C, and those with boldface type apply over full Operating
+Temperature Range. Unless otherwise specified, VIN = 12V for the 3.3V, 5V, and Adjustable version and VIN = 24V for the
+12V version. ILOAD = 500 mA
+LM2596-XX
+Units
+Symbol
+Parameter
+Conditions
+Typ
+Limit
+(Limits)
+(1)
+(2)
+DEVICE PARAMETERS
+Ib
+Feedback Bias Current
+Adjustable Version Only, VFB = 1.3V
+10
+nA
+50/100
+nA (max)
+fO
+Oscillator Frequency
+See (3)
+150
+kHz
+127/110
+kHz(min)
+173/173
+kHz(max)
+VSAT
+Saturation Voltage
+IOUT = 3A (4) (5)
+1.16
+V
+1.4/1.5
+V(max)
+DC
+Max Duty Cycle (ON)
+See (5)
+100
+%
+Min Duty Cycle (OFF)
+See (6)
+0
+ICL
+Current Limit
+Peak Current (4)(5)
+4.5
+A
+3.6/3.4
+A(min)
+6.9/7.5
+A(max)
+IL
+Output Leakage Current
+Output = 0V (4)(6)
+50
+μA(max)
+Output = −1V (7)
+2
+mA
+30
+mA(max)
+IQ
+Quiescent Current
+See (6)
+5
+mA
+10
+mA(max)
+(1)
+Typical numbers are at 25°C and represent the most likely norm.
+(2)
+All limits specified at room temperature (standard type face) and at temperature extremes (bold type face). All room temperature limits
+are 100% production tested. All limits at temperature extremes are ensured via correlation using standard Statistical Quality Control
+(SQC) methods. All limits are used to calculate Average Outgoing Quality Level (AOQL).
+(3)
+The switching frequency is reduced when the second stage current limit is activated.
+(4)
+No diode, inductor or capacitor connected to output pin.
+(5)
+Feedback pin removed from output and connected to 0V to force the output transistor switch ON.
+(6)
+Feedback pin removed from output and connected to 12V for the 3.3V, 5V, and the ADJ. version, and 15V for the 12V version, to force
+the output transistor switch OFF.
+(7)
+VIN = 40V.
+4
+Submit Documentation Feedback
+Copyright © 1999–2013, Texas Instruments Incorporated
+Product Folder Links: LM2596
+
+
+================ [Page 5] ================
+LM2596
+www.ti.com
+SNVS124C –NOVEMBER 1999–REVISED APRIL 2013
+All Output Voltage Versions Electrical Characteristics (continued)
+Specifications with standard type face are for TJ = 25°C, and those with boldface type apply over full Operating
+Temperature Range. Unless otherwise specified, VIN = 12V for the 3.3V, 5V, and Adjustable version and VIN = 24V for the
+12V version. ILOAD = 500 mA
+LM2596-XX
+Units
+Symbol
+Parameter
+Conditions
+Typ
+Limit
+(Limits)
+(1)
+(2)
+ISTBY
+Standby Quiescent Current
+ON/OFF pin = 5V (OFF) (7)
+80
+μA
+200/250
+μA(max)
+θJC
+Thermal Resistance
+TO-220 or TO-263 Package, Junction to Case
+2
+°C/W
+θJA
+TO-220 Package, Junction to Ambient (8)
+50
+°C/W
+θJA
+TO-263 Package, Junction to Ambient (9)
+50
+°C/W
+θJA
+TO-263 Package, Junction to Ambient (10)
+30
+°C/W
+θJA
+TO-263 Package, Junction to Ambient (11)
+20
+°C/W
+ON/OFF CONTROL Test Circuit Figure 20
+ON /OFF Pin Logic Input
+1.3
+V
+VIH
+Threshold Voltage
+Low (Regulator ON)
+0.6
+V(max)
+VIL
+High (Regulator OFF)
+2.0
+V(min)
+IH
+ON /OFF Pin Input Current
+VLOGIC = 2.5V (Regulator OFF)
+5
+μA
+15
+μA(max)
+IL
+VLOGIC = 0.5V (Regulator ON)
+0.02
+μA
+5
+μA(max)
+(8)
+Junction to ambient thermal resistance (no external heat sink) for the TO-220 package mounted vertically, with the leads soldered to a
+printed circuit board with (1 oz.) copper area of approximately 1 in2.
+(9)
+Junction to ambient thermal resistance with the TO-263 package tab soldered to a single printed circuit board with 0.5 in2 of (1 oz.)
+copper area.
+(10) Junction to ambient thermal resistance with the TO-263 package tab soldered to a single sided printed circuit board with 2.5 in2 of (1
+oz.) copper area.
+(11) Junction to ambient thermal resistance with the TO-263 package tab soldered to a double sided printed circuit board with 3 in2 of (1 oz.)
+copper area on the LM2596S side of the board, and approximately 16 in2 of copper on the other side of the p-c board. See Application
+Information in this data sheet and the thermal model in Switchers Made Simple™version 4.3 software.
+Copyright © 1999–2013, Texas Instruments Incorporated
+Submit Documentation Feedback
+5
+Product Folder Links: LM2596
+
+
+================ [Page 6] ================
+LM2596
+SNVS124C –NOVEMBER 1999–REVISED APRIL 2013
+www.ti.com
+Typical Performance Characteristics
+(Circuit of Figure 20)
+Normalized
+Output Voltage
+Line Regulation
+Figure 3.
+Figure 4.
+Switch Saturation
+Efficiency
+Voltage
+Figure 5.
+Figure 6.
+Switch Current Limit
+Dropout Voltage
+Figure 7.
+Figure 8.
+6
+Submit Documentation Feedback
+Copyright © 1999–2013, Texas Instruments Incorporated
+Product Folder Links: LM2596
+
+
+================ [Page 7] ================
+LM2596
+www.ti.com
+SNVS124C –NOVEMBER 1999–REVISED APRIL 2013
+Typical Performance Characteristics (continued)
+(Circuit of Figure 20)
+Operating
+Shutdown
+Quiescent Current
+Quiescent Current
+Figure 9.
+Figure 10.
+Minimum Operating
+ON /OFF Threshold
+Supply Voltage
+Voltage
+Figure 11.
+Figure 12.
+ON /OFF Pin
+Current (Sinking)
+Switching Frequency
+Figure 13.
+Figure 14.
+Copyright © 1999–2013, Texas Instruments Incorporated
+Submit Documentation Feedback
+7
+Product Folder Links: LM2596
+
+
+================ [Page 8] ================
+LM2596
+SNVS124C –NOVEMBER 1999–REVISED APRIL 2013
+www.ti.com
+Typical Performance Characteristics (continued)
+(Circuit of Figure 20)
+Continuous Mode Switching Waveforms
+Feedback Pin
+VIN = 20V, VOUT = 5V, ILOAD = 2A
+Bias Current
+L = 32 μH, COUT = 220 μF, COUT ESR = 50 mΩ
+A: Output Pin Voltage, 10V/div.
+B: Inductor Current 1A/div.
+C: Output Ripple Voltage, 50 mV/div.
+Figure 15.
+Figure 16. Horizontal Time Base: 2 μs/div.
+Discontinuous Mode Switching Waveforms
+Load Transient Response for Continuous Mode
+VIN = 20V, VOUT = 5V, ILOAD = 500 mA
+VIN = 20V, VOUT = 5V, ILOAD = 500 mA to 2A
+L = 10 μH, COUT = 330 μF, COUT ESR = 45 mΩ
+L = 32 μH, COUT = 220 μF, COUT ESR = 50 mΩ
+A: Output Voltage, 100 mV/div. (AC)
+A: Output Pin Voltage, 10V/div.
+B: 500 mA to 2A Load Pulse
+B: Inductor Current 0.5A/div.
+C: Output Ripple Voltage, 100 mV/div.
+Figure 17. Horizontal Time Base: 2 μs/div.
+Figure 18. Horizontal Time Base: 100 μs/div.
+Load Transient Response for Discontinuous Mode
+VIN = 20V, VOUT = 5V, ILOAD = 500 mA to 2A
+L = 10 μH, COUT = 330 μF, COUT ESR = 45 mΩ
+A: Output Voltage, 100 mV/div. (AC)
+B: 500 mA to 2A Load Pulse
+Figure 19. Horizontal Time Base: 200 μs/div.
+8
+Submit Documentation Feedback
+Copyright © 1999–2013, Texas Instruments Incorporated
+Product Folder Links: LM2596
+
+
+================ [Page 9] ================
+LM2596
+www.ti.com
+SNVS124C –NOVEMBER 1999–REVISED APRIL 2013
+Test Circuit and Layout Guidelines
+Fixed Output Voltage Versions
+CIN
+—470 μF, 50V, Aluminum Electrolytic Nichicon “PL Series”
+COUT
+—220 μF, 25V Aluminum Electrolytic, Nichicon “PL Series”
+D1
+—5A, 40V Schottky Rectifier, 1N5825
+L1
+—68 μH, L38
+Adjustable Output Voltage Versions
+where VREF = 1.23V
+Select R1 to be approximately 1 kΩ, use a 1% resistor for best stability.
+CIN
+—470 μF, 50V, Aluminum Electrolytic Nichicon “PL Series”
+COUT
+—220 μF, 35V Aluminum Electrolytic, Nichicon “PL Series”
+D1
+—5A, 40V Schottky Rectifier, 1N5825
+L1
+—68 μH, L38
+R1
+—1 kΩ, 1%
+CFF
+—See Application Information Section
+Figure 20. Standard Test Circuits and Layout Guides
+As in any switching regulator, layout is very important. Rapidly switching currents associated with wiring
+inductance can generate voltage transients which can cause problems. For minimal inductance and ground
+loops, the wires indicated by heavy lines should be wide printed circuit traces and should be kept as short
+as possible. For best results, external components should be located as close to the switcher lC as possible
+using ground plane construction or single point grounding.
+If open core inductors are used, special care must be taken as to the location and positioning of this type of
+inductor. Allowing the inductor flux to intersect sensitive feedback, lC groundpath and COUT wiring can cause
+problems.
+When using the adjustable version, special care must be taken as to the location of the feedback resistors and
+the associated wiring. Physically locate both resistors near the IC, and route the wiring away from the inductor,
+especially an open core type of inductor. (See Application Information section for more information.)
+Copyright © 1999–2013, Texas Instruments Incorporated
+Submit Documentation Feedback
+9
+Product Folder Links: LM2596
+
+
+================ [Page 10] ================
+LM2596
+SNVS124C –NOVEMBER 1999–REVISED APRIL 2013
+www.ti.com
+LM2596 Series Buck Regulator Design Procedure (Fixed Output)
+PROCEDURE (Fixed Output Voltage Version)
+EXAMPLE (Fixed Output Voltage Version)
+Given:
+Given:
+VOUT = Regulated Output Voltage (3.3V, 5V or 12V)
+VOUT = 5V
+VIN(max) = Maximum DC Input Voltage
+VIN(max) = 12V
+ILOAD(max) = Maximum Load Current
+ILOAD(max) = 3A
+1. Inductor Selection (L1)
+1. Inductor Selection (L1)
+A. Select the correct inductor value selection guide from Figures A. Use the inductor selection guide for the 5V version shown in
+Figure 21, Figure 22, or Figure 23. (Output voltages of 3.3V, 5V, or
+Figure 22.
+12V respectively.) For all other voltages, see the Design Procedure
+B. From the inductor value selection guide shown in Figure 22, the
+for the adjustable version.
+inductance region intersected by the 12V horizontal line and the 3A
+B. From the inductor value selection guide, identify the inductance
+vertical line is 33 μH, and the inductor code is L40.
+region intersected by the Maximum Input Voltage line and the
+C. The inductance value required is 33 μH. From the table in
+Maximum Load Current line. Each region is identified by an
+Table 3, go to the L40 line and choose an inductor part number from
+inductance value and an inductor code (LXX).
+any of the four manufacturers shown. (In most instance, both
+C. Select an appropriate inductor from the four manufacturer's part through hole and surface mount inductors are available.)
+numbers listed in Table 3.
+2. Output Capacitor Selection (COUT)
+2. Output Capacitor Selection (COUT)
+A. In the majority of applications, low ESR (Equivalent Series
+A. See section on output capacitors in Application Information
+Resistance) electrolytic capacitors between 82 μF and 820 μF and
+section.
+low ESR solid tantalum capacitors between 10 μF and 470 μF B. From the quick design component selection table shown in
+provide the best results. This capacitor should be located close to
+Table 1, locate the 5V output voltage section. In the load current
+the IC using short capacitor leads and short copper traces. Do not column, choose the load current line that is closest to the current
+use capacitors larger than 820 μF .
+needed in your application, for this example, use the 3A line. In the
+For additional information, see section on output capacitors in maximum input voltage column, select the line that covers the input
+Application Information section.
+voltage needed in your application, in this example, use the 15V line.
+Continuing on this line are recommended inductors and capacitors
+B. To simplify the capacitor selection procedure, refer to the quick
+that will provide the best overall performance.
+design component selection table shown in Table 1. This table
+contains different input voltages, output voltages, and load currents, The capacitor list contains both through hole electrolytic and surface
+and lists various inductors and output capacitors that will provide the
+mount
+tantalum
+capacitors
+from
+four
+different
+capacitor
+best design solutions.
+manufacturers. It is recommended that both the manufacturers and
+the manufacturer's series that are listed in the table be used.
+C. The capacitor voltage rating for electrolytic capacitors should be
+at least 1.5 times greater than the output voltage, and often much
+In
+this
+example
+aluminum
+electrolytic
+capacitors
+from
+several
+higher
+voltage
+ratings
+are
+needed
+to
+satisfy
+the
+low
+ESR different manufacturers are available with the range of ESR numbers
+requirements for low output ripple voltage.
+needed.
+D. For computer aided design software, see Switchers Made
+330 μF
+35V
+Panasonic HFQ Series
+Simple™version 4.3 or later.
+330 μF
+35V
+Nichicon PL Series
+C. For a 5V output, a capacitor voltage rating at least 7.5V or more
+is needed. But even a low ESR, switching grade, 220 μF 10V
+aluminum electrolytic capacitor would exhibit approximately 225 mΩ
+of ESR (see the curve in Figure 26 for the ESR vs voltage rating).
+This amount of ESR would result in relatively high output ripple
+voltage. To reduce the ripple to 1% of the output voltage, or less, a
+capacitor with a higher value or with a higher voltage rating (lower
+ESR) should be selected. A 16V or 25V capacitor will reduce the
+ripple voltage by approximately half.
+10
+Submit Documentation Feedback
+Copyright © 1999–2013, Texas Instruments Incorporated
+Product Folder Links: LM2596
+
+
+================ [Page 11] ================
+LM2596
+www.ti.com
+SNVS124C –NOVEMBER 1999–REVISED APRIL 2013
+PROCEDURE (Fixed Output Voltage Version)
+EXAMPLE (Fixed Output Voltage Version)
+3. Catch Diode Selection (D1)
+3. Catch Diode Selection (D1)
+A. The catch diode current rating must be at least 1.3 times greater
+A. Refer to the table shown in Table 6. In this example, a 5A, 20V,
+than the maximum load current. Also, if the power supply design 1N5823 Schottky diode will provide the best performance, and will
+must withstand a continuous output short, the diode should have a
+not be overstressed even for a shorted output.
+current rating equal to the maximum current limit of the LM2596. The
+most stressful condition for this diode is an overload or shorted
+output condition.
+B. The reverse voltage rating of the diode should be at least 1.25
+times the maximum input voltage.
+C. This diode must be fast (short reverse recovery time) and must be
+located close to the LM2596 using short leads and short printed
+circuit traces. Because of their fast switching speed and low forward
+voltage drop, Schottky diodes provide the best performance and
+efficiency, and should be the first choice, especially in low output
+voltage applications. Ultra-fast recovery, or High-Efficiency rectifiers
+also provide good results. Ultra-fast recovery diodes typically have
+reverse recovery times of 50 ns or less. Rectifiers such as the
+1N5400 series are much too slow and should not be used.
+4. Input Capacitor (CIN)
+4. Input Capacitor (CIN)
+A low ESR aluminum or tantalum bypass capacitor is needed
+The important parameters for the Input capacitor are the input
+between the input pin and ground pin to prevent large voltage
+voltage rating and the RMS current rating. With a nominal input
+transients from appearing at the input. This capacitor should be voltage of 12V, an aluminum electrolytic capacitor with a voltage
+located close to the IC using short leads. In addition, the RMS
+rating greater than 18V (1.5 × VIN) would be needed. The next
+current rating of the input capacitor should be selected to be at least
+higher capacitor voltage rating is 25V.
+½ the DC load current. The capacitor manufacturers data sheet must
+The RMS current rating requirement for the input capacitor in a buck
+be checked to assure that this current rating is not exceeded. The
+regulator is approximately ½ the DC load current. In this example,
+curve shown in Figure 25 shows typical RMS current ratings for with a 3A load, a capacitor with a RMS current rating of at least 1.5A
+several different aluminum electrolytic capacitor values.
+is needed. The curves shown in Figure 25 can be used to select an
+For an aluminum electrolytic, the capacitor voltage rating should be
+appropriate input capacitor. From the curves, locate the 35V line and
+approximately 1.5 times the maximum input voltage. Caution must note which capacitor values have RMS current ratings greater than
+be exercised if solid tantalum capacitors are used (see Application 1.5A. A 680 μF/35V capacitor could be used.
+Information on input capacitor). The tantalum capacitor voltage rating
+For a through hole design, a 680 μF/35V electrolytic capacitor
+should be 2 times the maximum input voltage and it is recommended
+(Panasonic HFQ series or Nichicon PL series or equivalent) would
+that they be surge current tested by the manufacturer.
+be adequate. other types or other manufacturers capacitors can be
+Use caution when using ceramic capacitors for input bypassing,
+used provided the RMS ripple current ratings are adequate.
+because it may cause severe ringing at the VIN pin.
+For surface mount designs, solid tantalum capacitors can be used,
+For additional information, see section on input capacitors in but caution must be exercised with regard to the capacitor surge
+Application Information section.
+current rating (see Application Information on input capacitors in this
+data sheet). The TPS series available from AVX, and the 593D
+series from Sprague are both surge current tested.
+Table 1. LM2596 Fixed Voltage Quick Design Component Selection Table
+Conditions
+Inductor
+Output Capacitor
+Through Hole Electrolytic
+Surface Mount Tantalum
+Output
+Load
+Max Input
+Panasonic
+Nichicon
+AVX TPS
+Sprague
+Inductance
+Inductor
+Voltage
+Current
+Voltage
+HFQ Series
+PL Series
+Series
+595D Series
+(μH)
+(#)
+(V)
+(A)
+(V)
+(μF/V)
+(μF/V)
+(μF/V)
+(μF/V)
+3.3
+3
+5
+22 L41
+470/25
+560/16
+330/6.3
+390/6.3
+7
+22 L41
+560/35
+560/35
+330/6.3
+390/6.3
+10
+22 L41
+680/35
+680/35
+330/6.3
+390/6.3
+40
+33 L40
+560/35
+470/35
+330/6.3
+390/6.3
+6
+22 L33
+470/25
+470/35
+330/6.3
+390/6.3
+2
+10
+33 L32
+330/35
+330/35
+330/6.3
+390/6.3
+40
+47 L39
+330/35
+270/50
+220/10
+330/10
+Copyright © 1999–2013, Texas Instruments Incorporated
+Submit Documentation Feedback
+11
+Product Folder Links: LM2596
+
+
+================ [Page 12] ================
+LM2596
+SNVS124C –NOVEMBER 1999–REVISED APRIL 2013
+www.ti.com
+Table 1. LM2596 Fixed Voltage Quick Design Component Selection Table (continued)
+Conditions
+Inductor
+Output Capacitor
+Through Hole Electrolytic
+Surface Mount Tantalum
+Output
+Load
+Max Input
+Panasonic
+Nichicon
+AVX TPS
+Sprague
+Inductance
+Inductor
+Voltage
+Current
+Voltage
+HFQ Series
+PL Series
+Series
+595D Series
+(μH)
+(#)
+(V)
+(A)
+(V)
+(μF/V)
+(μF/V)
+(μF/V)
+(μF/V)
+5
+3
+8
+22 L41
+470/25
+560/16
+220/10
+330/10
+10
+22 L41
+560/25
+560/25
+220/10
+330/10
+15
+33 L40
+330/35
+330/35
+220/10
+330/10
+40
+47 L39
+330/35
+270/35
+220/10
+330/10
+9
+22 L33
+470/25
+560/16
+220/10
+330/10
+2
+20
+68 L38
+180/35
+180/35
+100/10
+270/10
+40
+68 L38
+180/35
+180/35
+100/10
+270/10
+12
+3
+15
+22 L41
+470/25
+470/25
+100/16
+180/16
+18
+33 L40
+330/25
+330/25
+100/16
+180/16
+30
+68 L44
+180/25
+180/25
+100/16
+120/20
+40
+68 L44
+180/35
+180/35
+100/16
+120/20
+15
+33 L32
+330/25
+330/25
+100/16
+180/16
+2
+20
+68 L38
+180/25
+180/25
+100/16
+120/20
+40
+150 L42
+82/25
+82/25
+68/20
+68/25
+LM2596 Series Buck Regulator Design Procedure (Adjustable Output)
+PROCEDURE (Adjustable Output Voltage Version)
+EXAMPLE (Adjustable Output Voltage Version)
+Given:
+Given:
+VOUT = Regulated Output Voltage
+VOUT = 20V
+VIN(max) = Maximum Input Voltage
+VIN(max) = 28V
+ILOAD(max) = Maximum Load Current
+ILOAD(max) = 3A
+F = Switching Frequency (Fixed at a nominal 150 kHz).
+F = Switching Frequency (Fixed at a nominal 150 kHz).
+1. Programming Output Voltage (Selecting R1 and R2, as shown in 1. Programming Output Voltage (Selecting R1 and R2, as shown in
+Figure 20 )
+Figure 20 )
+Use the following formula to select the appropriate resistor values.
+Select R1 to be 1 kΩ, 1%. Solve for R2.
+(3)
+(1)
+R2 = 1k (16.26 −1) = 15.26k, closest 1% value is 15.4 kΩ.
+Select a value for R1 between 240Ω and 1.5 kΩ. The lower resistor
+values minimize noise pickup in the sensitive feedback pin. (For the
+R2 = 15.4 kΩ.
+lowest temperature coefficient and the best stability with time, use
+1% metal film resistors.)
+(2)
+12
+Submit Documentation Feedback
+Copyright © 1999–2013, Texas Instruments Incorporated
+Product Folder Links: LM2596
+
+
+================ [Page 13] ================
+LM2596
+www.ti.com
+SNVS124C –NOVEMBER 1999–REVISED APRIL 2013
+PROCEDURE (Adjustable Output Voltage Version)
+EXAMPLE (Adjustable Output Voltage Version)
+2. Inductor Selection (L1)
+2. Inductor Selection (L1)
+A. Calculate the inductor Volt • microsecond constant E • T (V • μs),
+A. Calculate the inductor Volt • microsecond constant
+from the following formula:
+(E • T),
+where
+(5)
+•
+VSAT = internal switch saturation voltage =
+B. E • T = 34.2 (V • μs)
+1.16V
+C. ILOAD(max) = 3A
+•
+VD = diode forward voltage drop = 0.5V
+(4) D. From the inductor value selection guide shown in Figure 24, the
+inductance region intersected by the 34 (V • μs) horizontal line and
+the 3A vertical line is 47 μH, and the inductor code is L39.
+B. Use the E • T value from the previous formula and match it with
+the E • T number on the vertical axis of the Inductor Value Selection E. From the table in Table 3, locate line L39, and select an inductor
+Guide shown in Figure 24.
+part number from the list of manufacturers part numbers.
+C. on the horizontal axis, select the maximum load current.
+D. Identify the inductance region intersected by the E • T value and
+the Maximum Load Current value. Each region is identified by an
+inductance value and an inductor code (LXX).
+E. Select an appropriate inductor from the four manufacturer's part
+numbers listed in Table 3.
+3. Output Capacitor Selection (COUT)
+3. Output Capacitor SeIection (COUT)
+A. In the majority of applications, low ESR electrolytic or solid A. See section on COUT in Application Information section.
+tantalum capacitors between 82 μF and 820 μF provide the best
+B. From the quick design table shown in Table 2, locate the output
+results. This capacitor should be located close to the IC using short voltage column. From that column, locate the output voltage closest
+capacitor leads and short copper traces. Do not use capacitors to the output voltage in your application. In this example, select the
+larger than 820 μF. For additional information, see section on
+24V line. Under the OUTPUT
+CAPACITOR section,
+select
+a
+output capacitors in Application Information section.
+capacitor from the list of through hole electrolytic or surface mount
+B. To simplify the capacitor selection procedure, refer to the quick
+tantalum types from four different capacitor manufacturers. It is
+design table shown in Table 2. This table contains different output
+recommended that both the manufacturers and the manufacturers
+voltages, and lists various output capacitors that will provide the best
+series that are listed in the table be used.
+design solutions.
+In this example, through hole aluminum electrolytic capacitors from
+C. The capacitor voltage rating should be at least 1.5 times greater several different manufacturers are available.
+than the output voltage, and often much higher voltage ratings are
+220 μF/35V Panasonic HFQ Series
+needed to satisfy the low ESR requirements needed for low output
+150 μF/35V Nichicon PL Series
+ripple voltage.
+C. For a 20V output, a capacitor rating of at least 30V or more is
+needed. In this example, either a 35V or 50V capacitor would work.
+A 35V rating was chosen, although a 50V rating could also be used
+if a lower output ripple voltage is needed.
+Other manufacturers or other types of capacitors may also be used,
+provided the capacitor specifications (especially the 100 kHz ESR)
+closely match the types listed in the table. Refer to the capacitor
+manufacturers data sheet for this information.
+4. Feedforward Capacitor (CFF) (See Figure 20)
+4. Feedforward Capacitor (CFF)
+For output voltages greater than approximately 10V, an additional
+The table shown in Table 2 contains feed forward capacitor values
+capacitor
+is
+required.
+The
+compensation
+capacitor
+is
+typically
+for various output voltages. In this example, a 560 pF capacitor is
+between 100 pF and 33 nF, and is wired in parallel with the output
+needed.
+voltage setting resistor, R2. It provides additional stability for high
+output voltages, low input-output voltages, and/or very low ESR
+output capacitors, such as solid tantalum capacitors.
+(6)
+This capacitor type can be ceramic, plastic, silver mica, etc.
+(Because of the unstable characteristics of ceramic capacitors made
+with Z5U material, they are not recommended.)
+Copyright © 1999–2013, Texas Instruments Incorporated
+Submit Documentation Feedback
+13
+Product Folder Links: LM2596
+
+
+================ [Page 14] ================
+LM2596
+SNVS124C –NOVEMBER 1999–REVISED APRIL 2013
+www.ti.com
+PROCEDURE (Adjustable Output Voltage Version)
+EXAMPLE (Adjustable Output Voltage Version)
+5. Catch Diode Selection (D1)
+5. Catch Diode Selection (D1)
+A. The catch diode current rating must be at least 1.3 times greater
+A. Refer to the table shown in Table 6. Schottky diodes provide the
+than the maximum load current. Also, if the power supply design best performance, and in this example a 5A, 40V, 1N5825 Schottky
+must withstand a continuous output short, the diode should have a
+diode would be a good choice. The 5A diode rating is more than
+current rating equal to the maximum current limit of the LM2596. The
+adequate and will not be overstressed even for a shorted output.
+most stressful condition for this diode is an overload or shorted
+output condition.
+B. The reverse voltage rating of the diode should be at least 1.25
+times the maximum input voltage.
+C. This diode must be fast (short reverse recovery time) and must be
+located close to the LM2596 using short leads and short printed
+circuit traces. Because of their fast switching speed and low forward
+voltage drop, Schottky diodes provide the best performance and
+efficiency, and should be the first choice, especially in low output
+voltage applications. Ultra-fast recovery, or High-Efficiency rectifiers
+are also a good choice, but some types with an abrupt turn-off
+characteristic may cause instability or EMl problems. Ultra-fast
+recovery diodes typically have reverse recovery times of 50 ns or
+less. Rectifiers such as the 1N4001 series are much too slow and
+should not be used.
+6. Input Capacitor (CIN)
+6. Input Capacitor (CIN)
+A low ESR aluminum or tantalum bypass capacitor is needed
+The important parameters for the Input capacitor are the input
+between the input pin and ground to prevent large voltage transients
+voltage rating and the RMS current rating. With a nominal input
+from appearing at the input. In addition, the RMS current rating of voltage of 28V, an aluminum electrolytic aluminum electrolytic
+the input capacitor should be selected to be at least ½ the DC load capacitor with a voltage rating greater than 42V (1.5 × VIN) would be
+current. The capacitor manufacturers data sheet must be checked to needed. Since the the next higher capacitor voltage rating is 50V, a
+assure that this current rating is not exceeded. The curve shown in
+50V capacitor should be used. The capacitor voltage rating of (1.5 ×
+Figure 25 shows typical RMS current ratings for several different
+VIN) is a conservative guideline, and can be modified somewhat if
+aluminum electrolytic capacitor values.
+desired.
+This capacitor should be located close to the IC using short leads The RMS current rating requirement for the input capacitor of a buck
+and the voltage rating should be approximately 1.5 times the
+regulator is approximately ½ the DC load current. In this example,
+maximum input voltage.
+with a 3A load, a capacitor with a RMS current rating of at least 1.5A
+is needed.
+If solid tantalum input capacitors are used, it is recomended that they
+be surge current tested by the manufacturer.
+The curves shown in Figure 25 can be used to select an appropriate
+input capacitor. From the curves, locate the 50V line and note which
+Use caution when using a high dielectric constant ceramic capacitor
+capacitor values have RMS current ratings greater than 1.5A. Either
+for input bypassing, because it may cause severe ringing at the VIN a 470 μF or 680 μF, 50V capacitor could be used.
+pin.
+For a through hole design, a 680 μF/50V electrolytic capacitor
+For additional information, see section on input capacitors in (Panasonic HFQ series or Nichicon PL series or equivalent) would
+Application Information section.
+be adequate. Other types or other manufacturers capacitors can be
+used provided the RMS ripple current ratings are adequate.
+For surface mount designs, solid tantalum capacitors can be used,
+but caution must be exercised with regard to the capacitor surge
+current rting (see Application Information or input capacitors in this
+data sheet). The TPS series available from AVX, and the 593D
+series from Sprague are both surge current tested.
+To further simplify the buck regulator design procedure, Texas
+Instruments is making available computer design software to be
+used
+with
+the
+Simple
+Switcher
+line
+ot
+switching
+regulators.
+Switchers Made Simple (version 4.3 or later) is available on a 3½″
+diskette for IBM compatible computers.
+LM2596 Series Buck Regulator Design Procedure (Adjustable Output)
+Table 2. Output Capacitor and Feedforward Capacitor Selection Table
+Output
+Through Hole Output Capacitor
+Surface Mount Output Capacitor
+Voltage
+Panasonic
+Nichicon PL
+AVX TPS
+Sprague
+Feedforward
+Feedforward
+(V)
+HFQ Series
+Series
+Series
+595D Series
+Capacitor
+Capacitor
+(μF/V)
+(μF/V)
+(μF/V)
+(μF/V)
+2
+820/35
+820/35
+33 nF
+330/6.3
+470/4
+33 nF
+4
+560/35
+470/35
+10 nF
+330/6.3
+390/6.3
+10 nF
+6
+470/25
+470/25
+3.3 nF
+220/10
+330/10
+3.3 nF
+14
+Submit Documentation Feedback
+Copyright © 1999–2013, Texas Instruments Incorporated
+Product Folder Links: LM2596
+
+
+================ [Page 15] ================
+LM2596
+www.ti.com
+SNVS124C –NOVEMBER 1999–REVISED APRIL 2013
+Table 2. Output Capacitor and Feedforward Capacitor Selection Table (continued)
+Output
+Through Hole Output Capacitor
+Surface Mount Output Capacitor
+Voltage
+Panasonic
+Nichicon PL
+AVX TPS
+Sprague
+Feedforward
+Feedforward
+(V)
+HFQ Series
+Series
+Series
+595D Series
+Capacitor
+Capacitor
+(μF/V)
+(μF/V)
+(μF/V)
+(μF/V)
+9
+330/25
+330/25
+1.5 nF
+100/16
+180/16
+1.5 nF
+1 2
+330/25
+330/25
+1 nF
+100/16
+180/16
+1 nF
+1 5
+220/35
+220/35
+680 pF
+68/20
+120/20
+680 pF
+2 4
+220/35
+150/35
+560 pF
+33/25
+33/25
+220 pF
+2 8
+100/50
+100/50
+390 pF
+10/35
+15/50
+220 pF
+LM2596 Series Buck Regulator Design Procedure
+INDUCTOR VALUE SELECTION GUIDES
+(For Continuous Mode Operation)
+Figure 21. LM2596-3.3
+Figure 22. LM2596-5.0
+Figure 23. LM2596-12
+Figure 24. LM2596-ADJ
+Copyright © 1999–2013, Texas Instruments Incorporated
+Submit Documentation Feedback
+15
+Product Folder Links: LM2596
+
+
+================ [Page 16] ================
+LM2596
+SNVS124C –NOVEMBER 1999–REVISED APRIL 2013
+www.ti.com
+Table 3. Inductor Manufacturers Part Numbers
+Inductance
+Current
+Schott
+Renco
+Pulse Engineering
+Coilcraft
+(μH)
+(A)
+Through
+Surface
+Through
+Surface
+Through
+Surface
+Surface
+Hole
+Mount
+Hole
+Mount
+Hole
+Mount
+Mount
+L15
+22
+0.99
+67148350
+67148460
+RL-1284-22-43
+RL1500-22
+PE-53815
+PE-53815-S
+DO3308-223
+L21
+68
+0.99
+67144070
+67144450
+RL-5471-5
+RL1500-68
+PE-53821
+PE-53821-S
+DO3316-683
+L22
+47
+1.17
+67144080
+67144460
+RL-5471-6
+—
+PE-53822
+PE-53822-S
+DO3316-473
+L23
+33
+1.40
+67144090
+67144470
+RL-5471-7
+—
+PE-53823
+PE-53823-S
+DO3316-333
+L24
+22
+1.70
+67148370
+67148480
+RL-1283-22-43
+—
+PE-53824
+PE-53825-S
+DO3316-223
+L25
+15
+2.10
+67148380
+67148490
+RL-1283-15-43
+—
+PE-53825
+PE-53824-S
+DO3316-153
+L26
+330
+0.80
+67144100
+67144480
+RL-5471-1
+—
+PE-53826
+PE-53826-S
+DO5022P-334
+L27
+220
+1.00
+67144110
+67144490
+RL-5471-2
+—
+PE-53827
+PE-53827-S
+DO5022P-224
+L28
+150
+1.20
+67144120
+67144500
+RL-5471-3
+—
+PE-53828
+PE-53828-S
+DO5022P-154
+L29
+100
+1.47
+67144130
+67144510
+RL-5471-4
+—
+PE-53829
+PE-53829-S
+DO5022P-104
+L30
+68
+1.78
+67144140
+67144520
+RL-5471-5
+—
+PE-53830
+PE-53830-S
+DO5022P-683
+L31
+47
+2.20
+67144150
+67144530
+RL-5471-6
+—
+PE-53831
+PE-53831-S
+DO5022P-473
+L32
+33
+2.50
+67144160
+67144540
+RL-5471-7
+—
+PE-53932
+PE-53932-S
+DO5022P-333
+L33
+22
+3.10
+67148390
+67148500
+RL-1283-22-43
+—
+PE-53933
+PE-53933-S
+DO5022P-223
+L34
+15
+3.40
+67148400
+67148790
+RL-1283-15-43
+—
+PE-53934
+PE-53934-S
+DO5022P-153
+L35
+220
+1.70
+67144170
+—
+RL-5473-1
+—
+PE-53935
+PE-53935-S
+—
+L36
+150
+2.10
+67144180
+—
+RL-5473-4
+—
+PE-54036
+PE-54036-S
+—
+L37
+100
+2.50
+67144190
+—
+RL-5472-1
+—
+PE-54037
+PE-54037-S
+—
+L38
+68
+3.10
+67144200
+—
+RL-5472-2
+—
+PE-54038
+PE-54038-S
+—
+L39
+47
+3.50
+67144210
+—
+RL-5472-3
+—
+PE-54039
+PE-54039-S
+—
+L40
+33
+3.50
+67144220
+67148290
+RL-5472-4
+—
+PE-54040
+PE-54040-S
+—
+L41
+22
+3.50
+67144230
+67148300
+RL-5472-5
+—
+PE-54041
+PE-54041-S
+—
+L42
+150
+2.70
+67148410
+—
+RL-5473-4
+—
+PE-54042
+PE-54042-S
+—
+L43
+100
+3.40
+67144240
+—
+RL-5473-2
+—
+PE-54043
+—
+L44
+68
+3.40
+67144250
+—
+RL-5473-3
+—
+PE-54044
+—
+Table 4. Inductor Manufacturers Phone Numbers
+Coilcraft Inc.
+Phone
+(800) 322-2645
+FAX
+(708) 639-1469
+Coilcraft Inc., Europe
+Phone
++11 1236 730 595
+FAX
++44 1236 730 627
+Pulse Engineering Inc.
+Phone
+(619) 674-8100
+FAX
+(619) 674-8262
+Pulse Engineering Inc., Europe
+Phone
++353 93 24 107
+FAX
++353 93 24 459
+Renco Electronics Inc.
+Phone
+(800) 645-5828
+FAX
+(516) 586-5562
+Schott Corp.
+Phone
+(612) 475-1173
+FAX
+(612) 475-1786
+Table 5. Capacitor Manufacturers Phone Numbers
+Nichicon Corp.
+Phone
+(708) 843-7500
+FAX
+(708) 843-2798
+Panasonic
+Phone
+(714) 373-7857
+FAX
+(714) 373-7102
+16
+Submit Documentation Feedback
+Copyright © 1999–2013, Texas Instruments Incorporated
+Product Folder Links: LM2596
+
+
+================ [Page 17] ================
+LM2596
+www.ti.com
+SNVS124C –NOVEMBER 1999–REVISED APRIL 2013
+Table 5. Capacitor Manufacturers Phone Numbers (continued)
+AVX Corp.
+Phone
+(803) 448-9411
+FAX
+(803) 448-1943
+Sprague/Vishay
+Phone
+(207) 324-4140
+FAX
+(207) 324-7223
+Table 6. Diode Selection Table
+VR
+3A Diodes
+4A–6A Diodes
+Surface Mount
+Through Hole
+Surface Mount
+Through Hole
+Schottky
+Ultra Fast
+Schottky
+Ultra Fast
+Schottky
+Ultra Fast
+Schottky
+Ultra Fast
+Recovery
+Recovery
+Recovery
+Recovery
+20V
+All of
+1N5820
+All of
+All of
+SR502
+All of
+these
+these
+these
+these
+SK32
+SR302
+1N5823
+diodes
+diodes
+diodes
+diodes
+MBR320
+SB520
+are
+are
+are
+are
+rated to
+rated to
+rated to
+rated to
+30V
+30WQ03
+1N5821
+at least
+at least
+at least
+at least
+SK33
+MBR330
+50WQ03
+SR503
+50V.
+50V.
+50V.
+50V.
+31DQ03
+1N5824
+1N5822
+SB530
+40V
+SK34
+SR304
+50WQ04
+SR504
+MBRS340
+MBR340
+1N5825
+30WQ04
+MURS320
+31DQ04
+MUR320
+MURS620
+SB540
+MUR620
+50V
+SK35
+30WF10
+SR305
+50WF10
+HER601
+or
+MBRS360
+MBR350
+50WQ05
+SB550
+More
+30WQ05
+31DQ05
+50SQ080
+Block Diagram
+Copyright © 1999–2013, Texas Instruments Incorporated
+Submit Documentation Feedback
+17
+Product Folder Links: LM2596
+
+
+================ [Page 18] ================
+LM2596
+SNVS124C –NOVEMBER 1999–REVISED APRIL 2013
+www.ti.com
+APPLICATION INFORMATION
+Table 7. PIN DESCRIPTIONS
+Name
+Description
+This is the positive input supply for the IC switching regulator. A suitable input bypass
++VIN
+capacitor must be present at this pin to minimize voltage transients and to supply the
+switching currents needed by the regulator.
+Ground
+Circuit ground.
+Internal switch. The voltage at this pin switches between (+VIN −VSAT) and approximately
+Output
+−0.5V, with a duty cycle of approximately VOUT/VIN. To minimize coupling to sensitive
+circuitry, the PC board copper area connected to this pin should be kept to a minimum.
+Feedback
+Senses the regulated output voltage to complete the feedback loop.
+Allows the switching regulator circuit to be shut down using logic level signals thus dropping
+the total input supply current to approximately 80 μA. Pulling this pin below a threshold
+voltage of approximately 1.3V turns the regulator on, and pulling this pin above 1.3V (up to a
+ON /OFF
+maximum of 25V) shuts the regulator down. If this shutdown feature is not needed, the ON
+/OFF pin can be wired to the ground pin or it can be left open, in either case the regulator will
+be in the ON condition.
+EXTERNAL COMPONENTS
+INPUT CAPACITOR
+CIN — A low ESR aluminum or tantalum bypass capacitor is needed between the input pin and ground pin. It
+must be located near the regulator using short leads. This capacitor prevents large voltage transients from
+appearing at the input, and provides the instantaneous current needed each time the switch turns on.
+The important parameters for the Input capacitor are the voltage rating and the RMS current rating. Because of
+the relatively high RMS currents flowing in a buck regulator's input capacitor, this capacitor should be chosen for
+its RMS current rating rather than its capacitance or voltage ratings, although the capacitance value and voltage
+rating are directly related to the RMS current rating.
+The RMS current rating of a capacitor could be viewed as a capacitor's power rating. The RMS current flowing
+through the capacitors internal ESR produces power which causes the internal temperature of the capacitor to
+rise. The RMS current rating of a capacitor is determined by the amount of current required to raise the internal
+temperature approximately 10°C above an ambient temperature of 105°C. The ability of the capacitor to dissipate
+this heat to the surrounding air will determine the amount of current the capacitor can safely sustain. Capacitors
+that are physically large and have a large surface area will typically have higher RMS current ratings. For a given
+capacitor value, a higher voltage electrolytic capacitor will be physically larger than a lower voltage capacitor, and
+thus be able to dissipate more heat to the surrounding air, and therefore will have a higher RMS current rating.
+The consequences of operating an electrolytic capacitor above the RMS current rating is a shortened operating
+life. The higher temperature speeds up the evaporation of the capacitor's electrolyte, resulting in eventual failure.
+Selecting an input capacitor requires consulting the manufacturers data sheet for maximum allowable RMS ripple
+current. For a maximum ambient temperature of 40°C, a general guideline would be to select a capacitor with a
+ripple current rating of approximately 50% of the DC load current. For ambient temperatures up to 70°C, a
+current rating of 75% of the DC load current would be a good choice for a conservative design. The capacitor
+voltage rating must be at least 1.25 times greater than the maximum input voltage, and often a much higher
+voltage capacitor is needed to satisfy the RMS current requirements.
+A graph shown in Figure 25 shows the relationship between an electrolytic capacitor value, its voltage rating, and
+the RMS current it is rated for. These curves were obtained from the Nichicon “PL” series of low ESR, high
+reliability electrolytic capacitors designed for switching regulator applications. Other capacitor manufacturers offer
+similar types of capacitors, but always check the capacitor data sheet.
+“Standard” electrolytic capacitors typically have much higher ESR numbers, lower RMS current ratings and
+typically have a shorter operating lifetime.
+18
+Submit Documentation Feedback
+Copyright © 1999–2013, Texas Instruments Incorporated
+Product Folder Links: LM2596
+
+
+================ [Page 19] ================
+LM2596
+www.ti.com
+SNVS124C –NOVEMBER 1999–REVISED APRIL 2013
+Because of their small size and excellent performance, surface mount solid tantalum capacitors are often used
+for input bypassing, but several precautions must be observed. A small percentage of solid tantalum capacitors
+can short if the inrush current rating is exceeded. This can happen at turn on when the input voltage is suddenly
+applied, and of course, higher input voltages produce higher inrush currents. Several capacitor manufacturers do
+a 100% surge current testing on their products to minimize this potential problem. If high turn on currents are
+expected, it may be necessary to limit this current by adding either some resistance or inductance before the
+tantalum capacitor, or select a higher voltage capacitor. As with aluminum electrolytic capacitors, the RMS ripple
+current rating must be sized to the load current.
+FEEDFORWARD CAPACITOR
+(Adjustable Output Voltage Version)
+CFF — A Feedforward Capacitor CFF, shown across R2 in Figure 20 is used when the ouput voltage is greater
+than 10V or when COUT has a very low ESR. This capacitor adds lead compensation to the feedback loop and
+increases the phase margin for better loop stability. For CFF selection, see the Design Procedure section.
+Figure 25. RMS Current Ratings for Low ESR Electrolytic Capacitors (Typical)
+OUTPUT CAPACITOR
+COUT — An output capacitor is required to filter the output and provide regulator loop stability. Low impedance or
+low ESR Electrolytic or solid tantalum capacitors designed for switching regulator applications must be used.
+When selecting an output capacitor, the important capacitor parameters are; the 100 kHz Equivalent Series
+Resistance (ESR), the RMS ripple current rating, voltage rating, and capacitance value. For the output capacitor,
+the ESR value is the most important parameter.
+The output capacitor requires an ESR value that has an upper and lower limit. For low output ripple voltage, a
+low ESR value is needed. This value is determined by the maximum allowable output ripple voltage, typically 1%
+to 2% of the output voltage. But if the selected capacitor's ESR is extremely low, there is a possibility of an
+unstable feedback loop, resulting in an oscillation at the output. Using the capacitors listed in the tables, or
+similar types, will provide design solutions under all conditions.
+If very low output ripple voltage (less than 15 mV) is required, refer to the section on OUTPUT VOLTAGE
+RIPPLE AND TRANSIENTS for a post ripple filter.
+An aluminum electrolytic capacitor's ESR value is related to the capacitance value and its voltage rating. In most
+cases, higher voltage electrolytic capacitors have lower ESR values (see Figure 26 ). Often, capacitors with
+much higher voltage ratings may be needed to provide the low ESR values required for low output ripple voltage.
+The output capacitor for many different switcher designs often can be satisfied with only three or four different
+capacitor values and several different voltage ratings. See the quick design component selection tables in
+Table 1 and 4 for typical capacitor values, voltage ratings, and manufacturers capacitor types.
+Electrolytic capacitors are not recommended for temperatures below −25°C. The ESR rises dramatically at cold
+temperatures and typically rises 3X @ −25°C and as much as 10X at −40°C. See curve shown in Figure 27.
+Copyright © 1999–2013, Texas Instruments Incorporated
+Submit Documentation Feedback
+19
+Product Folder Links: LM2596
+
+
+================ [Page 20] ================
+LM2596
+SNVS124C –NOVEMBER 1999–REVISED APRIL 2013
+www.ti.com
+Solid tantalum capacitors have a much better ESR spec for cold temperatures and are recommended for
+temperatures below −25°C.
+Figure 26. Capacitor ESR vs Capacitor Voltage Rating (Typical Low ESR Electrolytic Capacitor)
+CATCH DIODE
+Buck regulators require a diode to provide a return path for the inductor current when the switch turns off. This
+must be a fast diode and must be located close to the LM2596 using short leads and short printed circuit traces.
+Because of their very fast switching speed and low forward voltage drop, Schottky diodes provide the best
+performance, especially in low output voltage applications (5V and lower). Ultra-fast recovery, or High-Efficiency
+rectifiers are also a good choice, but some types with an abrupt turnoff characteristic may cause instability or
+EMI problems. Ultra-fast recovery diodes typically have reverse recovery times of 50 ns or less. Rectifiers such
+as the 1N5400 series are much too slow and should not be used.
+Figure 27. Capacitor ESR Change vs Temperature
+INDUCTOR SELECTION
+All switching regulators have two basic modes of operation; continuous and discontinuous. The difference
+between the two types relates to the inductor current, whether it is flowing continuously, or if it drops to zero for a
+period of time in the normal switching cycle. Each mode has distinctively different operating characteristics,
+which can affect the regulators performance and requirements. Most switcher designs will operate in the
+discontinuous mode when the load current is low.
+The LM2596 (or any of the Simple Switcher family) can be used for both continuous or discontinuous modes of
+operation.
+20
+Submit Documentation Feedback
+Copyright © 1999–2013, Texas Instruments Incorporated
+Product Folder Links: LM2596
+
+
+================ [Page 21] ================
+LM2596
+www.ti.com
+SNVS124C –NOVEMBER 1999–REVISED APRIL 2013
+In many cases the preferred mode of operation is the continuous mode. It offers greater output power, lower
+peak switch, inductor and diode currents, and can have lower output ripple voltage. But it does require larger
+inductor values to keep the inductor current flowing continuously, especially at low output load currents and/or
+high input voltages.
+To simplify the inductor selection process, an inductor selection guide (nomograph) was designed (see Figure 21
+through 8). This guide assumes that the regulator is operating in the continuous mode, and selects an inductor
+that will allow a peak-to-peak inductor ripple current to be a certain percentage of the maximum design load
+current. This peak-to-peak inductor ripple current percentage is not fixed, but is allowed to change as different
+design load currents are selected. (See Figure 28.)
+Figure 28. (ΔIIND) Peak-to-Peak Inductor
+Ripple Current (as a Percentage of the Load Current)
+vs Load Current
+By allowing the percentage of inductor ripple current to increase for low load currents, the inductor value and size
+can be kept relatively low.
+When operating in the continuous mode, the inductor current waveform ranges from a triangular to a sawtooth
+type of waveform (depending on the input voltage), with the average value of this current waveform equal to the
+DC output load current.
+Inductors are available in different styles such as pot core, toroid, E-core, bobbin core, etc., as well as different
+core materials, such as ferrites and powdered iron. The least expensive, the bobbin, rod or stick core, consists of
+wire wound on a ferrite bobbin. This type of construction makes for an inexpensive inductor, but since the
+magnetic flux is not completely contained within the core, it generates more Electro-Magnetic Interference (EMl).
+This magnetic flux can induce voltages into nearby printed circuit traces, thus causing problems with both the
+switching regulator operation and nearby sensitive circuitry, and can give incorrect scope readings because of
+induced voltages in the scope probe. Also see section on OPEN CORE INDUCTORS.
+When multiple switching regulators are located on the same PC board, open core magnetics can cause
+interference between two or more of the regulator circuits, especially at high currents. A torroid or E-core inductor
+(closed magnetic structure) should be used in these situations.
+The inductors listed in the selection chart include ferrite E-core construction for Schott, ferrite bobbin core for
+Renco and Coilcraft, and powdered iron toroid for Pulse Engineering.
+Exceeding an inductor's maximum current rating may cause the inductor to overheat because of the copper wire
+losses, or the core may saturate. If the inductor begins to saturate, the inductance decreases rapidly and the
+inductor begins to look mainly resistive (the DC resistance of the winding). This can cause the switch current to
+rise very rapidly and force the switch into a cycle-by-cycle current limit, thus reducing the DC output load current.
+This can also result in overheating of the inductor and/or the LM2596. Different inductor types have different
+saturation characteristics, and this should be kept in mind when selecting an inductor.
+The inductor manufacturer's data sheets include current and energy limits to avoid inductor saturation.
+Copyright © 1999–2013, Texas Instruments Incorporated
+Submit Documentation Feedback
+21
+Product Folder Links: LM2596
+
+
+================ [Page 22] ================
+LM2596
+SNVS124C –NOVEMBER 1999–REVISED APRIL 2013
+www.ti.com
+DISCONTINUOUS MODE OPERATION
+The selection guide chooses inductor values suitable for continuous mode operation, but for low current
+applications and/or high input voltages, a discontinuous mode design may be a better choice. It would use an
+inductor that would be physically smaller, and would need only one half to one third the inductance value needed
+for a continuous mode design. The peak switch and inductor currents will be higher in a discontinuous design,
+but at these low load currents (1A and below), the maximum switch current will still be less than the switch
+current limit.
+Discontinuous operation can have voltage waveforms that are considerable different than a continuous design.
+The output pin (switch) waveform can have some damped sinusoidal ringing present. (See Typical Performance
+Characteristics photo titled Discontinuous Mode Switching Waveforms) This ringing is normal for discontinuous
+operation, and is not caused by feedback loop instabilities. In discontinuous operation, there is a period of time
+where neither the switch or the diode are conducting, and the inductor current has dropped to zero. During this
+time, a small amount of energy can circulate between the inductor and the switch/diode parasitic capacitance
+causing this characteristic ringing. Normally this ringing is not a problem, unless the amplitude becomes great
+enough to exceed the input voltage, and even then, there is very little energy present to cause damage.
+Different inductor types and/or core materials produce different amounts of this characteristic ringing. Ferrite core
+inductors have very little core loss and therefore produce the most ringing. The higher core loss of powdered iron
+inductors produce less ringing. If desired, a series RC could be placed in parallel with the inductor to dampen the
+ringing. The computer aided design software Switchers Made Simple (version 4.3) will provide all component
+values for continuous and discontinuous modes of operation.
+Figure 29. Post Ripple Filter Waveform
+OUTPUT VOLTAGE RIPPLE AND TRANSIENTS
+The output voltage of a switching power supply operating in the continuous mode will contain a sawtooth ripple
+voltage at the switcher frequency, and may also contain short voltage spikes at the peaks of the sawtooth
+waveform.
+The output ripple voltage is a function of the inductor sawtooth ripple current and the ESR of the output
+capacitor. A typical output ripple voltage can range from approximately 0.5% to 3% of the output voltage. To
+obtain low ripple voltage, the ESR of the output capacitor must be low, however, caution must be exercised when
+using extremely low ESR capacitors because they can affect the loop stability, resulting in oscillation problems. If
+very low output ripple voltage is needed (less than 20 mV), a post ripple filter is recommended. (See Figure 20.)
+The inductance required is typically between 1 μH and 5 μH, with low DC resistance, to maintain good load
+regulation. A low ESR output filter capacitor is also required to assure good dynamic load response and ripple
+reduction. The ESR of this capacitor may be as low as desired, because it is out of the regulator feedback loop.
+The photo shown in Figure 29 shows a typical output ripple voltage, with and without a post ripple filter.
+22
+Submit Documentation Feedback
+Copyright © 1999–2013, Texas Instruments Incorporated
+Product Folder Links: LM2596
+
+
+================ [Page 23] ================
+LM2596
+www.ti.com
+SNVS124C –NOVEMBER 1999–REVISED APRIL 2013
+When observing output ripple with a scope, it is essential that a short, low inductance scope probe ground
+connection be used. Most scope probe manufacturers provide a special probe terminator which is soldered onto
+the regulator board, preferable at the output capacitor. This provides a very short scope ground thus eliminating
+the problems associated with the 3 inch ground lead normally provided with the probe, and provides a much
+cleaner and more accurate picture of the ripple voltage waveform.
+The voltage spikes are caused by the fast switching action of the output switch and the diode, and the parasitic
+inductance of the output filter capacitor, and its associated wiring. To minimize these voltage spikes, the output
+capacitor should be designed for switching regulator applications, and the lead lengths must be kept very short.
+Wiring inductance, stray capacitance, as well as the scope probe used to evaluate these transients, all contribute
+to the amplitude of these spikes.
+When a switching regulator is operating in the continuous mode, the inductor current waveform ranges from a
+triangular to a sawtooth type of waveform (depending on the input voltage). For a given input and output voltage,
+the peak-to-peak amplitude of this inductor current waveform remains constant. As the load current increases or
+decreases, the entire sawtooth current waveform also rises and falls. The average value (or the center) of this
+current waveform is equal to the DC load current.
+If the load current drops to a low enough level, the bottom of the sawtooth current waveform will reach zero, and
+the switcher will smoothly change from a continuous to a discontinuous mode of operation. Most switcher
+designs (irregardless how large the inductor value is) will be forced to run discontinuous if the output is lightly
+loaded. This is a perfectly acceptable mode of operation.
+Figure 30. Peak-to-Peak Inductor
+Ripple Current vs Load Current
+In a switching regulator design, knowing the value of the peak-to-peak inductor ripple current (ΔIIND) can be
+useful for determining a number of other circuit parameters. Parameters such as, peak inductor or peak switch
+current, minimum load current before the circuit becomes discontinuous, output ripple voltage and output
+capacitor ESR can all be calculated from the peak-to-peak ΔIIND. When the inductor nomographs shown in
+Figure 21 through 8 are used to select an inductor value, the peak-to-peak inductor ripple current can
+immediately be determined. The curve shown in Figure 30 shows the range of (ΔIIND) that can be expected for
+different load currents. The curve also shows how the peak-to-peak inductor ripple current (ΔIIND) changes as
+you go from the lower border to the upper border (for a given load current) within an inductance region. The
+upper border represents a higher input voltage, while the lower border represents a lower input voltage (see
+Inductor Selection Guides section).
+These curves are only correct for continuous mode operation, and only if the inductor selection guides are used
+to select the inductor value
+Consider the following example:
+VOUT = 5V, maximum load current of 2.5A
+VIN = 12V, nominal, varying between 10V and 16V.
+Copyright © 1999–2013, Texas Instruments Incorporated
+Submit Documentation Feedback
+23
+Product Folder Links: LM2596
+
+
+================ [Page 24] ================
+LM2596
+SNVS124C –NOVEMBER 1999–REVISED APRIL 2013
+www.ti.com
+The selection guide in Figure 22 shows that the vertical line for a 2.5A load current, and the horizontal line for the
+12V input voltage intersect approximately midway between the upper and lower borders of the 33 μH inductance
+region. A 33 μH inductor will allow a peak-to-peak inductor current (ΔIIND) to flow that will be a percentage of the
+maximum load current. Referring to Figure 30, follow the 2.5A line approximately midway into the inductance
+region, and read the peak-to-peak inductor ripple current (ΔIIND) on the left hand axis (approximately 620 mA p-
+p).
+As the input voltage increases to 16V, it approaches the upper border of the inductance region, and the inductor
+ripple current increases. Referring to the curve in Figure 30, it can be seen that for a load current of 2.5A, the
+peak-to-peak inductor ripple current (ΔIIND) is 620 mA with 12V in, and can range from 740 mA at the upper
+border (16V in) to 500 mA at the lower border (10V in).
+Once the ΔIIND value is known, the following formulas can be used to calculate additional information about the
+switching regulator circuit.
+1. Peak Inductor or peak switch current
+2. Minimum load current before the circuit becomes discontinuous
+3. Output Ripple Voltage = (ΔIIND)×(ESR of COUT) = 0.62A×0.1Ω = 62 mV p-p
+4. added
+for
+line
+break
+OPEN CORE INDUCTORS
+Another possible source of increased output ripple voltage or unstable operation is from an open core inductor.
+Ferrite bobbin or stick inductors have magnetic lines of flux flowing through the air from one end of the bobbin to
+the other end. These magnetic lines of flux will induce a voltage into any wire or PC board copper trace that
+comes within the inductor's magnetic field. The strength of the magnetic field, the orientation and location of the
+PC copper trace to the magnetic field, and the distance between the copper trace and the inductor, determine
+the amount of voltage generated in the copper trace. Another way of looking at this inductive coupling is to
+consider the PC board copper trace as one turn of a transformer (secondary) with the inductor winding as the
+primary. Many millivolts can be generated in a copper trace located near an open core inductor which can cause
+stability problems or high output ripple voltage problems.
+If unstable operation is seen, and an open core inductor is used, it's possible that the location of the inductor with
+respect to other PC traces may be the problem. To determine if this is the problem, temporarily raise the inductor
+away from the board by several inches and then check circuit operation. If the circuit now operates correctly,
+then the magnetic flux from the open core inductor is causing the problem. Substituting a closed core inductor
+such as a torroid or E-core will correct the problem, or re-arranging the PC layout may be necessary. Magnetic
+flux cutting the IC device ground trace, feedback trace, or the positive or negative traces of the output capacitor
+should be minimized.
+Sometimes, locating a trace directly beneath a bobbin in- ductor will provide good results, provided it is exactly in
+the center of the inductor (because the induced voltages cancel themselves out), but if it is off center one
+direction or the other, then problems could arise. If flux problems are present, even the direction of the inductor
+winding can make a difference in some circuits.
+This discussion on open core inductors is not to frighten the user, but to alert the user on what kind of problems
+to watch out for when using them. Open core bobbin or “stick” inductors are an inexpensive, simple way of
+making a compact efficient inductor, and they are used by the millions in many different applications.
+24
+Submit Documentation Feedback
+Copyright © 1999–2013, Texas Instruments Incorporated
+Product Folder Links: LM2596
+
+
+================ [Page 25] ================
+LM2596
+www.ti.com
+SNVS124C –NOVEMBER 1999–REVISED APRIL 2013
+THERMAL CONSIDERATIONS
+The LM2596 is available in two packages, a 5-pin TO-220 (T) and a 5-pin surface mount TO-263 (S).
+The TO-220 package needs a heat sink under most conditions. The size of the heatsink depends on the input
+voltage, the output voltage, the load current and the ambient temperature. The curves in Figure 31 show the
+LM2596T junction temperature rises above ambient temperature for a 3A load and different input and output
+voltages. The data for these curves was taken with the LM2596T (TO-220 package) operating as a buck
+switching regulator in an ambient temperature of 25°C (still air). These temperature rise numbers are all
+approximate and there are many factors that can affect these temperatures. Higher ambient temperatures require
+more heat sinking.
+The TO-263 surface mount package tab is designed to be soldered to the copper on a printed circuit board. The
+copper and the board are the heat sink for this package and the other heat producing components, such as the
+catch diode and inductor. The PC board copper area that the package is soldered to should be at least 0.4 in2,
+and ideally should have 2 or more square inches of 2 oz. (0.0028 in.) copper. Additional copper area improves
+the thermal characteristics, but with copper areas greater than approximately 6 in2, only small improvements in
+heat dissipation are realized. If further thermal improvements are needed, double sided, multilayer PC board with
+large copper areas and/or airflow are recommended.
+The curves shown in Figure 32 show the LM2596S (TO-263 package) junction temperature rise above ambient
+temperature with a 2A load for various input and output voltages. This data was taken with the circuit operating
+as a buck switching regulator with all components mounted on a PC board to simulate the junction temperature
+under actual operating conditions. This curve can be used for a quick check for the approximate junction
+temperature for various conditions, but be aware that there are many factors that can affect the junction
+temperature. When load currents higher than 2A are used, double sided or multilayer PC boards with large
+copper areas and/or airflow might be needed, especially for high ambient temperatures and high output voltages.
+For the best thermal performance, wide copper traces and generous amounts of printed circuit board copper
+should be used in the board layout. (One exception to this is the output (switch) pin, which should not have large
+areas of copper.) Large areas of copper provide the best transfer of heat (lower thermal resistance) to the
+surrounding air, and moving air lowers the thermal resistance even further.
+Package thermal resistance and junction temperature rise numbers are all approximate, and there are many
+factors that will affect these numbers. Some of these factors include board size, shape, thickness, position,
+location, and even board temperature. Other factors are, trace width, total printed circuit copper area, copper
+thickness, single- or double-sided, multilayer board and the amount of solder on the board. The effectiveness of
+the PC board to dissipate heat also depends on the size, quantity and spacing of other components on the
+board, as well as whether the surrounding air is still or moving. Furthermore, some of these components such as
+the catch diode will add heat to the PC board and the heat can vary as the input voltage changes. For the
+inductor, depending on the physical size, type of core material and the DC resistance, it could either act as a
+heat sink taking heat away from the board, or it could add heat to the board.
+Copyright © 1999–2013, Texas Instruments Incorporated
+Submit Documentation Feedback
+25
+Product Folder Links: LM2596
+
+
+================ [Page 26] ================
+LM2596
+SNVS124C –NOVEMBER 1999–REVISED APRIL 2013
+www.ti.com
+Circuit Data for Temperature Rise Curve
+TO-220 Package (T)
+Capacitors
+Through hole electrolytic
+Inductor
+Through hole, Renco
+Diode
+Through hole, 5A 40V, Schottky
+PC board
+3 square inches single sided 2 oz. copper (0.0028″)
+Figure 31. Junction Temperature Rise, TO-220
+Circuit Data for Temperature Rise Curve
+TO-263 Package (S)
+Capacitors
+Surface mount tantalum, molded “D” size
+Inductor
+Surface mount, Pulse Engineering, 68 μH
+Diode
+Surface mount, 5A 40V, Schottky
+PC board
+9 square inches single sided 2 oz. copper (0.0028″)
+Figure 32. Junction Temperature Rise, TO-263
+26
+Submit Documentation Feedback
+Copyright © 1999–2013, Texas Instruments Incorporated
+Product Folder Links: LM2596
+
+
+================ [Page 27] ================
+LM2596
+www.ti.com
+SNVS124C –NOVEMBER 1999–REVISED APRIL 2013
+Figure 33. Delayed Startup
+Figure 34. Undervoltage Lockout
+for Buck Regulator
+DELAYED STARTUP
+The circuit in Figure 33 uses the the ON /OFF pin to provide a time delay between the time the input voltage is
+applied and the time the output voltage comes up (only the circuitry pertaining to the delayed start up is shown).
+As the input voltage rises, the charging of capacitor C1 pulls the ON /OFF pin high, keeping the regulator off.
+Once the input voltage reaches its final value and the capacitor stops charging, and resistor R2 pulls the ON
+/OFF pin low, thus allowing the circuit to start switching. Resistor R1 is included to limit the maximum voltage
+applied to the ON /OFF pin (maximum of 25V), reduces power supply noise sensitivity, and also limits the
+capacitor, C1, discharge current. When high input ripple voltage exists, avoid long delay time, because this ripple
+can be coupled into the ON /OFF pin and cause problems.
+This delayed startup feature is useful in situations where the input power source is limited in the amount of
+current it can deliver. It allows the input voltage to rise to a higher voltage before the regulator starts operating.
+Buck regulators require less input current at higher input voltages.
+UNDERVOLTAGE LOCKOUT
+Some applications require the regulator to remain off until the input voltage reaches a predetermined voltage. An
+undervoltage lockout feature applied to a buck regulator is shown in Figure 34, while Figure 35 and Figure 36
+applies the same feature to an inverting circuit. The circuit in Figure 35 features a constant threshold voltage for
+turn on and turn off (zener voltage plus approximately one volt). If hysteresis is needed, the circuit in Figure 36
+has a turn ON voltage which is different than the turn OFF voltage. The amount of hysteresis is approximately
+equal to the value of the output voltage. If zener voltages greater than 25V are used, an additional 47 kΩ resistor
+is needed from the ON /OFF pin to the ground pin to stay within the 25V maximum limit of the ON /OFF pin.
+INVERTING REGULATOR
+The circuit in Figure 37 converts a positive input voltage to a negative output voltage with a common ground. The
+circuit operates by bootstrapping the regulator's ground pin to the negative output voltage, then grounding the
+feedback pin, the regulator senses the inverted output voltage and regulates it.
+Copyright © 1999–2013, Texas Instruments Incorporated
+Submit Documentation Feedback
+27
+Product Folder Links: LM2596
+
+
+================ [Page 28] ================
+LM2596
+SNVS124C –NOVEMBER 1999–REVISED APRIL 2013
+www.ti.com
+This circuit has an ON/OFF threshold of approximately 13V.
+Figure 35. Undervoltage Lockout
+for Inverting Regulator
+This example uses the LM2596-5.0 to generate a −5V output, but other output voltages are possible by selecting
+other output voltage versions, including the adjustable version. Since this regulator topology can produce an
+output voltage that is either greater than or less than the input voltage, the maximum output current greatly
+depends on both the input and output voltage. The curve shown in Figure 38 provides a guide as to the amount
+of output load current possible for the different input and output voltage conditions.
+The maximum voltage appearing across the regulator is the absolute sum of the input and output voltage, and
+this must be limited to a maximum of 40V. For example, when converting +20V to −12V, the regulator would see
+32V between the input pin and ground pin. The LM2596 has a maximum input voltage spec of 40V.
+Additional diodes are required in this regulator configuration. Diode D1 is used to isolate input voltage ripple or
+noise from coupling through the CIN capacitor to the output, under light or no load conditions. Also, this diode
+isolation changes the topology to closley resemble a buck configuration thus providing good closed loop stability.
+A Schottky diode is recommended for low input voltages, (because of its lower voltage drop) but for higher input
+voltages, a fast recovery diode could be used.
+Without diode D3, when the input voltage is first applied, the charging current of CIN can pull the output positive
+by several volts for a short period of time. Adding D3 prevents the output from going positive by more than a
+diode voltage.
+This circuit has hysteresis
+Regulator starts switching at VIN = 13V
+Regulator stops switching at VIN = 8V
+Figure 36. Undervoltage Lockout with Hysteresis for Inverting Regulator
+28
+Submit Documentation Feedback
+Copyright © 1999–2013, Texas Instruments Incorporated
+Product Folder Links: LM2596
+
+
+================ [Page 29] ================
+LM2596
+www.ti.com
+SNVS124C –NOVEMBER 1999–REVISED APRIL 2013
+CIN
+—68 μF/25V Tant. Sprague 595D
+470 μF/50V Elec. Panasonic HFQ
+COUT
+—47 μF/20V Tant. Sprague 595D
+220 μF/25V Elec. Panasonic HFQ
+Figure 37. Inverting −5V Regulator with Delayed Startup
+Figure 38. Inverting Regulator Typical Load Current
+Because of differences in the operation of the inverting regulator, the standard design procedure is not used to
+select the inductor value. In the majority of designs, a 33 μH, 3.5A inductor is the best choice. Capacitor
+selection can also be narrowed down to just a few values. Using the values shown in Figure 37 will provide good
+results in the majority of inverting designs.
+This type of inverting regulator can require relatively large amounts of input current when starting up, even with
+light loads. Input currents as high as the LM2596 current limit (approx 4.5A) are needed for at least 2 ms or
+more, until the output reaches its nominal output voltage. The actual time depends on the output voltage and the
+size of the output capacitor. Input power sources that are current limited or sources that can not deliver these
+currents without getting loaded down, may not work correctly. Because of the relatively high startup currents
+required by the inverting topology, the delayed startup feature (C1, R1 and R2) shown in Figure 37 is
+recommended. By delaying the regulator startup, the input capacitor is allowed to charge up to a higher voltage
+before the switcher begins operating. A portion of the high input current needed for startup is now supplied by the
+input capacitor (CIN). For severe start up conditions, the input capacitor can be made much larger than normal.
+INVERTING REGULATOR SHUTDOWN METHODS
+To use the ON /OFF pin in a standard buck configuration is simple, pull it below 1.3V (@25°C, referenced to
+ground) to turn regulator ON, pull it above 1.3V to shut the regulator OFF. With the inverting configuration, some
+level shifting is required, because the ground pin of the regulator is no longer at ground, but is now setting at the
+negative output voltage level. Two different shutdown methods for inverting regulators are shown in Figure 39
+and Figure 40.
+Copyright © 1999–2013, Texas Instruments Incorporated
+Submit Documentation Feedback
+29
+Product Folder Links: LM2596
+
+
+================ [Page 30] ================
+LM2596
+SNVS124C –NOVEMBER 1999–REVISED APRIL 2013
+www.ti.com
+Figure 39. Inverting Regulator Ground Referenced Shutdown
+Figure 40. Inverting Regulator Ground Referenced Shutdown using Opto Device
+TYPICAL THROUGH HOLE PC BOARD LAYOUT, FIXED OUTPUT (1X SIZE), DOUBLE SIDED
+CIN—470 μF, 50V, Aluminum Electrolytic Panasonic, “HFQ Series”
+COUT—330 μF, 35V, Aluminum Electrolytic Panasonic, “HFQ Series”
+D1—5A, 40V Schottky Rectifier, 1N5825
+L1—47 μH, L39, Renco, Through Hole
+Thermalloy Heat Sink #7020
+30
+Submit Documentation Feedback
+Copyright © 1999–2013, Texas Instruments Incorporated
+Product Folder Links: LM2596
+
+
+================ [Page 31] ================
+LM2596
+www.ti.com
+SNVS124C –NOVEMBER 1999–REVISED APRIL 2013
+TYPICAL THROUGH HOLE PC BOARD LAYOUT, ADJUSTABLE OUTPUT (1X SIZE), DOUBLE SIDED
+CIN—470 μF, 50V, Aluminum Electrolytic Panasonic, “HFQ Series”
+COUT—220 μF, 35V Aluminum Electrolytic Panasonic, “HFQ Series”
+D1—5A, 40V Schottky Rectifier, 1N5825
+L1—47 μH, L39, Renco, Through Hole
+R1—1 kΩ, 1%
+R2—Use formula in Design Procedure
+CFF—See Table 2.
+Thermalloy Heat Sink #7020
+Figure 41. PC Board Layout
+Copyright © 1999–2013, Texas Instruments Incorporated
+Submit Documentation Feedback
+31
+Product Folder Links: LM2596
+
+
+================ [Page 32] ================
+LM2596
+SNVS124C –NOVEMBER 1999–REVISED APRIL 2013
+www.ti.com
+REVISION HISTORY
+Changes from Revision B (April 2013) to Revision C
+Page
+•
+Changed layout of National Data Sheet to TI format .......................................................................................................... 31
+32
+Submit Documentation Feedback
+Copyright © 1999–2013, Texas Instruments Incorporated
+Product Folder Links: LM2596
+
+
+================ [Page 33] ================
+PACKAGE OPTION ADDENDUM
+www.ti.com
+1-Nov-2013
+Addendum-Page 1
+PACKAGING INFORMATION
+Orderable Device
+Status
+(1)
+Package Type Package
+Drawing
+Pins Package
+Qty
+Eco Plan
+(2)
+Lead/Ball Finish
+(6)
+MSL Peak Temp
+(3)
+Op Temp (°C)
+Device Marking
+(4/5)
+Samples
+LM2596S-12/NOPB
+ACTIVE
+DDPAK/
+TO-263
+KTT
+5
+45
+Pb-Free (RoHS
+Exempt)
+CU SN
+Level-3-245C-168 HR
+LM2596S
+-12 P+
+LM2596S-3.3
+NRND
+DDPAK/
+TO-263
+KTT
+5
+45
+TBD
+Call TI
+Call TI
+LM2596S
+-3.3 P+
+LM2596S-3.3/NOPB
+ACTIVE
+DDPAK/
+TO-263
+KTT
+5
+45
+Pb-Free (RoHS
+Exempt)
+CU SN
+Level-3-245C-168 HR
+LM2596S
+-3.3 P+
+LM2596S-5.0
+NRND
+DDPAK/
+TO-263
+KTT
+5
+45
+TBD
+Call TI
+Call TI
+LM2596S
+-5.0 P+
+LM2596S-5.0/NOPB
+ACTIVE
+DDPAK/
+TO-263
+KTT
+5
+45
+Pb-Free (RoHS
+Exempt)
+CU SN
+Level-3-245C-168 HR
+LM2596S
+-5.0 P+
+LM2596S-ADJ/NOPB
+ACTIVE
+DDPAK/
+TO-263
+KTT
+5
+45
+Pb-Free (RoHS
+Exempt)
+CU SN
+Level-3-245C-168 HR
+-40 to 125
+LM2596S
+-ADJ P+
+LM2596SX-12/NOPB
+ACTIVE
+DDPAK/
+TO-263
+KTT
+5
+500
+Pb-Free (RoHS
+Exempt)
+CU SN
+Level-3-245C-168 HR
+LM2596S
+-12 P+
+LM2596SX-3.3
+NRND
+DDPAK/
+TO-263
+KTT
+5
+500
+TBD
+Call TI
+Call TI
+LM2596S
+-3.3 P+
+LM2596SX-3.3/NOPB
+ACTIVE
+DDPAK/
+TO-263
+KTT
+5
+500
+Pb-Free (RoHS
+Exempt)
+CU SN
+Level-3-245C-168 HR
+LM2596S
+-3.3 P+
+LM2596SX-5.0/NOPB
+ACTIVE
+DDPAK/
+TO-263
+KTT
+5
+500
+Pb-Free (RoHS
+Exempt)
+CU SN
+Level-3-245C-168 HR
+LM2596S
+-5.0 P+
+LM2596SX-ADJ
+NRND
+DDPAK/
+TO-263
+KTT
+5
+500
+TBD
+Call TI
+Call TI
+-40 to 125
+LM2596S
+-ADJ P+
+LM2596SX-ADJ/NOPB
+ACTIVE
+DDPAK/
+TO-263
+KTT
+5
+500
+Pb-Free (RoHS
+Exempt)
+CU SN
+Level-3-245C-168 HR
+-40 to 125
+LM2596S
+-ADJ P+
+LM2596T-12
+NRND
+TO-220
+NDH
+5
+45
+TBD
+Call TI
+Call TI
+LM2596T
+-12 P+
+LM2596T-12/LF03
+ACTIVE
+TO-220
+NDH
+5
+45
+Green (RoHS
+& no Sb/Br)
+CU SN
+Level-1-NA-UNLIM
+LM2596T
+-12 P+
+LM2596T-12/NOPB
+ACTIVE
+TO-220
+NDH
+5
+45
+Green (RoHS
+& no Sb/Br)
+CU SN
+Level-1-NA-UNLIM
+LM2596T
+-12 P+
+LM2596T-3.3
+NRND
+TO-220
+NDH
+5
+45
+TBD
+Call TI
+Call TI
+LM2596T
+-3.3 P+
+LM2596T-3.3/LF03
+ACTIVE
+TO-220
+NDH
+5
+45
+Green (RoHS
+& no Sb/Br)
+CU SN
+Level-1-NA-UNLIM
+LM2596T
+-3.3 P+
+
+
+================ [Page 34] ================
+PACKAGE OPTION ADDENDUM
+www.ti.com
+1-Nov-2013
+Addendum-Page 2
+Orderable Device
+Status
+(1)
+Package Type Package
+Drawing
+Pins Package
+Qty
+Eco Plan
+(2)
+Lead/Ball Finish
+(6)
+MSL Peak Temp
+(3)
+Op Temp (°C)
+Device Marking
+(4/5)
+Samples
+LM2596T-3.3/NOPB
+ACTIVE
+TO-220
+NDH
+5
+45
+Green (RoHS
+& no Sb/Br)
+CU SN
+Level-1-NA-UNLIM
+LM2596T
+-3.3 P+
+LM2596T-5.0
+NRND
+TO-220
+NDH
+5
+45
+TBD
+Call TI
+Call TI
+LM2596T
+-5.0 P+
+LM2596T-5.0/LF03
+ACTIVE
+TO-220
+NDH
+5
+45
+Green (RoHS
+& no Sb/Br)
+CU SN
+Level-1-NA-UNLIM
+LM2596T
+-5.0 P+
+LM2596T-5.0/NOPB
+ACTIVE
+TO-220
+NDH
+5
+45
+Green (RoHS
+& no Sb/Br)
+CU SN
+Level-1-NA-UNLIM
+LM2596T
+-5.0 P+
+LM2596T-ADJ
+NRND
+TO-220
+NDH
+5
+45
+TBD
+Call TI
+Call TI
+-40 to 125
+LM2596T
+-ADJ P+
+LM2596T-ADJ/LB05
+NRND
+TO-220
+NEB
+5
+45
+TBD
+Call TI
+Call TI
+LM2596T
+-ADJ P+
+LM2596T-ADJ/LF02
+ACTIVE
+TO-220
+NEB
+5
+45
+Green (RoHS
+& no Sb/Br)
+CU SN
+Level-1-NA-UNLIM
+LM2596T
+-ADJ P+
+LM2596T-ADJ/NOPB
+ACTIVE
+TO-220
+NDH
+5
+45
+Green (RoHS
+& no Sb/Br)
+CU SN
+Level-1-NA-UNLIM
+-40 to 125
+LM2596T
+-ADJ P+
+ 
+(1) The marketing status values are defined as follows:
+ACTIVE: Product device recommended for new designs.
+LIFEBUY: TI has announced that the device will be discontinued, and a lifetime-buy period is in effect.
+NRND: Not recommended for new designs. Device is in production to support existing customers, but TI does not recommend using this part in a new design.
+PREVIEW: Device has been announced but is not in production. Samples may or may not be available.
+OBSOLETE: TI has discontinued the production of the device.
+ 
+(2) Eco Plan - The planned eco-friendly classification: Pb-Free (RoHS), Pb-Free (RoHS Exempt), or Green (RoHS & no Sb/Br) - please check http://www.ti.com/productcontent for the latest availability
+information and additional product content details.
+TBD:  The Pb-Free/Green conversion plan has not been defined.
+Pb-Free (RoHS): TI's terms "Lead-Free" or "Pb-Free" mean semiconductor products that are compatible with the current RoHS requirements for all 6 substances, including the requirement that
+lead not exceed 0.1% by weight in homogeneous materials. Where designed to be soldered at high temperatures, TI Pb-Free products are suitable for use in specified lead-free processes.
+Pb-Free (RoHS Exempt): This component has a RoHS exemption for either 1) lead-based flip-chip solder bumps used between the die and package, or 2) lead-based  die adhesive used between
+the die and leadframe. The component is otherwise considered Pb-Free (RoHS compatible) as defined above.
+Green (RoHS & no Sb/Br): TI defines "Green" to mean Pb-Free (RoHS compatible), and free of Bromine (Br)  and Antimony (Sb) based flame retardants (Br or Sb do not exceed 0.1% by weight
+in homogeneous material)
+ 
+(3) MSL, Peak Temp. - The Moisture Sensitivity Level rating according to the JEDEC industry standard classifications, and peak solder temperature.
+ 
+(4) There may be additional marking, which relates to the logo, the lot trace code information, or the environmental category on the device.
+ 
+
+
+================ [Page 35] ================
+PACKAGE OPTION ADDENDUM
+www.ti.com
+1-Nov-2013
+Addendum-Page 3
+(5) Multiple Device Markings will be inside parentheses. Only one Device Marking contained in parentheses and separated by a "~" will appear on a device. If a line is indented then it is a continuation
+of the previous line and the two combined represent the entire Device Marking for that device.
+ 
+(6) Lead/Ball Finish - Orderable Devices may have multiple material finish options. Finish options are separated by a vertical ruled line. Lead/Ball Finish values may wrap to two lines if the finish
+value exceeds the maximum column width.
+ 
+Important Information and Disclaimer:The information provided on this page represents TI's knowledge and belief as of the date that it is provided. TI bases its knowledge and belief on information
+provided by third parties, and makes no representation or warranty as to the accuracy of such information. Efforts are underway to better integrate information from third parties. TI has taken and
+continues to take reasonable steps to provide representative and accurate information but may not have conducted destructive testing or chemical analysis on incoming materials and chemicals.
+TI and TI suppliers consider certain information to be proprietary, and thus CAS numbers and other limited information may not be available for release.
+ 
+In no event shall TI's liability arising out of such information exceed the total purchase price of the TI part(s) at issue in this document sold by TI to Customer on an annual basis.
+ 
+
+
+================ [Page 36] ================
+TAPE AND REEL INFORMATION
+*All dimensions are nominal
+Device
+Package
+Type
+Package
+Drawing
+Pins
+SPQ
+Reel
+Diameter
+(mm)
+Reel
+Width
+W1 (mm)
+A0
+(mm)
+B0
+(mm)
+K0
+(mm)
+P1
+(mm)
+W
+(mm)
+Pin1
+Quadrant
+LM2596SX-12/NOPB
+DDPAK/
+TO-263
+KTT
+5
+500
+330.0
+24.4
+10.75
+14.85
+5.0
+16.0
+24.0
+Q2
+LM2596SX-3.3
+DDPAK/
+TO-263
+KTT
+5
+500
+330.0
+24.4
+10.75
+14.85
+5.0
+16.0
+24.0
+Q2
+LM2596SX-3.3/NOPB
+DDPAK/
+TO-263
+KTT
+5
+500
+330.0
+24.4
+10.75
+14.85
+5.0
+16.0
+24.0
+Q2
+LM2596SX-5.0/NOPB
+DDPAK/
+TO-263
+KTT
+5
+500
+330.0
+24.4
+10.75
+14.85
+5.0
+16.0
+24.0
+Q2
+LM2596SX-ADJ
+DDPAK/
+TO-263
+KTT
+5
+500
+330.0
+24.4
+10.75
+14.85
+5.0
+16.0
+24.0
+Q2
+LM2596SX-ADJ/NOPB
+DDPAK/
+TO-263
+KTT
+5
+500
+330.0
+24.4
+10.75
+14.85
+5.0
+16.0
+24.0
+Q2
+PACKAGE MATERIALS INFORMATION
+www.ti.com
+23-Sep-2013
+Pack Materials-Page 1
+
+
+================ [Page 37] ================
+*All dimensions are nominal
+Device
+Package Type
+Package Drawing
+Pins
+SPQ
+Length (mm)
+Width (mm)
+Height (mm)
+LM2596SX-12/NOPB
+DDPAK/TO-263
+KTT
+5
+500
+367.0
+367.0
+45.0
+LM2596SX-3.3
+DDPAK/TO-263
+KTT
+5
+500
+367.0
+367.0
+45.0
+LM2596SX-3.3/NOPB
+DDPAK/TO-263
+KTT
+5
+500
+367.0
+367.0
+45.0
+LM2596SX-5.0/NOPB
+DDPAK/TO-263
+KTT
+5
+500
+367.0
+367.0
+45.0
+LM2596SX-ADJ
+DDPAK/TO-263
+KTT
+5
+500
+367.0
+367.0
+45.0
+LM2596SX-ADJ/NOPB
+DDPAK/TO-263
+KTT
+5
+500
+367.0
+367.0
+45.0
+PACKAGE MATERIALS INFORMATION
+www.ti.com
+23-Sep-2013
+Pack Materials-Page 2
+
+
+================ [Page 38] ================
+MECHANICAL DATA
+NDH0005D
+www.ti.com
+
+
+================ [Page 39] ================
+MECHANICAL DATA
+KTT0005B
+www.ti.com
+BOTTOM SIDE OF PACKAGE
+TS5B (Rev D)
+
+
+================ [Page 40] ================
+MECHANICAL DATA
+NEB0005B
+www.ti.com
+
+
+================ [Page 41] ================
+MECHANICAL DATA
+NEB0005E
+www.ti.com
+
+
+================ [Page 42] ================
+IMPORTANT NOTICE
+Texas Instruments Incorporated and its subsidiaries (TI) reserve the right to make corrections, enhancements, improvements and other
+changes to its semiconductor products and services per JESD46, latest issue, and to discontinue any product or service per JESD48, latest
+issue. Buyers should obtain the latest relevant information before placing orders and should verify that such information is current and
+complete. All semiconductor products (also referred to herein as “components”) are sold subject to TI’s terms and conditions of sale
+supplied at the time of order acknowledgment.
+TI warrants performance of its components to the specifications applicable at the time of sale, in accordance with the warranty in TI’s terms
+and conditions of sale of semiconductor products. Testing and other quality control techniques are used to the extent TI deems necessary
+to support this warranty. Except where mandated by applicable law, testing of all parameters of each component is not necessarily
+performed.
+TI assumes no liability for applications assistance or the design of Buyers’ products. Buyers are responsible for their products and
+applications using TI components. To minimize the risks associated with Buyers’ products and applications, Buyers should provide
+adequate design and operating safeguards.
+TI does not warrant or represent that any license, either express or implied, is granted under any patent right, copyright, mask work right, or
+other intellectual property right relating to any combination, machine, or process in which TI components or services are used. Information
+published by TI regarding third-party products or services does not constitute a license to use such products or services or a warranty or
+endorsement thereof. Use of such information may require a license from a third party under the patents or other intellectual property of the
+third party, or a license from TI under the patents or other intellectual property of TI.
+Reproduction of significant portions of TI information in TI data books or data sheets is permissible only if reproduction is without alteration
+and is accompanied by all associated warranties, conditions, limitations, and notices. TI is not responsible or liable for such altered
+documentation. Information of third parties may be subject to additional restrictions.
+Resale of TI components or services with statements different from or beyond the parameters stated by TI for that component or service
+voids all express and any implied warranties for the associated TI component or service and is an unfair and deceptive business practice.
+TI is not responsible or liable for any such statements.
+Buyer acknowledges and agrees that it is solely responsible for compliance with all legal, regulatory and safety-related requirements
+concerning its products, and any use of TI components in its applications, notwithstanding any applications-related information or support
+that may be provided by TI. Buyer represents and agrees that it has all the necessary expertise to create and implement safeguards which
+anticipate dangerous consequences of failures, monitor failures and their consequences, lessen the likelihood of failures that might cause
+harm and take appropriate remedial actions. Buyer will fully indemnify TI and its representatives against any damages arising out of the use
+of any TI components in safety-critical applications.
+In some cases, TI components may be promoted specifically to facilitate safety-related applications. With such components, TI’s goal is to
+help enable customers to design and create their own end-product solutions that meet applicable functional safety standards and
+requirements. Nonetheless, such components are subject to these terms.
+No TI components are authorized for use in FDA Class III (or similar life-critical medical equipment) unless authorized officers of the parties
+have executed a special agreement specifically governing such use.
+Only those TI components which TI has specifically designated as military grade or “enhanced plastic” are designed and intended for use in
+military/aerospace applications or environments. Buyer acknowledges and agrees that any military or aerospace use of TI components
+which have not been so designated is solely at the Buyer's risk, and that Buyer is solely responsible for compliance with all legal and
+regulatory requirements in connection with such use.
+TI has specifically designated certain components as meeting ISO/TS16949 requirements, mainly for automotive use. In any case of use of
+non-designated products, TI will not be responsible for any failure to meet ISO/TS16949.
+Products
+Applications
+Audio
+www.ti.com/audio
+Automotive and Transportation
+www.ti.com/automotive
+Amplifiers
+amplifier.ti.com
+Communications and Telecom
+www.ti.com/communications
+Data Converters
+dataconverter.ti.com
+Computers and Peripherals
+www.ti.com/computers
+DLP® Products
+www.dlp.com
+Consumer Electronics
+www.ti.com/consumer-apps
+DSP
+dsp.ti.com
+Energy and Lighting
+www.ti.com/energy
+Clocks and Timers
+www.ti.com/clocks
+Industrial
+www.ti.com/industrial
+Interface
+interface.ti.com
+Medical
+www.ti.com/medical
+Logic
+logic.ti.com
+Security
+www.ti.com/security
+Power Mgmt
+power.ti.com
+Space, Avionics and Defense
+www.ti.com/space-avionics-defense
+Microcontrollers
+microcontroller.ti.com
+Video and Imaging
+www.ti.com/video
+RFID
+www.ti-rfid.com
+OMAP Applications Processors
+www.ti.com/omap
+TI E2E Community
+e2e.ti.com
+Wireless Connectivity
+www.ti.com/wirelessconnectivity
+Mailing Address: Texas Instruments, Post Office Box 655303, Dallas, Texas 75265
+Copyright © 2013, Texas Instruments Incorporated
+
