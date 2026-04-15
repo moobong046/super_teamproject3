@@ -38,7 +38,7 @@ RAG 시스템의 성능을 극대화하기 위해, 무작정 최신 모델을 �
 
 ---
 
-## 📂 디렉토리 구조 (Directory Structure)
+## 📂 4. 디렉토리 구조 (Directory Structure)
 ```text
 📦 super_teamproject3
  ┣ 📂 api/               # Gradio 웹 UI 및 서버 실행을 위한 최종 통합 코드
@@ -52,3 +52,40 @@ RAG 시스템의 성능을 극대화하기 위해, 무작정 최신 모델을 �
  ┣ 📜 README.md          # 프로젝트 상세 소개서
  ┣ 📜 requirements.txt   # 의존성 패키지 목록
  ┗ 📜 LICENSE            # MIT 라이선스
+```
+
+##  5. 시스템 데모 및 실행 (Getting Started)
+
+본 프로젝트는 누구나 쉽게 시스템을 테스트해 볼 수 있도록 **Hugging Face Spaces** 환경에 배포되어 있습니다.
+
+### 🌐 Web Demo 
+복잡한 설치 과정 없이 아래 링크를 통해 즉시 시스템을 테스트해 볼 수 있습니다.
+* **Hugging Face 데모 링크:** [https://huggingface.co/spaces/mo0hyun/RAG_blackbox]
+
+> **💡 테스트 추천 질문 (Example Prompts)**
+> 1. "QXD8000과 LXQ3000의 GPS 부품을 비교해 주고, 가격 차이뿐만 아니라 두 부품의 실제 기술 스펙(수신 채널, 지원 위성 등)을 검색해서 왜 가격 차이가 나는지 엔지니어 관점에서 설명해주세요."
+> 2. "Ambarella 프로세서중에 가장 비싼 부품을 사용하는 블랙박스 모델은 무엇인가요?"
+> 3. "현재 데이터셋에서 high티어 부품을 가장 많이 사용한 브랜드는 어디인가요?"
+> 4. "IMX678 센서와 주로 결합되는 High 티어 프로세서(예: CV5)의 스펙을 검색해서, 이 프로세서가 고해상도 영상 처리에 적합한 이유를 알려주세요."
+
+---
+
+### 💻 Local 환경에서 실행하기 (For Developers)
+로컬 환경에서 직접 코드를 돌려보고 싶으신 경우 아래 절차를 따릅니다.
+
+**1. 저장소 클론 및 패키지 설치**
+```bash
+git clone [https://github.com/moobong046/test.git](https://github.com/moobong046/test.git)
+cd test
+pip install -r requirements.txt
+```
+**2. 환경 변수 등록**
+프로젝트 루트 디렉토리에 .env 파일을 생성하고 OpenAI API 키를 입력합니다.
+```text
+OPENAI_API_KEY=your_api_key_here
+```
+**3. Gradio 앱 실행**
+```text
+# 허깅페이스 호환성을 고려한 Gradio 메인 스크립트 실행
+python api/main_rag.py 
+```
