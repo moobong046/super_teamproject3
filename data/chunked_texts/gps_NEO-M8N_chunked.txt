@@ -1,0 +1,2462 @@
+📦 [Chunk 1]
+[부품명: NEO-M8N]
+NEO-M8 
+u-blox M8 concurrent GNSS modules 
+Data Sheet 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Highlights: 
+ 
+ 
+Concurrent reception of GPS/QZSS, GLONASS, BeiDou 
+ 
+Industry leading –167 dBm navigation sensitivity 
+ 
+Product variants to meet performance and cost requirements 
+ 
+Combines low power consumption and high sensitivity 
+ 
+Backward compatible with NEO-7, NEO-6 and NEO-5 families  
+www.u-blox.com 
+UBX-13003366 - R10
+--------------------------------------------------
+
+📦 [Chunk 2]
+[부품명: NEO-M8N]
+NEO-M8 - Data Sheet 
+ 
+UBX-13003366 - R10 
+  
+ 
+Page 2 of 26 
+ 
+ 
+Document Information 
+Title 
+NEO-M8 
+Subtitle 
+u-blox M8 concurrent GNSS modules 
+ 
+Document type 
+Data Sheet 
+ 
+Document number 
+UBX-13003366 
+Revision and Date 
+R10 
+21-Oct-2015 
+Document status 
+Production Information 
+ 
+Document status explanation 
+Objective Specification 
+Document contains target values. Revised and supplementary data will be published later. 
+Advance Information 
+Document contains data based on early testing. Revised and supplementary data will be published later. 
+Early Production Information 
+Document contains data from product verification. Revised and supplementary data may be published later. 
+Production Information 
+Document contains the final product specification.
+--------------------------------------------------
+
+📦 [Chunk 3]
+[부품명: NEO-M8N]
+Production Information 
+Document contains the final product specification. 
+ 
+This document applies to the following products: 
+Product name 
+Type number 
+ROM/FLASH version 
+PCN reference 
+NEO-M8N 
+NEO-M8N-0-01 
+ROM 2.01/Flash FW 2.01  
+N/A 
+NEO-M8M 
+NEO-M8M-0-01 
+ROM 2.01 
+UBX-15015253 
+NEO-M8Q 
+NEO-M8Q-0-01 
+ROM 2.01 
+UBX-15015253 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+u-blox reserves all rights to this document and the information contained herein. Products, names, logos and designs described herein 
+may in whole or in part be subject to intellectual property rights. Reproduction, use, modification or disclosure to third parties of this 
+document or any part thereof without the express permission of u-blox is strictly prohibited.
+--------------------------------------------------
+
+📦 [Chunk 4]
+[부품명: NEO-M8N]
+document or any part thereof without the express permission of u-blox is strictly prohibited. 
+The information contained herein is provided “as is” and u-blox assumes no liability for the use of the information. No warranty, either 
+express or implied, is given, including but not limited, with respect to the accuracy, correctness, reliability and fitness for a particular 
+purpose of the information. This document may be revised by u-blox at any time. For most recent documents, visit www.u-blox.com. 
+Copyright © 2016, u-blox AG. 
+u-blox
+® is a registered trademark of u-blox Holding AG in the EU and other countries. ARM
+® is the registered trademark of ARM Limited in 
+the EU and other countries.
+--------------------------------------------------
+
+📦 [Chunk 5]
+[부품명: NEO-M8N]
+NEO-M8 - Data Sheet 
+UBX-13003366 - R10                                                         Production Information 
+Contents 
+ 
+ 
+Page 3 of 26 
+Contents 
+Contents .............................................................................................................................. 3 
+1 
+Functional description .................................................................................................. 5 
+1.1 
+Overview .............................................................................................................................................. 5 
+1.2 
+Product features ................................................................................................................................... 5 
+1.3
+--------------------------------------------------
+
+📦 [Chunk 6]
+[부품명: NEO-M8N]
+1.3 
+Performance ......................................................................................................................................... 6 
+1.4 
+Block diagram ....................................................................................................................................... 7 
+1.5 
+GNSS .................................................................................................................................................... 7 
+1.5.1 
+GPS ............................................................................................................................................... 7 
+1.5.2 
+GLONASS ...................................................................................................................................... 7 
+1.5.3
+--------------------------------------------------
+
+📦 [Chunk 7]
+[부품명: NEO-M8N]
+1.5.3 
+BeiDou .......................................................................................................................................... 7 
+1.5.4 
+Galileo ........................................................................................................................................... 8 
+1.5.5 
+QZSS ............................................................................................................................................. 8 
+1.6 
+Assisted GNSS (A-GNSS) ....................................................................................................................... 8 
+1.6.1 
+AssistNow
+TM Online ........................................................................................................................ 8 
+1.6.2 
+AssistNow
+--------------------------------------------------
+
+📦 [Chunk 8]
+[부품명: NEO-M8N]
+1.6.2 
+AssistNow
+TM Offline ....................................................................................................................... 8 
+1.6.3 
+AssistNow
+TM Autonomous .............................................................................................................. 8 
+1.7 
+Augmentation Systems ......................................................................................................................... 9 
+1.7.1 
+Satellite-Based Augmentation System (SBAS) ................................................................................. 9 
+1.7.2 
+Differential GPS (D-GPS) ................................................................................................................ 9 
+1.8
+--------------------------------------------------
+
+📦 [Chunk 9]
+[부품명: NEO-M8N]
+Differential GPS (D-GPS) ................................................................................................................ 9 
+1.8 
+Odometer ............................................................................................................................................. 9 
+1.9 
+Data logging (NEO-M8N) ...................................................................................................................... 9 
+1.10 
+EXTINT: External interrupt ................................................................................................................. 9 
+1.10.1 
+Pin Control .................................................................................................................................... 9 
+1.10.2
+--------------------------------------------------
+
+📦 [Chunk 10]
+[부품명: NEO-M8N]
+1.10.2 
+Aiding ......................................................................................................................................... 10 
+1.11 
+TIMEPULSE ...................................................................................................................................... 10 
+1.12 
+Protocols and interfaces .................................................................................................................. 10 
+1.13 
+Interfaces ........................................................................................................................................ 10 
+1.13.1 
+UART ........................................................................................................................................... 10 
+1.13.2
+--------------------------------------------------
+
+📦 [Chunk 11]
+[부품명: NEO-M8N]
+1.13.2 
+USB ............................................................................................................................................. 10 
+1.13.3 
+SPI ............................................................................................................................................... 10 
+1.13.4 
+Display Data Channel (DDC) ........................................................................................................ 11 
+1.14 
+Clock generation ............................................................................................................................ 11 
+1.14.1 
+Oscillators .................................................................................................................................... 11 
+1.14.2
+--------------------------------------------------
+
+📦 [Chunk 12]
+[부품명: NEO-M8N]
+1.14.2 
+Real-Time Clock (RTC) ................................................................................................................. 11 
+1.15 
+Power management ........................................................................................................................ 11 
+1.15.1 
+DC/DC converter ......................................................................................................................... 11 
+1.15.2 
+Operating modes ........................................................................................................................ 11 
+1.16 
+Antenna .......................................................................................................................................... 12 
+2
+--------------------------------------------------
+
+📦 [Chunk 13]
+[부품명: NEO-M8N]
+2 
+Pin Definition .............................................................................................................. 13
+--------------------------------------------------
+
+📦 [Chunk 14]
+[부품명: NEO-M8N]
+NEO-M8 - Data Sheet 
+UBX-13003366 - R10                                                         Production Information 
+Contents 
+ 
+ 
+Page 4 of 26 
+2.1 
+Pin assignment ................................................................................................................................... 13 
+3 
+Configuration management ...................................................................................... 14 
+3.1 
+Interface Selection (D_SEL) .................................................................................................................. 14 
+4 
+Electrical specification ................................................................................................ 15 
+4.1
+--------------------------------------------------
+
+📦 [Chunk 15]
+[부품명: NEO-M8N]
+4 
+Electrical specification ................................................................................................ 15 
+4.1 
+Absolute maximum rating .................................................................................................................. 15 
+4.2 
+Operating conditions .......................................................................................................................... 16 
+4.3 
+Indicative current requirements ........................................................................................................... 17 
+4.4 
+SPI timing diagrams ............................................................................................................................ 17 
+4.4.1
+--------------------------------------------------
+
+📦 [Chunk 16]
+[부품명: NEO-M8N]
+4.4.1 
+Timing recommendations ............................................................................................................ 18 
+4.5 
+DDC timing diagrams ......................................................................................................................... 18 
+5 
+Mechanical specifications .......................................................................................... 19 
+6 
+Reliability tests and approvals .................................................................................. 20 
+6.1 
+Reliability tests .................................................................................................................................... 20 
+6.2
+--------------------------------------------------
+
+📦 [Chunk 17]
+[부품명: NEO-M8N]
+6.2 
+Approvals ........................................................................................................................................... 20 
+7 
+Product handling & soldering .................................................................................... 21 
+7.1 
+Packaging ........................................................................................................................................... 21 
+7.1.1 
+Reels ........................................................................................................................................... 21 
+7.1.2 
+Tapes .......................................................................................................................................... 21 
+7.2
+--------------------------------------------------
+
+📦 [Chunk 18]
+[부품명: NEO-M8N]
+7.2 
+Shipment, storage and handling ......................................................................................................... 22 
+7.2.1 
+Moisture Sensitivity Levels ........................................................................................................... 22 
+7.2.2 
+Reflow soldering ......................................................................................................................... 22 
+7.2.3 
+ESD handling precautions ............................................................................................................ 22 
+8 
+Default messages ....................................................................................................... 23 
+9
+--------------------------------------------------
+
+📦 [Chunk 19]
+[부품명: NEO-M8N]
+8 
+Default messages ....................................................................................................... 23 
+9 
+Labeling and ordering information ........................................................................... 24 
+9.1 
+Product labeling.................................................................................................................................. 24 
+9.2 
+Explanation of codes .......................................................................................................................... 24 
+9.3 
+Ordering codes ................................................................................................................................... 24
+--------------------------------------------------
+
+📦 [Chunk 20]
+[부품명: NEO-M8N]
+Related documents .......................................................................................................... 25 
+Revision history ................................................................................................................ 25 
+Contact .............................................................................................................................. 26
+--------------------------------------------------
+
+📦 [Chunk 21]
+[부품명: NEO-M8N]
+NEO-M8 - Data Sheet 
+UBX-13003366 - R10                                                         Production Information 
+Functional description 
+ 
+ 
+Page 5 of 26 
+1 Functional description 
+1.1 
+Overview 
+The NEO-M8 series of standalone concurrent GNSS modules is built on the exceptional performance of the 
+u-blox M8 GNSS (GPS, GLONASS, BeiDou, QZSS, SBAS and Galileo-ready
+1) engine in the industry proven NEO 
+form factor.  
+The NEO-M8 series provides high sensitivity and minimal acquisition times while maintaining low system power. 
+The NEO-M8M is optimized for cost sensitive applications, while NEO-M8N/M8Q provides best performance and 
+easier RF integration. The NEO form factor allows easy migration from previous NEO generations. Sophisticated
+--------------------------------------------------
+
+📦 [Chunk 22]
+[부품명: NEO-M8N]
+easier RF integration. The NEO form factor allows easy migration from previous NEO generations. Sophisticated 
+RF-architecture and interference suppression ensure maximum performance even in GNSS-hostile environments.  
+The NEO-M8 series combines a high level of robustness and integration capability with flexible connectivity 
+options. The future-proof NEO-M8N includes an internal Flash that allows simple firmware upgrades for 
+supporting additional GNSS systems. This makes NEO-M8 perfectly suited to industrial and automotive 
+applications. 
+The DDC (I
+2C compatible) interface provides connectivity and enables synergies with most u-blox cellular 
+modules. For RF optimization the NEO-M8N/M8Q features an additional front-end LNA for easier antenna
+--------------------------------------------------
+
+📦 [Chunk 23]
+[부품명: NEO-M8N]
+modules. For RF optimization the NEO-M8N/M8Q features an additional front-end LNA for easier antenna 
+integration and a front-end SAW filter for increased jamming immunity. 
+u-blox M8 modules use GNSS chips qualified according to AEC-Q100, are manufactured in ISO/TS 16949 
+certified sites, and fully tested on a system level. Qualification tests are performed as stipulated in the ISO16750 
+standard: “Road vehicles – Environmental conditions and testing for electrical and electronic equipment”. 
+u-blox’ AssistNow Assistance supply aiding information, such as ephemeris, almanac, rough last position and 
+time, reduce the time to first fix significantly and improve the acquisition sensitivity. AssistNow data are with
+--------------------------------------------------
+
+📦 [Chunk 24]
+[부품명: NEO-M8N]
+time, reduce the time to first fix significantly and improve the acquisition sensitivity. AssistNow data are with 
+u-blox M8 supporting both GPS and GLONASS constellation for faster acquisition than a GPS-only assistance. 
+The extended validity of AssistNow Offline data (up to 35 days) and AssistNow Autonomous data (up to 6 days) 
+provide faster acquisition after long off time. 
+ 
+See section Error! Reference source not found. for more information concerning the NEO-M8 series 
+related AssistNow Assistance.  
+1.2 
+Product features 
+ 
+                                                     
+1 with future flash firmware update
+--------------------------------------------------
+
+📦 [Chunk 25]
+[부품명: NEO-M8N]
+NEO-M8 - Data Sheet 
+UBX-13003366 - R10                                                         Production Information 
+Functional description 
+ 
+ 
+Page 6 of 26 
+1.3 
+Performance 
+Parameter 
+Specification 
+Receiver type 
+72-channel u-blox M8 engine  
+GPS L1C/A 
+SBAS L1C/A 
+QZSS L1C/A 
+GLONASS L1OF 
+BeiDou B1 
+Galileo E1B/C
+2 
+NEO-M8N/Q  
+GNSS 
+GPS & GLONASS 
+GPS & BeiDou 
+GPS 
+Time-To-First-Fix 
+3 
+Cold start 
+26 s 
+27 s 
+29 s 
+Hot start 
+1 s 
+1 s 
+1 s 
+Aided starts 
+4 
+2 s 
+3 s 
+5 
+2 s 
+Sensitivity 
+6 
+Tracking & Navigation 
+–167 dBm 
+–165 dBm 
+–166 dBm 
+Reacquisition 
+–160 dBm 
+–160 dBm 
+–160 dBm 
+Cold start 
+–148 dBm 
+–148 dBm 
+–148 dBm 
+Hot start 
+–156 dBm 
+–156 dBm 
+–156 dBm 
+NEO-M8M  
+GNSS 
+GPS & GLONASS 
+GPS & BeiDou 
+GPS 
+Time-To-First-Fix 
+3 
+Cold start 
+27 s 
+28 s 
+30 s
+--------------------------------------------------
+
+📦 [Chunk 26]
+[부품명: NEO-M8N]
+Hot start 
+–156 dBm 
+–156 dBm 
+–156 dBm 
+NEO-M8M  
+GNSS 
+GPS & GLONASS 
+GPS & BeiDou 
+GPS 
+Time-To-First-Fix 
+3 
+Cold start 
+27 s 
+28 s 
+30 s 
+Hot start 
+1 s 
+1 s 
+1 s 
+Aided starts 
+4 
+4 s 
+6 s 
+5 
+3 s 
+Sensitivity 
+6 
+Tracking & Navigation 
+–164 dBm 
+–162 dBm 
+–163 dBm 
+Reacquisition 
+–159 dBm 
+–159 dBm 
+–159 dBm 
+Cold start 
+–147 dBm 
+–147 dBm 
+–147 dBm 
+Hot start 
+–156 dBm 
+–156 dBm 
+–156 dBm 
+TCXO or Crystal  
+GNSS 
+GPS & GLONASS 
+GPS & BeiDou 
+GPS 
+Max navigation update rate 
+NEO-M8N 
+NEO-M8M/Q 
+5 Hz 
+10 Hz 
+5 Hz 
+10 Hz 
+10 Hz 
+18 Hz 
+Velocity accuracy 
+7 
+ 
+0.05 m/s 
+ 
+ 
+Heading accuracy 
+7 
+ 
+0.3 degrees 
+Horizontal position accuracy 
+8 
+Autonomous 
+SBAS 
+2.5 m 
+2.0 m 
+Accuracy of time pulse signal 
+RMS 
+30 ns 
+60 ns 
+99% 
+Frequency of time pulse signal
+--------------------------------------------------
+
+📦 [Chunk 27]
+[부품명: NEO-M8N]
+8 
+Autonomous 
+SBAS 
+2.5 m 
+2.0 m 
+Accuracy of time pulse signal 
+RMS 
+30 ns 
+60 ns 
+99% 
+Frequency of time pulse signal 
+ 
+0.25 Hz…10 MHz (configurable) 
+Operational limits 
+9 
+Dynamics 
+ 4 g 
+Altitude 
+50,000 m 
+Velocity 
+500 m/s 
+Table 1: NEO-M8 performance in different GNSS modes (default: concurrent reception of GPS and GLONASS) 
+ 
+                                                     
+2  Ready to support Galileo E1B/C when available (NEO-M8N) 
+3  All satellites at -130 dBm 
+4  Dependent on aiding data connection speed and latency 
+5  BeiDou assisted acquisition is not available with FW 2.01 
+6  Demonstrated with a good external LNA 
+7  50% @ 30 m/s 
+8  CEP, 50%, 24 hours static, -130 dBm, > 6 SVs 
+9  Assuming Airborne < 4 g platform
+--------------------------------------------------
+
+📦 [Chunk 28]
+[부품명: NEO-M8N]
+NEO-M8 - Data Sheet 
+UBX-13003366 - R10                                                         Production Information 
+Functional description 
+ 
+ 
+Page 7 of 26 
+1.4 
+Block diagram 
+ 
+Figure 1: NEO-M8 block diagram 
+1.5 
+GNSS 
+The NEO-M8 GNSS modules are concurrent GNSS receivers and can receive and track multiple GNSS systems 
+(e.g. GPS, GLONASS, Galileo-ready, BeiDou and QZSS signals). Because of the dual-frequency RF front-end 
+architecture, two of the three signals (GPS L1C/A, GLONASS L1OF and BeiDou B1) can be received and 
+processed concurrently. By default the M8 receivers are configured for concurrent GPS (includes SBAS and QZSS) 
+and GLONASS reception. If power consumption is a key factor, then the receiver should be configured for single
+--------------------------------------------------
+
+📦 [Chunk 29]
+[부품명: NEO-M8N]
+and GLONASS reception. If power consumption is a key factor, then the receiver should be configured for single 
+GNSS operation using either GPS or GLONASS or BeiDou and disabling QZSS and SBAS. 
+ 
+Galileo, QZSS and SBAS share the same frequency band as GPS and can always be processed in 
+conjunction with GPS.  
+1.5.1 GPS 
+The NEO-M8 positioning modules are designed to receive and track the L1C/A signals provided at 1575.42 MHz 
+by the Global Positioning System (GPS). The NEO-M8 series can receive and process GPS concurrently with 
+GLONASS or BeiDou. 
+1.5.2 GLONASS 
+The NEO-M8 modules can receive and process GLONASS concurrently with GPS or BeiDou. The Russian 
+GLONASS satellite system is an alternative system to the US-based Global Positioning System (GPS). u-blox
+--------------------------------------------------
+
+📦 [Chunk 30]
+[부품명: NEO-M8N]
+GLONASS satellite system is an alternative system to the US-based Global Positioning System (GPS). u-blox 
+NEO-M8 positioning modules are designed to receive and track the L1OF signals GLONASS provides at 1602 
+MHz + k*562.5 kHz, where k is the satellite’s frequency channel number (k = –7,..., 5, 6). The ability to receive 
+and track GLONASS L1OF satellite signals allows design of GLONASS receivers where required by regulations.  
+To take advantage of GPS and GLONASS, dedicated hardware preparation must be made during the design-in 
+phase. See the NEO-M8 Hardware Integration Manual [1] for u-blox design recommendations. 
+1.5.3 BeiDou 
+The NEO-M8 modules can receive and process BeiDou concurrently with GPS or GLONASS. u-blox NEO-M8
+--------------------------------------------------
+
+📦 [Chunk 31]
+[부품명: NEO-M8N]
+1.5.3 BeiDou 
+The NEO-M8 modules can receive and process BeiDou concurrently with GPS or GLONASS. u-blox NEO-M8 
+positioning modules are designed to receive and track the B1 signals provided at 1561.098 MHz by the BeiDou 
+Navigation Satellite System. The ability to receive and track BeiDou B1 satellite signals in conjunction with GPS 
+results in higher coverage, improved reliability and better accuracy. By the end of 2013 BeiDou is not fully 
+operational and provides regional coverage only. Global coverage is scheduled for 2020.
+--------------------------------------------------
+
+📦 [Chunk 32]
+[부품명: NEO-M8N]
+NEO-M8 - Data Sheet 
+UBX-13003366 - R10                                                         Production Information 
+Functional description 
+ 
+ 
+Page 8 of 26 
+1.5.4 Galileo  
+The NEO-M8N positioning module is ready to receive and track GPS and Galileo signals concurrently, enhancing 
+accuracy and coverage. When Galileo E1B/C signals become available, u-blox NEO-M8N receiver equipped with 
+an SQI flash memory device will be capable of receiving and processing them via a firmware update. 
+1.5.5 QZSS 
+The Quasi-Zenith Satellite System (QZSS) is a regional navigation satellite system that transmits additional GPS 
+L1C/A signals for the Pacific region covering Japan and Australia. NEO-M8 series positioning modules are able to
+--------------------------------------------------
+
+📦 [Chunk 33]
+[부품명: NEO-M8N]
+L1C/A signals for the Pacific region covering Japan and Australia. NEO-M8 series positioning modules are able to 
+receive and track these signals concurrently with GPS signals, resulting in better availability especially under bad 
+signal conditions, e.g. in urban canyons. The L1-SAIF signal provided by QZSS is not supported. 
+1.6 
+Assisted GNSS (A-GNSS) 
+Supply of aiding information, such as ephemeris, almanac, rough last position and time, will reduce the time to 
+first fix significantly and improve the acquisition sensitivity. All u-blox M8 products support the u-blox AssistNow 
+Online and AssistNow Offline A-GNSS services, support AssistNow Autonomous, and are OMA SUPL compliant. 
+1.6.1 AssistNow
+TM Online
+--------------------------------------------------
+
+📦 [Chunk 34]
+[부품명: NEO-M8N]
+Online and AssistNow Offline A-GNSS services, support AssistNow Autonomous, and are OMA SUPL compliant. 
+1.6.1 AssistNow
+TM Online 
+With AssistNow Online, an internet-connected GNSS device downloads assistance data from u-blox’ AssistNow 
+Online Service at system start-up. AssistNow Online is network-operator independent and globally available.  
+u-blox only sends ephemeris data for those satellites currently visible to the device requesting the data, thus 
+minimizing the amount of data transferred. 
+Supply of aiding information, such as ephemeris, almanac, rough last position and time, will reduce the time to 
+first fix significantly and improve the acquisition sensitivity. 
+1.6.2 AssistNow
+TM Offline
+--------------------------------------------------
+
+📦 [Chunk 35]
+[부품명: NEO-M8N]
+first fix significantly and improve the acquisition sensitivity. 
+1.6.2 AssistNow
+TM Offline 
+With AssistNow Offline, users download u-blox’ long-term orbit data from the Internet at their convenience. The 
+orbit data can be stored in the GNSS receiver’s SQI flash memory (NEO-M8N) or must be stored in the memory 
+of the application processor (NEO-M8M/M8Q). Thus the service requires no connectivity at system start-up, 
+enabling a position fix within seconds, even when no network is available. AssistNow Offline offers 
+augmentation for up to 35 days. 
+1.6.3 AssistNow
+TM Autonomous 
+AssistNow Autonomous provides aiding information without the need for a host or external network 
+connection. Based on previous broadcast satellite ephemeris data downloaded to and stored by the GNSS
+--------------------------------------------------
+
+📦 [Chunk 36]
+[부품명: NEO-M8N]
+connection. Based on previous broadcast satellite ephemeris data downloaded to and stored by the GNSS 
+receiver, AssistNow Autonomous automatically generates accurate satellite orbital data (“AssistNow 
+Autonomous data”) that is usable for future GNSS position fixes. The concept capitalizes on the periodic nature 
+of GNSS satellites: their position in the sky is basically repeated every 24 hours. By capturing strategic ephemeris 
+data at specific times of the day, the receiver can predict accurate satellite ephemeris for up to six days after 
+initial reception. If using AssistNow Autonomous, the use of NEO-M8N (with SQI flash memory) is highly 
+recommended. 
+u-blox’ AssistNow Autonomous benefits are:  
+ 
+Faster fix in situations where GNSS satellite signals are weak  
+
+--------------------------------------------------
+
+📦 [Chunk 37]
+[부품명: NEO-M8N]
+recommended. 
+u-blox’ AssistNow Autonomous benefits are:  
+ 
+Faster fix in situations where GNSS satellite signals are weak  
+ 
+No connectivity required  
+ 
+Compatible with AssistNow Online and Offline (can work stand-alone, or in tandem with these services)  
+ 
+No integration effort; calculations are done in the background, transparent to the user.  
+ 
+For ROM-based NEO-M8M/M8Q receivers, AssistNow Autonomous can calculate GPS only orbit 
+predictions for up to 6 days (3 days by defaults). 
+ 
+For more details see the u-blox M8 Receiver Description Including Protocol Specification [2].
+--------------------------------------------------
+
+📦 [Chunk 38]
+[부품명: NEO-M8N]
+NEO-M8 - Data Sheet 
+UBX-13003366 - R10                                                         Production Information 
+Functional description 
+ 
+ 
+Page 9 of 26 
+1.7 
+Augmentation Systems 
+1.7.1 Satellite-Based Augmentation System (SBAS)  
+The u-blox M8 positioning modules support SBAS. These systems supplement GPS data with additional regional 
+or wide area GPS augmentation data. The system broadcasts augmentation data via satellite and this 
+information can be used by GNSS receivers to improve the resulting precision. SBAS satellites can be used as 
+additional satellites for ranging (navigation), further enhancing precision and availability. The following SBAS 
+types are supported with u-blox M8: WAAS, EGNOS and MSAS.
+--------------------------------------------------
+
+📦 [Chunk 39]
+[부품명: NEO-M8N]
+types are supported with u-blox M8: WAAS, EGNOS and MSAS. 
+ 
+For more details see the u-blox M8 Receiver Description Including Protocol Specification [2]. 
+1.7.2 Differential GPS (D-GPS)  
+u-blox M8 receivers support Differential-GPS data according RTCM 10402.3: “RECOMMENDED STANDARDS 
+FOR DIFFERENTIAL GNSS”. The use of Differential-GPS data improves GPS position accuracy. RTCM cannot be 
+used together with SBAS. The RTCM implementation supports the following RTCM 2.3 messages: 
+Message Type 
+Description 
+1 
+Differential GPS Corrections 
+2 
+Delta Differential GPS Corrections 
+3 
+GPS Reference Station Parameters 
+9 
+GPS Partial Correction Set 
+Table 2: Supported RTCM 2.3 messages 
+ 
+For more details see the u-blox M8 Receiver Description Including Protocol Specification [2].  
+1.8
+--------------------------------------------------
+
+📦 [Chunk 40]
+[부품명: NEO-M8N]
+Table 2: Supported RTCM 2.3 messages 
+ 
+For more details see the u-blox M8 Receiver Description Including Protocol Specification [2].  
+1.8 
+Odometer 
+The odometer provides information on travelled ground distance (in meter) using solely the position and 
+Doppler-based velocity of the navigation solution. For each computed travelled distance since the last odometer 
+reset, the odometer estimates a 1-sigma accuracy value. The total cumulative ground distance is maintained and 
+saved in the BBR memory. 
+ 
+The odometer feature is disabled by default. For more details see the u-blox M8 Receiver Description 
+Including Protocol Specification [2].  
+1.9 
+Data logging (NEO-M8N) 
+The u-blox NEO-M8N receiver can be used in data logging applications. The data logging feature enables
+--------------------------------------------------
+
+📦 [Chunk 41]
+[부품명: NEO-M8N]
+1.9 
+Data logging (NEO-M8N) 
+The u-blox NEO-M8N receiver can be used in data logging applications. The data logging feature enables 
+continuous storage of position, velocity and time information to an onboard SQI flash memory (at least 16 Mbit). 
+It can also log the distance from the odometer. The information can be downloaded from the receiver later for 
+further analysis or for conversion to a mapping tool. For more information see the u-blox M8 Receiver 
+Description Including Protocol Specification [2]. 
+1.10 EXTINT: External interrupt 
+EXTINT is an external interrupt pin with fixed input voltage thresholds with respect to VCC. It can be used for 
+control of the receiver or for aiding. 
+For more information about how to implement and configure these features, see the u-blox M8 Receiver
+--------------------------------------------------
+
+📦 [Chunk 42]
+[부품명: NEO-M8N]
+control of the receiver or for aiding. 
+For more information about how to implement and configure these features, see the u-blox M8 Receiver 
+Description including Protocol Specification [2] and the NEO-M8 Hardware Integration Manual [1]. 
+1.10.1 Pin Control 
+The pin control feature allows overriding the automatic active/inactive cycle of Power Save Mode. The state of 
+the receiver can be controlled through the EXTINT pin. 
+The receiver can also be forced OFF using EXTINT when Power Save Mode is not active.
+--------------------------------------------------
+
+📦 [Chunk 43]
+[부품명: NEO-M8N]
+NEO-M8 - Data Sheet 
+UBX-13003366 - R10                                                         Production Information 
+Functional description 
+ 
+ 
+Page 10 of 26 
+1.10.2 Aiding 
+The EXTINT pin can be used to supply time or frequency aiding data to the receiver. 
+For time aiding, hardware time synchronization can be achieved by connecting an accurate time pulse to the 
+EXTINT pin.  
+Frequency aiding can be implemented by connecting a periodic rectangular signal with a frequency up to 500 
+kHz and arbitrary duty cycle (low/high phase duration must not be shorter than 50 ns) to the EXTINT pin. Provide 
+the applied frequency value to the receiver using UBX messages. 
+1.11 TIMEPULSE 
+A configurable time pulse signal is available with all u-blox M8 modules.
+--------------------------------------------------
+
+📦 [Chunk 44]
+[부품명: NEO-M8N]
+1.11 TIMEPULSE 
+A configurable time pulse signal is available with all u-blox M8 modules.  
+The TIMEPULSE output generates pulse trains synchronized with GPS or UTC time grid with intervals 
+configurable over a wide frequency range. Thus it may be used as a low frequency time synchronization pulse or 
+as a high frequency reference signal. 
+By default the time pulse signal is configured to 1 pulse per second. For more information see the u-blox M8 
+Receiver Description including Protocol Specification [2]. 
+1.12 Protocols and interfaces 
+Protocol 
+Type 
+NMEA 0183, version 4.0 (V2.3 or V4.1 configurable) 
+Input/output, ASCII 
+UBX 
+Input/output, binary, u-blox proprietary 
+RTCM 
+Input message, 1, 2, 3, 9 
+Table 3: Available Protocols 
+All protocols are available on UART, USB, DDC (I
+--------------------------------------------------
+
+📦 [Chunk 45]
+[부품명: NEO-M8N]
+RTCM 
+Input message, 1, 2, 3, 9 
+Table 3: Available Protocols 
+All protocols are available on UART, USB, DDC (I
+2C compliant) and SPI. For specification of the various protocols 
+see the u-blox M8 Receiver Description Including Protocol Specification [2]. 
+1.13 Interfaces 
+A number of interfaces are provided either for data communication or memory access. The embedded firmware 
+uses these interfaces according to their respective protocol specifications.  
+1.13.1 UART 
+The NEO-M8 series modules include one UART interface, which can be used for communication to a host. It 
+supports configurable baud rates. For supported baud rates see the u-blox M8 Receiver Description Including 
+Protocol Specification [2].
+--------------------------------------------------
+
+📦 [Chunk 46]
+[부품명: NEO-M8N]
+supports configurable baud rates. For supported baud rates see the u-blox M8 Receiver Description Including 
+Protocol Specification [2]. 
+ 
+Designs must allow access to the UART and the SAFEBOOT_N function pin for future service, updates 
+and reconfiguration.  
+1.13.2 USB 
+A USB version 2.0 FS compatible interface can be used for communication as an alternative to the UART. The 
+pull-up resistor on pin USB_DP is integrated to signal a full-speed device to the host. The VDD_USB pin supplies 
+the USB interface. 
+u-blox USB (CDC-ACM) driver supports Windows Vista and Windows 7 and Windows 8 operating systems. 
+1.13.3 SPI 
+The SPI interface is designed to allow communication to a host CPU. The interface can be operated in slave
+--------------------------------------------------
+
+📦 [Chunk 47]
+[부품명: NEO-M8N]
+1.13.3 SPI 
+The SPI interface is designed to allow communication to a host CPU. The interface can be operated in slave 
+mode only. The maximum transfer rate using SPI is 1 Mb/s and the maximum SPI clock frequency is 5.5 MHz. 
+Note that SPI is not available in the default configuration, because its pins are shared with the UART and DDC 
+interfaces. The SPI interface can be enabled by connecting D_SEL (Pin 2) to ground (see section 3.1).
+--------------------------------------------------
+
+📦 [Chunk 48]
+[부품명: NEO-M8N]
+NEO-M8 - Data Sheet 
+UBX-13003366 - R10                                                         Production Information 
+Functional description 
+ 
+ 
+Page 11 of 26 
+1.13.4 Display Data Channel (DDC) 
+An I
+2C compliant DDC interface is available for communication with an external host CPU or u-blox cellular 
+modules. The interface can be operated in slave mode only. The DDC protocol and electrical interface are fully 
+compatible with Fast-Mode of the I
+2C industry standard. Since the maximum SCL clock frequency is 400 kHz, the 
+maximum transfer rate is 400 kb/s. 
+1.14 Clock generation 
+1.14.1 Oscillators 
+NEO-M8 GNSS modules are available in TCXO and crystal versions. The TCXO allows accelerated weak signal 
+acquisition, enabling faster start and reacquisition times.
+--------------------------------------------------
+
+📦 [Chunk 49]
+[부품명: NEO-M8N]
+acquisition, enabling faster start and reacquisition times. 
+Oscillators used on NEO-M8 module are carefully selected and screened for stability and against frequency 
+perturbations across the full operating range (–40° to +85°C).  
+The careful selection and qualification of critical parts, such as GNSS oscillators, has resulted in u-blox modules 
+being the most reliable positioning modules in the industry, particularly in challenging conditions. 
+1.14.2 Real-Time Clock (RTC) 
+The RTC is driven by a 32 kHz oscillator using an RTC crystal. If the main supply voltage fails, and a battery is 
+connected to V_BCKP, parts of the receiver switch off, but the RTC still runs providing a timing reference for the
+--------------------------------------------------
+
+📦 [Chunk 50]
+[부품명: NEO-M8N]
+connected to V_BCKP, parts of the receiver switch off, but the RTC still runs providing a timing reference for the 
+receiver. This operating mode is called Hardware Backup Mode, which enables all relevant data to be saved in 
+the backup RAM to allow a hot or warm start later. 
+1.15 Power management 
+u-blox M8 technology offers a power-optimized architecture with built-in autonomous power saving functions 
+to minimize power consumption at any given time. Furthermore, the receiver can be used in two operating 
+modes: Continuous mode for best performance or Power Save Mode for optimized power consumption 
+respectively. In addition, a high efficiency DC/DC converter is integrated to allow low power consumption even 
+for higher main supply voltages.  
+1.15.1 DC/DC converter
+--------------------------------------------------
+
+📦 [Chunk 51]
+[부품명: NEO-M8N]
+for higher main supply voltages.  
+1.15.1 DC/DC converter 
+NEO-M8 series modules integrate a DC/DC converter, allowing reduced power consumption especially when 
+using a main supply voltage above 2.5 V.  
+ 
+For more information see the NEO-M8 Hardware Integration Manual [1] 
+1.15.2 Operating modes 
+u-blox M8 modules have two operating modes: 
+ 
+Continuous Mode for best GNSS performance  
+ 
+Power Save Mode to optimize power consumption 
+1.15.2.1 Continuous Mode 
+Continuous Mode uses the acquisition engine at full performance resulting in the shortest possible TTFF and the 
+highest sensitivity. It searches for all possible satellites until the Almanac is completely downloaded. The receiver 
+then switches to the tracking engine to lower power consumption.
+--------------------------------------------------
+
+📦 [Chunk 52]
+[부품명: NEO-M8N]
+then switches to the tracking engine to lower power consumption.  
+Thus, a lower tracking current consumption level will be achieved when: 
+ 
+A valid GNSS position is obtained 
+ 
+The entire Almanac has been downloaded  
+ 
+The Ephemeris for each satellite in view is valid
+--------------------------------------------------
+
+📦 [Chunk 53]
+[부품명: NEO-M8N]
+NEO-M8 - Data Sheet 
+UBX-13003366 - R10                                                         Production Information 
+Functional description 
+ 
+ 
+Page 12 of 26 
+1.15.2.2 Power Save Mode 
+For power sensitive applications, u-blox M8 receivers provide a Power Save Mode for reduced power 
+consumption. 
+Power Save Mode provides two dedicated methods, ON/OFF and Cyclic tracking, that reduce average current 
+consumption in different ways to match the needs of the specific application. These operations can be set by 
+using a specific UBX message.  
+ 
+For more information about power management strategies, see the u-blox M8 Receiver Description 
+Including Protocol Specification [2]. 
+ 
+Power Save Mode is only available in GPS mode. 
+1.16 Antenna
+--------------------------------------------------
+
+📦 [Chunk 54]
+[부품명: NEO-M8N]
+Including Protocol Specification [2]. 
+ 
+Power Save Mode is only available in GPS mode. 
+1.16 Antenna 
+NEO-M8 series modules are designed for use with passive
+10 and active
+11 antennas. 
+Parameter 
+Specification 
+ 
+Antenna Type 
+ 
+Passive and active antenna 
+Active Antenna Recommendations 
+Minimum gain 
+Maximum gain 
+Maximum noise figure  
+15 dB (to compensate signal loss in RF cable) 
+50 
+12 dB / 30 
+13 dB 
+1.5 dB  
+Table 4: Antenna Specifications for all NEO-M8 modules 
+                                                     
+10  For integration NEO-M8 modules with Cellular products, see the NEO-M8 Hardware Integration Manual [1]. 
+11  For information on using active antennas with NEO-M8 modules, see the NEO-M8 Hardware Integration Manual [1]. 
+12 NEO-M8M 
+13 NEO-M8N/M8Q
+--------------------------------------------------
+
+📦 [Chunk 55]
+[부품명: NEO-M8N]
+NEO-M8 - Data Sheet 
+UBX-13003366 - R10                                                         Production Information 
+Pin Definition 
+ 
+ 
+Page 13 of 26 
+2 Pin Definition 
+2.1 
+Pin assignment 
+ 
+Figure 2: Pin Assignment 
+No 
+Module 
+Name 
+I/O 
+Description 
+1 
+All 
+Reserved 
+I 
+SAFEBOOT_N (for future service, updates and reconfiguration, leave OPEN)  
+2 
+All 
+D_SEL 
+I 
+Interface select 
+3 
+All 
+TIMEPULSE 
+O 
+Time pulse (1PPS) 
+4 
+All 
+EXTINT 
+I 
+External Interrupt Pin 
+5 
+All 
+USB_DM 
+I/O 
+USB Data 
+6 
+All 
+USB_DP 
+I/O 
+USB Data 
+7 
+All 
+VDD_USB 
+I 
+USB Supply 
+8 
+All 
+RESET_N 
+I 
+RESET_N 
+9 
+All 
+VCC_RF 
+O 
+Output Voltage RF section  
+10 
+All 
+GND 
+I 
+Ground 
+11 
+All 
+RF_IN 
+I 
+GNSS signal input 
+12 
+All 
+GND 
+I 
+Ground 
+13 
+All 
+GND 
+I 
+Ground 
+14 
+NEO-M8N 
+ANT_ON 
+O 
+Antenna control
+--------------------------------------------------
+
+📦 [Chunk 56]
+[부품명: NEO-M8N]
+All 
+GND 
+I 
+Ground 
+11 
+All 
+RF_IN 
+I 
+GNSS signal input 
+12 
+All 
+GND 
+I 
+Ground 
+13 
+All 
+GND 
+I 
+Ground 
+14 
+NEO-M8N 
+ANT_ON 
+O 
+Antenna control 
+NEO-M8M 
+Reserved 
+- 
+Reserved 
+NEO-M8Q 
+ANT_ON 
+O 
+Antenna control 
+15 
+All 
+Reserved 
+- 
+Reserved 
+16 
+All 
+Reserved 
+- 
+Reserved 
+17 
+All 
+Reserved 
+- 
+Reserved 
+18 
+All 
+SDA   
+SPI CS_N 
+I/O 
+DDC Data if D_SEL =1 (or open) 
+SPI Chip Select if D_SEL = 0 
+19 
+All 
+SCL  
+SPI CLK 
+I/O 
+DDC Clock if D_SEL =1(or open) 
+SPI Clock if D_SEL = 0 
+20 
+All 
+TxD 
+SPI MISO 
+O 
+Serial Port if D_SEL =1(or open) 
+SPI MISO if D_SEL = 0 
+21 
+All 
+RxD 
+SPI MOSI 
+I 
+Serial Port if D_SEL =1(or open) 
+SPI MOSI if D_SEL = 0 
+22 
+All 
+V_BCKP 
+I 
+Backup voltage supply 
+23 
+All 
+VCC 
+I 
+Supply voltage 
+24 
+All 
+GND 
+I 
+Ground 
+Table 5: Pinout
+--------------------------------------------------
+
+📦 [Chunk 57]
+[부품명: NEO-M8N]
+SPI MOSI if D_SEL = 0 
+22 
+All 
+V_BCKP 
+I 
+Backup voltage supply 
+23 
+All 
+VCC 
+I 
+Supply voltage 
+24 
+All 
+GND 
+I 
+Ground 
+Table 5: Pinout 
+ 
+Pins designated Reserved should not be used. For more information about Pinouts see the NEO-M8 
+Hardware Integration Manual [1].
+--------------------------------------------------
+
+📦 [Chunk 58]
+[부품명: NEO-M8N]
+NEO-M8 - Data Sheet 
+UBX-13003366 - R10                                                         Production Information 
+Configuration management 
+ 
+ 
+Page 14 of 26 
+3 Configuration management 
+Configuration settings can be modified with UBX configuration messages. The modified settings remain effective 
+until power-down or reset. If these settings have been stored in battery-backup RAM, then the modified 
+configuration will be retained, as long as the backup battery supply is not interrupted. 
+With the NEO-M8N, configuration settings modified with UBX configuration messages can be saved 
+permanently. In this case, the modified settings remain effective even after power-down and do not require 
+backup battery supply. 
+3.1 
+Interface Selection (D_SEL)
+--------------------------------------------------
+
+📦 [Chunk 59]
+[부품명: NEO-M8N]
+backup battery supply. 
+3.1 
+Interface Selection (D_SEL)  
+At startup Pin 2 (D_SEL) determines which data interfaces are used for communication. If D_SEL is set high or left 
+open, UART and DDC become available. If D_SEL is set low, i.e. connected to ground, the NEO-M8 series 
+module can communicate to a host via SPI. 
+PIN # 
+D_SEL=”1” 
+(left open) 
+D_SEL =”0” 
+(connected to GND) 
+ 
+20 
+UART TX 
+SPI  MISO 
+ 
+21 
+UART RX 
+SPI  MOSI 
+ 
+19 
+DDC SCL 
+SPI  CLK 
+ 
+18 
+DDC SDA 
+SPI  CS_N 
+ 
+Table 6: Data interface selection by D_SEL
+--------------------------------------------------
+
+📦 [Chunk 60]
+[부품명: NEO-M8N]
+NEO-M8 - Data Sheet 
+UBX-13003366 - R10                                                         Production Information 
+Electrical specification 
+ 
+ 
+Page 15 of 26 
+4 Electrical specification 
+ 
+The limiting values given are in accordance with the Absolute Maximum Rating System (IEC 134). Stress 
+above one or more of the limiting values may cause permanent damage to the device. These are stress 
+ratings only and operation of the device at these or at any other conditions above those given in the 
+characteristics sections of the specification is not implied. Exposure to these limits for extended periods 
+may affect device reliability. 
+ 
+Where application information is given, it is advisory only and does not form part of the specification. For
+--------------------------------------------------
+
+📦 [Chunk 61]
+[부품명: NEO-M8N]
+may affect device reliability. 
+ 
+Where application information is given, it is advisory only and does not form part of the specification. For 
+more information see the NEO-M8 Hardware Integration Manual [1]. 
+4.1 
+Absolute maximum rating 
+Parameter 
+Symbol 
+Module 
+Condition 
+Min 
+Max 
+Units 
+Power supply voltage 
+VCC 
+All 
+ 
+–0.5 
+3.6 
+V 
+Backup battery voltage 
+V_BCKP 
+All 
+ 
+–0.5 
+3.6 
+V 
+USB supply voltage 
+VDD_USB 
+All 
+ 
+–0.5 
+3.6 
+V 
+Input pin voltage  
+Vin 
+All 
+ 
+–0.5 
+3.6 
+V 
+Vin_usb 
+All 
+ 
+–0.5 
+VDD_USB 
+V 
+DC current trough any digital I/O pin  
+(except supplies) 
+Ipin 
+ 
+ 
+ 
+10 
+mA 
+VCC_RF output current 
+ICC_RF 
+All 
+ 
+ 
+100 
+mA 
+Input power at RF_IN 
+Prfin 
+All 
+source impedance   
+= 50 , 
+continuous wave 
+ 
+15 
+dBm 
+Storage temperature 
+Tstg 
+NEO-M8M 
+NEO-M8N/M8Q
+--------------------------------------------------
+
+📦 [Chunk 62]
+[부품명: NEO-M8N]
+mA 
+Input power at RF_IN 
+Prfin 
+All 
+source impedance   
+= 50 , 
+continuous wave 
+ 
+15 
+dBm 
+Storage temperature 
+Tstg 
+NEO-M8M 
+NEO-M8N/M8Q 
+ 
+–40 
+–40 
+105 
+85 
+°C 
+°C 
+Table 7: Absolute maximum ratings 
+ 
+Stressing the device beyond the “Absolute Maximum Ratings” may cause permanent damage. 
+These are stress ratings only. The product is not protected against overvoltage or reversed 
+voltages. If necessary, voltage spikes exceeding the power supply voltage specification, given in 
+table above, must be limited to values within the specified boundaries by using appropriate 
+protection diodes.
+--------------------------------------------------
+
+📦 [Chunk 63]
+[부품명: NEO-M8N]
+NEO-M8 - Data Sheet 
+UBX-13003366 - R10                                                         Production Information 
+Electrical specification 
+ 
+ 
+Page 16 of 26 
+4.2 
+Operating conditions 
+ 
+All specifications are at an ambient temperature of 25°C. Extreme operating temperatures can 
+significantly impact specification values. Applications operating near the temperature limits should be 
+tested to ensure the specification. 
+Parameter 
+Symbol 
+Module 
+Min 
+Typical 
+Max 
+Unit
+s 
+Condition 
+Power supply voltage  
+VCC 
+NEO-M8M 
+1.65 
+ 
+3.6 
+V 
+ 
+NEO-M8N/Q 
+2.7 
+3.0 
+3.6 
+V 
+ 
+Supply voltage USB 
+VDDUSB 
+All 
+3.0 
+3.3 
+3.6 
+V 
+ 
+Backup battery voltage 
+V_BCKP 
+All 
+1.4 
+ 
+3.6 
+V 
+ 
+Backup battery current 
+I_BCKP 
+All 
+ 
+15 
+ 
+µA 
+V_BCKP = 1.8 V, 
+VCC = 0 V 
+SW backup current 
+I_SWBCKP
+--------------------------------------------------
+
+📦 [Chunk 64]
+[부품명: NEO-M8N]
+V_BCKP 
+All 
+1.4 
+ 
+3.6 
+V 
+ 
+Backup battery current 
+I_BCKP 
+All 
+ 
+15 
+ 
+µA 
+V_BCKP = 1.8 V, 
+VCC = 0 V 
+SW backup current 
+I_SWBCKP 
+NEO-M8M 
+ 
+22 
+ 
+µA 
+VCC = 3 V 
+NEO-M8N/Q 
+ 
+30 
+ 
+µA 
+VCC = 3 V 
+Input pin voltage range 
+Vin 
+All 
+0 
+ 
+VCC 
+V 
+ 
+Digital IO Pin Low level input voltage 
+Vil 
+All 
+0 
+ 
+0.2*VCC 
+V 
+ 
+Digital IO Pin High level input voltage 
+Vih 
+All 
+0.7*VCC 
+ 
+VCC 
+V  
+ 
+Digital IO Pin Low level output voltage 
+Vol 
+All 
+ 
+ 
+0.4 
+V 
+Iol = 4mA 
+Digital IO Pin High level output voltage 
+Voh 
+All 
+VCC–0.4 
+ 
+ 
+V 
+Ioh = 4mA 
+Pull-up resistor for RESET_N (internal) 
+Rpu 
+All 
+ 
+11 
+ 
+k 
+ 
+USB_DM, USB_DP 
+VinU 
+All 
+Compatible with USB with 27 Ω series resistance 
+VCC_RF voltage 
+VCC_RF 
+All 
+ 
+VCC–0.1 
+ 
+V 
+ 
+VCC_RF output current 
+ICC_RF 
+All 
+ 
+ 
+50 
+mA
+--------------------------------------------------
+
+📦 [Chunk 65]
+[부품명: NEO-M8N]
+Compatible with USB with 27 Ω series resistance 
+VCC_RF voltage 
+VCC_RF 
+All 
+ 
+VCC–0.1 
+ 
+V 
+ 
+VCC_RF output current 
+ICC_RF 
+All 
+ 
+ 
+50 
+mA 
+ 
+Receiver Chain Noise Figure
+14 
+NFtot 
+NEO-M8M 
+ 
+3.5 
+ 
+dB 
+ 
+NEO-M8N/Q 
+ 
+2.0 
+ 
+dB 
+ 
+Operating temperature 
+Topr 
+All 
+–40 
+ 
+85 
+°C 
+ 
+Table 8: Operating conditions 
+ 
+Operation beyond the specified operating conditions can affect device reliability. 
+                                                     
+14 Only valid for the GPS band
+--------------------------------------------------
+
+📦 [Chunk 66]
+[부품명: NEO-M8N]
+NEO-M8 - Data Sheet 
+UBX-13003366 - R10                                                         Production Information 
+Electrical specification 
+ 
+ 
+Page 17 of 26 
+4.3 
+Indicative current requirements  
+Table 9 lists examples of the total system supply current for a possible application. 
+ 
+Values in Table 9 are provided for customer information only as an example of typical power 
+requirements. Values are characterized on samples, actual power requirements can vary depending on FW 
+version used, external circuitry, number of SVs tracked, signal strength, type of start as well as time, 
+duration and conditions of test. 
+ 
+Parameter 
+Symbol 
+Module 
+Typ 
+GPS & GLONASS 
+Typ 
+GPS / QZSS / SBAS 
+Max 
+Units 
+Condition 
+Max. supply current 
+15 
+Iccp 
+All 
+ 
+ 
+67 
+mA 
+ 
+Average supply current
+--------------------------------------------------
+
+📦 [Chunk 67]
+[부품명: NEO-M8N]
+Module 
+Typ 
+GPS & GLONASS 
+Typ 
+GPS / QZSS / SBAS 
+Max 
+Units 
+Condition 
+Max. supply current 
+15 
+Iccp 
+All 
+ 
+ 
+67 
+mA 
+ 
+Average supply current 
+16, 17 
+Icc Acquisition
+18 
+ 
+NEO-M8N 
+34 
+27 
+ 
+mA 
+Estimated at 3 V 
+NEO-M8M 
+24.5 
+19.5 
+ 
+mA 
+ 
+NEO-M8Q 
+29.5 
+26 
+ 
+mA 
+Icc Tracking 
+(Continuous mode) 
+ 
+NEO-M8N 
+34 
+26.5 
+ 
+mA 
+Estimated at 3 V 
+NEO-M8M 
+23.5 
+17.5 
+ 
+mA 
+NEO-M8Q 
+28.5 
+24 
+ 
+mA 
+Icc Tracking 
+(Power Save mode / 1 Hz) 
+NEO-M8N 
+n.a.
+19 
+10.5 
+ 
+mA 
+Estimated at 3 V 
+NEO-M8M 
+n.a.
+19 
+5 
+ 
+mA 
+NEO-M8Q 
+n.a.
+19 
+10 
+ 
+mA 
+Table 9: Indicative power requirements at 3.0 V 
+ 
+For more information about power requirements, see the NEO-M8 Hardware Integration Manual [1].  
+ 
+For more information on how to noticeably reduce current consumption, see the Power Management
+--------------------------------------------------
+
+📦 [Chunk 68]
+[부품명: NEO-M8N]
+For more information on how to noticeably reduce current consumption, see the Power Management 
+Application Note [4]. 
+4.4 
+SPI timing diagrams 
+In order to avoid incorrect operation of the SPI, the user needs to comply with certain timing conditions. The 
+following signals need to be considered for timing constraints: 
+Symbol 
+Description 
+SPI  CS_N (SS_N) 
+Slave select signal 
+SPI  CLK (SCK) 
+Slave clock signal 
+Table 10: Symbol description 
+                                                     
+15  Use this figure to dimension maximum current capability of power supply. Measurement of this parameter with 1 Hz bandwidth. 
+16  Use this figure to determine required battery capacity. 
+17 Simulated GNSS constellation using power levels of -130 dBm. VCC = 3.0 V
+--------------------------------------------------
+
+📦 [Chunk 69]
+[부품명: NEO-M8N]
+16  Use this figure to determine required battery capacity. 
+17 Simulated GNSS constellation using power levels of -130 dBm. VCC = 3.0 V 
+18 Average current from start-up until the first fix. 
+19 Not applicable
+--------------------------------------------------
+
+📦 [Chunk 70]
+[부품명: NEO-M8N]
+NEO-M8 - Data Sheet 
+UBX-13003366 - R10                                                         Production Information 
+Electrical specification 
+ 
+ 
+Page 18 of 26 
+ 
+Figure 3: SPI timing diagram 
+4.4.1 Timing recommendations 
+The recommendations below are based on a firmware running from Flash memory. 
+Parameter 
+Description 
+Recommendation 
+tINIT 
+Initialization Time 
+500 s 
+tDES 
+Deselect Time 
+1 ms. 
+Bit rate  
+ 
+1 Mb/s 
+Table 11: SPI timing recommendations 
+ 
+The values in the above table result from the requirement of an error-free transmission. By allowing just a 
+few errors and disabling the glitch filter, the bit rate can be increased considerably.  
+4.5 
+DDC timing diagrams 
+The DDC interface is I
+2C Fast Mode compliant. For timing parameters consult the I
+2C standard.
+--------------------------------------------------
+
+📦 [Chunk 71]
+[부품명: NEO-M8N]
+4.5 
+DDC timing diagrams 
+The DDC interface is I
+2C Fast Mode compliant. For timing parameters consult the I
+2C standard. 
+ 
+The maximum bit rate is 400 kb/s. The interface stretches the clock when slowed down when serving 
+interrupts, so real bit rates may be slightly lower.
+--------------------------------------------------
+
+📦 [Chunk 72]
+[부품명: NEO-M8N]
+NEO-M8 - Data Sheet 
+UBX-13003366 - R10                                                         Production Information 
+Mechanical specifications 
+ 
+ 
+Page 19 of 26 
+5 Mechanical specifications 
+ 
+ 
+Figure 4: Dimensions  
+ 
+For information about the paste mask and footprint, see the NEO-M8 Hardware Integration Manual [1].
+--------------------------------------------------
+
+📦 [Chunk 73]
+[부품명: NEO-M8N]
+NEO-M8 - Data Sheet 
+UBX-13003366 - R10                                                         Production Information 
+Reliability tests and approvals 
+ 
+ 
+Page 20 of 26 
+6 Reliability tests and approvals 
+6.1 
+Reliability tests 
+ 
+All NEO-M8 series modules are based on AEC-Q100 qualified GNSS chips. 
+ 
+Tests for product family qualifications are according to ISO 16750 "Road vehicles – environmental conditions 
+and testing for electrical and electronic equipment”, and appropriate standards. 
+6.2 
+Approvals 
+ 
+Products marked with this lead-free symbol on the product label comply with the 
+"Directive 2002/95/EC of the European Parliament and the Council on the Restriction of 
+Use of certain Hazardous Substances in Electrical and Electronic Equipment" (RoHS).
+--------------------------------------------------
+
+📦 [Chunk 74]
+[부품명: NEO-M8N]
+Use of certain Hazardous Substances in Electrical and Electronic Equipment" (RoHS). 
+All u-blox M8 GNSS modules are RoHS compliant.
+--------------------------------------------------
+
+📦 [Chunk 75]
+[부품명: NEO-M8N]
+NEO-M8 - Data Sheet 
+UBX-13003366 - R10                                                         Production Information 
+Product handling & soldering 
+ 
+ 
+Page 21 of 26 
+7 Product handling & soldering 
+7.1 
+Packaging 
+The NEO-M8 series GNSS modules are delivered as hermetically sealed, reeled tapes in order to enable efficient 
+production, production lot set-up and tear-down. For more information see the u-blox Package Information 
+Guide [3]. 
+7.1.1 Reels 
+The NEO-M8 series GNSS modules are deliverable in quantities of 250 pcs on a reel. The NEO-M8 receivers are 
+shipped on Reel Type B, as specified in the u-blox Package Information Guide [3][2]. 
+7.1.2 Tapes 
+The dimensions and orientations of the tapes for NEO-M8 modules are specified in Figure 5.
+--------------------------------------------------
+
+📦 [Chunk 76]
+[부품명: NEO-M8N]
+7.1.2 Tapes 
+The dimensions and orientations of the tapes for NEO-M8 modules are specified in Figure 5. 
+ 
+ 
+Figure 5: Dimensions and orientation for NEO-M8 modules on tape
+--------------------------------------------------
+
+📦 [Chunk 77]
+[부품명: NEO-M8N]
+NEO-M8 - Data Sheet 
+UBX-13003366 - R10                                                         Production Information 
+Product handling & soldering 
+ 
+ 
+Page 22 of 26 
+7.2 
+Shipment, storage and handling  
+For important information regarding shipment, storage and handling see the u-blox Package Information Guide 
+[3]. 
+7.2.1 Moisture Sensitivity Levels 
+The Moisture Sensitivity Level (MSL) relates to the packaging and handling precautions required. The NEO-M8 
+modules are rated at MSL level 4. 
+ 
+For MSL standard see IPC/JEDEC J-STD-020, which can be downloaded from www.jedec.org.  
+ 
+For more information regarding MSL see the u-blox Package Information Guide [3].  
+7.2.2 Reflow soldering
+--------------------------------------------------
+
+📦 [Chunk 78]
+[부품명: NEO-M8N]
+For more information regarding MSL see the u-blox Package Information Guide [3].  
+7.2.2 Reflow soldering 
+Reflow profiles are to be selected according u-blox recommendations (see the NEO-M8 Hardware Integration 
+Manual [1]). 
+7.2.3 ESD handling precautions 
+ 
+NEO-M8 series modules are Electrostatic Sensitive Devices (ESD). Observe precautions for 
+handling! Failure to observe these precautions can result in severe damage to the GNSS 
+receiver! 
+GNSS receivers are Electrostatic Sensitive Devices (ESD) and require special precautions when handling. Particular 
+care must be exercised when handling patch antennas, due to the risk of electrostatic charges. In addition to 
+standard ESD safety practices, the following measures should be taken into account whenever handling the 
+receiver: 
+
+--------------------------------------------------
+
+📦 [Chunk 79]
+[부품명: NEO-M8N]
+standard ESD safety practices, the following measures should be taken into account whenever handling the 
+receiver: 
+ 
+Unless there is a galvanic coupling between the 
+local GND (i.e. the work table) and the PCB GND, 
+then the first point of contact when handling the 
+PCB must always be between the local GND and 
+PCB GND. 
+ 
+Before mounting an antenna patch, connect 
+ground of the device 
+ 
+ 
+When handling the RF pin, do not come into 
+contact with any charged capacitors and be 
+careful when contacting materials that can 
+develop charges (e.g. patch antenna ~10 pF, coax 
+cable ~50-80 pF/m, soldering iron, …) 
+ 
+ 
+To prevent electrostatic discharge through the RF 
+input, do not touch any exposed antenna area. If 
+there is any risk that such exposed antenna area is
+--------------------------------------------------
+
+📦 [Chunk 80]
+[부품명: NEO-M8N]
+input, do not touch any exposed antenna area. If 
+there is any risk that such exposed antenna area is 
+touched in non ESD protected work area, 
+implement proper ESD protection measures in the 
+design. 
+ 
+ 
+When soldering RF connectors and patch 
+antennas to the receiver’s RF pin, make sure to 
+use an ESD safe soldering iron (tip).
+--------------------------------------------------
+
+📦 [Chunk 81]
+[부품명: NEO-M8N]
+NEO-M8 - Data Sheet 
+UBX-13003366 - R10                                                         Production Information 
+Default messages 
+ 
+ 
+Page 23 of 26 
+8 Default messages 
+Interface 
+Settings 
+UART Output 
+ 
+9600 Baud, 8 bits, no parity bit, 1 stop bit 
+Configured to transmit both NMEA and UBX protocols, but only the following NMEA (and no UBX) 
+messages have been activated at start-up: 
+GGA, GLL, GSA, GSV, RMC, VTG, TXT 
+USB Output 
+Configured to transmit both NMEA and UBX protocols, but only the following NMEA (and no UBX) 
+messages have been activated at start-up: 
+GGA, GLL, GSA, GSV, RMC, VTG, TXT  
+USB Power Mode: Bus Powered 
+UART Input 
+9600 Baud, 8 bits, no parity bit, 1 stop bit, Autobauding disabled
+--------------------------------------------------
+
+📦 [Chunk 82]
+[부품명: NEO-M8N]
+GGA, GLL, GSA, GSV, RMC, VTG, TXT  
+USB Power Mode: Bus Powered 
+UART Input 
+9600 Baud, 8 bits, no parity bit, 1 stop bit, Autobauding disabled 
+Automatically accepts following protocols without need of explicit configuration: 
+UBX, NMEA, RTCM 
+The GNSS receiver supports interleaved UBX and NMEA messages. 
+USB Input 
+Automatically accepts following protocols without need of explicit configuration: 
+UBX, NMEA 
+The GPS receiver supports interleaved UBX and NMEA messages. 
+USB Power Mode: Bus Powered 
+DDC 
+Fully compatible with the I
+2C industry standard, available for communication with an external host CPU or 
+u-blox cellular modules, operated in slave mode only. Default messages activated. 
+NMEA and UBX are enabled as input messages, only NMEA as output messages.
+--------------------------------------------------
+
+📦 [Chunk 83]
+[부품명: NEO-M8N]
+NMEA and UBX are enabled as input messages, only NMEA as output messages. 
+Maximum bit rate 400 kb/s. 
+SPI 
+Allow communication to a host CPU, operated in slave mode only. Default messages activated. SPI is not 
+available in the default configuration. 
+TIMEPULSE 
+(1 Hz Nav) 
+1 pulse per second, synchronized at rising edge, pulse length 100ms 
+Table 12: Default messages 
+ 
+Refer to the u-blox M8 Receiver Description Including Protocol Specification [2] for information about 
+further settings.
+--------------------------------------------------
+
+📦 [Chunk 84]
+[부품명: NEO-M8N]
+NEO-M8 - Data Sheet 
+UBX-13003366 - R10                                                         Production Information 
+Labeling and ordering information 
+ 
+ 
+Page 24 of 26 
+9 Labeling and ordering information 
+9.1 
+Product labeling 
+The labeling of u-blox M8 GNSS modules includes important product information. The location of the NEO-M8 
+product type number is shown in Figure 6. 
+ 
+Figure 6: Location of product type number on u-blox NEO-M8 module label 
+9.2 
+Explanation of codes 
+Three different product code formats are used. The Product Name is used in documentation such as this data 
+sheet and identifies all u-blox M8 products, independent of packaging and quality grade. The Ordering Code
+--------------------------------------------------
+
+📦 [Chunk 85]
+[부품명: NEO-M8N]
+sheet and identifies all u-blox M8 products, independent of packaging and quality grade. The Ordering Code 
+includes options and quality, while the Type Number includes the hardware and firmware versions. Table 13 
+shows the structure of these three different formats. 
+Format 
+Structure 
+Product Name 
+PPP-TGV 
+Ordering Code 
+PPP-TGV-T 
+Type Number 
+PPP-TGV-T-XX 
+Table 13: Product Code Formats 
+The parts of the product code are explained in Table 14. 
+Code 
+Meaning 
+Example 
+PPP 
+Product Family 
+NEO 
+TG 
+Platform 
+M8 = u-blox M8 
+V 
+Variant 
+Function set (A-Z), T = Timing, R = DR, etc. 
+T 
+Option / Quality Grade 
+Describes standardized functional element or quality grade 
+0 = Default variant, A = Automotive 
+XX 
+Product Detail
+--------------------------------------------------
+
+📦 [Chunk 86]
+[부품명: NEO-M8N]
+T 
+Option / Quality Grade 
+Describes standardized functional element or quality grade 
+0 = Default variant, A = Automotive 
+XX 
+Product Detail 
+Describes product details or options such as hard- and software revision, cable length, etc. 
+Table 14: part identification code 
+9.3 
+Ordering codes 
+Ordering No. 
+Product 
+NEO-M8M-0 
+u-blox M8 Concurrent GNSS LCC Module, crystal, ROM, 12.2x16 mm, 250 pcs/reel 
+NEO-M8N-0 
+u-blox M8 Concurrent GNSS LCC Module, TCXO, flash, SAW, LNA, 12.2x16 mm, 250 pcs/reel 
+NEO-M8Q-0 
+u-blox M8 Concurrent GNSS LCC Module, TCXO, ROM, SAW, LNA, 12.2x16 mm, 250 pcs/reel 
+Table 15: Product ordering codes for professional grade modules 
+ 
+Product changes affecting form, fit or function are documented by u-blox. For a list of Product Change
+--------------------------------------------------
+
+📦 [Chunk 87]
+[부품명: NEO-M8N]
+Product changes affecting form, fit or function are documented by u-blox. For a list of Product Change 
+Notifications (PCNs) see our website.
+--------------------------------------------------
+
+📦 [Chunk 88]
+[부품명: NEO-M8N]
+NEO-M8 - Data Sheet 
+UBX-13003366 - R10                                                         Production Information 
+Related documents 
+ 
+ 
+Page 25 of 26 
+Related documents 
+ 
+[1] 
+NEO-M8 Hardware Integration Manual, Docu. No. UBX-13003557 
+[2] 
+u-blox M8 Receiver Description Including Protocol Specification (Public version), Docu. No. 
+UBX-13003221 
+[3] 
+u-blox Package Information Guide, Docu. No. UBX-14001652 
+[4] 
+Power Management Application Note, Docu. No. UBX-13005162 
+ 
+ 
+For regular updates to u-blox documentation and to receive product change notifications, register on our 
+homepage (http://www.u-blox.com). 
+ 
+Revision history 
+ 
+Revision 
+Date 
+Name 
+Status / Comments 
+1 
+28-Aug-2013 
+svin 
+Objective Specification. 
+R02 
+17-Dec-2013 
+julu
+--------------------------------------------------
+
+📦 [Chunk 89]
+[부품명: NEO-M8N]
+Revision history 
+ 
+Revision 
+Date 
+Name 
+Status / Comments 
+1 
+28-Aug-2013 
+svin 
+Objective Specification. 
+R02 
+17-Dec-2013 
+julu 
+Updated ROM/Flash versions. Added NEO-M8Q product variant in relevant sections. Updated 
+sections 1.1 and 1.2 (Product features). Updated performance figures in Table 1. Updated 
+section 1.4 (removed “optional” from RTC crystal), section 1.6.3 (AssistNow Autonomous) and 
+section 1.9 (Added SQI flash memory size info). Added section 1.8 Odometer. Updated Table 
+3, Table 7 (e.g. Storage temperature) and Table 8. Updated power consumption figures in 
+Table 9. Added Power Management Application Note reference in section 4.3. Added DDC 
+and SPI interfaces in Table 12. 
+R03 
+28-Jan-2014 
+smos 
+Revised section Indicative current requirements. 
+R04 
+06-Feb-2014
+--------------------------------------------------
+
+📦 [Chunk 90]
+[부품명: NEO-M8N]
+and SPI interfaces in Table 12. 
+R03 
+28-Jan-2014 
+smos 
+Revised section Indicative current requirements. 
+R04 
+06-Feb-2014 
+julu 
+Removed I/O supply from Figure 1 (Block Diagram). 
+R05 
+26-Feb-2014 
+julu 
+Advance Information. Updated Table 1 (added GPS & BeiDou concurrent and GPS only modes) 
+and Table 9 (Indicative current requirements). 
+R06 
+07-Apr-2014 
+julu 
+Updated section 1.2 (product selector table); updated Table 1 (improved tracking sensitivities 
+of GPS and GPS & BeiDou for NEO-M8M, horizontal position accuracy): added 
+recommendation for using passive antenna (footnote in Table 4); added software backup 
+current values in Table 8. 
+R07 
+27-Aug-2014 
+julu 
+Early Production Information. Added SAFEBOOT_N description in section 1.13.1 and Table 5 
+(PIN 1). 
+R08 
+17-Nov-2014
+--------------------------------------------------
+
+📦 [Chunk 91]
+[부품명: NEO-M8N]
+R07 
+27-Aug-2014 
+julu 
+Early Production Information. Added SAFEBOOT_N description in section 1.13.1 and Table 5 
+(PIN 1). 
+R08 
+17-Nov-2014 
+julu 
+Updated section 1.2 (added product grade information to selector table) 
+R09 
+01-Dec-2014 
+julu 
+Production Information. 
+R10 
+21-Oct-2015 
+julu 
+Updated product type number for NEO-M8M/Q and added relevant PCN references
+--------------------------------------------------
+
+📦 [Chunk 92]
+[부품명: NEO-M8N]
+NEO-M8 - Data Sheet 
+UBX-13003366 - R10                                                         Production Information 
+Contact 
+ 
+ 
+Page 26 of 26 
+Contact 
+For complete contact information visit us at www.u-blox.com 
+ 
+u-blox Offices 
+ 
+ 
+ 
+ 
+North, Central and South America 
+u-blox America, Inc. 
+Phone: 
++1 703 483 3180 
+E-mail: 
+info_us@u-blox.com  
+Regional Office West Coast: 
+Phone: 
++1 408 573 3640 
+E-mail: 
+info_us@u-blox.com 
+Technical Support: 
+Phone: 
++1 703 483 3185 
+E-mail: 
+support_us@u-blox.com 
+ 
+Headquarters 
+Europe, Middle East, Africa 
+u-blox AG  
+Phone: 
++41 44 722 74 44 
+E-mail: 
+info@u-blox.com  
+Support: 
+support@u-blox.com 
+ 
+Asia, Australia, Pacific 
+u-blox Singapore Pte. Ltd. 
+Phone: 
++65 6734 3811 
+E-mail: 
+info_ap@u-blox.com 
+Support: 
+support_ap@u-blox.com
+--------------------------------------------------
+
+📦 [Chunk 93]
+[부품명: NEO-M8N]
+Asia, Australia, Pacific 
+u-blox Singapore Pte. Ltd. 
+Phone: 
++65 6734 3811 
+E-mail: 
+info_ap@u-blox.com 
+Support: 
+support_ap@u-blox.com  
+Regional Office Australia: 
+Phone: 
++61 2 8448 2016 
+E-mail: 
+info_anz@u-blox.com 
+Support: 
+support_ap@u-blox.com 
+Regional Office China (Beijing): 
+Phone: 
++86 10 68 133 545 
+E-mail: 
+info_cn@u-blox.com  
+Support: 
+support_cn@u-blox.com 
+Regional Office China (Chongqing): 
+Phone: 
++86 23 6815 1588 
+E-mail: 
+info_cn@u-blox.com  
+Support: 
+support_cn@u-blox.com  
+Regional Office China (Shanghai): 
+Phone: 
++86 21 6090 4832 
+E-mail: 
+info_cn@u-blox.com  
+Support: 
+support_cn@u-blox.com 
+Regional Office China (Shenzhen): 
+Phone: 
++86 755 8627 1083 
+E-mail: 
+info_cn@u-blox.com  
+Support: 
+support_cn@u-blox.com 
+Regional Office India: 
+Phone:
+--------------------------------------------------
+
+📦 [Chunk 94]
+[부품명: NEO-M8N]
+Phone: 
++86 755 8627 1083 
+E-mail: 
+info_cn@u-blox.com  
+Support: 
+support_cn@u-blox.com 
+Regional Office India: 
+Phone: 
++91 959 1302 450 
+E-mail: 
+info_in@u-blox.com  
+Support: 
+support_in@u-blox.com  
+Regional Office Japan (Osaka): 
+Phone: 
++81 6 6941 3660 
+E-mail: 
+info_jp@u-blox.com  
+Support: 
+support_jp@u-blox.com  
+Regional Office Japan (Tokyo): 
+Phone: 
++81 3 5775 3850 
+E-mail: 
+info_jp@u-blox.com  
+Support: 
+support_jp@u-blox.com  
+Regional Office Korea: 
+Phone: 
++82 2 542 0861 
+E-mail: 
+info_kr@u-blox.com  
+Support: 
+support_kr@u-blox.com 
+Regional Office Taiwan: 
+Phone: 
++886 2 2657 1090 
+E-mail: 
+info_tw@u-blox.com  
+Support: 
+support_tw@u-blox.com
+--------------------------------------------------
+

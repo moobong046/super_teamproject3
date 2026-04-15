@@ -1,0 +1,6394 @@
+📦 [Chunk 1]
+[부품명: ASM330LHH]
+This is information on a product in full production. 
+May 2020
+--------------------------------------------------
+
+📦 [Chunk 2]
+[부품명: ASM330LHH]
+ASM330LHH
+Automotive 6-axis inertial module: 
+ 3D accelerometer and 3D gyroscope
+Datasheet - production data
+Features
+
+AEC-Q100 qualified
+
+Extended temperature range  
+from -40 to +105 °C
+
+Embedded compensation for high stability over 
+temperature
+
+Accelerometer user-selectable full scale up to 
+±16 g
+
+Extended gyroscope range from ±125 to  
+±4000 dps
+
+SPI & I²C host serial interface
+
+Six-channel synchronized output to enhance 
+accuracy of dead-reckoning algorithms 
+
+Smart programmable interrupts
+
+Embedded 3 kbytes FIFO available to 
+underload host processor
+
+ECOPACK, RoHS and “Green” compliant
+Applications
+
+Dead reckoning (DR)
+
+Vehicle-to-everything (V2X)
+
+Telematics, eTolling
+
+Anti-theft systems
+
+Impact detection and crash reconstruction
+
+Motion-activated functions
+
+--------------------------------------------------
+
+📦 [Chunk 3]
+[부품명: ASM330LHH]
+
+Vehicle-to-everything (V2X)
+
+Telematics, eTolling
+
+Anti-theft systems
+
+Impact detection and crash reconstruction
+
+Motion-activated functions
+
+Driving comfort
+
+Vibration monitoring and compensation
+Description
+The ASM330LHH is a system-in-package featuring a 
+3D digital accelerometer and a 3D digital gyroscope 
+with an extended temperature range up to +105 °C and 
+designed to address automotive non-safety 
+applications.
+ST’s family of MEMS sensor modules leverages the 
+robust and mature manufacturing processes already 
+used for the production of micromachined 
+accelerometers and gyroscopes to serve both the 
+automotive and consumer market. The ASM330LHH is 
+AEC-Q100 compliant and industrialized through a 
+dedicated MEMS production flow to meet automotive
+--------------------------------------------------
+
+📦 [Chunk 4]
+[부품명: ASM330LHH]
+automotive and consumer market. The ASM330LHH is 
+AEC-Q100 compliant and industrialized through a 
+dedicated MEMS production flow to meet automotive 
+reliability standards. All the parts are fully tested with 
+respect to temperature to ensure the highest quality 
+level.
+The sensing elements are manufactured using ST’s 
+proprietary micromachining processes, while the IC 
+interfaces are developed using CMOS technology that 
+allows the design of a dedicated circuit which is 
+trimmed to better match the characteristics of the 
+sensing element.
+The ASM330LHH has a full-scale acceleration range of 
+±2/±4/±8/±16 g and a wide angular rate range of 
+±125/±250/±500/±1000/±2000/±4000 dps that enables 
+its usage in a broad range of automotive applications.
+--------------------------------------------------
+
+📦 [Chunk 5]
+[부품명: ASM330LHH]
+±125/±250/±500/±1000/±2000/±4000 dps that enables 
+its usage in a broad range of automotive applications.
+All the design aspects of the ASM330LHH have been 
+optimized to reach superior output stability, extremely 
+low noise and full data synchronization to the benefit of 
+sensor-assisted applications like dead reckoning and 
+sensor fusion.
+The ASM330LHH is available in a 14-lead plastic land 
+grid array (LGA) package.
+LGA-14L
+Typ: 2.5 x 3.0 x 0.83 mm3
+Table 1. Device summary
+Part number
+Temp. 
+range [°C]
+Package
+Packing
+ASM330LHH
+-40 to +105
+LGA-14L 
+(2.5 x 3.0 x 0.83 mm3)
+Tray
+ASM330LHHTR
+-40 to +105
+Tape & 
+Reel
+www.st.com
+--------------------------------------------------
+
+📦 [Chunk 6]
+[부품명: ASM330LHH]
+Contents
+ASM330LHH
+--------------------------------------------------
+
+📦 [Chunk 7]
+[부품명: ASM330LHH]
+Contents
+1
+Overview  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+2
+Embedded low-power features  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+3
+Pin description  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+4
+Module specifications . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+4.1
+Mechanical characteristics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+4.2
+Electrical characteristics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+4.3
+Temperature sensor characteristics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+4.4
+--------------------------------------------------
+
+📦 [Chunk 8]
+[부품명: ASM330LHH]
+4.3
+Temperature sensor characteristics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+4.4
+Communication interface characteristics  . . . . . . . . . . . . . . . . . . . . . . . . . 19
+4.4.1
+SPI - serial peripheral interface . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+4.4.2
+I²C - inter-IC control interface  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+4.5
+Absolute maximum ratings . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+4.6
+Terminology  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+4.6.1
+Sensitivity . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+4.6.2
+--------------------------------------------------
+
+📦 [Chunk 9]
+[부품명: ASM330LHH]
+4.6.1
+Sensitivity . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+4.6.2
+Zero-g and zero-rate level . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+5
+Digital interfaces . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+5.1
+I²C/SPI interface . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+5.1.1
+I²C serial interface  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+5.1.2
+SPI bus interface . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26
+6
+Functionality  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
+6.1
+--------------------------------------------------
+
+📦 [Chunk 10]
+[부품명: ASM330LHH]
+6
+Functionality  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
+6.1
+Operating modes  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
+6.2
+Gyroscope power modes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
+6.3
+Accelerometer power modes  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
+6.4
+Block diagram of filters . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31
+6.4.1
+Block diagram of the gyroscope filter . . . . . . . . . . . . . . . . . . . . . . . . . . . 31
+6.4.2
+Block diagrams of the accelerometer filters . . . . . . . . . . . . . . . . . . . . . . 32
+6.5
+--------------------------------------------------
+
+📦 [Chunk 11]
+[부품명: ASM330LHH]
+6.4.2
+Block diagrams of the accelerometer filters . . . . . . . . . . . . . . . . . . . . . . 32
+6.5
+FIFO . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 33
+6.5.1
+Bypass mode . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34
+6.5.2
+FIFO mode . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34
+--------------------------------------------------
+
+📦 [Chunk 12]
+[부품명: ASM330LHH]
+ASM330LHH
+Contents
+84
+6.5.3
+Continuous mode . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34
+6.5.4
+Continuous-to-FIFO mode . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35
+6.5.5
+Bypass-to-Continuous mode . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35
+6.5.6
+Bypass-to-FIFO mode . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35
+6.5.7
+FIFO reading procedure  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 36
+7
+Application hints . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37
+7.1
+ASM330LHH electrical connections . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37
+8
+--------------------------------------------------
+
+📦 [Chunk 13]
+[부품명: ASM330LHH]
+7.1
+ASM330LHH electrical connections . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37
+8
+Register mapping  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 39
+9
+Register description  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 42
+9.1
+PIN_CTRL (02h) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 42
+9.2
+FIFO_CTRL1 (07h)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 42
+9.3
+FIFO_CTRL2 (08h)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 43
+9.4
+FIFO_CTRL3 (09h)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 44
+9.5
+--------------------------------------------------
+
+📦 [Chunk 14]
+[부품명: ASM330LHH]
+9.4
+FIFO_CTRL3 (09h)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 44
+9.5
+FIFO_CTRL4 (0Ah)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 45
+9.6
+COUNTER_BDR_REG1 (0Bh)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 46
+9.7
+COUNTER_BDR_REG2 (0Ch)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 46
+9.8
+INT1_CTRL (0Dh)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 47
+9.9
+INT2_CTRL (0Eh)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 48
+9.10
+WHO_AM_I (0Fh) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 48
+9.11
+--------------------------------------------------
+
+📦 [Chunk 15]
+[부품명: ASM330LHH]
+9.10
+WHO_AM_I (0Fh) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 48
+9.11
+CTRL1_XL (10h)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 49
+9.12
+CTRL2_G (11h)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 50
+9.13
+CTRL3_C (12h)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 51
+9.14
+CTRL4_C (13h)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 52
+9.15
+CTRL5_C (14h)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 53
+9.16
+CTRL6_C (15h)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 54
+9.17
+--------------------------------------------------
+
+📦 [Chunk 16]
+[부품명: ASM330LHH]
+9.16
+CTRL6_C (15h)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 54
+9.17
+CTRL7_G (16h)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 55
+9.18
+CTRL8_XL (17h)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 55
+9.19
+CTRL9_XL (18h)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 57
+9.20
+CTRL10_C (19h)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 57
+9.21
+ALL_INT_SRC (1Ah)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 58
+9.22
+WAKE_UP_SRC (1Bh) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 58
+9.23
+--------------------------------------------------
+
+📦 [Chunk 17]
+[부품명: ASM330LHH]
+9.22
+WAKE_UP_SRC (1Bh) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 58
+9.23
+D6D_SRC (1Dh) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 59
+--------------------------------------------------
+
+📦 [Chunk 18]
+[부품명: ASM330LHH]
+Contents
+ASM330LHH
+--------------------------------------------------
+
+📦 [Chunk 19]
+[부품명: ASM330LHH]
+9.24
+STATUS_REG (1Eh)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 59
+9.25
+OUT_TEMP_L (20h), OUT_TEMP_H (21h) . . . . . . . . . . . . . . . . . . . . . . . 60
+9.26
+OUTX_H_G (23h), OUTX_L_G (22h)  . . . . . . . . . . . . . . . . . . . . . . . . . . . 60
+9.27
+OUTY_H_G (25h), OUTY_L_G (24h)  . . . . . . . . . . . . . . . . . . . . . . . . . . . 60
+9.28
+OUTZ_H_G (27h), OUTZ_L_G (26h) . . . . . . . . . . . . . . . . . . . . . . . . . . . . 61
+9.29
+OUTX_H_A (29h), OUTX_L_A (28h) . . . . . . . . . . . . . . . . . . . . . . . . . . . . 61
+9.30
+OUTY_H_A (2Bh), OUTY_L_A (2Ah)  . . . . . . . . . . . . . . . . . . . . . . . . . . . 61
+9.31
+OUTZ_H_A (2Dh), OUTZ_L_A (2Ch)  . . . . . . . . . . . . . . . . . . . . . . . . . . . 62
+9.32
+--------------------------------------------------
+
+📦 [Chunk 20]
+[부품명: ASM330LHH]
+9.31
+OUTZ_H_A (2Dh), OUTZ_L_A (2Ch)  . . . . . . . . . . . . . . . . . . . . . . . . . . . 62
+9.32
+FIFO_STATUS1 (3Ah)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 62
+9.33
+FIFO_STATUS2 (3Bh)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 63
+9.34
+TIMESTAMP0 (40h), TIMESTAMP1 (41h), TIMESTAMP2 (42h), 
+and TIMESTAMP3 (43h)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 64
+9.35
+INT_CFG0 (56h) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 65
+9.36
+INT_CFG1 (58h) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 65
+9.37
+THS_6D (59h)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 66
+--------------------------------------------------
+
+📦 [Chunk 21]
+[부품명: ASM330LHH]
+9.37
+THS_6D (59h)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 66
+9.38
+WAKE_UP_THS (5Bh) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 66
+9.39
+WAKE_UP_DUR (5Ch)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 67
+9.40
+FREE_FALL (5Dh) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 67
+9.41
+MD1_CFG (5Eh)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 68
+9.42
+MD2_CFG (5Fh) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 68
+9.43
+INTERNAL_FREQ_FINE (63h)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 69
+9.44
+--------------------------------------------------
+
+📦 [Chunk 22]
+[부품명: ASM330LHH]
+9.43
+INTERNAL_FREQ_FINE (63h)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 69
+9.44
+X_OFS_USR (73h) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 70
+9.45
+Y_OFS_USR (74h) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 70
+9.46
+Z_OFS_USR (75h) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 70
+9.47
+FIFO_DATA_OUT_TAG (78h)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 71
+9.48
+FIFO_DATA_OUT_X_H (7Ah) and FIFO_DATA_OUT_X_L (79h) . . . . . . 72
+9.49
+FIFO_DATA_OUT_Y_H (7Ch) and FIFO_DATA_OUT_Y_L (7Bh)  . . . . . 72
+9.50
+FIFO_DATA_OUT_Z_H (7Eh) and FIFO_DATA_OUT_Z_L (7Dh) . . . . . . 72
+10
+--------------------------------------------------
+
+📦 [Chunk 23]
+[부품명: ASM330LHH]
+9.49
+FIFO_DATA_OUT_Y_H (7Ch) and FIFO_DATA_OUT_Y_L (7Bh)  . . . . . 72
+9.50
+FIFO_DATA_OUT_Z_H (7Eh) and FIFO_DATA_OUT_Z_L (7Dh) . . . . . . 72
+10
+Typical performance characteristics . . . . . . . . . . . . . . . . . . . . . . . . . . . 73
+10.1
+Gyroscope Angular Random Walk (ARW)  . . . . . . . . . . . . . . . . . . . . . . . . 73
+10.2
+Gyroscope Bias Instability (BI) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 75
+10.3
+Gyroscope nonlinearity . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 77
+--------------------------------------------------
+
+📦 [Chunk 24]
+[부품명: ASM330LHH]
+ASM330LHH
+Contents
+84
+11
+Soldering information . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 79
+12
+Package information . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 80
+12.1
+LGA-14L package information  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 80
+12.2
+LGA-14 packing information . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 81
+13
+Revision history  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 83
+
+List of tables
+ASM330LHH
+--------------------------------------------------
+
+📦 [Chunk 25]
+[부품명: ASM330LHH]
+List of tables
+Table 1.
+Device summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+Table 2.
+Pin description  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+Table 3.
+Mechanical characteristics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+Table 4.
+Electrical characteristics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+Table 5.
+Temperature sensor characteristics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+Table 6.
+--------------------------------------------------
+
+📦 [Chunk 26]
+[부품명: ASM330LHH]
+Table 5.
+Temperature sensor characteristics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+Table 6.
+SPI slave timing values (in mode 3) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+Table 7.
+I²C slave timing values . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+Table 8.
+Absolute maximum ratings . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+Table 9.
+Serial interface pin description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+Table 10.
+--------------------------------------------------
+
+📦 [Chunk 27]
+[부품명: ASM330LHH]
+Table 9.
+Serial interface pin description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+Table 10.
+I²C terminology . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+Table 11.
+SAD+Read/Write patterns  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+Table 12.
+Transfer when master is writing one byte to slave . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+Table 13.
+Transfer when master is writing multiple bytes to slave . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+Table 14.
+Transfer when master is receiving (reading) one byte of data from slave  . . . . . . . . . . . . . 25
+Table 15.
+--------------------------------------------------
+
+📦 [Chunk 28]
+[부품명: ASM330LHH]
+Table 14.
+Transfer when master is receiving (reading) one byte of data from slave  . . . . . . . . . . . . . 25
+Table 15.
+Transfer when master is receiving (reading) multiple bytes of data from slave . . . . . . . . . 25
+Table 16.
+Gyroscope LPF2 bandwidth selection  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31
+Table 17.
+Internal pin status . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38
+Table 18.
+Registers address map. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 39
+Table 19.
+PIN_CTRL register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 42
+Table 20.
+--------------------------------------------------
+
+📦 [Chunk 29]
+[부품명: ASM330LHH]
+PIN_CTRL register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 42
+Table 20.
+PIN_CTRL register description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 42
+Table 21.
+FIFO_CTRL1 register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 42
+Table 22.
+FIFO_CTRL1 register description. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 42
+Table 23.
+FIFO_CTRL2 register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 43
+Table 24.
+--------------------------------------------------
+
+📦 [Chunk 30]
+[부품명: ASM330LHH]
+Table 23.
+FIFO_CTRL2 register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 43
+Table 24.
+FIFO_CTRL2 register description. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 43
+Table 25.
+FIFO_CTRL3 register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 44
+Table 26.
+FIFO_CTRL3 register description. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 44
+Table 27.
+FIFO_CTRL4 register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 45
+Table 28.
+--------------------------------------------------
+
+📦 [Chunk 31]
+[부품명: ASM330LHH]
+Table 27.
+FIFO_CTRL4 register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 45
+Table 28.
+FIFO_CTRL4 register description. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 45
+Table 29.
+COUNTER_BDR_REG1 register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 46
+Table 30.
+COUNTER_BDR_REG1 register description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 46
+Table 31.
+COUNTER_BDR_REG2 register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 46
+Table 32.
+COUNTER_BDR_REG2 register description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 46
+Table 33.
+--------------------------------------------------
+
+📦 [Chunk 32]
+[부품명: ASM330LHH]
+Table 32.
+COUNTER_BDR_REG2 register description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 46
+Table 33.
+INT1_CTRL register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 47
+Table 34.
+INT1_CTRL register description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 47
+Table 35.
+INT2_CTRL register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 48
+Table 36.
+INT2_CTRL register description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 48
+Table 37.
+--------------------------------------------------
+
+📦 [Chunk 33]
+[부품명: ASM330LHH]
+Table 36.
+INT2_CTRL register description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 48
+Table 37.
+WhoAmI register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 48
+Table 38.
+CTRL1_XL register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 49
+Table 39.
+CTRL1_XL register description. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 49
+Table 40.
+CTRL2_G register. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 50
+Table 41.
+--------------------------------------------------
+
+📦 [Chunk 34]
+[부품명: ASM330LHH]
+CTRL2_G register. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 50
+Table 41.
+CTRL2_G register description  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 50
+Table 42.
+CTRL3_C register. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 51
+Table 43.
+CTRL3_C register description. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 51
+Table 44.
+CTRL4_C register. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 52
+Table 45.
+--------------------------------------------------
+
+📦 [Chunk 35]
+[부품명: ASM330LHH]
+CTRL4_C register. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 52
+Table 45.
+CTRL4_C register description. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 52
+Table 46.
+CTRL5_C register. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 53
+Table 47.
+CTRL5_C register description. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 53
+Table 48.
+Angular rate sensor self-test mode selection . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 53
+--------------------------------------------------
+
+📦 [Chunk 36]
+[부품명: ASM330LHH]
+ASM330LHH
+List of tables
+84
+Table 49.
+Linear acceleration sensor self-test mode selection. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 53
+Table 50.
+CTRL6_C register. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 54
+Table 51.
+CTRL6_C register description. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 54
+Table 52.
+Trigger mode selection . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 54
+Table 53.
+Gyroscope LPF1 bandwidth selection  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 54
+Table 54.
+--------------------------------------------------
+
+📦 [Chunk 37]
+[부품명: ASM330LHH]
+Table 53.
+Gyroscope LPF1 bandwidth selection  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 54
+Table 54.
+CTRL7_G register. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 55
+Table 55.
+CTRL7_G register description  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 55
+Table 56.
+CTRL8_XL register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 55
+Table 57.
+CTRL8_XL register description. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 55
+Table 58.
+--------------------------------------------------
+
+📦 [Chunk 38]
+[부품명: ASM330LHH]
+Table 57.
+CTRL8_XL register description. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 55
+Table 58.
+Accelerometer bandwidth configurations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 56
+Table 59.
+CTRL9_XL register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 57
+Table 60.
+CTRL9_XL register description. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 57
+Table 61.
+CTRL10_C register. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 57
+Table 62.
+--------------------------------------------------
+
+📦 [Chunk 39]
+[부품명: ASM330LHH]
+Table 61.
+CTRL10_C register. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 57
+Table 62.
+CTRL10_C register description. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 57
+Table 63.
+ALL_INT_SRC register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 58
+Table 64.
+ALL_INT_SRC register description. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 58
+Table 65.
+WAKE_UP_SRC register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 58
+Table 66.
+--------------------------------------------------
+
+📦 [Chunk 40]
+[부품명: ASM330LHH]
+Table 65.
+WAKE_UP_SRC register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 58
+Table 66.
+WAKE_UP_SRC register description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 58
+Table 67.
+D6D_SRC register  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 59
+Table 68.
+D6D_SRC register description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 59
+Table 69.
+STATUS_REG register. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 59
+Table 70.
+--------------------------------------------------
+
+📦 [Chunk 41]
+[부품명: ASM330LHH]
+Table 69.
+STATUS_REG register. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 59
+Table 70.
+STATUS_REG register description. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 59
+Table 71.
+OUT_TEMP_L register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 60
+Table 72.
+OUT_TEMP_H register. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 60
+Table 73.
+OUT_TEMP register description. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 60
+Table 74.
+--------------------------------------------------
+
+📦 [Chunk 42]
+[부품명: ASM330LHH]
+Table 73.
+OUT_TEMP register description. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 60
+Table 74.
+OUTX_H_G register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 60
+Table 75.
+OUTX_L_G register  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 60
+Table 76.
+OUTX_H_G, OUTX_L_G register description  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 60
+Table 77.
+OUTY_H_G register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 60
+Table 78.
+--------------------------------------------------
+
+📦 [Chunk 43]
+[부품명: ASM330LHH]
+Table 77.
+OUTY_H_G register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 60
+Table 78.
+OUTY_L_G register  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 60
+Table 79.
+OUTY_H_G, OUTY_L_G register description  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 60
+Table 80.
+OUTZ_H_G register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 61
+Table 81.
+OUTZ_L_G register  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 61
+Table 82.
+--------------------------------------------------
+
+📦 [Chunk 44]
+[부품명: ASM330LHH]
+Table 81.
+OUTZ_L_G register  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 61
+Table 82.
+OUTZ_H_G, OUTZ_L_G register description. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 61
+Table 83.
+OUTX_H_A register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 61
+Table 84.
+OUTX_L_A register. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 61
+Table 85.
+OUTX_H_A, OUTX_L_A register description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 61
+Table 86.
+--------------------------------------------------
+
+📦 [Chunk 45]
+[부품명: ASM330LHH]
+Table 85.
+OUTX_H_A, OUTX_L_A register description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 61
+Table 86.
+OUTY_H_A register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 61
+Table 87.
+OUTY_L_A register. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 61
+Table 88.
+OUTY_H_A, OUTY_L_A register description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 61
+Table 89.
+OUTZ_H_A register  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 62
+Table 90.
+--------------------------------------------------
+
+📦 [Chunk 46]
+[부품명: ASM330LHH]
+Table 89.
+OUTZ_H_A register  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 62
+Table 90.
+OUTZ_L_A register. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 62
+Table 91.
+OUTZ_H_A, OUTZ_L_A register description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 62
+Table 92.
+FIFO_STATUS1 register. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 62
+Table 93.
+FIFO_STATUS1 register description  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 62
+Table 94.
+--------------------------------------------------
+
+📦 [Chunk 47]
+[부품명: ASM330LHH]
+Table 93.
+FIFO_STATUS1 register description  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 62
+Table 94.
+FIFO_STATUS2 register. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 63
+Table 95.
+FIFO_STATUS2 register description  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 63
+Table 96.
+TIMESTAMP3 register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 64
+Table 97.
+TIMESTAMP2 register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 64
+Table 98.
+--------------------------------------------------
+
+📦 [Chunk 48]
+[부품명: ASM330LHH]
+Table 97.
+TIMESTAMP2 register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 64
+Table 98.
+TIMESTAMP1 register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 64
+Table 99.
+TIMESTAMP0 register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 64
+Table 100.
+TIMESTAMPx register description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 64
+--------------------------------------------------
+
+📦 [Chunk 49]
+[부품명: ASM330LHH]
+List of tables
+ASM330LHH
+--------------------------------------------------
+
+📦 [Chunk 50]
+[부품명: ASM330LHH]
+Table 101.
+INT_CFG0 register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 65
+Table 102.
+INT_CFG0 register description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 65
+Table 103.
+INT_CFG1 register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 65
+Table 104.
+INT_CFG1 register description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 65
+Table 105.
+THS_6D register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 66
+Table 106.
+--------------------------------------------------
+
+📦 [Chunk 51]
+[부품명: ASM330LHH]
+THS_6D register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 66
+Table 106.
+THS_6D register description. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 66
+Table 107.
+WAKE_UP_THS register  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 66
+Table 108.
+WAKE_UP_THS register description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 66
+Table 109.
+WAKE_UP_DUR register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 67
+Table 110.
+WAKE_UP_DUR register description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 67
+--------------------------------------------------
+
+📦 [Chunk 52]
+[부품명: ASM330LHH]
+Table 110.
+WAKE_UP_DUR register description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 67
+Table 111.
+FREE_FALL register. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 67
+Table 112.
+FREE_FALL register description  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 67
+Table 113.
+MD1_CFG register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 68
+Table 114.
+MD1_CFG register description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 68
+Table 115.
+--------------------------------------------------
+
+📦 [Chunk 53]
+[부품명: ASM330LHH]
+Table 114.
+MD1_CFG register description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 68
+Table 115.
+MD2_CFG register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 68
+Table 116.
+MD2_CFG register description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 68
+Table 117.
+INTERNAL_FREQ_FINE register. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 69
+Table 118.
+INTERNAL_FREQ_FINE register description. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 69
+Table 119.
+--------------------------------------------------
+
+📦 [Chunk 54]
+[부품명: ASM330LHH]
+Table 118.
+INTERNAL_FREQ_FINE register description. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 69
+Table 119.
+X_OFS_USR register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 70
+Table 120.
+X_OFS_USR register description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 70
+Table 121.
+Y_OFS_USR register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 70
+Table 122.
+Y_OFS_USR register description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 70
+Table 123.
+--------------------------------------------------
+
+📦 [Chunk 55]
+[부품명: ASM330LHH]
+Table 122.
+Y_OFS_USR register description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 70
+Table 123.
+Z_OFS_USR register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 70
+Table 124.
+Z_OFS_USR register description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 70
+Table 125.
+FIFO_DATA_OUT_TAG register  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 71
+Table 126.
+FIFO_DATA_OUT_TAG register description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 71
+Table 127.
+--------------------------------------------------
+
+📦 [Chunk 56]
+[부품명: ASM330LHH]
+Table 126.
+FIFO_DATA_OUT_TAG register description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 71
+Table 127.
+FIFO tag . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 71
+Table 128.
+FIFO_DATA_OUT_X_H register. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 72
+Table 129.
+FIFO_DATA_OUT_X_L register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 72
+Table 130.
+FIFO_DATA_OUT_X_H, FIFO_DATA_OUT_X_L register description  . . . . . . . . . . . . . . . 72
+Table 131.
+FIFO_DATA_OUT_Y_H register. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 72
+Table 132.
+--------------------------------------------------
+
+📦 [Chunk 57]
+[부품명: ASM330LHH]
+Table 131.
+FIFO_DATA_OUT_Y_H register. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 72
+Table 132.
+FIFO_DATA_OUT_Y_L register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 72
+Table 133.
+FIFO_DATA_OUT_Y_H, FIFO_DATA_OUT_Y_L register description  . . . . . . . . . . . . . . . 72
+Table 134.
+FIFO_DATA_OUT_Z_H register. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 72
+Table 135.
+FIFO_DATA_OUT_Z_L register . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 72
+Table 136.
+FIFO_DATA_OUT_Z_H, FIFO_DATA_OUT_Z_L register description. . . . . . . . . . . . . . . . 72
+Table 137.
+--------------------------------------------------
+
+📦 [Chunk 58]
+[부품명: ASM330LHH]
+Table 136.
+FIFO_DATA_OUT_Z_H, FIFO_DATA_OUT_Z_L register description. . . . . . . . . . . . . . . . 72
+Table 137.
+Reel dimensions for carrier tape of LGA-14 package. . . . . . . . . . . . . . . . . . . . . . . . . . . . . 82
+Table 138.
+Document revision history. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 83
+--------------------------------------------------
+
+📦 [Chunk 59]
+[부품명: ASM330LHH]
+ASM330LHH
+List of figures
+84
+List of figures
+Figure 1.
+Pin connections  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+Figure 2.
+SPI slave timing diagram (in mode 3). . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+Figure 3.
+I²C slave timing diagram  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+Figure 4.
+Read and write protocol (in mode 3). . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26
+Figure 5.
+SPI read protocol (in mode 3). . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27
+Figure 6.
+--------------------------------------------------
+
+📦 [Chunk 60]
+[부품명: ASM330LHH]
+Figure 5.
+SPI read protocol (in mode 3). . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27
+Figure 6.
+Multiple byte SPI read protocol (2-byte example) (in mode 3) . . . . . . . . . . . . . . . . . . . . . . 27
+Figure 7.
+SPI write protocol (in mode 3). . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28
+Figure 8.
+Multiple byte SPI write protocol (2-byte example) (in mode 3) . . . . . . . . . . . . . . . . . . . . . . 28
+Figure 9.
+SPI read protocol in 3-wire mode (in mode 3)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+Figure 10.
+Block diagram of filters . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31
+Figure 11.
+--------------------------------------------------
+
+📦 [Chunk 61]
+[부품명: ASM330LHH]
+Block diagram of filters . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31
+Figure 11.
+Gyroscope filtering chain  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31
+Figure 12.
+Accelerometer chain . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32
+Figure 13.
+Accelerometer composite filter . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32
+Figure 14.
+ASM330LHH electrical connections . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37
+Figure 15.
+--------------------------------------------------
+
+📦 [Chunk 62]
+[부품명: ASM330LHH]
+Figure 14.
+ASM330LHH electrical connections . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37
+Figure 15.
+Accelerometer block diagram . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 56
+Figure 16.
+ARW gyro / pitch axis . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 73
+Figure 17.
+ARW gyro / roll axis  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 74
+Figure 18.
+ARW gyro / yaw axis. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 74
+Figure 19.
+--------------------------------------------------
+
+📦 [Chunk 63]
+[부품명: ASM330LHH]
+ARW gyro / yaw axis. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 74
+Figure 19.
+BI gyro / pitch axis. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 75
+Figure 20.
+BI gyro / roll axis . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 75
+Figure 21.
+BI gyro / yaw axis . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 76
+Figure 22.
+Gyro NL / pitch axis. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 77
+Figure 23.
+--------------------------------------------------
+
+📦 [Chunk 64]
+[부품명: ASM330LHH]
+Gyro NL / pitch axis. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 77
+Figure 23.
+Gyro NL / roll axis . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 77
+Figure 24.
+Gyro NL / yaw axis . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 78
+Figure 25.
+LGA-14L 2.5 x 3.0 x 0.83 mm³ (typ.) package outline and mechanical data  . . . . . . . . . . . 80
+Figure 26.
+Carrier tape information for LGA-14 package. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 81
+Figure 27.
+LGA-14 package orientation in carrier tape  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 81
+Figure 28.
+--------------------------------------------------
+
+📦 [Chunk 65]
+[부품명: ASM330LHH]
+Figure 27.
+LGA-14 package orientation in carrier tape  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 81
+Figure 28.
+Reel information for carrier tape of LGA-14 package . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 82
+--------------------------------------------------
+
+📦 [Chunk 66]
+[부품명: ASM330LHH]
+Overview
+ASM330LHH
+--------------------------------------------------
+
+📦 [Chunk 67]
+[부품명: ASM330LHH]
+1 
+Overview
+The ASM330LHH is a system-in-package featuring a high-performance 3-axis digital 
+accelerometer and 3-axis digital gyroscope. 
+This device is suitable for telematics and dead-reckoning applications as well as vehicle-to-
+vehicle (V2X) and impact detection as a result of its high stability over temperature and time, 
+combined with superior sensing precision.
+The event-detection interrupts enable efficient and reliable motion-activated functions, 
+implementing hardware recognition of free-fall events, 6D orientation, activity or inactivity, 
+and wakeup events.
+Up to 3 kbytes of FIFO allows overall power saving of the system.
+Like the entire portfolio of MEMS sensor modules, the ASM330LHH leverages the robust
+--------------------------------------------------
+
+📦 [Chunk 68]
+[부품명: ASM330LHH]
+Like the entire portfolio of MEMS sensor modules, the ASM330LHH leverages the robust 
+and mature in-house manufacturing processes already used for the production of 
+micromachined accelerometers and gyroscopes. The various sensing elements are 
+manufactured using specialized micromachining processes, while the IC interfaces are 
+developed using CMOS technology that allows the design of a dedicated circuit which is 
+trimmed to better match the characteristics of the sensing element.
+The ASM330LHH is available in a small plastic land grid array (LGA) package of 
+2.5 x 3.0 x 0.83 mm to address ultra-compact solutions.
+--------------------------------------------------
+
+📦 [Chunk 69]
+[부품명: ASM330LHH]
+ASM330LHH
+Embedded low-power features
+84
+2 
+Embedded low-power features
+The ASM330LHH has been designed to feature the following on-chip functions:
+
+3 kbytes data buffering:
+–
+100% efficiency with flexible configurations and partitioning
+
+Event-detection interrupts (fully configurable):
+–
+free-fall 
+–
+wakeup
+–
+6D orientation
+–
+activity / inactivity recognition
+
+Pin description
+ASM330LHH
+--------------------------------------------------
+
+📦 [Chunk 70]
+[부품명: ASM330LHH]
+Pin description
+ASM330LHH
+
+3 
+Pin description 
+Figure 1. Pin connections
+Table 2. Pin description 
+ 
+Pin#
+Name
+Function
+1
+SDO
+SA0
+SPI 4-wire serial data output (SDO)
+I²C least significant bit of the device address (SA0)
+2
+RES
+Connect to VDDIO or GND
+3
+RES
+Connect to VDDIO or GND
+4
+INT1(1)
+Programmable interrupt #1
+5
+Vdd_IO(2)
+Power supply for I/O pin
+6
+GNSD
+Connect to GND
+7
+GND
+Connect to GND
+8
+Vdd(3)
+Power supply
+9
+INT2
+Programmable interrupt #2 (INT2) / Data enabled (DEN) 
+10
+NC
+Leave unconnected
+11
+NC
+Leave unconnected
+12
+CS
+I²C/SPI mode selection  
+(1: SPI idle mode / I²C communication enabled;  
+0: SPI communication mode / I²C disabled and reset)
+--------------------------------------------------
+
+📦 [Chunk 71]
+[부품명: ASM330LHH]
+ASM330LHH
+Pin description
+84
+13
+SCL
+I²C serial clock (SCL)
+SPI serial port clock (SPC)
+14
+SDA
+I²C serial data (SDA)
+SPI serial data input (SDI)
+3-wire interface serial data output (SDO)
+1.
+INT1 must be set to '0' or left unconnected during power-on. 
+2.
+Recommended 100 nF filter capacitor.
+3.
+Recommended 100 nF plus 10 μF capacitors.
+Table 2. Pin description  (continued)
+Pin#
+Name
+Function
+
+Module specifications
+ASM330LHH
+--------------------------------------------------
+
+📦 [Chunk 72]
+[부품명: ASM330LHH]
+4 
+Module specifications
+4.1 
+Mechanical characteristics
+@Vdd = 3.0 V, T = -40 °C to +105 °C, up to gyroscope FS = ±2000 dps unless otherwise 
+noted(a)
+a.
+The product is factory calibrated at 3.0 V. The operational power supply range is from 2.0 V to 3.6 V. 
+Table 3. Mechanical characteristics 
+ 
+Symbol
+Parameter
+Test conditions
+Min.
+Typ.(1)
+Max.
+Unit
+LA_FS
+Linear acceleration measurement 
+range
+±2
+g
+±4
+±8
+±16
+G_FS
+Angular rate
+measurement range
+±125
+dps
+±250
+±500
+±1000
+±2000
+±4000
+LA_So
+Linear acceleration sensitivity(2)
+@LA_FS = ±2 g
+0.061
+mg/LSB
+@LA_FS = ±4 g
+0.122
+@LA_FS = ±8 g
+0.244
+@LA_FS = ±16 g
+0.488
+G_So
+Angular rate sensitivity(2)
+@G_FS = ±125 dps
+4.37
+mdps/LSB
+@G_FS = ±250 dps
+8.75
+@G_FS = ±500 dps
+17.5
+@G_FS = ±1000 dps
+35.0
+@G_FS = ±2000 dps
+70.0
+@G_FS = ±4000 dps
+140.0
+--------------------------------------------------
+
+📦 [Chunk 73]
+[부품명: ASM330LHH]
+@G_FS = ±125 dps
+4.37
+mdps/LSB
+@G_FS = ±250 dps
+8.75
+@G_FS = ±500 dps
+17.5
+@G_FS = ±1000 dps
+35.0
+@G_FS = ±2000 dps
+70.0
+@G_FS = ±4000 dps
+140.0
+LA_So%
+Sensitivity tolerance(3)
+at component level 
+@25°C
+-5
++5
+%
+G_So%
+Sensitivity tolerance(3)
+at component level 
+@25°C
+-5
++5
+%
+LA_SoDr
+Linear acceleration sensitivity 
+change vs. temperature(4)
+±100
+ppm/°C
+G_SoDr
+Angular rate sensitivity change vs. 
+temperature(4)
+±70
+ppm/°C
+--------------------------------------------------
+
+📦 [Chunk 74]
+[부품명: ASM330LHH]
+ASM330LHH
+Module specifications
+84
+LA_TyOff
+Linear acceleration zero-g level 
+offset accuracy(5)
+-80
++80
+mg
+G_TyOff
+Angular rate zero-rate level(5)
+-10
++10
+dps
+LA_TCOff Linear acceleration zero-g level 
+change vs. temperature(4)
+±0.10
+mg/°C
+G_TCOff
+Angular rate typical zero-rate level 
+change vs. temperature(4)
+±0.005
+dps/°C
+LA_Cx
+Linear acceleration cross-axis 
+sensitivity
+T = 25 °C
+±1
+%
+G_Cx
+Angular rate cross-axis sensitivity
+T = 25 °C
+±1
+%
+Rn
+Rate noise density(6)
+5
+12
+mdps/√Hz
+NL
+Nonlinearity(7)
+Best-fit straight line
+0.01
+% FS
+ARW
+Angular random walk(7)
+T = 25 °C
+0.21
+deg/√h
+BI
+Bias instability(7)
+T = 25 °C
+3
+deg/h
+An
+Acceleration noise density(8)
+@LA_FS = ±2 g
+60
+200
+μg/√Hz
+LA_ODR
+Linear acceleration output data 
+rate
+12.5
+26
+52
+104
+208
+416
+833
+1667
+3333
+6667
+Hz
+G_ODR
+--------------------------------------------------
+
+📦 [Chunk 75]
+[부품명: ASM330LHH]
+@LA_FS = ±2 g
+60
+200
+μg/√Hz
+LA_ODR
+Linear acceleration output data 
+rate
+12.5
+26
+52
+104
+208
+416
+833
+1667
+3333
+6667
+Hz
+G_ODR
+Angular rate output data rate
+12.5
+26
+52
+104
+208
+416
+833
+1667
+3333
+6667
+Vst
+Linear acceleration
+self-test output change(9)(10)(11)(12)
+40
+1700
+mg
+Angular rate
+self-test output change(13)(14)
+FS = ±250 dps
+20
+80
+dps
+FS = ±2000 dps
+150
+700
+dps
+Top
+Operating temperature range
+-40
++105
+°C
+1.
+Typical specifications are not guaranteed.
+Table 3. Mechanical characteristics  (continued)
+Symbol
+Parameter
+Test conditions
+Min.
+Typ.(1)
+Max.
+Unit
+--------------------------------------------------
+
+📦 [Chunk 76]
+[부품명: ASM330LHH]
+Module specifications
+ASM330LHH
+--------------------------------------------------
+
+📦 [Chunk 77]
+[부품명: ASM330LHH]
+2.
+Sensitivity values after factory calibration test and trimming.
+3.
+Subject to change.
+4.
+Measurements are performed in a uniform temperature setup and they are based on characterization data in a limited 
+number of samples. Not measured during final test for production.
+5.
+Across temperature and life. Assuming post-solder effect compensated at the end of production line.
+6.
+Gyroscope rate noise density is independent of the ODR for FS up to ±2000 dps, max value specified at ambient 
+temperature.
+7.
+Based on characterization data on a limited number of samples. Not measured during final test for production. See 
+Section
+ 
+10: Typical performance characteristics for typical distributions.
+8.
+--------------------------------------------------
+
+📦 [Chunk 78]
+[부품명: ASM330LHH]
+Section
+ 
+10: Typical performance characteristics for typical distributions.
+8.
+Accelerometer noise density is independent of the ODR, max value specified at ambient temperature. 
+9.
+The sign of the linear acceleration self-test output change is defined by the STx_XL bits in a dedicated register for all axes.
+10. The linear acceleration self-test output change is defined with the device in stationary condition as the absolute value of: 
+OUTPUT[LSb] (self-test enabled) - OUTPUT[LSb] (self-test disabled). 1LSb = 0.061 mg at ±2 g full scale.
+11. Accelerometer self-test limits are full-scale independent.
+12. The self-test output change limits include full Vdd range and impact of soldering.
+--------------------------------------------------
+
+📦 [Chunk 79]
+[부품명: ASM330LHH]
+11. Accelerometer self-test limits are full-scale independent.
+12. The self-test output change limits include full Vdd range and impact of soldering.
+13. The sign of the angular rate self-test output change is defined by the STx_G bits in a dedicated register for all axes. 
+14. The angular rate self-test output change is defined with the device in stationary condition as the absolute value of: 
+OUTPUT[LSb] (self-test enabled) - OUTPUT[LSb] (self-test disabled). 1LSb = 70 mdps at ±2000 dps full scale.
+--------------------------------------------------
+
+📦 [Chunk 80]
+[부품명: ASM330LHH]
+ASM330LHH
+Module specifications
+84
+4.2 
+Electrical characteristics
+@ Vdd = 3.0 V, T = -40 °C to +105 °C, up to gyroscope FS = ±2000 dps unless otherwise 
+noted 
+Table 4. Electrical characteristics
+Symbol
+Parameter
+Test conditions
+Min.
+Typ.(1)
+1. Typical specifications are not guaranteed.
+Max.
+Unit
+Vdd
+Supply voltage
+2.0
+3.6
+V
+Vdd_IO
+Power supply for I/O
+1.62
+3.6
+V
+GA_Idd
+Gyroscope and Accelerometer 
+current consumption
+ODR = 1.6 kHz
+1.3
+1.6
+mA
+A_Idd
+Accelerometer current 
+consumption
+ODR < 1.6 kHz
+360
+530
+μA
+IddPD
+Gyroscope and accelerometer 
+current consumption during 
+power-down
+@25°C
+3
+13
+μA
+Ton
+Turn-on time(2)
+2.
+Time to obtain stable sensitivity (within ±5% of final value) switching from power-down to normal operation
+35
+ms
+VIH
+(3)
+3.
+--------------------------------------------------
+
+📦 [Chunk 81]
+[부품명: ASM330LHH]
+Ton
+Turn-on time(2)
+2.
+Time to obtain stable sensitivity (within ±5% of final value) switching from power-down to normal operation
+35
+ms
+VIH
+(3)
+3.
+Guaranteed by design characterization and not tested in production
+Digital high-level input voltage
+0.7 *
+VDD_IO
+V
+VIL
+(3)
+Digital low-level input voltage
+0.3 *
+VDD_IO
+V
+VOH
+(3)
+High-level output voltage
+IOH = 4 mA(4)
+4.
+4 mA is the minimum driving capability, i.e. the minimum DC current that can be sourced/sunk by the digital pad in order to 
+guarantee the correct digital output voltage levels VOH and VOL.
+VDD_IO - 
+0.2
+V
+VOL
+(3)
+Low-level output voltage
+IOL = 4 mA(4)
+0.2
+V
+Top
+Operating temperature range
+-40
++105
+°C
+--------------------------------------------------
+
+📦 [Chunk 82]
+[부품명: ASM330LHH]
+Module specifications
+ASM330LHH
+
+4.3 
+Temperature sensor characteristics
+@ Vdd = 3.0 V, T = 25 °C unless otherwise noted(b).
+Table 5. Temperature sensor characteristics
+b.
+The product is factory calibrated at 3.0 V.
+Symbol
+Parameter
+Test condition
+Min.
+Typ.(1)
+1.
+Typical specifications are not guaranteed.
+Max.
+Unit
+TODR
+Temperature refresh rate
+52
+Hz
+Toff
+Temperature offset(2)
+2.
+The output of the temperature sensor is 0 LSB (typ.) at 25 °C.
+-15
++15
+°C 
+TSen
+Temperature sensitivity
+256
+LSB/°C 
+TST
+Temperature stabilization 
+time(3)
+3.
+Time from power ON bit to valid output data. Based on characterization.
+500
+μs
+T_ADC_res Temperature ADC resolution
+16
+bit
+Top
+Operating temperature range
+-40
++105
+°C
+--------------------------------------------------
+
+📦 [Chunk 83]
+[부품명: ASM330LHH]
+ASM330LHH
+Module specifications
+84
+4.4 
+Communication interface characteristics
+4.4.1 
+SPI - serial peripheral interface
+Subject to general operating conditions for Vdd and Top.
+Figure 2. SPI slave timing diagram (in mode 3)
+Note:
+Measurement points are done at 0.2·Vdd_IO and 0.8·Vdd_IO, for both input and output 
+ports.
+Table 6. SPI slave timing values (in mode 3)
+Symbol
+Parameter
+Value(1)
+Unit
+Min
+Max
+tc(SPC)
+SPI clock cycle
+100
+ns
+fc(SPC)
+SPI clock frequency
+10
+MHz
+tsu(CS)
+CS setup time
+5
+ns
+th(CS)
+CS hold time
+20
+tsu(SI)
+SDI input setup time
+5
+th(SI)
+SDI input hold time
+15
+tv(SO)
+SDO valid output time
+50
+th(SO)
+SDO output hold time
+5
+tdis(SO)
+SDO output disable time
+50
+1.
+--------------------------------------------------
+
+📦 [Chunk 84]
+[부품명: ASM330LHH]
+5
+th(SI)
+SDI input hold time
+15
+tv(SO)
+SDO valid output time
+50
+th(SO)
+SDO output hold time
+5
+tdis(SO)
+SDO output disable time
+50
+1.
+Values are guaranteed at 10 MHz clock frequency for SPI with both 4 and 3 wires, based on characterization results, not 
+tested in production
+--------------------------------------------------
+
+📦 [Chunk 85]
+[부품명: ASM330LHH]
+Module specifications
+ASM330LHH
+--------------------------------------------------
+
+📦 [Chunk 86]
+[부품명: ASM330LHH]
+4.4.2 
+I²C - inter-IC control interface
+Subject to general operating conditions for Vdd and Top.
+Figure 3. I²C slave timing diagram 
+Note:
+Measurement points are done at 0.2·Vdd_IO and 0.8·Vdd_IO, for both ports.
+Table 7. I²C slave timing values
+Symbol
+Parameter
+I²C standard mode(1)
+I²C fast mode (1)
+Unit
+Min
+Max
+Min
+Max
+f(SCL)
+SCL clock frequency
+0
+100
+0
+400
+kHz
+tw(SCLL)
+SCL clock low time
+4.7
+1.3
+μs
+tw(SCLH)
+SCL clock high time
+4.0
+0.6
+tsu(SDA)
+SDA setup time
+250
+100
+ns
+th(SDA)
+SDA data hold time
+0
+3.45
+0
+0.9
+μs
+th(ST)
+START condition hold time
+4
+0.6
+μs
+tsu(SR)
+Repeated START condition 
+setup time
+4.7
+0.6
+tsu(SP)
+STOP condition setup time
+4
+0.6
+tw(SP:SR)
+Bus free time between STOP 
+and START condition
+4.7
+1.3
+1.
+Data based on standard I²C protocol requirement, not tested in production.
+--------------------------------------------------
+
+📦 [Chunk 87]
+[부품명: ASM330LHH]
+4
+0.6
+tw(SP:SR)
+Bus free time between STOP 
+and START condition
+4.7
+1.3
+1.
+Data based on standard I²C protocol requirement, not tested in production.
+6'$
+6&/
+WVX63
+WZ6&//
+WVX6'$
+WVX65
+WK67
+WZ6&/+
+WK6'$
+WZ6365
+67$57
+5(3($7('
+67$57
+6723
+67$57
+--------------------------------------------------
+
+📦 [Chunk 88]
+[부품명: ASM330LHH]
+ASM330LHH
+Module specifications
+84
+4.5 
+Absolute maximum ratings
+Stresses above those listed as “Absolute maximum ratings” may cause permanent damage 
+to the device. This is a stress rating only and functional operation of the device under these 
+conditions is not implied. Exposure to maximum rating conditions for extended periods may 
+affect device reliability.
+Note:
+Supply voltage on any pin should never exceed 4.8 V.
+           
+Table 8. Absolute maximum ratings
+Symbol
+Ratings
+Maximum value
+Unit
+Vdd
+Supply voltage
+-0.3 to 4.8
+V
+TSTG
+Storage temperature range
+-40 to +125
+°C
+Sg
+Acceleration g for 0.3 ms
+3000
+g
+ESD
+Electrostatic discharge protection (HBM)
+2 
+kV
+Vin
+Input voltage on any control pin
+(including CS, SCL/SPC, SDA/SDI/SDO, SDO/SA0)
+0.3 to Vdd_IO +0.3
+V
+--------------------------------------------------
+
+📦 [Chunk 89]
+[부품명: ASM330LHH]
+2 
+kV
+Vin
+Input voltage on any control pin
+(including CS, SCL/SPC, SDA/SDI/SDO, SDO/SA0)
+0.3 to Vdd_IO +0.3
+V
+This device is sensitive to mechanical shock, improper handling can cause 
+permanent damage to the part.
+This device is sensitive to electrostatic discharge (ESD), improper handling can 
+cause permanent damage to the part.
+--------------------------------------------------
+
+📦 [Chunk 90]
+[부품명: ASM330LHH]
+Module specifications
+ASM330LHH
+--------------------------------------------------
+
+📦 [Chunk 91]
+[부품명: ASM330LHH]
+4.6 
+Terminology
+4.6.1 
+Sensitivity
+Linear acceleration sensitivity can be determined, for example, by applying 1 g acceleration 
+to the device. Because the sensor can measure DC accelerations, this can be done easily 
+by pointing the selected axis towards the ground, noting the output value, rotating the 
+sensor 180 degrees (pointing towards the sky) and noting the output value again. By doing 
+so, ±1 g acceleration is applied to the sensor. Subtracting the larger output value from the 
+smaller one, and dividing the result by 2, leads to the actual sensitivity of the sensor. This 
+value changes very little over temperature and over time. The sensitivity tolerance describes 
+the range of sensitivities of a large number of sensors (see Table
+ 
+3).
+--------------------------------------------------
+
+📦 [Chunk 92]
+[부품명: ASM330LHH]
+the range of sensitivities of a large number of sensors (see Table
+ 
+3).
+An angular rate gyroscope is a device that produces a positive-going digital output for 
+counterclockwise rotation around the axis considered. Sensitivity describes the gain of the 
+sensor and can be determined by applying a defined angular velocity to it. This value 
+changes very little over temperature and time (see Table
+ 
+3).
+4.6.2 
+Zero-g and zero-rate level
+Linear acceleration zero-g level offset (TyOff) describes the deviation of an actual output 
+signal from the ideal output signal if no acceleration is present. A sensor in a steady state on 
+a horizontal surface will measure 0 g on both the X-axis and Y-axis, whereas the Z-axis will
+--------------------------------------------------
+
+📦 [Chunk 93]
+[부품명: ASM330LHH]
+a horizontal surface will measure 0 g on both the X-axis and Y-axis, whereas the Z-axis will 
+measure 1 g. Ideally, the output is in the middle of the dynamic range of the sensor (content 
+of OUT registers 00h, data expressed as 2’s complement number). A deviation from the 
+ideal value in this case is called zero-g offset.
+Offset is to some extent a result of stress to MEMS sensor and therefore the offset can 
+slightly change after mounting the sensor onto a printed circuit board or exposing it to 
+extensive mechanical stress. Offset changes little over temperature, see “Linear 
+acceleration zero-g level change vs. temperature” in Table
+ 
+3. The zero-g level tolerance 
+(TyOff) describes the standard deviation of the range of zero-g levels of a group of sensors.
+--------------------------------------------------
+
+📦 [Chunk 94]
+[부품명: ASM330LHH]
+3. The zero-g level tolerance 
+(TyOff) describes the standard deviation of the range of zero-g levels of a group of sensors.
+Zero-rate level describes the actual output signal if there is no angular rate present. The 
+zero-rate level of precise MEMS sensors is, to some extent, a result of stress to the sensor 
+and therefore the zero-rate level can slightly change after mounting the sensor onto a 
+printed circuit board or after exposing it to extensive mechanical stress. This value changes 
+very little over temperature and time (see Table
+ 
+3).
+--------------------------------------------------
+
+📦 [Chunk 95]
+[부품명: ASM330LHH]
+ASM330LHH
+Digital interfaces
+84
+5 
+Digital interfaces
+5.1 
+I²C/SPI interface
+The registers embedded inside the ASM330LHH may be accessed through both the I²C and 
+SPI serial interfaces. The latter may be SW configured to operate either in 3-wire or 4-wire 
+interface mode. The device is compatible with SPI modes 0 and 3.
+The serial interfaces are mapped onto the same pins. To select/exploit the I²C interface, the 
+CS line must be tied high (i.e connected to Vdd_IO).
+          
+5.1.1 
+I²C serial interface
+The ASM330LHH I²C is a bus slave. The I²C is employed to write the data to the registers, 
+whose content can also be read back.
+The relevant I²C terminology is provided in the table below.
+--------------------------------------------------
+
+📦 [Chunk 96]
+[부품명: ASM330LHH]
+whose content can also be read back.
+The relevant I²C terminology is provided in the table below.
+          
+There are two signals associated with the I²C bus: the serial clock line (SCL) and the Serial 
+DAta line (SDA). The latter is a bidirectional line used for sending and receiving the data 
+to/from the interface. Both the lines must be connected to Vdd_IO through external pull-up 
+resistors. When the bus is free, both the lines are high.
+The I²C interface is implemeted with fast mode (400 kHz) I²C standards as well as with the 
+standard mode.
+In order to disable the I²C block, (I2C_disable) = 1 must be written in CTRL4_C (13h).
+Table 9. Serial interface pin description
+Pin name
+Pin description
+CS
+SPI enable
+I²C/SPI mode selection (1: SPI idle mode / I²C communication enabled;
+--------------------------------------------------
+
+📦 [Chunk 97]
+[부품명: ASM330LHH]
+Pin name
+Pin description
+CS
+SPI enable
+I²C/SPI mode selection (1: SPI idle mode / I²C communication enabled;  
+0: SPI communication mode / I²C disabled)
+SCL/SPC
+I²C Serial Clock (SCL)
+SPI Serial Port Clock (SPC)
+SDA/SDI/SDO
+I²C Serial Data (SDA)
+SPI Serial Data Input (SDI)
+3-wire Interface Serial Data Output (SDO)
+SDO/SA0
+SPI Serial Data Output (SDO)
+I²C less significant bit of the device address 
+Table 10. I²C terminology
+Term
+Description
+Transmitter
+The device which sends data to the bus
+Receiver
+The device which receives data from the bus
+Master
+The device which initiates a transfer, generates clock signals and terminates a 
+transfer
+Slave
+The device addressed by the master
+--------------------------------------------------
+
+📦 [Chunk 98]
+[부품명: ASM330LHH]
+Digital interfaces
+ASM330LHH
+--------------------------------------------------
+
+📦 [Chunk 99]
+[부품명: ASM330LHH]
+I²C operation
+The transaction on the bus is started through a START (ST) signal. A START condition is 
+defined as a HIGH to LOW transition on the data line while the SCL line is held HIGH. After 
+this has been transmitted by the master, the bus is considered busy. The next byte of data 
+transmitted after the start condition contains the address of the slave in the first 7 bits and 
+the eighth bit tells whether the master is receiving data from the slave or transmitting data to 
+the slave. When an address is sent, each device in the system compares the first seven bits 
+after a start condition with its address. If they match, the device considers itself addressed 
+by the master. 
+The Slave ADdress (SAD) associated to the ASM330LHH is 110101xb. The SDO/SA0 pin
+--------------------------------------------------
+
+📦 [Chunk 100]
+[부품명: ASM330LHH]
+by the master. 
+The Slave ADdress (SAD) associated to the ASM330LHH is 110101xb. The SDO/SA0 pin 
+can be used to modify the less significant bit of the device address. If the SDO/SA0 pin is 
+connected to the supply voltage, LSb is ‘1’ (address 1101011b); else if the SDO/SA0 pin is 
+connected to ground, the LSb value is ‘0’ (address 1101010b). This solution permits to 
+connect and address two different inertial modules to the same I²C bus.
+Data transfer with acknowledge is mandatory. The transmitter must release the SDA line 
+during the acknowledge pulse. The receiver must then pull the data line LOW so that it 
+remains stable low during the HIGH period of the acknowledge clock pulse. A receiver 
+which has been addressed is obliged to generate an acknowledge after each byte of data
+--------------------------------------------------
+
+📦 [Chunk 101]
+[부품명: ASM330LHH]
+which has been addressed is obliged to generate an acknowledge after each byte of data 
+received.
+The I²C embedded inside the ASM330LHH behaves like a slave device and the following 
+protocol must be adhered to. After the start condition (ST) a slave address is sent, once a 
+slave acknowledge (SAK) has been returned, an 8-bit sub-address (SUB) is transmitted. 
+The increment of the address is configured by the CTRL3_C (12h) (IF_INC). 
+The slave address is completed with a Read/Write bit. If the bit is ‘1’ (Read), a repeated 
+START (SR) condition must be issued after the two sub-address bytes; if the bit is ‘0’ (Write) 
+the master will transmit to the slave with direction unchanged. Table
+ 
+11 explains how the 
+SAD+Read/Write bit pattern is composed, listing all the possible configurations.
+--------------------------------------------------
+
+📦 [Chunk 102]
+[부품명: ASM330LHH]
+11 explains how the 
+SAD+Read/Write bit pattern is composed, listing all the possible configurations.
+Table 11. SAD+Read/Write patterns
+Command
+SAD[6:1]
+SAD[0] = SA0
+R/W
+SAD+R/W
+Read
+110101
+0
+1
+11010101 (D5h)
+Write
+110101
+0
+0
+11010100 (D4h)
+Read
+110101
+1
+1
+11010111 (D7h)
+Write
+110101
+1
+0
+11010110 (D6h)
+Table 12. Transfer when master is writing one byte to slave
+Master
+ST
+SAD + W
+SUB
+DATA
+SP
+Slave
+SAK
+SAK
+SAK
+Table 13. Transfer when master is writing multiple bytes to slave
+Master
+ST
+SAD + W
+SUB
+DATA
+DATA
+SP
+Slave
+SAK
+SAK
+SAK
+SAK
+--------------------------------------------------
+
+📦 [Chunk 103]
+[부품명: ASM330LHH]
+ASM330LHH
+Digital interfaces
+84
+Data are transmitted in byte format (DATA). Each data transfer contains 8 bits. The number 
+of bytes transferred per transfer is unlimited. Data is transferred with the Most Significant bit 
+(MSb) first. If a slave receiver doesn’t acknowledge the slave address (i.e. it is not able to 
+receive because it is performing some real-time function) the data line must be left HIGH by 
+the slave. The master can then abort the transfer. A LOW to HIGH transition on the SDA line 
+while the SCL line is HIGH is defined as a STOP condition. Each data transfer must be 
+terminated by the generation of a STOP (SP) condition.
+In the presented communication format MAK is Master acknowledge and NMAK is No 
+Master Acknowledge.
+--------------------------------------------------
+
+📦 [Chunk 104]
+[부품명: ASM330LHH]
+In the presented communication format MAK is Master acknowledge and NMAK is No 
+Master Acknowledge. 
+Table 14. Transfer when master is receiving (reading) one byte of data from slave
+Master
+ST
+SAD + W
+SUB
+SR
+SAD + R
+NMAK
+SP
+Slave
+SAK
+SAK
+SAK
+DATA
+Table 15. Transfer when master is receiving (reading) multiple bytes of data from slave
+Master
+ST
+SAD+W
+SUB
+SR
+SAD+R
+MAK
+MAK
+NMAK
+SP
+Slave
+SAK
+SAK
+SAK
+DATA
+DAT
+A
+DATA
+--------------------------------------------------
+
+📦 [Chunk 105]
+[부품명: ASM330LHH]
+Digital interfaces
+ASM330LHH
+--------------------------------------------------
+
+📦 [Chunk 106]
+[부품명: ASM330LHH]
+5.1.2 
+SPI bus interface
+The ASM330LHH SPI is a bus slave. The SPI allows writing and reading the registers of the 
+device.
+The serial interface communicates to the application using 4 wires: CS, SPC, SDI and SDO.
+Figure 4. Read and write protocol (in mode 3)
+CS is the serial port enable and it is controlled by the SPI master. It goes low at the start of 
+the transmission and goes back high at the end. SPC is the serial port clock and it is 
+controlled by the SPI master. It is stopped high when CS is high (no transmission). SDI and 
+SDO are, respectively, the serial port data input and output. Those lines are driven at the 
+falling edge of SPC and should be captured at the rising edge of SPC.
+Both the read register and write register commands are completed in 16 clock pulses or in
+--------------------------------------------------
+
+📦 [Chunk 107]
+[부품명: ASM330LHH]
+Both the read register and write register commands are completed in 16 clock pulses or in 
+multiples of 8 in case of multiple read/write bytes. Bit duration is the time between two falling 
+edges of SPC. The first bit (bit 0) starts at the first falling edge of SPC after the falling edge 
+of CS while the last bit (bit 15, bit 23, ...) starts at the last falling edge of SPC just before the 
+rising edge of CS.
+bit 0: RW bit. When 0, the data DI(7:0) is written into the device. When 1, the data DO(7:0) 
+from the device is read. In latter case, the chip will drive SDO at the start of bit 8.
+bit 1-7: address AD(6:0). This is the address field of the indexed register.
+bit 8-15: data DI(7:0) (write mode). This is the data that is written into the device (MSb first).
+--------------------------------------------------
+
+📦 [Chunk 108]
+[부품명: ASM330LHH]
+bit 8-15: data DI(7:0) (write mode). This is the data that is written into the device (MSb first).
+bit 8-15: data DO(7:0) (read mode). This is the data that is read from the device (MSb first).
+In multiple read/write commands further blocks of 8 clock periods will be added. When the 
+CTRL3_C (12h) (IF_INC) bit is ‘0’, the address used to read/write data remains the same for 
+every block. When the CTRL3_C (12h) (IF_INC) bit is ‘1’, the address used to read/write 
+data is increased at every block.
+The function and the behavior of SDI and SDO remain unchanged.
+&6
+63&
+6',
+6'2
+5:
+$' $' $' $' $' $'
+', ', ', ', ', ', ', ',
+'2 '2 '2 '2 '2 '2 '2 '2
+$'
+--------------------------------------------------
+
+📦 [Chunk 109]
+[부품명: ASM330LHH]
+ASM330LHH
+Digital interfaces
+84
+SPI read
+Figure 5. SPI read protocol (in mode 3)
+The SPI Read command is performed with 16 clock pulses. A multiple byte read command 
+is performed by adding blocks of 8 clock pulses to the previous one.
+bit 0: READ bit. The value is 1.
+bit 1-7: address AD(6:0). This is the address field of the indexed register. 
+bit 8-15: data DO(7:0) (read mode). This is the data that will be read from the device (MSb 
+first).
+bit 16-...: data DO(...-8). Further data in multiple byte reads.
+Figure 6. Multiple byte SPI read protocol (2-byte example) (in mode 3)
+&6
+63&
+6',
+6'2
+5:
+'2 '2 '2 '2 '2 '2 '2 '2
+$' $' $' $' $' $'
+$'
+&6
+63&
+6',
+6'2
+5:
+'2 '2 '2 '2 '2 '2 '2 '2
+$' $'$' $' $' $'
+'2'2'2'2'2'2'2 '2
+$'
+--------------------------------------------------
+
+📦 [Chunk 110]
+[부품명: ASM330LHH]
+Digital interfaces
+ASM330LHH
+
+SPI write
+Figure 7. SPI write protocol (in mode 3)
+The SPI Write command is performed with 16 clock pulses. A multiple byte write command 
+is performed by adding blocks of 8 clock pulses to the previous one.
+bit 0: WRITE bit. The value is 0.
+bit 1 -7: address AD(6:0). This is the address field of the indexed register.
+bit 8-15: data DI(7:0) (write mode). This is the data that is written inside the device (MSb 
+first).
+bit 16-... : data DI(...-8). Further data in multiple byte writes.
+Figure 8. Multiple byte SPI write protocol (2-byte example) (in mode 3)
+&6
+63&
+6',
+5:
+',
+',
+',
+',
+',
+',
+',
+',
+$' $' $' $' $' $'
+$'
+&6
+63&
+6',
+5:
+$' $' $' $' $' $'
+', ', ', ', ', ', ', ', ',',',',',',', ',
+$'
+--------------------------------------------------
+
+📦 [Chunk 111]
+[부품명: ASM330LHH]
+ASM330LHH
+Digital interfaces
+84
+SPI read in 3-wire mode
+A 3-wire mode is entered by setting the CTRL3_C (12h) (SIM) bit equal to ‘1’ (SPI serial 
+interface mode selection).
+Figure 9. SPI read protocol in 3-wire mode (in mode 3)
+The SPI read command is performed with 16 clock pulses:
+bit 0: READ bit. The value is 1.
+bit 1-7: address AD(6:0). This is the address field of the indexed register. 
+bit 8-15: data DO(7:0) (read mode). This is the data that is read from the device (MSb first).
+A multiple read command is also available in 3-wire mode.
+&6
+63&
+6',2
+5:
+'2 '2 '2 '2 '2 '2 '2 '2
+$'
+$' $' $' $' $'
+$'
+
+Functionality
+ASM330LHH
+--------------------------------------------------
+
+📦 [Chunk 112]
+[부품명: ASM330LHH]
+6 
+Functionality
+6.1 
+Operating modes
+In the ASM330LHH, the accelerometer and the gyroscope can be turned on/off 
+independently of each other and are allowed to have different ODRs and power modes.
+The ASM330LHH has three operating modes available:
+
+only accelerometer active and gyroscope in power-down or sleep mode
+
+only gyroscope active and accelerometer in power-down 
+
+both accelerometer and gyroscope sensors active with independent ODR 
+The accelerometer is activated from power-down by writing ODR_XL[3:0] in CTRL1_XL 
+(10h) while the gyroscope is activated from power-down by writing ODR_G[3:0] in 
+CTRL2_G (11h). For combo-mode the ODRs are totally independent.
+6.2 
+Gyroscope power modes
+In the ASM330LHH, the gyroscope can be configured in two different operating modes:
+--------------------------------------------------
+
+📦 [Chunk 113]
+[부품명: ASM330LHH]
+6.2 
+Gyroscope power modes
+In the ASM330LHH, the gyroscope can be configured in two different operating modes: 
+power-down and high-performance mode. High-performance mode is valid for all ODRs 
+(from 12.5 Hz up to 6.66 kHz).
+6.3 
+Accelerometer power modes
+In the ASM330LHH, the accelerometer can be configured in two different operating modes: 
+power-down and high-performance mode. High-performance mode is valid for all ODRs 
+(from 12.5 Hz up to 6.66 kHz).
+--------------------------------------------------
+
+📦 [Chunk 114]
+[부품명: ASM330LHH]
+ASM330LHH
+Functionality
+84
+6.4 
+Block diagram of filters
+Figure 10. Block diagram of filters
+6.4.1 
+Block diagram of the gyroscope filter
+The gyroscope filtering chain appears below.
+Figure 11. Gyroscope filtering chain 
+The gyroscope ODR is selectable from 12.5 Hz up to 6.66 kHz. A low-pass filter (LPF1) is 
+available, for more details about the filter characteristics see Table
+ 
+53: Gyroscope LPF1 
+bandwidth selection. The digital LPF2 filter cannot be configured by the user and its cutoff 
+frequency depends on the selected gyroscope ODR, as indicated in the following table.
+Data can be acquired from the output registers and FIFO.
+          
+$'&
+$'&
+/RZ3DVV
+*\UR
+5HJV
+DUUD\
+),)2
+LQWHUIDFH
+,QWHUUXSW
+PQJ
+9ROWDJHDQGFXUUHQW
+UHIHUHQFHV
+7ULPPLQJFLUFXLW
+DQG7HVWLQWHUIDFH
+--------------------------------------------------
+
+📦 [Chunk 115]
+[부품명: ASM330LHH]
+$'&
+$'&
+/RZ3DVV
+*\UR
+5HJV
+DUUD\
+),)2
+LQWHUIDFH
+,QWHUUXSW
+PQJ
+9ROWDJHDQGFXUUHQW
+UHIHUHQFHV
+7ULPPLQJFLUFXLW
+DQG7HVWLQWHUIDFH
+&ORFNDQGSKDVH
+JHQHUDWRU
+3RZHU
+PDQDJHPHQW
+)73
+&6
+6&/63&
+6'$6',6'2
+6'26$
+,17
+,17
+0
+(
+0
+6
+6
+(
+1
+6
+2
+5
+/RZ3DVV
+;/
+*\UR
+IURQWHQG
+;/
+IURQWHQG
+7HPSHUDWXUH
+VHQVRU
+
+,&63,
+Table 16. Gyroscope LPF2 bandwidth selection
+Gyroscope ODR [Hz]
+LPF2 cut-off [Hz]
+12.5
+4.3
+26
+8.3
+52
+16.7
+104
+33
+208
+67
+417
+133
+833
+267
+1667
+539
+3333
+1137
+6667
+3333
+$'&
++3)
++3B(1B*
+/3)
+/3)
+/3)B6(/B*
+63,,&
+),)2
+)7<3( >@
+
+
+
+
+2'5B*>@
+--------------------------------------------------
+
+📦 [Chunk 116]
+[부품명: ASM330LHH]
+Functionality
+ASM330LHH
+
+6.4.2 
+Block diagrams of the accelerometer filters
+In the ASM330LHH, the filtering chain for the accelerometer part is composed of the 
+following:
+
+Digital filter (LPF1)
+
+Composite filter
+Details of the block diagram appear in the following figure.
+Figure 12. Accelerometer chain
+Figure 13. Accelerometer composite filter
+1.
+The cutoff value of the LPF1 output is ODR/2.
+$'&
+'LJLWDO
+/3)LOWHU
+2'5B;/>@
+&RPSRVLWH
+)LOWHU
+/3)
+6/23(
+),/7(5
++3&)B;/>@
+
+
+
+«
+
+63,
+,&
+
+
++3B6/23(B;/B(1
+/3)B;/B(1
+
+
+'LJLWDO
++3)LOWHU
++3&)B;/>@
+'LJLWDO
+/3)LOWHU
+/3)
++3&)B;/>@
+''
+
+
+/2:B3$66B21B'
+
+
+6/23(B)'6
+:DNHXS
+$FWLYLW\
+,QDFWLYLW\
+)UHHIDOO
+
+),)2
+86(5
+2))6(7
+
+
+865B2))B21B287
+865B2))B:
+2)6B865>@
+
+
+865B2))B21B:8
+/3)
+RXWSXW
+--------------------------------------------------
+
+📦 [Chunk 117]
+[부품명: ASM330LHH]
+ASM330LHH
+Functionality
+84
+6.5 
+FIFO
+The presence of a FIFO allows consistent power saving for the system since the host 
+processor does not need continuously poll data from the sensor, but It can wake up only 
+when needed and burst the significant data out from the FIFO. 
+The ASM330LHH embeds 3 kbytes of data in FIFO to store the following data:
+
+Gyroscope
+
+Accelerometer
+
+Timestamp
+
+Temperature
+Writing data in the FIFO is triggered by the accelerometer / gyroscope data-ready signal.
+The applications have maximum flexibility in choosing the rate of batching for physical 
+sensors with FIFO-dedicated configurations: accelerometer, gyroscope and temperature 
+sensor batching rates can be selected by the user. It is possible to select decimation for
+--------------------------------------------------
+
+📦 [Chunk 118]
+[부품명: ASM330LHH]
+sensor batching rates can be selected by the user. It is possible to select decimation for 
+timestamp batching in FIFO with a factor of 1, 8, or 32.
+The reconstruction of a FIFO stream is a simple task thanks to the FIFO_DATA_OUT_TAG 
+byte that allows recognizing the meaning of a word in FIFO.
+FIFO allows correct reconstruction of the timestamp information for each sensor stored in 
+FIFO. If a change in the ODR or BDR (Batching Data Rate) configuration is performed, the 
+application can correctly reconstruct the timestamp and know exactly when the change was 
+applied without disabling FIFO batching. FIFO stores information of the new configuration 
+and timestamp in which the change was applied in the device.
+The programmable FIFO watermark threshold can be set in FIFO_CTRL1 (07h) and
+--------------------------------------------------
+
+📦 [Chunk 119]
+[부품명: ASM330LHH]
+and timestamp in which the change was applied in the device.
+The programmable FIFO watermark threshold can be set in FIFO_CTRL1 (07h) and 
+FIFO_CTRL2 (08h) using the WTM[8:0] bits. To monitor the FIFO status, dedicated 
+registers (FIFO_STATUS1 (3Ah), FIFO_STATUS2 (3Bh)) can be read to detect FIFO 
+overrun events, FIFO full status, FIFO empty status, FIFO watermark status and the number 
+of unread samples stored in the FIFO. To generate dedicated interrupts on the INT1 and 
+INT2 pins of these status events, the configuration can be set in INT1_CTRL (0Dh) and 
+INT2_CTRL (0Eh). 
+The FIFO buffer can be configured according to six different modes: 
+
+Bypass mode
+
+FIFO mode
+
+Continuous mode
+
+Continuous-to-FIFO mode
+
+Bypass-to-continuous mode
+
+Bypass-to-FIFO mode
+--------------------------------------------------
+
+📦 [Chunk 120]
+[부품명: ASM330LHH]
+
+Bypass mode
+
+FIFO mode
+
+Continuous mode
+
+Continuous-to-FIFO mode
+
+Bypass-to-continuous mode
+
+Bypass-to-FIFO mode
+Each mode is selected by the FIFO_MODE_[2:0] bits in the FIFO_CTRL4 (0Ah) register.
+--------------------------------------------------
+
+📦 [Chunk 121]
+[부품명: ASM330LHH]
+Functionality
+ASM330LHH
+--------------------------------------------------
+
+📦 [Chunk 122]
+[부품명: ASM330LHH]
+6.5.1 
+Bypass mode
+In Bypass mode (FIFO_CTRL4 (0Ah)(FIFO_MODE_[2:0] = 000), the FIFO is not operational 
+and it remains empty. Bypass mode is also used to reset the FIFO when in FIFO mode.
+6.5.2 
+FIFO mode
+In FIFO mode (FIFO_CTRL4 (0Ah)(FIFO_MODE_[2:0] = 001) data from the output 
+channels are stored in the FIFO until it is full. 
+To reset FIFO content, Bypass mode should be selected by writing FIFO_CTRL4 
+(0Ah)(FIFO_MODE_[2:0]) to '000'. After this reset command, it is possible to restart FIFO 
+mode by writing FIFO_CTRL4 (0Ah)(FIFO_MODE_[2:0]) to '001'. 
+The FIFO buffer memorizes up to 3 kbytes of data but the depth of the FIFO can be resized 
+by setting the WTM [8:0] bits in FIFO_CTRL1 (07h) and FIFO_CTRL2 (08h). If the
+--------------------------------------------------
+
+📦 [Chunk 123]
+[부품명: ASM330LHH]
+by setting the WTM [8:0] bits in FIFO_CTRL1 (07h) and FIFO_CTRL2 (08h). If the 
+STOP_ON_WTM bit in FIFO_CTRL2 (08h) is set to '1', FIFO depth is limited up to the WTM 
+[8:0] bits in FIFO_CTRL1 (07h) and FIFO_CTRL2 (08h).
+6.5.3 
+Continuous mode
+Continuous mode (FIFO_CTRL4 (0Ah)(FIFO_MODE_[2:0] = 110) provides a continuous 
+FIFO update: as new data arrives, the older data is discarded.
+A FIFO threshold flag FIFO_STATUS2 (3Bh)(FIFO_WTM_IA) is asserted when the number 
+of unread samples in FIFO is greater than or equal to FIFO_CTRL1 (07h) and FIFO_CTRL2 
+(08h)(WTM [8:0]).
+It is possible to route the FIFO_WTM_IA flag to FIFO_CTRL2 (08h) to the INT1 pin by 
+writing in register INT1_CTRL (0Dh)(INT1_FIFO_TH) = '1' or to the INT2 pin by writing in 
+register INT2_CTRL (0Eh)(INT2_FIFO_TH) = '1'.
+--------------------------------------------------
+
+📦 [Chunk 124]
+[부품명: ASM330LHH]
+writing in register INT1_CTRL (0Dh)(INT1_FIFO_TH) = '1' or to the INT2 pin by writing in 
+register INT2_CTRL (0Eh)(INT2_FIFO_TH) = '1'. 
+A full-flag interrupt can be enabled, INT1_CTRL (0Dh)(INT1_FIFO_FULL) = '1' or 
+INT2_CTRL (0Eh)(INT2_FIFO_FULL) = '1', in order to indicate FIFO saturation and 
+eventually read its content all at once. 
+If an overrun occurs, at least one of the oldest samples in FIFO has been overwritten and 
+the FIFO_OVR_IA flag in FIFO_STATUS2 (3Bh) is asserted.
+In order to empty the FIFO before it is full, it is also possible to pull from FIFO the number of 
+unread samples available inFIFO_STATUS1 (3Ah) and FIFO_STATUS2 
+(3Bh)(DIFF_FIFO_[9:0]).
+--------------------------------------------------
+
+📦 [Chunk 125]
+[부품명: ASM330LHH]
+ASM330LHH
+Functionality
+84
+6.5.4 
+Continuous-to-FIFO mode
+In Continuous-to-FIFO mode (FIFO_CTRL4 (0Ah)(FIFO_MODE_[2:0] = 011), FIFO 
+behavior changes according to the trigger event detected in one of the following interrupt 
+events: 
+
+Wake-up
+
+Free-fall
+
+D6D
+When the selected trigger bit is equal to '1', FIFO operates in FIFO mode.
+When the selected trigger bit is equal to '0', FIFO operates in Continuous mode.
+6.5.5 
+Bypass-to-Continuous mode
+In Bypass-to-Continuous mode (FIFO_CTRL4 (0Ah)(FIFO_MODE_[2:0] = '100'), data 
+measurement storage inside FIFO operates in Continuous mode when selected triggers are 
+equal to '1', otherwise FIFO content is reset (Bypass mode).
+FIFO behavior changes according to the trigger event detected in one of the following 
+interrupt events: 
+
+Wake-up
+
+--------------------------------------------------
+
+📦 [Chunk 126]
+[부품명: ASM330LHH]
+FIFO behavior changes according to the trigger event detected in one of the following 
+interrupt events: 
+
+Wake-up
+
+Free-fall
+
+D6D
+6.5.6 
+Bypass-to-FIFO mode
+In Bypass-to-FIFO mode (FIFO_CTRL4 (0Ah)(FIFO_MODE_[2:0] = '111'), data 
+measurement storage inside FIFO operates in FIFO mode when selected triggers are equal 
+to '1', otherwise FIFO content is reset (Bypass mode).
+FIFO behavior changes according to the trigger event detected in one of the following 
+interrupt events: 
+
+Wake-up
+
+Free-fall 
+
+D6D
+--------------------------------------------------
+
+📦 [Chunk 127]
+[부품명: ASM330LHH]
+Functionality
+ASM330LHH
+--------------------------------------------------
+
+📦 [Chunk 128]
+[부품명: ASM330LHH]
+6.5.7 
+FIFO reading procedure
+The data stored in FIFO are accessible from dedicated registers and each FIFO word is 
+composed of 7 bytes: one tag byte (FIFO_DATA_OUT_TAG (78h), in order to identify the 
+sensor, and 6 bytes of fixed data (FIFO_DATA_OUT registers from (79h) to (7Eh)).
+The DIFF_FIFO_[9:0] field in the FIFO_STATUS1 (3Ah) and FIFO_STATUS2 (3Bh) 
+registers contains the number of words (1 byte TAG + 6 bytes DATA) collected in FIFO.
+In addition, it is possible to configure a counter of the batch events of accelerometer or 
+gyroscope sensors. The flag COUNTER_BDR_IA in FIFO_STATUS2 (3Bh) alerts that the 
+counter has reached a selectable threshold (CNT_BDR_TH_[9:0] field in 
+COUNTER_BDR_REG1 (0Bh) and COUNTER_BDR_REG2 (0Ch)). This allows triggering
+--------------------------------------------------
+
+📦 [Chunk 129]
+[부품명: ASM330LHH]
+counter has reached a selectable threshold (CNT_BDR_TH_[9:0] field in 
+COUNTER_BDR_REG1 (0Bh) and COUNTER_BDR_REG2 (0Ch)). This allows triggering 
+the reading of FIFO with the desired latency of one single sensor. The sensor is selectable 
+using the TRIG_COUNTER_BDR bit in COUNTER_BDR_REG1 (0Bh). As for the other 
+FIFO status events, the flag COUNTER_BDR_IA can be routed on the INT1 or INT2 pins by 
+asserting the corresponding bits (INT1_CNT_BDR of INT1_CTRL (0Dh) and 
+INT2_CNT_BDR of INT2_CTRL (0Eh)).
+Meta information about accelerometer and gyroscope sensor configuration changes can be 
+managed by enabling the ODR_CHG_EN bit in FIFO_CTRL2 (08h).
+--------------------------------------------------
+
+📦 [Chunk 130]
+[부품명: ASM330LHH]
+ASM330LHH
+Application hints
+84
+7 
+Application hints
+7.1 
+ASM330LHH electrical connections
+Figure 14. ASM330LHH electrical connections
+The device core is supplied through the Vdd line while the I/O pads are supplied through the 
+Vdd_IO line. As a common design practice, the power supply decoupling capacitors 
+C1 = 100 nF ceramic and C2 =10 μF aluminum should be placed as near as possible to 
+pin 8, while C3 = 100 nF ceramic should be positioned as close as possible to pin 5.
+All the voltage and ground supplies must be present at the same time to have proper IC 
+behavior.
+The functionality of the device and the measured acceleration/angular rate data are 
+selectable and accessible through the I²C or SPI interfaces. When using the I²C protocol,
+--------------------------------------------------
+
+📦 [Chunk 131]
+[부품명: ASM330LHH]
+selectable and accessible through the I²C or SPI interfaces. When using the I²C protocol, 
+CS must be tied high. Every time the CS line is set to low level, the I²C bus is internally 
+reset.
+All the functions, the threshold and the timing of the two interrupt pins can be completely 
+programmed by the user through the I²C/SPI interface.
+--------------------------------------------------
+
+📦 [Chunk 132]
+[부품명: ASM330LHH]
+Application hints
+ASM330LHH
+--------------------------------------------------
+
+📦 [Chunk 133]
+[부품명: ASM330LHH]
+The procedure to correctly initialize the device is as follows:
+1.
+INT1: Leave unconnected or connect with external pull-down during power-on. Pull-up 
+must be avoided on this pin.
+2. 
+INT2: Recommended to not connect with external pull-up.
+3. 
+Properly configure the device:
+a) 
+SPI case: I2C_disable = 1 in CTRL4_C (13h) and DEVICE_CONF = 1 in 
+CTRL9_XL (18h). 
+b) 
+I²C case: I2C_disable = 0 (default) in CTRL4_C (13h) and DEVICE_CONF = 1 in 
+CTRL9_XL (18h). 
+Table 17. Internal pin status
+ 
+pin#
+Name
+Function
+Pin status
+1
+SDO
+SPI 4-wire interface serial data output 
+(SDO)
+Default: input without pull-up. 
+Pull-up is enabled if bit SDO_PU_EN = 1 in reg. 02h.
+SA0
+I²C least significant bit of the device 
+address (SA0)
+2
+RES
+Connect to VDDIO or GND
+Default: input without pull-up. 
+3
+RES
+--------------------------------------------------
+
+📦 [Chunk 134]
+[부품명: ASM330LHH]
+SA0
+I²C least significant bit of the device 
+address (SA0)
+2
+RES
+Connect to VDDIO or GND
+Default: input without pull-up. 
+3
+RES
+Connect to VDDIO or GND
+Default: input without pull-up. 
+4
+INT1
+Programmable interrupt 1
+Default: input with pull-down(1)
+5
+VDDIO
+Power supply for I/O pins
+ 
+6
+GND
+0 V supply
+ 
+7
+GND
+0 V supply
+ 
+8
+VDD
+Power supply
+ 
+9
+INT2
+Programmable interrupt 2 (INT2) / Data 
+enabled (DEN)
+Default: output forced to ground
+10
+NC
+Leave unconnected
+Default: input with pull-up. 
+11
+NC
+Leave unconnected
+Default: input with pull-up. 
+12
+CS
+I²C/SPI mode selection 
+(1:SPI idle mode / 
+I²C communication enabled; 
+0: SPI communication mode / 
+I²C disabled)
+Default: input with pull-up. 
+Pull-up is disabled if bit I2C_disable = 1 in reg 13h 
+and DEVICE_CONF = 1 in reg 18h.
+13
+SCL
+--------------------------------------------------
+
+📦 [Chunk 135]
+[부품명: ASM330LHH]
+I²C disabled)
+Default: input with pull-up. 
+Pull-up is disabled if bit I2C_disable = 1 in reg 13h 
+and DEVICE_CONF = 1 in reg 18h.
+13
+SCL
+I²C serial clock (SCL) / 
+SPI serial port clock (SPC)
+Default: input without pull-up
+14
+SDA
+I²C serial data (SDA) / 
+SPI serial data input (SDI) / 
+3-wire interface serial data output (SDO)
+Default: input without pull-up
+1.
+ INT1 must be set to '0' or left unconnected during power-on.
+--------------------------------------------------
+
+📦 [Chunk 136]
+[부품명: ASM330LHH]
+ASM330LHH
+Register mapping
+84
+8 
+Register mapping
+The table given below provides a list of the 8/16-bit registers embedded in the device and 
+the corresponding addresses.
+Table 18. Registers address map
+ 
+Name
+Type
+Register address
+Default
+Comment
+Hex
+Binary
+PIN_CTRL
+R/W
+02
+00000010
+00111111
+RESERVED
+-
+04-06
+Reserved
+FIFO_CTRL1
+R/W
+07
+00000111
+00000000
+FIFO_CTRL2
+R/W
+08
+00001000
+00000000
+FIFO_CTRL3
+R/W
+09
+00001001
+00000000
+FIFO_CTRL4
+R/W
+0A
+00001010
+00000000
+COUNTER_BDR_REG1
+RW
+0B
+00001011
+00000000
+COUNTER_BDR_REG2
+RW
+0C
+00001100
+00000000
+INT1_CTRL 
+R/W
+0D
+00001101
+00000000
+INT2_CTRL 
+R/W
+0E
+00001110
+00000000
+WHO_AM_I
+R
+0F
+00001111
+01101011
+CTRL1_XL
+R/W
+10
+00010000
+00000000
+CTRL2_G
+R/W
+11
+00010001
+00000000
+CTRL3_C
+R/W
+12
+00010010
+00000100
+CTRL4_C
+R/W
+13
+00010011
+00000000
+CTRL5_C
+R/W
+14
+--------------------------------------------------
+
+📦 [Chunk 137]
+[부품명: ASM330LHH]
+CTRL1_XL
+R/W
+10
+00010000
+00000000
+CTRL2_G
+R/W
+11
+00010001
+00000000
+CTRL3_C
+R/W
+12
+00010010
+00000100
+CTRL4_C
+R/W
+13
+00010011
+00000000
+CTRL5_C
+R/W
+14
+00010100
+00000000
+CTRL6_C
+R/W
+15
+00010101
+00000000
+CTRL7_G
+R/W
+16
+00010110
+00000000
+CTRL8_XL
+R/W
+17
+0001 0111
+00000000
+CTRL9_XL
+R/W
+18
+00011000
+11100000
+CTRL10_C
+R/W
+19
+00011001
+00000000
+ALL_INT_SRC 
+R
+1A
+00011010
+output
+WAKE_UP_SRC 
+R
+1B
+00011011
+output
+RESERVED
+1C
+00011100
+output
+D6D_SRC
+R
+1D
+00011101
+output
+STATUS_REG
+R
+1E
+00011110
+output
+RESERVED
+-
+1F
+00011111
+OUT_TEMP_L
+R
+20
+00100000
+output
+OUT_TEMP_H
+R
+21
+00100001
+output
+--------------------------------------------------
+
+📦 [Chunk 138]
+[부품명: ASM330LHH]
+Register mapping
+ASM330LHH
+--------------------------------------------------
+
+📦 [Chunk 139]
+[부품명: ASM330LHH]
+OUTX_L_G
+R
+22
+00100010
+output
+OUTX_H_G
+R
+23
+00100011
+output
+OUTY_L_G
+R
+24
+00100100
+output
+OUTY_H_G
+R
+25
+00100101
+output
+OUTZ_L_G
+R
+26
+00100110
+output
+OUTZ_H_G
+R
+27
+00100111
+output
+OUTX_L_A
+R
+28
+00101000
+output
+OUTX_H_A
+R
+29
+00101001
+output
+OUTY_L_A
+R
+2A
+00101010
+output
+OUTY_H_A
+R
+2B
+00101011
+output
+OUTZ_L_A
+R
+2C
+00101100
+output
+OUTZ_H_A
+R
+2D
+00101101
+output
+RESERVED
+-
+2E-39
+Reserved
+FIFO_STATUS1
+R
+3A
+00111010
+output
+FIFO_STATUS2
+R
+3B
+00111011
+output
+RESERVED
+-
+3C-3F
+TIMESTAMP0_REG
+R
+40
+01000000
+output
+TIMESTAMP1_REG
+R
+41
+01000001
+output
+TIMESTAMP2_REG
+R
+42
+01000010
+output
+TIMESTAMP3_REG
+R
+43
+01000011
+output
+RESERVED
+-
+44-55
+INT_CFG0
+RW
+56
+01010110
+00000000
+RESERVED
+-
+57
+01010111
+Reserved
+INT_CFG1
+RW
+58
+01011000
+00000000
+THS_6D
+RW
+59
+01011001
+00000000
+RESERVED
+-
+5A
+01011010
+Reserved
+--------------------------------------------------
+
+📦 [Chunk 140]
+[부품명: ASM330LHH]
+56
+01010110
+00000000
+RESERVED
+-
+57
+01010111
+Reserved
+INT_CFG1
+RW
+58
+01011000
+00000000
+THS_6D
+RW
+59
+01011001
+00000000
+RESERVED
+-
+5A
+01011010
+Reserved
+WAKE_UP_THS
+RW
+5B
+01011011
+00000000
+WAKE_UP_DUR
+RW
+5C
+01011100
+00000000
+FREE_FALL 
+RW
+5D
+01011101
+00000000
+MD1_CFG
+RW
+5E
+01011110
+00000000
+MD2_CFG
+RW
+5F
+01011111
+00000000
+RESERVED
+-
+60-62
+00000000
+Reserved
+INTERNAL_FREQ_FINE
+R
+63
+01100011
+output
+Table 18. Registers address map (continued)
+Name
+Type
+Register address
+Default
+Comment
+Hex
+Binary
+--------------------------------------------------
+
+📦 [Chunk 141]
+[부품명: ASM330LHH]
+ASM330LHH
+Register mapping
+84
+RESERVED
+-
+64-72
+00000000
+Reserved
+X_OFS_USR
+RW
+73
+01110011
+00000000
+Y_OFS_USR
+RW
+74
+01110100
+00000000
+Z_OFS_USR
+RW
+75
+01110101
+00000000
+RESERVED
+-
+76-77
+Reserved
+FIFO_DATA_OUT_TAG
+R
+78
+01111000
+output
+FIFO_DATA_OUT_X_L
+R
+79
+01111001
+output
+FIFO_DATA_OUT_X_H
+R
+7A
+01111010
+output
+FIFO_DATA_OUT_Y_L
+R
+7B
+01111011
+output
+FIFO_DATA_OUT_Y_H
+R
+7C
+01111100
+output
+FIFO_DATA_OUT_Z_L
+R
+7D
+01111101
+output
+FIFO_DATA_OUT_Z_H
+R
+7E
+01111110
+output
+RESERVED
+-
+7F
+Reserved
+Table 18. Registers address map (continued)
+Name
+Type
+Register address
+Default
+Comment
+Hex
+Binary
+
+Register description
+ASM330LHH
+--------------------------------------------------
+
+📦 [Chunk 142]
+[부품명: ASM330LHH]
+9 
+Register description
+The device contains a set of registers which are used to control its behavior and to retrieve 
+linear acceleration, angular rate and temperature data. The register addresses, made up of 
+7 bits, are used to identify them and to write the data through the serial interface.
+9.1 
+PIN_CTRL (02h)
+SDO pin pull-up enable/disable register (r/w) 
+          
+Table 20. PIN_CTRL register description
+9.2 
+FIFO_CTRL1 (07h)
+FIFO control register 1 (r/w)
+          
+Table 22. FIFO_CTRL1 register description
+Table 19. PIN_CTRL register
+0
+SDO_
+PU_EN
+1(1)
+1.
+This bit must be set to '1' for the correct operation of the device.
+1(1)
+1(1)
+1(1)
+1(1)
+1(1)
+SDO_PU_EN Enable pull-up on SDO pin. Default value: 0  
+(0: SDO pin pull-up disconnected; 1: SDO pin with pull-up)
+--------------------------------------------------
+
+📦 [Chunk 143]
+[부품명: ASM330LHH]
+1(1)
+1(1)
+1(1)
+1(1)
+1(1)
+SDO_PU_EN Enable pull-up on SDO pin. Default value: 0  
+(0: SDO pin pull-up disconnected; 1: SDO pin with pull-up) 
+Table 21. FIFO_CTRL1 register
+WTM7
+WTM6
+WTM5
+WTM4
+WTM3
+WTM2
+WTM1
+WTM0
+WTM[7:0]
+FIFO watermark threshold, in conjunction with WTM8 in FIFO_CTRL2 (08h)
+1 LSB = 1 sensor (6 bytes) + TAG (1 byte) written in FIFO
+Watermark flag rises when the number of bytes written in the FIFO is greater than 
+or equal to the threshold level.
+--------------------------------------------------
+
+📦 [Chunk 144]
+[부품명: ASM330LHH]
+ASM330LHH
+Register description
+84
+9.3 
+FIFO_CTRL2 (08h)
+FIFO control register 2 (r/w)
+          
+Table 24. FIFO_CTRL2 register description
+Table 23. FIFO_CTRL2 register
+STOP_ON
+_WTM
+0(1)
+1.
+This bit must be set to '0' for the correct operation of the device.
+0(1)
+ODRCHG
+_EN
+0(1)
+0(1)
+0(1)
+WTM8
+STOP_ON_ 
+WTM
+Sensing chain FIFO stop values memorization at threshold level
+(0: FIFO depth is not limited (default); 
+1: FIFO depth is limited to threshold level, defined in FIFO_CTRL1 (07h) and 
+FIFO_CTRL2 (08h))
+ODRCHG_EN
+Enables ODR CHANGE virtual sensor to be batched in FIFO
+WTM8
+FIFO watermark threshold, in conjunction with WTM[7:0] in FIFO_CTRL1 (07h)
+1 LSB = 1 sensor (6 bytes) + TAG (1 byte) written in FIFO
+Watermark flag rises when the number of bytes written in the FIFO is greater than
+--------------------------------------------------
+
+📦 [Chunk 145]
+[부품명: ASM330LHH]
+1 LSB = 1 sensor (6 bytes) + TAG (1 byte) written in FIFO
+Watermark flag rises when the number of bytes written in the FIFO is greater than 
+or equal to the threshold level.
+--------------------------------------------------
+
+📦 [Chunk 146]
+[부품명: ASM330LHH]
+Register description
+ASM330LHH
+--------------------------------------------------
+
+📦 [Chunk 147]
+[부품명: ASM330LHH]
+9.4 
+FIFO_CTRL3 (09h)
+FIFO control register 3 (r/w)
+          
+Table 26. FIFO_CTRL3 register description
+Table 25. FIFO_CTRL3 register
+BDR_GY_
+3
+BDR_GY_
+2
+BDR_GY_
+1
+BDR_GY_
+0
+BDR_XL_
+3
+BDR_XL_
+2
+BDR_XL_
+1
+BDR_XL_
+0
+BDR_GY_[3:0]
+Selects Batch Data Rate (writing frequency in FIFO) for gyroscope data. (0000: 
+Gyro not batched in FIFO (default);
+0001: 12.5 Hz;
+0010: 26 Hz;
+0011: 52 Hz;
+0100: 104 Hz;
+0101: 208 Hz;
+0110: 417 Hz;
+0111: 833 Hz;
+1000: 1667 Hz;
+1001: 3333 Hz;
+1010: 6667 Hz;
+1011: 6.5 Hz;
+1100-1111: not allowed)
+BDR_XL_[3:0]
+Selects Batch Data Rate (writing frequency in FIFO) for accelerometer data. 
+(0000: Accelerometer not batched in FIFO (default);
+0001: 12.5 Hz;
+0010: 26 Hz;
+0011: 52 Hz;
+0100: 104 Hz;
+0101: 208 Hz;
+0110: 417 Hz;
+0111: 833 Hz;
+1000: 1667 Hz;
+1001: 3333 Hz;
+--------------------------------------------------
+
+📦 [Chunk 148]
+[부품명: ASM330LHH]
+0001: 12.5 Hz;
+0010: 26 Hz;
+0011: 52 Hz;
+0100: 104 Hz;
+0101: 208 Hz;
+0110: 417 Hz;
+0111: 833 Hz;
+1000: 1667 Hz;
+1001: 3333 Hz;
+1010: 6667 Hz;
+1011-1111: not allowed)
+--------------------------------------------------
+
+📦 [Chunk 149]
+[부품명: ASM330LHH]
+ASM330LHH
+Register description
+84
+9.5 
+FIFO_CTRL4 (0Ah)
+FIFO control register 4 (r/w)
+          
+Table 28. FIFO_CTRL4 register description
+Table 27. FIFO_CTRL4 register
+DEC_TS_
+BATCH_1
+DEC_TS_
+BATCH_0
+ODR_T_
+BATCH_1
+ODR_T_
+BATCH_0
+0(1)
+1.
+This bit must be set to '0' for the correct operation of the device.
+FIFO_
+MODE2
+FIFO_
+MODE1
+FIFO_
+MODE0
+DEC_TS_ 
+BATCH_[1:0]
+Selects decimation for timestamp batching in FIFO. Writing rate will be the maximum 
+rate between XL and GYRO BDR divided by decimation decoder.
+(00: Timestamp not batched in FIFO (default);
+01: Decimation 1: max(BDR_XL[Hz],BDR_GY[Hz]) [Hz];
+10: Decimation 8: max(BDR_XL[Hz],BDR_GY[Hz])/8 [Hz];
+11: Decimation 32: max(BDR_XL[Hz],BDR_GY[Hz])/32 [Hz])
+ODR_T_ 
+BATCH_[1:0]
+--------------------------------------------------
+
+📦 [Chunk 150]
+[부품명: ASM330LHH]
+10: Decimation 8: max(BDR_XL[Hz],BDR_GY[Hz])/8 [Hz];
+11: Decimation 32: max(BDR_XL[Hz],BDR_GY[Hz])/32 [Hz])
+ODR_T_ 
+BATCH_[1:0]
+Selects batching data rate (writing frequency in FIFO) for temperature data
+(00: Temperature not batched in FIFO (default);  
+01: 1.6 Hz;  
+10: 12.5 Hz;  
+11: 52 Hz)
+FIFO_ 
+MODE[2:0]
+FIFO mode selection
+(000: Bypass mode: FIFO disabled;
+001: FIFO mode: stops collecting data when FIFO is full;
+010: Reserved;
+011: Continuous-to-FIFO mode:  
+Continuous mode until trigger is deasserted, then FIFO mode;
+100: Bypass-to-Continuous mode:  
+Bypass mode until trigger is deasserted, then Continuous mode;
+101: Reserved;
+110: Continuous mode:  
+If the FIFO is full, the new sample overwrites the older one;
+111: Bypass-to-FIFO mode:
+--------------------------------------------------
+
+📦 [Chunk 151]
+[부품명: ASM330LHH]
+101: Reserved;
+110: Continuous mode:  
+If the FIFO is full, the new sample overwrites the older one;
+111: Bypass-to-FIFO mode:  
+Bypass mode until trigger is deasserted, then FIFO mode.)
+--------------------------------------------------
+
+📦 [Chunk 152]
+[부품명: ASM330LHH]
+Register description
+ASM330LHH
+--------------------------------------------------
+
+📦 [Chunk 153]
+[부품명: ASM330LHH]
+9.6 
+COUNTER_BDR_REG1 (0Bh)
+Counter batch data rate register 1 (r/w)
+          
+Table 30. COUNTER_BDR_REG1 register description
+9.7 
+COUNTER_BDR_REG2 (0Ch)
+Counter batch data rate register 2 (r/w)
+          
+Table 32. COUNTER_BDR_REG2 register description
+Table 29. COUNTER_BDR_REG1 register
+dataready
+_pulsed
+RST_
+COUNTER
+_BDR
+TRIG_
+COUNTER
+_BDR
+0(1)
+1.
+This bit must be set to '0' for the correct operation of the device.
+0(1)
+0(1)
+CNT_BDR
+_TH_9
+CNT_BDR
+_TH_8
+dataready_ 
+pulsed
+Enables pulsed data-ready mode
+(0: Data-ready latched mode (returns to 0 only after an interface reading) (default); 
+1: Data-ready pulsed mode (the data ready pulses are 75 μs long)
+RST_ 
+COUNTER_ 
+BDR
+Resets the internal counter of batching events for a single sensor.
+--------------------------------------------------
+
+📦 [Chunk 154]
+[부품명: ASM330LHH]
+RST_ 
+COUNTER_ 
+BDR
+Resets the internal counter of batching events for a single sensor.
+This bit is automatically reset to zero if it was set to ‘1’.
+TRIG_ 
+COUNTER_ 
+BDR
+Selects the trigger for the internal counter of batching events between XL and gyro.
+(0: XL batching event;
+1: GYRO batching event)
+CNT_BDR_ 
+TH_[9:8]
+In conjunction with CNT_BDR_TH_[7:0] in COUNTER_BDR_REG2 (0Ch), sets the 
+threshold for the internal counter of batching events. When this counter reaches the 
+threshold, the counter is reset and the COUNTER_BDR_IA flag in FIFO_STATUS2 
+(3Bh) is set to ‘1’.
+Table 31. COUNTER_BDR_REG2 register
+CNT_BDR
+_TH_7
+CNT_BDR
+_TH_6
+CNT_BDR
+_TH_5
+CNT_BDR
+_TH_4
+CNT_BDR
+_TH_3
+CNT_BDR
+_TH_2
+CNT_BDR
+_TH_1
+CNT_BDR
+_TH_0
+CNT_BDR_TH_ 
+[7:0]
+--------------------------------------------------
+
+📦 [Chunk 155]
+[부품명: ASM330LHH]
+CNT_BDR
+_TH_7
+CNT_BDR
+_TH_6
+CNT_BDR
+_TH_5
+CNT_BDR
+_TH_4
+CNT_BDR
+_TH_3
+CNT_BDR
+_TH_2
+CNT_BDR
+_TH_1
+CNT_BDR
+_TH_0
+CNT_BDR_TH_ 
+[7:0]
+In conjunction with CNT_BDR_TH_[9:8] in COUNTER_BDR_REG1 (0Bh), sets 
+the threshold for the internal counter of batching events. When this counter 
+reaches the threshold, the counter is reset and the COUNTER_BDR_IA flag in 
+FIFO_STATUS2 (3Bh) is set to ‘1’.
+--------------------------------------------------
+
+📦 [Chunk 156]
+[부품명: ASM330LHH]
+ASM330LHH
+Register description
+84
+9.8 
+INT1_CTRL (0Dh)
+INT1 pin control register (r/w)
+Each bit in this register enables a signal to be carried over INT1. The output of the pad will 
+be the OR combination of the signals selected here and in register MD1_CFG (5Eh).
+          
+Table 34. INT1_CTRL register description
+Table 33. INT1_CTRL register
+DEN_
+DRDY_
+flag
+INT1_
+CNT_BDR
+INT1_
+FIFO
+_FULL
+INT1_
+FIFO_
+OVR
+INT1_
+FIFO_TH
+INT1_
+BOOT
+INT1_
+DRDY_G
+INT1_
+DRDY_XL
+DEN_DRDY_flag
+Sends DEN_DRDY (DEN stamped on sensor data flag) to INT1 pin.
+INT1_CNT_BDR
+Enables COUNTER_BDR_IA interrupt on INT1 pin.
+INT1_FIFO_FULL
+Enables FIFO full flag interrupt on INT1 pin.
+INT1_FIFO_OVR
+Enables FIFO overrun interrupt on INT1 pin. 
+INT1_FIFO_TH
+Enables FIFO threshold interrupt on INT1 pin.
+INT1_BOOT
+--------------------------------------------------
+
+📦 [Chunk 157]
+[부품명: ASM330LHH]
+INT1_FIFO_OVR
+Enables FIFO overrun interrupt on INT1 pin. 
+INT1_FIFO_TH
+Enables FIFO threshold interrupt on INT1 pin.
+INT1_BOOT
+Enables boot status on INT1 pin.
+INT1_DRDY_G
+Gyroscope data-ready interrupt on INT1 pin.
+INT1_DRDY_XL
+Accelerometer data-ready interrupt on INT1 pin.
+--------------------------------------------------
+
+📦 [Chunk 158]
+[부품명: ASM330LHH]
+Register description
+ASM330LHH
+--------------------------------------------------
+
+📦 [Chunk 159]
+[부품명: ASM330LHH]
+9.9 
+INT2_CTRL (0Eh)
+INT2 pin control register (r/w).
+Each bit in this register enables a signal to be carried over INT2. The output of the pad will 
+be the OR combination of the signals selected here and in register MD2_CFG (5Fh).
+          
+Table 36. INT2_CTRL register description
+9.10 
+WHO_AM_I (0Fh)
+WHO_AM_I register (r). This is a read-only register. Its value is fixed at 6Bh. 
+          
+Table 35. INT2_CTRL register
+0(1)
+1.
+This bit must be set to '0' for the correct operation of the device.
+INT2_
+CNT_BDR
+INT2_
+FIFO_
+FULL
+INT2_
+FIFO_
+OVR
+INT2_
+FTH
+INT2_
+DRDY_TEMP
+INT2_
+DRDY_G
+INT2_
+DRDY_XL
+INT2_CNT_BDR
+Enables COUNTER_BDR_IA interrupt on INT2 pin.
+INT2_FIFO_FULL
+Enables FIFO full flag interrupt on INT2 pin.
+INT2_FIFO_OVR
+Enables FIFO overrun interrupt on INT2 pin.
+INT_FIFO_TH
+--------------------------------------------------
+
+📦 [Chunk 160]
+[부품명: ASM330LHH]
+INT2_FIFO_FULL
+Enables FIFO full flag interrupt on INT2 pin.
+INT2_FIFO_OVR
+Enables FIFO overrun interrupt on INT2 pin.
+INT_FIFO_TH
+Enables FIFO threshold interrupt on INT2 pin.
+INT2_DRDY_TEMP
+Temperature sensor data-ready interrupt on INT2 pin.
+INT2_DRDY_G
+Gyroscope data-ready interrupt on INT2 pin.
+INT2_DRDY_XL
+Accelerometer data-ready interrupt on INT2 pin.
+Table 37. WhoAmI register
+0
+1
+1
+0
+1
+0
+1
+1
+--------------------------------------------------
+
+📦 [Chunk 161]
+[부품명: ASM330LHH]
+ASM330LHH
+Register description
+84
+9.11 
+CTRL1_XL (10h)
+Accelerometer control register 1 (r/w) 
+          
+Table 39. CTRL1_XL register description
+Table 38. CTRL1_XL register
+ODR_XL3
+ODR_XL2
+ODR_XL1
+ODR_XL0
+FS1_XL
+FS0_XL
+LPF2_XL_
+EN
+0(1)
+1.
+This bit must be set to '0' for the correct operation of the device.
+ODR_XL[3:0]
+Accelerometer ODR selection
+(0000: Power-down (default);
+0001: 12.5 Hz;
+0010: 26 Hz;
+0011: 52 Hz;
+0100: 104 Hz;
+0101: 208 Hz;
+0110: 417 Hz;
+0111: 833 Hz;
+1000: 1667 Hz;
+1001: 3333 Hz;
+1010: 6667 Hz;
+1011: not allowed;
+11xx: not allowed)
+FS[1:0]_XL
+Accelerometer full-scale selection
+(00: ±2 g (default);
+01: ±16 g;
+10: ±4 g;
+11: ±8 g)
+LPF2_XL_EN
+Accelerometer high-resolution selection:
+(0: Output from first stage digital stage filtering selected (default);
+--------------------------------------------------
+
+📦 [Chunk 162]
+[부품명: ASM330LHH]
+10: ±4 g;
+11: ±8 g)
+LPF2_XL_EN
+Accelerometer high-resolution selection:
+(0: Output from first stage digital stage filtering selected (default);
+1: Output from LPF2 second filtering stage selected)
+--------------------------------------------------
+
+📦 [Chunk 163]
+[부품명: ASM330LHH]
+Register description
+ASM330LHH
+
+9.12 
+CTRL2_G (11h)
+Gyroscope control register 2 (r/w)
+          
+Table 41. CTRL2_G register description
+Table 40. CTRL2_G register
+ODR_G3
+ODR_G2
+ODR_G1
+ODR_G0
+FS1_G
+FS0_G
+FS_125
+FS_4000
+ODR_G[3:0]
+Gyroscope ODR selection. 
+(0000: Power-down;
+0001: 12.5 Hz;
+0010: 26 Hz;
+0011: 52 Hz;
+0100: 104 Hz;
+0101: 208 Hz;
+0110: 417 Hz;
+0111: 833 Hz;
+1000: 1667 Hz;
+1001: 3333 Hz;
+1010: 6667 Hz;
+1011: not allowed;
+11xx: not allowed)
+FS[1:0]_G
+Gyroscope chain full-scale selection
+(00: ±250 dps;
+01: ±500 dps;
+10: ±1000 dps;
+11: ±2000 dps)
+FS_125
+Selects gyro chain full-scale ±125 dps
+(0: FS selected through bits FS[1:0]_G;
+1: FS set to ±125 dps)
+FS_4000
+Selects gyro chain full-scale ±4000 dps  
+(0: FS selected through bits FS[1:0]_G or FS_125;  
+1: FS set to ±4000 dps)
+--------------------------------------------------
+
+📦 [Chunk 164]
+[부품명: ASM330LHH]
+ASM330LHH
+Register description
+84
+9.13 
+CTRL3_C (12h)
+Control register 3 (r/w)
+          
+Table 43. CTRL3_C register description
+Table 42. CTRL3_C register
+BOOT
+BDU
+H_LACTIVE
+PP_OD
+SIM
+IF_INC
+0(1)
+1.
+This bit must be set to '0' for the correct operation of the device.
+SW_RESET
+BOOT
+Reboots memory content. Default value: 0
+(0: normal mode; 1: reboot memory content) 
+Note: the accelerometer must be ON. This bit is automatically cleared.
+BDU
+Block Data Update. Default value: 0
+(0: continuous update;
+1: output registers are not updated until MSB and LSB have been read)
+H_LACTIVE
+Interrupt activation level. Default value: 0
+(0: interrupt output pins active high; 1: interrupt output pins active low
+PP_OD
+Push-pull/open-drain selection on INT1 and INT2 pins. This bit must be set to '0'
+--------------------------------------------------
+
+📦 [Chunk 165]
+[부품명: ASM330LHH]
+PP_OD
+Push-pull/open-drain selection on INT1 and INT2 pins. This bit must be set to '0' 
+when H_LACTIVE is set to '1'. Default value: 0
+(0: push-pull mode; 1: open-drain mode)
+SIM
+SPI Serial Interface Mode selection. Default value: 0 
+(0: 4-wire interface; 1: 3-wire interface)
+IF_INC
+Register address automatically incremented during a multiple byte access with a 
+serial interface (I²C or SPI). Default value: 1
+(0: disabled; 1: enabled)
+SW_RESET
+Software reset. Default value: 0
+(0: normal mode; 1: reset device) 
+This bit is automatically cleared.
+--------------------------------------------------
+
+📦 [Chunk 166]
+[부품명: ASM330LHH]
+Register description
+ASM330LHH
+--------------------------------------------------
+
+📦 [Chunk 167]
+[부품명: ASM330LHH]
+9.14 
+CTRL4_C (13h)
+Control register 4 (r/w)
+          
+Table 45. CTRL4_C register description
+Table 44. CTRL4_C register
+0(1)
+1.
+This bit must be set to '0' for the correct operation of the device.
+SLEEP_G
+INT2_on_
+INT1
+0(1)
+DRDY_
+MASK
+I2C_disable
+LPF1_
+SEL_G
+0(1)
+SLEEP_G
+Enables gyroscope Sleep mode. Default value:0
+(0: disabled; 1: enabled)
+INT2_on_INT1
+All interrupt signals available on INT1 pin enable. Default value: 0
+(0: interrupt signals divided between INT1 and INT2 pins;  
+1: all interrupt signals in logic or on INT1 pin)
+DRDY_MASK
+Enables data available
+(0: disabled;
+1: mask DRDY on pin (both XL & Gyro) until filter settling ends (XL and Gyro 
+independently masked).
+I2C_disable
+Disables I²C interface. Default value: 0
+--------------------------------------------------
+
+📦 [Chunk 168]
+[부품명: ASM330LHH]
+independently masked).
+I2C_disable
+Disables I²C interface. Default value: 0
+(0: SPI and I²C interfaces enabled (default); 1: I²C interface disabled)
+LPF1_SEL_G
+Enables gyroscope digital LPF1; the bandwidth can be selected through 
+FTYPE[2:0] in CTRL6_C (15h).
+(0: disabled; 1: enabled)
+--------------------------------------------------
+
+📦 [Chunk 169]
+[부품명: ASM330LHH]
+ASM330LHH
+Register description
+84
+9.15 
+CTRL5_C (14h)
+Control register 5 (r/w)
+          
+Table 47. CTRL5_C register description
+          
+          
+Table 46. CTRL5_C register
+0(1)
+1.
+This bit must be set to '0' for the correct operation of the device.
+ROUNDING1
+ROUNDING0
+0(1)
+ST1_G
+ST0_G
+ST1_XL
+ST0_XL
+ROUNDING[1:0]
+Circular burst-mode (rounding) read of the output registers. Default value: 00
+(00: no rounding;  
+01: accelerometer only;  
+10: gyroscope only;  
+11: gyroscope + accelerometer)
+ST[1:0]_G
+Angular rate sensor self-test enable. Default value: 00
+(00: Self-test disabled; Other: refer to Table
+ 
+48)
+ST[1:0]_XL
+Linear acceleration sensor self-test enable. Default value: 00
+(00: Self-test disabled; Other: refer to Table
+ 
+49)
+Table 48. Angular rate sensor self-test mode selection
+--------------------------------------------------
+
+📦 [Chunk 170]
+[부품명: ASM330LHH]
+(00: Self-test disabled; Other: refer to Table
+ 
+49)
+Table 48. Angular rate sensor self-test mode selection
+ST1_G
+ST0_G
+Self-test mode
+0
+0
+Normal mode
+0
+1
+Positive sign self-test
+1
+0
+Not allowed
+1
+1
+Negative sign self-test
+Table 49. Linear acceleration sensor self-test mode selection
+ST1_XL
+ST0_XL
+Self-test mode
+0
+0
+Normal mode
+0
+1
+Positive sign self-test
+1
+0
+Negative sign self-test
+1
+1
+Not allowed
+--------------------------------------------------
+
+📦 [Chunk 171]
+[부품명: ASM330LHH]
+Register description
+ASM330LHH
+--------------------------------------------------
+
+📦 [Chunk 172]
+[부품명: ASM330LHH]
+9.16 
+CTRL6_C (15h)
+Control register 6 (r/w)
+          
+          
+Table 50. CTRL6_C register
+TRIG_EN
+LVL1_EN
+LVL2_EN
+ 0(1)
+1.
+This bit must be set to '0' for the correct operation of the device. 
+USR_
+OFF_W
+FTYPE_2
+FTYPE_1
+FTYPE_0
+Table 51. CTRL6_C register description
+TRIG_EN
+DEN data edge-sensitive trigger enable. Refer to Table
+ 
+52.
+LVL1_EN
+DEN data level-sensitive trigger enable. Refer to Table
+ 
+52.
+LVL2_EN
+DEN level-sensitive latched enable. Refer toTable
+ 
+52.
+USR_OFF_W
+Weight of XL user offset bits of registers X_OFS_USR (73h), Y_OFS_USR (74h), 
+Z_OFS_USR (75h)
+(0 = 2-10 g/LSB;
+1 = 2-6 g/LSB)
+FTYPE[2:0]
+Gyroscope low-pass filter (LPF1) bandwidth selection. 
+Table
+ 
+53 shows the selectable bandwidth values.
+Table 52. Trigger mode selection
+TRIG_EN, LVL1_EN, LVL2_EN
+Trigger mode
+--------------------------------------------------
+
+📦 [Chunk 173]
+[부품명: ASM330LHH]
+Table
+ 
+53 shows the selectable bandwidth values.
+Table 52. Trigger mode selection
+TRIG_EN, LVL1_EN, LVL2_EN
+Trigger mode
+100
+Edge-sensitive trigger mode is selected
+010
+Level-sensitive trigger mode is selected
+011
+Level-sensitive latched mode is selected
+110
+Level-sensitive FIFO enable mode is selected
+Table 53. Gyroscope LPF1 bandwidth selection
+FTYPE
+[2:0]
+ 12.5 Hz
+26 Hz
+52 Hz
+104 Hz
+ 208 Hz
+416 Hz
+ 833 Hz
+1.67 kHz 3.33 kHz 6.67 kHz
+000
+4.3
+8.3
+16.7
+33
+67
+133
+222
+274
+292
+297
+001
+4.3
+8.3
+16.7
+33
+67
+128
+186
+212
+220
+223
+010
+4.3
+8.3
+16.7
+33
+67
+112
+140
+150
+153
+154
+011
+4.3
+8.3
+16.7
+33
+67
+134
+260
+390
+451
+470
+100
+4.3
+8.3
+16.7
+34
+62
+86
+96
+99
+NA
+101
+4.3
+8.3
+16.9
+31
+43
+48
+49
+50
+NA
+110
+4.3
+8.3
+13.4
+19
+23
+24.6
+25
+25
+NA
+111
+4.3
+8.3
+9.8
+11.6
+12.2
+12.4
+12.6
+12.6
+NA
+--------------------------------------------------
+
+📦 [Chunk 174]
+[부품명: ASM330LHH]
+ASM330LHH
+Register description
+84
+9.17 
+CTRL7_G (16h)
+Control register 7 (r/w)
+          
+Table 55. CTRL7_G register description
+9.18 
+CTRL8_XL (17h)
+Control register 8 (r/w)
+          
+Table 57. CTRL8_XL register description
+Table 54. CTRL7_G register
+0(1)
+1.
+This bit must be set to '0' for the correct operation of the device.
+HP_EN_G
+HPM1_G
+HPM0_G
+0(1)
+0(1)
+USR_OFF
+_ON_OUT
+0(1)
+HP_EN_G
+Enables gyroscope digital high-pass filter. The filter is enabled only if the gyro is 
+in HP mode. Default value: 0
+(0: HPF disabled; 1: HPF enabled)
+HPM_G[1:0]
+Gyroscope digital HP filter cutoff selection. Default: 00
+(00 = 16 mHz;
+01 = 65 mHz;
+10 = 260 mHz;
+11 = 1.04 Hz)
+USR_OFF_ON_
+OUT
+Enables accelerometer user offset correction block; it's valid for the low-pass 
+path - see Figure
+--------------------------------------------------
+
+📦 [Chunk 175]
+[부품명: ASM330LHH]
+10 = 260 mHz;
+11 = 1.04 Hz)
+USR_OFF_ON_
+OUT
+Enables accelerometer user offset correction block; it's valid for the low-pass 
+path - see Figure
+ 
+13. Default value: 0  
+(0: accelerometer user offset correction block bypassed;  
+1: accelerometer user offset correction block enabled)
+Table 56. CTRL8_XL register
+HPCF_XL
+_2
+HPCF_XL
+_1
+HPCF_XL
+_0
+HP_REF_
+MODE_XL
+FASTSETTL
+_MODE_XL
+HP_SLOPE
+_XL_EN
+0(1)
+1.
+This bit must be set to '0' for the correct operation of the device.
+LOW_PASS
+_ON_6D
+HPCF_XL_[2:0]
+Accelerometer LPF2 and HP filter configuration and cutoff setting. Refer to 
+Table
+ 
+58.
+HP_REF_ 
+MODE_XL
+Enables accelerometer high-pass filter reference mode (valid for high-pass path - 
+HP_SLOPE_XL_EN bit must be ‘1’). Default value: 0  
+(0: disabled, 1: enabled(1))
+1.
+--------------------------------------------------
+
+📦 [Chunk 176]
+[부품명: ASM330LHH]
+HP_SLOPE_XL_EN bit must be ‘1’). Default value: 0  
+(0: disabled, 1: enabled(1))
+1.
+When enabled, the first output data have to be discarded.
+FASTSETTL 
+_MODE_XL
+Enables accelerometer LPF2 and HPF fast-settling mode. The filter sets the 
+second samples after writing this bit. Active only during device exit from power- 
+down mode. Default value: 0  
+(0: disabled, 1: enabled) 
+HP_SLOPE_ 
+XL_EN
+Accelerometer slope filter / high-pass filter selection. Refer to Figure
+ 
+15.
+LOW_PASS 
+_ON_6D
+LPF2 on 6D function selection. Refer to Figure
+ 
+15. Default value: 0
+(0: ODR/2 low-pass filtered data sent to 6D interrupt function;  
+1: LPF2 output data sent to 6D interrupt function)
+--------------------------------------------------
+
+📦 [Chunk 177]
+[부품명: ASM330LHH]
+Register description
+ASM330LHH
+--------------------------------------------------
+
+📦 [Chunk 178]
+[부품명: ASM330LHH]
+Figure 15. Accelerometer block diagram
+1.
+The cutoff value of the LPF1 output is ODR/2.
+Table 58. Accelerometer bandwidth configurations
+Filter type
+HP_SLOPE_
+XL_EN
+LPF2_XL_EN
+HPCF_XL_[2:0]
+Bandwidth
+Low pass
+0
+0
+-
+ODR/2
+1
+000
+ODR/4
+001
+ODR/10
+010
+ODR/20
+011
+ODR/45
+100
+ODR/100
+101
+ODR/200
+110
+ODR/400
+111
+ODR/800
+High pass
+1
+-
+000
+SLOPE (ODR/4)
+001
+ODR/10
+010
+ODR/20
+011
+ODR/45
+100
+ODR/100
+101
+ODR/200
+110
+ODR/400
+111
+ODR/800
+6/23(
+),/7(5
++3&)B;/>@
+
+
+
+«
+
+63,
+,&
+
+
++3B6/23(B;/B(1
+/3)B;/B(1
+
+
+'LJLWDO
++3)LOWHU
++3&)B;/>@
+'LJLWDO
+/3)LOWHU
+/3)
++3&)B;/>@
+''
+
+
+/2:B3$66B21B'
+
+
+6/23(B)'6
+:DNHXS
+$FWLYLW\
+,QDFWLYLW\
+)UHHIDOO
+
+),)2
+86(5
+2))6(7
+
+
+865B2))B21B287
+865B2))B:
+2)6B865>@
+
+
+865B2))B21B:8
+/3)
+RXWSXW
+--------------------------------------------------
+
+📦 [Chunk 179]
+[부품명: ASM330LHH]
+ASM330LHH
+Register description
+84
+9.19 
+CTRL9_XL (18h)
+Control register 9 (r/w)
+          
+Table 60. CTRL9_XL register description
+9.20 
+CTRL10_C (19h)
+Control register 10 (r/w) 
+          
+Table 62. CTRL10_C register description
+Table 59. CTRL9_XL register
+DEN_X
+DEN_Y
+DEN_Z
+DEN_XL_G
+DEN_XL_EN
+DEN_LH
+DEVICE
+_CONF
+0(1)
+1.
+This bit must be set to '0' for the correct operation of the device.
+DEN_X
+DEN value stored in LSB of X-axis. Default value: 1  
+(0: DEN not stored in X-axis LSB; 1: DEN stored in X-axis LSB)
+DEN_Y
+DEN value stored in LSB of Y-axis. Default value: 1  
+(0: DEN not stored in Y-axis LSB; 1: DEN stored in Y-axis LSB)
+DEN_Z
+DEN value stored in LSB of Z-axis. Default value: 1  
+(0: DEN not stored in Z-axis LSB; 1: DEN stored in Z-axis LSB)
+DEN_XL_G
+--------------------------------------------------
+
+📦 [Chunk 180]
+[부품명: ASM330LHH]
+DEN_Z
+DEN value stored in LSB of Z-axis. Default value: 1  
+(0: DEN not stored in Z-axis LSB; 1: DEN stored in Z-axis LSB)
+DEN_XL_G
+DEN stamping sensor selection. Default value: 0  
+(0: DEN pin info stamped in the gyroscope axis selected by bits [7:5];  
+1: DEN pin info stamped in the accelerometer axis selected by bits [7:5])
+DEN_XL_EN
+Extends DEN functionality to accelerometer sensor. Default value: 0
+(0: disabled; 1: enabled)
+DEN_LH
+DEN active level configuration. Default value: 0
+(0: active low; 1: active high)
+DEVICE_CONF
+Enables the proper device configuration. Default value: 0 
+It is recommended to always set this bit to 1 during device configuration.
+(0: default; 
+1: enabled)
+Table 61. CTRL10_C register
+0(1)
+1.
+This bit must be set to '0' for the correct operation of the device.
+--------------------------------------------------
+
+📦 [Chunk 181]
+[부품명: ASM330LHH]
+(0: default; 
+1: enabled)
+Table 61. CTRL10_C register
+0(1)
+1.
+This bit must be set to '0' for the correct operation of the device.
+0(1)
+TIMESTAMP
+_EN
+0(1)
+0(1)
+0(1)
+0(1)
+0(1)
+TIMESTAMP_EN
+Enables timestamp counter. Default value: 0  
+(0: disabled; 1: enabled) 
+The counter is readable in TIMESTAMP0 (40h), TIMESTAMP1 (41h), 
+TIMESTAMP2 (42h), and TIMESTAMP3 (43h).
+--------------------------------------------------
+
+📦 [Chunk 182]
+[부품명: ASM330LHH]
+Register description
+ASM330LHH
+--------------------------------------------------
+
+📦 [Chunk 183]
+[부품명: ASM330LHH]
+9.21 
+ALL_INT_SRC (1Ah)
+Source register for all interrupts (r)
+          
+Table 64. ALL_INT_SRC register description
+9.22 
+WAKE_UP_SRC (1Bh)
+Wake-up interrupt source register (r) 
+(0: wakeup event not detected; 1: wakeup event detected.)
+Table 63. ALL_INT_SRC register
+TIMESTAMP_
+ENDCOUNT
+0
+SLEEP_
+CHANGE_IA
+D6D_IA
+0
+0
+WU_IA
+FF_IA
+TIMESTAMP_ENDCOUNT
+Alerts timestamp overflow within 6.4 ms
+SLEEP_CHANGE_IA
+Detects change event in activity/inactivity status. Default value: 0
+(0: change status not detected; 1: change status detected)
+D6D_IA
+Interrupt active for change in position of portrait, landscape, face-up, 
+face-down. Default value: 0  
+(0: change in position not detected; 1: change in position detected) 
+WU_IA
+Wake-up event status. Default value: 0
+--------------------------------------------------
+
+📦 [Chunk 184]
+[부품명: ASM330LHH]
+face-down. Default value: 0  
+(0: change in position not detected; 1: change in position detected) 
+WU_IA
+Wake-up event status. Default value: 0  
+(0: event not detected, 1: event detected) 
+FF_IA
+Free-fall event status. Default value: 0  
+(0: event not detected, 1: event detected) 
+Table 65. WAKE_UP_SRC register
+0
+SLEEP_
+CHANGE_IA
+FF_IA
+SLEEP_
+STATE
+WU_IA
+X_WU
+Y_WU
+Z_WU
+Table 66. WAKE_UP_SRC register description
+SLEEP_ 
+CHANGE_IA
+Detects change event in activity/inactivity status. Default value: 0
+(0: change status not detected; 1: change status detected)
+FF_IA
+Free-fall event detection status. Default: 0
+(0: free-fall event not detected; 1: free-fall event detected)
+SLEEP_STATE
+Sleep status bit. Default value: 0
+(0: activity status; 1: inactivity status)
+WU_IA
+--------------------------------------------------
+
+📦 [Chunk 185]
+[부품명: ASM330LHH]
+SLEEP_STATE
+Sleep status bit. Default value: 0
+(0: activity status; 1: inactivity status)
+WU_IA
+Wakeup event detection status. Default value: 0
+X_WU
+Wakeup event detection status on X-axis. Default value: 0
+(0: wakeup event on X-axis not detected; 1: wakeup event on X-axis detected)
+Y_WU
+Wakeup event detection status on Y-axis. Default value: 0
+(0: wakeup event on Y-axis not detected; 1: wakeup event on Y-axis detected)
+Z_WU
+Wakeup event detection status on Z-axis. Default value: 0
+(0: wakeup event on Z-axis not detected; 1: wakeup event on Z-axis detected)
+--------------------------------------------------
+
+📦 [Chunk 186]
+[부품명: ASM330LHH]
+ASM330LHH
+Register description
+84
+9.23 
+D6D_SRC (1Dh)
+Portrait, landscape, face-up and face-down source register (r)
+          
+          
+9.24 
+STATUS_REG (1Eh)
+Status register (r)
+Accelerometer new data available. Default value: 0
+(0: no set of data available at accelerometer output; 
+1: a new set of data is available at accelerometer output)
+Table 67. D6D_SRC register
+DEN_DRDY
+D6D_IA
+ZH
+ZL
+YH
+YL
+XH
+XL
+Table 68. D6D_SRC register description
+DEN_ 
+DRDY
+DEN data-ready signal. It is set high when data output is related to the data coming from a 
+DEN active condition.(1)
+1.
+The DEN data-ready signal can be latched or pulsed depending on the value of the dataready pulsed bit of 
+the COUNTER_BDR_REG1 (0Bh) register.
+D6D_ 
+IA
+--------------------------------------------------
+
+📦 [Chunk 187]
+[부품명: ASM330LHH]
+the COUNTER_BDR_REG1 (0Bh) register.
+D6D_ 
+IA
+Interrupt active for change position portrait, landscape, face-up, face-down. Default value: 0
+(0: change position not detected; 1: change position detected)
+ZH
+Z-axis high event (over threshold). Default value: 0
+(0: event not detected; 1: event (over threshold) detected)
+ZL
+Z-axis low event (under threshold). Default value: 0
+(0: event not detected; 1: event (under threshold) detected)
+YH
+Y-axis high event (over threshold). Default value: 0
+(0: event not detected; 1: event (over-threshold) detected)
+YL
+Y-axis low event (under threshold). Default value: 0
+(0: event not detected; 1: event (under threshold) detected)
+XH
+X-axis high event (over threshold). Default value: 0
+(0: event not detected; 1: event (over threshold) detected)
+XL
+--------------------------------------------------
+
+📦 [Chunk 188]
+[부품명: ASM330LHH]
+XH
+X-axis high event (over threshold). Default value: 0
+(0: event not detected; 1: event (over threshold) detected)
+XL
+X-axis low event (under threshold). Default value: 0
+(0: event not detected; 1: event (under threshold) detected) 
+Table 69. STATUS_REG register
+0
+0
+0
+0
+0
+TDA
+GDA
+XLDA
+Table 70. STATUS_REG register description
+TDA
+Temperature new data available. Default: 0  
+(0: no set of data is available at temperature sensor output;  
+1: a new set of data is available at temperature sensor output) 
+GDA
+Gyroscope new data available. Default value: 0  
+(0: no set of data available at gyroscope output;  
+1: a new set of data is available at gyroscope output)
+XLDA
+--------------------------------------------------
+
+📦 [Chunk 189]
+[부품명: ASM330LHH]
+Register description
+ASM330LHH
+--------------------------------------------------
+
+📦 [Chunk 190]
+[부품명: ASM330LHH]
+9.25 
+OUT_TEMP_L (20h), OUT_TEMP_H (21h)
+Temperature data output register (r). L and H registers together express a 16-bit word in 
+two’s complement.
+          
+          
+          
+ 
+ 
+9.26 
+OUTX_H_G (23h), OUTX_L_G (22h)
+Angular rate sensor pitch axis (X) angular rate output register (r). The value is expressed as 
+a 16-bit word in two’s complement.
+          
+          
+          
+ 
+ 
+9.27 
+OUTY_H_G (25h), OUTY_L_G (24h)
+Angular rate sensor roll axis (Y) angular rate output register (r). The value is expressed as a 
+16-bit word in two’s complement.
+          
+          
+          
+ 
+ 
+Table 71. OUT_TEMP_L register
+Temp7
+Temp6
+Temp5
+Temp4
+Temp3
+Temp2
+Temp1
+Temp0
+Table 72. OUT_TEMP_H register
+Temp15
+Temp14
+Temp13
+Temp12
+Temp11
+Temp10
+Temp9
+Temp8
+Table 73. OUT_TEMP register description
+--------------------------------------------------
+
+📦 [Chunk 191]
+[부품명: ASM330LHH]
+Temp3
+Temp2
+Temp1
+Temp0
+Table 72. OUT_TEMP_H register
+Temp15
+Temp14
+Temp13
+Temp12
+Temp11
+Temp10
+Temp9
+Temp8
+Table 73. OUT_TEMP register description
+Temp[15:0]
+Temperature sensor output data
+The value is expressed as two’s complement sign extended on the MSB.
+Table 74. OUTX_H_G register
+D15
+D14
+D13
+D12
+D11
+D10
+D9
+D8
+Table 75. OUTX_L_G register
+D7
+D6
+D5
+D4
+D3
+D2
+D1
+D0
+Table 76. OUTX_H_G, OUTX_L_G register description
+D[15:0]
+Gyroscope pitch axis output expressed in 2’s complement
+Table 77. OUTY_H_G register
+D15
+D14
+D13
+D12
+D11
+D10
+D9
+D8
+Table 78. OUTY_L_G register
+D7
+D6
+D5
+D4
+D3
+D2
+D1
+D0
+Table 79. OUTY_H_G, OUTY_L_G register description
+D[15:0]
+Gyroscope roll axis output expressed in 2’s complement
+--------------------------------------------------
+
+📦 [Chunk 192]
+[부품명: ASM330LHH]
+ASM330LHH
+Register description
+84
+9.28 
+OUTZ_H_G (27h), OUTZ_L_G (26h)
+Angular rate sensor pitch yaw (Z) angular rate output register (r). The value is expressed as 
+a 16-bit word in two’s complement.
+          
+          
+          
+ 
+ 
+9.29 
+OUTX_H_A (29h), OUTX_L_A (28h)
+Linear acceleration sensor X-axis output register (r). The value is expressed as a 16-bit 
+word in two’s complement.
+          
+          
+          
+ 
+ 
+9.30 
+OUTY_H_A (2Bh), OUTY_L_A (2Ah)
+Linear acceleration sensor Y-axis output register (r). The value is expressed as a 16-bit 
+word in two’s complement.
+          
+          
+          
+ 
+ 
+Table 80. OUTZ_H_G register
+D15
+D14
+D13
+D12
+D11
+D10
+D9
+D8
+Table 81. OUTZ_L_G register
+D7
+D6
+D5
+D4
+D3
+D2
+D1
+D0
+Table 82. OUTZ_H_G, OUTZ_L_G register description
+D[15:0]
+--------------------------------------------------
+
+📦 [Chunk 193]
+[부품명: ASM330LHH]
+D15
+D14
+D13
+D12
+D11
+D10
+D9
+D8
+Table 81. OUTZ_L_G register
+D7
+D6
+D5
+D4
+D3
+D2
+D1
+D0
+Table 82. OUTZ_H_G, OUTZ_L_G register description
+D[15:0]
+Gyroscope yaw axis output expressed in 2’s complement
+Table 83. OUTX_H_A register
+D15
+D14
+D13
+D12
+D11
+D10
+D9
+D8
+Table 84. OUTX_L_A register
+D7
+D6
+D5
+D4
+D3
+D2
+D1
+D0
+Table 85. OUTX_H_A, OUTX_L_A register description
+D[15:0]
+Accelerometer X-axis output expressed as 2’s complement
+Table 86. OUTY_H_A register
+D15
+D14
+D13
+D12
+D11
+D10
+D9
+D8
+Table 87. OUTY_L_A register
+D7
+D6
+D5
+D4
+D3
+D2
+D1
+D0
+Table 88. OUTY_H_A, OUTY_L_A register description
+D[15:0]
+Accelerometer Y-axis output expressed as 2’s complement
+--------------------------------------------------
+
+📦 [Chunk 194]
+[부품명: ASM330LHH]
+Register description
+ASM330LHH
+--------------------------------------------------
+
+📦 [Chunk 195]
+[부품명: ASM330LHH]
+9.31 
+OUTZ_H_A (2Dh), OUTZ_L_A (2Ch)
+Linear acceleration sensor Z-axis output register (r). The value is expressed as a 16-bit 
+word in two’s complement.
+          
+          
+          
+ 
+ 
+9.32 
+FIFO_STATUS1 (3Ah)
+FIFO status register 1 (r)
+          
+Table 93. FIFO_STATUS1 register description
+Table 89. OUTZ_H_A register
+D15
+D14
+D13
+D12
+D11
+D10
+D9
+D8
+Table 90. OUTZ_L_A register
+D7
+D6
+D5
+D4
+D3
+D2
+D1
+D0
+Table 91. OUTZ_H_A, OUTZ_L_A register description
+D[15:0]
+Accelerometer Z-axis output expressed as 2’s complement
+Table 92. FIFO_STATUS1 register
+DIFF_
+FIFO_7
+DIFF_
+FIFO_6
+DIFF_
+FIFO_5
+DIFF_
+FIFO_4
+DIFF_
+FIFO_3
+DIFF_
+FIFO_2
+DIFF_
+FIFO_1
+DIFF_
+FIFO_0
+DIFF_ 
+FIFO_[7:0]
+Number of unread sensor data (TAG + 6 bytes) stored in FIFO
+In conjunction with DIFF_FIFO[9:8] in FIFO_STATUS2 (3Bh).
+--------------------------------------------------
+
+📦 [Chunk 196]
+[부품명: ASM330LHH]
+ASM330LHH
+Register description
+84
+9.33 
+FIFO_STATUS2 (3Bh)
+FIFO status register 2 (r)
+          
+Table 95. FIFO_STATUS2 register description
+Table 94. FIFO_STATUS2 register
+FIFO_
+WTM_IA
+FIFO_
+OVR_IA
+FIFO_
+FULL_IA
+COUNTER
+_BDR_IA
+FIFO_OVR_
+LATCHED
+0
+DIFF_
+FIFO_9
+DIFF_
+FIFO_8
+FIFO_ 
+WTM_IA
+FIFO watermark status. Default value: 0
+(0: FIFO filling is lower than WTM;
+1: FIFO filling is equal to or greater than WTM)
+Watermark is set through bits WTM[8:0] in FIFO_CTRL2 (08h) and FIFO_CTRL1 
+(07h).
+FIFO_ 
+OVR_IA
+FIFO overrun status. Default value: 0
+(0: FIFO is not completely filled; 1: FIFO is completely filled)
+FIFO_ 
+FULL_IA
+Smart FIFO full status. Default value: 0
+(0: FIFO is not full; 1: FIFO will be full at the next ODR)
+COUNTER_ 
+BDR_IA
+--------------------------------------------------
+
+📦 [Chunk 197]
+[부품명: ASM330LHH]
+FIFO_ 
+FULL_IA
+Smart FIFO full status. Default value: 0
+(0: FIFO is not full; 1: FIFO will be full at the next ODR)
+COUNTER_ 
+BDR_IA
+Counter BDR reaches the CNT_BDR_TH_[9:0] threshold set in 
+COUNTER_BDR_REG1 (0Bh) and COUNTER_BDR_REG2 (0Ch). Default value: 0 
+This bit is reset when these registers are read. 
+FIFO_OVR_ 
+LATCHED
+Latched FIFO overrun status. Default value: 0 
+This bit is reset when this register is read.
+DIFF_ 
+FIFO_[9:8]
+ Number of unread sensor data (TAG + 6 bytes) stored in FIFO. Default value: 00
+In conjunction with DIFF_FIFO[7:0] in FIFO_STATUS1 (3Ah)
+--------------------------------------------------
+
+📦 [Chunk 198]
+[부품명: ASM330LHH]
+Register description
+ASM330LHH
+--------------------------------------------------
+
+📦 [Chunk 199]
+[부품명: ASM330LHH]
+9.34 
+TIMESTAMP0 (40h), TIMESTAMP1 (41h), TIMESTAMP2 (42h), 
+and TIMESTAMP3 (43h)
+Timestamp first data output register (r). The value is expressed as a 32-bit word and the bit 
+resolution is 25 μs.
+          
+Table 97. TIMESTAMP2 register
+Table 98. TIMESTAMP1 register
+Table 99. TIMESTAMP0 register
+Table 100. TIMESTAMPx register description
+The formula below can be used to calculate a better estimation of the actual timestamp 
+resolution:
+TS_Res = 1 / (40000 + (0.0015 * INTERNAL_FREQ_FINE * 40000))
+where INTERNAL_FREQ_FINE is the content of INTERNAL_FREQ_FINE (63h).
+Table 96. TIMESTAMP3 register
+D31
+D30
+D29
+D28
+D27
+D26
+D25
+D24
+D23
+D22
+D21
+D20
+D19
+D18
+D17
+D16
+D15
+D14
+D13
+D12
+D11
+D10
+D9
+D8
+D7
+D6
+D5
+D4
+D3
+D2
+D1
+D0
+D[31:0]
+Timestamp output registers: 1LSB = 25 μs
+--------------------------------------------------
+
+📦 [Chunk 200]
+[부품명: ASM330LHH]
+ASM330LHH
+Register description
+84
+9.35 
+INT_CFG0 (56h)
+Activity/inactivity functions, configuration of filtering, and interrupt latch mode configuration 
+(r/w). 
+          
+Table 102. INT_CFG0 register description
+9.36 
+INT_CFG1 (58h)
+Enables interrupt function register (r/w)
+          
+Table 104. INT_CFG1 register description
+Table 101. INT_CFG0 register
+0(1)
+1.
+This bit must be set to '0' for the correct operation of the device.
+INT_CLR
+_ON_
+READ
+SLEEP_
+STATUS_
+ON_INT
+SLOPE_
+FDS
+0(1)
+0(1)
+0(1)
+LIR
+INT_CLR_ON_
+READ
+This bit allows immediately clearing the latched interrupts of an event detection 
+upon the read of the corresponding status register. It must be set to 1 together 
+with LIR. Default value: 0
+(0: latched interrupt signal cleared at the end of the ODR period;
+--------------------------------------------------
+
+📦 [Chunk 201]
+[부품명: ASM330LHH]
+with LIR. Default value: 0
+(0: latched interrupt signal cleared at the end of the ODR period;  
+1: latched interrupt signal immediately cleared)
+SLEEP_STATUS
+_ON_INT
+Activity/inactivity interrupt mode configuration.
+If INT1_SLEEP_CHANGE or INT2_SLEEP_CHANGE bits are enabled, drives 
+the sleep status or sleep change on INT pins. Default value: 0 
+(0: sleep change notification on INT pins; 1: sleep status reported on INT pins)
+SLOPE_FDS
+HPF or SLOPE filter selection on wake-up and Activity/Inactivity functions. 
+Default value: 0  
+(0: SLOPE filter applied; 1: HPF applied) 
+LIR
+Latched Interrupt. Default value: 0  
+(0: interrupt request not latched; 1: interrupt request latched) 
+Table 103. INT_CFG1 register
+INTERRUPTS_
+ENABLE
+INACT_
+EN1
+INACT_
+EN0
+0(1)
+1.
+--------------------------------------------------
+
+📦 [Chunk 202]
+[부품명: ASM330LHH]
+(0: interrupt request not latched; 1: interrupt request latched) 
+Table 103. INT_CFG1 register
+INTERRUPTS_
+ENABLE
+INACT_
+EN1
+INACT_
+EN0
+0(1)
+1.
+This bit must be set to '0' for the correct operation of the device.
+0(1)
+0(1)
+0(1)
+0(1)
+INTERRUPTS
+_ENABLE
+Enables hardcoded functions
+INACT_EN[1:0]
+Enables activity/inactivity (sleep) function. Default value: 00
+(00: stationary/motion-only interrupts generated, XL and gyro do not change;
+01: sets accelerometer ODR to 12.5 Hz, gyro does not change;
+10: sets accelerometer ODR to 12.5 Hz, gyro to sleep mode;
+11: sets accelerometer ODR to 12.5 Hz, gyro to power-down mode)
+--------------------------------------------------
+
+📦 [Chunk 203]
+[부품명: ASM330LHH]
+Register description
+ASM330LHH
+--------------------------------------------------
+
+📦 [Chunk 204]
+[부품명: ASM330LHH]
+9.37 
+THS_6D (59h)
+Portrait/landscape position register (r/w)
+          
+Table 106. THS_6D register description
+9.38 
+WAKE_UP_THS (5Bh)
+Wake-up configuration register (r/w) 
+          
+Table 108. WAKE_UP_THS register description
+Table 105. THS_6D register
+D4D_
+EN
+SIXD_THS1 SIXD_THS0
+0(1)
+1.
+This bit must be set to '0' for the correct operation of the device.
+0(1)
+0(1)
+0(1)
+0(1)
+D4D_EN
+Enables detection of 4D orientation. Z-axis position detection is disabled. 
+Default value: 0 (0: disabled; 1: enabled) 
+SIXD_THS[1:0]
+Threshold for 4D/6D function
+(00: 80 degrees (default);
+01: 70 degrees;
+10: 60 degrees;
+11: 50 degrees)
+Table 107. WAKE_UP_THS register
+0(1)
+1.
+This bit must be set to '0' for the correct operation of the device.
+USR_OFF
+_ON_WU
+WK_THS5
+WK_THS4
+WK_THS3
+WK_THS2
+WK_THS1
+WK_THS0
+--------------------------------------------------
+
+📦 [Chunk 205]
+[부품명: ASM330LHH]
+0(1)
+1.
+This bit must be set to '0' for the correct operation of the device.
+USR_OFF
+_ON_WU
+WK_THS5
+WK_THS4
+WK_THS3
+WK_THS2
+WK_THS1
+WK_THS0
+USR_OFF_ 
+ON_WU
+Sends the low-pass filtered data with user offset correction (instead of high-pass 
+filtered data) to the wakeup function. 
+WK_THS[5:0]
+Threshold for wakeup: 1 LSB weight depends on WAKE_THS_W in 
+WAKE_UP_DUR (5Ch). Default value: 000000
+--------------------------------------------------
+
+📦 [Chunk 206]
+[부품명: ASM330LHH]
+ASM330LHH
+Register description
+84
+9.39 
+WAKE_UP_DUR (5Ch)
+Free-fall, wakeup and sleep mode functions duration setting register (r/w) 
+          
+Table 110. WAKE_UP_DUR register description
+9.40 
+FREE_FALL (5Dh)
+Free-fall function duration setting register (r/w)
+          
+Table 109. WAKE_UP_DUR register
+FF_DUR5
+WAKE_
+DUR1
+WAKE_
+DUR0
+WAKE_
+THS_W
+SLEEP_
+DUR3
+SLEEP_
+DUR2
+SLEEP_
+DUR1
+SLEEP_
+DUR0
+FF_DUR5
+Free fall duration event. Default: 0
+For the complete configuration of the free-fall duration, refer to FF_DUR[4:0] in 
+FREE_FALL (5Dh) configuration.
+1 LSB = 1 ODR_time 
+WAKE_DUR[1:0]
+Wake up duration event. Default: 00
+1LSB = 1 ODR_time
+WAKE_THS_W
+Weight of 1 LSB of wakeup threshold. Default:0 
+(0: 1 LSB =FS_XL / (26);  
+1: 1 LSB = FS_XL / (28))
+SLEEP_DUR[3:0]
+--------------------------------------------------
+
+📦 [Chunk 207]
+[부품명: ASM330LHH]
+1LSB = 1 ODR_time
+WAKE_THS_W
+Weight of 1 LSB of wakeup threshold. Default:0 
+(0: 1 LSB =FS_XL / (26);  
+1: 1 LSB = FS_XL / (28))
+SLEEP_DUR[3:0]
+Duration to go in sleep mode. Default value: 0000 (this corresponds to 16 ODR)
+1 LSB = 512 ODR
+Table 111. FREE_FALL register
+FF_DUR4
+FF_DUR3
+FF_DUR2
+FF_DUR1
+FF_DUR0
+FF_THS2
+FF_THS1
+FF_THS0
+Table 112. FREE_FALL register description
+FF_DUR[4:0]
+Free-fall duration event. Default: 0  
+For the complete configuration of the free fall duration, refer to FF_DUR5 in 
+WAKE_UP_DUR (5Ch) configuration 
+FF_THS[2:0]
+Free fall threshold setting
+(000: 156 mg (default);
+001: 219 mg;
+010: 250 mg;
+011: 312 mg;
+100: 344 mg;
+101: 406 mg;
+110: 469 mg;
+111: 500 mg)
+--------------------------------------------------
+
+📦 [Chunk 208]
+[부품명: ASM330LHH]
+Register description
+ASM330LHH
+--------------------------------------------------
+
+📦 [Chunk 209]
+[부품명: ASM330LHH]
+9.41 
+MD1_CFG (5Eh)
+Functions routing on INT1 register (r/w)
+          
+Table 114. MD1_CFG register description
+9.42 
+MD2_CFG (5Fh)
+Functions routing on INT2 register (r/w)
+          
+Table 116. MD2_CFG register description
+Table 113. MD1_CFG register
+INT1_
+SLEEP_
+CHANGE
+0(1)
+1.
+This bit must be set to '0' for the correct operation of the device.
+INT1_WU
+INT1_FF
+0(1)
+INT1_6D
+0(1)
+0(1)
+INT1_SLEEP_ 
+CHANGE(1)
+1.
+Activity/Inactivity interrupt mode (sleep change or sleep status) depends on SLEEP_STATUS_ON_INT bit 
+in INT_CFG0 (56h) register.
+Routing of activity/inactivity recognition event on INT1. Default: 0  
+(0: routing of activity/inactivity event on INT1 disabled;  
+1: routing of activity/inactivity event on INT1 enabled) 
+INT1_WU
+Routing of wakeup event on INT1. Default value: 0
+--------------------------------------------------
+
+📦 [Chunk 210]
+[부품명: ASM330LHH]
+1: routing of activity/inactivity event on INT1 enabled) 
+INT1_WU
+Routing of wakeup event on INT1. Default value: 0
+(0: routing of wakeup event on INT1 disabled;  
+1: routing of wakeup event on INT1 enabled)
+INT1_FF
+Routing of free-fall event on INT1. Default value: 0
+(0: routing of free-fall event on INT1 disabled;  
+1: routing of free-fall event on INT1 enabled)
+INT1_6D
+Routing of 6D event on INT1. Default value: 0
+(0: routing of 6D event on INT1 disabled;  
+1: routing of 6D event on INT1 enabled)
+Table 115. MD2_CFG register
+INT2_
+SLEEP_
+CHANGE
+0(1)
+1.
+This bit must be set to '0' for the correct operation of the device.
+INT2_WU
+INT2_FF
+0(1)
+INT2_6D
+0(1)
+INT2_
+TIMESTAMP
+INT2_SLEEP_ 
+CHANGE(1)
+1.
+--------------------------------------------------
+
+📦 [Chunk 211]
+[부품명: ASM330LHH]
+1.
+This bit must be set to '0' for the correct operation of the device.
+INT2_WU
+INT2_FF
+0(1)
+INT2_6D
+0(1)
+INT2_
+TIMESTAMP
+INT2_SLEEP_ 
+CHANGE(1)
+1.
+Activity/Inactivity interrupt mode (sleep change or sleep status) depends on SLEEP_STATUS_ON_INT bit 
+in INT_CFG0 (56h) register.
+Routing of activity/inactivity recognition event on INT2. Default: 0  
+(0: routing of activity/inactivity event on INT2 disabled;  
+1: routing of activity/inactivity event on INT2 enabled)
+INT2_WU
+Routing of wakeup event on INT2. Default value: 0
+(0: routing of wakeup event on INT2 disabled;  
+1: routing of wake-up event on INT2 enabled)
+INT2_FF
+Routing of free-fall event on INT2. Default value: 0
+(0: routing of free-fall event on INT2 disabled;  
+1: routing of free-fall event on INT2 enabled)
+INT2_6D
+--------------------------------------------------
+
+📦 [Chunk 212]
+[부품명: ASM330LHH]
+(0: routing of free-fall event on INT2 disabled;  
+1: routing of free-fall event on INT2 enabled)
+INT2_6D
+Routing of 6D event on INT2. Default value: 0
+(0: routing of 6D event on INT2 disabled;  
+1: routing of 6D event on INT2 enabled)
+INT2_TIMESTAMP
+Enables routing on INT2 pin of the alert for timestamp overflow within 6.4 ms
+--------------------------------------------------
+
+📦 [Chunk 213]
+[부품명: ASM330LHH]
+ASM330LHH
+Register description
+84
+9.43 
+INTERNAL_FREQ_FINE (63h)
+Internal frequency register (r)
+          
+Table 118. INTERNAL_FREQ_FINE register description
+The formula below can be used to calculate a better estimation of the actual ODR:
+ODR_Actual = (6667 + ((0.0015 * INTERNAL_FREQ_FINE) * 6667)) / ODR_Coeff
+The Selected_ODR parameter has to be derived from the ODR_XL selection (Table
+ 
+39: 
+CTRL1_XL register description) in order to estimate the accelerometer ODR and from the 
+ODR_G selection (Table
+ 
+41: CTRL2_G register description) in order to estimate the 
+gyroscope ODR.
+Table 117. INTERNAL_FREQ_FINE register
+FREQ_
+FINE7
+FREQ_
+FINE6
+FREQ_
+FINE5
+FREQ_
+FINE4
+FREQ_
+FINE3
+FREQ_
+FINE2
+FREQ_
+FINE1
+FREQ_
+FINE0
+--------------------------------------------------
+
+📦 [Chunk 214]
+[부품명: ASM330LHH]
+gyroscope ODR.
+Table 117. INTERNAL_FREQ_FINE register
+FREQ_
+FINE7
+FREQ_
+FINE6
+FREQ_
+FINE5
+FREQ_
+FINE4
+FREQ_
+FINE3
+FREQ_
+FINE2
+FREQ_
+FINE1
+FREQ_
+FINE0
+FREQ_FINE[7:0] Difference in percentage of the effective ODR (and timestamp rate) with respect 
+to the typical. Step: 0.15%. 8-bit format, 2's complement.
+Selected_ODR
+ODR_Coeff
+12.5 
+ 512
+26
+256
+52
+128
+104
+64
+208
+32
+416
+16
+833
+8
+1667
+4
+3333
+2
+6667
+1
+--------------------------------------------------
+
+📦 [Chunk 215]
+[부품명: ASM330LHH]
+Register description
+ASM330LHH
+--------------------------------------------------
+
+📦 [Chunk 216]
+[부품명: ASM330LHH]
+9.44 
+X_OFS_USR (73h)
+Accelerometer X-axis user offset correction (r/w). The offset value set in the X_OFS_USR 
+offset register is internally subtracted from the acceleration value measured on the X-axis.
+          
+9.45 
+Y_OFS_USR (74h)
+Accelerometer Y-axis user offset correction (r/w). The offset value set in the Y_OFS_USR 
+offset register is internally subtracted from the acceleration value measured on the Y-axis.
+          
+Table 122. Y_OFS_USR register description
+9.46 
+Z_OFS_USR (75h)
+Accelerometer Z-axis user offset correction (r/w). The offset value set in the Z_OFS_USR 
+offset register is internally subtracted from the acceleration value measured on the Z-axis.
+          
+Table 124. Z_OFS_USR register description
+Table 119. X_OFS_USR register
+X_OFS_
+USR_7
+X_OFS_
+USR_6
+X_OFS_
+--------------------------------------------------
+
+📦 [Chunk 217]
+[부품명: ASM330LHH]
+Table 124. Z_OFS_USR register description
+Table 119. X_OFS_USR register
+X_OFS_
+USR_7
+X_OFS_
+USR_6
+X_OFS_
+USR_5
+X_OFS_
+USR_4
+X_OFS_
+USR_3
+X_OFS_
+USR_2
+X_OFS_
+USR_1
+X_OFS_
+USR_0
+Table 120. X_OFS_USR register description
+X_OFS_USR_ 
+[7:0]
+Accelerometer X-axis user offset correction expressed in two’s complement, 
+weight depends on USR_OFF_W in CTRL6_C (15h). The value must be in the 
+range [-127 127].
+Table 121. Y_OFS_USR register
+Y_OFS_
+USR_7
+Y_OFS_
+USR_6
+Y_OFS_
+USR_5
+Y_OFS_
+USR_4
+Y_OFS_
+USR_3
+Y_OFS_
+USR_2
+Y_OFS_
+USR_1
+Y_OFS_
+USR_0
+Y_OFS_ 
+USR_[7:0]
+Accelerometer Y-axis user offset calibration expressed in 2’s complement, weight 
+depends on USR_OFF_W in CTRL6_C (15h). The value must be in the range  
+[-127, +127].
+Table 123. Z_OFS_USR register
+Z_OFS_
+USR_7
+Z_OFS_
+USR_6
+Z_OFS_
+--------------------------------------------------
+
+📦 [Chunk 218]
+[부품명: ASM330LHH]
+depends on USR_OFF_W in CTRL6_C (15h). The value must be in the range  
+[-127, +127].
+Table 123. Z_OFS_USR register
+Z_OFS_
+USR_7
+Z_OFS_
+USR_6
+Z_OFS_
+USR_5
+Z_OFS_
+USR_4
+Z_OFS_
+USR_3
+Z_OFS_
+USR_2
+Z_OFS_
+USR_1
+Z_OFS_
+USR_0
+Z_OFS_ 
+USR_[7:0]
+Accelerometer Z-axis user offset calibration expressed in 2’s complement, weight 
+depends on USR_OFF_W in CTRL6_C (15h). The value must be in the range  
+[-127, +127].
+--------------------------------------------------
+
+📦 [Chunk 219]
+[부품명: ASM330LHH]
+ASM330LHH
+Register description
+84
+9.47 
+FIFO_DATA_OUT_TAG (78h)
+FIFO tag register (r)
+          
+Table 126. FIFO_DATA_OUT_TAG register description
+Table 125. FIFO_DATA_OUT_TAG register
+TAG_
+SENSOR_
+4
+TAG_
+SENSOR_
+3
+TAG_
+SENSOR_
+2
+TAG_
+SENSOR_
+1
+TAG_
+SENSOR_
+0
+TAG_CNT
+_1
+TAG_CNT
+_0
+TAG_
+PARITY
+TAG_SENSOR_[4:0]
+Identifies the sensor in:
+FIFO_DATA_OUT_X_H (7Ah) and FIFO_DATA_OUT_X_L (79h), 
+FIFO_DATA_OUT_Y_H (7Ch) and FIFO_DATA_OUT_Y_L (7Bh), and 
+FIFO_DATA_OUT_Z_H (7Eh) and FIFO_DATA_OUT_Z_L (7Dh)
+TAG_CNT_[1:0]
+2-bit counter which identifies sensor time slot 
+TAG_PARITY
+Parity check of TAG content
+Table 127. FIFO tag
+TAG_SENSOR_[4:0]
+Sensor name
+0x01
+Gyroscope
+0x02
+Accelerometer
+0x03
+Temperature
+0x04
+Timestamp
+0x05
+CFG_Change
+
+Register description
+ASM330LHH
+--------------------------------------------------
+
+📦 [Chunk 220]
+[부품명: ASM330LHH]
+9.48 
+FIFO_DATA_OUT_X_H (7Ah) and FIFO_DATA_OUT_X_L 
+(79h)
+FIFO data output X (r)
+          
+Table 129. FIFO_DATA_OUT_X_L register
+Table 130. FIFO_DATA_OUT_X_H, FIFO_DATA_OUT_X_L register description
+9.49 
+FIFO_DATA_OUT_Y_H (7Ch) and FIFO_DATA_OUT_Y_L 
+(7Bh)
+FIFO data output Y (r)
+          
+Table 132. FIFO_DATA_OUT_Y_L register
+Table 133. FIFO_DATA_OUT_Y_H, FIFO_DATA_OUT_Y_L register description
+9.50 
+FIFO_DATA_OUT_Z_H (7Eh) and FIFO_DATA_OUT_Z_L 
+(7Dh)
+FIFO data output Z (r)
+          
+Table 135. FIFO_DATA_OUT_Z_L register
+Table 136. FIFO_DATA_OUT_Z_H, FIFO_DATA_OUT_Z_L register description
+Table 128. FIFO_DATA_OUT_X_H register
+D15
+D14
+D13
+D12
+D11
+D10
+D9
+D8
+D7
+D6
+D5
+D4
+D3
+D2
+D1
+D0
+D[15:0]
+FIFO X-axis output 
+Table 131. FIFO_DATA_OUT_Y_H register
+D15
+D14
+D13
+D12
+D11
+D10
+D9
+D8
+D7
+D6
+D5
+--------------------------------------------------
+
+📦 [Chunk 221]
+[부품명: ASM330LHH]
+D12
+D11
+D10
+D9
+D8
+D7
+D6
+D5
+D4
+D3
+D2
+D1
+D0
+D[15:0]
+FIFO X-axis output 
+Table 131. FIFO_DATA_OUT_Y_H register
+D15
+D14
+D13
+D12
+D11
+D10
+D9
+D8
+D7
+D6
+D5
+D4
+D3
+D2
+D1
+D0
+D[15:0]
+FIFO Y-axis output 
+Table 134. FIFO_DATA_OUT_Z_H register
+D15
+D14
+D13
+D12
+D11
+D10
+D9
+D8
+D7
+D6
+D5
+D4
+D3
+D2
+D1
+D0
+D[15:0]
+FIFO Z-axis output
+--------------------------------------------------
+
+📦 [Chunk 222]
+[부품명: ASM330LHH]
+ASM330LHH
+Typical performance characteristics
+84
+10 
+Typical performance characteristics
+The following distributions were calculated by measuring 100 samples at room temperature 
+in the characterization lab.
+10.1 
+Gyroscope Angular Random Walk (ARW)
+Figure 16. ARW gyro / pitch axis
+
+Typical performance characteristics
+ASM330LHH
+
+Figure 17. ARW gyro / roll axis
+Figure 18. ARW gyro / yaw axis
+
+ASM330LHH
+Typical performance characteristics
+84
+10.2 
+Gyroscope Bias Instability (BI)
+Figure 19. BI gyro / pitch axis
+Figure 20. BI gyro / roll axis
+
+Typical performance characteristics
+ASM330LHH
+
+Figure 21. BI gyro / yaw axis
+
+ASM330LHH
+Typical performance characteristics
+84
+10.3 
+Gyroscope nonlinearity
+Figure 22. Gyro NL / pitch axis
+Figure 23. Gyro NL / roll axis
+--------------------------------------------------
+
+📦 [Chunk 223]
+[부품명: ASM330LHH]
+ASM330LHH
+Typical performance characteristics
+84
+10.3 
+Gyroscope nonlinearity
+Figure 22. Gyro NL / pitch axis
+Figure 23. Gyro NL / roll axis
+
+Typical performance characteristics
+ASM330LHH
+
+Figure 24. Gyro NL / yaw axis
+
+ASM330LHH
+Soldering information
+84
+11 
+Soldering information
+The LGA package is compliant with the ECOPACK, RoHS and "Green" standard. 
+It is qualified for soldering heat resistance according to JEDEC J-STD-020.
+Land pattern and soldering recommendations are available at www.st.com/mems.
+
+Package information
+ASM330LHH
+--------------------------------------------------
+
+📦 [Chunk 224]
+[부품명: ASM330LHH]
+12 
+Package information
+In order to meet environmental requirements, ST offers these devices in different grades of 
+ECOPACK packages, depending on their level of environmental compliance. ECOPACK 
+specifications, grade definitions and product status are available at: www.st.com. 
+ECOPACK is an ST trademark. 
+12.1 
+LGA-14L package information
+Figure 25. LGA-14L 2.5 x 3.0 x 0.83 mm³ (typ.) package outline and mechanical data
+:
+/
++
+[
+[
+[
+
+
+3LQLQGLFDWRU
+3LQLQGLFDWRU
+%277209,(:
+7239,(:
+
+
+'LPHQVLRQVDUHLQPLOOLPHWHUXQOHVVRWKHUZLVHVSHFLILHG
+*HQHUDOWROHUDQFHLVPPXQOHVVRWKHUZLVHVSHFLILHG
+287(5',0(16,216
+,7(0
+',0(16,21>PP@
+72/(5$1&(>PP@
+
+
+
+
+
+
+
+
+
+
+@
+/
+>
+K
+W
+J
+Q
+H
+/
+
+
+
+
+
+
+
+
+
+
+@
+:
+>
+K
+W
+GL
+:
+
+;
+$
+0
+
+
+
+
+--------------------------------------------------
+
+📦 [Chunk 225]
+[부품명: ASM330LHH]
+287(5',0(16,216
+,7(0
+',0(16,21>PP@
+72/(5$1&(>PP@
+
+
+
+
+
+
+
+
+
+
+@
+/
+>
+K
+W
+J
+Q
+H
+/
+
+
+
+
+
+
+
+
+
+
+@
+:
+>
+K
+W
+GL
+:
+
+;
+$
+0
+
+
+
+
+
+@
++
+>W
+K
+JLH
++
+'0B
+--------------------------------------------------
+
+📦 [Chunk 226]
+[부품명: ASM330LHH]
+ASM330LHH
+Package information
+84
+12.2 
+LGA-14 packing information
+Figure 26. Carrier tape information for LGA-14 package
+Figure 27. LGA-14 package orientation in carrier tape
+
+Package information
+ASM330LHH
+
+Figure 28. Reel information for carrier tape of LGA-14 package
+Table 137. Reel dimensions for carrier tape of LGA-14 package
+Reel dimensions (mm)
+A (max)
+330
+B (min)
+1.5
+C
+13 ±0.25
+D (min)
+20.2
+N (min)
+60
+G
+12.4 +2/-0
+T (max)
+18.4
+$
+'
+%
+)XOOUDGLXV
+7DSHVORW
+LQFRUHIRU
+WDSHVWDUW
+PPPLQZLGWK
+*PHDVXUHGDWKXE 
+&
+1
+PPPLQ
+$FFHVVKROHDW
+VORWORFDWLRQ
+7
+--------------------------------------------------
+
+📦 [Chunk 227]
+[부품명: ASM330LHH]
+ASM330LHH
+Revision history
+84
+13 
+Revision history
+          
+Table 138. Document revision history
+ 
+Date
+Revision
+Changes
+18-Feb-2019
+3
+First public release
+06-May-2020
+4
+Updated Sg in Table
+ 
+8: Absolute maximum ratings
+Updated linear acceleration self-test output change in Table
+ 
+3: 
+Mechanical characteristics
+Updated text in I²C operation
+Updated batch data rate for BDR_XL_[3:0] in FIFO_CTRL3 (09h)
+Updated bit 2 in COUNTER_BDR_REG1 (0Bh)
+Updated bit 6 in ALL_INT_SRC (1Ah)
+Updated bits 4 and 6 in WAKE_UP_SRC (1Bh)
+Updated description of bit D4D_EN in THS_6D (59h)
+
+ASM330LHH
+--------------------------------------------------
+
+📦 [Chunk 228]
+[부품명: ASM330LHH]
+IMPORTANT NOTICE – PLEASE READ CAREFULLY
+STMicroelectronics NV and its subsidiaries (“ST”) reserve the right to make changes, corrections, enhancements, modifications, and 
+improvements to ST products and/or to this document at any time without notice. Purchasers should obtain the latest relevant information on 
+ST products before placing orders. ST products are sold pursuant to ST’s terms and conditions of sale in place at the time of order 
+acknowledgement.
+Purchasers are solely responsible for the choice, selection, and use of ST products and ST assumes no liability for application assistance or 
+the design of Purchasers’ products.
+No license, express or implied, to any intellectual property right is granted by ST herein.
+--------------------------------------------------
+
+📦 [Chunk 229]
+[부품명: ASM330LHH]
+the design of Purchasers’ products.
+No license, express or implied, to any intellectual property right is granted by ST herein.
+Resale of ST products with provisions different from the information set forth herein shall void any warranty granted by ST for such product.
+ST and the ST logo are trademarks of ST. For additional information about ST trademarks, please refer to www.st.com/trademarks. All other 
+product or service names are the property of their respective owners.
+Information in this document supersedes and replaces information previously supplied in any prior versions of this document.
+© 2020 STMicroelectronics – All rights reserved
+--------------------------------------------------
+

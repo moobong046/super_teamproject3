@@ -1,0 +1,225 @@
+📦 [Chunk 1]
+[부품명: L76-L]
+Quectel L76-L 
+Extremely Compact  
+GNSS Module with Ultra Low 
+Power Consumption 
+Build a Smarter World 
+ 
+Key  
+Benefits   
+Extremely compact size, 10.1mm × 9.7mm ×2.5mm 
+Multi-GNSS engine for GPS, GLONASS, Galileo and QZSS 
+Support EASY™, an advanced AGPS technology without external 
+memory 
+Built-in LNA for better sensitivity 
+Ultra low tracking power consumption 
+AlwaysLocate™, an intelligent algorithm for power saving 
+LOCUS, an embedded logger function with no need for host and  
+external flash 
+Offer 99 acquisition/33 tracking channels and 210 PRN channels 
+Support DGPS, SBAS (WAAS/EGNOS/MSAS/GAGAN) 
+Support UART and I2C Interfaces 
+Great anti-jamming performance due to multi-tone active inter-
+ference canceller 
+Balloon mode, for high altitude up to 80km
+--------------------------------------------------
+
+📦 [Chunk 2]
+[부품명: L76-L]
+Great anti-jamming performance due to multi-tone active inter-
+ference canceller 
+Balloon mode, for high altitude up to 80km 
+PPS VS. NMEA can be used for time service 
+Support SDK command developed by Quectel 
+EASY™ Technology 
+Ultra Low Power 
+Consumption 
+Multi-GNSS Systems 
+RoHS Compliant 
+EMAIL US: info@quectel.com 
+VISIT US: www.quectel.com 
+Extended Temperature 
+Range: -40°C ~ +85°C 
+Extremely Compact 
+Size 
+Super Tracking 
+Sensitivity:  
+-167dBm  
+Anti-jamming 
+L76-L is a concurrent receiver module integrating GPS, GLONASS, Galileo and QZSS systems. With 33 tracking channels, 99 
+acquisition channels and 210 PRN channels, L76-L can acquire and track any mix of GPS, GLONASS and SBAS signals. Designed
+--------------------------------------------------
+
+📦 [Chunk 3]
+[부품명: L76-L]
+acquisition channels and 210 PRN channels, L76-L can acquire and track any mix of GPS, GLONASS and SBAS signals. Designed 
+to be compatible with Quectel L76 module in the compact and unified form factor, L76-L provides a built-in LNA for better 
+performance in weak signal areas.  
+ 
+Compared with using GPS only, enabling multiple GNSS systems generally increases the number of visible satellites, reduces 
+the time to first fix and increases positioning accuracy, especially when driving in rough urban environments.  
+ 
+Combining advanced AGPS called EASY™ (Embedded Assist System) and proven AlwaysLocate™ technology, L76-L achieves 
+the highest performance and fully meets the industrial standard. EASY™ technology allows L76-L to calculate and predict
+--------------------------------------------------
+
+📦 [Chunk 4]
+[부품명: L76-L]
+the highest performance and fully meets the industrial standard. EASY™ technology allows L76-L to calculate and predict  
+orbits automatically using the ephemeris data (up to 3 days) stored in internal RAM memory, so L76-L can fix position quickly 
+even at indoor signal levels with low power consumption. With AlwaysLocate™ technology, L76-L can adaptively adjust the 
+on/off time to achieve balance between positioning accuracy and power consumption according to the environmental and 
+motional conditions. 
+ 
+Its super performance makes L76-L ideal for automotive, industrial PDA, consumer and industry applications. Extremely low 
+power consumption makes it easier to be applied to power sensitive devices, especially portable applications.   
+Quectel 
+Confidential
+--------------------------------------------------
+
+📦 [Chunk 5]
+[부품명: L76-L]
+Extremely Compact  
+GNSS Module with Ultra Low  
+Power Consumption 
+Quectel L76-L 
+10.1 mm 
+9.7 mm 
+2.5 mm 
+GNSS Features 
+GPS L1 Band Receiver (1575.42MHz)/ 
+GLONASS L1 Band Receiver (1601.71MHz):  
+Channel: 33 (Tracking)/ 99 (Acquisition)/  
+210 (PRN) 
+C/A Code 
+SBAS: WAAS, EGNOS, MSAS, GAGAN 
+Horizontal Position Accuracy: 
+Autonomous: <2.5m CEP 
+Velocity Accuracy: 
+Without Aid: <0.1m/s 
+Acceleration Accuracy: 
+Without Aid: <0.1m/s² 
+Timing Accuracy: 
+1PPS: 10ns 
+Reacquisition Time: <1s 
+TTFF @-130dBm with EASY™:  
+Cold Start: <15s 
+Warm Start: <5s 
+Hot Start: <1s 
+TTFF @-130dBm without EASY™:  
+Cold Start: <35s 
+Warm Start: <30s 
+Hot Start: <1s 
+Sensitivity:  
+Acquisition: -149dBm 
+Tracking: -167dBm 
+Reacquisition: -161dBm 
+Dynamic Performance: 
+Maximum Altitude: Max. 18000m
+--------------------------------------------------
+
+📦 [Chunk 6]
+[부품명: L76-L]
+Hot Start: <1s 
+Sensitivity:  
+Acquisition: -149dBm 
+Tracking: -167dBm 
+Reacquisition: -161dBm 
+Dynamic Performance: 
+Maximum Altitude: Max. 18000m 
+Maximum Velocity: Max. 515m/s 
+Maximum Acceleration: 4G 
+ 
+Interfaces 
+Serial Interface: 
+I2C: Up to 400kbps            
+UART: Adjustable 4800bps~115200bps 
+             Default: 9600bps 
+Update Rate: 
+1Hz (Default), up to 10Hz 
+I/O Voltage: 
+2.7V~2.9V 
+Protocols: 
+NMEA 0183 
+PMTK 
+ 
+ 
+General Features 
+Temperature Range:  
+-40°C ~ +85°C  
+Dimensions:  
+10.1mm × 9.7mm × 2.5mm  
+Weight: 
+Approx. 0.6g 
+ 
+ 
+Power Management 
+Power Supply: 
+ 
+2.8V~4.3V 
+Power Acquisition:  
+25mA @3.3V (GPS) 
+29mA @3.3V (GPS+GLONASS) 
+Power Tracking: 
+ 
+19mA @3.3V (GPS) 
+22mA @3.3V (GPS+GLONASS) 
+ 
+Power Saving:  
+ 
+2.8mA @AlwaysLocate™ (Note1) 
+7uA @Backup Mode
+--------------------------------------------------
+
+📦 [Chunk 7]
+[부품명: L76-L]
+Power Tracking: 
+ 
+19mA @3.3V (GPS) 
+22mA @3.3V (GPS+GLONASS) 
+ 
+Power Saving:  
+ 
+2.8mA @AlwaysLocate™ (Note1) 
+7uA @Backup Mode 
+500uA @Standby Mode 
+Periodic Mode 
+Antenna Type: 
+ 
+Active or Passive  
+Antenna Power: 
+ 
+External or Internal VCC_RF 
+ 
+Note1: Measured in GPS+GLONASS System under 
+Outdoor Static Mode. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+Copyright  © 2017 Quectel Wireless Solutions Co., Ltd.   All Rights Reserved    http://www.quectel.com 
+HQ address: 7th Floor, Hongye Building, No.1801 Hongmei Road, Xuhui District, Shanghai 200233, China 
+Tel: +86 21 51086236             Fax: +86 21 54453668              Email: info@quectel.com 
+Quectel 
+Confidential
+--------------------------------------------------
+

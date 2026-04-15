@@ -1,0 +1,233 @@
+📦 [Chunk 1]
+[부품명: QCA9377]
+Highlights 
+Advanced 802.11ac combo SoC
+Advanced 802.11ac features such as MU-MIMO, Host 
+wake-on-wireless and ARP (Address Resolution Protocol) 
+offloading enable the WLAN link to remain associated 
+for extended periods for additional power savings.
+Supports dual-mode Bluetooth 5
+QCA9377 supports Bluetooth for Class-1 and Class-2 
+transmissions without requiring an external power 
+amplifier.
+Advanced WLAN/Bluetooth 
+coexistence and concurrent RX 
+WLAN/Bluetooth coexistence allows for superior rate-
+over-range throughput and low-latency performance in 
+real-world operating conditions.
+Power saving techniques for  low 
+power consumption 
+Both WLAN and Bluetooth power management utilize 
+advanced power saving techniques such as: 
+-  gating clocks to idle or inactive blocks
+--------------------------------------------------
+
+📦 [Chunk 2]
+[부품명: QCA9377]
+Both WLAN and Bluetooth power management utilize 
+advanced power saving techniques such as: 
+-  gating clocks to idle or inactive blocks
+-  voltage scaling
+-  fast start and settling circuits
+-  active duty cycles
+-  processor frequency scaling
+High performance, low power single-stream 
+11ac MU-MIMO and Bluetooth 5  in a single-
+chip solution.
+Qualcomm QCA9377 is a product of Qualcomm Technologies, Inc. and/or its subsidiaries.
+Materials are subject to change without notice.
+87-YB797-1 Rev E
+QCA9377 combines advanced 1x1 dual-band 
+802.11ac MU-MIMO Wi-Fi + Bluetooth 5 in 
+a high performance,  low power, small form 
+factor System-on-Chip (SoC). 
+Designed to deliver superior integration 
+of WLAN and Bluetooth low energy 
+technology in a single-chip solution, the
+--------------------------------------------------
+
+📦 [Chunk 3]
+[부품명: QCA9377]
+factor System-on-Chip (SoC). 
+Designed to deliver superior integration 
+of WLAN and Bluetooth low energy 
+technology in a single-chip solution, the 
+QCA9377 SoC offers both low power dual-
+band (2.4 & 5GHz), 1-stream (1x1), 802.11ac  
+MU-MIMO and Bluetooth 5.0 technologies.
+QCA9377 supports high-speed Wi-Fi 
+connectivity and enriched media experiences 
+for virtually all connected devices and is 
+optimized for energy efficiency, which is critical 
+to extending the battery life of portable 
+devices.
+With advanced WLAN/Bluetooth 
+coexistence algorithms, QCA9377 supports 
+superior rate-over-range throughput and 
+low-latency performance in real-world 
+operating conditions. 
+The QCA9377 SoC is available in three 
+variants:
+ 
+ 
+QCA9377-3: supports a low-power 
+SDIO 3.0 interface for WLAN and a
+--------------------------------------------------
+
+📦 [Chunk 4]
+[부품명: QCA9377]
+operating conditions. 
+The QCA9377 SoC is available in three 
+variants:
+ 
+ 
+QCA9377-3: supports a low-power 
+SDIO 3.0 interface for WLAN and a 
+UART/PCM interface for Bluetooth
+ 
+ 
+QCA9377-5: Supports a low-power 
+PCIe 2.1 (with L1 sub-state) interfaces 
+for WLAN and a USB 1.1 interface for 
+Bluetooth
+ 
+ 
+QCA9377-7:  supports a low-power USB 
+2.0 interface for WLAN and a USB 1.1 
+interface for Bluetooth
+Qualcomm® QCA9377 
+Wi-Fi/Bluetooth SoC
+--------------------------------------------------
+
+📦 [Chunk 5]
+[부품명: QCA9377]
+Features
+ 
+ 
+1x1 802.11ac + Bluetooth 5 in a single SoC
+ 
+ 
+Supports Bluetooth 5, Bluetooth low 
+energy and is backward compatible 
+with Bluetooth 2.x
+ 
+ 
+Single regulated 3.3V supply operation
+ 
+ 
+Integrated RF Front End, single ended 
+design
+ 
+ 
+Offloading for minimal host utilization 
+ 
+ 
+Low-density parity check (LDPC) 
+encoding/decoding
+ 
+ 
+STBC, MU-MIMO, Transmit Beam-
+forming
+ 
+ 
+1.5KB OTP to eliminate an external flash
+ 
+ 
+256-QAM in 2.4GHz 
+ 
+ 
+PCB friendly:  mountable on 4L FR4 
+non-HDI PCB
+ 
+ 
+Provides a 48MHz reference clock
+ 
+ 
+1216KB RAM and 448KB ROM for Wi-Fi
+ 
+ 
+192KB RAM and 672KB ROM for 
+Bluetooth
+QCA9377 Specifications 
+Package	
+4.32 x 5.46mm, 115-pin WLNSP, 0.566mm pitch
+WLAN Technology	
+1x1 802.11 a/b/g/n/ac with advanced features
+Bluetooth Technology
+--------------------------------------------------
+
+📦 [Chunk 6]
+[부품명: QCA9377]
+Package	
+4.32 x 5.46mm, 115-pin WLNSP, 0.566mm pitch
+WLAN Technology	
+1x1 802.11 a/b/g/n/ac with advanced features
+Bluetooth Technology	
+Bluetooth 5.0, Bluetooth LE + HS
+PCB Footprint (unshielded)	
+ <110 mm2 
+Interfaces	
+QCA9377-3
+ WLAN: SDIO 3.0 4b
+ Bluetooth: UART/PCM
+QCA9377-5
+WLAN: PCIe 2.1+L1SS
+Bluetooth: USB 1.1+LPM/L1
+QCA9377-7
+WLAN: USB 2.0
+Bluetooth: USB+LPM/L1
+Antenna Configuration	
+Single Wi-Fi/Bluetooth antenna
+WLAN Channel Bandwidths	
+20/40/80MHz
+WLAN TCP/IP Throughput	
+USB2.0:  up to 260 Mbps
+80MHz 11ac	
+SDIO3.0 4b SDR104:  up to 330 Mbps
+PCIe 2.1+L1SS:  up to 350 Mbps
+Power Supply	
+Regulated 3.3V 
+©2019 Qualcomm Technologies, Inc. All Rights Reserved. Qualcomm is a trademark of Qualcomm Incorporated, registered
+--------------------------------------------------
+
+📦 [Chunk 7]
+[부품명: QCA9377]
+Power Supply	
+Regulated 3.3V 
+©2019 Qualcomm Technologies, Inc. All Rights Reserved. Qualcomm is a trademark of Qualcomm Incorporated, registered 
+in the United States and other countries, used with permission. The Bluetooth® word mark and logos are registered trademarks 
+owned by Bluetooth SIG, Inc. and any use of such marks by Qualcomm Technologies, Inc. is under license. Other products and 
+brand names may be trademarks or registered trademarks of their respective owners. 	 	
+                                   0719A
+Product
+Part Number
+QCA9377-3 SOC
+QCA9377-3-115WLNSP
+QCA9377-5 SOC
+QCA-9377-5-115WLNSP
+QCA9377-7 SOC
+QCA9377-7-115WLNSP
+Ordering Information
+QCA9377 Target Applications
+•	 Internet of Things (IoT)
+•	 Smart Appliances
+•	 Wireless Gaming
+•	 Home Automation
+--------------------------------------------------
+
+📦 [Chunk 8]
+[부품명: QCA9377]
+Ordering Information
+QCA9377 Target Applications
+•	 Internet of Things (IoT)
+•	 Smart Appliances
+•	 Wireless Gaming
+•	 Home Automation
+•	 Industrial Automation
+•	 Infotainment
+QCA9377 Block Diagram
+For additional product information and 
+updates go to: developer.qualcomm.com
+/get-started/internet-of-things
+--------------------------------------------------
+

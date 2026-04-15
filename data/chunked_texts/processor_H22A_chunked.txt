@@ -1,0 +1,270 @@
+📦 [Chunk 1]
+[부품명: H22A]
+Product Brief
+Overview
+Block Diagram
+The diagram below illustrates a design based on the Ambarella H22A device.
+The 14 nm H22A SoC Device
+Key Features
+Flexible Low-Power Platform
+• Quad-core Arm® Cortex®-A53 CPU 
+up to 1 GHz
+• Multiple OS Support: ThreadX, Linux,
+ThreadX + Linux 
+• 14 nm low-power CMOS process
+Advanced Image Processing
+• Multi-sensor support
+• Multi-exposure line-interleaved HDR
+• Hardware dewarping engine
+• Electronic image stabilization
+• 3D motion-compensated noise 
+reduction (MCTF)
+• Superior low-light processing
+High-Efficiency Video Codec
+• 12MP30 H.264 / H.265 video compression
+• Flexible multi-stream capability
+• JPEG encoder for stills
+• CBR and VBR bitrate control modes
+Target Applications
+• Multi-channel drive recorders
+--------------------------------------------------
+
+📦 [Chunk 2]
+[부품명: H22A]
+• Flexible multi-stream capability
+• JPEG encoder for stills
+• CBR and VBR bitrate control modes
+Target Applications
+• Multi-channel drive recorders 
+• Driver monitoring systems (driver distraction / 
+driver drowsiness detection
+Ambarella's H22A SoC combines image / video processing, 12MP30 
+video encoding / decoding in a single, low-power design making it 
+an ideal choice to power the next generation of automotive dash 
+cameras / video recorders. Fabricated in a 14 nm process technology,  
+it achieves an industry-leading combination of low power and high
+performance in both human vision and ADAS applications. 
+ 
+H22A implements a highly efficient 12MP30 AVC (H.264) /
+HEVC (H.265) encoder / decoder in hardware along with industry-
+--------------------------------------------------
+
+📦 [Chunk 3]
+[부품명: H22A]
+H22A implements a highly efficient 12MP30 AVC (H.264) /
+HEVC (H.265) encoder / decoder in hardware along with industry-
+leading image signal processor (ISP). The H22A’s ISP provides 
+outstanding imaging in low-light conditions while high dynamic range
+(HDR) processing extracts maximum image detail in high- 
+contrast scenes. The flexible architecture allows encoding of 
+multiple streams that are optimized for storage and video streaming 
+over WiFi / BLE simultaneously. The highly-efficient distortion 
+correction block in hardware enables cameras with ultra wide-angle 
+lenses. 
+H22A also supports multi-sensor input, thus enabling recording
+systems that require two or more independent sensor inputs.
+The quad core Arm®-A53 cores allow implementation of ADAS
+--------------------------------------------------
+
+📦 [Chunk 4]
+[부품명: H22A]
+systems that require two or more independent sensor inputs.
+The quad core Arm®-A53 cores allow implementation of ADAS
+features such as forward collision warning, lane departure warning,
+driver monitoring, license plate detection and recognition, and more.  
+To help customers implement their applications, Ambarella provides
+a software development kit available in RTOS (ThreadX) / Linux /
+RTOS + Linux (dual OS). 
+H22A
+Video SoC for Dashcam
+Video Input
+HiSPi™
+Video Output
+DDR
+Interface 
+Audio Input
+(I2S / ADC)
+Audio Output
+(I2S)
+SD / SDIO
+NAND / NOR
+DMA
+UART
+SPI
+I2C
+USB 2.0
+Host / Device
+GPIO
+Timers
+WDT
+Ethernet
+LPDDR4 /
+LPDDR3 /
+DDR3L
+SD Card / 
+eMMC 
+Sensor 1 
+Sensor 2 
+Analog
+Parallel
+MIPI CSI-2
+Parallel
+HDMI
+32-BIT
+LVDS
+SLVS
+Image Signal
+Processor (ISP)
+ 
+Video Codec
+AVC / HEVC / MJPEG
+--------------------------------------------------
+
+📦 [Chunk 5]
+[부품명: H22A]
+eMMC 
+Sensor 1 
+Sensor 2 
+Analog
+Parallel
+MIPI CSI-2
+Parallel
+HDMI
+32-BIT
+LVDS
+SLVS
+Image Signal
+Processor (ISP)
+ 
+Video Codec
+AVC / HEVC / MJPEG
+802.11n
+4G/LTE
+Wireless
+Quad Core Arm® Cortex®-A53
+Ambarella Memory System
+Bluetooth
+LCD
+®
+--------------------------------------------------
+
+📦 [Chunk 6]
+[부품명: H22A]
+Product Brief
+H22A Camera Development Platform
+The H22A camera development platform contains the necessary tools, software, hardware, and documentation to develop a small
+ form factor camera.  
+Evaluation Kit (EVK)
+• H22A main board with connectors for sensor /
+lens board, peripherals
+• Sensor board: OmniVision, Sony, and others
+• Datasheet, BOM, schematics, and layout
+• Reference application with C source code
+Software Development Kit (SDK)
+• ThreadX / Linux / ThreadX + Linux with patches,
+drivers, tools, and application source code
+• Royalty-free libraries for ISP, 3A, dewarp, and codecs
+• Image tuning and manufacturing calibration tools
+• Detailed documentation, including a programmer’s
+guide and more
+Contact   www.ambarella.com/contact-us/
+--------------------------------------------------
+
+📦 [Chunk 7]
+[부품명: H22A]
+• Detailed documentation, including a programmer’s
+guide and more
+Contact   www.ambarella.com/contact-us/
+Copyright Ambarella International LP. All rights reserved. Ambarella and the Ambarella logo are trademarks of Ambarella International LP. All other brands, product names, and company names are 
+trademarks of their respective owners. The information in this document is believed to be reliable, but may project preliminary functionality not yet available. Ambarella makes no guarantee or warranty  
+concerning the accuracy and availability of said information and shall not be responsible for any loss or damage whatever nature resulting from the use of, or reliance upon it. Ambarella does not guarantee
+--------------------------------------------------
+
+📦 [Chunk 8]
+[부품명: H22A]
+that the use of any information contained herein will not infringe upon patent, trademark, copyright, or other rights of third parties. Ambarella reserves the right to make changes in the product 
+and /or its specifications presented in this publication at any time without notice.
+General Specifications
+Processor Cores
+• Quad-core Arm® Cortex®-A53 up to 1 GHz
+• 32 KB / 32 KB I/D and 256 KB L2 cache
+• NEONTM SIMD acceleration
+• Ambarella image signal processor
+• AVC / HEVC video codec
+Video Input
+• Single or dual sensor inputs with independent
+  ISP configuration
+• MIPI CSI-2 / LVDS / SLVS / HiSPiTM
+• 14-bit parallel LVCMOS (BT. 601 / 656)
+Video Output
+• HDMI® 2.0 with PHY out
+• PAL / NTSC composite SD video out
+• 16-bit parallel LVCMOS (BT. 601)
+Memory Interfaces
+--------------------------------------------------
+
+📦 [Chunk 9]
+[부품명: H22A]
+Video Output
+• HDMI® 2.0 with PHY out
+• PAL / NTSC composite SD video out
+• 16-bit parallel LVCMOS (BT. 601)
+Memory Interfaces
+• LPDDR4 (H22N) and LPDDR3 / DDR3 /
+DDR3L (H22), up to 1 GHz clock rate, 32-bit data
+bus, up to 2 GB capacity
+• Two SD controllers 
+• Boot from SPI NOR / NAND flash / USB / eMMC
+Peripheral Interfaces
+• One USB 2.0 port device / host w/ PHY 2
+• 10 / 100 / 1000 Ethernet with RMII / RGMII
+• Audio interface including I²S and DMIC
+• Multiple SSI / SPI, I2C / IDC, and UART
+• Multiple GPIO ports, PWM, IR, and ADC
+• Watchdog timer, multiple general purpose timers,
+  and JTAG
+CMOS Sensor Processing / Image Processing
+• RGGB and monochrome sensor support  
+• Multi-exposure HDR (line-interleaved sensors)
+• Dynamic range (WDR and HDR) engine
+--------------------------------------------------
+
+📦 [Chunk 10]
+[부품명: H22A]
+• RGGB and monochrome sensor support  
+• Multi-exposure HDR (line-interleaved sensors)
+• Dynamic range (WDR and HDR) engine
+• 3D motion-compensated temporal filtering (MCTF)
+• Adjustable AE / AWB / AF
+• 3-axis electronic image stablization (EIS)
+• Lens distortion correction (LDC) for wide-angle lens
+• Crop, mirror, flip, 90° / 270° rotation
+• Defect pixel correction
+• Geometric lens distortion correction
+• Chromatic aberration compensation
+• Gamma compensation and color enhancement
+• Black level correction
+• Lens shading correction
+Video Encoding / Decoding
+• H.265 MP L5.1, H.264 MP / HP L5.1, and MJPEG
+• 12MP30 maximum encoding / decoding performance
+• Simultaneous recording and streaming
+• Multi-stream and multi-channel encoding
+• JPEG encoding for stills
+--------------------------------------------------
+
+📦 [Chunk 11]
+[부품명: H22A]
+• Simultaneous recording and streaming
+• Multi-stream and multi-channel encoding
+• JPEG encoding for stills
+• Multiple CBR and VBR control modes
+Physical
+• 14 nm low-power CMOS
+• FC LFBGA package (369 balls, 14x14 mm,
+0.65 mm pitch) or FC TFBGA (369 balls, 11x11 mm,
+0.5 mm pitch)
+• Operating temperature -20°C to +85°C
+(additional operational temperature options available)
+--------------------------------------------------
+
