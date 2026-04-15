@@ -1,0 +1,14 @@
+# --- RAG 핵심 프레임워크 ---
+langchain-chroma
+langchain-huggingface
+langchain-openai
+langchain-google-genai
+
+# --- 임베딩 및 연산 ---
+sentence-transformers
+torch
+
+# --- 유틸리티 및 데이터 처리 ---
+tqdm
+PyMuPDF
+pandas
